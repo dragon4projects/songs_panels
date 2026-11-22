@@ -1,0 +1,31 @@
+Dragon House interior pilot binary payload
+Batch: TEEA_INT_20261122_002
+
+Final ZIP:
+https://d2ol7oe51mr4n9.cloudfront.net/user_3JdI9kJ82xObF8Bi3EgU4P6DaoR/36070f2e-d183-4ffc-89da-4591b6efca09.zip
+
+ZIP SHA-256:
+dcc4d0471a127c441a636d612f8aa8d8fceaa33e3c0a555b5c2f7d1008eb622c
+
+Internal root:
+dragon_house_clean/
+
+Contains:
+- 12 production PNG role plates:
+  common/R3, library/R2, study/R1, rest/R1
+  roles: backdrop, back_decor, furniture_back
+- candidate manifest with approved:false
+- delivery metadata
+- source provenance
+- composition report
+- contact sheet with actor QA x3
+- Godot 4.7.2 standalone decode QA log
+- SHA-256 file list
+
+Why binary files are not committed here:
+The current GitHub connector path does not provide a safe Git LFS binary upload workflow. Do not commit PNGs through the UTF-8 contents API. Integrator should unpack the ZIP at repository root, verify SHA-256, then use the repository's existing Git LFS rules.
+
+Status:
+GODOT_DECODE_PASS
+CURRENT_PROJECT_CAMERA_NOT_TESTED
+OWNER_APPROVED=false
