@@ -1,0 +1,31 @@
+Dragon House Teea REWORK patch payload
+Batch: TEEA_INT_20261122_002
+Rework: TEEA_INT_20261122_002_REWORK_R1
+
+Patch ZIP:
+https://d2ol7oe51mr4n9.cloudfront.net/user_3JdI9kJ82xObF8Bi3EgU4P6DaoR/65150c43-1b0b-4076-8df4-46b7c0fdd5a4.zip
+
+ZIP SHA-256:
+72872c33fa1ce41d7816f5d298c13b5f38ce255e931e626acaf73db9cf0923e9
+
+This is an ADDITIVE review patch.
+It does NOT contain replacements for the original 12 PNG layers.
+
+Payload adds:
+- common/R3 foreground.png
+- library/R2 foreground.png
+- rest/R1 foreground.png
+- schema-2 furniture anchor candidate
+- additive foreground layer candidate metadata
+- calibrated Blender anchor measurements
+- Godot 4.7.2 dry-run logs
+- occlusion QA contact sheet
+- provenance and SHA list
+
+Study/R1 intentionally has no foreground layer:
+the authored work chair has no front armrest and the heavy desk is behind the actor at calibrated depth.
+
+Status:
+READY_FOR_REVIEW
+approved:false
+CURRENT_QA_CAMERA_RETEST_REQUIRED
