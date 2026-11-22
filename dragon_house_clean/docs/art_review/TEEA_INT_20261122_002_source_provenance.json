@@ -1,0 +1,194 @@
+{
+  "schema": 1,
+  "batch_id": "TEEA_INT_20261122_002",
+  "polyhaven_models": [
+    {
+      "asset_id": "Shelf_01",
+      "name": "Shelf 01",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/Shelf_01",
+      "resolution": "1k",
+      "polycount": 182,
+      "dimensions_mm": [
+        1003.443717956543,
+        256.9795063869833,
+        2080.310344696045
+      ]
+    },
+    {
+      "asset_id": "book_encyclopedia_set_01",
+      "name": "Book Encyclopedia Set 01",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/book_encyclopedia_set_01",
+      "resolution": "1k",
+      "polycount": 67306,
+      "dimensions_mm": [
+        551.2974057346582,
+        163.06233406066895,
+        237.41818653931634
+      ]
+    },
+    {
+      "asset_id": "desk_lamp_arm_01",
+      "name": "Desk Lamp Arm 01",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/desk_lamp_arm_01",
+      "resolution": "1k",
+      "polycount": 25710,
+      "dimensions_mm": [
+        617.3093914985657,
+        408.02252292633057,
+        879.0190517902374
+      ]
+    },
+    {
+      "asset_id": "mid_century_lounge_chair",
+      "name": "Mid Century Lounge Chair",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/mid_century_lounge_chair",
+      "resolution": "1k",
+      "polycount": 6148,
+      "dimensions_mm": [
+        1008.6143612861633,
+        1190.310776233673,
+        1169.0847246776136
+      ]
+    },
+    {
+      "asset_id": "modern_arm_chair_01",
+      "name": "Modern Arm Chair 01",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/modern_arm_chair_01",
+      "resolution": "1k",
+      "polycount": 8916,
+      "dimensions_mm": [
+        820.3444182872772,
+        986.5616858005524,
+        1022.8520567470696
+      ]
+    },
+    {
+      "asset_id": "painted_wooden_bench",
+      "name": "Painted Wooden Bench",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/painted_wooden_bench",
+      "resolution": "1k",
+      "polycount": 630,
+      "dimensions_mm": [
+        1164.9435758590698,
+        496.5430945158005,
+        889.2914750613272
+      ]
+    },
+    {
+      "asset_id": "painted_wooden_chair_01",
+      "name": "Painted Wooden Chair 01",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/painted_wooden_chair_01",
+      "resolution": "1k",
+      "polycount": 724,
+      "dimensions_mm": [
+        431.75144493579865,
+        539.8241728544235,
+        956.4821355743334
+      ]
+    },
+    {
+      "asset_id": "round_wooden_table_01",
+      "name": "Round Wooden Table 01",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/round_wooden_table_01",
+      "resolution": "1k",
+      "polycount": 8640,
+      "dimensions_mm": [
+        1399.3489742279053,
+        1399.3489146232605,
+        1005.0213932991028
+      ]
+    },
+    {
+      "asset_id": "side_table_01",
+      "name": "Side Table 01",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/side_table_01",
+      "resolution": "1k",
+      "polycount": 2756,
+      "dimensions_mm": [
+        550.0000715255737,
+        450.00001788139343,
+        550.6622816901654
+      ]
+    },
+    {
+      "asset_id": "sofa_02",
+      "name": "Sofa 02",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/sofa_02",
+      "resolution": "1k",
+      "polycount": 2728,
+      "dimensions_mm": [
+        1807.1673512458801,
+        817.7513778209686,
+        709.4888985157013
+      ]
+    },
+    {
+      "asset_id": "vintage_wooden_drawer_01",
+      "name": "Vintage Wooden Drawer 01",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/vintage_wooden_drawer_01",
+      "resolution": "1k",
+      "polycount": 5184,
+      "dimensions_mm": [
+        1715.1139974594116,
+        1006.912887096405,
+        1090.839296579361
+      ]
+    },
+    {
+      "asset_id": "wooden_bookshelf_worn",
+      "name": "Wooden Bookshelf Worn",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/wooden_bookshelf_worn",
+      "resolution": "1k",
+      "polycount": 10106,
+      "dimensions_mm": [
+        1373.95179271698,
+        581.3020169734955,
+        2063.442051410675
+      ]
+    }
+  ],
+  "ambientcg_materials": [
+    {
+      "asset_id": "Rock035",
+      "license": "CC0 1.0",
+      "source_page": "https://ambientcg.com/a/Rock035",
+      "use": "cave rock"
+    },
+    {
+      "asset_id": "Wood051",
+      "license": "CC0 1.0",
+      "source_page": "https://ambientcg.com/a/Wood051",
+      "use": "dark worn wood override"
+    }
+  ],
+  "procedural_assets": [
+    {
+      "name": "Common hearth architecture",
+      "license": "batch-original procedural geometry"
+    },
+    {
+      "name": "Study heavy desk",
+      "license": "batch-original procedural geometry"
+    },
+    {
+      "name": "wall globe fixtures",
+      "license": "batch-original procedural geometry"
+    },
+    {
+      "name": "cave structural blocks / recess rims / timber layout",
+      "license": "batch-original procedural geometry"
+    }
+  ]
+}

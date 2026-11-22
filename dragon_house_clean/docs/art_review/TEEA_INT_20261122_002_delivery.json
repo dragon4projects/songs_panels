@@ -1,0 +1,325 @@
+{
+  "schema": 1,
+  "batch_id": "TEEA_INT_20261122_002",
+  "created_utc": "2026-11-22T18:39:41.632227+00:00",
+  "renderer": "Blender 4.5.16 LTS / EEVEE_NEXT",
+  "render_method": "50% native render at exact aspect, Lanczos 2x to exact target canvas",
+  "license_baseline": {
+    "PolyHaven": "CC0",
+    "ambientCG": "CC0 1.0"
+  },
+  "assets": [
+    {
+      "room_type": "common",
+      "variant": "R3",
+      "role": "backdrop",
+      "path": "assets/rooms/common/R3/backdrop.png",
+      "source_assets": [
+        "sofa_02",
+        "modern_arm_chair_01",
+        "side_table_01",
+        "painted_wooden_bench",
+        "mid_century_lounge_chair",
+        "round_wooden_table_01",
+        "Shelf_01",
+        "book_encyclopedia_set_01"
+      ],
+      "dimensions": [
+        4608,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": true,
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "bytes": 5153742,
+      "sha256": "f6c01f8e0c051938ce5d58e903ccafc2224a6ba13ebe276b86cfaea6a9939b00"
+    },
+    {
+      "room_type": "common",
+      "variant": "R3",
+      "role": "back_decor",
+      "path": "assets/rooms/common/R3/back_decor.png",
+      "source_assets": [
+        "sofa_02",
+        "modern_arm_chair_01",
+        "side_table_01",
+        "painted_wooden_bench",
+        "mid_century_lounge_chair",
+        "round_wooden_table_01",
+        "Shelf_01",
+        "book_encyclopedia_set_01"
+      ],
+      "dimensions": [
+        4608,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bytes": 575751,
+      "sha256": "ed6f3c703641c0d8d4695ed2c5ae18b10519ca7363f3eb536e1823a9f8a2ca8b"
+    },
+    {
+      "room_type": "common",
+      "variant": "R3",
+      "role": "furniture_back",
+      "path": "assets/rooms/common/R3/furniture_back.png",
+      "source_assets": [
+        "sofa_02",
+        "modern_arm_chair_01",
+        "side_table_01",
+        "painted_wooden_bench",
+        "mid_century_lounge_chair",
+        "round_wooden_table_01",
+        "Shelf_01",
+        "book_encyclopedia_set_01"
+      ],
+      "dimensions": [
+        4608,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bytes": 481842,
+      "sha256": "7809f05cabd1813d9dee93e57562e8aecf63bbff44152b02532641f5b06604a7"
+    },
+    {
+      "room_type": "library",
+      "variant": "R2",
+      "role": "backdrop",
+      "path": "assets/rooms/library/R2/backdrop.png",
+      "source_assets": [
+        "wooden_bookshelf_worn",
+        "book_encyclopedia_set_01",
+        "mid_century_lounge_chair",
+        "modern_arm_chair_01",
+        "round_wooden_table_01"
+      ],
+      "dimensions": [
+        3072,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": true,
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "bytes": 3378450,
+      "sha256": "a07b11ea677a5f3230dbdb49e7b07f8b33f0b6b4744c636c621ce8a9ac448422"
+    },
+    {
+      "room_type": "library",
+      "variant": "R2",
+      "role": "back_decor",
+      "path": "assets/rooms/library/R2/back_decor.png",
+      "source_assets": [
+        "wooden_bookshelf_worn",
+        "book_encyclopedia_set_01",
+        "mid_century_lounge_chair",
+        "modern_arm_chair_01",
+        "round_wooden_table_01"
+      ],
+      "dimensions": [
+        3072,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bytes": 622335,
+      "sha256": "29da9f7541c3e00e0d7ee7053ad4917f3becd6325c6a4d5e5c67857d89c45a90"
+    },
+    {
+      "room_type": "library",
+      "variant": "R2",
+      "role": "furniture_back",
+      "path": "assets/rooms/library/R2/furniture_back.png",
+      "source_assets": [
+        "wooden_bookshelf_worn",
+        "book_encyclopedia_set_01",
+        "mid_century_lounge_chair",
+        "modern_arm_chair_01",
+        "round_wooden_table_01"
+      ],
+      "dimensions": [
+        3072,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bytes": 223781,
+      "sha256": "99c733d6604dd68810c2af9a7227f46a84ddb92d839e2e47603ff695c7c64621"
+    },
+    {
+      "room_type": "study",
+      "variant": "R1",
+      "role": "backdrop",
+      "path": "assets/rooms/study/R1/backdrop.png",
+      "source_assets": [
+        "Shelf_01",
+        "vintage_wooden_drawer_01",
+        "book_encyclopedia_set_01",
+        "painted_wooden_chair_01",
+        "desk_lamp_arm_01",
+        "procedural_heavy_desk"
+      ],
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": true,
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "bytes": 2013949,
+      "sha256": "ce4d42ae3c657d9c3e3d15b5788c01c73832646b0410f16f6aaf81ec55b8641b"
+    },
+    {
+      "room_type": "study",
+      "variant": "R1",
+      "role": "back_decor",
+      "path": "assets/rooms/study/R1/back_decor.png",
+      "source_assets": [
+        "Shelf_01",
+        "vintage_wooden_drawer_01",
+        "book_encyclopedia_set_01",
+        "painted_wooden_chair_01",
+        "desk_lamp_arm_01",
+        "procedural_heavy_desk"
+      ],
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bytes": 409864,
+      "sha256": "34080758cc64f8580c69c597fed9dfb393c73c2c9ad9d4135668df6cdf9cd19a"
+    },
+    {
+      "room_type": "study",
+      "variant": "R1",
+      "role": "furniture_back",
+      "path": "assets/rooms/study/R1/furniture_back.png",
+      "source_assets": [
+        "Shelf_01",
+        "vintage_wooden_drawer_01",
+        "book_encyclopedia_set_01",
+        "painted_wooden_chair_01",
+        "desk_lamp_arm_01",
+        "procedural_heavy_desk"
+      ],
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bytes": 146973,
+      "sha256": "be895a8a18e07e01df4e1cdd27e3f230eb42d7d37e57aac1e88ca93078591096"
+    },
+    {
+      "room_type": "rest",
+      "variant": "R1",
+      "role": "backdrop",
+      "path": "assets/rooms/rest/R1/backdrop.png",
+      "source_assets": [
+        "Shelf_01",
+        "book_encyclopedia_set_01",
+        "sofa_02",
+        "mid_century_lounge_chair",
+        "side_table_01"
+      ],
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": true,
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "bytes": 1842697,
+      "sha256": "c54dd9655e53d7e3e360c7380f52cba115087c0e2216a6e3299db50629863e16"
+    },
+    {
+      "room_type": "rest",
+      "variant": "R1",
+      "role": "back_decor",
+      "path": "assets/rooms/rest/R1/back_decor.png",
+      "source_assets": [
+        "Shelf_01",
+        "book_encyclopedia_set_01",
+        "sofa_02",
+        "mid_century_lounge_chair",
+        "side_table_01"
+      ],
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bytes": 217036,
+      "sha256": "76b90a3063d3b78b1e865e0d46a33aa71b41b38c1a00a9be2d6dc6f9fa7fd4d7"
+    },
+    {
+      "room_type": "rest",
+      "variant": "R1",
+      "role": "furniture_back",
+      "path": "assets/rooms/rest/R1/furniture_back.png",
+      "source_assets": [
+        "Shelf_01",
+        "book_encyclopedia_set_01",
+        "sofa_02",
+        "mid_century_lounge_chair",
+        "side_table_01"
+      ],
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bytes": 250708,
+      "sha256": "5334f0a81c285a0ac6db203ac754003a4b0e8f834c238295b5ccd7236789dbb7"
+    }
+  ]
+}
