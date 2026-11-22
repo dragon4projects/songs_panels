@@ -87,7 +87,13 @@ jobs:
           for p in dragon_house_clean/assets/rooms/{common/R3,library/R2,study/R1,rest/R1}/*.png; do
             test "$(git check-attr filter -- "$p" | awk '{print $3}')" = lfs
           done
-          git add dragon_house_clean/assets/rooms dragon_house_clean/data/asset_proposals/TEEA_INT_20261122_002_interiors.json dragon_house_clean/docs/art_review/TEEA_INT_20261122_002*
+          git add dragon_house_clean/assets/rooms dragon_house_clean/data/asset_proposals/TEEA_INT_20261122_002_interiors.json
+          git add dragon_house_clean/docs/art_review/TEEA_INT_20261122_002.sha256
+          git add dragon_house_clean/docs/art_review/TEEA_INT_20261122_002_delivery.json
+          git add dragon_house_clean/docs/art_review/TEEA_INT_20261122_002_source_provenance.json
+          git add dragon_house_clean/docs/art_review/TEEA_INT_20261122_002_composition_report.md
+          git add dragon_house_clean/docs/art_review/TEEA_INT_20261122_002_interiors_contact_sheet.jpg
+          git add -f dragon_house_clean/docs/art_review/TEEA_INT_20261122_002_godot_decode_qa.log
           git config user.name 'Dragon House QA Intake'
           git config user.email 'qa-intake@users.noreply.github.com'
           if ! git diff --cached --quiet; then
