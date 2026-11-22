@@ -1,0 +1,106 @@
+name: Dragon House — Teea 002 private macOS visual preview
+
+on:
+  push:
+    branches: ['qa/teea-int-20261122-002']
+    paths: ['.github/workflows/teea-002-macos-preview.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  mac-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - name: Checkout QA branch and fetch actual LFS images
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+          fetch-depth: 1
+
+      - name: Verify imported production art bytes, unchanged approval policy
+        shell: bash
+        run: |
+          set -euo pipefail
+          git lfs install --local
+          git lfs pull
+          cd dragon_house_clean
+          sha256sum --check docs/art_review/TEEA_INT_20261122_002.sha256
+          python3 - <<'PY'
+          from pathlib import Path
+          import json
+          p=Path("data/asset_proposals/TEEA_INT_20261122_002_interiors.json")
+          m=json.loads(p.read_text(encoding="utf8"))
+          assert m["batch_id"]=="TEEA_INT_20261122_002"
+          images=[]
+          for kind,variants in m["room_types"].items():
+              for variant, v in variants.items():
+                  for layer in v["layers"]:
+                      assert layer["approved"] is False
+                      path=Path(layer["path"])
+                      assert path.is_file()
+                      assert path.read_bytes()[:8]==b"\x89PNG\r\n\x1a\n"
+                      images.append(path)
+          assert len(images)==12,images
+          base=json.loads(Path("data/interior_layers_v1.json").read_text(encoding="utf8"))
+          assert not base.get("room_types",{}).get("common",{}).get("R3",{}).get("layers",[])
+          print("TEEA QA 12 binary PNGs verified; original approved flags unchanged")
+          PY
+
+      - name: Install official Godot 4.7.2 and macOS export templates
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fLsS --retry 3 -o /tmp/godot.zip https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_linux.x86_64.zip
+          unzip -q /tmp/godot.zip -d /tmp
+          chmod +x /tmp/Godot_v4.7.2-stable_linux.x86_64
+          curl -fLsS --retry 3 -o /tmp/templates.tpz https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_export_templates.tpz
+          dest="$HOME/.local/share/godot/export_templates/4.7.2.stable"
+          mkdir -p "$dest"
+          unzip -jo /tmp/templates.tpz templates/version.txt templates/macos.zip -d "$dest"
+          /tmp/Godot_v4.7.2-stable_linux.x86_64 --headless --version
+
+      - name: Import image assets, test Mac visual preview and Z occlusion
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd dragon_house_clean
+          G=/tmp/Godot_v4.7.2-stable_linux.x86_64
+          timeout 850s "$G" --headless --path . --editor --quit > /tmp/teea002_mac_import.log 2>&1
+          if grep -Eq 'SCRIPT ERROR|Parse Error' /tmp/teea002_mac_import.log; then
+            tail -75 /tmp/teea002_mac_import.log
+            exit 1
+          fi
+          timeout 95s "$G" --headless --path . --script res://tests/test_teea_mac_preview_v12.gd > /tmp/teea002_mac_preview_test.log 2>&1
+          grep 'TEEA002_MAC_PREVIEW_PASS' /tmp/teea002_mac_preview_test.log
+          timeout 95s "$G" --headless --path . --script res://tests/test_backwall_z_v11.gd > /tmp/teea002_z_test.log 2>&1
+          grep 'BACKWALL_Z_V11_PASS' /tmp/teea002_z_test.log
+
+      - name: Export unsigned universal Mac app
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p releases
+          cd dragon_house_clean
+          /tmp/Godot_v4.7.2-stable_linux.x86_64 --headless --path . \
+            --export-release "macOS" ../releases/DragonHouse_Teea002_macOS15_M1_QA.zip > /tmp/teea002_mac_export.log 2>&1
+          cd ../releases
+          test -s DragonHouse_Teea002_macOS15_M1_QA.zip
+          cp ../dragon_house_clean/docs/art_review/TEEA_002_MAC_PREVIEW_README.md README_Mac_QA.md
+          zip -qj DragonHouse_Teea002_macOS15_M1_QA.zip README_Mac_QA.md
+          unzip -t DragonHouse_Teea002_macOS15_M1_QA.zip | tail -1
+          unzip -Z1 DragonHouse_Teea002_macOS15_M1_QA.zip | grep -F '.app/Contents/MacOS/'
+          sha256sum DragonHouse_Teea002_macOS15_M1_QA.zip > DragonHouse_Teea002_macOS15_M1_QA.zip.sha256
+          cat DragonHouse_Teea002_macOS15_M1_QA.zip.sha256
+
+      - name: Share PRIVATE Mac preview archive for owner visual review
+        uses: actions/upload-artifact@v4
+        with:
+          name: DragonHouse_Teea002_macOS15_M1_QA_NOT_APPROVED
+          path: |
+            releases/DragonHouse_Teea002_macOS15_M1_QA.zip
+            releases/DragonHouse_Teea002_macOS15_M1_QA.zip.sha256
+          retention-days: 7
+          if-no-files-found: error

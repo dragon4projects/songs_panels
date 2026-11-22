@@ -8,6 +8,9 @@ func run() -> void:
 	img.fill(Color("#31281e"))
 	assert(img.save_png(path)==OK)
 	var scene=load("res://scenes/main.tscn").instantiate()
+	# Test the original fail-safe implementation, not the QA viewer's
+	# intentionally pre-enabled Teea artwork.
+	scene.teea_qa_enabled=false
 	scene.world.save_path="user://test_backwall_z_v11.json"
 	root.add_child(scene)
 	current_scene=scene

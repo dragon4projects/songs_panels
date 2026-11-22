@@ -2,10 +2,10 @@
 config_version=5
 
 [application]
-config/name="Дом Дракона — Shelter Prototype"
+config/name="Дом Дракона — Тея 002 · Визуальная проверка"
 run/main_scene="res://scenes/main.tscn"
 config/features=PackedStringArray("4.7")
-config/description="Independent 2.5D cutaway cave-life simulation."
+config/description="Private, unapproved Teea 002 photorealistic interior proof on Godot 4.7.2."
 
 [display]
 window/size/viewport_width=1280

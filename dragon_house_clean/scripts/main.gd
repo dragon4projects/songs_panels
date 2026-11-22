@@ -21,6 +21,14 @@ var detail_materialization_count := 0
 var detail_eviction_count := 0
 var validated_visual_banks := 0
 var qa_visual_preview := false
+# QA-BRANCH ONLY. Never merge to production; does NOT approve artist assets.
+const TEEA_QA_BATCH := "TEEA_INT_20261122_002"
+const TEEA_QA_CANDIDATE := "res://data/asset_proposals/TEEA_INT_20261122_002_interiors.json"
+var teea_qa_enabled := true
+var teea_qa_show_new := true
+var teea_qa_error := ""
+var teea_qa_note: Label
+var teea_qa_toolbar: PanelContainer
 var preview_visual_banks := 0
 var actor_animations: Dictionary = {}
 var camera: Camera3D
@@ -83,7 +91,16 @@ var room_names := {
 
 func _ready() -> void:
 	Engine.max_fps = 30 # Low-end hardware baseline; detail modes can unlock 60.
-	world.load_or_seed()
+	if teea_qa_enabled:
+		# Isolated seeded demo. Original Dragon House save and the live world
+		# are never read or overwritten by an unapproved art review app.
+		world.save_path = "user://teea002_qa_disposable_world.json"
+		world.seed_world()
+		# Only preview: the submitted Library has R2; base world has R1.
+		# One adjacent Music cell is borrowed IN MEMORY. No source save changes.
+		world.get_room(3,0)["type"] = "library"
+	else:
+		world.load_or_seed()
 	asset_banks.initialize()
 	# Metadata is not a physical book or a movie/audio file.
 	if not asset_banks.manifest.is_empty():
@@ -91,6 +108,8 @@ func _ready() -> void:
 			asset_banks.manifest.get("media_previews",{}).get("books",[]))
 	life.setup(world)
 	interior_skin.initialize()
+	if teea_qa_enabled:
+		teea_qa_load_layers()
 	validated_visual_banks = asset_banks.accepted_count(world.read_resident_profiles())
 	preview_visual_banks = asset_banks.preview_count(world.read_resident_profiles())
 	camera = Camera3D.new()
@@ -130,11 +149,117 @@ func _ready() -> void:
 	make_residents()
 	build_interface()
 	fit_house_camera()
+	if teea_qa_enabled:
+		teea_qa_make_toolbar()
+		teea_qa_focus(-1,0)
 	smooth_focus = desired_focus
 	zoom_current = zoom
 	apply_camera(0.1)
 	update_render_lod()
-	notice.text = "Независимый прототип: камера, постройка, автономная жизнь"
+	notice.text = ("TEEA 002 · НЕ УТВЕРЖДЕНО · только визуальный просмотр"
+		if teea_qa_enabled else
+		"Независимый прототип: камера, постройка, автономная жизнь")
+
+func teea_qa_load_layers() -> void:
+	teea_qa_error = ""
+	if not teea_qa_show_new:
+		interior_skin.config={"schema":1,"room_types":{}}
+		return
+	var raw:String=FileAccess.get_file_as_string(TEEA_QA_CANDIDATE)
+	var doc=JSON.parse_string(raw)
+	if typeof(doc)!=TYPE_DICTIONARY or str(doc.get("batch_id",""))!=TEEA_QA_BATCH:
+		teea_qa_error="Партия Теи отсутствует или неверная"
+		interior_skin.config={"schema":1,"room_types":{}}
+		return
+	var proposed:Dictionary=doc.get("room_types",{})
+	if proposed.is_empty():
+		teea_qa_error="В партии нет слоёв"
+		interior_skin.config={"schema":1,"room_types":{}}
+		return
+	var copy:Dictionary=proposed.duplicate(true)
+	var total:int=0
+	for typ in copy:
+		for variant in copy[typ]:
+			for layer in copy[typ][variant]["layers"]:
+				if bool(layer.get("approved",true)):
+					teea_qa_error="Исходный манифест уже содержит approved:true"
+					interior_skin.config={"schema":1,"room_types":{}}
+					return
+				# Only an in-memory temporary preview allowance. Does not
+				# update the original artist JSON or live manifest.
+				layer["approved"]=true
+				total+=1
+	if total!=12:
+		teea_qa_error="Количество слоёв не равно 12"
+		interior_skin.config={"schema":1,"room_types":{}}
+		return
+	interior_skin.config={"schema":1,"room_types":copy}
+
+func teea_qa_focus(x:int, level:int=0) -> void:
+	var room:Dictionary=world.get_room(x,level)
+	if room.is_empty():
+		return
+	selected_room=str(room["id"])
+	set_mode("ROOM")
+	var group:Dictionary=world.merged_group(x,level)
+	zoom=13.3 if int(group["width"])==3 else 11.4 if int(group["width"])==2 else 8.8
+	desired_focus=Vector3((float(group["x_start"])+float(group["x_end"]))*0.5*W,
+		float(level)*H+1.4,0)
+	smooth_focus=desired_focus
+	zoom_current=zoom
+	apply_camera(0.05)
+	update_render_lod()
+
+func teea_qa_toggle() -> void:
+	if not teea_qa_enabled:
+		return
+	teea_qa_show_new = not teea_qa_show_new
+	teea_qa_load_layers()
+	# Rebuild camera-proximal rooms without pending nodes with duplicate IDs.
+	# Only scene renderer is regenerated; logical residents and routes live on.
+	for node in room_root.get_children():
+		room_root.remove_child(node)
+		node.free()
+	make_rooms()
+	update_render_lod()
+	update_selection_outline()
+	teea_qa_refresh_label()
+
+func teea_qa_refresh_label() -> void:
+	if teea_qa_note != null:
+		teea_qa_note.text=("ТЕЯ 002 · %s · НЕ УТВЕРЖДЕНО" %
+			("НОВЫЕ ИНТЕРЬЕРЫ" if teea_qa_show_new else "СТАРЫЕ ИНТЕРЬЕРЫ"))
+	if notice!=null and teea_qa_enabled:
+		notice.text=("Тея 002 · %s · QA, не утверждено" %
+			("НОВЫЕ" if teea_qa_show_new else "СТАРЫЕ"))
+
+func teea_qa_make_toolbar() -> void:
+	# Actual clickable QA selector, not shortcuts only; functional on Mac M1.
+	teea_qa_toolbar=PanelContainer.new()
+	teea_qa_toolbar.name="TEEA_002_ReviewControls"
+	teea_qa_toolbar.set_anchors_and_offsets_preset(Control.PRESET_TOP_RIGHT)
+	teea_qa_toolbar.position=Vector2(-470,14)
+	teea_qa_toolbar.size=Vector2(460,97)
+	get_tree().root.add_child(teea_qa_toolbar)
+	var box:=VBoxContainer.new()
+	teea_qa_toolbar.add_child(box)
+	teea_qa_note=Label.new()
+	box.add_child(teea_qa_note)
+	var row:=HBoxContainer.new()
+	box.add_child(row)
+	for pair in [
+		["Гостиная","C",-1],["Библиотека","L",2],
+		["Кабинет","S",-3],["Отдых","R",1]
+	]:
+		var btn:=Button.new()
+		btn.text=str(pair[0])+" ["+str(pair[1])+"]"
+		btn.pressed.connect(teea_qa_focus.bind(int(pair[2]),0))
+		row.add_child(btn)
+	var toggle:=Button.new()
+	toggle.text="Сравнить: новые / старые [T]"
+	toggle.pressed.connect(teea_qa_toggle)
+	box.add_child(toggle)
+	teea_qa_refresh_label()
 
 func surface_texture(color: Color) -> Texture2D:
 	# Poly Haven materials are CC0 per imported asset provenance registry.
@@ -505,6 +630,9 @@ func _release_room_art(group_node: Node3D) -> void:
 	var layer: Node3D=group_node.get_node_or_null("Layer_ApprovedArt")
 	if layer:
 		for child in layer.get_children():
+			# Detach now rather than waiting for the frame end: rapidly
+			# switching preview rooms must not render two art copies.
+			layer.remove_child(child)
 			child.queue_free()
 	var stage:Node3D=group_node.get_node_or_null("Layer_Background/Stage_Backwall")
 	if stage!=null:
@@ -544,6 +672,7 @@ func _release_furniture(group_node: Node3D) -> void:
 	var decoration_layer: Node3D = group_node.get_node_or_null("LocalFurniture")
 	if decoration_layer:
 		for child in decoration_layer.get_children():
+			decoration_layer.remove_child(child)
 			child.queue_free()
 	detailed_room_groups.erase(group_node.name)
 	detail_eviction_count += 1
@@ -1172,6 +1301,21 @@ func _input(event: InputEvent) -> void:
 				preview_mat.albedo_color = Color(0.22,0.90,0.55,0.28) if permitted else Color(0.82,0.23,0.26,0.28)
 	if event is InputEventKey and event.pressed and not event.echo:
 		match event.keycode:
+			KEY_T:
+				if teea_qa_enabled:
+					teea_qa_toggle()
+			KEY_C:
+				if teea_qa_enabled:
+					teea_qa_focus(-1)
+			KEY_L:
+				if teea_qa_enabled:
+					teea_qa_focus(2)
+			KEY_S:
+				if teea_qa_enabled:
+					teea_qa_focus(-3)
+			KEY_R:
+				if teea_qa_enabled:
+					teea_qa_focus(1)
 			KEY_ESCAPE: set_mode("HOUSE")
 			KEY_F: follow_actor("MANJKA")
 			KEY_B: toggle_build()
