@@ -1,0 +1,149 @@
+name: Dragon House — Teea batch 002 isolated LFS and camera QA
+
+on:
+  push:
+    branches: ['qa/teea-int-20261122-002']
+    paths:
+      - '.github/workflows/teea-002-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  qa-intake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - name: Checkout QA branch with Git LFS configured
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 1
+          lfs: true
+
+      - name: Download exact Teea ZIP, verify hashes and stage 12 PNGs
+        shell: bash
+        env:
+          BATCH_URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3JdI9kJ82xObF8Bi3EgU4P6DaoR/36070f2e-d183-4ffc-89da-4591b6efca09.zip
+          EXPECTED_SHA: dcc4d0471a127c441a636d612f8aa8d8fceaa33e3c0a555b5c2f7d1008eb622c
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 --silent --show-error "$BATCH_URL" -o /tmp/teea002.zip
+          echo "$EXPECTED_SHA  /tmp/teea002.zip" | sha256sum --check
+          python3 - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+          import json, hashlib
+          dst=Path.cwd()
+          with ZipFile("/tmp/teea002.zip") as z:
+              names=z.namelist()
+              if len(names)>65: raise RuntimeError("Archive has unexpected extra entries")
+              manifest_name="dragon_house_clean/data/asset_proposals/TEEA_INT_20261122_002_interiors.json"
+              manifest=json.loads(z.read(manifest_name).decode())
+              if manifest.get("batch_id")!="TEEA_INT_20261122_002":raise RuntimeError("Wrong batch")
+              hashes={}
+              for kind,variants in manifest["room_types"].items():
+                  for variant,record in variants.items():
+                      for layer in record["layers"]:
+                          if layer["approved"] is not False:raise RuntimeError("Unapproved art cannot become accepted")
+                          rel="dragon_house_clean/"+layer["path"]
+                          hashes[rel]=layer["sha256"]
+              if len(hashes)!=12:raise RuntimeError(f"Expected exactly 12 image paths, got {len(hashes)}")
+              expected={
+                  "common/R3":(4608,1024),"library/R2":(3072,1024),
+                  "study/R1":(1536,1024),"rest/R1":(1536,1024)
+              }
+              for rel,expected_hash in hashes.items():
+                  p=Path(rel)
+                  if p.is_absolute() or ".." in p.parts or not rel.startswith("dragon_house_clean/assets/rooms/"):
+                      raise RuntimeError("Unsafe ZIP path: "+rel)
+                  if p.exists():raise RuntimeError("Refusing overwrite: "+rel)
+                  data=z.read(rel)
+                  if hashlib.sha256(data).hexdigest()!=expected_hash:raise RuntimeError("Bad SHA256: "+rel)
+                  if not data.startswith(b"\x89PNG\r\n\x1a\n"):raise RuntimeError("Not a PNG: "+rel)
+                  import struct
+                  wh=struct.unpack(">II",data[16:24])
+                  parts=p.parts
+                  if expected.get(parts[3]+"/"+parts[4])!=wh:raise RuntimeError("Wrong room dimensions: "+rel)
+                  p.parent.mkdir(parents=True,exist_ok=True)
+                  p.write_bytes(data)
+              doc_paths=[
+                  manifest_name,
+                  "dragon_house_clean/docs/art_review/TEEA_INT_20261122_002.sha256",
+                  "dragon_house_clean/docs/art_review/TEEA_INT_20261122_002_delivery.json",
+                  "dragon_house_clean/docs/art_review/TEEA_INT_20261122_002_source_provenance.json",
+                  "dragon_house_clean/docs/art_review/TEEA_INT_20261122_002_composition_report.md",
+                  "dragon_house_clean/docs/art_review/TEEA_INT_20261122_002_interiors_contact_sheet.jpg",
+                  "dragon_house_clean/docs/art_review/TEEA_INT_20261122_002_godot_decode_qa.log"
+              ]
+              for name in doc_paths:
+                  if name not in names:raise RuntimeError("Missing required provenance: "+name)
+                  p=Path(name);p.parent.mkdir(parents=True,exist_ok=True)
+                  if not p.exists():p.write_bytes(z.read(name))
+              print("ZIP_INTEGRITY_PASS: 12 PNGs, 4 variants, SHA-256 verified, rights docs present")
+          PY
+          git lfs install --local
+          for p in dragon_house_clean/assets/rooms/{common/R3,library/R2,study/R1,rest/R1}/*.png; do
+            test "$(git check-attr filter -- "$p" | awk '{print $3}')" = lfs
+          done
+          git add dragon_house_clean/assets/rooms dragon_house_clean/data/asset_proposals/TEEA_INT_20261122_002_interiors.json dragon_house_clean/docs/art_review/TEEA_INT_20261122_002*
+          git config user.name 'Dragon House QA Intake'
+          git config user.email 'qa-intake@users.noreply.github.com'
+          if ! git diff --cached --quiet; then
+            git commit -m 'QA ONLY: ingest 12 verified Teea PNGs into Git LFS (approved=false)'
+            git push origin HEAD:qa/teea-int-20261122-002
+          fi
+          git lfs pull
+          cd dragon_house_clean
+          sha256sum --check docs/art_review/TEEA_INT_20261122_002.sha256 | tee /tmp/teea002_sha_check.log
+
+      - name: Download official Godot 4.7.2
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fLsS --retry 3 -o /tmp/godot472.zip https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_linux.x86_64.zip
+          unzip -q /tmp/godot472.zip -d /tmp
+          chmod +x /tmp/Godot_v4.7.2-stable_linux.x86_64
+
+      - name: Import actual assets for engine rendering
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd dragon_house_clean
+          timeout 900s /tmp/Godot_v4.7.2-stable_linux.x86_64 --headless --path . --editor --quit > /tmp/teea002_godot_import.log 2>&1
+          if grep -Eq 'SCRIPT ERROR|Parse Error' /tmp/teea002_godot_import.log; then
+            tail -60 /tmp/teea002_godot_import.log
+            exit 1
+          fi
+
+      - name: Validate Z occlusion and actual room camera (QA-only in-memory approvals)
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd dragon_house_clean
+          timeout 70s /tmp/Godot_v4.7.2-stable_linux.x86_64 --headless --path . --script res://tests/test_backwall_z_v11.gd | tee /tmp/teea002_backwall_test.log
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq xvfb > /tmp/teea002_xvfb_install.log
+          timeout 110s xvfb-run -a -s '-screen 0 1366x768x24' env GODOT_AUDIO_DRIVER=Dummy /tmp/Godot_v4.7.2-stable_linux.x86_64 --rendering-driver opengl3 --path . --script res://tests/qa_teea_batch_002.gd > /tmp/teea002_camera_qa.log 2>&1
+          grep 'TEEA_002_ALL_CAMERA_TESTS_PASS' /tmp/teea002_camera_qa.log
+          python3 - <<'PY'
+          from pathlib import Path
+          files=sorted(Path("private_review/teea_002").glob("camera_*.png"))
+          assert len(files)==4,files
+          print("QA_PREVIEWS_PASS",files)
+          PY
+
+      - name: Upload PRIVATE camera QA snapshots and logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: teea-002-private-camera-QA-NOT-APPROVED
+          path: |
+            dragon_house_clean/private_review/teea_002/*.png
+            /tmp/teea002_camera_qa.log
+            /tmp/teea002_backwall_test.log
+            /tmp/teea002_sha_check.log
+          if-no-files-found: warn
+          retention-days: 7
+

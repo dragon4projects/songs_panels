@@ -1,0 +1,243 @@
+{
+  "schema": 1,
+  "batch_id": "TEEA_INT_20261122_002",
+  "owner_review_status": "READY_FOR_REVIEW",
+  "room_types": {
+    "common": {
+      "R3": {
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/common/R3/backdrop.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_NOT_TESTED",
+            "sha256": "f6c01f8e0c051938ce5d58e903ccafc2224a6ba13ebe276b86cfaea6a9939b00"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/common/R3/back_decor.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_NOT_TESTED",
+            "sha256": "ed6f3c703641c0d8d4695ed2c5ae18b10519ca7363f3eb536e1823a9f8a2ca8b"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/common/R3/furniture_back.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_NOT_TESTED",
+            "sha256": "7809f05cabd1813d9dee93e57562e8aecf63bbff44152b02532641f5b06604a7"
+          }
+        ],
+        "anchor_proposals": [
+          {
+            "id": "common_sofa_left",
+            "local_x": -5.25,
+            "local_y": 0.03,
+            "depth_role": "furniture_back",
+            "function": "seating_visual_anchor",
+            "source": "sofa_02"
+          },
+          {
+            "id": "common_chair_left",
+            "local_x": -2.55,
+            "local_y": 0.03,
+            "depth_role": "furniture_back",
+            "function": "seating_visual_anchor",
+            "source": "modern_arm_chair_01"
+          },
+          {
+            "id": "common_side_table",
+            "local_x": -3.55,
+            "local_y": 0.03,
+            "depth_role": "furniture_back",
+            "function": "table_visual_anchor",
+            "source": "side_table_01"
+          },
+          {
+            "id": "common_bench_right",
+            "local_x": 3.35,
+            "local_y": 0.03,
+            "depth_role": "furniture_back",
+            "function": "seating_visual_anchor",
+            "source": "painted_wooden_bench"
+          },
+          {
+            "id": "common_chair_right",
+            "local_x": 5.35,
+            "local_y": 0.03,
+            "depth_role": "furniture_back",
+            "function": "seating_visual_anchor",
+            "source": "mid_century_lounge_chair"
+          },
+          {
+            "id": "common_round_table",
+            "local_x": 4.25,
+            "local_y": 0.03,
+            "depth_role": "furniture_back",
+            "function": "table_visual_anchor",
+            "source": "round_wooden_table_01"
+          }
+        ]
+      }
+    },
+    "library": {
+      "R2": {
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/library/R2/backdrop.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_NOT_TESTED",
+            "sha256": "a07b11ea677a5f3230dbdb49e7b07f8b33f0b6b4744c636c621ce8a9ac448422"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/library/R2/back_decor.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_NOT_TESTED",
+            "sha256": "29da9f7541c3e00e0d7ee7053ad4917f3becd6325c6a4d5e5c67857d89c45a90"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/library/R2/furniture_back.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_NOT_TESTED",
+            "sha256": "99c733d6604dd68810c2af9a7227f46a84ddb92d839e2e47603ff695c7c64621"
+          }
+        ],
+        "anchor_proposals": [
+          {
+            "id": "library_chair_left",
+            "local_x": -2.15,
+            "local_y": 0.03,
+            "depth_role": "furniture_back",
+            "function": "reading_seat_visual_anchor",
+            "source": "mid_century_lounge_chair"
+          },
+          {
+            "id": "library_chair_right",
+            "local_x": 2.15,
+            "local_y": 0.03,
+            "depth_role": "furniture_back",
+            "function": "reading_seat_visual_anchor",
+            "source": "modern_arm_chair_01"
+          },
+          {
+            "id": "library_table",
+            "local_x": 0.0,
+            "local_y": 0.03,
+            "depth_role": "furniture_back",
+            "function": "reading_table_visual_anchor",
+            "source": "round_wooden_table_01"
+          }
+        ]
+      }
+    },
+    "study": {
+      "R1": {
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/study/R1/backdrop.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_NOT_TESTED",
+            "sha256": "ce4d42ae3c657d9c3e3d15b5788c01c73832646b0410f16f6aaf81ec55b8641b"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/study/R1/back_decor.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_NOT_TESTED",
+            "sha256": "34080758cc64f8580c69c597fed9dfb393c73c2c9ad9d4135668df6cdf9cd19a"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/study/R1/furniture_back.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_NOT_TESTED",
+            "sha256": "be895a8a18e07e01df4e1cdd27e3f230eb42d7d37e57aac1e88ca93078591096"
+          }
+        ],
+        "anchor_proposals": [
+          {
+            "id": "study_heavy_desk",
+            "local_x": 0.1,
+            "local_y": 0.03,
+            "depth_role": "furniture_back",
+            "function": "workstation_visual_anchor",
+            "source": "procedural_heavy_desk"
+          },
+          {
+            "id": "study_chair",
+            "local_x": -0.42,
+            "local_y": 0.03,
+            "depth_role": "furniture_back",
+            "function": "seat_visual_anchor",
+            "source": "painted_wooden_chair_01"
+          },
+          {
+            "id": "study_lamp",
+            "local_x": 0.62,
+            "local_y": 0.8,
+            "depth_role": "furniture_back",
+            "function": "task_lamp_visual_anchor",
+            "source": "desk_lamp_arm_01"
+          }
+        ]
+      }
+    },
+    "rest": {
+      "R1": {
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/rest/R1/backdrop.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_NOT_TESTED",
+            "sha256": "c54dd9655e53d7e3e360c7380f52cba115087c0e2216a6e3299db50629863e16"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/rest/R1/back_decor.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_NOT_TESTED",
+            "sha256": "76b90a3063d3b78b1e865e0d46a33aa71b41b38c1a00a9be2d6dc6f9fa7fd4d7"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/rest/R1/furniture_back.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_NOT_TESTED",
+            "sha256": "5334f0a81c285a0ac6db203ac754003a4b0e8f834c238295b5ccd7236789dbb7"
+          }
+        ],
+        "anchor_proposals": [
+          {
+            "id": "rest_sofa",
+            "local_x": 0.75,
+            "local_y": 0.03,
+            "depth_role": "furniture_back",
+            "function": "relax_seat_visual_anchor",
+            "source": "sofa_02"
+          },
+          {
+            "id": "rest_lounge",
+            "local_x": -1.35,
+            "local_y": 0.03,
+            "depth_role": "furniture_back",
+            "function": "reading_seat_visual_anchor",
+            "source": "mid_century_lounge_chair"
+          },
+          {
+            "id": "rest_side_table",
+            "local_x": -0.4,
+            "local_y": 0.03,
+            "depth_role": "furniture_back",
+            "function": "side_table_visual_anchor",
+            "source": "side_table_01"
+          }
+        ]
+      }
+    }
+  }
+}

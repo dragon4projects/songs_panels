@@ -487,6 +487,14 @@ func _load_room_art(group_node: Node3D) -> void:
 	if count>0:
 		art_loaded_groups[group_node.name]=count
 		art_layer_count+=count
+		# A complete approved rear image and the procedural backwall occupy
+		# competing Z planes. The 3D panels were physically occluding the
+		# actual image in Godot 4.7.2. Hide only the old REAR PANELS and only
+		# while a valid uploaded backdrop is genuinely mounted. Keep the
+		# structural floor, side frames and privacy doors intact.
+		var stage:Node3D=group_node.get_node_or_null("Layer_Background/Stage_Backwall")
+		if stage!=null and layer.get_node_or_null("Art_backdrop")!=null:
+			stage.visible=false
 
 func _release_room_art(group_node: Node3D) -> void:
 	if not art_loaded_groups.has(group_node.name):
@@ -498,6 +506,9 @@ func _release_room_art(group_node: Node3D) -> void:
 	if layer:
 		for child in layer.get_children():
 			child.queue_free()
+	var stage:Node3D=group_node.get_node_or_null("Layer_Background/Stage_Backwall")
+	if stage!=null:
+		stage.visible=true
 
 func _populate_furniture(group_node: Node3D) -> void:
 	var group: Dictionary = visual_room_groups.get(group_node.name,{})
