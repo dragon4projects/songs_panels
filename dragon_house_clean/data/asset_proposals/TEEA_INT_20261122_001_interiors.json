@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "batch_id": "TEEA_INT_20261122_001",
+  "owner_review_status": "BLOCKED",
+  "room_types": {
+    "common": {
+      "R3": {
+        "status": "GENERATION_BLOCKED",
+        "layers": []
+      }
+    },
+    "library": {
+      "R2": {
+        "status": "NOT_STARTED_AFTER_BLOCKER",
+        "layers": []
+      }
+    },
+    "study": {
+      "R1": {
+        "status": "NOT_STARTED_AFTER_BLOCKER",
+        "layers": []
+      }
+    },
+    "rest": {
+      "R1": {
+        "status": "NOT_STARTED_AFTER_BLOCKER",
+        "layers": []
+      }
+    }
+  },
+  "blocker": {
+    "stage": "common/R3 layered art generation",
+    "reason": "The requested in-chat image generator does not reliably obey the exact room/layer prompt in this long project context. It repeatedly returns an unrelated Dragon House infographic/contact-board instead of the requested isolated transparent layer plate.",
+    "safety_action": "No generated layer was marked TECH_PASS and approved remains false/absent. Authoritative data/interior_layers_v1.json was not changed."
+  }
+}
