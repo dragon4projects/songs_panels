@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "batch_id": "TEEA_INT_20261122_002",
+  "rework_id": "TEEA_INT_20261122_002_REWORK_R1",
+  "changed_binary_assets": [
+    {
+      "path": "assets/rooms/common/R3/foreground.png",
+      "derivation": "front-facing slice of the same CC0 3D furniture used by the existing furniture_back layer; clipped at measured seating-footprint centroid in Blender",
+      "new_external_source": false
+    },
+    {
+      "path": "assets/rooms/library/R2/foreground.png",
+      "derivation": "front-facing slice of the same CC0 3D furniture used by the existing furniture_back layer; clipped at measured seating-footprint centroid in Blender",
+      "new_external_source": false
+    },
+    {
+      "path": "assets/rooms/rest/R1/foreground.png",
+      "derivation": "front-facing slice of the same CC0 3D furniture used by the existing furniture_back layer; clipped at measured seating-footprint centroid in Blender",
+      "new_external_source": false
+    }
+  ],
+  "depth_calibration": {
+    "godot_backwall_z": -2.04,
+    "godot_public_aisle_z": 0.95,
+    "axis_mapping": "Godot local Z = -Blender world Y",
+    "source_basis": [
+      "qa branch scripts/main.gd Stage_Backwall z=-2.04",
+      "qa branch scripts/room_locomotion.gd AISLE_Z=0.95"
+    ],
+    "note": "Original 002 art did not author gameplay depth. Rework R1 adds a calibrated physical authoring scene; it does not claim the old render-Y was already gameplay Z."
+  },
+  "external_rights": "No new external assets. Existing Poly Haven models remain CC0; existing ambientCG materials remain CC0 1.0."
+}
