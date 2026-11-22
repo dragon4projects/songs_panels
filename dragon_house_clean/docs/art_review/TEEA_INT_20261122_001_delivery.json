@@ -1,0 +1,43 @@
+{
+  "batch_id": "TEEA_INT_20261122_001",
+  "date": "2026-11-22",
+  "type": "interiors_pilot",
+  "status": "BLOCKED",
+  "target_engine": "Godot 4.7.2 Compatibility",
+  "target_branch": "dragon-house-fallout-fresh",
+  "work_branch": "art/teea-interiors-TEEA_INT_20261122_001",
+  "room_variants": [
+    "common/R3",
+    "library/R2",
+    "study/R1",
+    "rest/R1"
+  ],
+  "production_layers_delivered": 0,
+  "tech_pass_layers": 0,
+  "owner_approved": false,
+  "authoritative_manifest_modified": false,
+  "contact_sheet": null,
+  "godot_layer_test": "NOT_RUN_NO_VALID_LAYERS",
+  "attempts": [
+    {
+      "room": "common/R3",
+      "role": "backdrop",
+      "result": "REJECTED",
+      "reason": "generator returned multi-room infographic rather than isolated layer"
+    },
+    {
+      "room": "common/R3",
+      "role": "backdrop",
+      "result": "CONCEPT_ONLY",
+      "reason": "photoreal room appeared, but wrong output aspect and not proven layer-aligned"
+    },
+    {
+      "room": "common/R3",
+      "role": "back_decor",
+      "result": "REJECTED",
+      "reason": "generator again returned unrelated infographic instead of transparent aligned layer"
+    }
+  ],
+  "blocker": "Built-in image generator cannot currently be controlled reliably enough in this context to produce exact isolated aligned layer plates.",
+  "next_action": "Resume common/R3 only after reliable isolated plate generation/editing is available."
+}
