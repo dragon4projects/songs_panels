@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "batch_id": "TEEA_INT_20261122_002",
+  "rework_id": "TEEA_INT_20261122_002_REWORK_R1",
+  "approved": false,
+  "base_12_layers_unmodified": true,
+  "additive_layers": {
+    "common/R3": {
+      "role": "foreground",
+      "path": "assets/rooms/common/R3/foreground.png",
+      "approved": false,
+      "sha256": "ba74d0bd6bb7f9d8acf681c148fb4e1d0ad099c12a48580c311037518b9f1e0d"
+    },
+    "library/R2": {
+      "role": "foreground",
+      "path": "assets/rooms/library/R2/foreground.png",
+      "approved": false,
+      "sha256": "582292391c3d71d91e475e05b13018109560262700593ac2f87da954fe5867d4"
+    },
+    "rest/R1": {
+      "role": "foreground",
+      "path": "assets/rooms/rest/R1/foreground.png",
+      "approved": false,
+      "sha256": "e626bcdb3f0a49655bb06e81a8b9dbd95bd171f8e5bab364ca90ef14b7891ded"
+    }
+  },
+  "omissions": {
+    "study/R1": {
+      "foreground_required": false,
+      "reason": "authored work chair has no front armrest; heavy desk is behind actor at calibrated depth"
+    },
+    "front_trim": "not authored; optional role intentionally omitted",
+    "light_overlay": "not authored; optional role intentionally omitted"
+  }
+}
