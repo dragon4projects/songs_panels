@@ -24,11 +24,17 @@ var qa_visual_preview := false
 # QA-BRANCH ONLY. Never merge to production; does NOT approve artist assets.
 const TEEA_QA_BATCH := "TEEA_INT_20261122_002"
 const TEEA_QA_CANDIDATE := "res://data/asset_proposals/TEEA_INT_20261122_002_interiors.json"
+const TEEA_QA_FOREGROUND := "res://data/asset_proposals/TEEA_INT_20261122_002_foreground_layers_candidate.json"
+const TEEA_QA_ANCHORS := "res://data/asset_proposals/TEEA_INT_20261122_002_furniture_anchors_candidate.json"
+const TeeaQaAnchorAdapter = preload("res://scripts/teea_qa_anchor_adapter.gd")
 var teea_qa_enabled := true
 var teea_qa_show_new := true
 var teea_qa_error := ""
+var teea_qa_anchor_report: Dictionary = {}
+var teea_qa_anchor_adapter = TeeaQaAnchorAdapter.new()
 var teea_qa_note: Label
 var teea_qa_toolbar: PanelContainer
+var teea_qa_anchor_demo := false
 var preview_visual_banks := 0
 var actor_animations: Dictionary = {}
 var camera: Camera3D
@@ -107,6 +113,8 @@ func _ready() -> void:
 		catalog_metadata_added = world.merge_reference_book_metadata(
 			asset_banks.manifest.get("media_previews",{}).get("books",[]))
 	life.setup(world)
+	if teea_qa_enabled:
+		teea_qa_apply_anchor_candidate()
 	interior_skin.initialize()
 	if teea_qa_enabled:
 		teea_qa_load_layers()
@@ -160,6 +168,16 @@ func _ready() -> void:
 		if teea_qa_enabled else
 		"Независимый прототип: камера, постройка, автономная жизнь")
 
+func teea_qa_apply_anchor_candidate() -> void:
+	teea_qa_anchor_report={}
+	if not teea_qa_anchor_adapter.initialize(TEEA_QA_ANCHORS):
+		teea_qa_error="Anchor schema-2: "+teea_qa_anchor_adapter.last_error
+		return
+	teea_qa_anchor_report=teea_qa_anchor_adapter.validate_and_apply(
+		world,life.stations.furniture)
+	if not bool(teea_qa_anchor_report.get("valid",false)):
+		teea_qa_error="Anchor schema-2: "+str(teea_qa_anchor_report.get("error","failed"))
+
 func teea_qa_load_layers() -> void:
 	teea_qa_error = ""
 	if not teea_qa_show_new:
@@ -185,15 +203,85 @@ func teea_qa_load_layers() -> void:
 					teea_qa_error="Исходный манифест уже содержит approved:true"
 					interior_skin.config={"schema":1,"room_types":{}}
 					return
-				# Only an in-memory temporary preview allowance. Does not
-				# update the original artist JSON or live manifest.
 				layer["approved"]=true
 				total+=1
 	if total!=12:
-		teea_qa_error="Количество слоёв не равно 12"
+		teea_qa_error="Количество базовых слоёв не равно 12"
+		interior_skin.config={"schema":1,"room_types":{}}
+		return
+
+	var fg_raw:String=FileAccess.get_file_as_string(TEEA_QA_FOREGROUND)
+	var fg_doc=JSON.parse_string(fg_raw)
+	if typeof(fg_doc)!=TYPE_DICTIONARY or str(fg_doc.get("batch_id",""))!=TEEA_QA_BATCH or (
+		bool(fg_doc.get("approved",true))):
+		teea_qa_error="Foreground candidate отсутствует/небезопасен"
+		interior_skin.config={"schema":1,"room_types":{}}
+		return
+	var fg_count:=0
+	for key in fg_doc.get("additive_layers",{}):
+		var parts:PackedStringArray=str(key).split("/")
+		if parts.size()!=2:
+			teea_qa_error="Неверный foreground key "+str(key)
+			interior_skin.config={"schema":1,"room_types":{}}
+			return
+		var typ:String=parts[0]
+		var variant:String=parts[1]
+		var layer:Dictionary=fg_doc["additive_layers"][key]
+		if bool(layer.get("approved",true)) or str(layer.get("role",""))!="foreground":
+			teea_qa_error="Foreground неожиданно утверждён/имеет неверную роль"
+			interior_skin.config={"schema":1,"room_types":{}}
+			return
+		if not copy.has(typ) or not copy[typ].has(variant):
+			teea_qa_error="Foreground не соответствует базовой комнате"
+			interior_skin.config={"schema":1,"room_types":{}}
+			return
+		var render_layer:Dictionary=layer.duplicate(true)
+		render_layer["approved"]=true
+		copy[typ][variant]["layers"].append(render_layer)
+		fg_count+=1
+	if fg_count!=3:
+		teea_qa_error="Foreground layers должны быть ровно 3"
 		interior_skin.config={"schema":1,"room_types":{}}
 		return
 	interior_skin.config={"schema":1,"room_types":copy}
+
+func teea_qa_register_group_foreground(group_node: Node3D) -> void:
+	if not teea_qa_enabled or not teea_qa_show_new or camera==null:
+		return
+	var group:Dictionary=visual_room_groups.get(group_node.name,{})
+	if group.is_empty():
+		return
+	var key:String=str(group.get("type",""))+"/R"+str(int(group.get("width",0)))
+	var depth_map:Dictionary=teea_qa_anchor_report.get("foreground_z",{})
+	if not depth_map.has(key):
+		return
+	var art:Node3D=group_node.get_node_or_null("Layer_ApprovedArt")
+	if art==null:
+		return
+	var fg:Sprite3D=art.get_node_or_null("Art_foreground")
+	var reference:Sprite3D=art.get_node_or_null("Art_furniture_back")
+	if fg==null or reference==null:
+		return
+	var target_z:float=float(depth_map[key])
+	var camera_local:Vector3=group_node.to_local(camera.global_position)
+	var denom:float=reference.position.z-camera_local.z
+	if absf(denom)<0.001:
+		return
+	var k:float=(target_z-camera_local.z)/denom
+	# Same full-canvas pixels, different physical sorting depth. Scaling and
+	# center shift preserve exact screen registration for the current camera.
+	if k<=0.0 or k>2.0:
+		return
+	var center_x:float=camera_local.x+(reference.position.x-camera_local.x)*k
+	var center_y:float=camera_local.y+(reference.position.y-camera_local.y)*k
+	fg.position=Vector3(center_x,center_y,target_z)
+	fg.scale=Vector3(k,k,1.0)
+
+func teea_qa_register_foregrounds() -> void:
+	if room_root==null:
+		return
+	for group_node in room_root.get_children():
+		teea_qa_register_group_foreground(group_node)
 
 func teea_qa_focus(x:int, level:int=0) -> void:
 	var room:Dictionary=world.get_room(x,level)
@@ -209,6 +297,77 @@ func teea_qa_focus(x:int, level:int=0) -> void:
 	zoom_current=zoom
 	apply_camera(0.05)
 	update_render_lod()
+	if teea_qa_anchor_demo:
+		teea_qa_anchor_demo_place()
+
+func teea_qa_anchor_demo_place() -> void:
+	if not teea_qa_enabled or not teea_qa_anchor_demo or not teea_qa_show_new:
+		return
+	for id in actor_sprites:
+		actor_sprites[id].visible=false
+	var room:Dictionary=world.room_by_id(selected_room)
+	if room.is_empty():
+		return
+	var group:Dictionary=world.merged_group(int(room["x"]),int(room["level"]))
+	var anchors:Array=[]
+	for cell in group.get("cells",[]):
+		for point in life.stations.layout(cell):
+			if str(point.get("anchor_id",point.get("id",""))).begins_with("stand_"):
+				continue
+			var id:String=str(point.get("id",""))
+			if id.begins_with("stand_"):
+				continue
+			# Accepted baseline positions are absent in candidate-overridden
+			# cells. Only the schema-2 legal candidate IDs survive here.
+			if not teea_qa_anchor_adapter.legal_station_ids().has(id):
+				continue
+			anchors.append({"room":cell,"point":point})
+	anchors.sort_custom(func(a,b):return str(a["point"]["id"])<str(b["point"]["id"]))
+	var demo_ids:Array=[]
+	for id in actor_sprites.keys():
+		if str(id)!="MANJKA" and world.residents.has(id):
+			demo_ids.append(str(id))
+	demo_ids.sort()
+	var index:=0
+	for entry in anchors:
+		if index>=demo_ids.size():
+			break
+		var actor_id:String=demo_ids[index]
+		if not world.residents.has(actor_id):
+			continue
+		var actor:Dictionary=world.residents[actor_id]
+		var cell:Dictionary=entry["room"]
+		var point:Dictionary=entry["point"]
+		var offset:Vector2=point["offset"]
+		actor["room_id"]=cell["id"]
+		actor["level"]=cell["level"]
+		actor["x"]=float(cell["x"])*W+offset.x
+		actor["z"]=offset.y
+		actor["visual_y"]=float(cell["level"])*H
+		actor["phase"]="perform"
+		actor["intent"]="READ_BOOK" if str(point.get("pose_hint",""))=="READ" else (
+			"WORK_CREATE" if str(point.get("kind",""))=="work" else "REST")
+		actor["station_room_id"]=cell["id"]
+		actor["station_kind"]=point.get("kind","standing")
+		actor["station_anchor_id"]=point.get("id","")
+		actor["station_pose_hint"]=point.get("pose_hint","IDLE_S")
+		actor["station_point"]=[offset.x,offset.y]
+		if actor_sprites.has(actor_id):
+			actor_sprites[actor_id].visible=true
+		index+=1
+	update_residents(0.0)
+
+func teea_qa_anchor_demo_toggle() -> void:
+	if not teea_qa_enabled:
+		return
+	teea_qa_anchor_demo=not teea_qa_anchor_demo
+	if teea_qa_anchor_demo:
+		teea_qa_anchor_demo_place()
+	else:
+		for id in actor_sprites:
+			actor_sprites[id].visible=true
+		update_residents(0.0)
+	teea_qa_refresh_label()
 
 func teea_qa_toggle() -> void:
 	if not teea_qa_enabled:
@@ -227,8 +386,15 @@ func teea_qa_toggle() -> void:
 
 func teea_qa_refresh_label() -> void:
 	if teea_qa_note != null:
-		teea_qa_note.text=("ТЕЯ 002 · %s · НЕ УТВЕРЖДЕНО" %
-			("НОВЫЕ ИНТЕРЬЕРЫ" if teea_qa_show_new else "СТАРЫЕ ИНТЕРЬЕРЫ"))
+		var seats:String=""
+		if not teea_qa_anchor_report.is_empty():
+			seats=" · stations %d+%d blocked" % [
+				int(teea_qa_anchor_report.get("legal",0)),
+				int(teea_qa_anchor_report.get("blocked",0))]
+		var demo:String=" · ПОСАДКИ" if teea_qa_anchor_demo else ""
+		teea_qa_note.text=("ТЕЯ 002 · %s%s%s · НЕ УТВЕРЖДЕНО" % [
+			("REWORK R1" if teea_qa_show_new else "СТАРЫЕ ИНТЕРЬЕРЫ"),
+			seats,demo])
 	if notice!=null and teea_qa_enabled:
 		notice.text=("Тея 002 · %s · QA, не утверждено" %
 			("НОВЫЕ" if teea_qa_show_new else "СТАРЫЕ"))
@@ -255,10 +421,16 @@ func teea_qa_make_toolbar() -> void:
 		btn.text=str(pair[0])+" ["+str(pair[1])+"]"
 		btn.pressed.connect(teea_qa_focus.bind(int(pair[2]),0))
 		row.add_child(btn)
+	var row2:=HBoxContainer.new()
+	box.add_child(row2)
 	var toggle:=Button.new()
-	toggle.text="Сравнить: новые / старые [T]"
+	toggle.text="Сравнить новые / старые [T]"
 	toggle.pressed.connect(teea_qa_toggle)
-	box.add_child(toggle)
+	row2.add_child(toggle)
+	var demo:=Button.new()
+	demo.text="Посадки [A]"
+	demo.pressed.connect(teea_qa_anchor_demo_toggle)
+	row2.add_child(demo)
 	teea_qa_refresh_label()
 
 func surface_texture(color: Color) -> Texture2D:
@@ -612,6 +784,8 @@ func _load_room_art(group_node: Node3D) -> void:
 	if count>0:
 		art_loaded_groups[group_node.name]=count
 		art_layer_count+=count
+		if teea_qa_enabled:
+			teea_qa_register_group_foreground(group_node)
 		# A complete approved rear image and the procedural backwall occupy
 		# competing Z planes. The 3D panels were physically occluding the
 		# actual image in Godot 4.7.2. Hide only the old REAR PANELS and only
@@ -1304,6 +1478,9 @@ func _input(event: InputEvent) -> void:
 			KEY_T:
 				if teea_qa_enabled:
 					teea_qa_toggle()
+			KEY_A:
+				if teea_qa_enabled:
+					teea_qa_anchor_demo_toggle()
 			KEY_C:
 				if teea_qa_enabled:
 					teea_qa_focus(-1)
@@ -1410,6 +1587,8 @@ func apply_camera(delta: float) -> void:
 	var z_shift := cos(view_yaw) * zoom_current
 	camera.global_position = smooth_focus + Vector3(x_shift,zoom_current*0.19,z_shift)
 	camera.look_at(smooth_focus,Vector3.UP)
+	if teea_qa_enabled:
+		teea_qa_register_foregrounds()
 
 func update_render_lod() -> void:
 	# Keep cutaway shell/cues visible, materialize nearby details on demand.
@@ -1437,8 +1616,10 @@ func update_render_lod() -> void:
 			node.visible = micro_detail_visible
 
 func _process(delta: float) -> void:
-	# The camera never chooses activities. Life is a separate simulation clock.
-	life.tick(delta)
+	# QA seating mode freezes autonomous choices so the reviewer can rotate
+	# the exact authored seats without actors walking away mid-inspection.
+	if not (teea_qa_enabled and teea_qa_anchor_demo):
+		life.tick(delta)
 	update_residents(delta)
 	apply_camera(delta)
 	save_timer += delta

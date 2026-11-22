@@ -1,0 +1,158 @@
+name: Dragon House — Teea 002 REWORK R1 macOS QA
+
+on:
+  push:
+    branches: ['qa/teea-int-20261122-002-r1']
+    paths: ['.github/workflows/teea-002-r1-macos-preview.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rework-r1:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - name: Checkout QA branch and base LFS art
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+          fetch-depth: 1
+          persist-credentials: true
+
+      - name: Download exact additive R1 patch, verify SHA and ingest 3 foreground PNGs
+        shell: bash
+        env:
+          PATCH_URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3JdI9kJ82xObF8Bi3EgU4P6DaoR/65150c43-1b0b-4076-8df4-46b7c0fdd5a4.zip
+          PATCH_SHA: 72872c33fa1ce41d7816f5d298c13b5f38ce255e931e626acaf73db9cf0923e9
+        run: |
+          set -euo pipefail
+          curl -fLsS --retry 3 "$PATCH_URL" -o /tmp/teea-r1.zip
+          echo "$PATCH_SHA  /tmp/teea-r1.zip" | sha256sum --check
+          rm -rf /tmp/teea-r1 && mkdir /tmp/teea-r1
+          unzip -q /tmp/teea-r1.zip -d /tmp/teea-r1
+          src=/tmp/teea-r1/dragon_house_clean
+          cd "$src"
+          sha256sum --check docs/art_review/TEEA_INT_20261122_002_REWORK_R1.sha256
+          cd "$GITHUB_WORKSPACE"
+          git lfs install --local
+          for rel in \
+            assets/rooms/common/R3/foreground.png \
+            assets/rooms/library/R2/foreground.png \
+            assets/rooms/rest/R1/foreground.png; do
+            test ! -e "dragon_house_clean/$rel" || {
+              echo "Refusing overwrite of existing R1 payload: $rel"; exit 1; }
+            mkdir -p "dragon_house_clean/$(dirname "$rel")"
+            cp "$src/$rel" "dragon_house_clean/$rel"
+            test "$(git check-attr filter -- "dragon_house_clean/$rel" | awk '{print $3}')" = lfs
+          done
+          cp "$src/data/asset_proposals/TEEA_INT_20261122_002_foreground_layers_candidate.json" dragon_house_clean/data/asset_proposals/
+          cp "$src/data/asset_proposals/TEEA_INT_20261122_002_furniture_anchors_candidate.json" dragon_house_clean/data/asset_proposals/
+          cp "$src/docs/art_review/TEEA_INT_20261122_002_REWORK_R1.sha256" dragon_house_clean/docs/art_review/
+          cp "$src/docs/art_review/TEEA_INT_20261122_002_REWORK_RESPONSE_FOR_QA.md" dragon_house_clean/docs/art_review/
+          cp "$src/docs/art_review/TEEA_INT_20261122_002_REWORK_SOURCE_PROVENANCE.json" dragon_house_clean/docs/art_review/
+          cp "$src/docs/art_review/TEEA_INT_20261122_002_anchor_measurements.json" dragon_house_clean/docs/art_review/
+          cp -f "$src/docs/art_review/TEEA_INT_20261122_002_REWORK_ANCHOR_GODOT_QA.log" /tmp/
+          cp -f "$src/docs/art_review/TEEA_INT_20261122_002_REWORK_FOREGROUND_GODOT_QA.log" /tmp/
+          cd dragon_house_clean
+          sha256sum --check docs/art_review/TEEA_INT_20261122_002_REWORK_R1.sha256
+          cd ..
+          git add dragon_house_clean/assets/rooms/common/R3/foreground.png \
+                  dragon_house_clean/assets/rooms/library/R2/foreground.png \
+                  dragon_house_clean/assets/rooms/rest/R1/foreground.png \
+                  dragon_house_clean/data/asset_proposals/TEEA_INT_20261122_002_foreground_layers_candidate.json \
+                  dragon_house_clean/data/asset_proposals/TEEA_INT_20261122_002_furniture_anchors_candidate.json \
+                  dragon_house_clean/docs/art_review/TEEA_INT_20261122_002_REWORK_R1.sha256 \
+                  dragon_house_clean/docs/art_review/TEEA_INT_20261122_002_REWORK_RESPONSE_FOR_QA.md \
+                  dragon_house_clean/docs/art_review/TEEA_INT_20261122_002_REWORK_SOURCE_PROVENANCE.json \
+                  dragon_house_clean/docs/art_review/TEEA_INT_20261122_002_anchor_measurements.json
+          git config user.name 'Dragon House QA Integrator'
+          git config user.email 'qa-integrator@users.noreply.github.com'
+          if ! git diff --cached --quiet; then
+            git commit -m 'QA ONLY: ingest Teea 002 REWORK R1 foregrounds and schema-2 candidates'
+            git push origin HEAD:qa/teea-int-20261122-002-r1
+          fi
+          git lfs pull
+
+      - name: Verify original 12 layers remain byte-identical and approvals stay false
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd dragon_house_clean
+          python3 - <<'PY'
+          import json,hashlib
+          from pathlib import Path
+          m=json.loads(Path("data/asset_proposals/TEEA_INT_20261122_002_interiors.json").read_text())
+          base=[]
+          for _,variants in m["room_types"].items():
+            for _,record in variants.items():
+              for layer in record["layers"]:
+                assert layer["approved"] is False
+                p=Path(layer["path"])
+                assert p.is_file()
+                assert hashlib.sha256(p.read_bytes()).hexdigest()==layer["sha256"]
+                base.append(p)
+          assert len(base)==12
+          a=json.loads(Path("data/asset_proposals/TEEA_INT_20261122_002_furniture_anchors_candidate.json").read_text())
+          f=json.loads(Path("data/asset_proposals/TEEA_INT_20261122_002_foreground_layers_candidate.json").read_text())
+          assert a["approved"] is False and f["approved"] is False
+          assert len([s for v in a["room_variants"].values() for s in v["stations"] if s["reservation_status"]=="CANDIDATE"])==10
+          assert len([s for v in a["room_variants"].values() for s in v["stations"] if s["reservation_status"].startswith("BLOCKED_")])==1
+          print("BASE_12_UNCHANGED / candidate approvals false / schema2 10+1")
+          PY
+
+      - name: Install official Godot 4.7.2 and macOS templates
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fLsS --retry 3 -o /tmp/godot.zip https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_linux.x86_64.zip
+          unzip -q /tmp/godot.zip -d /tmp
+          chmod +x /tmp/Godot_v4.7.2-stable_linux.x86_64
+          curl -fLsS --retry 3 -o /tmp/templates.tpz https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_export_templates.tpz
+          dest="$HOME/.local/share/godot/export_templates/4.7.2.stable"
+          mkdir -p "$dest"
+          unzip -jo /tmp/templates.tpz templates/version.txt templates/macos.zip -d "$dest"
+
+      - name: Import assets and run integrator QA
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd dragon_house_clean
+          G=/tmp/Godot_v4.7.2-stable_linux.x86_64
+          timeout 850s "$G" --headless --path . --editor --quit > /tmp/r1-import.log 2>&1
+          ! grep -Eq 'SCRIPT ERROR|Parse Error' /tmp/r1-import.log
+          for t in \
+            test_model test_locomotion test_social test_snapshot test_room_stations_v07 \
+            test_backwall_z_v11 test_teea_rework_r1_v13 \
+            test_teea_foreground_registration_v13 test_teea_mac_preview_v12; do
+            timeout 95s "$G" --headless --path . --script "res://tests/$t.gd" | tee "/tmp/$t.log"
+          done
+          grep -q 'TEEA_REWORK_R1_INTEGRATION_PASS' /tmp/test_teea_rework_r1_v13.log
+          grep -q 'TEEA_FOREGROUND_REGISTRATION_V13_PASS' /tmp/test_teea_foreground_registration_v13.log
+          grep -q 'TEEA002_MAC_PREVIEW_PASS' /tmp/test_teea_mac_preview_v12.log
+
+      - name: Export unsigned universal macOS R1 preview
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p releases
+          cd dragon_house_clean
+          G=/tmp/Godot_v4.7.2-stable_linux.x86_64
+          "$G" --headless --path . --export-release "macOS" ../releases/DragonHouse_Teea002_REWORK_R1_macOS15_M1_QA.zip > /tmp/r1-export.log 2>&1
+          cd ../releases
+          test -s DragonHouse_Teea002_REWORK_R1_macOS15_M1_QA.zip
+          cp ../dragon_house_clean/docs/art_review/README_Mac_QA_REWORK_R1_RU.txt .
+          zip -qj DragonHouse_Teea002_REWORK_R1_macOS15_M1_QA.zip README_Mac_QA_REWORK_R1_RU.txt
+          unzip -t DragonHouse_Teea002_REWORK_R1_macOS15_M1_QA.zip | tail -1
+          sha256sum DragonHouse_Teea002_REWORK_R1_macOS15_M1_QA.zip > DragonHouse_Teea002_REWORK_R1_macOS15_M1_QA.zip.sha256
+
+      - name: Upload private owner-review Mac build
+        uses: actions/upload-artifact@v4
+        with:
+          name: DragonHouse_Teea002_REWORK_R1_macOS15_M1_QA_NOT_APPROVED
+          path: |
+            releases/DragonHouse_Teea002_REWORK_R1_macOS15_M1_QA.zip
+            releases/DragonHouse_Teea002_REWORK_R1_macOS15_M1_QA.zip.sha256
+          retention-days: 7
+          if-no-files-found: error
