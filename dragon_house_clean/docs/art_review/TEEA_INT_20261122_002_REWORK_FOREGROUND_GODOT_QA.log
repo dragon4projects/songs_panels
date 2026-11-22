@@ -1,0 +1,3 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+TEEA_REWORK_FOREGROUND_QA {"files":[{"h":1024,"has_alpha":true,"load_error":0,"path":"/home/user/dragonhouse_asset_pipeline/rework_002/foreground_final/common.png","room":"common","texture_h":1024,"texture_w":4608,"w":4608},{"h":1024,"has_alpha":true,"load_error":0,"path":"/home/user/dragonhouse_asset_pipeline/rework_002/foreground_final/library.png","room":"library","texture_h":1024,"texture_w":3072,"w":3072},{"h":1024,"has_alpha":true,"load_error":0,"path":"/home/user/dragonhouse_asset_pipeline/rework_002/foreground_final/rest.png","room":"rest","texture_h":1024,"texture_w":1536,"w":1536}],"pass":true}
