@@ -53,8 +53,9 @@ jobs:
           cp "$src/docs/art_review/TEEA_INT_20261122_002_REWORK_RESPONSE_FOR_QA.md" dragon_house_clean/docs/art_review/
           cp "$src/docs/art_review/TEEA_INT_20261122_002_REWORK_SOURCE_PROVENANCE.json" dragon_house_clean/docs/art_review/
           cp "$src/docs/art_review/TEEA_INT_20261122_002_anchor_measurements.json" dragon_house_clean/docs/art_review/
-          cp -f "$src/docs/art_review/TEEA_INT_20261122_002_REWORK_ANCHOR_GODOT_QA.log" /tmp/
-          cp -f "$src/docs/art_review/TEEA_INT_20261122_002_REWORK_FOREGROUND_GODOT_QA.log" /tmp/
+          cp -f "$src/docs/art_review/TEEA_INT_20261122_002_REWORK_ANCHOR_GODOT_QA.log" dragon_house_clean/docs/art_review/
+          cp -f "$src/docs/art_review/TEEA_INT_20261122_002_REWORK_FOREGROUND_GODOT_QA.log" dragon_house_clean/docs/art_review/
+          cp -f "$src/docs/art_review/TEEA_INT_20261122_002_REWORK_OCCLUSION_QA.jpg" dragon_house_clean/docs/art_review/
           cd dragon_house_clean
           sha256sum --check docs/art_review/TEEA_INT_20261122_002_REWORK_R1.sha256
           cd ..
@@ -66,7 +67,10 @@ jobs:
                   dragon_house_clean/docs/art_review/TEEA_INT_20261122_002_REWORK_R1.sha256 \
                   dragon_house_clean/docs/art_review/TEEA_INT_20261122_002_REWORK_RESPONSE_FOR_QA.md \
                   dragon_house_clean/docs/art_review/TEEA_INT_20261122_002_REWORK_SOURCE_PROVENANCE.json \
-                  dragon_house_clean/docs/art_review/TEEA_INT_20261122_002_anchor_measurements.json
+                  dragon_house_clean/docs/art_review/TEEA_INT_20261122_002_anchor_measurements.json \
+                  dragon_house_clean/docs/art_review/TEEA_INT_20261122_002_REWORK_OCCLUSION_QA.jpg
+          git add -f dragon_house_clean/docs/art_review/TEEA_INT_20261122_002_REWORK_ANCHOR_GODOT_QA.log \
+                     dragon_house_clean/docs/art_review/TEEA_INT_20261122_002_REWORK_FOREGROUND_GODOT_QA.log
           git config user.name 'Dragon House QA Integrator'
           git config user.email 'qa-integrator@users.noreply.github.com'
           if ! git diff --cached --quiet; then
