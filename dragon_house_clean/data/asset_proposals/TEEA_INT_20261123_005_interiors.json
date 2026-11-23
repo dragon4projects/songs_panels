@@ -1,0 +1,307 @@
+{
+  "schema": 1,
+  "batch_id": "TEEA_INT_20261123_005",
+  "parent_visual_canon": "TEEA_INT_20261122_002_REWORK_R1",
+  "previous_interior_batch": "TEEA_INT_20261123_004",
+  "owner_review_status": "READY_FOR_INTEGRATOR_QA",
+  "owner_approved": false,
+  "approved": false,
+  "room_types": {
+    "common": {
+      "R1": {
+        "physical_width": 4.8,
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/common/R1/backdrop.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "3acb889864763d7d2ebe53baa1d513ef6f69bbcfaa6413237ec6006d1c350906"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/common/R1/back_decor.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "504f1a1e292a1bf7a860dc795c8779a5b11a0a63f3560095ce7cb8e7847eed5f"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/common/R1/furniture_back.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "f662b762d43b643b2cde807fbd948cb88d1cfb83f2772f11e00af2f120facf42"
+          },
+          {
+            "role": "foreground",
+            "path": "assets/rooms/common/R1/foreground.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "6c3bd56799988e7c6cff5594fd04e161b0636518cf188ff455f34789d2e5d296",
+            "physical_z": 0.15
+          }
+        ],
+        "station_count": 2,
+        "depth_readability_machine_pass": true
+      },
+      "R2": {
+        "physical_width": 9.6,
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/common/R2/backdrop.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "71a347a55fcf953e327d0e100f5aaf7ca5438b6c1703f7a1322b2c3d3930ac8b"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/common/R2/back_decor.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "527e328af6414bf2985db8569ce07fc61942d65080f22ab3b1e3aee13823d1c9"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/common/R2/furniture_back.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "0206bb66607d7c83c97f2b5bcb31e7b52c5b256900650f5119f47e55693b6e1f"
+          },
+          {
+            "role": "foreground",
+            "path": "assets/rooms/common/R2/foreground.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "b09b659176da7b57ad4a18fecd15907bd427b4ee9e5b2006e83d1a4ec16b3132",
+            "physical_z": 0.15
+          }
+        ],
+        "station_count": 4,
+        "depth_readability_machine_pass": true
+      }
+    },
+    "study": {
+      "R2": {
+        "physical_width": 9.6,
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/study/R2/backdrop.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "03ddff7762169be3dbbbef25e220b4e4424c470ab9cc0ef8c9754ffd7e00bd15"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/study/R2/back_decor.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "a745f5a486412e71893d900577ebc7c3dae31b79ed633e8dcecedd40c1c0992d"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/study/R2/furniture_back.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "d3ec85475aa1e1dff1abfb9453fb6529c19d78db2ae233899b9cf5e89212f7c5"
+          },
+          {
+            "role": "foreground",
+            "path": "assets/rooms/study/R2/foreground.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "db6e61fb0f363ea07ca6d9742fb4705b0aa377347a28b8b718d5a35066e39ece",
+            "physical_z": 0.15
+          }
+        ],
+        "station_count": 3,
+        "depth_readability_machine_pass": true
+      },
+      "R3": {
+        "physical_width": 14.399999999999999,
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/study/R3/backdrop.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "1586fc093c8271833acc74155df48db9848ade2211b989062fa1b5dd8f70bea7"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/study/R3/back_decor.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "536f79801bec0ee5e4ddd81df1ea096e8f2eaf57821551d285d138546e801e57"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/study/R3/furniture_back.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "b2e2139c3b8a650d232f26a924ae1cb2ba84e0657a7878862945c0c0f185e610"
+          },
+          {
+            "role": "foreground",
+            "path": "assets/rooms/study/R3/foreground.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "812579b7a3d212e162aa9eb3d16e363bb70e3fceda3f9b388525e8959643a6a6",
+            "physical_z": 0.15
+          }
+        ],
+        "station_count": 4,
+        "depth_readability_machine_pass": true
+      }
+    },
+    "rest": {
+      "R2": {
+        "physical_width": 9.6,
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/rest/R2/backdrop.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "081c3fd1a47c810b0de9dce8bdb209ad1c51f68064d57eca5a525e331403984f"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/rest/R2/back_decor.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "845cf26b6d08385993119ac9c810e81e708676b5da47300c996879834dd09e27"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/rest/R2/furniture_back.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "606fd3632affe16c4cb8af244a003ac5b21da1a7700d1210ab0e81076ee3b135"
+          },
+          {
+            "role": "foreground",
+            "path": "assets/rooms/rest/R2/foreground.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "44c231de98e4fda51e956bc4bd720cbe2b5e82293d0588de1bc40286156775c1",
+            "physical_z": 0.15
+          }
+        ],
+        "station_count": 3,
+        "depth_readability_machine_pass": true
+      },
+      "R3": {
+        "physical_width": 14.399999999999999,
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/rest/R3/backdrop.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "32db27ba3699e6f39c275ad5a8c431d93130c363f7aa37fbb38a26921869cede"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/rest/R3/back_decor.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "ac13246c47a697f383638c94b17b30d8cf8d50c53fcca2fdfec6ac222d6cd9a8"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/rest/R3/furniture_back.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "84b4f17aa348090263942c9ce145e8fc23c1d3df136ee0c688ef8b9accee60d4"
+          },
+          {
+            "role": "foreground",
+            "path": "assets/rooms/rest/R3/foreground.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "b06cc70424e72475c8837e285353849a6eeab1894c78805bcb687a9c7dbbf585",
+            "physical_z": 0.15
+          }
+        ],
+        "station_count": 4,
+        "depth_readability_machine_pass": true
+      }
+    },
+    "library": {
+      "R1": {
+        "physical_width": 4.8,
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/library/R1/backdrop.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "2e5f6d105492d57f07c17f296890d760886b3f919dee749ea28ba438e843dd3c"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/library/R1/back_decor.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "6e153e962568381a3b472d2a8f1e101f6d2f42abe5006fef0ddef856d0953bf1"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/library/R1/furniture_back.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "62c2b642227fadc164f300cc81399f45bdd0efcffba561fa0c4a1b1d392132ee"
+          },
+          {
+            "role": "foreground",
+            "path": "assets/rooms/library/R1/foreground.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "c43024aef55672094cfd9746b8b5139d8efd6cdd4930b3afca52b593dc5995f8",
+            "physical_z": 0.15
+          }
+        ],
+        "station_count": 2,
+        "depth_readability_machine_pass": true
+      },
+      "R3": {
+        "physical_width": 14.399999999999999,
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/library/R3/backdrop.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "ea40aa9de8b123be110161bfe64c88c47c9e522e3dce3f35fa93b9dc27258f2b"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/library/R3/back_decor.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "59efef466dfa1b68219c3a0dad9c0c890008de29bd8f5e8bfdde8bf6443c733e"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/library/R3/furniture_back.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "29107ab0ebd184611dec3ebacd935a4bda863b197078e4db7d80bc4d8963084d"
+          },
+          {
+            "role": "foreground",
+            "path": "assets/rooms/library/R3/foreground.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "4d8a0efb9fc003601e9e0ef034ac0a889109446561bf12bfdc19996cb29559b3",
+            "physical_z": 0.15
+          }
+        ],
+        "station_count": 4,
+        "depth_readability_machine_pass": true
+      }
+    }
+  }
+}
