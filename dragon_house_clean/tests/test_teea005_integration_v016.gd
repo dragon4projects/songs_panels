@@ -46,6 +46,10 @@ func _assert_fg(scene,room:Dictionary)->void:
 	scene.yaw=0.0
 
 func run()->void:
+	create_timer(75.0).timeout.connect(func():
+		printerr("TEEA005_INTEGRATION_V016_WATCHDOG")
+		quit(3)
+	)
 	var scene=load("res://scenes/main.tscn").instantiate()
 	scene.world.save_path="user://teea005_v016_test.json"
 	root.add_child(scene)
@@ -62,11 +66,31 @@ func run()->void:
 		"library/R1":_add_group(scene,"library",1,26,2),
 		"library/R3":_add_group(scene,"library",3,26,3)
 	}
+	# TEEA005 must fill missing variants without mutating owner-accepted TEEA002
+	# contracts. Keep a real Library R2 in the same runtime for that proof.
+	var accepted_library_r2:Array=_add_group(scene,"library",2,-12,4)
 	scene.make_rooms()
 	scene.qa_visual_preview=true
 	scene.make_residents()
 	await process_frame
 	await process_frame
+
+	# Accepted matrix cells outside batch005 remain exact.
+	var common_r3_raw:Dictionary=scene.interior_skin.config.get("room_types",{}).get("common",{}).get("R3",{})
+	assert(common_r3_raw.get("layers",[]).size()==4)
+	for item in common_r3_raw.get("layers",[]):
+		assert(str(item.get("source_batch",""))=="TEEA_INT_20261122_002_REWORK_R1")
+	var lib_r2_raw:Dictionary=scene.interior_skin.config.get("room_types",{}).get("library",{}).get("R2",{})
+	assert(lib_r2_raw.get("layers",[]).size()==4)
+	for item in lib_r2_raw.get("layers",[]):
+		assert(str(item.get("source_batch",""))=="TEEA_INT_20261122_002_REWORK_R1")
+	var lib_left:Array=scene.life.stations.furniture.for_room_variant(accepted_library_r2[0],2,0)
+	var lib_right:Array=scene.life.stations.furniture.for_room_variant(accepted_library_r2[1],2,1)
+	assert(str(lib_left[0].get("id",""))=="library_chair_left_seat_a")
+	assert(str(lib_right[0].get("id",""))=="library_chair_right_seat_a")
+	var seeded_common:Dictionary=scene.world.get_room(-2,0)
+	var common_left:Array=scene.life.stations.furniture.for_room_variant(seeded_common,3,0)
+	assert(str(common_left[0].get("id",""))=="common_sofa_left_seat_a")
 
 	var expected_counts={
 		"common/R1":[2],
@@ -102,5 +126,5 @@ func run()->void:
 
 	for suffix in ["",".bak",".tmp"]:
 		DirAccess.remove_absolute(ProjectSettings.globalize_path(scene.world.save_path+suffix))
-	print("TEEA005_INTEGRATION_V016_PASS variants=8 layers=32 stations=26 foreground=8 depth_bands=runtime")
+	print("TEEA005_INTEGRATION_V016_PASS variants=8 layers=32 stations=26 foreground=8 depth_bands=runtime accepted_002=preserved")
 	quit(0)
