@@ -1,5 +1,6 @@
 extends RefCounted
-const EventStore = preload("res://scripts/world_event_store.gd")
+const JsonEventStore = preload("res://scripts/world_event_store.gd")
+const SQLiteEventStore = preload("res://scripts/world_event_store_sqlite.gd")
 const EventGate = preload("res://scripts/world_event_gate.gd")
 const ObjectReducer = preload("res://scripts/object_event_reducer.gd")
 
@@ -7,7 +8,8 @@ const ObjectReducer = preload("res://scripts/object_event_reducer.gd")
 ## their durable truth path to gate -> append-only event -> reducer projection.
 
 var world
-var store = EventStore.new()
+var store = JsonEventStore.new()
+var backend_requested: String = "json"
 var gate = EventGate.new()
 var reducer = ObjectReducer.new()
 var ready: bool = false
@@ -15,8 +17,68 @@ var status: String = "UNINITIALIZED"
 var last_error: String = ""
 var event_nonce: int = 0
 
+func _select_store() -> void:
+	var requested: String = OS.get_environment(
+		"DRAGON_OBJECT_EVENT_BACKEND").strip_edges().to_lower()
+	var sqlite_path := str(world.save_path)+".world_events_v1.sqlite"
+	var saved_backend := str(world.runtime_state.get("object_event_backend",""))
+	var sticky_sqlite := FileAccess.file_exists(sqlite_path) or 		saved_backend.begins_with("sqlite_")
+	# Once SQLite canonical state exists, it always wins. An environment
+	# variable may opt a clean store into SQLite, but may never downgrade an
+	# existing SQLite world back to a stale JSON history.
+	if sticky_sqlite or requested == "sqlite":
+		store = SQLiteEventStore.new()
+		backend_requested = "sqlite"
+	else:
+		store = JsonEventStore.new()
+		backend_requested = "json"
+
+func _legacy_json_event_store_exists() -> bool:
+	var base := str(world.save_path)+".world_events_v1.json"
+	return FileAccess.file_exists(base) or FileAccess.file_exists(base+".bak")
+
+func _migrate_json_event_store_to_sqlite() -> int:
+	if backend_requested != "sqlite" or not store.events.is_empty() or 			not _legacy_json_event_store_exists():
+		return 0
+	var legacy = JsonEventStore.new()
+	if not legacy.setup(str(world.save_path)):
+		last_error = "Canonical v0.20 JSON event stream is unreadable: "+legacy.last_error
+		return -1
+	var source_events: Array = legacy.snapshot_events()
+	if source_events.is_empty():
+		return 0
+	var projection: Dictionary = reducer.replay(source_events)
+	if projection.is_empty():
+		last_error = "Cannot reduce canonical v0.20 JSON stream: "+reducer.last_error
+		return -1
+	if not store.has_method("import_canonical_events"):
+		last_error = "Selected SQLite backend cannot import canonical events"
+		return -1
+	var imported: Array = store.import_canonical_events(source_events,projection)
+	if imported.size() != source_events.size():
+		last_error = "SQLite canonical import failed: "+str(store.last_error)
+		return -1
+	for i in range(source_events.size()):
+		var before: Dictionary = source_events[i]
+		var after: Dictionary = imported[i]
+		if str(before.get("event_id","")) != str(after.get("event_id","")) or 				int(before.get("seq",0)) != int(after.get("seq",0)):
+			last_error = "SQLite migration changed canonical event identity/order"
+			return -1
+	if store.has_method("derived_objects_snapshot"):
+		var persisted_projection: Dictionary = store.derived_objects_snapshot()
+		if persisted_projection != projection:
+			last_error = "SQLite migration projection differs from reducer projection"
+			return -1
+	_publish_projection(projection)
+	world.runtime_state["object_event_migrated_from_backend"] = "json_append_compat_v1"
+	world.runtime_state["object_event_migrated_event_count"] = imported.size()
+	world.runtime_state["object_event_migration_source"] = 		str(world.save_path)+".world_events_v1.json"
+	_reconcile_journal_from_store()
+	return imported.size()
+
 func setup(p_world) -> bool:
 	world = p_world
+	_select_store()
 	ready = false
 	status = "INITIALIZING"
 	last_error = ""
@@ -25,14 +87,30 @@ func setup(p_world) -> bool:
 		last_error = store.last_error
 		_update_runtime_state()
 		return false
+	var canonical_migrated := _migrate_json_event_store_to_sqlite()
+	if canonical_migrated < 0:
+		status = "JSON_EVENT_MIGRATION_FAILED"
+		_update_runtime_state()
+		return false
 	event_nonce = store.last_sequence()
-	if not store.events.is_empty():
+	if canonical_migrated > 0:
+		status = "MIGRATED_JSON_EVENT_STORE"
+	elif not store.events.is_empty():
 		var projection: Dictionary = reducer.replay(store.snapshot_events())
 		if projection.is_empty():
 			status = "REDUCER_REPLAY_FAILED"
 			last_error = reducer.last_error
 			_update_runtime_state()
 			return false
+		if store.has_method("derived_objects_snapshot"):
+			var persisted_projection: Dictionary = store.derived_objects_snapshot()
+			if persisted_projection != projection:
+				if not store.has_method("rebuild_projection") or 						not bool(store.rebuild_projection(projection)):
+					status = "PROJECTION_REBUILD_FAILED"
+					last_error = str(store.last_error)
+					_update_runtime_state()
+					return false
+				world.runtime_state["object_event_projection_rebuilt"] = true
 		_publish_projection(projection)
 		_reconcile_journal_from_store()
 		status = "REPLAYED_FROM_BACKUP" if store.status == "RECOVERED_FROM_BACKUP" else "REPLAYED"
@@ -53,7 +131,7 @@ func _update_runtime_state() -> void:
 		return
 	world.runtime_state["object_event_revision"] = store.last_sequence()
 	world.runtime_state["object_event_status"] = status
-	world.runtime_state["object_event_backend"] = "json_append_compat_v1"
+	world.runtime_state["object_event_backend"] = str(store.backend_name()) if store.has_method("backend_name") else backend_requested
 	world.runtime_state["object_event_store_path"] = store.storage_path()
 	if last_error != "":
 		world.runtime_state["object_event_last_error"] = last_error
@@ -183,7 +261,7 @@ func _migrate_snapshot_objects() -> bool:
 			return false
 		candidate = next
 		migration_events.append(event)
-	var committed: Array = store.append_many(migration_events)
+	var committed: Array = store.append_many_with_projection(migration_events,candidate) if store.has_method("append_many_with_projection") else store.append_many(migration_events)
 	if committed.size() != migration_events.size():
 		last_error = "migration store: "+store.last_error
 		return false
@@ -302,7 +380,7 @@ func submit(event: Dictionary, write_journal: bool = true) -> Dictionary:
 	if candidate.is_empty():
 		last_error = reducer.last_error
 		return {"ok":false,"error":last_error}
-	var committed: Dictionary = store.append(event)
+	var committed: Dictionary = store.append_with_projection(event,candidate) if store.has_method("append_with_projection") else store.append(event)
 	if committed.is_empty():
 		last_error = store.last_error
 		status = store.status

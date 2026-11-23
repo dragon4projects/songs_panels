@@ -13,6 +13,9 @@ var sequence: int = 0
 var status: String = "UNINITIALIZED"
 var last_error: String = ""
 
+func backend_name() -> String:
+	return "json_append_compat_v1"
+
 func setup(base_save_path: String) -> bool:
 	path = base_save_path + ".world_events_v1.json"
 	events.clear()
