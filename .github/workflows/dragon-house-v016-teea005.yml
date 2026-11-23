@@ -1,0 +1,142 @@
+name: Dragon House v0.16 TEEA005 integrator QA
+
+on:
+  push:
+    branches: [dev/dragon-house-v016-teea005-integration]
+    paths:
+      - '.github/workflows/dragon-house-v016-teea005.yml'
+      - 'dragon_house_clean/tools/prepare_teea005_qa.py'
+      - 'dragon_house_clean/tools/qa_teea005_depth.py'
+      - 'dragon_house_clean/tests/test_teea005_integration_v016.gd'
+      - 'dragon_house_clean/tests/capture_teea005_v016.gd'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  teea005-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+          fetch-depth: 1
+
+      - name: Pull current LFS bytes
+        shell: bash
+        run: |
+          set -euo pipefail
+          git lfs install --local
+          git lfs pull
+
+      - name: Download exact TEEA005 payload
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fLsS --retry 3 -o /tmp/teea005.zip             'https://d2ol7oe51mr4n9.cloudfront.net/user_3JdI9kJ82xObF8Bi3EgU4P6DaoR/dcec30e5-df76-4440-a49a-446b500940e4.zip'
+          echo '5cc946bcba991d0d357b02310a16109dda866e79b8e961d76766f4aa24641fbd  /tmp/teea005.zip' | sha256sum -c -
+          rm -rf /tmp/teea005 && mkdir -p /tmp/teea005
+          unzip -q /tmp/teea005.zip -d /tmp/teea005
+
+      - name: Independent depth/geometry QA and ephemeral mount
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd dragon_house_clean
+          python3 tools/qa_teea005_depth.py             --payload-root /tmp/teea005/dragon_house_clean             --report private_review/teea005_depth_report.json
+          python3 tools/prepare_teea005_qa.py             --project .             --payload-root /tmp/teea005/dragon_house_clean             --report private_review/teea005_prepare_report.json
+          grep -q '"owner_approved": false' private_review/teea005_prepare_report.json
+          grep -q '"qa_candidate_owner_approved_005": false' data/furniture_interactions_v1.json
+
+      - name: Download Godot 4.7.2
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fLsS --retry 3 -o /tmp/Godot_4.7.2.zip             https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_linux.x86_64.zip
+          unzip -q /tmp/Godot_4.7.2.zip -d /tmp
+          chmod +x /tmp/Godot_v4.7.2-stable_linux.x86_64
+
+      - name: Import exact payload and run runtime regressions
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd dragon_house_clean
+          timeout 900s /tmp/Godot_v4.7.2-stable_linux.x86_64             --headless --path . --editor --quit > teea005_import.log 2>&1
+          if grep -Eq 'SCRIPT ERROR|Parse Error|Parser Error' teea005_import.log; then
+            tail -160 teea005_import.log
+            exit 1
+          fi
+          for t in             tests/test_teea005_integration_v016.gd             tests/test_width_anchors_v012.gd             tests/test_furniture_contract_v10.gd             tests/test_corridor_passing_v013.gd             tests/test_private_door_note_v016.gd; do
+            echo "RUN $t"
+            result="$(timeout 240s /tmp/Godot_v4.7.2-stable_linux.x86_64               --headless --path . --script "res://$t" 2>&1)"
+            echo "$result"
+            echo "$result" | grep -q '_PASS'
+            if echo "$result" | grep -qE 'SCRIPT ERROR|Parse Error|Assertion failed'; then
+              exit 1
+            fi
+          done
+
+      - name: Render live measured-station depth evidence
+        shell: bash
+        run: |
+          set -euo pipefail
+          if ! command -v xvfb-run >/dev/null 2>&1; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq xvfb
+          fi
+          cd dragon_house_clean
+          rm -rf private_review/teea005
+          xvfb-run -a /tmp/Godot_v4.7.2-stable_linux.x86_64             --path . --rendering-method gl_compatibility             --script res://tests/capture_teea005_v016.gd             | tee teea005_capture.log
+          grep -q 'TEEA005_V016_CAPTURE_PASS' teea005_capture.log
+          test "$(find private_review/teea005 -maxdepth 1 -name '*.png' | wc -l)" -eq 14
+
+      - name: Build contact sheet
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m venv /tmp/teea005-venv
+          /tmp/teea005-venv/bin/pip install --disable-pip-version-check --quiet Pillow
+          cd dragon_house_clean
+          /tmp/teea005-venv/bin/python - <<'PY'
+          from pathlib import Path
+          from PIL import Image,ImageDraw
+          files=sorted(Path('private_review/teea005').glob('*.png'))
+          assert len(files)==14
+          thumbs=[]
+          for p in files:
+              im=Image.open(p).convert('RGB')
+              im.thumbnail((480,270))
+              c=Image.new('RGB',(500,305),'black')
+              c.paste(im,((500-im.width)//2,5))
+              ImageDraw.Draw(c).text((8,282),p.stem,fill='white')
+              thumbs.append(c)
+          cols=4
+          rows=(len(thumbs)+cols-1)//cols
+          sheet=Image.new('RGB',(cols*500,rows*305),'black')
+          for i,im in enumerate(thumbs):
+              sheet.paste(im,((i%cols)*500,(i//cols)*305))
+          sheet.save('private_review/teea005/teea005_live_contact.jpg',quality=90)
+          PY
+
+      - name: Prove source branch still not owner-approved
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch --depth=1 origin art/teea-interiors-TEEA_INT_20261123_005
+          git show FETCH_HEAD:dragon_house_clean/data/asset_proposals/TEEA_INT_20261123_005_interiors.json             | grep -q '"approved": false'
+
+      - name: Upload private integrator evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dragon-house-teea005-integrator-qa
+          path: |
+            dragon_house_clean/private_review/teea005/
+            dragon_house_clean/private_review/teea005_depth_report.json
+            dragon_house_clean/private_review/teea005_prepare_report.json
+            dragon_house_clean/teea005_import.log
+            dragon_house_clean/teea005_capture.log
+          if-no-files-found: ignore
+          retention-days: 3
