@@ -28,6 +28,13 @@ func run() -> void:
 	assert(scene.detailed_room_groups.size()==0,"Never build all furniture at overview")
 	var group_count:int=scene.room_root.get_child_count()
 	assert(group_count>=30,"No room shell lost when growing house")
+	# v0.19 semantic hierarchy: HOUSE is intentionally shell-only even if a
+	# legacy caller forces a close zoom. Detail materialization belongs to
+	# ROOM/FOLLOW, so enter a real public room before testing the near bound.
+	var detail_room:Dictionary=world.get_room(0,0)
+	assert(not detail_room.is_empty())
+	scene.selected_room=str(detail_room["id"])
+	scene.set_mode("ROOM")
 	scene.zoom_current=10.0
 	scene.zoom=10.0
 	scene.smooth_focus=Vector3.ZERO
