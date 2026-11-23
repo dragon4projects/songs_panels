@@ -1,0 +1,480 @@
+{
+  "schema": 2,
+  "batch_id": "TEEA_INT_20261122_003",
+  "approved": false,
+  "coordinate_space": "godot_group_modules",
+  "unit": "world_meter",
+  "module_width": 4.8,
+  "depth_axis_mapping": "godot_local_z = -blender_world_y",
+  "calibration": {
+    "godot_backwall_z": -2.04,
+    "godot_public_aisle_z": 0.95,
+    "feet_contact_y": 0.0
+  },
+  "room_variants": {
+    "arrival/R1": {
+      "stations": [],
+      "non_station_furniture": [
+        {
+          "furniture_id": "arrival_bench",
+          "kind": "collision_only",
+          "group_local_x": -0.55,
+          "authored_center_z": -0.72,
+          "collision_footprint": [
+            [
+              -1.1616,
+              -0.9807
+            ],
+            [
+              0.0616,
+              -0.9807
+            ],
+            [
+              0.0616,
+              -0.4593
+            ],
+            [
+              -1.1616,
+              -0.4593
+            ]
+          ],
+          "reason": "NO_RESIDENT_STATION_AUTHORED",
+          "confidence": "AUTHOR_CONFIRMED_FROM_CALIBRATED_BLENDER_BATCH003_SCENE"
+        },
+        {
+          "furniture_id": "arrival_suitcase",
+          "kind": "collision_only",
+          "group_local_x": 1.2,
+          "authored_center_z": -0.72,
+          "collision_footprint": [
+            [
+              0.814,
+              -0.7774
+            ],
+            [
+              1.586,
+              -0.7774
+            ],
+            [
+              1.586,
+              -0.6626
+            ],
+            [
+              0.814,
+              -0.6626
+            ]
+          ],
+          "reason": "NO_RESIDENT_STATION_AUTHORED",
+          "confidence": "AUTHOR_CONFIRMED_FROM_CALIBRATED_BLENDER_BATCH003_SCENE"
+        }
+      ]
+    },
+    "corridor/R1": {
+      "stations": [],
+      "non_station_furniture": []
+    },
+    "music/R1": {
+      "stations": [
+        {
+          "id": "music_listen_chair_seat_a",
+          "furniture_id": "music_listen_chair",
+          "module_index": 0,
+          "group_local_x": 0.55,
+          "cell_local_x": 0.55,
+          "cell_local_z": -0.4742,
+          "feet_contact_y": 0.0,
+          "approach_local_z": 0.95,
+          "kind": "seat",
+          "pose_hint": "LISTEN",
+          "occupancy_capacity": 1,
+          "seat_width": 0.7572,
+          "occlusion_role": "foreground",
+          "source_visual_anchor": "music_listen_chair",
+          "collision_footprint": [
+            [
+              0.1667,
+              -1.0323
+            ],
+            [
+              0.9333,
+              -1.0323
+            ],
+            [
+              0.9333,
+              -0.1277
+            ],
+            [
+              0.1667,
+              -0.1277
+            ]
+          ],
+          "confidence": "AUTHOR_CONFIRMED_FROM_CALIBRATED_BLENDER_BATCH003_SCENE",
+          "reservation_status": "CANDIDATE"
+        }
+      ],
+      "non_station_furniture": [
+        {
+          "furniture_id": "music_side_table",
+          "kind": "collision_only",
+          "group_local_x": 1.52,
+          "authored_center_z": -0.52,
+          "collision_footprint": [
+            [
+              1.3495,
+              -0.6595
+            ],
+            [
+              1.6905,
+              -0.6595
+            ],
+            [
+              1.6905,
+              -0.3805
+            ],
+            [
+              1.3495,
+              -0.3805
+            ]
+          ],
+          "reason": "NO_RESIDENT_STATION_AUTHORED",
+          "confidence": "AUTHOR_CONFIRMED_FROM_CALIBRATED_BLENDER_BATCH003_SCENE"
+        }
+      ]
+    },
+    "cinema/R1": {
+      "stations": [
+        {
+          "id": "cinema_sofa_seat_a",
+          "furniture_id": "cinema_sofa",
+          "module_index": 0,
+          "group_local_x": -0.5896,
+          "cell_local_x": -0.5896,
+          "cell_local_z": -0.3424,
+          "feet_contact_y": 0.0,
+          "approach_local_z": 0.95,
+          "kind": "seat",
+          "pose_hint": "WATCH",
+          "occupancy_capacity": 1,
+          "seat_width": 0.6792,
+          "occlusion_role": "foreground",
+          "source_visual_anchor": "cinema_sofa",
+          "collision_footprint": [
+            [
+              -1.0813,
+              -0.8562
+            ],
+            [
+              0.5813,
+              -0.8562
+            ],
+            [
+              0.5813,
+              -0.1038
+            ],
+            [
+              -1.0813,
+              -0.1038
+            ]
+          ],
+          "confidence": "AUTHOR_CONFIRMED_FROM_CALIBRATED_BLENDER_BATCH003_SCENE",
+          "reservation_status": "CANDIDATE"
+        },
+        {
+          "id": "cinema_sofa_seat_b",
+          "furniture_id": "cinema_sofa",
+          "module_index": 0,
+          "group_local_x": 0.0896,
+          "cell_local_x": 0.0896,
+          "cell_local_z": -0.3424,
+          "feet_contact_y": 0.0,
+          "approach_local_z": 0.95,
+          "kind": "seat",
+          "pose_hint": "WATCH",
+          "occupancy_capacity": 1,
+          "seat_width": 0.6792,
+          "occlusion_role": "foreground",
+          "source_visual_anchor": "cinema_sofa",
+          "collision_footprint": [
+            [
+              -1.0813,
+              -0.8562
+            ],
+            [
+              0.5813,
+              -0.8562
+            ],
+            [
+              0.5813,
+              -0.1038
+            ],
+            [
+              -1.0813,
+              -0.1038
+            ]
+          ],
+          "confidence": "AUTHOR_CONFIRMED_FROM_CALIBRATED_BLENDER_BATCH003_SCENE",
+          "reservation_status": "CANDIDATE"
+        }
+      ],
+      "non_station_furniture": [
+        {
+          "furniture_id": "cinema_projector_table",
+          "kind": "collision_only",
+          "group_local_x": 1.55,
+          "authored_center_z": -0.58,
+          "collision_footprint": [
+            [
+              1.1652,
+              -0.7468
+            ],
+            [
+              1.9348,
+              -0.7468
+            ],
+            [
+              1.9348,
+              -0.4132
+            ],
+            [
+              1.1652,
+              -0.4132
+            ]
+          ],
+          "reason": "NO_RESIDENT_STATION_AUTHORED",
+          "confidence": "AUTHOR_CONFIRMED_FROM_CALIBRATED_BLENDER_BATCH003_SCENE"
+        }
+      ]
+    },
+    "artifact/R1": {
+      "stations": [
+        {
+          "id": "artifact_cabinet_view",
+          "furniture_id": "artifact_cabinet",
+          "module_index": 0,
+          "group_local_x": 1.2,
+          "cell_local_x": 1.2,
+          "cell_local_z": -0.5524,
+          "feet_contact_y": 0.0,
+          "approach_local_z": 0.95,
+          "kind": "view",
+          "pose_hint": "INSPECT",
+          "occupancy_capacity": 1,
+          "occlusion_role": "furniture_back",
+          "source_visual_anchor": "artifact_cabinet",
+          "collision_footprint": [
+            [
+              0.5733,
+              -1.3876
+            ],
+            [
+              1.8267,
+              -1.3876
+            ],
+            [
+              1.8267,
+              -0.9724
+            ],
+            [
+              0.5733,
+              -0.9724
+            ]
+          ],
+          "confidence": "AUTHOR_CONFIRMED_FROM_CALIBRATED_BLENDER_BATCH003_SCENE",
+          "reservation_status": "CANDIDATE"
+        },
+        {
+          "id": "artifact_pedestal_view",
+          "furniture_id": "artifact_pedestal",
+          "module_index": 0,
+          "group_local_x": -0.38,
+          "cell_local_x": -0.38,
+          "cell_local_z": -0.13,
+          "feet_contact_y": 0.0,
+          "approach_local_z": 0.95,
+          "kind": "view",
+          "pose_hint": "INSPECT",
+          "occupancy_capacity": 1,
+          "occlusion_role": "furniture_back",
+          "source_visual_anchor": "artifact_pedestal",
+          "collision_footprint": [
+            [
+              -0.61,
+              -1.01
+            ],
+            [
+              -0.15,
+              -1.01
+            ],
+            [
+              -0.15,
+              -0.55
+            ],
+            [
+              -0.61,
+              -0.55
+            ]
+          ],
+          "confidence": "AUTHOR_CONFIRMED_FROM_CALIBRATED_BLENDER_BATCH003_SCENE",
+          "reservation_status": "CANDIDATE"
+        }
+      ],
+      "non_station_furniture": [
+        {
+          "furniture_id": "artifact_suitcase",
+          "kind": "collision_only",
+          "group_local_x": 0.18,
+          "authored_center_z": -0.68,
+          "collision_footprint": [
+            [
+              -0.1416,
+              -0.7278
+            ],
+            [
+              0.5016,
+              -0.7278
+            ],
+            [
+              0.5016,
+              -0.6322
+            ],
+            [
+              -0.1416,
+              -0.6322
+            ]
+          ],
+          "reason": "NO_RESIDENT_STATION_AUTHORED",
+          "confidence": "AUTHOR_CONFIRMED_FROM_CALIBRATED_BLENDER_BATCH003_SCENE"
+        }
+      ]
+    },
+    "workshop/R1": {
+      "stations": [
+        {
+          "id": "workshop_stool_work",
+          "furniture_id": "workshop_stool",
+          "module_index": 0,
+          "group_local_x": -0.62,
+          "cell_local_x": -0.62,
+          "cell_local_z": -0.2853,
+          "feet_contact_y": 0.0,
+          "approach_local_z": 0.95,
+          "kind": "work",
+          "pose_hint": "USE",
+          "occupancy_capacity": 1,
+          "seat_width": 0.3525,
+          "occlusion_role": "furniture_back",
+          "source_visual_anchor": "workshop_stool",
+          "collision_footprint": [
+            [
+              -0.8127,
+              -0.4834
+            ],
+            [
+              -0.4273,
+              -0.4834
+            ],
+            [
+              -0.4273,
+              -0.0766
+            ],
+            [
+              -0.8127,
+              -0.0766
+            ]
+          ],
+          "confidence": "AUTHOR_CONFIRMED_FROM_CALIBRATED_BLENDER_BATCH003_SCENE",
+          "reservation_status": "CANDIDATE"
+        },
+        {
+          "id": "workshop_bench_work",
+          "furniture_id": "workshop_bench",
+          "module_index": 0,
+          "group_local_x": 0.6,
+          "cell_local_x": 0.6,
+          "cell_local_z": -0.31,
+          "feet_contact_y": 0.0,
+          "approach_local_z": 0.95,
+          "kind": "work",
+          "pose_hint": "USE",
+          "occupancy_capacity": 1,
+          "occlusion_role": "furniture_back",
+          "source_visual_anchor": "workshop_bench",
+          "collision_footprint": [
+            [
+              -0.8,
+              -1.33
+            ],
+            [
+              1.1,
+              -1.33
+            ],
+            [
+              1.1,
+              -0.63
+            ],
+            [
+              -0.8,
+              -0.63
+            ]
+          ],
+          "confidence": "AUTHOR_CONFIRMED_FROM_CALIBRATED_BLENDER_BATCH003_SCENE",
+          "reservation_status": "CANDIDATE"
+        }
+      ],
+      "non_station_furniture": [
+        {
+          "furniture_id": "workshop_tool_chest",
+          "kind": "collision_only",
+          "group_local_x": 1.55,
+          "authored_center_z": -1.2,
+          "collision_footprint": [
+            [
+              1.2827,
+              -1.3588
+            ],
+            [
+              1.8173,
+              -1.3588
+            ],
+            [
+              1.8173,
+              -1.0412
+            ],
+            [
+              1.2827,
+              -1.0412
+            ]
+          ],
+          "reason": "NO_RESIDENT_STATION_AUTHORED",
+          "confidence": "AUTHOR_CONFIRMED_FROM_CALIBRATED_BLENDER_BATCH003_SCENE"
+        },
+        {
+          "furniture_id": "workshop_tool_cart",
+          "kind": "collision_only",
+          "group_local_x": -1.45,
+          "authored_center_z": -1.12,
+          "collision_footprint": [
+            [
+              -1.8193,
+              -1.3386
+            ],
+            [
+              -1.0807,
+              -1.3386
+            ],
+            [
+              -1.0807,
+              -0.9014
+            ],
+            [
+              -1.8193,
+              -0.9014
+            ]
+          ],
+          "reason": "NO_RESIDENT_STATION_AUTHORED",
+          "confidence": "AUTHOR_CONFIRMED_FROM_CALIBRATED_BLENDER_BATCH003_SCENE"
+        }
+      ]
+    }
+  }
+}
