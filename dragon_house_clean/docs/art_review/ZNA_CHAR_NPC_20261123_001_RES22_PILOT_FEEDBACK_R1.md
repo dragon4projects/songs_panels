@@ -259,3 +259,48 @@ production_banks_generated: 0
 ```
 
 **BULK GENERATION REMAINS BLOCKED UNTIL THIS PILOT PASSES.**
+
+
+## INTEGRATOR DELIVERY CONTRACT — MANDATORY
+
+A local sandbox path is **not a delivery**.
+
+The integrator cannot access another agent's private `/mnt/data`, local staging directory, or temporary sandbox filesystem.
+
+Therefore these are **NOT acceptable handoff references by themselves**:
+
+- `/mnt/data/DRAGON_HOUSE_RES22_24_INTEGRATOR_QA.md`
+- `/mnt/data/Dragon_House_RES22_24_integrator_drop.zip`
+- `/mnt/data/dragon_house_integrator_drop/`
+
+### PASS delivery methods
+
+Use one of the following:
+
+1. **GitHub branch commit**
+   - push QA report / manifests / scripts / metadata to this art branch;
+   - push candidate binary PNG through the repository's established Git LFS path structure;
+   - provide exact branch + head SHA.
+
+2. **GitHub Actions artifact**
+   - workflow must upload the exact integrator drop ZIP;
+   - provide run ID + artifact name + SHA-256.
+
+3. **Dragon House cloud Library**
+   - upload the exact QA report and drop ZIP into:
+     `/Dragon cave/DRAGON_HOUSE_ARCHITECT_2026-09-29/`
+   - provide the Library paths.
+
+### Required final handoff line
+
+```
+integrator_delivery: ACCESSIBLE
+delivery_method: GITHUB_LFS | GITHUB_ACTIONS_ARTIFACT | CLOUD_LIBRARY
+branch_or_library_path: <exact>
+head_or_artifact_digest: <exact>
+local_only_paths: NONE
+```
+
+If `local_only_paths != NONE`, machine status must remain `NOT_DELIVERED`.
+
+This delivery rule is independent of the visual pilot STOP above.
