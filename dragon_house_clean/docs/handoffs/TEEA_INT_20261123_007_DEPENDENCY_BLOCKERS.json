@@ -1,0 +1,58 @@
+{
+  "schema": 2,
+  "batch_id": "TEEA_INT_20261123_007",
+  "observed_sources": {
+    "production_branch": {
+      "branch": "dragon-house-fallout-fresh",
+      "head_observed": "c280f62778bcc4a4ac0093db48a852f0469b6bf2",
+      "message": "Dragon House v0.18: ambient creatures, guest access and content viewer"
+    },
+    "teea006_branch": {
+      "branch": "art/teea-interiors-TEEA_INT_20261123_006",
+      "head_observed": "ac44724c39275d365c185af0435b6dea676d24ae",
+      "state": "DOCS_ONLY_AT_OBSERVATION"
+    },
+    "znaechka_npc_branch": {
+      "branch": "art/znaechka-characters-ZNA_CHAR_NPC_20261123_001",
+      "head_observed": "b3f81349840707b6c0b95ec025b7a8e827175752"
+    }
+  },
+  "resolved_since_initial_007_work": [
+    "Canonical room type guest now exists in production.",
+    "Guest open/closed access and public-cutaway rules now exist.",
+    "Content viewer and register_content_hotspot API now exist.",
+    "Verified non-Manjka actor render contract uses pixel_size = 1.9 / texture_height."
+  ],
+  "blockers": [
+    {
+      "id": "BLOCK_ACTUAL_GUEST_ALPHA_LFS_AUTH",
+      "affects": [
+        "PASS-A exact actual-sprite/body-footprint clause",
+        "PASS-D actual-sprite yaw/occlusion proof"
+      ],
+      "evidence": {
+        "NPC_CENTAUR": "LFS oid sha256:2abcd9620fb249b37079235745516224bc39b46be6c4abec35fd69cd22fea47f size=61233",
+        "NPC_VAMPIRE_GIRL": "LFS oid sha256:501284e9724441533d9cc34648c6956c564a1a097008f4e2b15bea6238f65fee size=55080",
+        "NPC_GINGER_CAT_GUEST": "LFS oid sha256:5f3eb9dc8efef0c14a96de47887a099e9dec90d9cb0f14cb65162b5e66e05804 size=69827",
+        "sandbox_lfs_batch": "HTTP 401 Requires authentication"
+      },
+      "mitigation": "All three doors are 2.10x2.45 m and Centaur turning envelope is 2.50 m. This exceeds the full 1.9x1.9 m runtime Sprite3D plane bound for 512x512 verified actors; geometry pass uses this conservative runtime bound, not a guessed alpha silhouette.",
+      "resolution": "Integrator with GitHub/LFS access materializes canonical PNGs and records alpha bounds/world footprint; rerun actual-sprite proof."
+    },
+    {
+      "id": "BLOCK_TEEA006_MEDIA_ROOM_FINALS",
+      "affects": [
+        "PASS-B exact physical placement for Cinema/Music/Artifact",
+        "PASS-D final media-room occlusion/approach proof"
+      ],
+      "evidence": "TEEA006 observed head contains only BRIEF + DEPTH_ADDENDUM + ASSET_DRESSING_ADDENDUM; no final Music/Cinema/Artifact/Workshop production layers.",
+      "ready_without_regeneration": [
+        "neutral book/film/audio/artifact holder GLBs",
+        "32 media surface metadata records",
+        "current runtime category/API mapping",
+        "separate Cinema TV/console/gamepad zone contract"
+      ],
+      "resolution": "After TEEA006 final room geometry lands, bind existing 007 holder transforms/hotspots to measured furniture/walls and rerun occlusion/approach."
+    }
+  ]
+}
