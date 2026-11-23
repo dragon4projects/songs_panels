@@ -79,3 +79,33 @@ Integrator will:
 Do not set `approved:true`.
 Do not open a production PR.
 Do not modify the accepted 002 baseline.
+
+
+---
+
+## 2026-11-23 — integrator resolution
+
+**The earlier metadata rework request is withdrawn. No Teea action is required.**
+
+The integrator recovered the exact physical furniture front edges from the delivered
+`TEEA_INT_20261122_003_anchor_measurements.json` and tested them with the current
+Dragon House v0.14 perspective-registration code:
+
+- Music / `music_listen_chair.godot_z_front`:
+  `-0.1276819109916687`
+- Cinema / `cinema_sofa.godot_z_front`:
+  `-0.1038343608379364`
+
+Using those values as QA-only `physical_z`:
+- foreground remains registered at ROOM yaw -0.18 / 0 / +0.18;
+- 7/7 aisle-to-station approach lines avoid all foreign collision footprints;
+- all six room variants mount into the current shell without procedural furniture doubling.
+
+The artist source remains `approved:false`; these values are recorded on the
+integrator branch as an explicit QA hypothesis, not silently written back as artist
+authored metadata.
+
+Current integrator branch:
+`dev/dragon-house-v015-teea003-integration`
+
+No redraw, repack, or further metadata delivery is requested from Teea.
