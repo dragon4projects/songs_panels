@@ -27,6 +27,11 @@ func _actor(scene,id:String,room:Dictionary,x:float,z:float,intent:String,
 	a["z"]=z
 	a["phase"]="perform"
 	a["intent"]=intent
+	# Freeze the staged QA activity across all yaw frames. Without this the
+	# normal autonomous clock may release/reassign an actor between captures,
+	# making a camera-registration comparison invalid.
+	a["until"]=scene.life.clock+10000.0
+	a.erase("partner_id")
 	a["station_room_id"]=room["id"]
 	a["station_kind"]=kind
 	a["station_pose_hint"]=pose
