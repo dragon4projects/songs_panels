@@ -1,0 +1,86 @@
+name: Promote owner-approved TEEA003 to production branch
+
+on:
+  push:
+    branches: [dev/dragon-house-v016-owner-approved-teea003]
+    paths:
+      - '.github/workflows/dragon-house-promote-teea003.yml'
+      - 'dragon_house_clean/tools/promote_teea003_owner_approved.py'
+      - 'dragon_house_clean/tests/test_teea003_owner_production_v016.gd'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+          fetch-depth: 0
+          ref: dev/dragon-house-v016-owner-approved-teea003
+
+      - name: Pull current LFS bytes
+        run: |
+          git lfs install --local
+          git lfs pull
+
+      - name: Download exact owner-reviewed TEEA003
+        run: |
+          set -euo pipefail
+          curl -fLsS --retry 3 -o /tmp/teea003.zip             'https://d2ol7oe51mr4n9.cloudfront.net/user_3JdI9kJ82xObF8Bi3EgU4P6DaoR/a5825fe1-8a14-4967-abdc-c4214a93e1b0.zip'
+          echo '2233854a91684acec90ad687961cc1c3b1316f921643a5941e9ed6846778b093  /tmp/teea003.zip' | sha256sum -c -
+          rm -rf /tmp/teea003 && mkdir -p /tmp/teea003
+          unzip -q /tmp/teea003.zip -d /tmp/teea003
+
+      - name: Prepare production promotion
+        run: |
+          set -euo pipefail
+          cd dragon_house_clean
+          python3 tools/promote_teea003_owner_approved.py             --project .             --payload-root /tmp/teea003/dragon_house_clean             --report TEEA003_OWNER_PROMOTION_REPORT.json
+          cat TEEA003_OWNER_PROMOTION_REPORT.json
+          grep -q '"owner_approved": true' data/asset_proposals/TEEA_INT_20261122_003_integration_overrides.json
+
+      - name: Download Godot 4.7.2
+        run: |
+          curl -fLsS --retry 3 -o /tmp/Godot_4.7.2.zip             https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_linux.x86_64.zip
+          unzip -q /tmp/Godot_4.7.2.zip -d /tmp
+          chmod +x /tmp/Godot_v4.7.2-stable_linux.x86_64
+
+      - name: Import promoted assets and run regressions before commit
+        run: |
+          set -euo pipefail
+          cd dragon_house_clean
+          timeout 900s /tmp/Godot_v4.7.2-stable_linux.x86_64 --headless --path . --editor --quit > promotion_import.log 2>&1
+          ! grep -Eq 'SCRIPT ERROR|Parse Error|Parser Error' promotion_import.log
+          for t in             tests/test_teea003_owner_production_v016.gd             tests/test_furniture_contract_v10.gd             tests/test_width_anchors_v012.gd             tests/test_corridor_passing_v013.gd             tests/test_room_activity_hud_v014.gd; do
+            result="$(timeout 100s /tmp/Godot_v4.7.2-stable_linux.x86_64 --headless --path . --script "res://$t" 2>&1)"
+            echo "$result"
+            echo "$result" | grep -q '_PASS'
+            ! echo "$result" | grep -qE 'SCRIPT ERROR|Parse Error|Assertion failed'
+          done
+
+      - name: Verify LFS staging and commit exact production bytes
+        run: |
+          set -euo pipefail
+          git config user.name 'dragon-house-integrator'
+          git config user.email 'dragon-house-integrator@users.noreply.github.com'
+          git add             dragon_house_clean/assets/rooms/arrival/R1             dragon_house_clean/assets/rooms/corridor/R1             dragon_house_clean/assets/rooms/music/R1             dragon_house_clean/assets/rooms/cinema/R1             dragon_house_clean/assets/rooms/artifact/R1             dragon_house_clean/assets/rooms/workshop/R1             dragon_house_clean/data/interior_layers_v1.json             dragon_house_clean/data/furniture_interactions_v1.json             dragon_house_clean/data/asset_proposals/TEEA_INT_20261122_003_interiors.json             dragon_house_clean/data/asset_proposals/TEEA_INT_20261122_003_integration_overrides.json             dragon_house_clean/TEEA003_OWNER_PROMOTION_REPORT.json
+          count="$(git diff --cached --name-only -- 'dragon_house_clean/assets/rooms/**/*.png' | wc -l)"
+          echo "staged room png: $count"
+          test "$count" -eq 20
+          git lfs ls-files | grep 'assets/rooms/music/R1/foreground.png'
+          git commit -m 'Dragon House v0.16: promote owner-approved TEEA003 R1 interiors'
+          git push origin HEAD:dev/dragon-house-v016-owner-approved-teea003
+
+      - name: Upload promotion proof
+        uses: actions/upload-artifact@v4
+        with:
+          name: teea003-owner-production-proof
+          path: |
+            dragon_house_clean/TEEA003_OWNER_PROMOTION_REPORT.json
+            dragon_house_clean/promotion_import.log
+          retention-days: 7
