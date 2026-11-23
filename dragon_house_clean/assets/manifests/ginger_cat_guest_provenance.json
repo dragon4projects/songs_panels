@@ -1,0 +1,543 @@
+{
+  "reference": "ChatGPT Image 21 сент. 2026 г., 22_17_12.png",
+  "character_id": "NPC_GINGER_CAT_GUEST",
+  "wardrobe": "SHORT",
+  "frames": {
+    "IDLE_N": {
+      "method": "ImageGen",
+      "image": "exec-9ea07692-c7a1-43fa-aba6-ceb6caf047aa.png",
+      "cell": [
+        0,
+        0,
+        444,
+        443
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_N/0001.png"
+    },
+    "IDLE_NE": {
+      "method": "ImageGen",
+      "image": "exec-9ea07692-c7a1-43fa-aba6-ceb6caf047aa.png",
+      "cell": [
+        444,
+        0,
+        887,
+        443
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_NE/0001.png"
+    },
+    "IDLE_E": {
+      "method": "ImageGen",
+      "image": "exec-9ea07692-c7a1-43fa-aba6-ceb6caf047aa.png",
+      "cell": [
+        887,
+        0,
+        1330,
+        443
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_E/0001.png"
+    },
+    "IDLE_SE": {
+      "method": "ImageGen",
+      "image": "exec-9ea07692-c7a1-43fa-aba6-ceb6caf047aa.png",
+      "cell": [
+        1330,
+        0,
+        1774,
+        443
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_SE/0001.png"
+    },
+    "IDLE_S": {
+      "method": "ImageGen",
+      "image": "exec-9ea07692-c7a1-43fa-aba6-ceb6caf047aa.png",
+      "cell": [
+        0,
+        443,
+        444,
+        887
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_S/0001.png"
+    },
+    "IDLE_SW": {
+      "method": "ImageGen",
+      "image": "exec-9ea07692-c7a1-43fa-aba6-ceb6caf047aa.png",
+      "cell": [
+        444,
+        443,
+        887,
+        887
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_SW/0001.png"
+    },
+    "IDLE_W": {
+      "method": "ImageGen",
+      "image": "exec-9ea07692-c7a1-43fa-aba6-ceb6caf047aa.png",
+      "cell": [
+        887,
+        443,
+        1330,
+        887
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_W/0001.png"
+    },
+    "IDLE_NW": {
+      "method": "ImageGen",
+      "image": "exec-9ea07692-c7a1-43fa-aba6-ceb6caf047aa.png",
+      "cell": [
+        1330,
+        443,
+        1774,
+        887
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_NW/0001.png"
+    },
+    "SIT": {
+      "method": "ImageGen",
+      "image": "exec-886cdcd1-4d71-4f19-9e4a-d711ea8aebcd.png",
+      "cell": [
+        0,
+        0,
+        512,
+        508
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/SIT/0001.png"
+    },
+    "TALK": {
+      "method": "ImageGen",
+      "image": "exec-886cdcd1-4d71-4f19-9e4a-d711ea8aebcd.png",
+      "cell": [
+        512,
+        0,
+        1024,
+        508
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/TALK/0001.png"
+    },
+    "VIEW": {
+      "method": "ImageGen",
+      "image": "exec-886cdcd1-4d71-4f19-9e4a-d711ea8aebcd.png",
+      "cell": [
+        1024,
+        0,
+        1536,
+        508
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/VIEW/0001.png"
+    },
+    "READ": {
+      "method": "ImageGen",
+      "image": "exec-886cdcd1-4d71-4f19-9e4a-d711ea8aebcd.png",
+      "cell": [
+        0,
+        508,
+        512,
+        1024
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/READ/0001.png"
+    },
+    "CARRY_USE": {
+      "method": "ImageGen",
+      "image": "exec-886cdcd1-4d71-4f19-9e4a-d711ea8aebcd.png",
+      "cell": [
+        512,
+        508,
+        1024,
+        1024
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/CARRY_USE/0001.png"
+    },
+    "RELAXED_SIT": {
+      "method": "ImageGen",
+      "image": "exec-886cdcd1-4d71-4f19-9e4a-d711ea8aebcd.png",
+      "cell": [
+        1024,
+        508,
+        1536,
+        1024
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/RELAXED_SIT/0001.png"
+    },
+    "SLEEP": {
+      "method": "ImageGen",
+      "image": "exec-8668a935-c6f6-4369-90e7-558b7e92101c.png",
+      "cell": [
+        0,
+        0,
+        1086,
+        316
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/SLEEP/0001.png"
+    },
+    "LIE_SIDE_STRAIGHT": {
+      "method": "ImageGen",
+      "image": "exec-8668a935-c6f6-4369-90e7-558b7e92101c.png",
+      "cell": [
+        0,
+        316,
+        1086,
+        648
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/LIE_SIDE_STRAIGHT/0001.png"
+    },
+    "LIE_SIDE_CURLED": {
+      "method": "ImageGen_component_cut",
+      "image": "exec-8668a935-c6f6-4369-90e7-558b7e92101c.png",
+      "cell": [
+        102,
+        657,
+        911,
+        931
+      ],
+      "alpha_component_seed": [
+        512,
+        790
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/LIE_SIDE_CURLED/0001.png"
+    },
+    "SIT_HUG_KNEES": {
+      "method": "ImageGen",
+      "image": "exec-8668a935-c6f6-4369-90e7-558b7e92101c.png",
+      "cell": [
+        0,
+        930,
+        543,
+        1448
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/SIT_HUG_KNEES/0001.png"
+    },
+    "SIT_LEGS_TUCKED": {
+      "method": "ImageGen_component_cut",
+      "image": "exec-8668a935-c6f6-4369-90e7-558b7e92101c.png",
+      "cell": [
+        562,
+        917,
+        1041,
+        1422
+      ],
+      "alpha_component_seed": [
+        735,
+        1110
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/SIT_LEGS_TUCKED/0001.png"
+    },
+    "WALK_LEFT:1": {
+      "method": "ImageGen",
+      "image": "exec-64c7a58a-cdbe-48bf-b2f9-6f1110f404a4.png",
+      "cell": [
+        0,
+        0,
+        362,
+        362
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0001.png"
+    },
+    "WALK_LEFT:2": {
+      "method": "ImageGen",
+      "image": "exec-64c7a58a-cdbe-48bf-b2f9-6f1110f404a4.png",
+      "cell": [
+        362,
+        0,
+        724,
+        362
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0002.png"
+    },
+    "WALK_LEFT:3": {
+      "method": "ImageGen",
+      "image": "exec-64c7a58a-cdbe-48bf-b2f9-6f1110f404a4.png",
+      "cell": [
+        724,
+        0,
+        1086,
+        362
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0003.png"
+    },
+    "WALK_LEFT:4": {
+      "method": "ImageGen",
+      "image": "exec-64c7a58a-cdbe-48bf-b2f9-6f1110f404a4.png",
+      "cell": [
+        1086,
+        0,
+        1448,
+        362
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0004.png"
+    },
+    "WALK_LEFT:5": {
+      "method": "ImageGen",
+      "image": "exec-64c7a58a-cdbe-48bf-b2f9-6f1110f404a4.png",
+      "cell": [
+        0,
+        362,
+        362,
+        724
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0005.png"
+    },
+    "WALK_LEFT:6": {
+      "method": "ImageGen",
+      "image": "exec-64c7a58a-cdbe-48bf-b2f9-6f1110f404a4.png",
+      "cell": [
+        362,
+        362,
+        724,
+        724
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0006.png"
+    },
+    "WALK_LEFT:7": {
+      "method": "ImageGen",
+      "image": "exec-64c7a58a-cdbe-48bf-b2f9-6f1110f404a4.png",
+      "cell": [
+        724,
+        362,
+        1086,
+        724
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0007.png"
+    },
+    "WALK_LEFT:8": {
+      "method": "ImageGen",
+      "image": "exec-64c7a58a-cdbe-48bf-b2f9-6f1110f404a4.png",
+      "cell": [
+        1086,
+        362,
+        1448,
+        724
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0008.png"
+    },
+    "WALK_LEFT:9": {
+      "method": "ImageGen",
+      "image": "exec-64c7a58a-cdbe-48bf-b2f9-6f1110f404a4.png",
+      "cell": [
+        0,
+        724,
+        362,
+        1086
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0009.png"
+    },
+    "WALK_LEFT:10": {
+      "method": "ImageGen",
+      "image": "exec-64c7a58a-cdbe-48bf-b2f9-6f1110f404a4.png",
+      "cell": [
+        362,
+        724,
+        724,
+        1086
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0010.png"
+    },
+    "WALK_LEFT:11": {
+      "method": "ImageGen",
+      "image": "exec-64c7a58a-cdbe-48bf-b2f9-6f1110f404a4.png",
+      "cell": [
+        724,
+        724,
+        1086,
+        1086
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0011.png"
+    },
+    "WALK_LEFT:12": {
+      "method": "ImageGen",
+      "image": "exec-64c7a58a-cdbe-48bf-b2f9-6f1110f404a4.png",
+      "cell": [
+        1086,
+        724,
+        1448,
+        1086
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0012.png"
+    },
+    "WALK_RIGHT:1": {
+      "method": "ImageGen",
+      "image": "exec-3a2abcd8-f725-491e-8a12-eeb1defc39c5.png",
+      "cell": [
+        0,
+        0,
+        362,
+        362
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0001.png"
+    },
+    "WALK_RIGHT:2": {
+      "method": "ImageGen",
+      "image": "exec-3a2abcd8-f725-491e-8a12-eeb1defc39c5.png",
+      "cell": [
+        362,
+        0,
+        724,
+        362
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0002.png"
+    },
+    "WALK_RIGHT:3": {
+      "method": "ImageGen",
+      "image": "exec-3a2abcd8-f725-491e-8a12-eeb1defc39c5.png",
+      "cell": [
+        724,
+        0,
+        1086,
+        362
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0003.png"
+    },
+    "WALK_RIGHT:4": {
+      "method": "ImageGen",
+      "image": "exec-3a2abcd8-f725-491e-8a12-eeb1defc39c5.png",
+      "cell": [
+        1086,
+        0,
+        1448,
+        362
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0004.png"
+    },
+    "WALK_RIGHT:5": {
+      "method": "ImageGen",
+      "image": "exec-3a2abcd8-f725-491e-8a12-eeb1defc39c5.png",
+      "cell": [
+        0,
+        362,
+        362,
+        724
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0005.png"
+    },
+    "WALK_RIGHT:6": {
+      "method": "ImageGen",
+      "image": "exec-3a2abcd8-f725-491e-8a12-eeb1defc39c5.png",
+      "cell": [
+        362,
+        362,
+        724,
+        724
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0006.png"
+    },
+    "WALK_RIGHT:7": {
+      "method": "ImageGen",
+      "image": "exec-3a2abcd8-f725-491e-8a12-eeb1defc39c5.png",
+      "cell": [
+        724,
+        362,
+        1086,
+        724
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0007.png"
+    },
+    "WALK_RIGHT:8": {
+      "method": "ImageGen",
+      "image": "exec-3a2abcd8-f725-491e-8a12-eeb1defc39c5.png",
+      "cell": [
+        1086,
+        362,
+        1448,
+        724
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0008.png"
+    },
+    "WALK_RIGHT:9": {
+      "method": "ImageGen",
+      "image": "exec-3a2abcd8-f725-491e-8a12-eeb1defc39c5.png",
+      "cell": [
+        0,
+        724,
+        362,
+        1086
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0009.png"
+    },
+    "WALK_RIGHT:10": {
+      "method": "ImageGen",
+      "image": "exec-3a2abcd8-f725-491e-8a12-eeb1defc39c5.png",
+      "cell": [
+        362,
+        724,
+        724,
+        1086
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0010.png"
+    },
+    "WALK_RIGHT:11": {
+      "method": "ImageGen",
+      "image": "exec-3a2abcd8-f725-491e-8a12-eeb1defc39c5.png",
+      "cell": [
+        724,
+        724,
+        1086,
+        1086
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0011.png"
+    },
+    "WALK_RIGHT:12": {
+      "method": "ImageGen",
+      "image": "exec-3a2abcd8-f725-491e-8a12-eeb1defc39c5.png",
+      "cell": [
+        1086,
+        724,
+        1448,
+        1086
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0012.png"
+    },
+    "DRINK:1": {
+      "method": "ImageGen",
+      "image": "exec-6be90767-87d4-4aae-a0b2-679535e60bb5.png",
+      "cell": [
+        0,
+        0,
+        543,
+        724
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/DRINK/0001.png"
+    },
+    "DRINK:2": {
+      "method": "ImageGen",
+      "image": "exec-6be90767-87d4-4aae-a0b2-679535e60bb5.png",
+      "cell": [
+        543,
+        0,
+        1086,
+        724
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/DRINK/0002.png"
+    },
+    "DRINK:3": {
+      "method": "ImageGen",
+      "image": "exec-6be90767-87d4-4aae-a0b2-679535e60bb5.png",
+      "cell": [
+        0,
+        724,
+        543,
+        1448
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/DRINK/0003.png"
+    },
+    "DRINK:4": {
+      "method": "ImageGen",
+      "image": "exec-6be90767-87d4-4aae-a0b2-679535e60bb5.png",
+      "cell": [
+        543,
+        724,
+        1086,
+        1448
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/DRINK/0004.png"
+    },
+    "IDENTITY": {
+      "method": "ImageGen",
+      "image": "exec-9ea07692-c7a1-43fa-aba6-ceb6caf047aa.png",
+      "cell": [
+        0,
+        443,
+        444,
+        887
+      ],
+      "asset": "assets/residents/NPC_GINGER_CAT_GUEST/identity/front_0001.png"
+    }
+  }
+}

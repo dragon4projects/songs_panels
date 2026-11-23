@@ -42978,6 +42978,671 @@
           }
         }
       }
+    },
+    "NPC_GINGER_CAT_GUEST": {
+      "display_name": "Миу",
+      "appearance_profile": "NPC_GINGER_CAT_GUEST",
+      "legacy_production_actor": false,
+      "legacy_branch_key": null,
+      "identity_references": [
+        "assets/residents/NPC_GINGER_CAT_GUEST/identity/front_0001.png"
+      ],
+      "default_structural_coverage": true,
+      "visual_bank_ready": false,
+      "runtime_bound": false,
+      "default_wardrobe": "SHORT",
+      "wardrobes": {
+        "SHORT": {
+          "outfit_id": "NPC_GINGER_CAT_GUEST_SHORT",
+          "source_frame_bank": null,
+          "states": {
+            "IDLE_N": {
+              "frames": [
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_N/0001.png"
+              ],
+              "frame_count": 1,
+              "distinct_frame_hashes": 1,
+              "fps": 2.0,
+              "declared_source_frames": 1,
+              "durations": [
+                1.0
+              ],
+              "canvas": [
+                [
+                  512,
+                  512
+                ]
+              ],
+              "color_modes": [
+                "RGBA"
+              ],
+              "warnings": [],
+              "excluded_frames": [],
+              "status": "PASS",
+              "runtime_bound": false,
+              "source_confidence": "ImageGen sprite sheets with per-frame source evidence; owner art review pending",
+              "evidence": "assets/manifests/ginger_cat_guest_provenance.json"
+            },
+            "IDLE_NE": {
+              "frames": [
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_NE/0001.png"
+              ],
+              "frame_count": 1,
+              "distinct_frame_hashes": 1,
+              "fps": 2.0,
+              "declared_source_frames": 1,
+              "durations": [
+                1.0
+              ],
+              "canvas": [
+                [
+                  512,
+                  512
+                ]
+              ],
+              "color_modes": [
+                "RGBA"
+              ],
+              "warnings": [],
+              "excluded_frames": [],
+              "status": "PASS",
+              "runtime_bound": false,
+              "source_confidence": "ImageGen sprite sheets with per-frame source evidence; owner art review pending",
+              "evidence": "assets/manifests/ginger_cat_guest_provenance.json"
+            },
+            "IDLE_E": {
+              "frames": [
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_E/0001.png"
+              ],
+              "frame_count": 1,
+              "distinct_frame_hashes": 1,
+              "fps": 2.0,
+              "declared_source_frames": 1,
+              "durations": [
+                1.0
+              ],
+              "canvas": [
+                [
+                  512,
+                  512
+                ]
+              ],
+              "color_modes": [
+                "RGBA"
+              ],
+              "warnings": [],
+              "excluded_frames": [],
+              "status": "PASS",
+              "runtime_bound": false,
+              "source_confidence": "ImageGen sprite sheets with per-frame source evidence; owner art review pending",
+              "evidence": "assets/manifests/ginger_cat_guest_provenance.json"
+            },
+            "IDLE_SE": {
+              "frames": [
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_SE/0001.png"
+              ],
+              "frame_count": 1,
+              "distinct_frame_hashes": 1,
+              "fps": 2.0,
+              "declared_source_frames": 1,
+              "durations": [
+                1.0
+              ],
+              "canvas": [
+                [
+                  512,
+                  512
+                ]
+              ],
+              "color_modes": [
+                "RGBA"
+              ],
+              "warnings": [],
+              "excluded_frames": [],
+              "status": "PASS",
+              "runtime_bound": false,
+              "source_confidence": "ImageGen sprite sheets with per-frame source evidence; owner art review pending",
+              "evidence": "assets/manifests/ginger_cat_guest_provenance.json"
+            },
+            "IDLE_S": {
+              "frames": [
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_S/0001.png"
+              ],
+              "frame_count": 1,
+              "distinct_frame_hashes": 1,
+              "fps": 2.0,
+              "declared_source_frames": 1,
+              "durations": [
+                1.0
+              ],
+              "canvas": [
+                [
+                  512,
+                  512
+                ]
+              ],
+              "color_modes": [
+                "RGBA"
+              ],
+              "warnings": [],
+              "excluded_frames": [],
+              "status": "PASS",
+              "runtime_bound": false,
+              "source_confidence": "ImageGen sprite sheets with per-frame source evidence; owner art review pending",
+              "evidence": "assets/manifests/ginger_cat_guest_provenance.json"
+            },
+            "IDLE_SW": {
+              "frames": [
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_SW/0001.png"
+              ],
+              "frame_count": 1,
+              "distinct_frame_hashes": 1,
+              "fps": 2.0,
+              "declared_source_frames": 1,
+              "durations": [
+                1.0
+              ],
+              "canvas": [
+                [
+                  512,
+                  512
+                ]
+              ],
+              "color_modes": [
+                "RGBA"
+              ],
+              "warnings": [],
+              "excluded_frames": [],
+              "status": "PASS",
+              "runtime_bound": false,
+              "source_confidence": "ImageGen sprite sheets with per-frame source evidence; owner art review pending",
+              "evidence": "assets/manifests/ginger_cat_guest_provenance.json"
+            },
+            "IDLE_W": {
+              "frames": [
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_W/0001.png"
+              ],
+              "frame_count": 1,
+              "distinct_frame_hashes": 1,
+              "fps": 2.0,
+              "declared_source_frames": 1,
+              "durations": [
+                1.0
+              ],
+              "canvas": [
+                [
+                  512,
+                  512
+                ]
+              ],
+              "color_modes": [
+                "RGBA"
+              ],
+              "warnings": [],
+              "excluded_frames": [],
+              "status": "PASS",
+              "runtime_bound": false,
+              "source_confidence": "ImageGen sprite sheets with per-frame source evidence; owner art review pending",
+              "evidence": "assets/manifests/ginger_cat_guest_provenance.json"
+            },
+            "IDLE_NW": {
+              "frames": [
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_NW/0001.png"
+              ],
+              "frame_count": 1,
+              "distinct_frame_hashes": 1,
+              "fps": 2.0,
+              "declared_source_frames": 1,
+              "durations": [
+                1.0
+              ],
+              "canvas": [
+                [
+                  512,
+                  512
+                ]
+              ],
+              "color_modes": [
+                "RGBA"
+              ],
+              "warnings": [],
+              "excluded_frames": [],
+              "status": "PASS",
+              "runtime_bound": false,
+              "source_confidence": "ImageGen sprite sheets with per-frame source evidence; owner art review pending",
+              "evidence": "assets/manifests/ginger_cat_guest_provenance.json"
+            },
+            "SIT": {
+              "frames": [
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/SIT/0001.png"
+              ],
+              "frame_count": 1,
+              "distinct_frame_hashes": 1,
+              "fps": 2.0,
+              "declared_source_frames": 1,
+              "durations": [
+                1.0
+              ],
+              "canvas": [
+                [
+                  512,
+                  512
+                ]
+              ],
+              "color_modes": [
+                "RGBA"
+              ],
+              "warnings": [],
+              "excluded_frames": [],
+              "status": "PASS",
+              "runtime_bound": false,
+              "source_confidence": "ImageGen sprite sheets with per-frame source evidence; owner art review pending",
+              "evidence": "assets/manifests/ginger_cat_guest_provenance.json"
+            },
+            "TALK": {
+              "frames": [
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/TALK/0001.png"
+              ],
+              "frame_count": 1,
+              "distinct_frame_hashes": 1,
+              "fps": 2.0,
+              "declared_source_frames": 1,
+              "durations": [
+                1.0
+              ],
+              "canvas": [
+                [
+                  512,
+                  512
+                ]
+              ],
+              "color_modes": [
+                "RGBA"
+              ],
+              "warnings": [],
+              "excluded_frames": [],
+              "status": "PASS",
+              "runtime_bound": false,
+              "source_confidence": "ImageGen sprite sheets with per-frame source evidence; owner art review pending",
+              "evidence": "assets/manifests/ginger_cat_guest_provenance.json"
+            },
+            "VIEW": {
+              "frames": [
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/VIEW/0001.png"
+              ],
+              "frame_count": 1,
+              "distinct_frame_hashes": 1,
+              "fps": 2.0,
+              "declared_source_frames": 1,
+              "durations": [
+                1.0
+              ],
+              "canvas": [
+                [
+                  512,
+                  512
+                ]
+              ],
+              "color_modes": [
+                "RGBA"
+              ],
+              "warnings": [],
+              "excluded_frames": [],
+              "status": "PASS",
+              "runtime_bound": false,
+              "source_confidence": "ImageGen sprite sheets with per-frame source evidence; owner art review pending",
+              "evidence": "assets/manifests/ginger_cat_guest_provenance.json"
+            },
+            "READ": {
+              "frames": [
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/READ/0001.png"
+              ],
+              "frame_count": 1,
+              "distinct_frame_hashes": 1,
+              "fps": 2.0,
+              "declared_source_frames": 1,
+              "durations": [
+                1.0
+              ],
+              "canvas": [
+                [
+                  512,
+                  512
+                ]
+              ],
+              "color_modes": [
+                "RGBA"
+              ],
+              "warnings": [],
+              "excluded_frames": [],
+              "status": "PASS",
+              "runtime_bound": false,
+              "source_confidence": "ImageGen sprite sheets with per-frame source evidence; owner art review pending",
+              "evidence": "assets/manifests/ginger_cat_guest_provenance.json"
+            },
+            "CARRY_USE": {
+              "frames": [
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/CARRY_USE/0001.png"
+              ],
+              "frame_count": 1,
+              "distinct_frame_hashes": 1,
+              "fps": 2.0,
+              "declared_source_frames": 1,
+              "durations": [
+                1.0
+              ],
+              "canvas": [
+                [
+                  512,
+                  512
+                ]
+              ],
+              "color_modes": [
+                "RGBA"
+              ],
+              "warnings": [],
+              "excluded_frames": [],
+              "status": "PASS",
+              "runtime_bound": false,
+              "source_confidence": "ImageGen sprite sheets with per-frame source evidence; owner art review pending",
+              "evidence": "assets/manifests/ginger_cat_guest_provenance.json"
+            },
+            "RELAXED_SIT": {
+              "frames": [
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/RELAXED_SIT/0001.png"
+              ],
+              "frame_count": 1,
+              "distinct_frame_hashes": 1,
+              "fps": 2.0,
+              "declared_source_frames": 1,
+              "durations": [
+                1.0
+              ],
+              "canvas": [
+                [
+                  512,
+                  512
+                ]
+              ],
+              "color_modes": [
+                "RGBA"
+              ],
+              "warnings": [],
+              "excluded_frames": [],
+              "status": "PASS",
+              "runtime_bound": false,
+              "source_confidence": "ImageGen sprite sheets with per-frame source evidence; owner art review pending",
+              "evidence": "assets/manifests/ginger_cat_guest_provenance.json"
+            },
+            "SLEEP": {
+              "frames": [
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/SLEEP/0001.png"
+              ],
+              "frame_count": 1,
+              "distinct_frame_hashes": 1,
+              "fps": 2.0,
+              "declared_source_frames": 1,
+              "durations": [
+                1.0
+              ],
+              "canvas": [
+                [
+                  512,
+                  512
+                ]
+              ],
+              "color_modes": [
+                "RGBA"
+              ],
+              "warnings": [],
+              "excluded_frames": [],
+              "status": "PASS",
+              "runtime_bound": false,
+              "source_confidence": "ImageGen sprite sheets with per-frame source evidence; owner art review pending",
+              "evidence": "assets/manifests/ginger_cat_guest_provenance.json"
+            },
+            "LIE_SIDE_STRAIGHT": {
+              "frames": [
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/LIE_SIDE_STRAIGHT/0001.png"
+              ],
+              "frame_count": 1,
+              "distinct_frame_hashes": 1,
+              "fps": 2.0,
+              "declared_source_frames": 1,
+              "durations": [
+                1.0
+              ],
+              "canvas": [
+                [
+                  512,
+                  512
+                ]
+              ],
+              "color_modes": [
+                "RGBA"
+              ],
+              "warnings": [],
+              "excluded_frames": [],
+              "status": "PASS",
+              "runtime_bound": false,
+              "source_confidence": "ImageGen sprite sheets with per-frame source evidence; owner art review pending",
+              "evidence": "assets/manifests/ginger_cat_guest_provenance.json"
+            },
+            "LIE_SIDE_CURLED": {
+              "frames": [
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/LIE_SIDE_CURLED/0001.png"
+              ],
+              "frame_count": 1,
+              "distinct_frame_hashes": 1,
+              "fps": 2.0,
+              "declared_source_frames": 1,
+              "durations": [
+                1.0
+              ],
+              "canvas": [
+                [
+                  512,
+                  512
+                ]
+              ],
+              "color_modes": [
+                "RGBA"
+              ],
+              "warnings": [],
+              "excluded_frames": [],
+              "status": "PASS",
+              "runtime_bound": false,
+              "source_confidence": "ImageGen sprite sheets with per-frame source evidence; owner art review pending",
+              "evidence": "assets/manifests/ginger_cat_guest_provenance.json"
+            },
+            "SIT_HUG_KNEES": {
+              "frames": [
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/SIT_HUG_KNEES/0001.png"
+              ],
+              "frame_count": 1,
+              "distinct_frame_hashes": 1,
+              "fps": 2.0,
+              "declared_source_frames": 1,
+              "durations": [
+                1.0
+              ],
+              "canvas": [
+                [
+                  512,
+                  512
+                ]
+              ],
+              "color_modes": [
+                "RGBA"
+              ],
+              "warnings": [],
+              "excluded_frames": [],
+              "status": "PASS",
+              "runtime_bound": false,
+              "source_confidence": "ImageGen sprite sheets with per-frame source evidence; owner art review pending",
+              "evidence": "assets/manifests/ginger_cat_guest_provenance.json"
+            },
+            "SIT_LEGS_TUCKED": {
+              "frames": [
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/SIT_LEGS_TUCKED/0001.png"
+              ],
+              "frame_count": 1,
+              "distinct_frame_hashes": 1,
+              "fps": 2.0,
+              "declared_source_frames": 1,
+              "durations": [
+                1.0
+              ],
+              "canvas": [
+                [
+                  512,
+                  512
+                ]
+              ],
+              "color_modes": [
+                "RGBA"
+              ],
+              "warnings": [],
+              "excluded_frames": [],
+              "status": "PASS",
+              "runtime_bound": false,
+              "source_confidence": "ImageGen sprite sheets with per-frame source evidence; owner art review pending",
+              "evidence": "assets/manifests/ginger_cat_guest_provenance.json"
+            },
+            "WALK_LEFT": {
+              "frames": [
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0001.png",
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0002.png",
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0003.png",
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0004.png",
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0005.png",
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0006.png",
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0007.png",
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0008.png",
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0009.png",
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0010.png",
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0011.png",
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0012.png"
+              ],
+              "frame_count": 12,
+              "distinct_frame_hashes": 12,
+              "fps": 18.0,
+              "declared_source_frames": 12,
+              "durations": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "canvas": [
+                [
+                  512,
+                  512
+                ]
+              ],
+              "color_modes": [
+                "RGBA"
+              ],
+              "warnings": [],
+              "excluded_frames": [],
+              "status": "PASS",
+              "runtime_bound": false,
+              "source_confidence": "ImageGen sprite sheets with per-frame source evidence; owner art review pending",
+              "evidence": "assets/manifests/ginger_cat_guest_provenance.json"
+            },
+            "WALK_RIGHT": {
+              "frames": [
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0001.png",
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0002.png",
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0003.png",
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0004.png",
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0005.png",
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0006.png",
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0007.png",
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0008.png",
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0009.png",
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0010.png",
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0011.png",
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0012.png"
+              ],
+              "frame_count": 12,
+              "distinct_frame_hashes": 12,
+              "fps": 18.0,
+              "declared_source_frames": 12,
+              "durations": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "canvas": [
+                [
+                  512,
+                  512
+                ]
+              ],
+              "color_modes": [
+                "RGBA"
+              ],
+              "warnings": [],
+              "excluded_frames": [],
+              "status": "PASS",
+              "runtime_bound": false,
+              "source_confidence": "ImageGen sprite sheets with per-frame source evidence; owner art review pending",
+              "evidence": "assets/manifests/ginger_cat_guest_provenance.json"
+            },
+            "DRINK": {
+              "frames": [
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/DRINK/0001.png",
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/DRINK/0002.png",
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/DRINK/0003.png",
+                "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/DRINK/0004.png"
+              ],
+              "frame_count": 4,
+              "distinct_frame_hashes": 4,
+              "fps": 6.0,
+              "declared_source_frames": 4,
+              "durations": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "canvas": [
+                [
+                  512,
+                  512
+                ]
+              ],
+              "color_modes": [
+                "RGBA"
+              ],
+              "warnings": [],
+              "excluded_frames": [],
+              "status": "PASS",
+              "runtime_bound": false,
+              "source_confidence": "ImageGen sprite sheets with per-frame source evidence; owner art review pending",
+              "evidence": "assets/manifests/ginger_cat_guest_provenance.json"
+            }
+          }
+        }
+      }
     }
   },
   "creatures": {
