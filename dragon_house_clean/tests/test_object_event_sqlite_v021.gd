@@ -42,7 +42,7 @@ func _assert_projection_equivalent(a: Dictionary, b: Dictionary) -> void:
 func run() -> void:
 	var path := "user://object_event_sqlite_v021.json"
 	_cleanup(path)
-	OS.set_environment("DRAGON_OBJECT_EVENT_BACKEND","sqlite")
+	OS.set_environment("DRAGON_OBJECT_EVENT_BACKEND","")
 
 	var world := World.new()
 	world.save_path = path
@@ -107,5 +107,5 @@ func run() -> void:
 	restarted.object_events.store.close()
 	OS.set_environment("DRAGON_OBJECT_EVENT_BACKEND","")
 	_cleanup(path)
-	print("OBJECT_EVENT_SQLITE_V021_PASS backend=sqlite wal=yes sync=FULL transaction=event_plus_projection restart=sticky_sqlite duplicate=idempotent json_default=untouched")
+	print("OBJECT_EVENT_SQLITE_V021_PASS backend=sqlite default=yes wal=yes sync=FULL transaction=event_plus_projection restart=sticky_sqlite duplicate=idempotent json_default=untouched")
 	quit(0)
