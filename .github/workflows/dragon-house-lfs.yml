@@ -2,7 +2,7 @@ name: Dragon House LFS intake and Godot acceptance
 
 on:
   push:
-    branches: [dragon-house-fallout-fresh, dev/dragon-house-v020-event-core-object-strangler]
+    branches: [dragon-house-fallout-fresh]
     paths:
       - 'dragon_house_clean/**'
       - '.github/workflows/dragon-house-lfs.yml'
