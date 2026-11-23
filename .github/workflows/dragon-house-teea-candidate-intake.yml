@@ -1,0 +1,56 @@
+name: Dragon House TEEA006-007 candidate intake
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  intake:
+    if: github.ref_name == 'int/dragon-house-content-candidate-intake-20261123'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          lfs: false
+          persist-credentials: true
+      - name: Download immutable TEEA drops
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fLsS --retry 3 -o /tmp/teea006.zip 'https://d2ol7oe51mr4n9.cloudfront.net/user_3JdI9kJ82xObF8Bi3EgU4P6DaoR/1f7c0d7a-e63f-4860-8bfa-b653f7ac2e34.zip'
+          curl -fLsS --retry 3 -o /tmp/teea007.zip 'https://d2ol7oe51mr4n9.cloudfront.net/user_3JdI9kJ82xObF8Bi3EgU4P6DaoR/13095c35-c1b0-4b5d-b0cf-9a0a7dbba489.zip'
+          curl -fLsS --retry 3 -o /tmp/teea007_closure.zip 'https://d2ol7oe51mr4n9.cloudfront.net/user_3JdI9kJ82xObF8Bi3EgU4P6DaoR/b5c3b121-8d02-4aae-b278-499c886f6033.zip'
+      - name: Deterministic candidate-only extraction
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 dragon_house_clean/tools/intake_teea_candidates.py \
+            --project dragon_house_clean \
+            --teea006 /tmp/teea006.zip \
+            --teea007 /tmp/teea007.zip \
+            --teea007-closure /tmp/teea007_closure.zip
+      - name: Enforce LFS and candidate-only diff
+        shell: bash
+        run: |
+          set -euo pipefail
+          git lfs install --local
+          git add dragon_house_clean/assets/candidates \
+                  dragon_house_clean/data/asset_proposals/TEEA_INT_20261123_006_FINAL \
+                  dragon_house_clean/data/asset_proposals/TEEA_INT_20261123_007_FINAL \
+                  dragon_house_clean/data/asset_proposals/TEEA_INT_20261123_INTAKE_MANIFEST.json \
+                  dragon_house_clean/docs/handoffs/TEEA_INT_20261123_007_FINAL_CLOSURE
+          bad="$(git diff --cached --name-only | grep -Ev '^dragon_house_clean/(assets/candidates/teea00[67]/|data/asset_proposals/TEEA_INT_20261123_(006_FINAL|007_FINAL|INTAKE_MANIFEST\.json)|docs/handoffs/TEEA_INT_20261123_007_FINAL_CLOSURE/)' || true)"
+          test -z "$bad" || { echo "$bad"; exit 1; }
+          test "$(git lfs ls-files | grep -Ec 'assets/candidates/teea00[67]/.*\.(png|glb)$')" -eq 70
+      - name: Commit candidate drop
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'Dragon House Integrator'
+          git config user.email 'actions@users.noreply.github.com'
+          git commit -m 'stage: ingest immutable TEEA006-007 candidate room and prop assets'
+          git push origin HEAD:int/dragon-house-content-candidate-intake-20261123
