@@ -1,0 +1,47 @@
+name: TEEA007 exact guest LFS alpha probe
+
+on:
+  push:
+    branches:
+      - art/teea-interiors-TEEA_INT_20261123_007
+
+permissions:
+  contents: read
+
+jobs:
+  materialize_guest_png:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact ZNA candidate branch with LFS bytes
+        uses: actions/checkout@v4
+        with:
+          ref: art/znaechka-characters-ZNA_CHAR_NPC_20261123_001
+          fetch-depth: 1
+          lfs: true
+      - name: Verify and stage exact guest identities
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p teea007_guest_alpha_probe
+          files=(
+            dragon_house_clean/assets/residents/NPC_CENTAUR/identity/front_0001.png
+            dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/identity/front_0001.png
+            dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/identity/front_0001.png
+          )
+          for f in "${files[@]}"; do
+            test -f "$f"
+            if grep -aq '^version https://git-lfs.github.com/spec/v1' "$f"; then
+              echo "LFS pointer remained instead of real bytes: $f" >&2
+              exit 2
+            fi
+            file "$f"
+            sha256sum "$f"
+            cp "$f" teea007_guest_alpha_probe/
+          done
+      - name: Upload exact guest identity bytes for TEEA room-footprint QA
+        uses: actions/upload-artifact@v4
+        with:
+          name: teea007-exact-guest-lfs-png
+          path: teea007_guest_alpha_probe/*.png
+          if-no-files-found: error
+          retention-days: 3
