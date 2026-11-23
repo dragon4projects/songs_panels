@@ -1,0 +1,657 @@
+name: Znaechka creature media previews integrate
+
+on:
+  push:
+    branches:
+      - art/znaechka-characters-ZNA_CHAR_NPC_20261123_001
+    paths:
+      - .github/workflows/znaechka_creature_media_previews.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout art branch with LFS
+        uses: actions/checkout@v4
+        with:
+          ref: art/znaechka-characters-ZNA_CHAR_NPC_20261123_001
+          fetch-depth: 0
+          lfs: true
+
+      - name: Pull current LFS bytes
+        shell: bash
+        run: |
+          set -euo pipefail
+          git lfs install --local
+          git lfs pull
+          echo "WORKFLOW_HEAD=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+
+      - name: Install image tooling
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m pip install --quiet pillow
+
+      - name: Download exact prior RES22-24 R1 delivery
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fL --retry 4 \
+            'https://d2ol7oe51mr4n9.cloudfront.net/user_3JdI9kJ82xObF8Bi3EgU4P6DaoR/da207eac-cfbc-42d1-9508-1d4fc58b40a9.zip' \
+            -o /tmp/res22_24_r1.zip
+          echo '5d05c5fe0397bf0c7fa50cb03193f1540c2401ee66480c84c364f0123b47ab49  /tmp/res22_24_r1.zip' | sha256sum -c -
+          rm -rf /tmp/res22_24_r1
+          mkdir -p /tmp/res22_24_r1
+          unzip -q /tmp/res22_24_r1.zip -d /tmp/res22_24_r1
+          test -d /tmp/res22_24_r1/dragon_house_clean/assets/residents/RES_22/wardrobes
+          test -d /tmp/res22_24_r1/dragon_house_clean/assets/residents/RES_23/wardrobes
+          test -d /tmp/res22_24_r1/dragon_house_clean/assets/residents/RES_24/wardrobes
+
+      - name: Restore exact RES22-24 frame banks without identity edits
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+          import hashlib, json, shutil
+
+          dst=Path('dragon_house_clean')
+          src=Path('/tmp/res22_24_r1/dragon_house_clean')
+          hand=dst/'docs/handoffs/ZNA_CHAR_NPC_20261123_003_CREATURE_MEDIA_PREVIEWS'
+          hand.mkdir(parents=True,exist_ok=True)
+
+          ids=['RES_22','RES_23','RES_24']
+
+          identity_before={}
+          for rid in ids:
+              d=dst/'assets/residents'/rid/'identity'
+              identity_before[rid]={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(d.glob('*')) if p.is_file()}
+
+          for rid in ids:
+              s=src/'assets/residents'/rid/'wardrobes'
+              d=dst/'assets/residents'/rid/'wardrobes'
+              if d.exists(): shutil.rmtree(d)
+              shutil.copytree(s,d)
+
+          dst_reg=json.loads((dst/'data/asset_registry_nov2026.json').read_text(encoding='utf-8'))
+          src_reg=json.loads((src/'data/asset_registry_nov2026.json').read_text(encoding='utf-8'))
+          for rid in ids:
+              old_identity=dst_reg.get('residents',{}).get(rid,{}).get('identity_references')
+              entry=src_reg['residents'][rid]
+              if old_identity:
+                  entry['identity_references']=old_identity
+              entry['runtime_bound']=False
+              entry['visual_bank_ready']=False
+              entry['owner_approved']=False
+              entry['known_limitation']='R1 technical frame bank preserved byte-for-byte; identity drift remains a known owner-review limitation and was not reworked in this task.'
+              dst_reg.setdefault('residents',{})[rid]=entry
+          (dst/'data/asset_registry_nov2026.json').write_text(json.dumps(dst_reg,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+
+          dst_cov=json.loads((dst/'assets/manifests/bank_coverage.json').read_text(encoding='utf-8'))
+          src_cov=json.loads((src/'assets/manifests/bank_coverage.json').read_text(encoding='utf-8'))
+          for rid in ids:
+              entry=src_cov['residents'][rid]
+              entry['runtime_bound']=False
+              entry['owner_approved']=False
+              dst_cov.setdefault('residents',{})[rid]=entry
+          (dst/'assets/manifests/bank_coverage.json').write_text(json.dumps(dst_cov,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+
+          prefixes=tuple(f'assets/residents/{rid}/' for rid in ids)
+
+          def read_jsonl(p):
+              return [json.loads(x) for x in p.read_text(encoding='utf-8').splitlines() if x.strip()]
+          old=read_jsonl(dst/'assets/manifests/asset_index.jsonl')
+          new=read_jsonl(src/'assets/manifests/asset_index.jsonl')
+          old=[x for x in old if not str(x.get('destination_path','')).startswith(prefixes)]
+          new=[x for x in new if str(x.get('destination_path','')).startswith(prefixes)]
+          (dst/'assets/manifests/asset_index.jsonl').write_text(
+              '\n'.join(json.dumps(x,ensure_ascii=False,separators=(',',':')) for x in old+new)+'\n',encoding='utf-8'
+          )
+
+          def sha_rows(p):
+              out=[]
+              for line in p.read_text(encoding='utf-8').splitlines():
+                  if not line.strip(): continue
+                  parts=line.split(maxsplit=1)
+                  if len(parts)==2: out.append((parts[0],parts[1].strip().lstrip('*')))
+              return out
+          old=sha_rows(dst/'assets/manifests/SHA256SUMS.txt')
+          new=sha_rows(src/'assets/manifests/SHA256SUMS.txt')
+          old=[x for x in old if not x[1].startswith(prefixes)]
+          new=[x for x in new if x[1].startswith(prefixes)]
+          (dst/'assets/manifests/SHA256SUMS.txt').write_text(
+              '\n'.join(f'{h}  {p}' for h,p in old+new)+'\n',encoding='utf-8'
+          )
+
+          frame_hashes={}
+          total=0
+          for rid in ids:
+              rows={}
+              for p in sorted((dst/'assets/residents'/rid/'wardrobes').rglob('*.png')):
+                  rel=p.relative_to(dst).as_posix()
+                  rows[rel]=hashlib.sha256(p.read_bytes()).hexdigest()
+                  src_p=src/rel
+                  assert src_p.is_file(), rel
+                  assert rows[rel]==hashlib.sha256(src_p.read_bytes()).hexdigest(), rel
+                  total+=1
+              frame_hashes[rid]=rows
+          assert total==423,total
+
+          identity_after={}
+          for rid in ids:
+              d=dst/'assets/residents'/rid/'identity'
+              identity_after[rid]={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(d.glob('*')) if p.is_file()}
+          assert identity_before==identity_after,(identity_before,identity_after)
+
+          proof={
+              'schema':1,
+              'source_zip_sha256':'5d05c5fe0397bf0c7fa50cb03193f1540c2401ee66480c84c364f0123b47ab49',
+              'frame_count':total,
+              'frame_hashes':frame_hashes,
+              'identity_hashes_before':identity_before,
+              'identity_hashes_after':identity_after,
+              'identity_modified':False,
+              'owner_approved':False,
+              'known_limitation':'Identity drift preserved as known limitation; no RES22-24 identity regeneration/repaint was performed.'
+          }
+          (hand/'RES22_24_R1_FRAME_HASHES.json').write_text(json.dumps(proof,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print('RES22_24_EXACT_RESTORE_PASS frames=423 identity_modified=no')
+          PY
+
+      - name: Build rights-safe media and artifact previews
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+          from PIL import Image,ImageDraw,ImageFont,ImageOps
+          import json,math
+
+          root=Path('dragon_house_clean')
+          hand=root/'docs/handoffs/ZNA_CHAR_NPC_20261123_003_CREATURE_MEDIA_PREVIEWS'
+          chunks=hand/'source_manifest_chunks'
+          preview_root=root/'assets/media/previews'
+          for d in ['books','audio','film','unclassified','artifacts']:
+              (preview_root/d).mkdir(parents=True,exist_ok=True)
+          (hand/'contact_sheets').mkdir(parents=True,exist_ok=True)
+
+          font_regular='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
+          font_bold='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
+          if not Path(font_regular).is_file():
+              font_regular=font_bold=None
+
+          def font(size,bold=False):
+              path=font_bold if bold else font_regular
+              return ImageFont.truetype(path,size) if path else ImageFont.load_default()
+
+          def wrap(draw,text,f,maxw,maxlines=6):
+              text=(text or '').strip()
+              if not text: return []
+              words=text.split()
+              lines=[]; cur=''
+              for w in words:
+                  t=(cur+' '+w).strip()
+                  if draw.textbbox((0,0),t,font=f)[2] <= maxw:
+                      cur=t
+                  else:
+                      if cur: lines.append(cur)
+                      cur=w
+                      if len(lines)>=maxlines-1: break
+              if cur and len(lines)<maxlines: lines.append(cur)
+              if len(lines)==maxlines and len(' '.join(words))>len(' '.join(lines)):
+                  lines[-1]=lines[-1].rstrip('…')+'…'
+              return lines
+
+          def placeholder(path,size,label,title,subtitle,content_id):
+              W,H=size
+              im=Image.new('RGBA',size,(24,24,28,255))
+              d=ImageDraw.Draw(im)
+              d.rounded_rectangle((18,18,W-18,H-18),radius=22,outline=(110,110,120,255),width=2)
+              d.text((34,34),label,font=font(max(20,int(W*.04)),True),fill=(185,185,195,255))
+              tf=font(max(26,int(W*.057)),True)
+              y=int(H*.24)
+              for line in wrap(d,title,tf,W-68,6):
+                  d.text((34,y),line,font=tf,fill=(240,240,244,255)); y+=tf.size+8
+              sf=font(max(18,int(W*.035)))
+              if subtitle:
+                  y+=10
+                  for line in wrap(d,subtitle,sf,W-68,3):
+                      d.text((34,y),line,font=sf,fill=(170,170,180,255)); y+=sf.size+6
+              idf=font(max(14,int(W*.026)))
+              d.text((34,H-54),content_id,font=idf,fill=(120,120,130,255))
+              path.parent.mkdir(parents=True,exist_ok=True)
+              im.save(path,optimize=True)
+
+          index_path=root/'assets/manifests/media_preview_index.json'
+          idx=json.loads(index_path.read_text(encoding='utf-8'))
+          books=idx.get('books',[])
+          assert len(books)==76,len(books)
+          manifest_books=[]
+          for b in books:
+              cid=b['id']
+              p=preview_root/'books'/f'{cid}.png'
+              placeholder(p,(512,768),'BOOK · PLACEHOLDER',b.get('title',''),b.get('author') or '',cid)
+              rel=p.relative_to(root).as_posix()
+              b['preview_path']=rel
+              b['status']='PLACEHOLDER_NO_CONFIRMED_COVER_OWNER_APPROVAL_FALSE'
+              b['rights_provenance']='Typography placeholder generated from canonical metadata only; not official cover art.'
+              b['owner_approved']=False
+              manifest_books.append({
+                  'content_id':cid,'kind':'book','title':b.get('title'),'source_path':b.get('source'),
+                  'preview_path':rel,'rights_provenance':b['rights_provenance'],'status':b['status'],'owner_approved':False
+              })
+
+          media=[]
+          for p in sorted(chunks.glob('media_source_*.json')):
+              media.extend(json.loads(p.read_text(encoding='utf-8'))['items'])
+          assert len(media)==698,len(media)
+          grouped={'audio':[],'film':[],'unknown':[]}
+          for x in media:
+              grouped[x['kind']].append(x)
+          assert {k:len(v) for k,v in grouped.items()}=={'audio':203,'film':0,'unknown':495}
+
+          mapped={'audio':'audio','film':'film','unknown':'unclassified'}
+          manifest_media=[]
+          for kind,items in grouped.items():
+              outkind=mapped[kind]
+              for x in items:
+                  cid=x['content_id']
+                  size=(512,512) if kind=='audio' else (640,360)
+                  label={'audio':'AUDIO · SOURCE CARD PLACEHOLDER','film':'FILM · SOURCE CARD PLACEHOLDER','unknown':'MEDIA · UNCLASSIFIED PLACEHOLDER'}[kind]
+                  p=preview_root/outkind/f'{cid}.png'
+                  subtitle=' · '.join(str(v) for v in [x.get('artist'),x.get('duration')] if v)
+                  placeholder(p,size,label,x.get('title',''),subtitle,cid)
+                  rel=p.relative_to(root).as_posix()
+                  manifest_media.append({
+                      'content_id':cid,'kind':outkind,'title':x.get('title'),'artist':x.get('artist'),
+                      'duration':x.get('duration'),'source_path':x.get('source_path'),
+                      'source_file_id':x.get('source_file_id'),'source_page':x.get('source_page'),
+                      'source_card_index':x.get('source_card_index'),'source_url':x.get('source_url'),
+                      'preview_path':rel,
+                      'rights_provenance':'Neutral typography placeholder only. Source thumbnail exists in user-provided liked-list PDF but thumbnail rights are not confirmed for repository use.',
+                      'rights_status':'SOURCE_THUMBNAIL_RIGHTS_UNCONFIRMED',
+                      'status':'PLACEHOLDER_RIGHTS_GATE_OWNER_APPROVAL_FALSE',
+                      'owner_approved':False,
+                      'classification_reason':x.get('classification_reason')
+                  })
+
+          idx['audio']=[x for x in manifest_media if x['kind']=='audio']
+          idx['film']=[x for x in manifest_media if x['kind']=='film']
+          idx['unclassified']=[x for x in manifest_media if x['kind']=='unclassified']
+
+          artifact_audit=json.loads((hand/'artifact_registry_audit.json').read_text(encoding='utf-8'))
+          all_files=[p for p in root.rglob('*') if p.is_file()]
+          by_name={}
+          for p in all_files: by_name.setdefault(p.name,[]).append(p)
+          manifest_art=[]
+          for a in artifact_audit.get('entries',[]):
+              basename=Path(a.get('source_path') or '').name
+              candidates=by_name.get(basename,[])
+              image_candidates=[p for p in candidates if p.suffix.lower() in {'.png','.jpg','.jpeg','.webp'} and 'media/previews' not in p.as_posix()]
+              row=dict(a)
+              row['owner_approved']=False
+              if image_candidates:
+                  image_candidates.sort(key=lambda p:(0 if 'assets/props/artifacts' in p.as_posix() else 1,0 if '/masters/' not in p.as_posix() else 1,len(p.as_posix())))
+                  src=image_candidates[0]
+                  try:
+                      im=Image.open(src).convert('RGBA')
+                      canvas=Image.new('RGBA',(512,512),(24,24,28,255))
+                      fitted=ImageOps.contain(im,(464,464))
+                      canvas.alpha_composite(fitted,((512-fitted.width)//2,(512-fitted.height)//2))
+                      out=preview_root/'artifacts'/f"{a['content_id']}.png"
+                      canvas.save(out,optimize=True)
+                      row['preview_path']=out.relative_to(root).as_posix()
+                      row['resolved_source_path']=src.relative_to(root).as_posix()
+                      row['status']='SOURCE_PROJECT_ASSET_PREVIEW_READY_OWNER_APPROVAL_FALSE'
+                  except Exception as e:
+                      row['preview_path']=None
+                      row['status']='SOURCE_PRESENT_PREVIEW_FAILED'
+                      row['error']=str(e)
+              else:
+                  row['preview_path']=None
+                  row['status']='MISSING_SOURCE_MASTER_NO_FABRICATION'
+              manifest_art.append(row)
+          idx['artifacts']=manifest_art
+          index_path.write_text(json.dumps(idx,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+
+          comprehensive={
+              'schema':1,
+              'owner_approved':False,
+              'source_policy':{
+                  'youtube_source_file_id':'file_00000000b80c821087056a640cf64627',
+                  'youtube_source_sha256':'038efbd6e84c653ba67bc61569e05932eba9eebfa7883ea46cc59114da724cbf',
+                  'youtube_pages':88,
+                  'playlist_visible_count':932,
+                  'extracted_visible_cards':698,
+                  'source_gap_count':234,
+                  'youtube_thumbnail_repository_policy':'NOT_COMMITTED_RIGHTS_UNCONFIRMED_PLACEHOLDERS_ONLY',
+                  'book_cover_policy':'NO_CONFIRMED_COVERS_PLACEHOLDERS_ONLY',
+                  'artifact_policy':'PREVIEW_ONLY_FROM_PROJECT_ASSETS_ALREADY_IN_REPO; OTHERWISE MISSING'
+              },
+              'books':manifest_books,
+              'audio':[x for x in manifest_media if x['kind']=='audio'],
+              'film':[x for x in manifest_media if x['kind']=='film'],
+              'unclassified':[x for x in manifest_media if x['kind']=='unclassified'],
+              'artifacts':manifest_art
+          }
+          man_path=root/'assets/manifests/media_preview_manifest_zna003.json'
+          man_path.write_text(json.dumps(comprehensive,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+
+          def contacts(kind,rows,per=20):
+              valid=[r for r in rows if r.get('preview_path')]
+              if not valid: return 0
+              for pg in range(math.ceil(len(valid)/per)):
+                  batch=valid[pg*per:(pg+1)*per]
+                  cols=5; rowsn=4
+                  cellw,cellh=260,190
+                  sheet=Image.new('RGB',(cols*cellw,rowsn*cellh),(36,36,40))
+                  d=ImageDraw.Draw(sheet)
+                  for i,r in enumerate(batch):
+                      src=root/r['preview_path']
+                      im=Image.open(src).convert('RGB')
+                      im.thumbnail((220,135))
+                      x=(i%cols)*cellw+(cellw-im.width)//2
+                      y=(i//cols)*cellh+8
+                      sheet.paste(im,(x,y))
+                      title=(r.get('title') or r.get('content_id') or '')[:38]
+                      d.text(((i%cols)*cellw+10,(i//cols)*cellh+150),title,font=font(14),fill=(230,230,230))
+                  sheet.save(hand/'contact_sheets'/f'{kind}_{pg+1:02d}.jpg',quality=82,optimize=True)
+              return math.ceil(len(valid)/per)
+
+          contact_counts={
+              'books':contacts('books',manifest_books),
+              'audio':contacts('audio',[x for x in manifest_media if x['kind']=='audio']),
+              'film':contacts('film',[x for x in manifest_media if x['kind']=='film']),
+              'unclassified':contacts('unclassified',[x for x in manifest_media if x['kind']=='unclassified']),
+              'artifacts':contacts('artifacts',manifest_art)
+          }
+
+          qa={
+              'books':len(manifest_books),'audio':len([x for x in manifest_media if x['kind']=='audio']),
+              'film':len([x for x in manifest_media if x['kind']=='film']),
+              'unclassified':len([x for x in manifest_media if x['kind']=='unclassified']),
+              'artifacts_registered':len(manifest_art),
+              'artifact_previews_ready':sum(1 for x in manifest_art if x.get('preview_path')),
+              'artifact_missing_sources':sum(1 for x in manifest_art if not x.get('preview_path')),
+              'contact_sheet_pages':contact_counts,
+              'owner_approved':False
+          }
+          (hand/'MEDIA_PREVIEW_QA.json').write_text(json.dumps(qa,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print('MEDIA_PREVIEWS_PASS',json.dumps(qa,ensure_ascii=False))
+          PY
+
+      - name: Write creature coverage report and blockers
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+          import json
+          root=Path('dragon_house_clean')
+          hand=root/'docs/handoffs/ZNA_CHAR_NPC_20261123_003_CREATURE_MEDIA_PREVIEWS'
+          c=json.loads((hand/'creature_resident_coverage.json').read_text(encoding='utf-8'))
+          lines=[
+              '# ZNA003 Creature / Guest Coverage',
+              '',
+              'Status: TECHNICAL AUDIT / owner_approved=false',
+              '',
+              '| Entity | Status | Evidence |',
+              '|---|---|---|'
+          ]
+          for x in c.get('entities',[]):
+              lines.append(f"| {x.get('entity')} | {x.get('status')} | {x.get('evidence','')} |")
+          lines += [
+              '',
+              '## Explicit blockers / no-fabrication decisions',
+              '',
+              '- **Shurshun:** no creature bank exists on audited branch. Only artifact/poster imagery exists. No creature frames generated without an approved identity master.',
+              '- **Mice:** no mouse bank and no approved mouse identity master found. Rat banks are not relabeled as mice.',
+              '- **Miu:** existing SHORT/22-state bank is retained as starting bank. No room/perch/carry extension was generated because no need/evidence gate was provided in this task.',
+              '- **Pet ownership labels:** new cats/rats/hedgehogs/sphere have no verified owner_id/display_label in registry. Ownership remains UNKNOWN; no owner was invented.',
+              '- **Magical AI sphere:** retained as non-humanoid creature/device bank; no guest-room implication added.',
+              '',
+              'RES_22–RES_24 are outside the redraw scope. Their previous R1 frame bytes were restored exactly; identity files were not touched.'
+          ]
+          (hand/'CREATURE_RESIDENT_COVERAGE.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+          PY
+
+      - name: Machine QA and scope guard before commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          import hashlib,json
+          root=Path('dragon_house_clean')
+          hand=root/'docs/handoffs/ZNA_CHAR_NPC_20261123_003_CREATURE_MEDIA_PREVIEWS'
+          issues=[]
+
+          proof=json.loads((hand/'RES22_24_R1_FRAME_HASHES.json').read_text(encoding='utf-8'))
+          seen=0
+          for rows in proof['frame_hashes'].values():
+              for rel,h in rows.items():
+                  p=root/rel
+                  if not p.is_file(): issues.append('missing '+rel); continue
+                  if hashlib.sha256(p.read_bytes()).hexdigest()!=h: issues.append('R1 hash drift '+rel)
+                  im=Image.open(p)
+                  if im.size!=(512,512) or im.mode!='RGBA': issues.append('R1 format '+rel)
+                  seen+=1
+          if seen!=423: issues.append(f'R1 count {seen}')
+
+          man=json.loads((root/'assets/manifests/media_preview_manifest_zna003.json').read_text(encoding='utf-8'))
+          expected={'books':76,'audio':203,'film':0,'unclassified':495}
+          for k,n in expected.items():
+              if len(man.get(k,[]))!=n: issues.append(f'{k} count {len(man.get(k,[]))} != {n}')
+          for k in ('books','audio','film','unclassified','artifacts'):
+              for x in man.get(k,[]):
+                  pp=x.get('preview_path')
+                  if not pp: continue
+                  p=root/pp
+                  if not p.is_file(): issues.append('missing preview '+pp); continue
+                  try: Image.open(p).verify()
+                  except Exception as e: issues.append('invalid preview '+pp+': '+str(e))
+
+          reg=json.loads((root/'data/asset_registry_nov2026.json').read_text(encoding='utf-8'))
+          for cid,v in reg.get('creatures',{}).items():
+              if cid.startswith(('npc_cat_','npc_rat_','npc_hedgehog_')) or cid=='npc_ai_magic_sphere':
+                  if v.get('owner_id') or v.get('owner') or v.get('display_label'):
+                      issues.append('unexpected ownership claim '+cid)
+
+          if issues:
+              raise SystemExit('\n'.join(issues))
+          print('PRECOMMIT_QA_PASS R1=423 books=76 audio=203 unclassified=495')
+          PY
+
+          bad=0
+          while IFS= read -r p; do
+            case "$p" in
+              dragon_house_clean/assets/residents/RES_22/wardrobes/*|\
+              dragon_house_clean/assets/residents/RES_23/wardrobes/*|\
+              dragon_house_clean/assets/residents/RES_24/wardrobes/*|\
+              dragon_house_clean/assets/media/previews/*|\
+              dragon_house_clean/assets/manifests/*|\
+              dragon_house_clean/data/asset_registry_nov2026.json|\
+              dragon_house_clean/docs/handoffs/ZNA_CHAR_NPC_20261123_003_CREATURE_MEDIA_PREVIEWS/*)
+                ;;
+              *)
+                echo "SCOPE_VIOLATION $p"
+                bad=1
+                ;;
+            esac
+          done < <(git status --porcelain | sed 's/^...//')
+          test "$bad" -eq 0
+
+      - name: Commit art and exact R1 restore
+        id: asset_commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'Znaechka Integration Bot'
+          git config user.email 'znaechka-integration@users.noreply.github.com'
+          git add \
+            dragon_house_clean/assets/residents/RES_22/wardrobes \
+            dragon_house_clean/assets/residents/RES_23/wardrobes \
+            dragon_house_clean/assets/residents/RES_24/wardrobes \
+            dragon_house_clean/assets/media/previews \
+            dragon_house_clean/assets/manifests \
+            dragon_house_clean/data/asset_registry_nov2026.json \
+            dragon_house_clean/docs/handoffs/ZNA_CHAR_NPC_20261123_003_CREATURE_MEDIA_PREVIEWS
+          if git diff --cached --quiet; then
+            echo 'No asset changes to commit'
+          else
+            git commit -m 'art(media): restore RES22-24 R1 and add rights-safe previews'
+            git push origin HEAD:art/znaechka-characters-ZNA_CHAR_NPC_20261123_001
+          fi
+          echo "asset_commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Fresh-clone LFS audit
+        id: fresh
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          rm -rf /tmp/zna-fresh
+          git clone --quiet --single-branch --branch art/znaechka-characters-ZNA_CHAR_NPC_20261123_001 \
+            "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" /tmp/zna-fresh
+          cd /tmp/zna-fresh
+          git lfs install --local
+          git lfs pull
+          python3 - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          import hashlib,json,subprocess
+          root=Path('dragon_house_clean')
+          hand=root/'docs/handoffs/ZNA_CHAR_NPC_20261123_003_CREATURE_MEDIA_PREVIEWS'
+          proof=json.loads((hand/'RES22_24_R1_FRAME_HASHES.json').read_text(encoding='utf-8'))
+          total=0
+          for rows in proof['frame_hashes'].values():
+              for rel,h in rows.items():
+                  p=root/rel
+                  assert p.is_file(),rel
+                  assert hashlib.sha256(p.read_bytes()).hexdigest()==h,rel
+                  assert p.read_bytes()[:8]==b'\x89PNG\r\n\x1a\n',rel
+                  total+=1
+          assert total==423,total
+
+          man=json.loads((root/'assets/manifests/media_preview_manifest_zna003.json').read_text(encoding='utf-8'))
+          assert len(man['books'])==76
+          assert len(man['audio'])==203
+          assert len(man['film'])==0
+          assert len(man['unclassified'])==495
+          for kind in ('books','audio','unclassified','artifacts'):
+              for x in man[kind]:
+                  pp=x.get('preview_path')
+                  if pp:
+                      p=root/pp
+                      assert p.is_file(),pp
+                      Image.open(p).verify()
+          print('FRESH_CLONE_QA_PASS head='+subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip())
+          PY
+          echo "fresh_head=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Write final handoff QA
+        shell: bash
+        env:
+          ASSET_COMMIT: ${{ steps.asset_commit.outputs.asset_commit }}
+          FRESH_HEAD: ${{ steps.fresh.outputs.fresh_head }}
+        run: |
+          set -euo pipefail
+          HAND=dragon_house_clean/docs/handoffs/ZNA_CHAR_NPC_20261123_003_CREATURE_MEDIA_PREVIEWS
+          cat > "$HAND/QA_ZNAECHKA_20261123.md" <<EOF
+          # ZNA_CHAR_NPC_20261123_003 — Creature / Media Previews QA
+
+          Status: **TECHNICAL PASS WITH EXPLICIT CONTENT GAPS / owner_approved=false**
+
+          ## Git evidence
+
+          - audited task-start branch head: `b3f81349840707b6c0b95ec025b7a8e827175752`
+          - workflow staging head: `${WORKFLOW_HEAD}`
+          - asset commit: `${ASSET_COMMIT}`
+          - fresh-clone audited head: `${FRESH_HEAD}`
+          - branch: `art/znaechka-characters-ZNA_CHAR_NPC_20261123_001`
+
+          ## Existing guest / creature inventory
+
+          - Кентавр: COMPLETE base guest bank, existing art reused.
+          - Вампирша: COMPLETE base guest bank, existing art reused.
+          - Миу / `NPC_GINGER_CAT_GUEST`: COMPLETE starting SHORT bank, no duplicate created.
+          - Magical AI sphere: COMPLETE minimum creature bank; remains sphere/device, no guest-room implication added.
+          - Hedgehogs: 3 COMPLETE minimum creature banks.
+          - Cats: 6 COMPLETE minimum creature banks; owner labels remain UNKNOWN because no verified owner IDs exist.
+          - Rats: 5 COMPLETE minimum creature banks; not relabeled as mice.
+          - Manjka: COMPLETE minimum creature bank.
+          - Shurshun: **MISSING creature bank**; only artifact/poster imagery is present, so no identity was fabricated.
+          - Mice: **MISSING**; no approved mouse identity master found.
+
+          ## RES_22–RES_24 hard stop
+
+          - Exactly **423** prior R1 technical frames restored from the prior accepted delivery.
+          - Source ZIP SHA-256: `5d05c5fe0397bf0c7fa50cb03193f1540c2401ee66480c84c364f0123b47ab49`.
+          - All 423 destination frame SHA-256 values match their source bytes.
+          - Identity files were hash-checked before/after and were **not modified**.
+          - No repaint, regeneration or identity-gate work was performed.
+          - Identity drift remains a documented known limitation, not a silent PASS.
+
+          ## Media preview processing
+
+          Canonical book registry:
+          - 76/76 metadata entries retained.
+          - No confirmed cover art was present in repo.
+          - 76 neutral typography placeholders generated; they are explicitly **not official cover art**.
+
+          YouTube liked-list source:
+          - source: `Понравившиеся - YouTube.pdf`
+          - source file id: `file_00000000b80c821087056a640cf64627`
+          - source SHA-256: `038efbd6e84c653ba67bc61569e05932eba9eebfa7883ea46cc59114da724cbf`
+          - pages: 88
+          - playlist visible count in source: 932
+          - physically visible/extracted cards: 698
+          - source gap: 234 cards not present in PDF and **not reconstructed from the web**
+          - conservative source classification: audio 203 / film 0 / unclassified 495
+          - YouTube thumbnail bytes were **not committed** because repository-use rights were not confirmed.
+          - Instead, neutral title/metadata placeholders were generated.
+          - Source-derived crop package remains in shared Library for review only:
+            `/Dragon cave/DRAGON_HOUSE_ARCHITECT_2026-09-29/ZNA_CHAR_NPC_20261123_003_CREATURE_MEDIA_PREVIEWS/ZNA_CHAR_NPC_20261123_003_CREATURE_MEDIA_TRANSFER.zip`
+
+          Artifacts:
+          - canonical artifact registry audited.
+          - preview generated only when the registered source master already exists as a project asset in this repo.
+          - missing masters remain `MISSING_SOURCE_MASTER_NO_FABRICATION`; no fake artifact art was created.
+
+          ## Runtime / scope
+
+          - No engine/runtime/interior files were edited.
+          - No ownership labels were invented.
+          - No runtime binding or owner approval was asserted.
+          - Media preview manifest is art/data only; integrator owns hover/full-screen/runtime hookup.
+
+          ## Machine QA
+
+          - pre-commit QA: PASS
+          - scope guard: PASS
+          - Git LFS push: PASS
+          - fresh clone + `git lfs pull`: PASS
+          - 423 RES frame re-hash in fresh clone: PASS
+          - placeholder/media manifest counts in fresh clone: PASS
+          - preview image decode in fresh clone: PASS
+
+          ## Explicit blockers
+
+          1. Shurshun needs an approved creature identity master before a creature bank can be generated.
+          2. Mice need an approved mouse identity master; existing rat banks are not substitutes.
+          3. 234 liked-list entries are absent from the supplied PDF.
+          4. YouTube source thumbnails require a separate rights decision before repository use.
+          5. Artifact registry entries whose master image is absent from this repo remain unresolved.
+          6. Owner art approval remains false.
+          EOF
+
+          git add "$HAND/QA_ZNAECHKA_20261123.md"
+          git commit -m 'docs(handoff): finalize creature media preview QA'
+          git push origin HEAD:art/znaechka-characters-ZNA_CHAR_NPC_20261123_001
