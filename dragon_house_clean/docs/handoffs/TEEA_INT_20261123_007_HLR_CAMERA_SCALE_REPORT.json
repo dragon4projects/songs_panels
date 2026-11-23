@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "batch_id": "TEEA_INT_20261123_007",
+  "runtime_source": "dragon-house-fallout-fresh@c280f62778bcc4a4ac0093db48a852f0469b6bf2 main.gd/world_model.gd",
+  "viewport": [
+    1536,
+    1024
+  ],
+  "fov_deg": 35.0,
+  "module_width_m": 4.8,
+  "floor_height_m": 4.6,
+  "proposed_guest_builds": [
+    {
+      "room": "guest_centaur/R1",
+      "cell": [
+        6,
+        0
+      ],
+      "can_build_against_seed": true,
+      "adjacent_left": "lift",
+      "adjacent_right": null
+    },
+    {
+      "room": "guest_vampire/R1",
+      "cell": [
+        6,
+        1
+      ],
+      "can_build_against_seed": true,
+      "adjacent_left": "lift",
+      "adjacent_right": null
+    },
+    {
+      "room": "guest_miu/R1",
+      "cell": [
+        6,
+        -1
+      ],
+      "can_build_against_seed": true,
+      "adjacent_left": "lift",
+      "adjacent_right": null
+    }
+  ],
+  "HOUSE": {
+    "zoom": 71.75416080866533,
+    "bounds": [
+      -26.4,
+      -6.8999999999999995,
+      31.199999999999996,
+      6.8999999999999995
+    ],
+    "projected_R1_width_px_if_shell": 108.62800565770861,
+    "detailed_room_art_expected_loaded": false,
+    "reason": "update_render_lod only loads detailed art in ROOM/FOLLOW near-detail"
+  },
+  "LEVEL": {
+    "-1": {
+      "zoom": 36.308417297454056,
+      "projected_R1_width_px_if_shell": 214.6750524109015,
+      "detailed_room_art_expected_loaded": false
+    },
+    "0": {
+      "zoom": 69.19151220835586,
+      "projected_R1_width_px_if_shell": 112.65126512651264,
+      "detailed_room_art_expected_loaded": false
+    },
+    "1": {
+      "zoom": 36.308417297454056,
+      "projected_R1_width_px_if_shell": 214.6750524109015,
+      "detailed_room_art_expected_loaded": false
+    }
+  },
+  "ROOM_R1": {
+    "zoom": 10.8,
+    "manual_yaw_tests": [
+      -0.18,
+      0,
+      0.18
+    ],
+    "effective_yaw_tests": [
+      -0.105,
+      0.075,
+      0.255
+    ],
+    "projected_R1_width_px_at_focus": 721.7140172488731,
+    "detailed_room_art_expected_loaded": true
+  },
+  "pass": true
+}
