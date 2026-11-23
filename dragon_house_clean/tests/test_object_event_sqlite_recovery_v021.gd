@@ -25,7 +25,7 @@ func _overwrite(path: String, text: String) -> void:
 func run() -> void:
 	var path := "user://object_event_sqlite_recovery_v021.json"
 	_cleanup(path)
-	OS.set_environment("DRAGON_OBJECT_EVENT_BACKEND","sqlite")
+	OS.set_environment("DRAGON_OBJECT_EVENT_BACKEND","")
 
 	var world := World.new()
 	world.save_path = path
