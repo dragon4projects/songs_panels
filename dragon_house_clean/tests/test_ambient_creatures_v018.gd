@@ -31,7 +31,6 @@ func run() -> void:
 	var world := World.new()
 	world.save_path = path
 	world.seed_world()
-	assert(str(world.runtime_state.get("object_event_backend",""))=="sqlite_v021_proof")
 
 	var common_a: Dictionary = world.get_room(-2,0)
 	var common_b: Dictionary = world.get_room(-1,0)
@@ -56,6 +55,7 @@ func run() -> void:
 
 	assert(world.register_physical_object(
 		"LOOSE_MUG","Кружка","",common_a["id"],true,true,true,true,false))
+	assert(str(world.runtime_state.get("object_event_backend",""))=="sqlite_v021_proof")
 	assert(world.register_physical_object(
 		"PROTECTED_ARTIFACT","Защищённый артефакт","RES_01",common_a["id"],
 		true,true,true,true,true))
