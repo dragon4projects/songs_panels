@@ -1,0 +1,695 @@
+{
+  "schema": 1,
+  "batch_id": "TEEA_INT_20261123_005",
+  "calibration": {
+    "backwall_z": -2.04,
+    "aisle_z": 0.95,
+    "feet_y": 0.0,
+    "module_width": 4.8,
+    "canvas": [
+      1536,
+      1024
+    ],
+    "axis_mapping": "godot_z=-blender_y",
+    "width_contract": {
+      "R1": 4.8,
+      "R2": 9.6,
+      "R3": 14.4
+    },
+    "orthographic_rule": "ortho_scale = physical_width"
+  },
+  "foreground_target_front_z": 0.15,
+  "variants": {
+    "common/R1": {
+      "room_type": "common",
+      "width": 1,
+      "physical_width": 4.8,
+      "module_centers": [
+        0.0
+      ],
+      "objects": [
+        {
+          "id": "common_r1_shelf",
+          "asset": "Shelf_01",
+          "role": "back_decor",
+          "x": -1.72,
+          "z": -1.7,
+          "scale": 0.82,
+          "collision": false,
+          "interaction": "NONE"
+        },
+        {
+          "id": "common_r1_drawer",
+          "asset": "vintage_wooden_drawer_01",
+          "role": "back_decor",
+          "x": 1.65,
+          "z": -1.56,
+          "scale": 0.62,
+          "collision": false,
+          "interaction": "NONE"
+        },
+        {
+          "id": "common_r1_front_chair",
+          "asset": "modern_arm_chair_01",
+          "role": "furniture_back",
+          "x": -1.18,
+          "z": -0.234759,
+          "scale": 0.78,
+          "collision": true,
+          "interaction": "SEAT_TALK",
+          "module_index": 0
+        },
+        {
+          "id": "common_r1_side_table",
+          "asset": "side_table_01",
+          "role": "furniture_back",
+          "x": 0.05,
+          "z": -0.72,
+          "scale": 0.62,
+          "collision": true,
+          "interaction": "NONE",
+          "module_index": 0
+        }
+      ],
+      "procedural": [
+        {
+          "id": "common_r1_shared_table",
+          "type": "shared_table",
+          "role": "furniture_back",
+          "x": 1.18,
+          "z": -1.22,
+          "width": 1.2,
+          "depth": 0.66,
+          "height": 0.78,
+          "collision": true,
+          "interaction": "STAND_TALK",
+          "module_index": 0
+        }
+      ],
+      "foreground_sources": [
+        "common_r1_front_chair"
+      ],
+      "foreground_target_front_z": 0.15
+    },
+    "common/R2": {
+      "room_type": "common",
+      "width": 2,
+      "physical_width": 9.6,
+      "module_centers": [
+        -2.4,
+        2.4
+      ],
+      "objects": [
+        {
+          "id": "common_r2_shelf_left",
+          "asset": "Shelf_01",
+          "role": "back_decor",
+          "x": -3.9,
+          "z": -1.7,
+          "scale": 0.86,
+          "collision": false,
+          "interaction": "NONE"
+        },
+        {
+          "id": "common_r2_drawer_right",
+          "asset": "vintage_wooden_drawer_01",
+          "role": "back_decor",
+          "x": 3.75,
+          "z": -1.58,
+          "scale": 0.62,
+          "collision": false,
+          "interaction": "NONE"
+        },
+        {
+          "id": "common_r2_front_chair_left",
+          "asset": "modern_arm_chair_01",
+          "role": "furniture_back",
+          "x": -3.25,
+          "z": -0.234759,
+          "scale": 0.78,
+          "collision": true,
+          "interaction": "SEAT_TALK",
+          "module_index": 0
+        },
+        {
+          "id": "common_r2_front_chair_right",
+          "asset": "painted_wooden_chair_01",
+          "role": "furniture_back",
+          "x": 3.25,
+          "z": -0.103717,
+          "scale": 0.94,
+          "collision": true,
+          "interaction": "SEAT_TALK",
+          "module_index": 1
+        },
+        {
+          "id": "common_r2_side_table_left",
+          "asset": "side_table_01",
+          "role": "furniture_back",
+          "x": -2.15,
+          "z": -0.72,
+          "scale": 0.6,
+          "collision": true,
+          "interaction": "NONE",
+          "module_index": 0
+        }
+      ],
+      "procedural": [
+        {
+          "id": "common_r2_shared_table",
+          "type": "shared_table",
+          "role": "furniture_back",
+          "x": 0.0,
+          "z": -1.22,
+          "width": 2.75,
+          "depth": 0.66,
+          "height": 0.78,
+          "collision": true,
+          "interaction": "STAND_TALK_PAIR",
+          "module_index": 0
+        }
+      ],
+      "foreground_sources": [
+        "common_r2_front_chair_left",
+        "common_r2_front_chair_right"
+      ],
+      "foreground_target_front_z": 0.15
+    },
+    "study/R2": {
+      "room_type": "study",
+      "width": 2,
+      "physical_width": 9.6,
+      "module_centers": [
+        -2.4,
+        2.4
+      ],
+      "objects": [
+        {
+          "id": "study_r2_shelf_left",
+          "asset": "Shelf_01",
+          "role": "back_decor",
+          "x": -3.85,
+          "z": -1.7,
+          "scale": 0.85,
+          "collision": false,
+          "interaction": "NONE"
+        },
+        {
+          "id": "study_r2_drawer_right",
+          "asset": "vintage_wooden_drawer_01",
+          "role": "back_decor",
+          "x": 3.72,
+          "z": -1.58,
+          "scale": 0.64,
+          "collision": false,
+          "interaction": "NONE"
+        },
+        {
+          "id": "study_r2_front_reader",
+          "asset": "mid_century_lounge_chair",
+          "role": "furniture_back",
+          "x": 3.38,
+          "z": -0.254706,
+          "scale": 0.68,
+          "collision": true,
+          "interaction": "SEAT_READ",
+          "module_index": 1
+        },
+        {
+          "id": "study_r2_lamp",
+          "asset": "desk_lamp_arm_01",
+          "role": "furniture_back",
+          "x": -2.35,
+          "z": -1.12,
+          "scale": 0.34,
+          "height": 0.8,
+          "collision": false,
+          "interaction": "NONE"
+        }
+      ],
+      "procedural": [
+        {
+          "id": "study_r2_heavy_desk",
+          "type": "heavy_desk",
+          "role": "furniture_back",
+          "x": -2.35,
+          "z": -1.23,
+          "width": 1.9,
+          "depth": 0.72,
+          "height": 0.78,
+          "collision": true,
+          "interaction": "WORK_STAND",
+          "module_index": 0
+        },
+        {
+          "id": "study_r2_read_table",
+          "type": "reading_table",
+          "role": "furniture_back",
+          "x": 1.5,
+          "z": -1.16,
+          "width": 1.35,
+          "depth": 0.66,
+          "height": 0.76,
+          "collision": true,
+          "interaction": "WORK_READ",
+          "module_index": 1
+        }
+      ],
+      "foreground_sources": [
+        "study_r2_front_reader"
+      ],
+      "foreground_target_front_z": 0.15
+    },
+    "study/R3": {
+      "room_type": "study",
+      "width": 3,
+      "physical_width": 14.399999999999999,
+      "module_centers": [
+        -4.8,
+        0.0,
+        4.8
+      ],
+      "objects": [
+        {
+          "id": "study_r3_shelf_left",
+          "asset": "Shelf_01",
+          "role": "back_decor",
+          "x": -6.15,
+          "z": -1.7,
+          "scale": 0.86,
+          "collision": false,
+          "interaction": "NONE"
+        },
+        {
+          "id": "study_r3_bookshelf_mid",
+          "asset": "wooden_bookshelf_worn",
+          "role": "back_decor",
+          "x": -1.55,
+          "z": -1.68,
+          "scale": 0.72,
+          "collision": false,
+          "interaction": "NONE"
+        },
+        {
+          "id": "study_r3_drawer_right",
+          "asset": "vintage_wooden_drawer_01",
+          "role": "back_decor",
+          "x": 5.95,
+          "z": -1.58,
+          "scale": 0.64,
+          "collision": false,
+          "interaction": "NONE"
+        },
+        {
+          "id": "study_r3_front_reader_left",
+          "asset": "painted_wooden_chair_01",
+          "role": "furniture_back",
+          "x": -5.45,
+          "z": -0.103717,
+          "scale": 0.94,
+          "collision": true,
+          "interaction": "SEAT_READ",
+          "module_index": 0
+        },
+        {
+          "id": "study_r3_front_reader_right",
+          "asset": "modern_arm_chair_01",
+          "role": "furniture_back",
+          "x": 5.42,
+          "z": -0.224893,
+          "scale": 0.76,
+          "collision": true,
+          "interaction": "SEAT_READ",
+          "module_index": 2
+        },
+        {
+          "id": "study_r3_lamp",
+          "asset": "desk_lamp_arm_01",
+          "role": "furniture_back",
+          "x": -3.45,
+          "z": -1.1,
+          "scale": 0.33,
+          "height": 0.8,
+          "collision": false,
+          "interaction": "NONE"
+        }
+      ],
+      "procedural": [
+        {
+          "id": "study_r3_heavy_desk",
+          "type": "heavy_desk",
+          "role": "furniture_back",
+          "x": -3.55,
+          "z": -1.23,
+          "width": 1.95,
+          "depth": 0.72,
+          "height": 0.78,
+          "collision": true,
+          "interaction": "WORK_STAND",
+          "module_index": 0
+        },
+        {
+          "id": "study_r3_center_table",
+          "type": "reading_table",
+          "role": "furniture_back",
+          "x": 0.25,
+          "z": -1.17,
+          "width": 1.55,
+          "depth": 0.68,
+          "height": 0.76,
+          "collision": true,
+          "interaction": "WORK_READ",
+          "module_index": 1
+        }
+      ],
+      "foreground_sources": [
+        "study_r3_front_reader_left",
+        "study_r3_front_reader_right"
+      ],
+      "foreground_target_front_z": 0.15
+    },
+    "rest/R2": {
+      "room_type": "rest",
+      "width": 2,
+      "physical_width": 9.6,
+      "module_centers": [
+        -2.4,
+        2.4
+      ],
+      "objects": [
+        {
+          "id": "rest_r2_shelf_left",
+          "asset": "Shelf_01",
+          "role": "back_decor",
+          "x": -3.9,
+          "z": -1.7,
+          "scale": 0.8,
+          "collision": false,
+          "interaction": "NONE"
+        },
+        {
+          "id": "rest_r2_daybed_rear",
+          "asset": "vintage_day_bed",
+          "role": "back_decor",
+          "x": 2.85,
+          "z": -1.54,
+          "scale": 0.68,
+          "collision": false,
+          "interaction": "NONE"
+        },
+        {
+          "id": "rest_r2_front_lounge",
+          "asset": "mid_century_lounge_chair",
+          "role": "furniture_back",
+          "x": -3.15,
+          "z": -0.254706,
+          "scale": 0.68,
+          "collision": true,
+          "interaction": "SEAT_REST",
+          "module_index": 0
+        },
+        {
+          "id": "rest_r2_front_chair",
+          "asset": "painted_wooden_chair_01",
+          "role": "furniture_back",
+          "x": 3.55,
+          "z": -0.103717,
+          "scale": 0.94,
+          "collision": true,
+          "interaction": "SEAT_REST",
+          "module_index": 1
+        },
+        {
+          "id": "rest_r2_side_table",
+          "asset": "side_table_01",
+          "role": "furniture_back",
+          "x": -2.1,
+          "z": -0.72,
+          "scale": 0.62,
+          "collision": true,
+          "interaction": "NONE",
+          "module_index": 0
+        }
+      ],
+      "procedural": [
+        {
+          "id": "rest_r2_quiet_pad",
+          "type": "rest_pad",
+          "role": "furniture_back",
+          "x": 2.2,
+          "z": -1.03,
+          "width": 1.55,
+          "depth": 0.82,
+          "height": 0.09,
+          "collision": true,
+          "interaction": "FLOOR_REST",
+          "module_index": 1
+        }
+      ],
+      "foreground_sources": [
+        "rest_r2_front_lounge",
+        "rest_r2_front_chair"
+      ],
+      "foreground_target_front_z": 0.15
+    },
+    "rest/R3": {
+      "room_type": "rest",
+      "width": 3,
+      "physical_width": 14.399999999999999,
+      "module_centers": [
+        -4.8,
+        0.0,
+        4.8
+      ],
+      "objects": [
+        {
+          "id": "rest_r3_shelf_left",
+          "asset": "Shelf_01",
+          "role": "back_decor",
+          "x": -6.1,
+          "z": -1.7,
+          "scale": 0.8,
+          "collision": false,
+          "interaction": "NONE"
+        },
+        {
+          "id": "rest_r3_daybed_mid",
+          "asset": "vintage_day_bed",
+          "role": "back_decor",
+          "x": 0.1,
+          "z": -1.55,
+          "scale": 0.7,
+          "collision": false,
+          "interaction": "NONE"
+        },
+        {
+          "id": "rest_r3_drawer_right",
+          "asset": "vintage_wooden_drawer_01",
+          "role": "back_decor",
+          "x": 5.95,
+          "z": -1.6,
+          "scale": 0.58,
+          "collision": false,
+          "interaction": "NONE"
+        },
+        {
+          "id": "rest_r3_front_lounge_left",
+          "asset": "mid_century_lounge_chair",
+          "role": "furniture_back",
+          "x": -5.35,
+          "z": -0.254706,
+          "scale": 0.68,
+          "collision": true,
+          "interaction": "SEAT_REST",
+          "module_index": 0
+        },
+        {
+          "id": "rest_r3_front_chair_right",
+          "asset": "modern_arm_chair_01",
+          "role": "furniture_back",
+          "x": 5.38,
+          "z": -0.224893,
+          "scale": 0.76,
+          "collision": true,
+          "interaction": "SEAT_REST",
+          "module_index": 2
+        },
+        {
+          "id": "rest_r3_side_table_left",
+          "asset": "side_table_01",
+          "role": "furniture_back",
+          "x": -4.25,
+          "z": -0.72,
+          "scale": 0.6,
+          "collision": true,
+          "interaction": "NONE",
+          "module_index": 0
+        }
+      ],
+      "procedural": [
+        {
+          "id": "rest_r3_quiet_pad",
+          "type": "rest_pad_double",
+          "role": "furniture_back",
+          "x": 0.0,
+          "z": -1.03,
+          "width": 2.35,
+          "depth": 0.86,
+          "height": 0.09,
+          "collision": true,
+          "interaction": "FLOOR_REST_PAIR",
+          "module_index": 1
+        }
+      ],
+      "foreground_sources": [
+        "rest_r3_front_lounge_left",
+        "rest_r3_front_chair_right"
+      ],
+      "foreground_target_front_z": 0.15
+    },
+    "library/R1": {
+      "room_type": "library",
+      "width": 1,
+      "physical_width": 4.8,
+      "module_centers": [
+        0.0
+      ],
+      "objects": [
+        {
+          "id": "library_r1_shelf_left",
+          "asset": "wooden_bookshelf_worn",
+          "role": "back_decor",
+          "x": -1.62,
+          "z": -1.68,
+          "scale": 0.76,
+          "collision": false,
+          "interaction": "NONE"
+        },
+        {
+          "id": "library_r1_shelf_right",
+          "asset": "Shelf_01",
+          "role": "back_decor",
+          "x": 1.68,
+          "z": -1.72,
+          "scale": 0.8,
+          "collision": false,
+          "interaction": "NONE"
+        },
+        {
+          "id": "library_r1_front_reader",
+          "asset": "painted_wooden_chair_01",
+          "role": "furniture_back",
+          "x": -1.12,
+          "z": -0.103717,
+          "scale": 0.94,
+          "collision": true,
+          "interaction": "SEAT_READ",
+          "module_index": 0
+        }
+      ],
+      "procedural": [
+        {
+          "id": "library_r1_lectern",
+          "type": "reading_table",
+          "role": "furniture_back",
+          "x": 1.12,
+          "z": -1.22,
+          "width": 0.95,
+          "depth": 0.62,
+          "height": 0.8,
+          "collision": true,
+          "interaction": "WORK_READ",
+          "module_index": 0
+        }
+      ],
+      "foreground_sources": [
+        "library_r1_front_reader"
+      ],
+      "foreground_target_front_z": 0.15
+    },
+    "library/R3": {
+      "room_type": "library",
+      "width": 3,
+      "physical_width": 14.399999999999999,
+      "module_centers": [
+        -4.8,
+        0.0,
+        4.8
+      ],
+      "objects": [
+        {
+          "id": "library_r3_bookshelf_left",
+          "asset": "wooden_bookshelf_worn",
+          "role": "back_decor",
+          "x": -6.05,
+          "z": -1.68,
+          "scale": 0.78,
+          "collision": false,
+          "interaction": "NONE"
+        },
+        {
+          "id": "library_r3_shelf_mid",
+          "asset": "Shelf_01",
+          "role": "back_decor",
+          "x": -1.65,
+          "z": -1.72,
+          "scale": 0.84,
+          "collision": false,
+          "interaction": "NONE"
+        },
+        {
+          "id": "library_r3_bookshelf_right",
+          "asset": "wooden_bookshelf_worn",
+          "role": "back_decor",
+          "x": 4.95,
+          "z": -1.68,
+          "scale": 0.76,
+          "collision": false,
+          "interaction": "NONE"
+        },
+        {
+          "id": "library_r3_front_reader_left",
+          "asset": "painted_wooden_chair_01",
+          "role": "furniture_back",
+          "x": -5.35,
+          "z": -0.103717,
+          "scale": 0.94,
+          "collision": true,
+          "interaction": "SEAT_READ",
+          "module_index": 0
+        },
+        {
+          "id": "library_r3_front_reader_right",
+          "asset": "modern_arm_chair_01",
+          "role": "furniture_back",
+          "x": 5.35,
+          "z": -0.224893,
+          "scale": 0.76,
+          "collision": true,
+          "interaction": "SEAT_READ",
+          "module_index": 2
+        }
+      ],
+      "procedural": [
+        {
+          "id": "library_r3_shared_read_table",
+          "type": "reading_table_long",
+          "role": "furniture_back",
+          "x": 0.0,
+          "z": -1.22,
+          "width": 2.75,
+          "depth": 0.66,
+          "height": 0.78,
+          "collision": true,
+          "interaction": "WORK_READ_PAIR",
+          "module_index": 1
+        }
+      ],
+      "foreground_sources": [
+        "library_r3_front_reader_left",
+        "library_r3_front_reader_right"
+      ],
+      "foreground_target_front_z": 0.15
+    }
+  }
+}
