@@ -43,6 +43,12 @@ func _assert_foreground(scene,room:Dictionary,expected_z:float)->void:
     scene.yaw=0.0
 
 func run()->void:
+    # If an assertion aborts this coroutine, do not leave CI waiting until its
+    # outer shell timeout. A successful run quits long before this watchdog.
+    get_tree().create_timer(45.0).timeout.connect(func():
+        printerr("TEEA003_OWNER_PRODUCTION_V016_WATCHDOG")
+        quit(3)
+    )
     var scene=load("res://scenes/main.tscn").instantiate()
     scene.world.save_path="user://teea003_owner_prod_v016.json"
     root.add_child(scene)
@@ -67,7 +73,12 @@ func run()->void:
     for kind in expected:
         var layers:Array=scene.interior_skin.validated_layers(kind,1)
         assert(layers.size()==int(expected[kind]))
-        for item in layers:
+        # validated_layers() intentionally strips approval/provenance fields.
+        # Inspect the raw accepted manifest for those promotion assertions.
+        var raw_entry:Dictionary=scene.interior_skin.config.get("room_types",{}).get(kind,{}).get("R1",{})
+        var raw_layers:Array=raw_entry.get("layers",[])
+        assert(raw_layers.size()==int(expected[kind]))
+        for item in raw_layers:
             assert(bool(item.get("approved",false)))
             assert(str(item.get("source_batch","")).contains("TEEA_INT_20261122_003"))
         var node:Node3D=_node_for_room(scene,rooms[kind])
