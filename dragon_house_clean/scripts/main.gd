@@ -857,7 +857,8 @@ func desired_actor_animation(actor: Dictionary) -> String:
 			"SLEEP":
 				if str(actor.get("station_kind","")) in ["seat","floor_rest"]:
 					requested = str(actor.get("station_pose_hint","SLEEP"))
-			"TALK_PAIR": requested = "TALK"
+			"TALK_PAIR":
+				requested = "RELAXED_SIT" if str(actor.get("station_kind",""))=="seat" else "TALK"
 			"GET_COFFEE": requested = "DRINK"
 			"WATCH_FILM", "LISTEN_MUSIC":
 				requested = str(actor.get("station_pose_hint","VIEW")) if (
