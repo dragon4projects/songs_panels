@@ -1,0 +1,126 @@
+name: Dragon House native SQLite v4.9 spike
+
+on:
+  push:
+    branches:
+      - spike/dragon-house-native-sqlite-v49
+    paths:
+      - 'dragon_house_clean/tests/test_native_sqlite_v49_spike.gd'
+      - 'sqlite_spike_project/**'
+      - '.github/workflows/dragon-house-native-sqlite-v49-spike.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  sqlite:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          lfs: false
+
+      - name: Download official Godot 4.7.2 Linux
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fLsS --retry 3 -o /tmp/godot.zip             https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_linux.x86_64.zip
+          unzip -q /tmp/godot.zip -d /tmp
+          chmod +x /tmp/Godot_v4.7.2-stable_linux.x86_64
+          /tmp/Godot_v4.7.2-stable_linux.x86_64 --headless --version | tee /tmp/godot-version.txt
+          grep -q '^4.7.2.stable.official' /tmp/godot-version.txt
+
+      - name: Fetch exact godot-sqlite v4.9 release asset
+        shell: bash
+        run: |
+          set -euo pipefail
+          url='https://github.com/2shady4u/godot-sqlite/releases/download/v4.9/addons.zip'
+          expected='95e91b72fe32984a84edaf6357a78753661f37a170cb362f5b948e0ede7c2cb0'
+          curl -fLsS --retry 3 -o /tmp/godot-sqlite-addons.zip "$url"
+          echo "$expected  /tmp/godot-sqlite-addons.zip" | sha256sum -c -
+          rm -rf /tmp/godot-sqlite-unpack
+          mkdir -p /tmp/godot-sqlite-unpack
+          unzip -q /tmp/godot-sqlite-addons.zip -d /tmp/godot-sqlite-unpack
+          gdext="$(find /tmp/godot-sqlite-unpack -type f -name gdsqlite.gdextension -print -quit)"
+          test -n "$gdext"
+          addon_dir="$(dirname "$gdext")"
+          grep -q 'compatibility_minimum = "4.7"' "$gdext"
+          test -f "$addon_dir/bin/libgdsqlite.windows.template_release.x86_64.dll"
+          test -d "$addon_dir/bin/libgdsqlite.macos.template_release.framework"
+          test -f "$addon_dir/bin/libgdsqlite.linux.template_release.x86_64.so"
+          mkdir -p dragon_house_clean/addons sqlite_spike_project/addons
+          cp -a "$addon_dir" dragon_house_clean/addons/godot-sqlite
+          cp -a "$addon_dir" sqlite_spike_project/addons/godot-sqlite
+          find sqlite_spike_project/addons/godot-sqlite/bin -maxdepth 2 -type f -o -type d | sort | head -80
+
+      - name: Prove native SQLite runtime contract on Godot 4.7.2
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd dragon_house_clean
+          timeout 240s /tmp/Godot_v4.7.2-stable_linux.x86_64 --headless --path . --editor --quit > /tmp/main-import.log 2>&1 || true
+          if grep -Eq 'SCRIPT ERROR|Parse Error' /tmp/main-import.log; then
+            tail -120 /tmp/main-import.log
+            exit 1
+          fi
+          out="$(timeout 90s /tmp/Godot_v4.7.2-stable_linux.x86_64 --headless --path .             --script res://tests/test_native_sqlite_v49_spike.gd 2>&1)"
+          echo "$out"
+          echo "$out" | grep -q 'NATIVE_SQLITE_V49_SPIKE_PASS'
+          ! echo "$out" | grep -qE 'SCRIPT ERROR|Parse Error|Assertion failed'
+
+      - name: Prove minimal project loads native SQLite
+        shell: bash
+        run: |
+          set -euo pipefail
+          timeout 90s /tmp/Godot_v4.7.2-stable_linux.x86_64 --headless             --path sqlite_spike_project --editor --quit > /tmp/spike-import.log 2>&1
+          out="$(timeout 30s /tmp/Godot_v4.7.2-stable_linux.x86_64 --headless             --path sqlite_spike_project 2>&1)"
+          echo "$out"
+          echo "$out" | grep -q 'SQLITE_SPIKE_EXPORT_RUNTIME_PASS'
+          ! echo "$out" | grep -qE 'SCRIPT ERROR|Parse Error|SQLITE_SPIKE_EXPORT_RUNTIME_FAIL'
+
+      - name: Download original Godot 4.7.2 export templates
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fLsS --retry 3 -o /tmp/godot_export.tpz             https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_export_templates.tpz
+          dest="$HOME/.local/share/godot/export_templates/4.7.2.stable"
+          mkdir -p "$dest"
+          unzip -jo /tmp/godot_export.tpz             templates/version.txt             templates/windows_release_x86_64.exe             templates/windows_debug_x86_64.exe             templates/macos.zip -d "$dest"
+
+      - name: Export Windows and macOS SQLite smoke packages
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p sqlite_spike_project/build
+          /tmp/Godot_v4.7.2-stable_linux.x86_64 --headless --path sqlite_spike_project             --export-release 'Windows Desktop' sqlite_spike_project/build/SQLiteSpike.exe             > /tmp/sqlite-win-export.log 2>&1
+          /tmp/Godot_v4.7.2-stable_linux.x86_64 --headless --path sqlite_spike_project             --export-release 'macOS' sqlite_spike_project/build/SQLiteSpike_macOS_Universal.zip             > /tmp/sqlite-mac-export.log 2>&1
+          test -s sqlite_spike_project/build/SQLiteSpike.exe
+          test -s sqlite_spike_project/build/SQLiteSpike.pck
+          test -s sqlite_spike_project/build/SQLiteSpike_macOS_Universal.zip
+          find sqlite_spike_project/build -maxdepth 8 -type f -print | sort | tee /tmp/sqlite-build-files.txt
+          echo '--- macOS archive native SQLite entries ---'
+          unzip -l sqlite_spike_project/build/SQLiteSpike_macOS_Universal.zip |             grep -i 'gdsqlite' | tee /tmp/sqlite-macos-native.txt
+          test -s /tmp/sqlite-macos-native.txt
+          echo '--- Windows export native SQLite entries ---'
+          find sqlite_spike_project/build -type f -iname '*gdsqlite*' -print |             tee /tmp/sqlite-windows-native.txt
+          test -s /tmp/sqlite-windows-native.txt
+
+      - name: Store spike proof only
+        uses: actions/upload-artifact@v4
+        with:
+          name: dragon-house-native-sqlite-v49-spike-proof
+          path: |
+            /tmp/godot-version.txt
+            /tmp/main-import.log
+            /tmp/spike-import.log
+            /tmp/sqlite-win-export.log
+            /tmp/sqlite-mac-export.log
+            /tmp/sqlite-build-files.txt
+            /tmp/sqlite-macos-native.txt
+            /tmp/sqlite-windows-native.txt
+            sqlite_spike_project/DEPENDENCY_PROVENANCE.md
+            sqlite_spike_project/THIRD_PARTY_GODOT_SQLITE_LICENSE.txt
+          if-no-files-found: error
+          retention-days: 7
