@@ -1,0 +1,17 @@
+{
+  "image_qa_pass": true,
+  "yaw_qa_pass": true,
+  "station_collision_pass": true,
+  "depth_pass": true,
+  "harvest_pass": true,
+  "production_png": 48,
+  "variants": 12,
+  "measured_stations": 33,
+  "foreground_variants": 12,
+  "godot_4_7_2_image_load_pass": true,
+  "godot_count": 48,
+  "integration_target": "dragon-house-fallout-fresh@1216e2f1a737008e3d9fea0f5d240d54a78a6ea2",
+  "owner_approved": false,
+  "production_mutated_by_teea006": false,
+  "machine_status": "READY_FOR_INTEGRATOR_QA"
+}
