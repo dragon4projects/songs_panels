@@ -1,0 +1,21 @@
+name: Dragon House Actions infrastructure probe
+
+on:
+  push:
+    branches:
+      - qa/actions-infrastructure-probe-20261123
+    paths:
+      - '.github/workflows/actions-infrastructure-probe.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  ubuntu:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Probe runner allocation
+        run: |
+          echo "ACTIONS_INFRASTRUCTURE_PROBE_PASS"
+          uname -a
