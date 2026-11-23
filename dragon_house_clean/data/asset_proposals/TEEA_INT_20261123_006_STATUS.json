@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "batch_id": "TEEA_INT_20261123_006",
+  "machine_status": "READY_FOR_INTEGRATOR_QA",
+  "owner_approved": false,
+  "approved": false,
+  "production_pr": "NONE",
+  "branch": "art/teea-interiors-TEEA_INT_20261123_006",
+  "task_branch_base_head": "ac44724c39275d365c185af0435b6dea676d24ae",
+  "production_head_validated_against": "78f2ae904585ffe01bc11b39f2762ce90e85f00c",
+  "variants": 12,
+  "production_png": 40,
+  "measured_stations": 31,
+  "foreground_variants": 4,
+  "depth_readability_pass": "12/12",
+  "yaw_proof": "12/12 at manual -0.18 / 0 / +0.18 plus current-production effective supplement",
+  "yaw_proof_images": 72,
+  "station_bounds_errors": 0,
+  "spacing_errors": 0,
+  "documented_spacing_exceptions": [
+    {
+      "variant": "cinema/R1",
+      "a": "cinema_r1_sofa_seat_a",
+      "b": "cinema_r1_sofa_seat_b",
+      "distance": 0.6054,
+      "reason": "MEASURED_SAME_SOFA_SEAT_CENTRES"
+    }
+  ],
+  "foreign_collision_approach_intersections": 0,
+  "godot_4_7_2_image_pass": "40/40",
+  "harvest_unique_assets_used": 41,
+  "reserve_leak_errors": 0,
+  "runtime_prop_candidates": 0,
+  "required_integrator_live_checks": [
+    "ingest replacement candidate without changing approved/owner_approved flags",
+    "HOUSE/ROOM perspective registration on exact production head or rebase successor",
+    "actual resident sprites/poses at measured width-aware stations",
+    "foreground registration using per-variant measured physical_z and clip-plane provenance",
+    "collision/approach against current procedural shell and verify no duplicate procedural furniture",
+    "owner visual review before any approval promotion"
+  ],
+  "binary_handoff": {
+    "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JdI9kJ82xObF8Bi3EgU4P6DaoR/b50aa9af-cd2c-4101-b16a-553e561c9c55.zip",
+    "sha256": "5ae489046eefb6dc3718f2334945bb6fc7786dc59fc0758060e7f7e1d010e275",
+    "size_mib": 61
+  }
+}
