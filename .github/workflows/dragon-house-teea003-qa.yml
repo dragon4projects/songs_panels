@@ -1,0 +1,174 @@
+name: Dragon House TEEA003 integrator QA
+
+on:
+  push:
+    branches: [dev/dragon-house-v015-teea003-integration]
+    paths:
+      - 'dragon_house_clean/**'
+      - '.github/workflows/dragon-house-teea003-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  teea003-integration:
+    name: Exact payload, live camera, collisions and foreground
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout current Dragon House with accepted LFS assets
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+          fetch-depth: 1
+
+      - name: Fetch existing LFS bytes
+        shell: bash
+        run: |
+          set -euo pipefail
+          git lfs install --local
+          git lfs pull
+          test "$(git lfs ls-files | wc -l)" -ge 2408
+
+      - name: Verify source branch still keeps TEEA003 unapproved
+        shell: bash
+        run: |
+          set -euo pipefail
+          git show HEAD:dragon_house_clean/data/asset_proposals/TEEA_INT_20261122_003_interiors.json             | grep -q '"approved": false'
+          git show HEAD:dragon_house_clean/data/asset_proposals/TEEA_INT_20261122_003_furniture_anchors_candidate.json             | grep -q '"approved": false'
+          ! git show HEAD:dragon_house_clean/data/interior_layers_v1.json             | grep -q 'TEEA_INT_20261122_003'
+
+      - name: Download and verify exact TEEA003 binary handoff
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fLsS --retry 3 -o /tmp/teea003.zip             'https://d2ol7oe51mr4n9.cloudfront.net/user_3JdI9kJ82xObF8Bi3EgU4P6DaoR/a5825fe1-8a14-4967-abdc-c4214a93e1b0.zip'
+          echo '2233854a91684acec90ad687961cc1c3b1316f921643a5941e9ed6846778b093  /tmp/teea003.zip'             | sha256sum -c -
+          rm -rf /tmp/teea003
+          mkdir -p /tmp/teea003
+          unzip -q /tmp/teea003.zip -d /tmp/teea003
+          test -f /tmp/teea003/dragon_house_clean/docs/art_review/TEEA_INT_20261122_003_delivery.json
+
+      - name: Validate measured approach geometry and foreground depth basis
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd dragon_house_clean
+          python3 tools/qa_teea003_geometry.py             --project .             --payload-root /tmp/teea003/dragon_house_clean             --report private_review/teea003_geometry_report.json
+
+      - name: Mount candidate ephemerally for the existing production renderer
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd dragon_house_clean
+          python3 tools/prepare_teea003_qa.py             --project .             --payload-root /tmp/teea003/dragon_house_clean             --report private_review/teea003_prepare_report.json
+          test "$(find assets/rooms/{arrival,corridor,music,cinema,artifact,workshop}/R1             -maxdepth 1 -type f -name '*.png' | wc -l)" -eq 20
+
+      - name: Download official Godot 4.7.2 Linux
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fLsS --retry 3 -o /tmp/Godot_4.7.2.zip             https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_linux.x86_64.zip
+          unzip -q /tmp/Godot_4.7.2.zip -d /tmp
+          chmod +x /tmp/Godot_v4.7.2-stable_linux.x86_64
+          /tmp/Godot_v4.7.2-stable_linux.x86_64 --headless --version
+
+      - name: Import candidate and current accepted assets in Godot
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd dragon_house_clean
+          timeout 900s /tmp/Godot_v4.7.2-stable_linux.x86_64             --headless --path . --editor --quit > teea003_godot_import.log 2>&1
+          if grep -Eq 'SCRIPT ERROR|Parse Error|Parser Error' teea003_godot_import.log; then
+            tail -120 teea003_godot_import.log
+            exit 1
+          fi
+
+      - name: Run TEEA003 integration and current-life regressions
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd dragon_house_clean
+          : > teea003_godot_tests.log
+          for t in             tests/test_artist_anchor_candidate_v2.gd             tests/test_teea003_integration_v015.gd             tests/test_furniture_contract_v10.gd             tests/test_room_lod_v06.gd             tests/test_v011_depth_pass.gd             tests/test_width_anchors_v012.gd             tests/test_corridor_passing_v013.gd             tests/test_concrete_media_v014.gd             tests/test_room_activity_hud_v014.gd; do
+            echo "RUN $t" | tee -a teea003_godot_tests.log
+            result="$(timeout 90s /tmp/Godot_v4.7.2-stable_linux.x86_64               --headless --path . --script "res://$t" 2>&1)" || {
+                echo "$result" | tee -a teea003_godot_tests.log
+                exit 1
+              }
+            echo "$result" | tee -a teea003_godot_tests.log
+            echo "$result" | grep -q '_PASS'
+            if echo "$result" | grep -qE 'SCRIPT ERROR|Parse Error|Assertion failed'; then
+              exit 1
+            fi
+          done
+
+      - name: Render exact HOUSE/ROOM foreground review frames
+        shell: bash
+        run: |
+          set -euo pipefail
+          if ! command -v xvfb-run >/dev/null 2>&1; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq xvfb
+          fi
+          cd dragon_house_clean
+          xvfb-run -a /tmp/Godot_v4.7.2-stable_linux.x86_64             --path . --rendering-method gl_compatibility             --script res://tests/capture_teea003_v015.gd             > teea003_capture.log 2>&1
+          grep -q 'TEEA003_V015_CAPTURE_PASS' teea003_capture.log
+          test "$(find private_review/teea003 -maxdepth 1 -name '*.png' | wc -l)" -eq 10
+
+      - name: Build compact integrator contact sheet
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m venv /tmp/teea003-pillow
+          /tmp/teea003-pillow/bin/pip install --disable-pip-version-check --quiet Pillow
+          cd dragon_house_clean
+          /tmp/teea003-pillow/bin/python - <<'PY'
+          from PIL import Image, ImageOps, ImageDraw
+          from pathlib import Path
+          names=[
+            "arrival_r1.png","corridor_r1.png",
+            "music_yaw_m018.png","music_yaw_000.png","music_yaw_p018.png",
+            "cinema_yaw_m018.png","cinema_yaw_000.png","cinema_yaw_p018.png",
+            "artifact_r1.png","workshop_r1.png",
+          ]
+          root=Path("private_review/teea003")
+          thumb=(640,360)
+          sheet=Image.new("RGB",(thumb[0]*2,thumb[1]*5),(16,16,16))
+          draw=ImageDraw.Draw(sheet)
+          for i,name in enumerate(names):
+              im=Image.open(root/name).convert("RGB")
+              im=ImageOps.fit(im,thumb)
+              x=(i%2)*thumb[0]; y=(i//2)*thumb[1]
+              sheet.paste(im,(x,y))
+              draw.rectangle((x+5,y+5,x+245,y+31),fill=(0,0,0))
+              draw.text((x+10,y+10),name,fill=(255,255,255))
+          sheet.save(root/"teea003_live_contact.jpg",quality=86)
+          PY
+          test -s private_review/teea003/teea003_live_contact.jpg
+
+      - name: Prove no approval change was committed
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          git show HEAD:dragon_house_clean/data/asset_proposals/TEEA_INT_20261122_003_interiors.json             | grep -q '"approved": false'
+          ! git show HEAD:dragon_house_clean/data/interior_layers_v1.json             | grep -q 'TEEA_INT_20261122_003'
+
+      - name: Store private TEEA003 integrator evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dragon-house-teea003-integrator-qa
+          path: |
+            dragon_house_clean/private_review/teea003/*.png
+            dragon_house_clean/private_review/teea003/teea003_live_contact.jpg
+            dragon_house_clean/private_review/teea003_geometry_report.json
+            dragon_house_clean/private_review/teea003_prepare_report.json
+            dragon_house_clean/teea003_godot_import.log
+            dragon_house_clean/teea003_godot_tests.log
+            dragon_house_clean/teea003_capture.log
+          if-no-files-found: ignore
+          retention-days: 3
