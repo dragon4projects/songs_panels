@@ -1,0 +1,37 @@
+Dragon House — Teea interiors batch 003 binary payload
+
+Batch: TEEA_INT_20261122_003
+Machine status: READY_FOR_INTEGRATOR_QA
+Owner approved: false
+Art branch: art/teea-interiors-TEEA_INT_20261122_003
+
+Binary ZIP:
+https://d2ol7oe51mr4n9.cloudfront.net/user_3JdI9kJ82xObF8Bi3EgU4P6DaoR/a5825fe1-8a14-4967-abdc-c4214a93e1b0.zip
+
+ZIP SHA-256:
+2233854a91684acec90ad687961cc1c3b1316f921643a5941e9ed6846778b093
+
+Internal root:
+dragon_house_clean/
+
+Binary payload contains:
+- arrival/R1: backdrop, back_decor, furniture_back
+- corridor/R1: backdrop, back_decor, intentionally transparent furniture_back
+- music/R1: backdrop, back_decor, furniture_back, foreground
+- cinema/R1: backdrop, back_decor, furniture_back, foreground
+- artifact/R1: backdrop, back_decor, furniture_back
+- workshop/R1: backdrop, back_decor, furniture_back
+- TEEA_INT_20261122_003_contact_sheet.jpg
+- all candidate JSON / delivery / provenance / QA / SHA files
+
+Why PNG/JPG binaries are not committed directly:
+The connector path does not provide the repository's Git LFS binary workflow. Do not push these files through the UTF-8 contents API.
+
+Integrator action:
+1. download ZIP;
+2. verify ZIP SHA-256;
+3. unpack dragon_house_clean/ at repository root through the normal Git LFS workflow;
+4. run exact current HOUSE/ROOM camera QA;
+5. keep approved:false until integrator + owner review.
+
+No production PR was opened.
