@@ -9,7 +9,8 @@
   "staged_counts": {
     "guest_frames": 332,
     "creature_frames_new": 234,
-    "media_previews": 784
+    "media_previews": 784,
+    "res22_24_delivered_frames_exact": 423
   },
   "guest_ids": [
     "NPC_CENTAUR",
@@ -39,15 +40,18 @@
   "protections": {
     "production_asset_registry_replaced": false,
     "production_media_preview_index_replaced": false,
-    "res22_24_touched": false,
     "runtime_source_copied": false,
     "shurshun": "BLOCKED_MASTER_REQUIRED",
     "activation": false,
-    "owner_approved": false
+    "owner_approved": false,
+    "res22_24_regenerated": false,
+    "res22_24_identity_modified": false,
+    "res22_24_imported_exact_source_blobs": true
   },
   "notes": [
     "Existing Manjka 13-frame bank was byte-identical in production and was not duplicated.",
     "ZNA source registries are quarantined under assets/manifests/zna_candidate_20261123 and are not runtime-loaded.",
-    "Media previews are candidate bytes only; canonical catalog promotion requires Integrator provenance binding and product evidence."
+    "Media previews are candidate bytes only; canonical catalog promotion requires Integrator provenance binding and product evidence.",
+    "423 delivered RES_22-24 wardrobe frames were imported from the frozen ZNA source with exact Git/LFS pointer blobs; no regeneration or identity repaint."
   ]
 }
