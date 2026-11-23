@@ -23,20 +23,28 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p teea007_guest_alpha_probe
-          files=(
+          srcs=(
             dragon_house_clean/assets/residents/NPC_CENTAUR/identity/front_0001.png
             dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/identity/front_0001.png
             dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/identity/front_0001.png
           )
-          for f in "${files[@]}"; do
+          dsts=(centaur.png vampire.png miu.png)
+          expected=(
+            2abcd9620fb249b37079235745516224bc39b46be6c4abec35fd69cd22fea47f
+            501284e9724441533d9cc34648c6956c564a1a097008f4e2b15bea6238f65fee
+            5f3eb9dc8efef0c14a96de47887a099e9dec90d9cb0f14cb65162b5e66e05804
+          )
+          for i in 0 1 2; do
+            f="${srcs[$i]}"
             test -f "$f"
             if grep -aq '^version https://git-lfs.github.com/spec/v1' "$f"; then
               echo "LFS pointer remained instead of real bytes: $f" >&2
               exit 2
             fi
+            actual="$(sha256sum "$f" | awk '{print $1}')"
+            test "$actual" = "${expected[$i]}" || { echo "SHA mismatch $f $actual" >&2; exit 3; }
             file "$f"
-            sha256sum "$f"
-            cp "$f" teea007_guest_alpha_probe/
+            cp "$f" "teea007_guest_alpha_probe/${dsts[$i]}"
           done
       - name: Upload exact guest identity bytes for TEEA room-footprint QA
         uses: actions/upload-artifact@v4
