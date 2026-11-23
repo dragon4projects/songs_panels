@@ -484,7 +484,7 @@ jobs:
                 bad=1
                 ;;
             esac
-          done < <(git status --porcelain | sed 's/^...//')
+          done < <(git status --porcelain -uall | sed 's/^...//')
           test "$bad" -eq 0
 
       - name: Commit art and exact R1 restore
