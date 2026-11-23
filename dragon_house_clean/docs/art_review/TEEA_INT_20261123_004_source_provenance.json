@@ -1,0 +1,354 @@
+{
+  "schema": 1,
+  "batch_id": "TEEA_INT_20261123_004",
+  "parent": "TEEA_INT_20261122_003",
+  "polyhaven_models": [
+    {
+      "asset_id": "Shelf_01",
+      "name": "Shelf 01",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/Shelf_01",
+      "resolution": "1k",
+      "polycount": 182,
+      "dimensions_mm": [
+        1003.443717956543,
+        256.9795063869833,
+        2080.310344696045
+      ]
+    },
+    {
+      "asset_id": "Ukulele_01",
+      "name": "Ukulele 01",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/Ukulele_01",
+      "resolution": "1k",
+      "polycount": 8912,
+      "dimensions_mm": [
+        177.8610646724701,
+        50.76222866773605,
+        526.9626826047897
+      ]
+    },
+    {
+      "asset_id": "WoodenTable_03",
+      "name": "Wooden Table 03",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/WoodenTable_03",
+      "resolution": "1k",
+      "polycount": 2298,
+      "dimensions_mm": [
+        1326.8529176712036,
+        561.7093443870544,
+        830.0816416740417
+      ]
+    },
+    {
+      "asset_id": "boombox",
+      "name": "Boombox",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/boombox",
+      "resolution": "1k",
+      "polycount": 10168,
+      "dimensions_mm": [
+        723.7796187400818,
+        186.46465986967087,
+        470.10064125061035
+      ]
+    },
+    {
+      "asset_id": "brass_vase_03",
+      "name": "Brass Vase 03",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/brass_vase_03",
+      "resolution": "1k",
+      "polycount": 2616,
+      "dimensions_mm": [
+        82.50189200043678,
+        82.50195905566216,
+        200.36906062159687
+      ]
+    },
+    {
+      "asset_id": "cassette_player",
+      "name": "Cassette Player",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/cassette_player",
+      "resolution": "1k",
+      "polycount": 4830,
+      "dimensions_mm": [
+        129.46044653654099,
+        48.87990656585117,
+        236.81782186031342
+      ]
+    },
+    {
+      "asset_id": "filmstrip_projector_8mm",
+      "name": "Filmstrip Projector 8mm",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/filmstrip_projector_8mm",
+      "resolution": "1k",
+      "polycount": 32697,
+      "dimensions_mm": [
+        253.67923080921173,
+        602.6187837123871,
+        345.4076647758484
+      ]
+    },
+    {
+      "asset_id": "metal_stool_02",
+      "name": "Metal Stool 02",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/metal_stool_02",
+      "resolution": "1k",
+      "polycount": 6532,
+      "dimensions_mm": [
+        448.09985160827637,
+        473.0903208255768,
+        458.12273025512695
+      ]
+    },
+    {
+      "asset_id": "metal_tool_chest",
+      "name": "Metal Tool Chest",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/metal_tool_chest",
+      "resolution": "1k",
+      "polycount": 14576,
+      "dimensions_mm": [
+        685.3884160518646,
+        407.15324878692627,
+        651.8355906009674
+      ]
+    },
+    {
+      "asset_id": "mid_century_lounge_chair",
+      "name": "Mid Century Lounge Chair",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/mid_century_lounge_chair",
+      "resolution": "1k",
+      "polycount": 6148,
+      "dimensions_mm": [
+        1008.6143612861633,
+        1190.310776233673,
+        1169.0847246776136
+      ]
+    },
+    {
+      "asset_id": "modern_arm_chair_01",
+      "name": "Modern Arm Chair 01",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/modern_arm_chair_01",
+      "resolution": "1k",
+      "polycount": 8916,
+      "dimensions_mm": [
+        820.3444182872772,
+        986.5616858005524,
+        1022.8520567470696
+      ]
+    },
+    {
+      "asset_id": "round_wooden_table_01",
+      "name": "Round Wooden Table 01",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/round_wooden_table_01",
+      "resolution": "1k",
+      "polycount": 8640,
+      "dimensions_mm": [
+        1399.3489742279053,
+        1399.3489146232605,
+        1005.0213932991028
+      ]
+    },
+    {
+      "asset_id": "side_table_01",
+      "name": "Side Table 01",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/side_table_01",
+      "resolution": "1k",
+      "polycount": 2756,
+      "dimensions_mm": [
+        550.0000715255737,
+        450.00001788139343,
+        550.6622816901654
+      ]
+    },
+    {
+      "asset_id": "sofa_02",
+      "name": "Sofa 02",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/sofa_02",
+      "resolution": "1k",
+      "polycount": 2728,
+      "dimensions_mm": [
+        1807.1673512458801,
+        817.7513778209686,
+        709.4888985157013
+      ]
+    },
+    {
+      "asset_id": "tool_cart",
+      "name": "Tool Cart",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/tool_cart",
+      "resolution": "1k",
+      "polycount": 29394,
+      "dimensions_mm": [
+        1273.4254002571106,
+        753.6306381225586,
+        964.644730091095
+      ]
+    },
+    {
+      "asset_id": "vintage_cabinet_01",
+      "name": "Vintage Cabinet 01",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/vintage_cabinet_01",
+      "resolution": "1k",
+      "polycount": 61096,
+      "dimensions_mm": [
+        2021.7604637145996,
+        669.8037981987,
+        2235.0515127764083
+      ]
+    },
+    {
+      "asset_id": "vintage_suitcase",
+      "name": "Vintage Suitcase",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/vintage_suitcase",
+      "resolution": "1k",
+      "polycount": 16474,
+      "dimensions_mm": [
+        1608.1829071044922,
+        239.17551338672638,
+        567.9050989929237
+      ]
+    },
+    {
+      "asset_id": "wooden_display_shelves_01",
+      "name": "Wooden Display Shelves 01",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/wooden_display_shelves_01",
+      "resolution": "1k",
+      "polycount": 3174,
+      "dimensions_mm": [
+        1077.760934829712,
+        371.50970101356506,
+        1556.1838150024414
+      ]
+    }
+  ],
+  "ambientcg_materials": [
+    {
+      "asset_id": "Rock035",
+      "license": "CC0 1.0",
+      "source_page": "https://ambientcg.com/a/Rock035",
+      "use": "rear cave stone"
+    },
+    {
+      "asset_id": "Wood051",
+      "license": "CC0 1.0",
+      "source_page": "https://ambientcg.com/a/Wood051",
+      "use": "structural and override wood"
+    }
+  ],
+  "procedural_geometry": [
+    "continuous width-aware rear cave wall / sparse timber supports",
+    "Music shared acoustic slat zones",
+    "Cinema fixed wide matte screens and borders",
+    "Artifact irregular rear display recesses and pedestals",
+    "Workshop pegboards, hooks, rails and workbenches",
+    "simple practical wall-globe fixtures"
+  ],
+  "foreground": {
+    "music/R2": {
+      "physical_z": -0.1,
+      "plane_type": "front_edge",
+      "authored_target_front_z": -0.1,
+      "source_measurements": [
+        {
+          "id": "music_r2_chair_left",
+          "front_z": -0.10000011324882507,
+          "seat_clip_z": -0.42740904461825735
+        },
+        {
+          "id": "music_r2_chair_right",
+          "front_z": -0.09999996423721313,
+          "seat_clip_z": -0.3450423963154508
+        }
+      ],
+      "geometry_clip_plane_type": "seat_centroid_minus_0.012_blender_y",
+      "note": "Runtime physical_z is the common camera-facing furniture front plane. Geometry was clipped behind that plane at each source seat-centroid so only true camera-facing occluder fragments remain."
+    },
+    "music/R3": {
+      "physical_z": -0.1,
+      "plane_type": "front_edge",
+      "authored_target_front_z": -0.1,
+      "source_measurements": [
+        {
+          "id": "music_r3_chair_left",
+          "front_z": -0.10000011324882507,
+          "seat_clip_z": -0.42740904461825735
+        },
+        {
+          "id": "music_r3_chair_mid",
+          "front_z": -0.09999996423721313,
+          "seat_clip_z": -0.3450423963154508
+        },
+        {
+          "id": "music_r3_chair_right",
+          "front_z": -0.10000011324882507,
+          "seat_clip_z": -0.42740904461825735
+        }
+      ],
+      "geometry_clip_plane_type": "seat_centroid_minus_0.012_blender_y",
+      "note": "Runtime physical_z is the common camera-facing furniture front plane. Geometry was clipped behind that plane at each source seat-centroid so only true camera-facing occluder fragments remain."
+    },
+    "cinema/R2": {
+      "physical_z": -0.1,
+      "plane_type": "front_edge",
+      "authored_target_front_z": -0.1,
+      "source_measurements": [
+        {
+          "id": "cinema_r2_sofa",
+          "front_z": -0.10000035166740417,
+          "seat_clip_z": -0.3248406216327317
+        },
+        {
+          "id": "cinema_r2_chair",
+          "front_z": -0.10000011324882507,
+          "seat_clip_z": -0.42740904461825735
+        }
+      ],
+      "geometry_clip_plane_type": "seat_centroid_minus_0.012_blender_y",
+      "note": "Runtime physical_z is the common camera-facing furniture front plane. Geometry was clipped behind that plane at each source seat-centroid so only true camera-facing occluder fragments remain."
+    },
+    "cinema/R3": {
+      "physical_z": -0.1,
+      "plane_type": "front_edge",
+      "authored_target_front_z": -0.1,
+      "source_measurements": [
+        {
+          "id": "cinema_r3_sofa",
+          "front_z": -0.10000035166740417,
+          "seat_clip_z": -0.3248406216327317
+        },
+        {
+          "id": "cinema_r3_chair_mid",
+          "front_z": -0.09999996423721313,
+          "seat_clip_z": -0.3450423963154508
+        },
+        {
+          "id": "cinema_r3_chair_right",
+          "front_z": -0.10000011324882507,
+          "seat_clip_z": -0.42740904461825735
+        }
+      ],
+      "geometry_clip_plane_type": "seat_centroid_minus_0.012_blender_y",
+      "note": "Runtime physical_z is the common camera-facing furniture front plane. Geometry was clipped behind that plane at each source seat-centroid so only true camera-facing occluder fragments remain."
+    }
+  },
+  "source_rejections": [],
+  "source_policy_note": "Previously rejected 003 sources steel_frame_shelves_01 and bench_vice_01 were not reused. No physically broken source was scaled by eye.",
+  "rights_note": "No Bethesda/Fallout visual assets. No readable invented lore labels. All external models/materials listed above are CC0/CC0 1.0."
+}
