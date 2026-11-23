@@ -1,0 +1,826 @@
+{
+  "schema": 2,
+  "batch_id": "TEEA_INT_20261123_005",
+  "approved": false,
+  "coordinate_space": "godot_width_aware_modules",
+  "unit": "world_meter",
+  "module_width": 4.8,
+  "depth_axis_mapping": "godot_local_z = -blender_world_y",
+  "calibration": {
+    "backwall_z": -2.04,
+    "aisle_z": 0.95,
+    "feet_y": 0.0,
+    "module_width": 4.8,
+    "canvas": [
+      1536,
+      1024
+    ],
+    "axis_mapping": "godot_z=-blender_y",
+    "width_contract": {
+      "R1": 4.8,
+      "R2": 9.6,
+      "R3": 14.4
+    },
+    "orthographic_rule": "ortho_scale = physical_width"
+  },
+  "room_variants": {
+    "common/R1": {
+      "stations": [
+        {
+          "id": "common_r1_front_chair_seat",
+          "furniture_id": "common_r1_front_chair",
+          "module_index": 0,
+          "group_local_x": -1.18,
+          "cell_local_x": -1.18,
+          "cell_local_z": -0.11174,
+          "feet_contact_y": 0.0,
+          "approach_local_z": 0.95,
+          "kind": "seat",
+          "pose_hint": "TALK",
+          "occupancy_capacity": 1,
+          "depth_band": "front_functional",
+          "source_visual_anchor": "common_r1_front_chair",
+          "occlusion_role": "foreground",
+          "collision_footprint": [
+            [
+              -1.49993,
+              -0.61952
+            ],
+            [
+              -0.86007,
+              -0.61952
+            ],
+            [
+              -0.86007,
+              0.15
+            ],
+            [
+              -1.49993,
+              0.15
+            ]
+          ],
+          "collision_footprint_group": [
+            [
+              -1.49993,
+              -0.61952
+            ],
+            [
+              -0.86007,
+              -0.61952
+            ],
+            [
+              -0.86007,
+              0.15
+            ],
+            [
+              -1.49993,
+              0.15
+            ]
+          ],
+          "confidence": "AUTHOR_MEASURED_BLENDER_4_5_16_BATCH005",
+          "reservation_status": "CANDIDATE"
+        },
+     
+…[1 chars truncated — re-run with head/grep/tail for full output]…
+5,
+              -1.46
+            ],
+            [
+              1.175,
+              -0.6
+            ],
+            [
+              -1.175,
+              -0.6
+            ]
+          ],
+          "collision_footprint_group": [
+            [
+              -1.175,
+              -1.46
+            ],
+            [
+              1.175,
+              -1.46
+            ],
+            [
+              1.175,
+              -0.6
+            ],
+            [
+              -1.175,
+              -0.6
+            ]
+          ],
+          "confidence": "AUTHOR_MEASURED_BLENDER_4_5_16_BATCH005",
+          "reservation_status": "CANDIDATE"
+        },
+        {
+          "id": "rest_r3_quiet_pad_rest_b",
+          "furniture_id": "rest_r3_quiet_pad",
+          "module_index": 1,
+          "group_local_x": 0.65,
+          "cell_local_x": 0.65,
+          "cell_local_z": -1.03,
+          "feet_contact_y": 0.0,
+          "approach_local_z": 0.95,
+          "kind": "floor_rest",
+          "pose_hint": "SLEEP",
+          "occupancy_capacity": 1,
+          "depth_band": "rear_mid_functional",
+          "source_visual_anchor": "rest_r3_quiet_pad",
+          "occlusion_role": "furniture_back",
+          "collision_footprint": [
+            [
+              -1.175,
+              -1.46
+            ],
+            [
+              1.175,
+              -1.46
+            ],
+            [
+              1.175,
+              -0.6
+            ],
+            [
+              -1.175,
+              -0.6
+            ]
+          ],
+          "collision_footprint_group": [
+            [
+              -1.175,
+              -1.46
+            ],
+            [
+              1.175,
+              -1.46
+            ],
+            [
+              1.175,
+              -0.6
+            ],
+            [
+              -1.175,
+              -0.6
+            ]
+          ],
+          "confidence": "AUTHOR_MEASURED_BLENDER_4_5_16_BATCH005",
+          "reservation_status": "CANDIDATE"
+        }
+      ],
+      "non_station_furniture": [
+        {
+          "furniture_id": "rest_r3_side_table_left",
+          "module_index": 0,
+          "group_local_x": -4.25,
+          "cell_local_x": 0.55,
+          "authored_center_z": -0.72,
+          "collision_footprint": [
+            [
+              0.385,
+              -0.855
+            ],
+            [
+              0.715,
+              -0.855
+            ],
+            [
+              0.715,
+              -0.585
+            ],
+            [
+              0.385,
+              -0.585
+            ]
+          ],
+          "collision_footprint_group": [
+            [
+              -4.415,
+              -0.855
+            ],
+            [
+              -4.085,
+              -0.855
+            ],
+            [
+              -4.085,
+              -0.585
+            ],
+            [
+              -4.415,
+              -0.585
+            ]
+          ],
+          "reason": "NO_RESIDENT_STATION_AUTHORED",
+          "confidence": "AUTHOR_MEASURED_BLENDER_4_5_16_BATCH005"
+        }
+      ]
+    },
+    "library/R1": {
+      "stations": [
+        {
+          "id": "library_r1_front_reader_seat",
+          "furniture_id": "library_r1_front_reader",
+          "module_index": 0,
+          "group_local_x": -1.12,
+          "cell_local_x": -1.12,
+          "cell_local_z": -0.0563,
+          "feet_contact_y": 0.0,
+          "approach_local_z": 0.95,
+          "kind": "seat",
+          "pose_hint": "READ",
+          "occupancy_capacity": 1,
+          "depth_band": "front_functional",
+          "source_visual_anchor": "library_r1_front_reader",
+          "occlusion_role": "foreground",
+          "collision_footprint": [
+            [
+              -1.32292,
+              -0.35743
+            ],
+            [
+              -0.91708,
+              -0.35743
+            ],
+            [
+              -0.91708,
+              0.15
+            ],
+            [
+              -1.32292,
+              0.15
+            ]
+          ],
+          "collision_footprint_group": [
+            [
+              -1.32292,
+              -0.35743
+            ],
+            [
+              -0.91708,
+              -0.35743
+            ],
+            [
+              -0.91708,
+              0.15
+            ],
+            [
+              -1.32292,
+              0.15
+            ]
+          ],
+          "confidence": "AUTHOR_MEASURED_BLENDER_4_5_16_BATCH005",
+          "reservation_status": "CANDIDATE"
+        },
+        {
+          "id": "library_r1_lectern_read",
+          "furniture_id": "library_r1_lectern",
+          "module_index": 0,
+          "group_local_x": 1.12,
+          "cell_local_x": 1.12,
+          "cell_local_z": -0.61,
+          "feet_contact_y": 0.0,
+          "approach_local_z": 0.95,
+          "kind": "work",
+          "pose_hint": "READ",
+          "occupancy_capacity": 1,
+          "depth_band": "rear_mid_functional",
+          "source_visual_anchor": "library_r1_lectern",
+          "occlusion_role": "furniture_back",
+          "collision_footprint": [
+            [
+              0.645,
+              -1.53
+            ],
+            [
+              1.595,
+              -1.53
+            ],
+            [
+              1.595,
+              -0.91
+            ],
+            [
+              0.645,
+              -0.91
+            ]
+          ],
+          "collision_footprint_group": [
+            [
+              0.645,
+              -1.53
+            ],
+            [
+              1.595,
+              -1.53
+            ],
+            [
+              1.595,
+              -0.91
+            ],
+            [
+              0.645,
+              -0.91
+            ]
+          ],
+          "confidence": "AUTHOR_MEASURED_BLENDER_4_5_16_BATCH005",
+          "reservation_status": "CANDIDATE"
+        }
+      ],
+      "non_station_furniture": []
+    },
+    "library/R3": {
+      "stations": [
+        {
+          "id": "library_r3_front_reader_left_seat",
+          "furniture_id": "library_r3_front_reader_left",
+          "module_index": 0,
+          "group_local_x": -5.35,
+          "cell_local_x": -0.55,
+          "cell_local_z": -0.0563,
+          "feet_contact_y": 0.0,
+          "approach_local_z": 0.95,
+          "kind": "seat",
+          "pose_hint": "READ",
+          "occupancy_capacity": 1,
+          "depth_band": "front_functional",
+          "source_visual_anchor": "library_r3_front_reader_left",
+          "occlusion_role": "foreground",
+          "collision_footprint": [
+            [
+              -0.75292,
+              -0.35743
+            ],
+            [
+              -0.34708,
+              -0.35743
+            ],
+            [
+              -0.34708,
+              0.15
+            ],
+            [
+              -0.75292,
+              0.15
+            ]
+          ],
+          "collision_footprint_group": [
+            [
+              -5.55292,
+              -0.35743
+            ],
+            [
+              -5.14708,
+              -0.35743
+            ],
+            [
+              -5.14708,
+              0.15
+            ],
+            [
+              -5.55292,
+              0.15
+            ]
+          ],
+          "confidence": "AUTHOR_MEASURED_BLENDER_4_5_16_BATCH005",
+          "reservation_status": "CANDIDATE"
+        },
+        {
+          "id": "library_r3_front_reader_right_seat",
+          "furniture_id": "library_r3_front_reader_right",
+          "module_index": 2,
+          "group_local_x": 5.35,
+          "cell_local_x": 0.55,
+          "cell_local_z": -0.1015,
+          "feet_contact_y": 0.0,
+          "approach_local_z": 0.95,
+          "kind": "seat",
+          "pose_hint": "READ",
+          "occupancy_capacity": 1,
+          "depth_band": "front_functional",
+          "source_visual_anchor": "library_r3_front_reader_right",
+          "occlusion_role": "foreground",
+          "collision_footprint": [
+            [
+              0.23827,
+              -0.59979
+            ],
+            [
+              0.86173,
+              -0.59979
+            ],
+            [
+              0.86173,
+              0.15
+            ],
+            [
+              0.23827,
+              0.15
+            ]
+          ],
+          "collision_footprint_group": [
+            [
+              5.03827,
+              -0.59979
+            ],
+            [
+              5.66173,
+              -0.59979
+            ],
+            [
+              5.66173,
+              0.15
+            ],
+            [
+              5.03827,
+              0.15
+            ]
+          ],
+          "confidence": "AUTHOR_MEASURED_BLENDER_4_5_16_BATCH005",
+          "reservation_status": "CANDIDATE"
+        },
+        {
+          "id": "library_r3_shared_read_table_read_a",
+          "furniture_id": "library_r3_shared_read_table",
+          "module_index": 1,
+          "group_local_x": -0.75,
+          "cell_local_x": -0.75,
+          "cell_local_z": -0.59,
+          "feet_contact_y": 0.0,
+          "approach_local_z": 0.95,
+          "kind": "work",
+          "pose_hint": "READ",
+          "occupancy_capacity": 1,
+          "depth_band": "rear_mid_functional",
+          "source_visual_anchor": "library_r3_shared_read_table",
+          "occlusion_role": "furniture_back",
+          "collision_footprint": [
+            [
+              -1.375,
+              -1.55
+            ],
+            [
+              1.375,
+              -1.55
+            ],
+            [
+              1.375,
+              -0.89
+            ],
+            [
+              -1.375,
+              -0.89
+            ]
+          ],
+          "collision_footprint_group": [
+            [
+              -1.375,
+              -1.55
+            ],
+            [
+              1.375,
+              -1.55
+            ],
+            [
+              1.375,
+              -0.89
+            ],
+            [
+              -1.375,
+              -0.89
+            ]
+          ],
+          "confidence": "AUTHOR_MEASURED_BLENDER_4_5_16_BATCH005",
+          "reservation_status": "CANDIDATE"
+        },
+        {
+          "id": "library_r3_shared_read_table_read_b",
+          "furniture_id": "library_r3_shared_read_table",
+          "module_index": 1,
+          "group_local_x": 0.75,
+          "cell_local_x": 0.75,
+          "cell_local_z": -0.59,
+          "feet_contact_y": 0.0,
+          "approach_local_z": 0.95,
+          "kind": "work",
+          "pose_hint": "READ",
+          "occupancy_capacity": 1,
+          "depth_band": "rear_mid_functional",
+          "source_visual_anchor": "library_r3_shared_read_table",
+          "occlusion_role": "furniture_back",
+          "collision_footprint": [
+            [
+              -1.375,
+              -1.55
+            ],
+            [
+              1.375,
+              -1.55
+            ],
+            [
+              1.375,
+              -0.89
+            ],
+            [
+              -1.375,
+              -0.89
+            ]
+          ],
+          "collision_footprint_group": [
+            [
+              -1.375,
+              -1.55
+            ],
+            [
+              1.375,
+              -1.55
+            ],
+            [
+              1.375,
+              -0.89
+            ],
+            [
+              -1.375,
+              -0.89
+            ]
+          ],
+          "confidence": "AUTHOR_MEASURED_BLENDER_4_5_16_BATCH005",
+          "reservation_status": "CANDIDATE"
+        }
+      ],
+      "non_station_furniture": []
+    }
+  },
+  "runtime_variant_cell_overrides_preview": {
+    "common:R1:0": [
+      {
+        "id": "common_r1_front_chair_seat",
+        "x": -1.18,
+        "z": -0.11174,
+        "approach_z": 0.95,
+        "kind": "seat",
+        "furniture_id": "common_r1_front_chair",
+        "pose_hint": "TALK"
+      },
+      {
+        "id": "common_r1_shared_table_stand",
+        "x": 1.18,
+        "z": -0.59,
+        "approach_z": 0.95,
+        "kind": "standing",
+        "furniture_id": "common_r1_shared_table",
+        "pose_hint": "TALK"
+      }
+    ],
+    "common:R2:0": [
+      {
+        "id": "common_r2_front_chair_left_seat",
+        "x": -0.85,
+        "z": -0.11174,
+        "approach_z": 0.95,
+        "kind": "seat",
+        "furniture_id": "common_r2_front_chair_left",
+        "pose_hint": "TALK"
+      },
+      {
+        "id": "common_r2_shared_table_stand_a",
+        "x": 1.65,
+        "z": -0.59,
+        "approach_z": 0.95,
+        "kind": "standing",
+        "furniture_id": "common_r2_shared_table",
+        "pose_hint": "TALK"
+      }
+    ],
+    "common:R2:1": [
+      {
+        "id": "common_r2_front_chair_right_seat",
+        "x": 0.85,
+        "z": -0.0563,
+        "approach_z": 0.95,
+        "kind": "seat",
+        "furniture_id": "common_r2_front_chair_right",
+        "pose_hint": "TALK"
+      },
+      {
+        "id": "common_r2_shared_table_stand_b",
+        "x": -1.65,
+        "z": -0.59,
+        "approach_z": 0.95,
+        "kind": "standing",
+        "furniture_id": "common_r2_shared_table",
+        "pose_hint": "TALK"
+      }
+    ],
+    "study:R2:0": [
+      {
+        "id": "study_r2_heavy_desk_work",
+        "x": 0.05,
+        "z": -0.57,
+        "approach_z": 0.95,
+        "kind": "work",
+        "furniture_id": "study_r2_heavy_desk",
+        "pose_hint": "USE"
+      }
+    ],
+    "study:R2:1": [
+      {
+        "id": "study_r2_front_reader_seat",
+        "x": 0.98,
+        "z": -0.06521,
+        "approach_z": 0.95,
+        "kind": "seat",
+        "furniture_id": "study_r2_front_reader",
+        "pose_hint": "READ"
+      },
+      {
+        "id": "study_r2_read_table_read",
+        "x": -0.9,
+        "z": -0.53,
+        "approach_z": 0.95,
+        "kind": "work",
+        "furniture_id": "study_r2_read_table",
+        "pose_hint": "READ"
+      }
+    ],
+    "study:R3:0": [
+      {
+        "id": "study_r3_front_reader_left_seat",
+        "x": -0.65,
+        "z": -0.0563,
+        "approach_z": 0.95,
+        "kind": "seat",
+        "furniture_id": "study_r3_front_reader_left",
+        "pose_hint": "READ"
+      },
+      {
+        "id": "study_r3_heavy_desk_work",
+        "x": 1.25,
+        "z": -0.57,
+        "approach_z": 0.95,
+        "kind": "work",
+        "furniture_id": "study_r3_heavy_desk",
+        "pose_hint": "USE"
+      }
+    ],
+    "study:R3:1": [
+      {
+        "id": "study_r3_center_table_read",
+        "x": 0.25,
+        "z": -0.53,
+        "approach_z": 0.95,
+        "kind": "work",
+        "furniture_id": "study_r3_center_table",
+        "pose_hint": "READ"
+      }
+    ],
+    "study:R3:2": [
+      {
+        "id": "study_r3_front_reader_right_seat",
+        "x": 0.62,
+        "z": -0.1015,
+        "approach_z": 0.95,
+        "kind": "seat",
+        "furniture_id": "study_r3_front_reader_right",
+        "pose_hint": "READ"
+      }
+    ],
+    "rest:R2:0": [
+      {
+        "id": "rest_r2_front_lounge_seat",
+        "x": -0.75,
+        "z": -0.06521,
+        "approach_z": 0.95,
+        "kind": "seat",
+        "furniture_id": "rest_r2_front_lounge",
+        "pose_hint": "RELAXED_SIT"
+      }
+    ],
+    "rest:R2:1": [
+      {
+        "id": "rest_r2_front_chair_seat",
+        "x": 1.15,
+        "z": -0.0563,
+        "approach_z": 0.95,
+        "kind": "seat",
+        "furniture_id": "rest_r2_front_chair",
+        "pose_hint": "RELAXED_SIT"
+      },
+      {
+        "id": "rest_r2_quiet_pad_rest",
+        "x": -0.2,
+        "z": -1.03,
+        "approach_z": 0.95,
+        "kind": "floor_rest",
+        "furniture_id": "rest_r2_quiet_pad",
+        "pose_hint": "SLEEP"
+      }
+    ],
+    "rest:R3:0": [
+      {
+        "id": "rest_r3_front_lounge_left_seat",
+        "x": -0.55,
+        "z": -0.06521,
+        "approach_z": 0.95,
+        "kind": "seat",
+        "furniture_id": "rest_r3_front_lounge_left",
+        "pose_hint": "RELAXED_SIT"
+      }
+    ],
+    "rest:R3:1": [
+      {
+        "id": "rest_r3_quiet_pad_rest_a",
+        "x": -0.65,
+        "z": -1.03,
+        "approach_z": 0.95,
+        "kind": "floor_rest",
+        "furniture_id": "rest_r3_quiet_pad",
+        "pose_hint": "SLEEP"
+      },
+      {
+        "id": "rest_r3_quiet_pad_rest_b",
+        "x": 0.65,
+        "z": -1.03,
+        "approach_z": 0.95,
+        "kind": "floor_rest",
+        "furniture_id": "rest_r3_quiet_pad",
+        "pose_hint": "SLEEP"
+      }
+    ],
+    "rest:R3:2": [
+      {
+        "id": "rest_r3_front_chair_right_seat",
+        "x": 0.58,
+        "z": -0.1015,
+        "approach_z": 0.95,
+        "kind": "seat",
+        "furniture_id": "rest_r3_front_chair_right",
+        "pose_hint": "RELAXED_SIT"
+      }
+    ],
+    "library:R1:0": [
+      {
+        "id": "library_r1_front_reader_seat",
+        "x": -1.12,
+        "z": -0.0563,
+        "approach_z": 0.95,
+        "kind": "seat",
+        "furniture_id": "library_r1_front_reader",
+        "pose_hint": "READ"
+      },
+      {
+        "id": "library_r1_lectern_read",
+        "x": 1.12,
+        "z": -0.61,
+        "approach_z": 0.95,
+        "kind": "work",
+        "furniture_id": "library_r1_lectern",
+        "pose_hint": "READ"
+      }
+    ],
+    "library:R3:0": [
+      {
+        "id": "library_r3_front_reader_left_seat",
+        "x": -0.55,
+        "z": -0.0563,
+        "approach_z": 0.95,
+        "kind": "seat",
+        "furniture_id": "library_r3_front_reader_left",
+        "pose_hint": "READ"
+      }
+    ],
+    "library:R3:1": [
+      {
+        "id": "library_r3_shared_read_table_read_a",
+        "x": -0.75,
+        "z": -0.59,
+        "approach_z": 0.95,
+        "kind": "work",
+        "furniture_id": "library_r3_shared_read_table",
+        "pose_hint": "READ"
+      },
+      {
+        "id": "library_r3_shared_read_table_read_b",
+        "x": 0.75,
+        "z": -0.59,
+        "approach_z": 0.95,
+        "kind": "work",
+        "furniture_id": "library_r3_shared_read_table",
+        "pose_hint": "READ"
+      }
+    ],
+    "library:R3:2": [
+      {
+        "id": "library_r3_front_reader_right_seat",
+        "x": 0.55,
+        "z": -0.1015,
+        "approach_z": 0.95,
+        "kind": "seat",
+        "furniture_id": "library_r3_front_reader_right",
+        "pose_hint": "READ"
+      }
+    ]
+  }
+}
