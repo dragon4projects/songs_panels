@@ -1,7 +1,12 @@
-name: Dragon House LFS intake and Godot acceptance
+name: Dragon House v0.16 full LFS and Godot acceptance
 
 on:
   push:
+    branches: [dragon-house-fallout-fresh]
+    paths:
+      - 'dragon_house_clean/**'
+      - '.github/workflows/dragon-house-lfs.yml'
+  pull_request:
     branches: [dragon-house-fallout-fresh]
     paths:
       - 'dragon_house_clean/**'
@@ -31,7 +36,7 @@ jobs:
           echo "LFS_PATHS=$(git lfs ls-files | wc -l)" >> "$GITHUB_ENV"
           test "$(git lfs ls-files | wc -l)" -ge 2408
 
-      - name: Audit all 2409 normalized paths and canonical identities
+      - name: Audit normalized LFS paths and canonical identities
         shell: bash
         run: |
           cd dragon_house_clean
@@ -113,16 +118,20 @@ jobs:
             tests/test_width_anchors_v012.gd \
             tests/test_corridor_passing_v013.gd \
             tests/test_concrete_media_v014.gd \
-            tests/test_room_activity_hud_v014.gd; do
+            tests/test_room_activity_hud_v014.gd \
+            tests/test_teea003_owner_production_v016.gd \
+            tests/test_private_door_note_v016.gd \
+            tests/test_floor_rest_pose_v016.gd \
+            tests/test_authored_station_poses_v016.gd; do
             echo "RUN $t" | tee -a godot_tests.log
-            result="$(timeout 80s /tmp/Godot_v4.7.2-stable_linux.x86_64 --headless --path . --script "res://$t" 2>&1)" || { echo "$result" | tee -a godot_tests.log; exit 1; }
+            result="$(timeout 120s /tmp/Godot_v4.7.2-stable_linux.x86_64 --headless --path . --script "res://$t" 2>&1)" || { echo "$result" | tee -a godot_tests.log; exit 1; }
             echo "$result" | tee -a godot_tests.log
             if ! echo "$result" | grep -q "_PASS";then exit 1;fi
             if echo "$result" | grep -qE "SCRIPT ERROR|Parse Error|Assertion failed";then exit 1;fi
           done
           python3 tests/test_import_nov_assets.py | tee -a godot_tests.log
 
-      - name: Render v0.14 cutaway QA views
+      - name: Render v0.16 production QA views
         shell: bash
         run: |
           set -euo pipefail
@@ -131,26 +140,22 @@ jobs:
             sudo apt-get install -y -qq xvfb
           fi
           cd dragon_house_clean
-          mkdir -p private_review
+          rm -rf private_review/v016
+          mkdir -p private_review/v016
           xvfb-run -a /tmp/Godot_v4.7.2-stable_linux.x86_64 --path . \
             --rendering-method gl_compatibility \
-            --script res://tests/capture_v014_review.gd | tee v014_render_review.log
-          grep -q "V014_RENDER_REVIEW_PASS" v014_render_review.log
-          test -s private_review/v014_house.png
-          test -s private_review/v014_common_r3.png
-          test -s private_review/v014_library_r2.png
-          test -s private_review/v014_cinema_activity.png
+            --script res://tests/capture_v016_production_review.gd \
+            | tee v016_render_review.log
+          grep -q "V016_PRODUCTION_REVIEW_PASS" v016_render_review.log
+          test "$(find private_review/v016 -maxdepth 1 -name '*.png' | wc -l)" -eq 9
 
-      - name: Store v0.14 cutaway QA views
+      - name: Store v0.16 production QA views
         uses: actions/upload-artifact@v4
         with:
-          name: dragon-house-v014-cutaway-review
+          name: dragon-house-v016-production-review
           path: |
-            dragon_house_clean/private_review/v014_house.png
-            dragon_house_clean/private_review/v014_common_r3.png
-            dragon_house_clean/private_review/v014_library_r2.png
-            dragon_house_clean/private_review/v014_cinema_activity.png
-            dragon_house_clean/v014_render_review.log
+            dragon_house_clean/private_review/v016/
+            dragon_house_clean/v016_render_review.log
           retention-days: 3
           if-no-files-found: error
 
@@ -173,33 +178,33 @@ jobs:
           mkdir -p releases
           cd dragon_house_clean
           /tmp/Godot_v4.7.2-stable_linux.x86_64 --headless --path . \
-            --export-release "Windows Desktop" ../releases/DragonHouse_v014.exe \
+            --export-release "Windows Desktop" ../releases/DragonHouse_v016.exe \
             > ../releases/win_export.log 2>&1
           /tmp/Godot_v4.7.2-stable_linux.x86_64 --headless --path . \
-            --export-release "macOS" ../releases/DragonHouse_v014_macOS_Universal.zip \
+            --export-release "macOS" ../releases/DragonHouse_v016_macOS_Universal.zip \
             > ../releases/mac_export.log 2>&1
           cd ../releases
           cat > PRIVATE_BUILD_NOTE.txt <<'NOTE'
-          Dragon House v0.14 independent Godot 4.7.2 prototype.
+          Dragon House v0.16 independent Godot 4.7.2 prototype.
           These exports contain private November source imagery fetched from Git LFS.
           They are for owner visual QA only; no resident identity has final approval.
           Windows: keep EXE and PCK together. Mac: universal UNSIGNED, may trigger Gatekeeper.
           Real Windows Dell Latitude 5300 and Apple M1 8GB runs remain untested.
           NOTE
-          zip -q9 DragonHouse_v014_Windows10_x64.zip DragonHouse_v014.exe \
-            DragonHouse_v014.pck PRIVATE_BUILD_NOTE.txt
-          cp DragonHouse_v014_macOS_Universal.zip DragonHouse_v014_macOS15_M1.zip
-          zip -q9 DragonHouse_v014_macOS15_M1.zip PRIVATE_BUILD_NOTE.txt
-          unzip -t DragonHouse_v014_Windows10_x64.zip | tail -1
-          unzip -t DragonHouse_v014_macOS15_M1.zip | tail -1
+          zip -q9 DragonHouse_v016_Windows10_x64.zip DragonHouse_v016.exe \
+            DragonHouse_v016.pck PRIVATE_BUILD_NOTE.txt
+          cp DragonHouse_v016_macOS_Universal.zip DragonHouse_v016_macOS15_M1.zip
+          zip -q9 DragonHouse_v016_macOS15_M1.zip PRIVATE_BUILD_NOTE.txt
+          unzip -t DragonHouse_v016_Windows10_x64.zip | tail -1
+          unzip -t DragonHouse_v016_macOS15_M1.zip | tail -1
 
       - name: Keep private QA binaries (not public releases)
         uses: actions/upload-artifact@v4
         with:
-          name: dragon-house-private-v014-windows-mac
+          name: dragon-house-private-v016-windows-mac
           path: |
-            releases/DragonHouse_v014_Windows10_x64.zip
-            releases/DragonHouse_v014_macOS15_M1.zip
+            releases/DragonHouse_v016_Windows10_x64.zip
+            releases/DragonHouse_v016_macOS15_M1.zip
             releases/win_export.log
             releases/mac_export.log
           if-no-files-found: error
