@@ -1,0 +1,675 @@
+{
+  "schema": 1,
+  "batch_id": "TEEA_INT_20261123_005",
+  "approved": false,
+  "variants": {
+    "common/R1": {
+      "major_furniture": [
+        {
+          "id": "common_r1_shelf",
+          "role": "back_decor",
+          "godot_z_front": -1.59464,
+          "godot_z_back": -1.80536
+        },
+        {
+          "id": "common_r1_drawer",
+          "role": "back_decor",
+          "godot_z_front": -1.24786,
+          "godot_z_back": -1.87214
+        },
+        {
+          "id": "common_r1_front_chair",
+          "role": "furniture_back",
+          "godot_z_front": 0.15,
+          "godot_z_back": -0.61952
+        },
+        {
+          "id": "common_r1_side_table",
+          "role": "furniture_back",
+          "godot_z_front": -0.5805,
+          "godot_z_back": -0.8595
+        },
+        {
+          "id": "common_r1_shared_table",
+          "role": "furniture_back",
+          "godot_z_front": -0.89,
+          "godot_z_back": -1.55
+        }
+      ],
+      "stations": [
+        {
+          "id": "common_r1_front_chair_seat",
+          "module_index": 0,
+          "z": -0.11174,
+          "depth_band": "front_functional"
+        },
+        {
+          "id": "common_r1_shared_table_stand",
+          "module_index": 0,
+          "z": -0.59,
+          "depth_band": "rear_mid_functional"
+        }
+      ],
+      "foreground_physical_z": 0.15,
+      "foreground_source_front_measurements": [
+        {
+          "id": "common_r1_front_chair",
+          "front_z": 0.15000003576278687
+        }
+      ],
+      "declared_depth_bands": {
+        "front_functional": [
+          -0.11174
+        ],
+        "rear_mid_functional": [
+          -0.59
+        ]
+      },
+      "minimum_cross_band_station_separation_m": 0.47826,
+      "target_minimum_m": 0.35,
+      "pass": true
+    },
+    "common/R2": {
+      "major_furniture": [
+        {
+          "id": "common_r2_shelf_left",
+          "role": "back_decor",
+          "godot_z_front": -1.5895,
+          "godot_z_back": -1.8105
+        },
+        {
+          "id": "common_r2_drawer_right",
+          "role": "back_decor",
+          "godot_z_front": -1.26786,
+          "godot_z_back": -1.89214
+        },
+        {
+          "id": "common_r2_front_chair_left",
+          "role": "furniture_back",
+          "godot_z_front": 0.15,
+          "godot_z_back": -0.61952
+        },
+        {
+          "id": "common_r2_front_chair_right",
+          "role": "furniture_back",
+          "godot_z_front": 0.15,
+          "godot_z_back": -0.35743
+        },
+        {
+          "id": "common_r2_side_table_left",
+          "role": "furniture_back",
+          "godot_z_front": -0.585,
+          "godot_z_back": -0.855
+        },
+        {
+          "id": "common_r2_shared_table",
+          "role": "furniture_back",
+          "godot_z_front": -0.89,
+          "godot_z_back": -1.55
+        }
+      ],
+      "stations": [
+        {
+          "id": "common_r2_front_chair_left_seat",
+          "module_index": 0,
+          "z": -0.11174,
+          "depth_band": "front_functional"
+        },
+        {
+          "id": "common_r2_front_chair_right_seat",
+          "module_index": 1,
+          "z": -0.0563,
+          "depth_band": "front_functional"
+        },
+        {
+          "id": "common_r2_shared_table_stand_a",
+          "module_index": 0,
+          "z": -0.59,
+          "depth_band": "rear_mid_functional"
+        },
+        {
+          "id": "common_r2_shared_table_stand_b",
+          "module_index": 1,
+          "z": -0.59,
+          "depth_band": "rear_mid_functional"
+        }
+      ],
+      "foreground_physical_z": 0.15,
+      "foreground_source_front_measurements": [
+        {
+          "id": "common_r2_front_chair_left",
+          "front_z": 0.15000003576278687
+        },
+        {
+          "id": "common_r2_front_chair_right",
+          "front_z": 0.15000036358833313
+        }
+      ],
+      "declared_depth_bands": {
+        "front_functional": [
+          -0.11174,
+          -0.0563
+        ],
+        "rear_mid_functional": [
+          -0.59,
+          -0.59
+        ]
+      },
+      "minimum_cross_band_station_separation_m": 0.47826,
+      "target_minimum_m": 0.35,
+      "pass": true
+    },
+    "study/R2": {
+      "major_furniture": [
+        {
+          "id": "study_r2_shelf_left",
+          "role": "back_decor",
+          "godot_z_front": -1.59078,
+          "godot_z_back": -1.80922
+        },
+        {
+          "id": "study_r2_drawer_right",
+          "role": "back_decor",
+          "godot_z_front": -1.25779,
+          "godot_z_back": -1.90221
+        },
+        {
+          "id": "study_r2_front_reader",
+          "role": "furniture_back",
+          "godot_z_front": 0.15,
+          "godot_z_back": -0.65941
+        },
+        {
+          "id": "study_r2_lamp",
+          "role": "furniture_back",
+          "godot_z_front": -1.01564,
+          "godot_z_back": -1.22436
+        },
+        {
+          "id": "study_r2_heavy_desk",
+          "role": "furniture_back",
+          "godot_z_front": -0.87,
+          "godot_z_back": -1.59
+        },
+        {
+          "id": "study_r2_read_table",
+          "role": "furniture_back",
+          "godot_z_front": -0.83,
+          "godot_z_back": -1.49
+        }
+      ],
+      "stations": [
+        {
+          "id": "study_r2_front_reader_seat",
+          "module_index": 1,
+          "z": -0.06521,
+          "depth_band": "front_functional"
+        },
+        {
+          "id": "study_r2_heavy_desk_work",
+          "module_index": 0,
+          "z": -0.57,
+          "depth_band": "rear_mid_functional"
+        },
+        {
+          "id": "study_r2_read_table_read",
+          "module_index": 1,
+          "z": -0.53,
+          "depth_band": "rear_mid_functional"
+        }
+      ],
+      "foreground_physical_z": 0.15,
+      "foreground_source_front_measurements": [
+        {
+          "id": "study_r2_front_reader",
+          "front_z": 0.1499996781349182
+        }
+      ],
+      "declared_depth_bands": {
+        "front_functional": [
+          -0.06521
+        ],
+        "rear_mid_functional": [
+          -0.57,
+          -0.53
+        ]
+      },
+      "minimum_cross_band_station_separation_m": 0.46479,
+      "target_minimum_m": 0.35,
+      "pass": true
+    },
+    "study/R3": {
+      "major_furniture": [
+        {
+          "id": "study_r3_shelf_left",
+          "role": "back_decor",
+          "godot_z_front": -1.5895,
+          "godot_z_back": -1.8105
+        },
+        {
+          "id": "study_r3_bookshelf_mid",
+          "role": "back_decor",
+          "godot_z_front": -1.47073,
+          "godot_z_back": -1.88927
+        },
+        {
+          "id": "study_r3_drawer_right",
+          "role": "back_decor",
+          "godot_z_front": -1.25779,
+          "godot_z_back": -1.90221
+        },
+        {
+          "id": "study_r3_front_reader_left",
+          "role": "furniture_back",
+          "godot_z_front": 0.15,
+          "godot_z_back": -0.35743
+        },
+        {
+          "id": "study_r3_front_reader_right",
+          "role": "furniture_back",
+          "godot_z_front": 0.15,
+          "godot_z_back": -0.59979
+        },
+        {
+          "id": "study_r3_lamp",
+          "role": "furniture_back",
+          "godot_z_front": -0.99871,
+          "godot_z_back": -1.20129
+        },
+        {
+          "id": "study_r3_heavy_desk",
+          "role": "furniture_back",
+          "godot_z_front": -0.87,
+          "godot_z_back": -1.59
+        },
+        {
+          "id": "study_r3_center_table",
+          "role": "furniture_back",
+          "godot_z_front": -0.83,
+          "godot_z_back": -1.51
+        }
+      ],
+      "stations": [
+        {
+          "id": "study_r3_front_reader_left_seat",
+          "module_index": 0,
+          "z": -0.0563,
+          "depth_band": "front_functional"
+        },
+        {
+          "id": "study_r3_front_reader_right_seat",
+          "module_index": 2,
+          "z": -0.1015,
+          "depth_band": "front_functional"
+        },
+        {
+          "id": "study_r3_heavy_desk_work",
+          "module_index": 0,
+          "z": -0.57,
+          "depth_band": "rear_mid_functional"
+        },
+        {
+          "id": "study_r3_center_table_read",
+          "module_index": 1,
+          "z": -0.53,
+          "depth_band": "rear_mid_functional"
+        }
+      ],
+      "foreground_physical_z": 0.15,
+      "foreground_source_front_measurements": [
+        {
+          "id": "study_r3_front_reader_left",
+          "front_z": 0.15000036358833313
+        },
+        {
+          "id": "study_r3_front_reader_right",
+          "front_z": 0.1500004231929779
+        }
+      ],
+      "declared_depth_bands": {
+        "front_functional": [
+          -0.0563,
+          -0.1015
+        ],
+        "rear_mid_functional": [
+          -0.57,
+          -0.53
+        ]
+      },
+      "minimum_cross_band_station_separation_m": 0.4285,
+      "target_minimum_m": 0.35,
+      "pass": true
+    },
+    "rest/R2": {
+      "major_furniture": [
+        {
+          "id": "rest_r2_shelf_left",
+          "role": "back_decor",
+          "godot_z_front": -1.59721,
+          "godot_z_back": -1.80279
+        },
+        {
+          "id": "rest_r2_daybed_rear",
+          "role": "back_decor",
+          "godot_z_front": -1.24938,
+          "godot_z_back": -1.83062
+        },
+        {
+          "id": "rest_r2_front_lounge",
+          "role": "furniture_back",
+          "godot_z_front": 0.15,
+          "godot_z_back": -0.65941
+        },
+        {
+          "id": "rest_r2_front_chair",
+          "role": "furniture_back",
+          "godot_z_front": 0.15,
+          "godot_z_back": -0.35743
+        },
+        {
+          "id": "rest_r2_side_table",
+          "role": "furniture_back",
+          "godot_z_front": -0.5805,
+          "godot_z_back": -0.8595
+        },
+        {
+          "id": "rest_r2_quiet_pad",
+          "role": "furniture_back",
+          "godot_z_front": -0.62,
+          "godot_z_back": -1.44
+        }
+      ],
+      "stations": [
+        {
+          "id": "rest_r2_front_lounge_seat",
+          "module_index": 0,
+          "z": -0.06521,
+          "depth_band": "front_functional"
+        },
+        {
+          "id": "rest_r2_front_chair_seat",
+          "module_index": 1,
+          "z": -0.0563,
+          "depth_band": "front_functional"
+        },
+        {
+          "id": "rest_r2_quiet_pad_rest",
+          "module_index": 1,
+          "z": -1.03,
+          "depth_band": "rear_mid_functional"
+        }
+      ],
+      "foreground_physical_z": 0.15,
+      "foreground_source_front_measurements": [
+        {
+          "id": "rest_r2_front_lounge",
+          "front_z": 0.1499996781349182
+        },
+        {
+          "id": "rest_r2_front_chair",
+          "front_z": 0.15000036358833313
+        }
+      ],
+      "declared_depth_bands": {
+        "front_functional": [
+          -0.06521,
+          -0.0563
+        ],
+        "rear_mid_functional": [
+          -1.03
+        ]
+      },
+      "minimum_cross_band_station_separation_m": 0.96479,
+      "target_minimum_m": 0.35,
+      "pass": true
+    },
+    "rest/R3": {
+      "major_furniture": [
+        {
+          "id": "rest_r3_shelf_left",
+          "role": "back_decor",
+          "godot_z_front": -1.59721,
+          "godot_z_back": -1.80279
+        },
+        {
+          "id": "rest_r3_daybed_mid",
+          "role": "back_decor",
+          "godot_z_front": -1.25083,
+          "godot_z_back": -1.84917
+        },
+        {
+          "id": "rest_r3_drawer_right",
+          "role": "back_decor",
+          "godot_z_front": -1.308,
+          "godot_z_back": -1.892
+        },
+        {
+          "id": "rest_r3_front_lounge_left",
+          "role": "furniture_back",
+          "godot_z_front": 0.15,
+          "godot_z_back": -0.65941
+        },
+        {
+          "id": "rest_r3_front_chair_right",
+          "role": "furniture_back",
+          "godot_z_front": 0.15,
+          "godot_z_back": -0.59979
+        },
+        {
+          "id": "rest_r3_side_table_left",
+          "role": "furniture_back",
+          "godot_z_front": -0.585,
+          "godot_z_back": -0.855
+        },
+        {
+          "id": "rest_r3_quiet_pad",
+          "role": "furniture_back",
+          "godot_z_front": -0.6,
+          "godot_z_back": -1.46
+        }
+      ],
+      "stations": [
+        {
+          "id": "rest_r3_front_lounge_left_seat",
+          "module_index": 0,
+          "z": -0.06521,
+          "depth_band": "front_functional"
+        },
+        {
+          "id": "rest_r3_front_chair_right_seat",
+          "module_index": 2,
+          "z": -0.1015,
+          "depth_band": "front_functional"
+        },
+        {
+          "id": "rest_r3_quiet_pad_rest_a",
+          "module_index": 1,
+          "z": -1.03,
+          "depth_band": "rear_mid_functional"
+        },
+        {
+          "id": "rest_r3_quiet_pad_rest_b",
+          "module_index": 1,
+          "z": -1.03,
+          "depth_band": "rear_mid_functional"
+        }
+      ],
+      "foreground_physical_z": 0.15,
+      "foreground_source_front_measurements": [
+        {
+          "id": "rest_r3_front_lounge_left",
+          "front_z": 0.1499996781349182
+        },
+        {
+          "id": "rest_r3_front_chair_right",
+          "front_z": 0.1500004231929779
+        }
+      ],
+      "declared_depth_bands": {
+        "front_functional": [
+          -0.06521,
+          -0.1015
+        ],
+        "rear_mid_functional": [
+          -1.03,
+          -1.03
+        ]
+      },
+      "minimum_cross_band_station_separation_m": 0.9285,
+      "target_minimum_m": 0.35,
+      "pass": true
+    },
+    "library/R1": {
+      "major_furniture": [
+        {
+          "id": "library_r1_shelf_left",
+          "role": "back_decor",
+          "godot_z_front": -1.45911,
+          "godot_z_back": -1.90089
+        },
+        {
+          "id": "library_r1_shelf_right",
+          "role": "back_decor",
+          "godot_z_front": -1.61721,
+          "godot_z_back": -1.82279
+        },
+        {
+          "id": "library_r1_front_reader",
+          "role": "furniture_back",
+          "godot_z_front": 0.15,
+          "godot_z_back": -0.35743
+        },
+        {
+          "id": "library_r1_lectern",
+          "role": "furniture_back",
+          "godot_z_front": -0.91,
+          "godot_z_back": -1.53
+        }
+      ],
+      "stations": [
+        {
+          "id": "library_r1_front_reader_seat",
+          "module_index": 0,
+          "z": -0.0563,
+          "depth_band": "front_functional"
+        },
+        {
+          "id": "library_r1_lectern_read",
+          "module_index": 0,
+          "z": -0.61,
+          "depth_band": "rear_mid_functional"
+        }
+      ],
+      "foreground_physical_z": 0.15,
+      "foreground_source_front_measurements": [
+        {
+          "id": "library_r1_front_reader",
+          "front_z": 0.15000036358833313
+        }
+      ],
+      "declared_depth_bands": {
+        "front_functional": [
+          -0.0563
+        ],
+        "rear_mid_functional": [
+          -0.61
+        ]
+      },
+      "minimum_cross_band_station_separation_m": 0.5537,
+      "target_minimum_m": 0.35,
+      "pass": true
+    },
+    "library/R3": {
+      "major_furniture": [
+        {
+          "id": "library_r3_bookshelf_left",
+          "role": "back_decor",
+          "godot_z_front": -1.45329,
+          "godot_z_back": -1.90671
+        },
+        {
+          "id": "library_r3_shelf_mid",
+          "role": "back_decor",
+          "godot_z_front": -1.61207,
+          "godot_z_back": -1.82793
+        },
+        {
+          "id": "library_r3_bookshelf_right",
+          "role": "back_decor",
+          "godot_z_front": -1.45911,
+          "godot_z_back": -1.90089
+        },
+        {
+          "id": "library_r3_front_reader_left",
+          "role": "furniture_back",
+          "godot_z_front": 0.15,
+          "godot_z_back": -0.35743
+        },
+        {
+          "id": "library_r3_front_reader_right",
+          "role": "furniture_back",
+          "godot_z_front": 0.15,
+          "godot_z_back": -0.59979
+        },
+        {
+          "id": "library_r3_shared_read_table",
+          "role": "furniture_back",
+          "godot_z_front": -0.89,
+          "godot_z_back": -1.55
+        }
+      ],
+      "stations": [
+        {
+          "id": "library_r3_front_reader_left_seat",
+          "module_index": 0,
+          "z": -0.0563,
+          "depth_band": "front_functional"
+        },
+        {
+          "id": "library_r3_front_reader_right_seat",
+          "module_index": 2,
+          "z": -0.1015,
+          "depth_band": "front_functional"
+        },
+        {
+          "id": "library_r3_shared_read_table_read_a",
+          "module_index": 1,
+          "z": -0.59,
+          "depth_band": "rear_mid_functional"
+        },
+        {
+          "id": "library_r3_shared_read_table_read_b",
+          "module_index": 1,
+          "z": -0.59,
+          "depth_band": "rear_mid_functional"
+        }
+      ],
+      "foreground_physical_z": 0.15,
+      "foreground_source_front_measurements": [
+        {
+          "id": "library_r3_front_reader_left",
+          "front_z": 0.15000036358833313
+        },
+        {
+          "id": "library_r3_front_reader_right",
+          "front_z": 0.1500004231929779
+        }
+      ],
+      "declared_depth_bands": {
+        "front_functional": [
+          -0.0563,
+          -0.1015
+        ],
+        "rear_mid_functional": [
+          -0.59,
+          -0.59
+        ]
+      },
+      "minimum_cross_band_station_separation_m": 0.4885,
+      "target_minimum_m": 0.35,
+      "pass": true
+    }
+  },
+  "machine_pass": true,
+  "errors": []
+}
