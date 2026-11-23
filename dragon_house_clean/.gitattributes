@@ -32,3 +32,6 @@ assets/textures/basalt.jpg !filter !diff !merge !text
 assets/textures/floor.jpg !filter !diff !merge !text
 assets/textures/wood.jpg !filter !diff !merge !text
 tests/fixtures/test_video.ogv !filter !diff !merge !text
+
+# Native SQLite GDExtension binaries; separate from art manifests.
+addons/godot-sqlite/bin/** filter=lfs diff=lfs merge=lfs -text
