@@ -1,0 +1,61 @@
+Dragon House — Teea interiors batch 004 binary payload
+
+Batch: TEEA_INT_20261123_004
+Machine status: READY_FOR_INTEGRATOR_QA
+Owner approved: false
+Art branch: art/teea-interiors-TEEA_INT_20261123_004
+
+Binary ZIP:
+https://d2ol7oe51mr4n9.cloudfront.net/user_3JdI9kJ82xObF8Bi3EgU4P6DaoR/bddd0c93-0987-4f4d-a72d-1ce8aafe74f9.zip
+
+ZIP SHA-256:
+70c49ab07bf2591b262fcbcd674ff3bdc20a198e358d694fd9646645830de6d1
+
+Internal root:
+dragon_house_clean/
+
+Variants:
+- music/R2
+- music/R3
+- cinema/R2
+- cinema/R3
+- artifact/R2
+- artifact/R3
+- workshop/R2
+- workshop/R3
+
+Production PNG:
+- 28 files total
+- exact 1536x1024 RGBA8
+- foreground only for Music/Cinema R2/R3
+- every foreground carries explicit physical_z = -0.10
+
+Physical station authoring:
+- 26 measured width-aware stations
+- module_index + module-local X/Z
+- collision footprints
+- approach QA PASS
+- spacing QA PASS
+
+Godot 4.7.2 staged QA:
+- Image load 28/28 PASS
+- ImageTexture 28/28 PASS
+- Sprite3D 28/28 PASS
+- foreground metadata 4/4 PASS
+- station/module checks PASS
+
+Important authoring note:
+An early draft used the wrong Blender orthographic scale and cropped outer modules. That draft was discarded before handoff. All production files and SHA records in this ZIP were rerendered with ortho_scale = physical_width (R2 9.6 m / R3 14.4 m).
+
+Why PNG/JPG binaries are not committed directly:
+The connector path does not provide the repository Git LFS binary workflow. Do not push the binaries through the UTF-8 contents API.
+
+Integrator action:
+1. download ZIP;
+2. verify ZIP SHA-256;
+3. unpack dragon_house_clean/ at repository root through the normal Git LFS workflow;
+4. run exact current HOUSE/ROOM camera QA;
+5. verify width-aware live stations and foreground registration;
+6. keep approved:false until integrator + owner review.
+
+No production PR was opened.
