@@ -1,5 +1,6 @@
 extends RefCounted
 const InteractionAnchors = preload("res://scripts/interaction_anchor_registry.gd")
+const CandidateGuestStations = preload("res://scripts/candidate_guest_station_registry.gd")
 ## Explicit, deterministic local station reservations. No AI/external dependency.
 ## Reservations live on actor state so save/load can reconstruct occupancy.
 ## PRIVATE rooms are never public station pools.
@@ -12,14 +13,23 @@ const FLOOR_X_LIMIT := 2.05
 const BACK_Z := -0.70
 const FRONT_Z := 0.51
 var furniture = InteractionAnchors.new()
+var candidate_guest_stations = CandidateGuestStations.new()
 
 func _init() -> void:
 	if not furniture.initialize():
 		push_warning("Interaction anchor manifest unavailable: "+furniture.last_error)
+	if not candidate_guest_stations.initialize():
+		push_warning("Candidate guest station manifest unavailable: "
+			+candidate_guest_stations.last_error)
 
 func capacity(room: Dictionary) -> int:
 	if room.is_empty():
 		return 0
+	if str(room.get("type","")) == "guest":
+		var guest_capacity := candidate_guest_stations.capacity_for(
+			str(room.get("id","")))
+		if guest_capacity > 0:
+			return guest_capacity
 	return int(CAPACITY_BY_TYPE.get(str(room.get("type","")),2))
 
 func _spot(x: float, z: float, kind: String = "standing", object_id: String = "") -> Dictionary:
@@ -81,6 +91,10 @@ func layout(room: Dictionary) -> Array:
 	# Do not let the generic fallback generator manufacture a standing slot.
 	if room.is_empty() or str(room.get("privacy","public"))!="public":
 		return []
+	if str(room.get("type","")) == "guest" and candidate_guest_stations.has_room(
+			str(room.get("id",""))):
+		return _layout_from_anchors(room,candidate_guest_stations.stations_for(
+			str(room.get("id",""))))
 	# Context-free fallback used by legacy migration/tests. Width-specific art
 	# requires layout_for_world(), because a room dictionary alone cannot know
 	# whether its logical cell is currently part of R1, R2 or R3.
@@ -89,6 +103,10 @@ func layout(room: Dictionary) -> Array:
 func layout_for_world(world, room: Dictionary) -> Array:
 	if room.is_empty() or str(room.get("privacy","public"))!="public":
 		return []
+	if str(room.get("type","")) == "guest" and candidate_guest_stations.has_room(
+			str(room.get("id",""))):
+		return _layout_from_anchors(room,candidate_guest_stations.stations_for(
+			str(room.get("id",""))))
 	var group:Dictionary=world.merged_group(int(room.get("x",0)),int(room.get("level",0)))
 	if group.is_empty():
 		return layout(room)
@@ -114,6 +132,20 @@ func _intent_prefers_station(intent: String, kind: String) -> bool:
 			return kind=="seat"
 		_:
 			return kind=="standing"
+
+func _spot_allowed_for_actor(actor: Dictionary, intent: String,
+		spot: Dictionary) -> bool:
+	if actor.is_empty():
+		return true
+	var kind := str(spot.get("kind","standing"))
+	var human_seat_allowed := bool(actor.get("human_seat_allowed",true))
+	if not human_seat_allowed and kind == "seat":
+		return false
+	if not human_seat_allowed and intent in ["REST","SLEEP"]:
+		return kind == "floor_rest"
+	if not human_seat_allowed and intent == "READ_BOOK":
+		return kind in ["work","floor_rest"]
+	return true
 
 func used_slots(world, room_id: String, ignore_ids: Array = []) -> Dictionary:
 	var used: Dictionary = {}
@@ -150,7 +182,9 @@ func single(world, actor: Dictionary, room: Dictionary, intent: String = "") -> 
 	var points: Array = layout_for_world(world,room)
 	# If the actor is continuing a reservation, keep its exact location.
 	var prior := int(actor.get("station_slot",-1))
-	if str(actor.get("station_room_id","")) == room["id"] and prior >= 0 and prior < points.size() and not used.has(prior):
+	if (str(actor.get("station_room_id","")) == room["id"]
+			and prior >= 0 and prior < points.size() and not used.has(prior)
+			and _spot_allowed_for_actor(actor,intent,points[prior])):
 		return _claim(room,prior,points[prior])
 	# Deterministic id rotation distributes arrivals across the room.
 	var start: int = 0
@@ -170,6 +204,8 @@ func single(world, actor: Dictionary, room: Dictionary, intent: String = "") -> 
 			if used.has(idx):
 				continue
 			var spot: Dictionary=points[idx]
+			if not _spot_allowed_for_actor(actor,intent,spot):
+				continue
 			var matches: bool=_intent_prefers_station(intent,str(spot.get("kind","standing")))
 			if matches!=prefer_functional:
 				continue
@@ -198,25 +234,86 @@ func _paired_spots(points: Array, used: Dictionary, seats_only: bool = false) ->
 				return [left,right]
 	return []
 
+func _paired_spots_for_actors(points: Array, used: Dictionary,
+		actor: Dictionary, partner: Dictionary, seats_only: bool = false) -> Array:
+	for left in range(points.size()-1):
+		if used.has(left):
+			continue
+		for right in range(left+1,points.size()):
+			if used.has(right):
+				continue
+			var a: Dictionary = points[left]
+			var b: Dictionary = points[right]
+			if seats_only and (str(a.get("kind","")) != "seat"
+					or str(b.get("kind","")) != "seat"):
+				continue
+			var one: Vector2 = a["offset"]
+			var two: Vector2 = b["offset"]
+			if absf(one.y-two.y) > 0.04:
+				continue
+			var dx := absf(one.x-two.x)
+			if dx < 0.72 or dx > 1.35:
+				continue
+			if (_spot_allowed_for_actor(actor,"TALK_PAIR",a)
+					and _spot_allowed_for_actor(partner,"TALK_PAIR",b)):
+				return [left,right]
+			if (_spot_allowed_for_actor(actor,"TALK_PAIR",b)
+					and _spot_allowed_for_actor(partner,"TALK_PAIR",a)):
+				return [right,left]
+	return []
+
 func pair(world, actor: Dictionary, partner: Dictionary, room: Dictionary) -> Dictionary:
 	if room.is_empty() or room.get("privacy","public") != "public" or not world.is_accessible(room,str(actor.get("id",""))) or not world.is_accessible(room,str(partner.get("id",""))):
 		return {}
 	var used: Dictionary=used_slots(world,str(room["id"]),[str(actor["id"]),str(partner["id"])])
 	var points: Array=layout_for_world(world,room)
-	var indexes: Array=_paired_spots(points,used,true)
+	var indexes: Array=_paired_spots_for_actors(
+		points,used,actor,partner,true)
 	if indexes.is_empty():
-		indexes=_paired_spots(points,used,false)
+		indexes=_paired_spots_for_actors(
+			points,used,actor,partner,false)
 	if indexes.size()!=2:
 		return {}
 	return {"actor":_claim(room,int(indexes[0]),points[int(indexes[0])]),
 		"partner":_claim(room,int(indexes[1]),points[int(indexes[1])])}
 
-func can_reserve(world, room: Dictionary, pair_needed: bool = false) -> bool:
+func can_reserve(world, room: Dictionary, pair_needed: bool = false,
+		actor: Dictionary = {}) -> bool:
 	if available_count(world,room)<(2 if pair_needed else 1):
+		return false
+	var points := layout_for_world(world,room)
+	var used := used_slots(world,str(room["id"]),[
+		str(actor.get("id",""))] if not actor.is_empty() else [])
+	var allowed_free := 0
+	for idx in range(points.size()):
+		if used.has(idx):
+			continue
+		if _spot_allowed_for_actor(actor,
+				"TALK_PAIR" if pair_needed else "",points[idx]):
+			allowed_free += 1
+	if allowed_free < 1:
 		return false
 	if not pair_needed:
 		return true
-	return not _paired_spots(layout_for_world(world,room),used_slots(world,str(room["id"]))).is_empty()
+	# Partner is not selected yet. Require a physical pair and at least one side
+	# that this actor may occupy; the final actor/partner orientation is checked
+	# again by pair().
+	for left in range(points.size()-1):
+		if used.has(left):
+			continue
+		for right in range(left+1,points.size()):
+			if used.has(right):
+				continue
+			var a: Dictionary = points[left]
+			var b: Dictionary = points[right]
+			var one: Vector2 = a["offset"]
+			var two: Vector2 = b["offset"]
+			var dx := absf(one.x-two.x)
+			if absf(one.y-two.y) <= 0.04 and dx >= 0.72 and dx <= 1.35:
+				if (_spot_allowed_for_actor(actor,"TALK_PAIR",a)
+						or _spot_allowed_for_actor(actor,"TALK_PAIR",b)):
+					return true
+	return false
 
 func commit_claim(actor: Dictionary, claim: Dictionary) -> void:
 	if claim.is_empty():
@@ -270,6 +367,10 @@ func reconcile(world) -> int:
 		var invalid: bool = not bool(actor.get("active",false)) or room.is_empty() or (
 			not world.is_accessible(room,str(id))) or slot < 0 or slot >= capacity(room) or (
 			not ["travel","perform"].has(str(actor.get("phase","idle")))) or claimed.has(key)
+		if (not invalid and slot < authored.size()
+				and not _spot_allowed_for_actor(
+					actor,str(actor.get("intent","")),authored[slot])):
+			invalid = true
 		if not invalid and str(actor.get("phase",""))=="travel":
 			var route: Array=actor.get("waypoints",[])
 			invalid = route.is_empty() or typeof(route[-1])!=TYPE_DICTIONARY or (
