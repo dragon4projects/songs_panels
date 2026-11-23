@@ -1,0 +1,128 @@
+name: Dragon House v0.21 vendored SQLite native OS
+
+on:
+  push:
+    branches:
+      - integration/dragon-house-v021-sqlite-object-core
+    paths:
+      - 'dragon_house_clean/addons/godot-sqlite/**'
+      - 'dragon_house_clean/.gitattributes'
+      - 'dragon_house_clean/scripts/world_event_store*.gd'
+      - 'dragon_house_clean/scripts/object_event_runtime.gd'
+      - 'dragon_house_clean/tests/test_object_event_*_v021.gd'
+      - '.github/workflows/dragon-house-v021-native-source-closure.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: dragon-house-v021-native-source-closure
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          lfs: false
+
+      - name: Fetch vendored SQLite LFS binaries only
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          git lfs install --local
+          git lfs pull --include="dragon_house_clean/addons/godot-sqlite/bin/**" --exclude=""
+          $dll = "dragon_house_clean\addons\godot-sqlite\bin\libgdsqlite.windows.template_release.x86_64.dll"
+          if ((Get-Item $dll).Length -lt 1000000) { throw "Vendored Windows SQLite DLL missing/pointer" }
+
+      - name: Download pinned Godot 4.7.2 only
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          Invoke-WebRequest -Uri "https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_win64.exe.zip" -OutFile "$env:RUNNER_TEMP\godot.zip"
+          if ((Get-FileHash "$env:RUNNER_TEMP\godot.zip" -Algorithm SHA256).Hash.ToLower() -ne "731980f9608d61333e5baf54a2ef17210acc7a538446c0cb9969f002aca1e953") { throw "Godot digest mismatch" }
+          Expand-Archive "$env:RUNNER_TEMP\godot.zip" "$env:RUNNER_TEMP\godot" -Force
+          $godot = (Get-ChildItem "$env:RUNNER_TEMP\godot" -Filter "Godot_v4.7.2-stable_win64.exe" -Recurse | Select-Object -First 1).FullName
+          if (-not $godot) { throw "Godot exe missing" }
+          "GODOT_BIN=$godot" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+          & $godot --headless --version
+
+      - name: Run vendored SQLite truth path natively on Windows
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          New-Item -ItemType File -Path "dragon_house_clean\assets\.gdignore" -Force | Out-Null
+          $tests = @(
+            "res://tests/test_object_event_sqlite_v021.gd",
+            "res://tests/test_object_event_json_to_sqlite_v021.gd",
+            "res://tests/test_object_event_sqlite_recovery_v021.gd",
+            "res://tests/test_object_event_snapshot_to_sqlite_v021.gd",
+            "res://tests/test_object_event_projection_rebuild_v021.gd"
+          )
+          foreach ($test in $tests) {
+            Write-Host "RUN $test"
+            $output = & "$env:GODOT_BIN" --headless --path dragon_house_clean --script $test 2>&1 | Out-String
+            Write-Host $output
+            if ($LASTEXITCODE -ne 0) { throw "$test exit code $LASTEXITCODE" }
+            if ($output -notmatch "_PASS") { throw "$test missing PASS marker" }
+            if ($output -match "SCRIPT ERROR|Parse Error|Assertion failed") { throw "$test contains script failure" }
+          }
+          Write-Host "SQLITE_VENDOR_NATIVE_WINDOWS_V021_PASS"
+
+  macos:
+    runs-on: macos-15
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          lfs: false
+
+      - name: Fetch vendored SQLite LFS binaries only
+        shell: bash
+        run: |
+          set -euo pipefail
+          git lfs install --local
+          git lfs pull --include="dragon_house_clean/addons/godot-sqlite/bin/**" --exclude=""
+          test "$(stat -f%z dragon_house_clean/addons/godot-sqlite/bin/libgdsqlite.macos.template_release.framework/libgdsqlite.macos.template_release)" -gt 1000000
+
+      - name: Download pinned Godot 4.7.2 only
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "ARCH=$(uname -m)"
+          curl -fLsS --retry 3 -o "$RUNNER_TEMP/godot.zip" \
+            https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_macos.universal.zip
+          echo "c58a24e31d720be9d62f60cb5627c4e695fb72f21b0cfe1bc9ccaa9a3b3ba63e  $RUNNER_TEMP/godot.zip" | shasum -a 256 -c -
+          rm -rf "$RUNNER_TEMP/godot"
+          mkdir -p "$RUNNER_TEMP/godot"
+          unzip -q "$RUNNER_TEMP/godot.zip" -d "$RUNNER_TEMP/godot"
+          GODOT_BIN="$(find "$RUNNER_TEMP/godot" -path '*/Godot.app/Contents/MacOS/Godot' -type f | head -1)"
+          test -n "$GODOT_BIN"
+          chmod +x "$GODOT_BIN"
+          echo "GODOT_BIN=$GODOT_BIN" >> "$GITHUB_ENV"
+          "$GODOT_BIN" --headless --version
+
+      - name: Run vendored SQLite truth path natively on macOS
+        shell: bash
+        run: |
+          set -euo pipefail
+          touch dragon_house_clean/assets/.gdignore
+          cd dragon_house_clean
+          for t in \
+            tests/test_object_event_sqlite_v021.gd \
+            tests/test_object_event_json_to_sqlite_v021.gd \
+            tests/test_object_event_sqlite_recovery_v021.gd \
+            tests/test_object_event_snapshot_to_sqlite_v021.gd \
+            tests/test_object_event_projection_rebuild_v021.gd; do
+            echo "RUN $t"
+            out="$("$GODOT_BIN" --headless --path . --script "res://$t" 2>&1)" || { echo "$out"; exit 1; }
+            echo "$out"
+            echo "$out" | grep -q "_PASS"
+            ! echo "$out" | grep -qE "SCRIPT ERROR|Parse Error|Assertion failed"
+          done
+          echo "SQLITE_VENDOR_NATIVE_MACOS_V021_PASS"
