@@ -6,6 +6,7 @@ const LifeScript = preload("res://scripts/life.gd")
 const MediaPanelScript = preload("res://scripts/media_station_ui.gd")
 const ContentViewerScript = preload("res://scripts/content_viewer.gd")
 const AssetBankResolverScript = preload("res://scripts/asset_bank_resolver.gd")
+const CandidateActorBankResolverScript = preload("res://scripts/candidate_actor_bank_resolver.gd")
 const InteriorSkinScript = preload("res://scripts/interior_skin.gd")
 const BankGalleryScript = preload("res://scripts/asset_gallery_ui.gd")
 const PrivateDoorRegistryScript = preload("res://scripts/private_door_registry.gd")
@@ -15,6 +16,7 @@ const H := 4.6
 var world = WorldScript.new()
 var life = LifeScript.new()
 var asset_banks = AssetBankResolverScript.new()
+var candidate_banks = CandidateActorBankResolverScript.new()
 var interior_skin = InteriorSkinScript.new()
 var door_registry = PrivateDoorRegistryScript.new()
 var semantic_view = SemanticViewScript.new()
@@ -34,6 +36,7 @@ var actor_root: Node3D
 var creature_root: Node3D
 var creature_nodes: Dictionary = {}
 var creature_labels: Dictionary = {}
+var creature_animations: Dictionary = {}
 var object_root: Node3D
 var object_nodes: Dictionary = {}
 var actor_sprites: Dictionary = {}
@@ -103,6 +106,7 @@ func _ready() -> void:
 	world.load_or_seed()
 	semantic_view.install(world,"HOUSE")
 	asset_banks.initialize()
+	candidate_banks.initialize()
 	# Metadata is not a physical book or a movie/audio file.
 	if not asset_banks.manifest.is_empty():
 		catalog_metadata_added = world.merge_reference_book_metadata(
@@ -805,6 +809,7 @@ func make_creatures() -> void:
 		child.queue_free()
 	creature_nodes.clear()
 	creature_labels.clear()
+	creature_animations.clear()
 	var placeholder := make_sprite_texture(true)
 	for creature_id in world.creatures:
 		var creature: Dictionary = world.creatures[creature_id]
@@ -819,15 +824,38 @@ func make_creatures() -> void:
 		sprite.pixel_size = 0.0055
 		sprite.billboard = BaseMaterial3D.BILLBOARD_FIXED_Y
 		sprite.position.y = 0.38
+		creature["runtime_visual_bound"] = false
+		creature["candidate_visual_bound"] = false
+		var bank_id := str(creature.get("bank_id",creature_id))
+		var candidate_allowed := (
+			qa_visual_preview or bool(creature.get("production_visual_ready",false)))
+		if candidate_allowed and candidate_banks.has_creature(bank_id):
+			var idle_count := candidate_banks.creature_frame_count(bank_id,"idle")
+			var initial_index := 1 if idle_count > 1 else 0
+			var candidate_tex: Texture2D = candidate_banks.creature_texture(
+				bank_id,"idle",initial_index)
+			if candidate_tex != null:
+				var world_height := candidate_banks.creature_world_height(bank_id)
+				sprite.texture = candidate_tex
+				sprite.pixel_size = world_height/maxf(
+					1.0,float(candidate_tex.get_height()))
+				sprite.position.y = world_height*0.5
+				creature["runtime_visual_bound"] = true
+				creature["candidate_visual_bound"] = true
+				creature["visual_preview_only"] = not bool(
+					creature.get("production_visual_ready",false))
+				creature_animations[str(creature_id)] = {
+					"state":"idle","frame":initial_index,"elapsed":0.0
+				}
 		anchor.add_child(sprite)
 		var label := label3(anchor,world.creature_display_label(str(creature_id)),
 			Vector3(0,0.92,0.15),21,Color("#ead8bf"))
 		label.visible = false
 		creature_nodes[str(creature_id)] = anchor
 		creature_labels[str(creature_id)] = label
-	update_creatures()
+	update_creatures(0.0)
 
-func update_creatures() -> void:
+func update_creatures(delta: float = 0.0) -> void:
 	var active_count := 0
 	for creature_id in world.creatures:
 		if bool(world.creatures[creature_id].get("active",false)):
@@ -848,12 +876,53 @@ func update_creatures() -> void:
 			float(creature.get("level",0))*H))
 		anchor.position = Vector3(
 			float(creature.get("x",0.0)),y,float(creature.get("z",0.25)))
+		if bool(creature.get("candidate_visual_bound",false)):
+			animate_candidate_creature(str(creature_id),creature,delta)
 		var label: Label3D = creature_labels.get(creature_id)
 		if label != null:
 			label.text = world.creature_display_label(creature_id)
 			var owner_id := str(creature.get("owner_id",""))
 			# Owner labels are evidence-driven and shown only close enough to read.
 			label.visible = owner_id != "" and zoom_current < 26.0
+
+func animate_candidate_creature(creature_id: String, creature: Dictionary,
+		delta: float) -> void:
+	var bank_id := str(creature.get("bank_id",creature_id))
+	if not candidate_banks.has_creature(bank_id):
+		return
+	var state := "idle"
+	if str(creature.get("phase","idle")) == "travel":
+		state = ("walk_left" if str(creature.get("moving_axis","")) == "left"
+			else "walk_right")
+	elif (str(creature.get("phase","idle")) == "perform"
+			and str(creature.get("intent","")) in ["REST","SLEEP"]):
+		state = "rest"
+	if candidate_banks.creature_frame_count(bank_id,state) < 1:
+		state = "idle"
+	var animation: Dictionary = creature_animations.get(
+		creature_id,{"state":"","frame":0,"elapsed":0.0})
+	if str(animation.get("state","")) != state:
+		animation = {"state":state,"frame":0,"elapsed":0.0}
+	else:
+		animation["elapsed"] = float(
+			animation.get("elapsed",0.0))+minf(delta,0.1)
+		var period := 1.0/maxf(1.0,candidate_banks.creature_fps(state))
+		if float(animation["elapsed"]) >= period:
+			var count := maxi(
+				1,candidate_banks.creature_frame_count(bank_id,state))
+			animation["frame"] = (
+				int(animation["frame"])
+				+ int(float(animation["elapsed"])/period)) % count
+			animation["elapsed"] = fmod(float(animation["elapsed"]),period)
+	creature_animations[creature_id] = animation
+	var sprite: Sprite3D = creature_nodes[creature_id].get_node("Body")
+	var texture := candidate_banks.creature_texture(
+		bank_id,state,int(animation.get("frame",0)))
+	if texture != null and texture != sprite.texture:
+		sprite.texture = texture
+		var world_height := candidate_banks.creature_world_height(bank_id)
+		sprite.pixel_size = world_height/maxf(1.0,float(texture.get_height()))
+		sprite.position.y = world_height*0.5
 
 func _object_offset(object_id: String) -> Vector3:
 	var code := 0
@@ -965,20 +1034,50 @@ func make_residents() -> void:
 				actor["visual_preview_only"] = true
 				actor_animations[id] = {"state":"IDLE_RIGHT","frame":0,"elapsed":0.0}
 		if id != "MANJKA":
-			var profile_id: String = str(actor.get("appearance_profile",""))
-			var chosen_wardrobe: String = asset_banks.preferred_wardrobe(id,profile_id,qa_visual_preview)
-			if chosen_wardrobe != "":
-				var approved_idle: Texture2D = asset_banks.texture_for(id,chosen_wardrobe,"IDLE_S",0)
-				if approved_idle != null:
-					sprite.texture = approved_idle
-					sprite.pixel_size = 1.9 / maxf(1.0,float(approved_idle.get_height()))
+			actor["candidate_visual_bound"] = false
+			var is_guest := str(actor.get("entity_type","")) == "guest"
+			var candidate_allowed := (
+				qa_visual_preview or bool(actor.get("production_visual_ready",false)))
+			if is_guest and candidate_allowed and candidate_banks.has_guest(id):
+				var guest_wardrobe := candidate_banks.guest_default_wardrobe(id)
+				var guest_idle := candidate_banks.guest_texture(
+					id,guest_wardrobe,"IDLE_S",0)
+				if guest_idle != null:
+					sprite.texture = guest_idle
+					sprite.pixel_size = 1.9/maxf(
+						1.0,float(guest_idle.get_height()))
 					sprite.position.y = maxf(0.15,
-						(asset_banks.feet_anchor(id,chosen_wardrobe,approved_idle.get_height())
-						 - float(approved_idle.get_height())*0.5)*sprite.pixel_size)
+						(candidate_banks.guest_feet_anchor(
+							id,guest_wardrobe,guest_idle.get_height())
+						 - float(guest_idle.get_height())*0.5)*sprite.pixel_size)
 					actor["runtime_visual_bound"] = true
-					actor["visual_wardrobe"] = chosen_wardrobe
-					actor["visual_preview_only"] = not asset_banks.verified_bank(id,profile_id,chosen_wardrobe)
-					actor_animations[id] = {"state":"IDLE_S","frame":0,"elapsed":0.0}
+					actor["candidate_visual_bound"] = true
+					actor["visual_wardrobe"] = guest_wardrobe
+					actor["visual_preview_only"] = not bool(
+						actor.get("production_visual_ready",false))
+					actor_animations[id] = {
+						"state":"IDLE_S","frame":0,"elapsed":0.0}
+			elif not is_guest:
+				var profile_id: String = str(actor.get("appearance_profile",""))
+				var chosen_wardrobe: String = asset_banks.preferred_wardrobe(
+					id,profile_id,qa_visual_preview)
+				if chosen_wardrobe != "":
+					var approved_idle: Texture2D = asset_banks.texture_for(
+						id,chosen_wardrobe,"IDLE_S",0)
+					if approved_idle != null:
+						sprite.texture = approved_idle
+						sprite.pixel_size = 1.9/maxf(
+							1.0,float(approved_idle.get_height()))
+						sprite.position.y = maxf(0.15,
+							(asset_banks.feet_anchor(
+								id,chosen_wardrobe,approved_idle.get_height())
+							 - float(approved_idle.get_height())*0.5)*sprite.pixel_size)
+						actor["runtime_visual_bound"] = true
+						actor["visual_wardrobe"] = chosen_wardrobe
+						actor["visual_preview_only"] = not asset_banks.verified_bank(
+							id,profile_id,chosen_wardrobe)
+						actor_animations[id] = {
+							"state":"IDLE_S","frame":0,"elapsed":0.0}
 
 		if not actor["runtime_visual_bound"]:
 			sprite.position = Vector3(0, 0.83 if id == "MANJKA" else 1.05, 0)
@@ -1004,6 +1103,8 @@ func update_residents(delta: float = 0.0) -> void:
 		if actor.get("runtime_visual_bound",false):
 			if id == "MANJKA":
 				animate_manka(actor,delta)
+			elif bool(actor.get("candidate_visual_bound",false)):
+				animate_candidate_guest(id,actor,delta)
 			else:
 				animate_verified_actor(id,actor,delta)
 		# Names live in the status panel, never stacked over actors or furniture.
@@ -1068,6 +1169,39 @@ func desired_actor_animation(actor: Dictionary) -> String:
 			"WATCH_FIRE", "VIEW_ART", "BROWSE_BOOK_CATALOG", "BROWSE_FILMS", "BROWSE_AUDIO":
 				requested = "VIEW"
 	return requested
+
+func animate_candidate_guest(id: String, actor: Dictionary,
+		delta: float) -> void:
+	var requested := desired_actor_animation(actor)
+	var wardrobe := str(actor.get(
+		"visual_wardrobe",candidate_banks.guest_default_wardrobe(id)))
+	if candidate_banks.guest_frame_count(id,wardrobe,requested) < 1:
+		requested = "IDLE_S"
+	var state: Dictionary = actor_animations.get(
+		id,{"state":"","frame":0,"elapsed":0.0})
+	if str(state.get("state","")) != requested:
+		state = {"state":requested,"frame":0,"elapsed":0.0}
+	else:
+		state["elapsed"] = float(state.get("elapsed",0.0))+minf(delta,0.1)
+		var period := 1.0/maxf(1.0,candidate_banks.guest_fps(requested))
+		if float(state["elapsed"]) >= period:
+			var count := maxi(
+				1,candidate_banks.guest_frame_count(id,wardrobe,requested))
+			state["frame"] = (
+				int(state["frame"])
+				+ int(float(state["elapsed"])/period)) % count
+			state["elapsed"] = fmod(float(state["elapsed"]),period)
+	actor_animations[id] = state
+	var sprite: Sprite3D = actor_sprites[id].get_node("Body")
+	var texture := candidate_banks.guest_texture(
+		id,wardrobe,requested,int(state.get("frame",0)))
+	if texture != null and sprite.texture != texture:
+		sprite.texture = texture
+		sprite.pixel_size = 1.9/maxf(1.0,float(texture.get_height()))
+		sprite.position.y = maxf(0.15,
+			(candidate_banks.guest_feet_anchor(
+				id,wardrobe,texture.get_height())
+			 - float(texture.get_height())*0.5)*sprite.pixel_size)
 
 func animate_verified_actor(id: String, actor: Dictionary, delta: float) -> void:
 	# Visual state does not change life and cannot assume a real chair exists.
@@ -1360,6 +1494,7 @@ func toggle_bank_gallery() -> void:
 func toggle_qa_art_preview() -> void:
 	qa_visual_preview = not qa_visual_preview
 	make_residents()
+	make_creatures()
 	update_hud()
 	if notice != null:
 		notice.text = "Визуальные банки: QA-ПРОСМОТР" if qa_visual_preview else "Визуальные банки: только утверждённые"
@@ -1902,7 +2037,7 @@ func _process(delta: float) -> void:
 	# The camera never chooses activities. Life is a separate simulation clock.
 	life.tick(delta)
 	update_residents(delta)
-	update_creatures()
+	update_creatures(delta)
 	update_physical_objects()
 	apply_camera(delta)
 	save_timer += delta
