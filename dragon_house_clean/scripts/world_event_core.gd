@@ -224,6 +224,8 @@ func append_object_event(event_type: String, subject_id: String, actor_id: Strin
 		return {"ok":false,"error":"v0.20 strangler accepts OBJECT_* only"}
 	if not ALLOWED_TRUTH_CLASSES.has(truth_class):
 		return {"ok":false,"error":"invalid truth_class"}
+	if truth_class == "PRESENTATION_ONLY":
+		return {"ok":false,"error":"presentation-only events may not mutate physical object truth"}
 	var current_revision := object_revision(subject_id)
 	var expected := current_revision if expected_revision < 0 else expected_revision
 	var event_id := requested_event_id if requested_event_id != "" else _next_event_id()
