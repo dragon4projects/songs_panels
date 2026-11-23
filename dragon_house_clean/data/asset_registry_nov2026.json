@@ -47846,6 +47846,627 @@
     }
   },
   "creatures": {
+    "npc_mouse_gray": {
+      "runtime_bound": false,
+      "source_status": "Technical frame bank; owner art review pending",
+      "states": {
+        "FRONT": {
+          "frames": [
+            "assets/creatures/npc_mouse_gray/identity/front_0001.png"
+          ],
+          "frame_count": 1,
+          "distinct_frame_hashes": 1,
+          "fps": 2.0,
+          "declared_source_frames": 1,
+          "durations": [
+            1.0
+          ],
+          "canvas": [
+            [
+              1024,
+              640
+            ]
+          ],
+          "color_modes": [
+            "RGBA"
+          ],
+          "warnings": [],
+          "excluded_frames": [],
+          "status": "PASS",
+          "runtime_bound": false,
+          "source_confidence": "ImageGen sprite sheet with per-frame source evidence; owner art review pending",
+          "evidence": "assets/manifests/npc_20261123_004_mouse_provenance.json"
+        },
+        "IDLE_LEFT": {
+          "frames": [
+            "assets/creatures/npc_mouse_gray/idle/idle_left_0001.png"
+          ],
+          "frame_count": 1,
+          "distinct_frame_hashes": 1,
+          "fps": 2.0,
+          "declared_source_frames": 1,
+          "durations": [
+            1.0
+          ],
+          "canvas": [
+            [
+              1024,
+              640
+            ]
+          ],
+          "color_modes": [
+            "RGBA"
+          ],
+          "warnings": [],
+          "excluded_frames": [],
+          "status": "PASS",
+          "runtime_bound": false,
+          "source_confidence": "ImageGen sprite sheet with per-frame source evidence; owner art review pending",
+          "evidence": "assets/manifests/npc_20261123_004_mouse_provenance.json"
+        },
+        "IDLE_RIGHT": {
+          "frames": [
+            "assets/creatures/npc_mouse_gray/idle/idle_right_0001.png"
+          ],
+          "frame_count": 1,
+          "distinct_frame_hashes": 1,
+          "fps": 2.0,
+          "declared_source_frames": 1,
+          "durations": [
+            1.0
+          ],
+          "canvas": [
+            [
+              1024,
+              640
+            ]
+          ],
+          "color_modes": [
+            "RGBA"
+          ],
+          "warnings": [],
+          "excluded_frames": [],
+          "status": "PASS",
+          "runtime_bound": false,
+          "source_confidence": "ImageGen sprite sheet with per-frame source evidence; owner art review pending",
+          "evidence": "assets/manifests/npc_20261123_004_mouse_provenance.json"
+        },
+        "SIT": {
+          "frames": [
+            "assets/creatures/npc_mouse_gray/rest/sit_0001.png"
+          ],
+          "frame_count": 1,
+          "distinct_frame_hashes": 1,
+          "fps": 2.0,
+          "declared_source_frames": 1,
+          "durations": [
+            1.0
+          ],
+          "canvas": [
+            [
+              1024,
+              640
+            ]
+          ],
+          "color_modes": [
+            "RGBA"
+          ],
+          "warnings": [],
+          "excluded_frames": [],
+          "status": "PASS",
+          "runtime_bound": false,
+          "source_confidence": "ImageGen sprite sheet with per-frame source evidence; owner art review pending",
+          "evidence": "assets/manifests/npc_20261123_004_mouse_provenance.json"
+        },
+        "REST": {
+          "frames": [
+            "assets/creatures/npc_mouse_gray/rest/rest_0001.png"
+          ],
+          "frame_count": 1,
+          "distinct_frame_hashes": 1,
+          "fps": 2.0,
+          "declared_source_frames": 1,
+          "durations": [
+            1.0
+          ],
+          "canvas": [
+            [
+              1024,
+              640
+            ]
+          ],
+          "color_modes": [
+            "RGBA"
+          ],
+          "warnings": [],
+          "excluded_frames": [],
+          "status": "PASS",
+          "runtime_bound": false,
+          "source_confidence": "ImageGen sprite sheet with per-frame source evidence; owner art review pending",
+          "evidence": "assets/manifests/npc_20261123_004_mouse_provenance.json"
+        },
+        "WALK_LEFT": {
+          "frames": [
+            "assets/creatures/npc_mouse_gray/walk_left/walk_left_0001.png",
+            "assets/creatures/npc_mouse_gray/walk_left/walk_left_0002.png",
+            "assets/creatures/npc_mouse_gray/walk_left/walk_left_0003.png",
+            "assets/creatures/npc_mouse_gray/walk_left/walk_left_0004.png"
+          ],
+          "frame_count": 4,
+          "distinct_frame_hashes": 4,
+          "fps": 8.0,
+          "declared_source_frames": 4,
+          "durations": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "canvas": [
+            [
+              1024,
+              640
+            ]
+          ],
+          "color_modes": [
+            "RGBA"
+          ],
+          "warnings": [],
+          "excluded_frames": [],
+          "status": "PASS",
+          "runtime_bound": false,
+          "source_confidence": "ImageGen sprite sheet with per-frame source evidence; owner art review pending",
+          "evidence": "assets/manifests/npc_20261123_004_mouse_provenance.json"
+        },
+        "WALK_RIGHT": {
+          "frames": [
+            "assets/creatures/npc_mouse_gray/walk_right/walk_right_0001.png",
+            "assets/creatures/npc_mouse_gray/walk_right/walk_right_0002.png",
+            "assets/creatures/npc_mouse_gray/walk_right/walk_right_0003.png",
+            "assets/creatures/npc_mouse_gray/walk_right/walk_right_0004.png"
+          ],
+          "frame_count": 4,
+          "distinct_frame_hashes": 4,
+          "fps": 8.0,
+          "declared_source_frames": 4,
+          "durations": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "canvas": [
+            [
+              1024,
+              640
+            ]
+          ],
+          "color_modes": [
+            "RGBA"
+          ],
+          "warnings": [],
+          "excluded_frames": [],
+          "status": "PASS",
+          "runtime_bound": false,
+          "source_confidence": "ImageGen sprite sheet with per-frame source evidence; owner art review pending",
+          "evidence": "assets/manifests/npc_20261123_004_mouse_provenance.json"
+        }
+      }
+    },
+    "npc_mouse_brown": {
+      "runtime_bound": false,
+      "source_status": "Technical frame bank; owner art review pending",
+      "states": {
+        "FRONT": {
+          "frames": [
+            "assets/creatures/npc_mouse_brown/identity/front_0001.png"
+          ],
+          "frame_count": 1,
+          "distinct_frame_hashes": 1,
+          "fps": 2.0,
+          "declared_source_frames": 1,
+          "durations": [
+            1.0
+          ],
+          "canvas": [
+            [
+              1024,
+              640
+            ]
+          ],
+          "color_modes": [
+            "RGBA"
+          ],
+          "warnings": [],
+          "excluded_frames": [],
+          "status": "PASS",
+          "runtime_bound": false,
+          "source_confidence": "ImageGen sprite sheet with per-frame source evidence; owner art review pending",
+          "evidence": "assets/manifests/npc_20261123_004_mouse_provenance.json"
+        },
+        "IDLE_LEFT": {
+          "frames": [
+            "assets/creatures/npc_mouse_brown/idle/idle_left_0001.png"
+          ],
+          "frame_count": 1,
+          "distinct_frame_hashes": 1,
+          "fps": 2.0,
+          "declared_source_frames": 1,
+          "durations": [
+            1.0
+          ],
+          "canvas": [
+            [
+              1024,
+              640
+            ]
+          ],
+          "color_modes": [
+            "RGBA"
+          ],
+          "warnings": [],
+          "excluded_frames": [],
+          "status": "PASS",
+          "runtime_bound": false,
+          "source_confidence": "ImageGen sprite sheet with per-frame source evidence; owner art review pending",
+          "evidence": "assets/manifests/npc_20261123_004_mouse_provenance.json"
+        },
+        "IDLE_RIGHT": {
+          "frames": [
+            "assets/creatures/npc_mouse_brown/idle/idle_right_0001.png"
+          ],
+          "frame_count": 1,
+          "distinct_frame_hashes": 1,
+          "fps": 2.0,
+          "declared_source_frames": 1,
+          "durations": [
+            1.0
+          ],
+          "canvas": [
+            [
+              1024,
+              640
+            ]
+          ],
+          "color_modes": [
+            "RGBA"
+          ],
+          "warnings": [],
+          "excluded_frames": [],
+          "status": "PASS",
+          "runtime_bound": false,
+          "source_confidence": "ImageGen sprite sheet with per-frame source evidence; owner art review pending",
+          "evidence": "assets/manifests/npc_20261123_004_mouse_provenance.json"
+        },
+        "SIT": {
+          "frames": [
+            "assets/creatures/npc_mouse_brown/rest/sit_0001.png"
+          ],
+          "frame_count": 1,
+          "distinct_frame_hashes": 1,
+          "fps": 2.0,
+          "declared_source_frames": 1,
+          "durations": [
+            1.0
+          ],
+          "canvas": [
+            [
+              1024,
+              640
+            ]
+          ],
+          "color_modes": [
+            "RGBA"
+          ],
+          "warnings": [],
+          "excluded_frames": [],
+          "status": "PASS",
+          "runtime_bound": false,
+          "source_confidence": "ImageGen sprite sheet with per-frame source evidence; owner art review pending",
+          "evidence": "assets/manifests/npc_20261123_004_mouse_provenance.json"
+        },
+        "REST": {
+          "frames": [
+            "assets/creatures/npc_mouse_brown/rest/rest_0001.png"
+          ],
+          "frame_count": 1,
+          "distinct_frame_hashes": 1,
+          "fps": 2.0,
+          "declared_source_frames": 1,
+          "durations": [
+            1.0
+          ],
+          "canvas": [
+            [
+              1024,
+              640
+            ]
+          ],
+          "color_modes": [
+            "RGBA"
+          ],
+          "warnings": [],
+          "excluded_frames": [],
+          "status": "PASS",
+          "runtime_bound": false,
+          "source_confidence": "ImageGen sprite sheet with per-frame source evidence; owner art review pending",
+          "evidence": "assets/manifests/npc_20261123_004_mouse_provenance.json"
+        },
+        "WALK_LEFT": {
+          "frames": [
+            "assets/creatures/npc_mouse_brown/walk_left/walk_left_0001.png",
+            "assets/creatures/npc_mouse_brown/walk_left/walk_left_0002.png",
+            "assets/creatures/npc_mouse_brown/walk_left/walk_left_0003.png",
+            "assets/creatures/npc_mouse_brown/walk_left/walk_left_0004.png"
+          ],
+          "frame_count": 4,
+          "distinct_frame_hashes": 4,
+          "fps": 8.0,
+          "declared_source_frames": 4,
+          "durations": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "canvas": [
+            [
+              1024,
+              640
+            ]
+          ],
+          "color_modes": [
+            "RGBA"
+          ],
+          "warnings": [],
+          "excluded_frames": [],
+          "status": "PASS",
+          "runtime_bound": false,
+          "source_confidence": "ImageGen sprite sheet with per-frame source evidence; owner art review pending",
+          "evidence": "assets/manifests/npc_20261123_004_mouse_provenance.json"
+        },
+        "WALK_RIGHT": {
+          "frames": [
+            "assets/creatures/npc_mouse_brown/walk_right/walk_right_0001.png",
+            "assets/creatures/npc_mouse_brown/walk_right/walk_right_0002.png",
+            "assets/creatures/npc_mouse_brown/walk_right/walk_right_0003.png",
+            "assets/creatures/npc_mouse_brown/walk_right/walk_right_0004.png"
+          ],
+          "frame_count": 4,
+          "distinct_frame_hashes": 4,
+          "fps": 8.0,
+          "declared_source_frames": 4,
+          "durations": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "canvas": [
+            [
+              1024,
+              640
+            ]
+          ],
+          "color_modes": [
+            "RGBA"
+          ],
+          "warnings": [],
+          "excluded_frames": [],
+          "status": "PASS",
+          "runtime_bound": false,
+          "source_confidence": "ImageGen sprite sheet with per-frame source evidence; owner art review pending",
+          "evidence": "assets/manifests/npc_20261123_004_mouse_provenance.json"
+        }
+      }
+    },
+    "npc_mouse_pale": {
+      "runtime_bound": false,
+      "source_status": "Technical frame bank; owner art review pending",
+      "states": {
+        "FRONT": {
+          "frames": [
+            "assets/creatures/npc_mouse_pale/identity/front_0001.png"
+          ],
+          "frame_count": 1,
+          "distinct_frame_hashes": 1,
+          "fps": 2.0,
+          "declared_source_frames": 1,
+          "durations": [
+            1.0
+          ],
+          "canvas": [
+            [
+              1024,
+              640
+            ]
+          ],
+          "color_modes": [
+            "RGBA"
+          ],
+          "warnings": [],
+          "excluded_frames": [],
+          "status": "PASS",
+          "runtime_bound": false,
+          "source_confidence": "ImageGen sprite sheet with per-frame source evidence; owner art review pending",
+          "evidence": "assets/manifests/npc_20261123_004_mouse_provenance.json"
+        },
+        "IDLE_LEFT": {
+          "frames": [
+            "assets/creatures/npc_mouse_pale/idle/idle_left_0001.png"
+          ],
+          "frame_count": 1,
+          "distinct_frame_hashes": 1,
+          "fps": 2.0,
+          "declared_source_frames": 1,
+          "durations": [
+            1.0
+          ],
+          "canvas": [
+            [
+              1024,
+              640
+            ]
+          ],
+          "color_modes": [
+            "RGBA"
+          ],
+          "warnings": [],
+          "excluded_frames": [],
+          "status": "PASS",
+          "runtime_bound": false,
+          "source_confidence": "ImageGen sprite sheet with per-frame source evidence; owner art review pending",
+          "evidence": "assets/manifests/npc_20261123_004_mouse_provenance.json"
+        },
+        "IDLE_RIGHT": {
+          "frames": [
+            "assets/creatures/npc_mouse_pale/idle/idle_right_0001.png"
+          ],
+          "frame_count": 1,
+          "distinct_frame_hashes": 1,
+          "fps": 2.0,
+          "declared_source_frames": 1,
+          "durations": [
+            1.0
+          ],
+          "canvas": [
+            [
+              1024,
+              640
+            ]
+          ],
+          "color_modes": [
+            "RGBA"
+          ],
+          "warnings": [],
+          "excluded_frames": [],
+          "status": "PASS",
+          "runtime_bound": false,
+          "source_confidence": "ImageGen sprite sheet with per-frame source evidence; owner art review pending",
+          "evidence": "assets/manifests/npc_20261123_004_mouse_provenance.json"
+        },
+        "SIT": {
+          "frames": [
+            "assets/creatures/npc_mouse_pale/rest/sit_0001.png"
+          ],
+          "frame_count": 1,
+          "distinct_frame_hashes": 1,
+          "fps": 2.0,
+          "declared_source_frames": 1,
+          "durations": [
+            1.0
+          ],
+          "canvas": [
+            [
+              1024,
+              640
+            ]
+          ],
+          "color_modes": [
+            "RGBA"
+          ],
+          "warnings": [],
+          "excluded_frames": [],
+          "status": "PASS",
+          "runtime_bound": false,
+          "source_confidence": "ImageGen sprite sheet with per-frame source evidence; owner art review pending",
+          "evidence": "assets/manifests/npc_20261123_004_mouse_provenance.json"
+        },
+        "REST": {
+          "frames": [
+            "assets/creatures/npc_mouse_pale/rest/rest_0001.png"
+          ],
+          "frame_count": 1,
+          "distinct_frame_hashes": 1,
+          "fps": 2.0,
+          "declared_source_frames": 1,
+          "durations": [
+            1.0
+          ],
+          "canvas": [
+            [
+              1024,
+              640
+            ]
+          ],
+          "color_modes": [
+            "RGBA"
+          ],
+          "warnings": [],
+          "excluded_frames": [],
+          "status": "PASS",
+          "runtime_bound": false,
+          "source_confidence": "ImageGen sprite sheet with per-frame source evidence; owner art review pending",
+          "evidence": "assets/manifests/npc_20261123_004_mouse_provenance.json"
+        },
+        "WALK_LEFT": {
+          "frames": [
+            "assets/creatures/npc_mouse_pale/walk_left/walk_left_0001.png",
+            "assets/creatures/npc_mouse_pale/walk_left/walk_left_0002.png",
+            "assets/creatures/npc_mouse_pale/walk_left/walk_left_0003.png",
+            "assets/creatures/npc_mouse_pale/walk_left/walk_left_0004.png"
+          ],
+          "frame_count": 4,
+          "distinct_frame_hashes": 4,
+          "fps": 8.0,
+          "declared_source_frames": 4,
+          "durations": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "canvas": [
+            [
+              1024,
+              640
+            ]
+          ],
+          "color_modes": [
+            "RGBA"
+          ],
+          "warnings": [],
+          "excluded_frames": [],
+          "status": "PASS",
+          "runtime_bound": false,
+          "source_confidence": "ImageGen sprite sheet with per-frame source evidence; owner art review pending",
+          "evidence": "assets/manifests/npc_20261123_004_mouse_provenance.json"
+        },
+        "WALK_RIGHT": {
+          "frames": [
+            "assets/creatures/npc_mouse_pale/walk_right/walk_right_0001.png",
+            "assets/creatures/npc_mouse_pale/walk_right/walk_right_0002.png",
+            "assets/creatures/npc_mouse_pale/walk_right/walk_right_0003.png",
+            "assets/creatures/npc_mouse_pale/walk_right/walk_right_0004.png"
+          ],
+          "frame_count": 4,
+          "distinct_frame_hashes": 4,
+          "fps": 8.0,
+          "declared_source_frames": 4,
+          "durations": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "canvas": [
+            [
+              1024,
+              640
+            ]
+          ],
+          "color_modes": [
+            "RGBA"
+          ],
+          "warnings": [],
+          "excluded_frames": [],
+          "status": "PASS",
+          "runtime_bound": false,
+          "source_confidence": "ImageGen sprite sheet with per-frame source evidence; owner art review pending",
+          "evidence": "assets/manifests/npc_20261123_004_mouse_provenance.json"
+        }
+      }
+    },
     "manjka": {
       "legacy_bank": "residents/MANJKA_FRAMES.tres",
       "runtime_bound": false,
