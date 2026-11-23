@@ -10,6 +10,8 @@ on:
       - 'dragon_house_clean/scripts/world_event_store*.gd'
       - 'dragon_house_clean/scripts/object_event_runtime.gd'
       - 'dragon_house_clean/tests/test_object_event_*_v021.gd'
+      - 'dragon_house_clean/tests/test_object_lifecycle_v017.gd'
+      - 'dragon_house_clean/tests/test_ambient_creatures_v018.gd'
       - '.github/workflows/dragon-house-v021-source-closure.yml'
   workflow_dispatch:
 
