@@ -1,0 +1,75 @@
+{
+  "branch": "art/znaechka-characters-ZNA_CHAR_NPC_20261123_001",
+  "audited_head": "b3f81349840707b6c0b95ec025b7a8e827175752",
+  "guests": {
+    "NPC_CENTAUR": {
+      "display_name": "Кентавр",
+      "status": "COMPLETE_BASE_BANK",
+      "identity": 1,
+      "wardrobes": {
+        "SHORT": 47,
+        "HOME": 47,
+        "CITY": 47
+      },
+      "owner_approved": false
+    },
+    "NPC_VAMPIRE_GIRL": {
+      "display_name": "Вампирша",
+      "status": "COMPLETE_BASE_BANK",
+      "identity": 1,
+      "wardrobes": {
+        "SHORT": 47,
+        "HOME": 47,
+        "CITY": 47
+      },
+      "owner_approved": false
+    },
+    "NPC_GINGER_CAT_GUEST": {
+      "display_name": "Миу",
+      "status": "COMPLETE_STARTING_BANK",
+      "identity": 1,
+      "wardrobes": {
+        "SHORT": 47
+      },
+      "owner_approved": false,
+      "missing": "extended room/perch/carry states not evidenced"
+    }
+  },
+  "creatures": {
+    "npc_ai_magic_sphere": {
+      "status": "COMPLETE_MINIMUM_CREATURE_BANK",
+      "frames": 13
+    },
+    "hedgehogs": {
+      "status": "COMPLETE_MINIMUM_CREATURE_BANK",
+      "banks": 3,
+      "frames_each": 13
+    },
+    "cats": {
+      "status": "COMPLETE_MINIMUM_CREATURE_BANK",
+      "banks": 6,
+      "frames_each": 13,
+      "ownership": "UNKNOWN"
+    },
+    "rats": {
+      "status": "COMPLETE_MINIMUM_CREATURE_BANK",
+      "banks": 5,
+      "frames_each": 13
+    },
+    "mice": {
+      "status": "MISSING"
+    },
+    "shurshun": {
+      "status": "MISSING_CREATURE_BANK",
+      "note": "artifact/poster imagery only"
+    },
+    "manjka": {
+      "status": "COMPLETE_MINIMUM_CREATURE_BANK",
+      "frames": 13
+    }
+  },
+  "res22_24": {
+    "current_branch_status": "IDENTITY_ONLY_ON_AUDITED_HEAD",
+    "previous_delivery_status": "423 exact R1 frames included in transfer for hash-preserving ingest"
+  }
+}
