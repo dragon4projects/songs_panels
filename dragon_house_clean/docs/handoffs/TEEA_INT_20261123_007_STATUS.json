@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "batch_id": "TEEA_INT_20261123_007",
+  "owner_approved": false,
+  "production_touched": false,
+  "gates": {
+    "PASS-A": {
+      "status": "BLOCKED",
+      "reason": "3/3 guest room candidates, access contract, measured geometry and conservative runtime-plane clearance PASS; exact canonical PNG alpha/body footprint cannot be inspected because guest assets are Git LFS and sandbox download returns 401. No fake exact footprint claimed."
+    },
+    "PASS-B": {
+      "status": "BLOCKED",
+      "reason": "Book/film/audio/artifact holder geometry + 32 metadata hooks + separate Cinema game-corner contract exist and contain no baked content. Library placement is exact; final Cinema/Music/Artifact transforms wait for unfinished TEEA006 geometry."
+    },
+    "PASS-C": {
+      "status": "PASS",
+      "reason": "Project-original polygon mug LOD0 empty/filled + LOD1; GLB round-trip mesh QA boundary=0/nonmanifold=0 after geometric weld; tabletop hand-envelope proof; Godot GLTFDocument load PASS."
+    },
+    "PASS-D": {
+      "status": "BLOCKED",
+      "reason": "Manifest/provenance/SHA/contact/yaw/geometry/Godot evidence complete for authored payload, but exact canonical guest-sprite yaw proof and final TEEA006 media-room placement proof remain externally blocked."
+    },
+    "PASS-E": {
+      "status": "PENDING_BRANCH_WRITE",
+      "reason": "owner_approved=false and production untouched already satisfied; exact 007 branch/head/handoff path will be filled after branch write."
+    }
+  },
+  "subdeliverables": {
+    "guest_room_candidates": "PASS_GEOMETRY_ACCESS_CONSERVATIVE_RUNTIME_BOUND",
+    "guest_actual_alpha_body_footprint": "BLOCKED_LFS_AUTH",
+    "common_function_addendum": "PASS",
+    "library_function_addendum": "PASS",
+    "media_holder_geometry": "PASS",
+    "media_runtime_api_mapping": "PASS",
+    "cinema_music_artifact_final_holder_placement": "BLOCKED_TEEA006",
+    "mug_geometry": "PASS",
+    "godot_decode_glb": "PASS"
+  }
+}
