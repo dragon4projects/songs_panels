@@ -1,0 +1,55 @@
+{
+  "schema": 3,
+  "batch_id": "TEEA_INT_20261123_006",
+  "approved": false,
+  "layers": {
+    "music/R2": [
+      {
+        "id": "music_r2_chair_front",
+        "physical_z": 0.515725,
+        "source_asset": "modern_arm_chair_01",
+        "seat_centroid_z": 0.242181,
+        "seat_height_m": 0.413106,
+        "clip_plane_z": 0.254181,
+        "measurement_provenance": "RENDER_TIME_RAYCAST_FROM_SAME_SOURCE_GLTF",
+        "occlusion_intent": "Occlude only the lower/front body region of the resident seated in this same furniture; never unrelated stations."
+      }
+    ],
+    "music/R3": [
+      {
+        "id": "music_r3_chair_front",
+        "physical_z": 0.510694,
+        "source_asset": "modern_arm_chair_01",
+        "seat_centroid_z": 0.24259,
+        "seat_height_m": 0.413214,
+        "clip_plane_z": 0.25459,
+        "measurement_provenance": "RENDER_TIME_RAYCAST_FROM_SAME_SOURCE_GLTF",
+        "occlusion_intent": "Occlude only the lower/front body region of the resident seated in this same furniture; never unrelated stations."
+      }
+    ],
+    "cinema/R2": [
+      {
+        "id": "cinema_r2_chair_front",
+        "physical_z": 0.572797,
+        "source_asset": "mid_century_lounge_chair",
+        "seat_centroid_z": 0.212474,
+        "seat_height_m": 0.478332,
+        "clip_plane_z": 0.224474,
+        "measurement_provenance": "RENDER_TIME_RAYCAST_FROM_SAME_SOURCE_GLTF",
+        "occlusion_intent": "Occlude only the lower/front body region of the resident seated in this same furniture; never unrelated stations."
+      }
+    ],
+    "cinema/R3": [
+      {
+        "id": "cinema_r3_chair_front",
+        "physical_z": 0.578528,
+        "source_asset": "mid_century_lounge_chair",
+        "seat_centroid_z": 0.211631,
+        "seat_height_m": 0.478223,
+        "clip_plane_z": 0.223631,
+        "measurement_provenance": "RENDER_TIME_RAYCAST_FROM_SAME_SOURCE_GLTF",
+        "occlusion_intent": "Occlude only the lower/front body region of the resident seated in this same furniture; never unrelated stations."
+      }
+    ]
+  }
+}
