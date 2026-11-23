@@ -2,7 +2,7 @@ name: Dragon House LFS intake and Godot acceptance
 
 on:
   push:
-    branches: [dragon-house-fallout-fresh]
+    branches: [dragon-house-fallout-fresh, dev/dragon-house-v020-event-core-object-strangler]
     paths:
       - 'dragon_house_clean/**'
       - '.github/workflows/dragon-house-lfs.yml'
@@ -126,7 +126,8 @@ jobs:
             tests/test_life_scheduler_v019.gd \
             tests/test_life_due_wake_integration_v019.gd \
             tests/test_semantic_view_v019.gd \
-            tests/test_level_mode_v019.gd; do
+            tests/test_level_mode_v019.gd \
+            tests/test_world_event_core_v020.gd; do
             echo "RUN $t" | tee -a godot_tests.log
             result="$(timeout 80s /tmp/Godot_v4.7.2-stable_linux.x86_64 --headless --path . --script "res://$t" 2>&1)" || { echo "$result" | tee -a godot_tests.log; exit 1; }
             echo "$result" | tee -a godot_tests.log
