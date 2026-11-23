@@ -1,0 +1,92 @@
+name: Dragon House v0.21 vendored SQLite source-closure
+
+on:
+  push:
+    branches:
+      - integration/dragon-house-v021-sqlite-object-core
+    paths:
+      - 'dragon_house_clean/addons/godot-sqlite/**'
+      - 'dragon_house_clean/.gitattributes'
+      - 'dragon_house_clean/scripts/world_event_store*.gd'
+      - 'dragon_house_clean/scripts/object_event_runtime.gd'
+      - 'dragon_house_clean/tests/test_object_event_*_v021.gd'
+      - '.github/workflows/dragon-house-v021-source-closure.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: dragon-house-v021-source-closure
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  source-closure:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          lfs: false
+
+      - name: Fetch only vendored SQLite LFS objects from this repository
+        shell: bash
+        run: |
+          set -euo pipefail
+          git lfs install --local
+          git lfs pull --include="dragon_house_clean/addons/godot-sqlite/bin/**" --exclude=""
+          test "$(stat -c%s dragon_house_clean/addons/godot-sqlite/bin/libgdsqlite.linux.template_release.x86_64.so)" -gt 1000000
+          test "$(stat -c%s dragon_house_clean/addons/godot-sqlite/bin/libgdsqlite.windows.template_release.x86_64.dll)" -gt 1000000
+          test "$(stat -c%s dragon_house_clean/addons/godot-sqlite/bin/libgdsqlite.macos.template_release.framework/libgdsqlite.macos.template_release)" -gt 1000000
+          ! head -c 130 dragon_house_clean/addons/godot-sqlite/bin/libgdsqlite.linux.template_release.x86_64.so | grep -q 'git-lfs'
+          grep -q 'Upstream commit: 9cbdb225823ee111342ce32fe451e066eb92cc6e' dragon_house_clean/addons/godot-sqlite/DRAGON_HOUSE_VENDOR_PROVENANCE.md
+          grep -q 'compatibility_minimum = "4.7"' dragon_house_clean/addons/godot-sqlite/gdsqlite.gdextension
+          ! grep -Eq 'android|ios|web' dragon_house_clean/addons/godot-sqlite/gdsqlite.gdextension
+
+      - name: Download official Godot 4.7.2 only
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fLsS --retry 3 -o /tmp/godot.zip             https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_linux.x86_64.zip
+          unzip -q /tmp/godot.zip -d /tmp
+          chmod +x /tmp/Godot_v4.7.2-stable_linux.x86_64
+          /tmp/Godot_v4.7.2-stable_linux.x86_64 --headless --version
+
+      - name: Ignore unrelated art and import vendored extension
+        shell: bash
+        run: |
+          set -euo pipefail
+          touch dragon_house_clean/assets/.gdignore
+          cd dragon_house_clean
+          timeout 240s /tmp/Godot_v4.7.2-stable_linux.x86_64 --headless --path . --editor --quit > /tmp/import.log 2>&1 || true
+          cat /tmp/import.log | tail -100
+          if grep -Eq "SCRIPT ERROR|Parse Error|GDExtension.*failed|Cannot open dynamic library" /tmp/import.log; then
+            exit 1
+          fi
+
+      - name: Run vendored SQLite truth-path suite
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd dragon_house_clean
+          tests=(
+            tests/test_object_event_sqlite_v021.gd
+            tests/test_object_event_json_to_sqlite_v021.gd
+            tests/test_object_event_sqlite_recovery_v021.gd
+            tests/test_object_event_snapshot_to_sqlite_v021.gd
+            tests/test_object_event_projection_rebuild_v021.gd
+            tests/test_object_event_gate_v020.gd
+            tests/test_object_event_replay_v020.gd
+            tests/test_object_event_migration_v020.gd
+            tests/test_object_lifecycle_v017.gd
+            tests/test_ambient_creatures_v018.gd
+          )
+          for t in "${tests[@]}"; do
+            echo "RUN $t"
+            out="$(timeout 90s /tmp/Godot_v4.7.2-stable_linux.x86_64 --headless --path . --script "res://$t" 2>&1)" || { echo "$out"; exit 1; }
+            echo "$out"
+            echo "$out" | grep -q "_PASS"
+            ! echo "$out" | grep -qE "SCRIPT ERROR|Parse Error|Assertion failed"
+          done
+          echo "SQLITE_SOURCE_CLOSURE_V021_PASS vendored_lfs=yes external_sqlite_download=no"
