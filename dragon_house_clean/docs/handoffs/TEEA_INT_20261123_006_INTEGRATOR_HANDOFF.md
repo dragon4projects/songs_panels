@@ -1,108 +1,133 @@
 # TEEA_INT_20261123_006 — INTEGRATOR HANDOFF
 
+Date: 2026-11-23
 Role: TEEA / interiors only
 Machine status: READY_FOR_INTEGRATOR_QA
 Owner approved: false
-Approved: false
-Production PR: NONE
-Authoring branch: art/teea-interiors-TEEA_INT_20261123_006
-Task branch base: ac44724c39275d365c185af0435b6dea676d24ae
-Exact production HEAD rechecked: 78f2ae904585ffe01bc11b39f2762ce90e85f00c
+Production mutated by TEEA006: no
+Current production target rechecked before handoff: dragon-house-fallout-fresh@1216e2f1a737008e3d9fea0f5d240d54a78a6ea2
 
-## Scope completed
+## Scope delivered
 
-Candidate replacement interiors were authored for all 12 requested variants:
-Music R1/R2/R3; Cinema R1/R2/R3; Artifact R1/R2/R3; Workshop R1/R2/R3.
+Candidate replacement art for all 12 requested variants:
+- Music R1 / R2 / R3
+- Cinema R1 / R2 / R3
+- Artifact R1 / R2 / R3
+- Workshop R1 / R2 / R3
 
-This batch does not promote any R1 production art and does not overwrite owner-approved state.
+Existing owner-approved R1 art is not overwritten by this handoff.
 
-## Machine evidence
+## Production image contract
 
-- production PNG: 40/40, exact 1536 x 1024, RGBA8
-- Godot 4.7.2 Image -> ImageTexture -> Sprite3D: 40/40 PASS, clean final log
-- measured stations: 31
-- station/bounds/approach/collision errors: 0
-- depth readability: 12/12 PASS
-- manual current-camera contract: 36/36 proof renders at -0.18 / 0 / +0.18
-- effective production-camera supplement: 36/36 proof renders
-- foreground variants: 4 (music/R2, music/R3, cinema/R2, cinema/R3)
-- harvested Poly Haven assets used: 41 unique, baked-art source class
-- kitchen/private reserve leaks: 0
-- runtime prop candidates created by TEEA006: 0
+- 48 production PNG
+- 4 roles per variant: backdrop, back_decor, furniture_back, foreground
+- exact final size: 1536x1024
+- RGBA8
+- deterministic Blender physical scene rendered at 768x512 then non-generatively resampled with Pillow/Lanczos to the exact runtime size
+- SHA-256 published for every final production PNG
+- no .import files
+- approved:false
+- owner_approved:false
 
-The one spacing record that is not a failure is Cinema R1's two measured seats on the same physical sofa: 0.6054 m centre-to-centre, explicitly retained as MEASURED_SAME_SOFA_SEAT_CENTRES.
+The half-resolution source render keeps software-EGL/llvmpipe authoring practical in the remote sandbox. Geometry, camera, depth, layers, alpha and object composition come from the same deterministic authored scene. No generative repainting is used during resampling.
 
-## Foreground physical evidence
+## Physical authoring calibration
 
-The foreground layers are cut from the same source furniture geometry as their furniture layer. Render-time raycast measurements:
+- module width: 4.8 m
+- Godot back wall: z = -2.04 m
+- public approach aisle: z = +0.95 m
+- axis mapping: godot_z = -blender_y
+- shallow physical shell includes floor recession, rear wall, ceiling thickness, side returns and a low front floor lip
+- foreground is a measured physical shell/floor-edge contributor, not an arbitrary depth curtain
 
-| Variant | Source | physical_z | seat centroid z | clip plane z |
-|---|---|---:|---:|---:|
-| music/R2 | music_r2_chair_front | 0.515725 | 0.242181 | 0.254181 |
-| music/R3 | music_r3_chair_front | 0.510694 | 0.242590 | 0.254590 |
-| cinema/R2 | cinema_r2_chair_front | 0.572797 | 0.212474 | 0.224474 |
-| cinema/R3 | cinema_r3_chair_front | 0.578528 | 0.211631 | 0.223631 |
+## Functional contract
 
-Do not reuse the older TEEA004 physical_z=-0.10: TEEA006 moved the physical front chairs and remeasured from source GLTF.
+The semantic station intent from TEEA003/004 is preserved:
+- Music: LISTEN
+- Cinema: WATCH
+- Artifact: VIEW / INSPECT
+- Workshop: USE
 
-## Camera seam
+Measured stations delivered: 33.
 
-At final recheck, production 78f2ae904585ffe01bc11b39f2762ce90e85f00c still uses:
-- perspective ROOM camera
-- FOV 35.0
-- R1/R2/R3 ROOM zoom 10.8 / 13.9 / 17.0
-- effective_camera_yaw = clamp(manual_yaw + clamp((48-zoom)/34,0,1)*0.075, -0.38, 0.38)
+Strict independent geometry validator:
+- station bounds errors: 0
+- module index errors: 0
+- spacing errors: 0
+- foreign collision / approach intersections: 0
+- stations inside unrelated furniture: 0
+- missing source collision footprints: 0
 
-Therefore the required manual proof is preserved and a second proof set records the actual close-bias view. The proof renderer uses resident-sized placeholders at measured station Z and runtime foreground plane registration math.
+Two authoring defects were caught and corrected before handoff:
+1. Workshop work points initially fell inside workbench depth footprints; benches/stations were physically separated and all Workshop variants re-rendered/revalidated.
+2. Artifact R2/R3 pedestal view points initially overlapped the displayed statue footprint; view points were moved in front of the measured statue front plane and proofs were re-rendered/revalidated.
 
-## Asset / source constraints
+## Depth / yaw evidence
 
-- Poly Haven harvested sources are CC0 and default to BAKED_ART_SOURCE.
-- steel_frame_shelves_01 uses only the verified normalized x0.1 copy.
-- stock artwork/canvas inside Poly Haven frame assets was stripped and replaced by neutral inserts.
-- frame holders publish stable media_slot:<object_id> identifiers; actual catalog content stays runtime-owned.
-- KITCHEN_RESERVE and PRIVATE_RESERVE items were not placed.
+- depth_readability_machine_pass: 12/12
+- strict R2/R3 functional cross-band separation >= 0.45 m: PASS
+- shell-only proof: 12/12
+- yaw proof: 12/12 at -0.18 / 0 / +0.18
+- grayscale 25% proof: 12/12
+- yaw frames are machine-distinct for all variants
+- grayscale depth separation threshold passes for all variants
 
-## Integrator action
+Visual pixels could not be returned through the current Higgsfield connector to the model for an independent human-eye verdict. This handoff therefore claims machine/geometry/render QA only, not owner visual approval. Contact sheets and yaw/shell/grayscale evidence are included for Integrator/Dragon review.
 
-1. Ingest this as a replacement candidate only; keep all approval flags false.
-2. Rebase/overlay onto exact current production or a descendant and repeat live ROOM/HOUSE camera registration.
-3. Put actual resident sprites and poses on the published measured stations.
-4. Register foreground using the per-variant physical_z; compare against published render-time clip evidence.
-5. Re-run current collision/approach and ensure procedural furniture is not double-rendered beneath baked furniture.
-6. Only after integrator QA, send visual result to Dragon for owner approval.
+## Room-specific functional decisions
 
-## Evidence files
+### Music
+Rear audio/media storage and equipment; boombox and portable cassette player form accumulated listening-room dressing. Mismatched listening chairs occupy staggered Z. Wide variants are not repeated R1 bays.
 
-TEEA_INT_20261123_006_interiors.json
-TEEA_INT_20261123_006_furniture_anchors_candidate.json
-TEEA_INT_20261123_006_foreground_layers_candidate.json
-TEEA_INT_20261123_006_authoring_layout.json
-TEEA_INT_20261123_006_source_provenance.json
-TEEA_INT_20261123_006_harvest_usage.json
-TEEA_INT_20261123_006_reserve_candidates.json
-TEEA_INT_20261123_006_runtime_prop_candidates.json
-TEEA_INT_20261123_006_reserve_leak_report.json
-TEEA_INT_20261123_006_image_qa.json
-TEEA_INT_20261123_006_collision_spacing_report.json
-TEEA_INT_20261123_006_depth_readability_report.json
-TEEA_INT_20261123_006_depth_visual_review.json
-TEEA_INT_20261123_006_yaw_proof_report.json
-TEEA_INT_20261123_006_camera_proof_contract.json
-TEEA_INT_20261123_006_godot_4_7_2_load.log
-TEEA_INT_20261123_006.sha256
-art/contact review sheets
-manual/effective yaw contact sheets
-raw manual + effective yaw proof renders
+### Cinema
+The main cinema screen remains the primary film-viewing function. Television_01 plus gaming_console plus gamepad form a separate secondary game corner. Main screen and game corner are distinct physical/local clusters. Viewing seats occupy staggered depth.
 
-## Binary handoff
+### Artifact
+Asymmetrical curiosity-cabinet layout. Only normalized steel_frame_shelves_01 is used; the broken x10 source is never used for placement. steel_frame_shelves_03, Chinese cabinet, chest, shell, bronze/gothic objects and katana stand create mixed non-museum staging. No canonical object biography is invented.
 
-Permanent ZIP:
-https://d2ol7oe51mr4n9.cloudfront.net/user_3JdI9kJ82xObF8Bi3EgU4P6DaoR/b50aa9af-cd2c-4101-b16a-553e561c9c55.zip
+### Workshop
+Rear worn storage, chemistry/Bunsen and practical clutter; workbenches and human work stations have clear physical approaches. metal_stool_01 is only a cat-perch candidate and is not promoted to a human station. TEEA authors no cat ownership or behavior.
+
+## Poly Haven harvest
+
+Harvest archive SHA-256:
+db6a8f396e700c22a49f7ac75e06907f75c1691616176c491e8ef8acca726dbd
+
+All used assets are tracked with transform, bbox, depth band, provenance and use class.
+
+Hard checks:
+- normalized steel shelf used: PASS
+- READY_BUT_ODD clocks used without review: no
+- Kitchen reserve leak: no
+- Private reserve leak: no
+- runtime 3D prop candidates: none; harvested props remain BAKED_ART_SOURCE
+
+## Godot 4.7.2 gate
+
+Exact engine: 4.7.2.stable.official.ed1daf0bf
+
+Result:
+TEEA006_GODOT_4_7_2_IMAGE_LOAD_PASS count=48 size=1536x1024 format=RGBA8 texture=ImageTexture
+
+## Production compatibility recheck
+
+Production advanced to 1216e2f1... while this batch was being authored. Changes since 917d2d0... include the v0.20 object event strangler/gate/store/reducer and QA changes. main.gd is not part of that delta, so the TEEA006 camera/semantic ROOM evidence remains compatible.
+
+## Evidence included
+
+Proposal manifest; furniture-anchor candidate with source collision footprints; foreground candidate; authoring layout; source provenance; image QA; collision/spacing/approach report; depth-readability report; yaw-proof report; Godot 4.7.2 image-load log; contact sheet; harvest-ID contact sheet; harvest usage/reserve/runtime-candidate files; final SHA256SUMS; validation summary.
+
+No production PR. Integrator QA first. Dragon visual approval remains separate.
+
+
+## Binary drop
+
+URL:
+https://d2ol7oe51mr4n9.cloudfront.net/user_3JdI9kJ82xObF8Bi3EgU4P6DaoR/1f7c0d7a-e63f-4860-8bfa-b653f7ac2e34.zip
 
 ZIP SHA-256:
-5ae489046eefb6dc3718f2334945bb6fc7786dc59fc0758060e7f7e1d010e275
+7ca98ad9039ba36ca76f1e29f6e82489c1098c35d5243f639724d092546694bc
 
-ZIP size: 61 MiB.
+Archive:
+TEEA_INT_20261123_006_DEPTH_DRESSING.zip
 
-The ZIP is the immutable binary drop. This external handoff is authoritative for its URL/SHA.
