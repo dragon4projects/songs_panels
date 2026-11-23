@@ -1,0 +1,157 @@
+{
+  "schema": 1,
+  "batch_id": "TEEA_INT_20261123_004",
+  "approved": false,
+  "layers": {
+    "music/R2": {
+      "role": "foreground",
+      "path": "assets/rooms/music/R2/foreground.png",
+      "approved": false,
+      "physical_z": -0.1,
+      "source_furniture_ids": [
+        "music_r2_chair_left",
+        "music_r2_chair_right"
+      ],
+      "measurement": {
+        "physical_z": -0.1,
+        "plane_type": "front_edge",
+        "authored_target_front_z": -0.1,
+        "source_measurements": [
+          {
+            "id": "music_r2_chair_left",
+            "front_z": -0.10000011324882507,
+            "seat_clip_z": -0.42740904461825735
+          },
+          {
+            "id": "music_r2_chair_right",
+            "front_z": -0.09999996423721313,
+            "seat_clip_z": -0.3450423963154508
+          }
+        ],
+        "geometry_clip_plane_type": "seat_centroid_minus_0.012_blender_y",
+        "note": "Runtime physical_z is the common camera-facing furniture front plane. Geometry was clipped behind that plane at each source seat-centroid so only true camera-facing occluder fragments remain."
+      },
+      "sha256": "5c1745fa0d0bee1e768c6b0ceebf6d795a5546128b28ba7588f2bc40f97ba2ba"
+    },
+    "music/R3": {
+      "role": "foreground",
+      "path": "assets/rooms/music/R3/foreground.png",
+      "approved": false,
+      "physical_z": -0.1,
+      "source_furniture_ids": [
+        "music_r3_chair_left",
+        "music_r3_chair_mid",
+        "music_r3_chair_right"
+      ],
+      "measurement": {
+        "physical_z": -0.1,
+        "plane_type": "front_edge",
+        "authored_target_front_z": -0.1,
+        "source_measurements": [
+          {
+            "id": "music_r3_chair_left",
+            "front_z": -0.10000011324882507,
+            "seat_clip_z": -0.42740904461825735
+          },
+          {
+            "id": "music_r3_chair_mid",
+            "front_z": -0.09999996423721313,
+            "seat_clip_z": -0.3450423963154508
+          },
+          {
+            "id": "music_r3_chair_right",
+            "front_z": -0.10000011324882507,
+            "seat_clip_z": -0.42740904461825735
+          }
+        ],
+        "geometry_clip_plane_type": "seat_centroid_minus_0.012_blender_y",
+        "note": "Runtime physical_z is the common camera-facing furniture front plane. Geometry was clipped behind that plane at each source seat-centroid so only true camera-facing occluder fragments remain."
+      },
+      "sha256": "71e90e91a83d2ebbcf97c1174eb7da11cfb6081687c39a33d5324ca5b6dbbbb5"
+    },
+    "cinema/R2": {
+      "role": "foreground",
+      "path": "assets/rooms/cinema/R2/foreground.png",
+      "approved": false,
+      "physical_z": -0.1,
+      "source_furniture_ids": [
+        "cinema_r2_sofa",
+        "cinema_r2_chair"
+      ],
+      "measurement": {
+        "physical_z": -0.1,
+        "plane_type": "front_edge",
+        "authored_target_front_z": -0.1,
+        "source_measurements": [
+          {
+            "id": "cinema_r2_sofa",
+            "front_z": -0.10000035166740417,
+            "seat_clip_z": -0.3248406216327317
+          },
+          {
+            "id": "cinema_r2_chair",
+            "front_z": -0.10000011324882507,
+            "seat_clip_z": -0.42740904461825735
+          }
+        ],
+        "geometry_clip_plane_type": "seat_centroid_minus_0.012_blender_y",
+        "note": "Runtime physical_z is the common camera-facing furniture front plane. Geometry was clipped behind that plane at each source seat-centroid so only true camera-facing occluder fragments remain."
+      },
+      "sha256": "93a367c0e844344de38908e8cb50d50cc8ade15ba9040d24f81bb7f9c18fc0b8"
+    },
+    "cinema/R3": {
+      "role": "foreground",
+      "path": "assets/rooms/cinema/R3/foreground.png",
+      "approved": false,
+      "physical_z": -0.1,
+      "source_furniture_ids": [
+        "cinema_r3_sofa",
+        "cinema_r3_chair_mid",
+        "cinema_r3_chair_right"
+      ],
+      "measurement": {
+        "physical_z": -0.1,
+        "plane_type": "front_edge",
+        "authored_target_front_z": -0.1,
+        "source_measurements": [
+          {
+            "id": "cinema_r3_sofa",
+            "front_z": -0.10000035166740417,
+            "seat_clip_z": -0.3248406216327317
+          },
+          {
+            "id": "cinema_r3_chair_mid",
+            "front_z": -0.09999996423721313,
+            "seat_clip_z": -0.3450423963154508
+          },
+          {
+            "id": "cinema_r3_chair_right",
+            "front_z": -0.10000011324882507,
+            "seat_clip_z": -0.42740904461825735
+          }
+        ],
+        "geometry_clip_plane_type": "seat_centroid_minus_0.012_blender_y",
+        "note": "Runtime physical_z is the common camera-facing furniture front plane. Geometry was clipped behind that plane at each source seat-centroid so only true camera-facing occluder fragments remain."
+      },
+      "sha256": "43ee013b5e3bd623dc99da7da35b0692432863467f2ae35b88873927bc45e5d9"
+    }
+  },
+  "omissions": {
+    "artifact/R2": {
+      "foreground_required": false,
+      "reason": "No authored furniture/body occlusion crosses in front of the resident at the measured stations."
+    },
+    "artifact/R3": {
+      "foreground_required": false,
+      "reason": "No authored furniture/body occlusion crosses in front of the resident at the measured stations."
+    },
+    "workshop/R2": {
+      "foreground_required": false,
+      "reason": "No authored furniture/body occlusion crosses in front of the resident at the measured stations."
+    },
+    "workshop/R3": {
+      "foreground_required": false,
+      "reason": "No authored furniture/body occlusion crosses in front of the resident at the measured stations."
+    }
+  }
+}
