@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "youtube_cards": 698,
+  "classification_counts": {
+    "audio": 203,
+    "film": 0,
+    "unknown": 495
+  },
+  "artifact_registry_entries": 27,
+  "res22_24_frames": 423,
+  "source_pdf_sha256": "038efbd6e84c653ba67bc61569e05932eba9eebfa7883ea46cc59114da724cbf",
+  "source_artifact_registry_sha256": "05ceb8248dbc6cc58104b8c3a95273e92d7e174f2650a0f9dd3131574f2ba2db",
+  "source_res22_24_zip_sha256": "5d05c5fe0397bf0c7fa50cb03193f1540c2401ee66480c84c364f0123b47ab49"
+}
