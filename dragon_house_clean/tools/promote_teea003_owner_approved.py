@@ -13,7 +13,7 @@ import argparse, copy, hashlib, json, shutil
 from pathlib import Path
 
 # Integrator calibration provenance is committed beside this script before promotion.
-# Cold CI runners may need several minutes for the first Godot import/test process.
+# Cold CI runners may need several minutes for the first Godot import/test process.\n# Promotion run trigger after CI timeout fix.
 BATCH="TEEA_INT_20261122_003"
 ROOMS=("arrival","corridor","music","cinema","artifact","workshop")
 
