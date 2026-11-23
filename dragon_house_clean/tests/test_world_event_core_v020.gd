@@ -48,6 +48,15 @@ func run() -> void:
 	assert(not bool(stale.get("ok",false)))
 	assert(world.event_core.events.size()==1)
 
+	# Structurally valid but semantically impossible transitions must be rejected
+	# before they enter durable history.
+	var invalid_transition: Dictionary = world.event_core.append_object_event(
+		"OBJECT_STASHED","QA_EVENT_OBJECT_001","MANJKA",
+		{"from":"MANJKA","to":str(stash["id"]),"state":"STASHED"},
+		world.sim_clock,"SIMULATION","AMBIENT_SIMULATION",1)
+	assert(not bool(invalid_transition.get("ok",false)))
+	assert(world.event_core.events.size()==1)
+
 	var manjka: Dictionary = world.residents["MANJKA"]
 	manjka["room_id"] = str(home["id"])
 	manjka["x"] = float(home["x"]) * World.MODULE_W
