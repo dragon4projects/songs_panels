@@ -135,6 +135,9 @@ func register_guest_for_qa(world, guest_id: String) -> bool:
 	if guest_id == "NPC_CENTAUR":
 		actor["station_profile"] = "quadruped_large"
 		actor["human_seat_allowed"] = false
+	elif guest_id == "NPC_GINGER_CAT_GUEST":
+		actor["station_profile"] = "small_quadruped"
+		actor["human_seat_allowed"] = false
 	return true
 
 func register_all_guests_for_qa(world) -> int:
