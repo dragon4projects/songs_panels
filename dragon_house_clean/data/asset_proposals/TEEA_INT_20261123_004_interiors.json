@@ -1,0 +1,265 @@
+{
+  "schema": 1,
+  "batch_id": "TEEA_INT_20261123_004",
+  "parent": "TEEA_INT_20261122_003",
+  "owner_review_status": "READY_FOR_INTEGRATOR_QA",
+  "approved": false,
+  "room_types": {
+    "music": {
+      "R2": {
+        "physical_width": 9.6,
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/music/R2/backdrop.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "b31b00b938690c11cf1641849e0239be697ab4fd50c725c259c3c7b2ae5d7cfd"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/music/R2/back_decor.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "e5262407d25dda13f9c4e71318ede7a59ac169308e755b060af89935d040a27e"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/music/R2/furniture_back.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "70da1bb0129b9d4a734c1a4a7eefcc5a384fa08f69e779e775accb3fa58c7fa2"
+          },
+          {
+            "role": "foreground",
+            "path": "assets/rooms/music/R2/foreground.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "5c1745fa0d0bee1e768c6b0ceebf6d795a5546128b28ba7588f2bc40f97ba2ba",
+            "physical_z": -0.1
+          }
+        ],
+        "station_count": 2
+      },
+      "R3": {
+        "physical_width": 14.399999999999999,
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/music/R3/backdrop.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "9e0ba5c69191ae1968bbe7d43c9675f704fde2fb0f766380f16371bbfeb6a390"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/music/R3/back_decor.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "16b22a983f0cab03153d31ae4fcae95cd95158bfd4d8b150d74d4f2e241f54d0"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/music/R3/furniture_back.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "7309bc650848637269b23507c849fa47ada7d7787a9e4e1149f7aec1d535d7fc"
+          },
+          {
+            "role": "foreground",
+            "path": "assets/rooms/music/R3/foreground.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "71e90e91a83d2ebbcf97c1174eb7da11cfb6081687c39a33d5324ca5b6dbbbb5",
+            "physical_z": -0.1
+          }
+        ],
+        "station_count": 3
+      }
+    },
+    "cinema": {
+      "R2": {
+        "physical_width": 9.6,
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/cinema/R2/backdrop.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "5d3dad107671dd8682774a6462887ed6d54a0a3610099c94efaf63f70b92a46c"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/cinema/R2/back_decor.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "bb0d6c2e20e47f4d1d39cfbf12321a51c33f05ec63b8bce412e9a37f57ea2088"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/cinema/R2/furniture_back.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "d209275521a5113a683e6f85fff92869e5fd6350aeb38c2f1fd5da8cc1dc18bb"
+          },
+          {
+            "role": "foreground",
+            "path": "assets/rooms/cinema/R2/foreground.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "93a367c0e844344de38908e8cb50d50cc8ade15ba9040d24f81bb7f9c18fc0b8",
+            "physical_z": -0.1
+          }
+        ],
+        "station_count": 3
+      },
+      "R3": {
+        "physical_width": 14.399999999999999,
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/cinema/R3/backdrop.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "9f8e876f81eb3c3a549347f93dee7e511825dd858c199d928b29ff67bad8b25f"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/cinema/R3/back_decor.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "1cc77a61cecbea990e5fb4173aa8a2bbc86120ed61e04b72f93ffdf8ef1d30fe"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/cinema/R3/furniture_back.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "975cfb8dda7db977eb6787e45102551ce3dcb5c845fb1a8f82f14b877657a486"
+          },
+          {
+            "role": "foreground",
+            "path": "assets/rooms/cinema/R3/foreground.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "43ee013b5e3bd623dc99da7da35b0692432863467f2ae35b88873927bc45e5d9",
+            "physical_z": -0.1
+          }
+        ],
+        "station_count": 4
+      }
+    },
+    "artifact": {
+      "R2": {
+        "physical_width": 9.6,
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/artifact/R2/backdrop.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "5a3a8ca4c5c15bd42423eb1081f7d78a246f446e26bef669faf53802940c6fff"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/artifact/R2/back_decor.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "8e080464c3dbb2206bd9d8bd34f6dfc0975f4dc173e514855c164ae1b480acb6"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/artifact/R2/furniture_back.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "9e6b1f873f9da2fbf3280958f5cd783e765fdbb618cebab24addd1bfad5e3ecd"
+          }
+        ],
+        "station_count": 3
+      },
+      "R3": {
+        "physical_width": 14.399999999999999,
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/artifact/R3/backdrop.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "9cc4d0a0056fceed0a7737c5d9dd83ff2a5b5dedc8bb44ae7a1a0c42d9da69d2"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/artifact/R3/back_decor.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "61a8c3406c97db44b006d43837d0b96c97b69130b48f356e23828e77557dfb80"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/artifact/R3/furniture_back.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "ad7c1253fe59fa6fab43f15a487198c67e64264de8db5f8d272913affc0c8329"
+          }
+        ],
+        "station_count": 4
+      }
+    },
+    "workshop": {
+      "R2": {
+        "physical_width": 9.6,
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/workshop/R2/backdrop.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "9aa5b4a89d758992238816ac538b03766827f3d8b6641a76638642e4373ad948"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/workshop/R2/back_decor.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "9fd0672d123fa50b5d528a832c9ec719c12da83169e05fcd77e1daed42d52541"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/workshop/R2/furniture_back.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "702b26d70d08d233e25fa60e1638a69d689a7aebd543665ecd3b6569b0b2668e"
+          }
+        ],
+        "station_count": 3
+      },
+      "R3": {
+        "physical_width": 14.399999999999999,
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/workshop/R3/backdrop.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "152fe0facc80c1b6345895490ecfa2bcad90e604ddb3c4723bc9689776446648"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/workshop/R3/back_decor.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "52caf29309b13009168892e99a93fb2538793cef49e43c3ed283fe506fd25632"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/workshop/R3/furniture_back.png",
+            "approved": false,
+            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "sha256": "c5cd3d43f8e9a6eb7373d05881545025c8ea4cebdd02487cc2941fab259b8280"
+          }
+        ],
+        "station_count": 4
+      }
+    }
+  }
+}
