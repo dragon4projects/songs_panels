@@ -168,18 +168,22 @@
       "kind": "artifact",
       "title": "5.1. «Письма перед сном»",
       "source_path": "Стеклянный куб с винтажными письмами и красным кружевом.png",
-      "preview_path": null,
+      "preview_path": "assets/media/previews/artifacts/ARTEFACT_006_CUBE_LETTERS_BEFORE_SLEEP.png",
       "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
-      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+      "status": "SOURCE_MASTER_FOUND_LIBRARY_ARCHIVE_PREVIEW_READY",
+      "recovered_source_path": "assets/props/artifacts/cubes/sources/library_confirmed/ARTEFACT_006_CUBE_LETTERS_BEFORE_SLEEP.png",
+      "source_sha256": "d82d626db0e7d108feaf026b16c5c0ac6d4918e49513ad3d8ee7f003f46b91cd"
     },
     {
       "content_id": "ART_7489A52C683F",
       "kind": "artifact",
       "title": "5.2. «Дуст генератору от Иконочки»",
       "source_path": "Стеклянный куб с пылью и табличкой.png",
-      "preview_path": null,
+      "preview_path": "assets/media/previews/artifacts/ARTEFACT_003_CUBE_ICONOCHKA_DUST.png",
       "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
-      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+      "status": "SOURCE_MASTER_FOUND_LIBRARY_ARCHIVE_PREVIEW_READY",
+      "recovered_source_path": "assets/props/artifacts/cubes/sources/library_confirmed/ARTEFACT_003_CUBE_ICONOCHKA_DUST.png",
+      "source_sha256": "fa3f496894448017b227b7c2112b44be97955ccb1a547e559115326aaf58db53"
     },
     {
       "content_id": "ART_C29202D57896",
@@ -195,27 +199,33 @@
       "kind": "artifact",
       "title": "5.4. Три графитовых свитера Моры Изначальной",
       "source_path": "стеклянная_витрина_с_графитовым_свитером.png",
-      "preview_path": null,
+      "preview_path": "assets/media/previews/artifacts/ARTEFACT_013_CUBE_MORA_ORIGINAL_THREE_GRAPHITE_SWEATERS.png",
       "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
-      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+      "status": "SOURCE_MASTER_FOUND_LIBRARY_ARCHIVE_PREVIEW_READY",
+      "recovered_source_path": "assets/props/artifacts/cubes/sources/library_confirmed/ARTEFACT_013_CUBE_MORA_ORIGINAL_THREE_GRAPHITE_SWEATERS.png",
+      "source_sha256": "2b43834dc97ca4be029ec37cb3f19e35a91c766ef0bf2c8187977d60ec4fc5b2"
     },
     {
       "content_id": "ART_DFEA89BA2EE4",
       "kind": "artifact",
       "title": "5.5. Серебряный кулон — голова дракона",
       "source_path": "серебряный_дракон_в_стеклянном_кубе.png",
-      "preview_path": null,
+      "preview_path": "assets/media/previews/artifacts/ARTEFACT_010_CUBE_SILVER_DRAGON.png",
       "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
-      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+      "status": "SOURCE_MASTER_FOUND_LIBRARY_ARCHIVE_PREVIEW_READY",
+      "recovered_source_path": "assets/props/artifacts/cubes/sources/library_confirmed/ARTEFACT_010_CUBE_SILVER_DRAGON.png",
+      "source_sha256": "07c96c9d8285b86cfc6c5f2d565719dbae602545d1c0bfca1100c26238f0869a"
     },
     {
       "content_id": "ART_CDF60BEECF7E",
       "kind": "artifact",
       "title": "5.6. Кольцо с красным камнем",
       "source_path": "a_highly_detailed_photorealistic_3d_render_on_a_t.png",
-      "preview_path": null,
+      "preview_path": "assets/media/previews/artifacts/ARTEFACT_004_CUBE_RED_STONE_RING.png",
       "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
-      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+      "status": "SOURCE_MASTER_FOUND_LIBRARY_ARCHIVE_PREVIEW_READY",
+      "recovered_source_path": "assets/props/artifacts/cubes/sources/library_confirmed/ARTEFACT_004_CUBE_RED_STONE_RING.png",
+      "source_sha256": "2bdcdbf990e3fe421a7d16c8ad4e9dbb8f4c500be0ad71473e6f1ddc18b90bb9"
     },
     {
       "content_id": "ART_D9AA0E1B8000",
@@ -244,5 +254,15 @@
       "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
       "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
     }
-  ]
+  ],
+  "library_archive_recovery": {
+    "archive": "assets confirmed.zip",
+    "library_file_id": "file_00000000039882109c1af818a29ded41",
+    "found_normalized_masters": 10,
+    "still_missing_known_ids": [
+      "ARTEFACT_001_CUBE_EVMOCHKA_BOW",
+      "ARTEFACT_005_CUBE_VERA_I_SHORT_PENCIL",
+      "ARTEFACT_019_CUBE_SHELEST_LINGERIE"
+    ]
+  }
 }

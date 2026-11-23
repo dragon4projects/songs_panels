@@ -1,0 +1,21 @@
+{
+  "youtube_real_previews": {
+    "audio": 203,
+    "film": 0,
+    "unclassified": 495,
+    "total": 698,
+    "source_pdf": "Понравившиеся - YouTube.pdf",
+    "source_pdf_file_id": "file_00000000b80c821087056a640cf64627"
+  },
+  "artifact_library_recovery": {
+    "found_master_count": 10,
+    "mapped_existing_manifest_entries": 5,
+    "additional_normalized_sources": 5,
+    "still_missing_known_ids": [
+      "ARTEFACT_001_CUBE_EVMOCHKA_BOW",
+      "ARTEFACT_005_CUBE_VERA_I_SHORT_PENCIL",
+      "ARTEFACT_019_CUBE_SHELEST_LINGERIE"
+    ]
+  },
+  "owner_approved": false
+}
