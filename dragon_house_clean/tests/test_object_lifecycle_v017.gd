@@ -25,7 +25,6 @@ func run()->void:
 	var world=World.new()
 	world.save_path=path
 	world.seed_world()
-	assert(str(world.runtime_state.get("object_event_backend",""))=="sqlite_v021_proof")
 
 	var home:Dictionary=world.get_room(1,-1) # public artifact room
 	var lost_found:Dictionary=world.get_room(-2,0) # public common cell
@@ -35,6 +34,7 @@ func run()->void:
 	assert(world.register_physical_object(
 		"QA_ARTIFACT_001","QA single persistent artifact","RES_01",home["id"],
 		true,true,true,true))
+	assert(str(world.runtime_state.get("object_event_backend",""))=="sqlite_v021_proof")
 	assert(not world.register_physical_object(
 		"QA_ARTIFACT_001","duplicate","RES_02",home["id"]))
 
