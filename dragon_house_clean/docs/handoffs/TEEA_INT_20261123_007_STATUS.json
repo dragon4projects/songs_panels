@@ -1,14 +1,14 @@
 {
-  "schema": 2,
+  "schema": 3,
   "batch_id": "TEEA_INT_20261123_007",
-  "machine_status": "BLOCKED_EXTERNAL_GUEST_ALPHA_ONLY",
+  "machine_status": "READY_FOR_INTEGRATOR_QA",
   "owner_approved": false,
   "approved": false,
   "production_touched": false,
   "gates": {
     "PASS-A": {
-      "status": "BLOCKED",
-      "reason": "3/3 guest room candidates, access contract, measured geometry, entry/station/collision metadata, build adjacency and conservative runtime-plane clearance PASS. Exact canonical guest PNG alpha/body footprints remain unavailable because the candidate guest images are Git LFS objects on the divergent ZNA art branch and are not present in current production."
+      "status": "PASS",
+      "reason": "Exact canonical guest PNG bytes were materialized by TEEA007 QA workflow run 45207278966 (artifact 14833608303) with LFS enabled and per-file SHA verification. Actual alpha world footprint under current 1.9/512 runtime scale passes 2.10x2.45 m door visual clearance for Centaur, Vampire Girl and Miu; Centaur separate 2.50 m physical turning-envelope QA remains PASS."
     },
     "PASS-B": {
       "status": "PASS",
@@ -19,8 +19,8 @@
       "reason": "Project-original polygon mug LOD0 empty/filled + LOD1, source BLEND + GLB, weld-aware topology QA, tabletop hand-envelope proof and Godot GLTF parse PASS."
     },
     "PASS-D": {
-      "status": "BLOCKED",
-      "reason": "Manifest/provenance/SHA/contact/Godot/HOUSE-LEVEL-ROOM/current-camera/geometry/approach evidence PASS; final TEEA006 media-room placement + 27 current-camera holder yaw proofs PASS. Only exact canonical guest-sprite alpha/body-footprint and actual-sprite yaw/occlusion proof remains externally blocked."
+      "status": "PASS",
+      "reason": "All prior payload/provenance/SHA/Godot/HOUSE-LEVEL-ROOM/current-camera/media evidence passes. Exact canonical guest PNGs were rendered in current R1 ROOM camera at manual yaw -0.18/0/+0.18: 9/9 actual-sprite proofs PASS, 9/9 projected alpha bboxes remain inside frame, no guest foreground layer exists, and selected sprite QA positions remain in front of baked furniture_back."
     },
     "PASS-E": {
       "status": "PASS",
@@ -28,8 +28,8 @@
     }
   },
   "subdeliverables": {
-    "guest_room_candidates": "PASS_GEOMETRY_ACCESS_CONSERVATIVE_RUNTIME_BOUND",
-    "guest_actual_alpha_body_footprint": "BLOCKED_EXTERNAL_ZNA_LFS_ART_NOT_IN_PRODUCTION",
+    "guest_room_candidates": "PASS_GEOMETRY_ACCESS_EXACT_VISUAL_ALPHA",
+    "guest_actual_alpha_body_footprint": "PASS_EXACT_LFS_ALPHA",
     "common_function_addendum": "PASS",
     "library_function_addendum": "PASS",
     "media_holder_geometry": "PASS",
@@ -37,6 +37,13 @@
     "cinema_music_artifact_final_holder_placement": "PASS_TEEA006_FINAL",
     "media_yaw_proof": "PASS_27_OF_27",
     "mug_geometry": "PASS",
-    "godot_decode_glb": "PASS"
+    "godot_decode_glb": "PASS",
+    "guest_actual_sprite_yaw_proof": "PASS_9_OF_9"
+  },
+  "closure_addendum": {
+    "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JdI9kJ82xObF8Bi3EgU4P6DaoR/b5c3b121-8d02-4aae-b278-499c886f6033.zip",
+    "sha256": "abc63bc791fb5bd90e08dcc57bf9447df68385373675fec2ecd4a928f562292b",
+    "size": "~4 MiB",
+    "base_payload_unchanged": true
   }
 }

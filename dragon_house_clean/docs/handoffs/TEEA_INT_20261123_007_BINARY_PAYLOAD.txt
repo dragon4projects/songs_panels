@@ -1,5 +1,5 @@
 TEEA_INT_20261123_007 FINAL BINARY PAYLOAD
-machine_status: BLOCKED_EXTERNAL_GUEST_ALPHA_ONLY
+machine_status: READY_FOR_INTEGRATOR_QA
 owner_approved: false
 approved: false
 production_pr: NONE
@@ -16,4 +16,13 @@ zip_integrity: PASS
 internal_root: dragon_house_teea007_drop_FINAL/
 file_count: 127
 
-This supersedes the earlier TEEA007 binary drops. The only remaining machine blocker is exact canonical guest sprite alpha/body-footprint proof.
+This remains the immutable TEEA007 base payload.
+
+Guest-alpha closure addendum:
+https://d2ol7oe51mr4n9.cloudfront.net/user_3JdI9kJ82xObF8Bi3EgU4P6DaoR/b5c3b121-8d02-4aae-b278-499c886f6033.zip
+
+Closure addendum SHA-256:
+abc63bc791fb5bd90e08dcc57bf9447df68385373675fec2ecd4a928f562292b
+
+Closure status: PASS-A/PASS-B/PASS-C/PASS-D/PASS-E = PASS; READY_FOR_INTEGRATOR_QA.
+Base payload bytes were not replaced.

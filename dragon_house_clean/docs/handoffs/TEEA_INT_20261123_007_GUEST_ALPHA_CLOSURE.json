@@ -1,0 +1,311 @@
+{
+  "schema": 1,
+  "batch_id": "TEEA_INT_20261123_007",
+  "closure": "EXTERNAL_GUEST_ALPHA_BLOCKER_RESOLVED",
+  "source_branch": "art/znaechka-characters-ZNA_CHAR_NPC_20261123_001",
+  "source_head_observed": "994eb3f66436b2985cb94b1fc98b82274d8141c6",
+  "exact_lfs_evidence": {
+    "workflow_run_id": 45207278966,
+    "workflow_conclusion": "success",
+    "artifact_id": 14833608303,
+    "artifact_name": "teea007-exact-guest-lfs-png",
+    "workflow_commit": "aa38bffddf3299ea47f756d705d3e8e6c0186f17",
+    "note": "Workflow checkout used lfs:true and verified each materialized PNG SHA against the known LFS OID before artifact upload.",
+    "invalid_prior_probe": {
+      "run_id": 45206934849,
+      "disposition": "NOT_USED_AS_EVIDENCE",
+      "reason": "First probe flattened three same-basename front_0001.png files into one directory and retained only Miu. No alpha/body measurements were taken from that artifact."
+    }
+  },
+  "current_runtime_contract": {
+    "production_head": "1216e2f1a737008e3d9fea0f5d240d54a78a6ea2",
+    "actor_scale": "pixel_size=1.9/texture_height",
+    "billboard": "BILLBOARD_FIXED_Y",
+    "room_camera": {
+      "projection": "Perspective",
+      "fov_deg": 35,
+      "zoom_R1": 10.8,
+      "manual_yaws": [
+        -0.18,
+        0,
+        0.18
+      ]
+    },
+    "guest_room_layers": {
+      "backdrop_z": -1.79,
+      "back_decor_z": -1.63,
+      "furniture_back_z": -1.37,
+      "foreground": "none"
+    }
+  },
+  "guests": {
+    "NPC_CENTAUR": {
+      "source_file": "centaur.png",
+      "sha256": "2abcd9620fb249b37079235745516224bc39b46be6c4abec35fd69cd22fea47f",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox_px_t1": [
+        205,
+        148,
+        307,
+        480
+      ],
+      "alpha_world_m_t1": [
+        0.378516,
+        1.232031
+      ],
+      "alpha_world_m_t16": [
+        0.363672,
+        1.217187
+      ],
+      "alpha_world_m_t128": [
+        0.359961,
+        1.217187
+      ],
+      "door_clearance_m": [
+        2.1,
+        2.45
+      ],
+      "door_width_margin_m": 1.721484,
+      "door_height_margin_m": 1.217969,
+      "door_visual_clearance_pass": true,
+      "qa_room_z": 0.25,
+      "baked_furniture_back_z": -1.37,
+      "in_front_of_furniture_back": true,
+      "foreground_layer_present": false,
+      "physical_turning_diameter_m": 2.5,
+      "physical_turning_geometry_pass": true,
+      "interpretation": "Billboard alpha is visual evidence only; 2.50 m physical turning envelope remains authoritative."
+    },
+    "NPC_VAMPIRE_GIRL": {
+      "source_file": "vampire.png",
+      "sha256": "501284e9724441533d9cc34648c6956c564a1a097008f4e2b15bea6238f65fee",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox_px_t1": [
+        206,
+        136,
+        306,
+        480
+      ],
+      "alpha_world_m_t1": [
+        0.371094,
+        1.276563
+      ],
+      "alpha_world_m_t16": [
+        0.35625,
+        1.26543
+      ],
+      "alpha_world_m_t128": [
+        0.352539,
+        1.261719
+      ],
+      "door_clearance_m": [
+        2.1,
+        2.45
+      ],
+      "door_width_margin_m": 1.728906,
+      "door_height_margin_m": 1.173437,
+      "door_visual_clearance_pass": true,
+      "qa_room_z": 0.55,
+      "baked_furniture_back_z": -1.37,
+      "in_front_of_furniture_back": true,
+      "foreground_layer_present": false
+    },
+    "NPC_GINGER_CAT_GUEST": {
+      "source_file": "miu.png",
+      "sha256": "5f3eb9dc8efef0c14a96de47887a099e9dec90d9cb0f14cb65162b5e66e05804",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox_px_t1": [
+        186,
+        136,
+        327,
+        480
+      ],
+      "alpha_world_m_t1": [
+        0.523242,
+        1.276563
+      ],
+      "alpha_world_m_t16": [
+        0.512109,
+        1.261719
+      ],
+      "alpha_world_m_t128": [
+        0.504687,
+        1.261719
+      ],
+      "door_clearance_m": [
+        2.1,
+        2.45
+      ],
+      "door_width_margin_m": 1.576758,
+      "door_height_margin_m": 1.173437,
+      "door_visual_clearance_pass": true,
+      "qa_room_z": -1.1,
+      "baked_furniture_back_z": -1.37,
+      "in_front_of_furniture_back": true,
+      "foreground_layer_present": false,
+      "placement_interpretation": "miu_low_pad is visual-clearance-only; species/form runtime binding remains integrator-owned."
+    }
+  },
+  "yaw_proof": {
+    "NPC_CENTAUR": [
+      {
+        "manual_yaw": -0.18,
+        "effective_yaw": -0.105,
+        "inside_frame": true,
+        "screen_ndc_bbox": [
+          0.490476,
+          0.173957,
+          0.547154,
+          0.448179
+        ],
+        "placement": "centaur_talk",
+        "render": "guest_centaur_m018.png"
+      },
+      {
+        "manual_yaw": 0,
+        "effective_yaw": 0.075,
+        "inside_frame": true,
+        "screen_ndc_bbox": [
+          0.483759,
+          0.173158,
+          0.540537,
+          0.447857
+        ],
+        "placement": "centaur_talk",
+        "render": "guest_centaur_000.png"
+      },
+      {
+        "manual_yaw": 0.18,
+        "effective_yaw": 0.255,
+        "inside_frame": true,
+        "screen_ndc_bbox": [
+          0.476644,
+          0.172713,
+          0.533478,
+          0.447678
+        ],
+        "placement": "centaur_talk",
+        "render": "guest_centaur_p018.png"
+      }
+    ],
+    "NPC_VAMPIRE_GIRL": [
+      {
+        "manual_yaw": -0.18,
+        "effective_yaw": -0.105,
+        "inside_frame": true,
+        "screen_ndc_bbox": [
+          0.495615,
+          0.16082,
+          0.552804,
+          0.453157
+        ],
+        "placement": "vampire_talk",
+        "render": "guest_vampire_m018.png"
+      },
+      {
+        "manual_yaw": 0,
+        "effective_yaw": 0.075,
+        "inside_frame": true,
+        "screen_ndc_bbox": [
+          0.480385,
+          0.159937,
+          0.537682,
+          0.452821
+        ],
+        "placement": "vampire_talk",
+        "render": "guest_vampire_000.png"
+      },
+      {
+        "manual_yaw": 0.18,
+        "effective_yaw": 0.255,
+        "inside_frame": true,
+        "screen_ndc_bbox": [
+          0.464867,
+          0.159869,
+          0.522172,
+          0.452795
+        ],
+        "placement": "vampire_talk",
+        "render": "guest_vampire_p018.png"
+      }
+    ],
+    "NPC_GINGER_CAT_GUEST": [
+      {
+        "manual_yaw": -0.18,
+        "effective_yaw": -0.105,
+        "inside_frame": true,
+        "screen_ndc_bbox": [
+          0.469985,
+          0.225177,
+          0.539514,
+          0.477628
+        ],
+        "placement": "miu_low_pad_visual_clearance_only",
+        "render": "guest_miu_m018.png"
+      },
+      {
+        "manual_yaw": 0,
+        "effective_yaw": 0.075,
+        "inside_frame": true,
+        "screen_ndc_bbox": [
+          0.496303,
+          0.224366,
+          0.565973,
+          0.47732
+        ],
+        "placement": "miu_low_pad_visual_clearance_only",
+        "render": "guest_miu_000.png"
+      },
+      {
+        "manual_yaw": 0.18,
+        "effective_yaw": 0.255,
+        "inside_frame": true,
+        "screen_ndc_bbox": [
+          0.521664,
+          0.222355,
+          0.591808,
+          0.476556
+        ],
+        "placement": "miu_low_pad_visual_clearance_only",
+        "render": "guest_miu_p018.png"
+      }
+    ]
+  },
+  "machine": {
+    "exact_png_sha_pass": true,
+    "alpha_nonempty_pass": true,
+    "door_visual_clearance_pass": true,
+    "sprite_in_front_of_baked_furniture_pass": true,
+    "screen_crop_pass": true,
+    "guest_room_geometry_pass": true,
+    "centaur_turning_geometry_pass": true,
+    "actual_sprite_yaw_render_count": 9,
+    "actual_sprite_yaw_pass": "9/9"
+  },
+  "visual_review": {
+    "status": "PASS",
+    "reviewed_contact_sheet": "TEEA007_guest_actual_sprite_contact.jpg",
+    "unrelated_furniture_hides_essential_body": false,
+    "detached_foreground": false,
+    "notes": "Centaur/Vampire stand in clear front/mid room space. Miu actual sprite remains readable at the low-pad visual QA hook. No guest room foreground layer exists."
+  },
+  "gate_disposition": {
+    "PASS_A": "PASS",
+    "PASS_B": "PASS",
+    "PASS_C": "PASS",
+    "PASS_D": "PASS",
+    "PASS_E": "PASS",
+    "machine_status": "READY_FOR_INTEGRATOR_QA",
+    "owner_approved": false,
+    "approved": false
+  }
+}

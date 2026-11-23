@@ -1,5 +1,5 @@
 {
-  "schema": 3,
+  "schema": 4,
   "batch_id": "TEEA_INT_20261123_007",
   "observed_sources": {
     "production_branch": {
@@ -35,27 +35,28 @@
         "TEEA_INT_20261123_007_media_binding_006_final.json: 27 bound surfaces, 0 errors",
         "TEEA_INT_20261123_007_media_yaw_proof_report.json: 27/27 proof images, 0 machine errors"
       ]
-    }
-  ],
-  "blockers": [
+    },
     {
       "id": "BLOCK_ACTUAL_GUEST_ALPHA_LFS_AUTH",
-      "affects": [
-        "PASS-A exact actual-sprite/body-footprint clause",
-        "PASS-D actual-sprite yaw/occlusion proof"
-      ],
-      "evidence": {
-        "NPC_CENTAUR": "LFS oid sha256:2abcd9620fb249b37079235745516224bc39b46be6c4abec35fd69cd22fea47f size=61233",
-        "NPC_VAMPIRE_GIRL": "LFS oid sha256:501284e9724441533d9cc34648c6956c564a1a097008f4e2b15bea6238f65fee size=55080",
-        "NPC_GINGER_CAT_GUEST": "LFS oid sha256:5f3eb9dc8efef0c14a96de47887a099e9dec90d9cb0f14cb65162b5e66e05804 size=69827",
-        "github_fetch_file": "returns LFS pointers, not image bytes",
-        "sandbox_lfs_batch": "HTTP 401 Requires authentication",
-        "production_tree_1216e2f1": "0 paths matching NPC_CENTAUR/NPC_VAMPIRE_GIRL/NPC_GINGER_CAT_GUEST",
-        "production_ci_run": "45200296771 success at 78f2ae904585ffe01bc11b39f2762ce90e85f00c",
-        "production_ci_pck": "DragonHouse_v014.pck inspected with Godot 4.7.2; all three guest identity res:// paths absent"
+      "status": "RESOLVED",
+      "resolved_by": {
+        "workflow_run_id": 45207278966,
+        "artifact_id": 14833608303,
+        "workflow_commit": "aa38bffddf3299ea47f756d705d3e8e6c0186f17",
+        "exact_sha_verified": {
+          "NPC_CENTAUR": "2abcd9620fb249b37079235745516224bc39b46be6c4abec35fd69cd22fea47f",
+          "NPC_VAMPIRE_GIRL": "501284e9724441533d9cc34648c6956c564a1a097008f4e2b15bea6238f65fee",
+          "NPC_GINGER_CAT_GUEST": "5f3eb9dc8efef0c14a96de47887a099e9dec90d9cb0f14cb65162b5e66e05804"
+        }
       },
-      "mitigation": "All three doors are 2.10x2.45 m and Centaur turning envelope is 2.50 m. Conservative full 1.9x1.9 m runtime Sprite3D plane bound passes. No guessed alpha silhouette is claimed.",
-      "resolution": "Integrator/ZNA pipeline materializes the exact canonical guest PNG bytes from LFS candidate art, computes nontransparent alpha bounds/world footprint, and reruns actual-sprite guest yaw/occlusion proof."
+      "result": "PASS-A and PASS-D exact guest alpha/actual-sprite clauses closed. 9/9 current-camera yaw proofs and screen-crop projection pass.",
+      "historical_invalid_probe": {
+        "run_id": 45206934849,
+        "used_as_evidence": false,
+        "reason": "same-basename flattening retained only Miu"
+      }
     }
-  ]
+  ],
+  "blockers": [],
+  "final_unresolved_blockers": []
 }

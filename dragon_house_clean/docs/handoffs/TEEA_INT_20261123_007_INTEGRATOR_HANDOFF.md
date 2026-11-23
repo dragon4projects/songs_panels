@@ -2,7 +2,7 @@
 
 Date: 2026-11-23
 Role: TEEA / INTERIORS ONLY
-Machine status: BLOCKED_EXTERNAL_GUEST_ALPHA_ONLY
+Machine status: READY_FOR_INTEGRATOR_QA
 Owner approved: false
 Approved: false
 Production mutated by TEEA007: no
@@ -38,10 +38,10 @@ The immutable binary URL/SHA and final post-publication branch head are reported
 
 | Gate | Status | Evidence |
 |---|---|---|
-| PASS-A | **BLOCKED** | 3/3 named guest room candidates exist; build adjacency, access semantics, measured geometry, entry/stations/collision and conservative runtime-plane clearance pass. Exact canonical guest PNG alpha/body footprints cannot be measured because the canonical candidate PNG bytes are Git LFS on the divergent ZNA art branch and are absent from current production. No guessed alpha silhouette is claimed. |
+| PASS-A | **PASS** | Exact canonical guest PNG bytes were materialized from the existing ZNA branch by QA workflow run 45207278966 with LFS enabled and exact SHA verification. Actual alpha footprints under current 1.9/512 runtime scale pass all 2.10×2.45 m guest-door visual clearances. Centaur keeps the separate 2.50 m physical turning envelope, also PASS. |
 | PASS-B | **PASS** | 32 neutral media surfaces total. Library 5 remain exact TEEA005 bindings. The 27 Music/Cinema/Artifact surfaces that previously waited on TEEA006 are now bound to final TEEA006 geometry with zero binding errors. Cinema retains a real screen/viewing area and a separate TV/console/gamepad nook. No actual media content is baked. |
 | PASS-C | **PASS** | Project-original polygon mugs: LOD0 empty/filled + LOD1, source BLEND + GLB, valid open mouth/rim/handle, topology QA, tabletop hand-envelope proof and Godot GLTF parse pass. |
-| PASS-D | **BLOCKED** | Payload/provenance/SHA/contact/Godot/HOUSE-LEVEL-ROOM/current-camera/geometry/approach evidence pass. Final TEEA006 media binding and 27/27 current-camera media-holder yaw proofs pass. Only exact canonical guest-sprite alpha/body-footprint and actual-sprite yaw/occlusion proof remains externally blocked. |
+| PASS-D | **PASS** | Payload/provenance/SHA/contact/Godot/HOUSE-LEVEL-ROOM/current-camera/geometry/approach evidence pass; final TEEA006 media binding 27/27 PASS. Exact canonical guest sprites were rendered in current R1 ROOM camera at manual yaw -0.18/0/+0.18: 9/9 actual-sprite proofs PASS and 9/9 projected alpha bboxes stay inside frame. |
 | PASS-E | **PASS** | `approved:false`, `owner_approved:false`, production untouched, isolated art branch, no production PR. |
 
 ## What changed after TEEA006 completed
@@ -99,31 +99,48 @@ Geometry:
 
 Миу remains physiology-neutral in TEEA art metadata: no invented humanoid chair/body assumptions.
 
-## Remaining external blocker — exact guest alpha
+## Resolved external blocker — exact guest alpha
 
-Canonical candidate paths:
-- `assets/residents/NPC_CENTAUR/identity/front_0001.png`
-- `assets/residents/NPC_VAMPIRE_GIRL/identity/front_0001.png`
-- `assets/residents/NPC_GINGER_CAT_GUEST/identity/front_0001.png`
-
-Observed ZNA candidate branch:
+Canonical ZNA candidate source:
 `art/znaechka-characters-ZNA_CHAR_NPC_20261123_001@994eb3f66436b2985cb94b1fc98b82274d8141c6`
 
-GitHub fetch returns LFS pointers:
-- Centaur: `sha256:2abcd9620fb249b37079235745516224bc39b46be6c4abec35fd69cd22fea47f`
-- Vampire: `sha256:501284e9724441533d9cc34648c6956c564a1a097008f4e2b15bea6238f65fee`
-- Миу: `sha256:5f3eb9dc8efef0c14a96de47887a099e9dec90d9cb0f14cb65162b5e66e05804`
+TEEA007-only QA workflow:
+- successful corrected run: `45207278966`
+- artifact: `14833608303 / teea007-exact-guest-lfs-png`
+- workflow commit: `aa38bffddf3299ea47f756d705d3e8e6c0186f17`
+- checkout used `lfs:true`
+- every materialized PNG SHA was compared against the known LFS OID before upload.
 
-Independent production checks:
-- current production tree `1216e2f1...`: **0** matching guest art paths;
-- successful production CI run `45200296771` at `78f2ae...` was downloaded;
-- artifact `14830708047`, `DragonHouse_v014.pck`, was opened through Godot 4.7.2;
-- all three exact guest identity `res://` paths were absent.
+Exact source SHA-256:
+- Centaur: `2abcd9620fb249b37079235745516224bc39b46be6c4abec35fd69cd22fea47f`
+- Vampire Girl: `501284e9724441533d9cc34648c6956c564a1a097008f4e2b15bea6238f65fee`
+- Миу: `5f3eb9dc8efef0c14a96de47887a099e9dec90d9cb0f14cb65162b5e66e05804`
 
-Therefore TEEA cannot truthfully compute exact alpha bounds from current production and must not substitute a composite atlas or invented silhouette.
+At current runtime scale `pixel_size = 1.9 / 512`, alpha>=1 visible extents are approximately:
+- Centaur: 0.378516 × 1.232031 m
+- Vampire Girl: 0.371094 × 1.276563 m
+- Миу: 0.523242 × 1.276563 m
 
-Required closure:
-Integrator/ZNA materializes the exact canonical LFS PNG bytes, computes non-transparent alpha bounds/world footprint and reruns the actual-sprite guest yaw/occlusion proof. No interior redesign is required by the current evidence.
+These are visual billboard-alpha dimensions only. They do not replace physical locomotion/body envelopes. Centaur retains the independently validated 2.50 m turning diameter.
+
+Actual-sprite current-camera proof:
+- 3 rooms × 3 manual yaws = 9/9 PASS;
+- exact alpha projected screen bbox inside frame = 9/9 PASS;
+- guest rooms have no foreground layer;
+- selected QA sprite positions are in front of baked `furniture_back z=-1.37`;
+- no unrelated furniture hides essential body areas in the reviewed contact sheet;
+- Миу low-pad placement is visual-clearance proof only and does not invent a physiology/runtime pose binding.
+
+Evidence hygiene:
+run `45206934849` is not used. Its first probe flattened three identical `front_0001.png` basenames and retained only Миу; this was detected from artifact SHA before measurement. Only corrected run `45207278966` is closure evidence.
+
+Closure addendum:
+https://d2ol7oe51mr4n9.cloudfront.net/user_3JdI9kJ82xObF8Bi3EgU4P6DaoR/b5c3b121-8d02-4aae-b278-499c886f6033.zip
+
+SHA-256:
+`abc63bc791fb5bd90e08dcc57bf9447df68385373675fec2ecd4a928f562292b`
+
+The immutable ~25 MiB base TEEA007 payload remains unchanged.
 
 ## Functional room / media state
 
@@ -196,8 +213,9 @@ Holder nodes:
 - final TEEA006 media surface binding: 27/27 PASS
 - media current-camera yaw proof: 27/27 PASS
 - media binding machine errors: 0
-- exact canonical guest alpha/body footprint: **BLOCKED_EXTERNAL_ZNA_LFS_ART_NOT_IN_PRODUCTION**
+- exact canonical guest alpha/body footprint: **PASS_EXACT_LFS_ALPHA**
+- actual canonical guest sprite current-camera yaw proof: **9/9 PASS**
 - owner approval: false
 - production mutation: none
 
-Final machine status is intentionally **BLOCKED_EXTERNAL_GUEST_ALPHA_ONLY**, not READY_FOR_INTEGRATOR_QA, because PASS-A and PASS-D explicitly require the actual canonical guest-sprite footprint.
+Final machine status: **READY_FOR_INTEGRATOR_QA**. This remains candidate-only: `owner_approved:false`, `approved:false`, no production PR.
