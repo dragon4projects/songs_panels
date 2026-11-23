@@ -52,7 +52,7 @@ func load_store() -> bool:
 	var had_primary := FileAccess.file_exists(store_path)
 	var had_backup := FileAccess.file_exists(store_path + ".bak")
 	var parsed: Dictionary = _read_store(store_path)
-	if parsed.is_empty() and had_primary:
+	if parsed.is_empty() and had_backup:
 		parsed = _read_store(store_path + ".bak")
 	if parsed.is_empty():
 		if had_primary or had_backup:
@@ -141,6 +141,72 @@ func _events_equal(a: Dictionary,b: Dictionary) -> bool:
 	# JSON canonicalization is enough here because envelopes contain JSON-safe values.
 	return JSON.stringify(a) == JSON.stringify(b)
 
+func _valid_object_snapshot(object: Dictionary, subject_id: String) -> bool:
+	if object.is_empty() or str(object.get("id","")) != subject_id:
+		return false
+	if str(object.get("home_room_id","")) == "":
+		return false
+	if not ALLOWED_OBJECT_STATES.has(str(object.get("state",""))):
+		return false
+	if str(object.get("state","")) == "HELD":
+		return str(object.get("current_holder_id","")) != "" and str(object.get("current_room_id","")) == ""
+	return str(object.get("current_holder_id","")) == "" and str(object.get("current_room_id","")) != ""
+
+func _validate_candidate_object_event(event: Dictionary) -> String:
+	var event_type := str(event.get("event_type",""))
+	var subject_id := str(event.get("subject_id",""))
+	var actor_id := str(event.get("actor_id",""))
+	var payload: Dictionary = event.get("payload",{})
+	if event_type in ["OBJECT_REGISTERED","OBJECT_BASELINE_IMPORTED"]:
+		if int(event.get("revision",0)) != 1:
+			return "registration/baseline must be subject revision 1"
+		if typeof(payload.get("object",null)) != TYPE_DICTIONARY:
+			return "registration/baseline requires object snapshot"
+		var initial: Dictionary = payload["object"]
+		if not _valid_object_snapshot(initial,subject_id):
+			return "invalid object snapshot for "+subject_id
+		return ""
+	var current: Dictionary = project_object(subject_id,{})
+	if current.is_empty():
+		return "object transition has no event-sourced baseline"
+	match event_type:
+		"OBJECT_AMBIENT_PROTECTION_CHANGED":
+			if not payload.has("protected"):
+				return "ambient protection event requires protected field"
+		"OBJECT_PICKED_UP":
+			if actor_id == "":
+				return "pickup requires actor_id"
+			if str(current.get("current_holder_id","")) != "":
+				return "pickup requires unheld object"
+			if str(current.get("current_room_id","")) == "":
+				return "pickup requires placed object"
+			if str(payload.get("from","")) != str(current.get("current_room_id","")):
+				return "pickup from does not match current room"
+			if str(payload.get("to","")) != actor_id:
+				return "pickup to must equal actor_id"
+		"OBJECT_PLACED","OBJECT_STASHED":
+			if actor_id == "" or str(current.get("current_holder_id","")) != actor_id:
+				return "place/stash requires current holder actor"
+			if str(current.get("current_room_id","")) != "":
+				return "place/stash requires held object"
+			var target := str(payload.get("to",""))
+			if target == "":
+				return "place/stash requires destination"
+			var state := str(payload.get("state",""))
+			var expected_state := "STASHED" if event_type == "OBJECT_STASHED" else "PLACED"
+			if state != expected_state:
+				return "place/stash state does not match event type"
+		"OBJECT_RECOVERED_TO_LOST_FOUND":
+			if str(payload.get("to","")) == "":
+				return "lost-found recovery requires destination"
+		"OBJECT_RESTORED_HOME":
+			var home := str(current.get("home_room_id",""))
+			if home == "" or str(payload.get("to","")) != home:
+				return "restore-home destination must equal canonical home_room_id"
+		_:
+			return "unsupported object event type: "+event_type
+	return ""
+
 func append_object_event(event_type: String, subject_id: String, actor_id: String,
 		payload: Dictionary, sim_clock: float, authority: String,
 		truth_class: String, expected_revision: int = -1,
@@ -181,6 +247,9 @@ func append_object_event(event_type: String, subject_id: String, actor_id: Strin
 			[subject_id,expected,current_revision]}
 	if not _valid_envelope(event):
 		return {"ok":false,"error":"invalid event envelope"}
+	var invariant_error := _validate_candidate_object_event(event)
+	if invariant_error != "":
+		return {"ok":false,"error":invariant_error}
 	events.append(event.duplicate(true))
 	event_ids[event_id] = event.duplicate(true)
 	subject_revisions[subject_id] = expected + 1
