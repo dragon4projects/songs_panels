@@ -713,7 +713,12 @@ func load_or_seed() -> void:
 		if event_ready:
 			_overlay_event_object_projections()
 			_reconcile_event_journal()
-		save_world()
+			save_world()
+		else:
+			# Preserve unreadable durable history for recovery. Do not write a
+			# clean compatibility snapshot that could masquerade as recovered truth.
+			push_error("World event history unavailable; seeded diagnostic shell is not persisted: " +
+				event_core.last_error)
 		return
 	rooms.assign(parsed["rooms"])
 	for saved_room in rooms:
