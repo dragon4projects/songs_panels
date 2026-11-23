@@ -1,0 +1,127 @@
+name: Dragon House v0.15 TEEA003 Mac review build
+
+on:
+  push:
+    branches: [dev/dragon-house-v015-teea003-integration]
+    paths:
+      - '.github/workflows/dragon-house-v015-mac-review.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  mac-review:
+    name: macOS universal owner review build
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout v0.15 branch with current LFS assets
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+          fetch-depth: 1
+
+      - name: Fetch current accepted LFS bytes
+        shell: bash
+        run: |
+          set -euo pipefail
+          git lfs install --local
+          git lfs pull
+          test "$(git lfs ls-files | wc -l)" -ge 2408
+
+      - name: Download exact TEEA003 handoff
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fLsS --retry 3 -o /tmp/teea003.zip             'https://d2ol7oe51mr4n9.cloudfront.net/user_3JdI9kJ82xObF8Bi3EgU4P6DaoR/a5825fe1-8a14-4967-abdc-c4214a93e1b0.zip'
+          echo '2233854a91684acec90ad687961cc1c3b1316f921643a5941e9ed6846778b093  /tmp/teea003.zip'             | sha256sum -c -
+          rm -rf /tmp/teea003
+          mkdir -p /tmp/teea003
+          unzip -q /tmp/teea003.zip -d /tmp/teea003
+
+      - name: Mount TEEA003 ephemerally into review working tree
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd dragon_house_clean
+          python3 tools/qa_teea003_geometry.py             --project .             --payload-root /tmp/teea003/dragon_house_clean             --report private_review/teea003_geometry_report.json
+          python3 tools/prepare_teea003_qa.py             --project .             --payload-root /tmp/teea003/dragon_house_clean             --report private_review/teea003_prepare_report.json
+          grep -q '"qa_candidate_owner_approved": false' data/furniture_interactions_v1.json
+
+      - name: Enable QA resident banks for owner review build only
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd dragon_house_clean
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path("scripts/main.gd")
+          s=p.read_text()
+          old="var qa_visual_preview := false"
+          assert old in s
+          p.write_text(s.replace(old,"var qa_visual_preview := true",1))
+          PY
+          grep -q 'var qa_visual_preview := true' scripts/main.gd
+
+      - name: Download official Godot 4.7.2 and export templates
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fLsS --retry 3 -o /tmp/Godot_4.7.2.zip             https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_linux.x86_64.zip
+          unzip -q /tmp/Godot_4.7.2.zip -d /tmp
+          chmod +x /tmp/Godot_v4.7.2-stable_linux.x86_64
+          curl -fLsS --retry 3 -o /tmp/godot_export.tpz             https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_export_templates.tpz
+          dest="$HOME/.local/share/godot/export_templates/4.7.2.stable"
+          mkdir -p "$dest"
+          unzip -jo /tmp/godot_export.tpz templates/version.txt templates/macos.zip -d "$dest"
+
+      - name: Import and smoke-test exact review build
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd dragon_house_clean
+          timeout 900s /tmp/Godot_v4.7.2-stable_linux.x86_64             --headless --path . --editor --quit > v015_mac_import.log 2>&1
+          if grep -Eq 'SCRIPT ERROR|Parse Error|Parser Error' v015_mac_import.log; then
+            tail -120 v015_mac_import.log
+            exit 1
+          fi
+          result="$(timeout 90s /tmp/Godot_v4.7.2-stable_linux.x86_64             --headless --path . --script res://tests/test_teea003_integration_v015.gd 2>&1)"
+          echo "$result" | tee v015_mac_smoke.log
+          echo "$result" | grep -q 'TEEA003_INTEGRATION_V015_PASS'
+
+      - name: Export unsigned macOS Universal QA build
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p releases
+          cd dragon_house_clean
+          /tmp/Godot_v4.7.2-stable_linux.x86_64 --headless --path .             --export-release "macOS" ../releases/DragonHouse_v015_TEEA003_macOS_Universal.zip             > ../releases/mac_export.log 2>&1
+          cd ../releases
+          cat > README_OWNER_REVIEW.txt <<'NOTE'
+          Dragon House v0.15 / TEEA_INT_20261122_003 owner-review build.
+          Base: current v0.14 fresh + integrator-tested TEEA003 candidate.
+          TEEA003 owner_approved remains FALSE in source; this package mounts it for review only.
+          QA resident sprite banks are enabled at startup for seating/foreground inspection.
+          Godot 4.7.2, macOS Universal, unsigned / not notarized.
+          On macOS Gatekeeper may require right-click -> Open.
+          Review especially: Arrival, Corridor, Music, Cinema, Artifact, Workshop;
+          Music/Cinema foreground at several manual Q/E camera yaw angles.
+          NOTE
+          cp DragonHouse_v015_TEEA003_macOS_Universal.zip DragonHouse_v015_TEEA003_macOS15_M1.zip
+          zip -q9 DragonHouse_v015_TEEA003_macOS15_M1.zip README_OWNER_REVIEW.txt
+          unzip -t DragonHouse_v015_TEEA003_macOS15_M1.zip | tail -1
+
+      - name: Upload private Mac owner-review build
+        uses: actions/upload-artifact@v4
+        with:
+          name: dragon-house-v015-teea003-mac-owner-review
+          path: |
+            releases/DragonHouse_v015_TEEA003_macOS15_M1.zip
+            releases/mac_export.log
+            dragon_house_clean/v015_mac_import.log
+            dragon_house_clean/v015_mac_smoke.log
+            dragon_house_clean/private_review/teea003_geometry_report.json
+          if-no-files-found: error
+          retention-days: 3
