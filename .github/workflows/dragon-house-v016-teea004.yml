@@ -124,7 +124,8 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          git show origin/art/teea-interiors-TEEA_INT_20261123_004:dragon_house_clean/data/asset_proposals/TEEA_INT_20261123_004_interiors.json             | grep -q '"approved": false'
+          git fetch --depth=1 origin art/teea-interiors-TEEA_INT_20261123_004
+          git show FETCH_HEAD:dragon_house_clean/data/asset_proposals/TEEA_INT_20261123_004_interiors.json | grep -q '"approved": false'
 
       - name: Upload private integrator evidence
         if: always()
