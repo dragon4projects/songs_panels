@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "source": {
+    "name": "Понравившиеся - YouTube.pdf",
+    "file_id": "file_00000000b80c821087056a640cf64627",
+    "sha256": "038efbd6e84c653ba67bc61569e05932eba9eebfa7883ea46cc59114da724cbf",
+    "pages": 88,
+    "playlist_visible_count": 932,
+    "extracted_visible_cards": 698,
+    "source_gap_count": 234
+  },
+  "classification_counts": {
+    "audio": 203,
+    "film": 0,
+    "unknown": 495
+  },
+  "policy": "No YouTube thumbnail bytes are committed because rights are not confirmed. GitHub generates neutral title placeholders only.",
+  "owner_approved": false,
+  "chunks": [
+    "media_source_01.json",
+    "media_source_02.json",
+    "media_source_03.json",
+    "media_source_04.json",
+    "media_source_05.json",
+    "media_source_06.json",
+    "media_source_07.json",
+    "media_source_08.json",
+    "media_source_09.json",
+    "media_source_10.json",
+    "media_source_11.json",
+    "media_source_12.json",
+    "media_source_13.json",
+    "media_source_14.json"
+  ]
+}
