@@ -1,0 +1,5449 @@
+{
+  "task": "ZNA_CHAR_NPC_20261123_003",
+  "sources": {
+    "NPC_VAMPIRE_GIRL_SHORT": {
+      "IDLE_N": {
+        "method": "ImageGen",
+        "image": "exec-ec5ff0e6-7c79-4f1e-8dba-339651e1ad22.png",
+        "cell": [
+          0,
+          0,
+          444,
+          444
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/IDLE_N/0001.png"
+      },
+      "IDLE_NE": {
+        "method": "ImageGen",
+        "image": "exec-ec5ff0e6-7c79-4f1e-8dba-339651e1ad22.png",
+        "cell": [
+          444,
+          0,
+          887,
+          444
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/IDLE_NE/0001.png"
+      },
+      "IDLE_E": {
+        "method": "ImageGen",
+        "image": "exec-ec5ff0e6-7c79-4f1e-8dba-339651e1ad22.png",
+        "cell": [
+          887,
+          0,
+          1330,
+          444
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/IDLE_E/0001.png"
+      },
+      "IDLE_SE": {
+        "method": "ImageGen",
+        "image": "exec-ec5ff0e6-7c79-4f1e-8dba-339651e1ad22.png",
+        "cell": [
+          1330,
+          0,
+          1774,
+          444
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/IDLE_SE/0001.png"
+      },
+      "IDLE_S": {
+        "method": "ImageGen",
+        "image": "exec-ec5ff0e6-7c79-4f1e-8dba-339651e1ad22.png",
+        "cell": [
+          0,
+          444,
+          444,
+          887
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/IDLE_S/0001.png"
+      },
+      "IDLE_SW": {
+        "method": "ImageGen",
+        "image": "exec-ec5ff0e6-7c79-4f1e-8dba-339651e1ad22.png",
+        "cell": [
+          444,
+          444,
+          887,
+          887
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/IDLE_SW/0001.png"
+      },
+      "IDLE_W": {
+        "method": "ImageGen",
+        "image": "exec-ec5ff0e6-7c79-4f1e-8dba-339651e1ad22.png",
+        "cell": [
+          887,
+          444,
+          1330,
+          887
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/IDLE_W/0001.png"
+      },
+      "IDLE_NW": {
+        "method": "ImageGen",
+        "image": "exec-ec5ff0e6-7c79-4f1e-8dba-339651e1ad22.png",
+        "cell": [
+          1330,
+          444,
+          1774,
+          887
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/IDLE_NW/0001.png"
+      },
+      "SIT": {
+        "method": "ImageGen",
+        "image": "exec-c4934f43-d61f-49cf-af12-78c3e43cadf6.png",
+        "cell": [
+          0,
+          0,
+          512,
+          509
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/SIT/0001.png"
+      },
+      "TALK": {
+        "method": "ImageGen",
+        "image": "exec-c4934f43-d61f-49cf-af12-78c3e43cadf6.png",
+        "cell": [
+          512,
+          0,
+          1024,
+          509
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/TALK/0001.png"
+      },
+      "VIEW": {
+        "method": "ImageGen",
+        "image": "exec-c4934f43-d61f-49cf-af12-78c3e43cadf6.png",
+        "cell": [
+          1024,
+          0,
+          1536,
+          509
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/VIEW/0001.png"
+      },
+      "READ": {
+        "method": "ImageGen",
+        "image": "exec-c4934f43-d61f-49cf-af12-78c3e43cadf6.png",
+        "cell": [
+          0,
+          509,
+          512,
+          1024
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/READ/0001.png"
+      },
+      "CARRY_USE": {
+        "method": "ImageGen",
+        "image": "exec-c4934f43-d61f-49cf-af12-78c3e43cadf6.png",
+        "cell": [
+          512,
+          509,
+          1024,
+          1024
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/CARRY_USE/0001.png"
+      },
+      "RELAXED_SIT": {
+        "method": "ImageGen",
+        "image": "exec-c4934f43-d61f-49cf-af12-78c3e43cadf6.png",
+        "cell": [
+          1024,
+          509,
+          1536,
+          1024
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/RELAXED_SIT/0001.png"
+      },
+      "SLEEP": {
+        "method": "ImageGen",
+        "image": "exec-92255e24-9ca2-4fa2-85aa-ba34bdaaf475.png",
+        "cell": [
+          0,
+          0,
+          1122,
+          308
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/SLEEP/0001.png"
+      },
+      "LIE_SIDE_STRAIGHT": {
+        "method": "ImageGen",
+        "image": "exec-92255e24-9ca2-4fa2-85aa-ba34bdaaf475.png",
+        "cell": [
+          0,
+          308,
+          1122,
+          589
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/LIE_SIDE_STRAIGHT/0001.png"
+      },
+      "LIE_SIDE_CURLED": {
+        "method": "ImageGen",
+        "image": "exec-92255e24-9ca2-4fa2-85aa-ba34bdaaf475.png",
+        "cell": [
+          0,
+          589,
+          1122,
+          888
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/LIE_SIDE_CURLED/0001.png"
+      },
+      "SIT_HUG_KNEES": {
+        "method": "ImageGen",
+        "image": "exec-92255e24-9ca2-4fa2-85aa-ba34bdaaf475.png",
+        "cell": [
+          0,
+          888,
+          513,
+          1402
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/SIT_HUG_KNEES/0001.png"
+      },
+      "SIT_LEGS_TUCKED": {
+        "method": "ImageGen",
+        "image": "exec-92255e24-9ca2-4fa2-85aa-ba34bdaaf475.png",
+        "cell": [
+          513,
+          888,
+          1122,
+          1402
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/SIT_LEGS_TUCKED/0001.png"
+      },
+      "WALK_LEFT:1": {
+        "method": "ImageGen",
+        "image": "exec-c1eeb57a-4e66-42fa-8ea4-3acbff178e6e.png",
+        "cell": [
+          0,
+          0,
+          362,
+          362
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0001.png"
+      },
+      "WALK_LEFT:2": {
+        "method": "ImageGen",
+        "image": "exec-c1eeb57a-4e66-42fa-8ea4-3acbff178e6e.png",
+        "cell": [
+          362,
+          0,
+          724,
+          362
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0002.png"
+      },
+      "WALK_LEFT:3": {
+        "method": "ImageGen",
+        "image": "exec-c1eeb57a-4e66-42fa-8ea4-3acbff178e6e.png",
+        "cell": [
+          724,
+          0,
+          1086,
+          362
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0003.png"
+      },
+      "WALK_LEFT:4": {
+        "method": "ImageGen",
+        "image": "exec-c1eeb57a-4e66-42fa-8ea4-3acbff178e6e.png",
+        "cell": [
+          1086,
+          0,
+          1448,
+          362
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0004.png"
+      },
+      "WALK_LEFT:5": {
+        "method": "ImageGen",
+        "image": "exec-c1eeb57a-4e66-42fa-8ea4-3acbff178e6e.png",
+        "cell": [
+          0,
+          362,
+          362,
+          724
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0005.png"
+      },
+      "WALK_LEFT:6": {
+        "method": "ImageGen",
+        "image": "exec-c1eeb57a-4e66-42fa-8ea4-3acbff178e6e.png",
+        "cell": [
+          362,
+          362,
+          724,
+          724
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0006.png"
+      },
+      "WALK_LEFT:7": {
+        "method": "ImageGen",
+        "image": "exec-c1eeb57a-4e66-42fa-8ea4-3acbff178e6e.png",
+        "cell": [
+          724,
+          362,
+          1086,
+          724
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0007.png"
+      },
+      "WALK_LEFT:8": {
+        "method": "ImageGen",
+        "image": "exec-c1eeb57a-4e66-42fa-8ea4-3acbff178e6e.png",
+        "cell": [
+          1086,
+          362,
+          1448,
+          724
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0008.png"
+      },
+      "WALK_LEFT:9": {
+        "method": "ImageGen",
+        "image": "exec-c1eeb57a-4e66-42fa-8ea4-3acbff178e6e.png",
+        "cell": [
+          0,
+          724,
+          362,
+          1086
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0009.png"
+      },
+      "WALK_LEFT:10": {
+        "method": "ImageGen",
+        "image": "exec-c1eeb57a-4e66-42fa-8ea4-3acbff178e6e.png",
+        "cell": [
+          362,
+          724,
+          724,
+          1086
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0010.png"
+      },
+      "WALK_LEFT:11": {
+        "method": "ImageGen",
+        "image": "exec-c1eeb57a-4e66-42fa-8ea4-3acbff178e6e.png",
+        "cell": [
+          724,
+          724,
+          1086,
+          1086
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0011.png"
+      },
+      "WALK_LEFT:12": {
+        "method": "ImageGen",
+        "image": "exec-c1eeb57a-4e66-42fa-8ea4-3acbff178e6e.png",
+        "cell": [
+          1086,
+          724,
+          1448,
+          1086
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0012.png"
+      },
+      "WALK_RIGHT:1": {
+        "method": "mirrored_walk",
+        "image": "exec-c1eeb57a-4e66-42fa-8ea4-3acbff178e6e.png",
+        "cell": [
+          0,
+          0,
+          362,
+          362
+        ],
+        "source_state": "WALK_LEFT:1",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0001.png"
+      },
+      "WALK_RIGHT:2": {
+        "method": "mirrored_walk",
+        "image": "exec-c1eeb57a-4e66-42fa-8ea4-3acbff178e6e.png",
+        "cell": [
+          362,
+          0,
+          724,
+          362
+        ],
+        "source_state": "WALK_LEFT:2",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0002.png"
+      },
+      "WALK_RIGHT:3": {
+        "method": "mirrored_walk",
+        "image": "exec-c1eeb57a-4e66-42fa-8ea4-3acbff178e6e.png",
+        "cell": [
+          724,
+          0,
+          1086,
+          362
+        ],
+        "source_state": "WALK_LEFT:3",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0003.png"
+      },
+      "WALK_RIGHT:4": {
+        "method": "mirrored_walk",
+        "image": "exec-c1eeb57a-4e66-42fa-8ea4-3acbff178e6e.png",
+        "cell": [
+          1086,
+          0,
+          1448,
+          362
+        ],
+        "source_state": "WALK_LEFT:4",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0004.png"
+      },
+      "WALK_RIGHT:5": {
+        "method": "mirrored_walk",
+        "image": "exec-c1eeb57a-4e66-42fa-8ea4-3acbff178e6e.png",
+        "cell": [
+          0,
+          362,
+          362,
+          724
+        ],
+        "source_state": "WALK_LEFT:5",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0005.png"
+      },
+      "WALK_RIGHT:6": {
+        "method": "mirrored_walk",
+        "image": "exec-c1eeb57a-4e66-42fa-8ea4-3acbff178e6e.png",
+        "cell": [
+          362,
+          362,
+          724,
+          724
+        ],
+        "source_state": "WALK_LEFT:6",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0006.png"
+      },
+      "WALK_RIGHT:7": {
+        "method": "mirrored_walk",
+        "image": "exec-c1eeb57a-4e66-42fa-8ea4-3acbff178e6e.png",
+        "cell": [
+          724,
+          362,
+          1086,
+          724
+        ],
+        "source_state": "WALK_LEFT:7",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0007.png"
+      },
+      "WALK_RIGHT:8": {
+        "method": "mirrored_walk",
+        "image": "exec-c1eeb57a-4e66-42fa-8ea4-3acbff178e6e.png",
+        "cell": [
+          1086,
+          362,
+          1448,
+          724
+        ],
+        "source_state": "WALK_LEFT:8",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0008.png"
+      },
+      "WALK_RIGHT:9": {
+        "method": "mirrored_walk",
+        "image": "exec-c1eeb57a-4e66-42fa-8ea4-3acbff178e6e.png",
+        "cell": [
+          0,
+          724,
+          362,
+          1086
+        ],
+        "source_state": "WALK_LEFT:9",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0009.png"
+      },
+      "WALK_RIGHT:10": {
+        "method": "mirrored_walk",
+        "image": "exec-c1eeb57a-4e66-42fa-8ea4-3acbff178e6e.png",
+        "cell": [
+          362,
+          724,
+          724,
+          1086
+        ],
+        "source_state": "WALK_LEFT:10",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0010.png"
+      },
+      "WALK_RIGHT:11": {
+        "method": "mirrored_walk",
+        "image": "exec-c1eeb57a-4e66-42fa-8ea4-3acbff178e6e.png",
+        "cell": [
+          724,
+          724,
+          1086,
+          1086
+        ],
+        "source_state": "WALK_LEFT:11",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0011.png"
+      },
+      "WALK_RIGHT:12": {
+        "method": "mirrored_walk",
+        "image": "exec-c1eeb57a-4e66-42fa-8ea4-3acbff178e6e.png",
+        "cell": [
+          1086,
+          724,
+          1448,
+          1086
+        ],
+        "source_state": "WALK_LEFT:12",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0012.png"
+      },
+      "DRINK:1": {
+        "method": "ImageGen",
+        "image": "exec-26fd76d1-f9ff-42ee-adbc-2c3d8a6e93be.png",
+        "cell": [
+          0,
+          0,
+          768,
+          512
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/DRINK/0001.png"
+      },
+      "DRINK:2": {
+        "method": "ImageGen",
+        "image": "exec-26fd76d1-f9ff-42ee-adbc-2c3d8a6e93be.png",
+        "cell": [
+          768,
+          0,
+          1536,
+          512
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/DRINK/0002.png"
+      },
+      "DRINK:3": {
+        "method": "ImageGen",
+        "image": "exec-26fd76d1-f9ff-42ee-adbc-2c3d8a6e93be.png",
+        "cell": [
+          0,
+          512,
+          768,
+          1024
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/DRINK/0003.png"
+      },
+      "DRINK:4": {
+        "method": "ImageGen",
+        "image": "exec-26fd76d1-f9ff-42ee-adbc-2c3d8a6e93be.png",
+        "cell": [
+          768,
+          512,
+          1536,
+          1024
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/DRINK/0004.png"
+      },
+      "IDENTITY": {
+        "method": "ImageGen",
+        "image": "exec-ec5ff0e6-7c79-4f1e-8dba-339651e1ad22.png",
+        "cell": [
+          0,
+          444,
+          444,
+          887
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/identity/front_0001.png"
+      }
+    },
+    "NPC_VAMPIRE_GIRL_HOME": {
+      "IDLE_N": {
+        "method": "ImageGen",
+        "image": "exec-6b4c390a-2c1a-49a3-8e80-6333d407f760.png",
+        "cell": [
+          0,
+          0,
+          444,
+          444
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/IDLE_N/0001.png"
+      },
+      "IDLE_NE": {
+        "method": "ImageGen",
+        "image": "exec-6b4c390a-2c1a-49a3-8e80-6333d407f760.png",
+        "cell": [
+          444,
+          0,
+          887,
+          444
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/IDLE_NE/0001.png"
+      },
+      "IDLE_E": {
+        "method": "ImageGen",
+        "image": "exec-6b4c390a-2c1a-49a3-8e80-6333d407f760.png",
+        "cell": [
+          887,
+          0,
+          1330,
+          444
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/IDLE_E/0001.png"
+      },
+      "IDLE_SE": {
+        "method": "ImageGen",
+        "image": "exec-6b4c390a-2c1a-49a3-8e80-6333d407f760.png",
+        "cell": [
+          1330,
+          0,
+          1774,
+          444
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/IDLE_SE/0001.png"
+      },
+      "IDLE_S": {
+        "method": "ImageGen",
+        "image": "exec-6b4c390a-2c1a-49a3-8e80-6333d407f760.png",
+        "cell": [
+          0,
+          444,
+          444,
+          887
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/IDLE_S/0001.png"
+      },
+      "IDLE_SW": {
+        "method": "ImageGen",
+        "image": "exec-6b4c390a-2c1a-49a3-8e80-6333d407f760.png",
+        "cell": [
+          444,
+          444,
+          887,
+          887
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/IDLE_SW/0001.png"
+      },
+      "IDLE_W": {
+        "method": "ImageGen",
+        "image": "exec-6b4c390a-2c1a-49a3-8e80-6333d407f760.png",
+        "cell": [
+          887,
+          444,
+          1330,
+          887
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/IDLE_W/0001.png"
+      },
+      "IDLE_NW": {
+        "method": "ImageGen",
+        "image": "exec-6b4c390a-2c1a-49a3-8e80-6333d407f760.png",
+        "cell": [
+          1330,
+          444,
+          1774,
+          887
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/IDLE_NW/0001.png"
+      },
+      "SIT": {
+        "method": "ImageGen",
+        "image": "exec-0ec31868-98a0-454c-93eb-f374d0df310e.png",
+        "cell": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/SIT/0001.png"
+      },
+      "TALK": {
+        "method": "ImageGen",
+        "image": "exec-0ec31868-98a0-454c-93eb-f374d0df310e.png",
+        "cell": [
+          512,
+          0,
+          1024,
+          512
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/TALK/0001.png"
+      },
+      "VIEW": {
+        "method": "ImageGen",
+        "image": "exec-0ec31868-98a0-454c-93eb-f374d0df310e.png",
+        "cell": [
+          1024,
+          0,
+          1536,
+          512
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/VIEW/0001.png"
+      },
+      "READ": {
+        "method": "ImageGen",
+        "image": "exec-0ec31868-98a0-454c-93eb-f374d0df310e.png",
+        "cell": [
+          0,
+          512,
+          512,
+          1024
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/READ/0001.png"
+      },
+      "CARRY_USE": {
+        "method": "ImageGen",
+        "image": "exec-0ec31868-98a0-454c-93eb-f374d0df310e.png",
+        "cell": [
+          512,
+          512,
+          1024,
+          1024
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/CARRY_USE/0001.png"
+      },
+      "RELAXED_SIT": {
+        "method": "ImageGen",
+        "image": "exec-0ec31868-98a0-454c-93eb-f374d0df310e.png",
+        "cell": [
+          1024,
+          512,
+          1536,
+          1024
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/RELAXED_SIT/0001.png"
+      },
+      "SLEEP": {
+        "method": "ImageGen",
+        "image": "exec-83b29462-18a1-44e3-881b-d66ac7caa5cd.png",
+        "cell": [
+          0,
+          0,
+          1122,
+          308
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/SLEEP/0001.png"
+      },
+      "LIE_SIDE_STRAIGHT": {
+        "method": "ImageGen",
+        "image": "exec-83b29462-18a1-44e3-881b-d66ac7caa5cd.png",
+        "cell": [
+          0,
+          308,
+          1122,
+          589
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/LIE_SIDE_STRAIGHT/0001.png"
+      },
+      "LIE_SIDE_CURLED": {
+        "method": "ImageGen",
+        "image": "exec-83b29462-18a1-44e3-881b-d66ac7caa5cd.png",
+        "cell": [
+          0,
+          589,
+          1122,
+          883
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/LIE_SIDE_CURLED/0001.png"
+      },
+      "SIT_HUG_KNEES": {
+        "method": "ImageGen",
+        "image": "exec-83b29462-18a1-44e3-881b-d66ac7caa5cd.png",
+        "cell": [
+          0,
+          883,
+          527,
+          1402
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/SIT_HUG_KNEES/0001.png"
+      },
+      "SIT_LEGS_TUCKED": {
+        "method": "ImageGen",
+        "image": "exec-83b29462-18a1-44e3-881b-d66ac7caa5cd.png",
+        "cell": [
+          527,
+          883,
+          1122,
+          1402
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/SIT_LEGS_TUCKED/0001.png"
+      },
+      "WALK_LEFT:1": {
+        "method": "ImageGen",
+        "image": "exec-b15bf410-ccbe-4616-a2c1-5e918118bc78.png",
+        "cell": [
+          0,
+          0,
+          362,
+          362
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0001.png"
+      },
+      "WALK_LEFT:2": {
+        "method": "ImageGen",
+        "image": "exec-b15bf410-ccbe-4616-a2c1-5e918118bc78.png",
+        "cell": [
+          362,
+          0,
+          724,
+          362
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0002.png"
+      },
+      "WALK_LEFT:3": {
+        "method": "ImageGen",
+        "image": "exec-b15bf410-ccbe-4616-a2c1-5e918118bc78.png",
+        "cell": [
+          724,
+          0,
+          1086,
+          362
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0003.png"
+      },
+      "WALK_LEFT:4": {
+        "method": "ImageGen",
+        "image": "exec-b15bf410-ccbe-4616-a2c1-5e918118bc78.png",
+        "cell": [
+          1086,
+          0,
+          1448,
+          362
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0004.png"
+      },
+      "WALK_LEFT:5": {
+        "method": "ImageGen",
+        "image": "exec-b15bf410-ccbe-4616-a2c1-5e918118bc78.png",
+        "cell": [
+          0,
+          362,
+          362,
+          724
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0005.png"
+      },
+      "WALK_LEFT:6": {
+        "method": "ImageGen",
+        "image": "exec-b15bf410-ccbe-4616-a2c1-5e918118bc78.png",
+        "cell": [
+          362,
+          362,
+          724,
+          724
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0006.png"
+      },
+      "WALK_LEFT:7": {
+        "method": "ImageGen",
+        "image": "exec-b15bf410-ccbe-4616-a2c1-5e918118bc78.png",
+        "cell": [
+          724,
+          362,
+          1086,
+          724
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0007.png"
+      },
+      "WALK_LEFT:8": {
+        "method": "ImageGen",
+        "image": "exec-b15bf410-ccbe-4616-a2c1-5e918118bc78.png",
+        "cell": [
+          1086,
+          362,
+          1448,
+          724
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0008.png"
+      },
+      "WALK_LEFT:9": {
+        "method": "ImageGen",
+        "image": "exec-b15bf410-ccbe-4616-a2c1-5e918118bc78.png",
+        "cell": [
+          0,
+          724,
+          362,
+          1086
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0009.png"
+      },
+      "WALK_LEFT:10": {
+        "method": "ImageGen",
+        "image": "exec-b15bf410-ccbe-4616-a2c1-5e918118bc78.png",
+        "cell": [
+          362,
+          724,
+          724,
+          1086
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0010.png"
+      },
+      "WALK_LEFT:11": {
+        "method": "ImageGen",
+        "image": "exec-b15bf410-ccbe-4616-a2c1-5e918118bc78.png",
+        "cell": [
+          724,
+          724,
+          1086,
+          1086
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0011.png"
+      },
+      "WALK_LEFT:12": {
+        "method": "ImageGen",
+        "image": "exec-b15bf410-ccbe-4616-a2c1-5e918118bc78.png",
+        "cell": [
+          1086,
+          724,
+          1448,
+          1086
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0012.png"
+      },
+      "WALK_RIGHT:1": {
+        "method": "mirrored_walk",
+        "image": "exec-b15bf410-ccbe-4616-a2c1-5e918118bc78.png",
+        "cell": [
+          0,
+          0,
+          362,
+          362
+        ],
+        "source_state": "WALK_LEFT:1",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0001.png"
+      },
+      "WALK_RIGHT:2": {
+        "method": "mirrored_walk",
+        "image": "exec-b15bf410-ccbe-4616-a2c1-5e918118bc78.png",
+        "cell": [
+          362,
+          0,
+          724,
+          362
+        ],
+        "source_state": "WALK_LEFT:2",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0002.png"
+      },
+      "WALK_RIGHT:3": {
+        "method": "mirrored_walk",
+        "image": "exec-b15bf410-ccbe-4616-a2c1-5e918118bc78.png",
+        "cell": [
+          724,
+          0,
+          1086,
+          362
+        ],
+        "source_state": "WALK_LEFT:3",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0003.png"
+      },
+      "WALK_RIGHT:4": {
+        "method": "mirrored_walk",
+        "image": "exec-b15bf410-ccbe-4616-a2c1-5e918118bc78.png",
+        "cell": [
+          1086,
+          0,
+          1448,
+          362
+        ],
+        "source_state": "WALK_LEFT:4",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0004.png"
+      },
+      "WALK_RIGHT:5": {
+        "method": "mirrored_walk",
+        "image": "exec-b15bf410-ccbe-4616-a2c1-5e918118bc78.png",
+        "cell": [
+          0,
+          362,
+          362,
+          724
+        ],
+        "source_state": "WALK_LEFT:5",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0005.png"
+      },
+      "WALK_RIGHT:6": {
+        "method": "mirrored_walk",
+        "image": "exec-b15bf410-ccbe-4616-a2c1-5e918118bc78.png",
+        "cell": [
+          362,
+          362,
+          724,
+          724
+        ],
+        "source_state": "WALK_LEFT:6",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0006.png"
+      },
+      "WALK_RIGHT:7": {
+        "method": "mirrored_walk",
+        "image": "exec-b15bf410-ccbe-4616-a2c1-5e918118bc78.png",
+        "cell": [
+          724,
+          362,
+          1086,
+          724
+        ],
+        "source_state": "WALK_LEFT:7",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0007.png"
+      },
+      "WALK_RIGHT:8": {
+        "method": "mirrored_walk",
+        "image": "exec-b15bf410-ccbe-4616-a2c1-5e918118bc78.png",
+        "cell": [
+          1086,
+          362,
+          1448,
+          724
+        ],
+        "source_state": "WALK_LEFT:8",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0008.png"
+      },
+      "WALK_RIGHT:9": {
+        "method": "mirrored_walk",
+        "image": "exec-b15bf410-ccbe-4616-a2c1-5e918118bc78.png",
+        "cell": [
+          0,
+          724,
+          362,
+          1086
+        ],
+        "source_state": "WALK_LEFT:9",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0009.png"
+      },
+      "WALK_RIGHT:10": {
+        "method": "mirrored_walk",
+        "image": "exec-b15bf410-ccbe-4616-a2c1-5e918118bc78.png",
+        "cell": [
+          362,
+          724,
+          724,
+          1086
+        ],
+        "source_state": "WALK_LEFT:10",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0010.png"
+      },
+      "WALK_RIGHT:11": {
+        "method": "mirrored_walk",
+        "image": "exec-b15bf410-ccbe-4616-a2c1-5e918118bc78.png",
+        "cell": [
+          724,
+          724,
+          1086,
+          1086
+        ],
+        "source_state": "WALK_LEFT:11",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0011.png"
+      },
+      "WALK_RIGHT:12": {
+        "method": "mirrored_walk",
+        "image": "exec-b15bf410-ccbe-4616-a2c1-5e918118bc78.png",
+        "cell": [
+          1086,
+          724,
+          1448,
+          1086
+        ],
+        "source_state": "WALK_LEFT:12",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0012.png"
+      },
+      "DRINK:1": {
+        "method": "ImageGen",
+        "image": "exec-4afe22dd-3972-49e1-89a0-57a892234cfa.png",
+        "cell": [
+          0,
+          0,
+          768,
+          512
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/DRINK/0001.png"
+      },
+      "DRINK:2": {
+        "method": "ImageGen",
+        "image": "exec-4afe22dd-3972-49e1-89a0-57a892234cfa.png",
+        "cell": [
+          768,
+          0,
+          1536,
+          512
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/DRINK/0002.png"
+      },
+      "DRINK:3": {
+        "method": "ImageGen",
+        "image": "exec-4afe22dd-3972-49e1-89a0-57a892234cfa.png",
+        "cell": [
+          0,
+          512,
+          768,
+          1024
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/DRINK/0003.png"
+      },
+      "DRINK:4": {
+        "method": "ImageGen",
+        "image": "exec-4afe22dd-3972-49e1-89a0-57a892234cfa.png",
+        "cell": [
+          768,
+          512,
+          1536,
+          1024
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/DRINK/0004.png"
+      }
+    },
+    "NPC_VAMPIRE_GIRL_CITY": {
+      "IDLE_N": {
+        "method": "ImageGen",
+        "image": "exec-970e68cc-3da0-4eb6-9ad4-46d767f061de.png",
+        "cell": [
+          0,
+          0,
+          444,
+          444
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/IDLE_N/0001.png"
+      },
+      "IDLE_NE": {
+        "method": "ImageGen",
+        "image": "exec-970e68cc-3da0-4eb6-9ad4-46d767f061de.png",
+        "cell": [
+          444,
+          0,
+          887,
+          444
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/IDLE_NE/0001.png"
+      },
+      "IDLE_E": {
+        "method": "ImageGen",
+        "image": "exec-970e68cc-3da0-4eb6-9ad4-46d767f061de.png",
+        "cell": [
+          887,
+          0,
+          1330,
+          444
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/IDLE_E/0001.png"
+      },
+      "IDLE_SE": {
+        "method": "ImageGen",
+        "image": "exec-970e68cc-3da0-4eb6-9ad4-46d767f061de.png",
+        "cell": [
+          1330,
+          0,
+          1774,
+          444
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/IDLE_SE/0001.png"
+      },
+      "IDLE_S": {
+        "method": "ImageGen",
+        "image": "exec-970e68cc-3da0-4eb6-9ad4-46d767f061de.png",
+        "cell": [
+          0,
+          444,
+          444,
+          887
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/IDLE_S/0001.png"
+      },
+      "IDLE_SW": {
+        "method": "ImageGen",
+        "image": "exec-970e68cc-3da0-4eb6-9ad4-46d767f061de.png",
+        "cell": [
+          444,
+          444,
+          887,
+          887
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/IDLE_SW/0001.png"
+      },
+      "IDLE_W": {
+        "method": "ImageGen",
+        "image": "exec-970e68cc-3da0-4eb6-9ad4-46d767f061de.png",
+        "cell": [
+          887,
+          444,
+          1330,
+          887
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/IDLE_W/0001.png"
+      },
+      "IDLE_NW": {
+        "method": "ImageGen",
+        "image": "exec-970e68cc-3da0-4eb6-9ad4-46d767f061de.png",
+        "cell": [
+          1330,
+          444,
+          1774,
+          887
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/IDLE_NW/0001.png"
+      },
+      "SIT": {
+        "method": "ImageGen",
+        "image": "exec-412eb1e6-3829-498c-b4c8-97ab594cee70.png",
+        "cell": [
+          0,
+          0,
+          512,
+          513
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/SIT/0001.png"
+      },
+      "TALK": {
+        "method": "ImageGen",
+        "image": "exec-412eb1e6-3829-498c-b4c8-97ab594cee70.png",
+        "cell": [
+          512,
+          0,
+          1024,
+          513
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/TALK/0001.png"
+      },
+      "VIEW": {
+        "method": "ImageGen",
+        "image": "exec-412eb1e6-3829-498c-b4c8-97ab594cee70.png",
+        "cell": [
+          1024,
+          0,
+          1536,
+          513
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/VIEW/0001.png"
+      },
+      "READ": {
+        "method": "ImageGen",
+        "image": "exec-412eb1e6-3829-498c-b4c8-97ab594cee70.png",
+        "cell": [
+          0,
+          513,
+          512,
+          1024
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/READ/0001.png"
+      },
+      "CARRY_USE": {
+        "method": "ImageGen",
+        "image": "exec-412eb1e6-3829-498c-b4c8-97ab594cee70.png",
+        "cell": [
+          512,
+          513,
+          1024,
+          1024
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/CARRY_USE/0001.png"
+      },
+      "RELAXED_SIT": {
+        "method": "ImageGen",
+        "image": "exec-412eb1e6-3829-498c-b4c8-97ab594cee70.png",
+        "cell": [
+          1024,
+          513,
+          1536,
+          1024
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/RELAXED_SIT/0001.png"
+      },
+      "SLEEP": {
+        "method": "ImageGen",
+        "image": "exec-3f3abffb-6b5a-4e09-8494-b5ea70c42a1d.png",
+        "cell": [
+          0,
+          0,
+          1173,
+          295
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/SLEEP/0001.png"
+      },
+      "LIE_SIDE_STRAIGHT": {
+        "method": "ImageGen",
+        "image": "exec-3f3abffb-6b5a-4e09-8494-b5ea70c42a1d.png",
+        "cell": [
+          0,
+          295,
+          1173,
+          554
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/LIE_SIDE_STRAIGHT/0001.png"
+      },
+      "LIE_SIDE_CURLED": {
+        "method": "ImageGen",
+        "image": "exec-3f3abffb-6b5a-4e09-8494-b5ea70c42a1d.png",
+        "cell": [
+          0,
+          554,
+          1173,
+          812
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/LIE_SIDE_CURLED/0001.png"
+      },
+      "SIT_HUG_KNEES": {
+        "method": "ImageGen",
+        "image": "exec-3f3abffb-6b5a-4e09-8494-b5ea70c42a1d.png",
+        "cell": [
+          0,
+          812,
+          546,
+          1341
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/SIT_HUG_KNEES/0001.png"
+      },
+      "SIT_LEGS_TUCKED": {
+        "method": "ImageGen",
+        "image": "exec-3f3abffb-6b5a-4e09-8494-b5ea70c42a1d.png",
+        "cell": [
+          546,
+          812,
+          1173,
+          1341
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/SIT_LEGS_TUCKED/0001.png"
+      },
+      "WALK_LEFT:1": {
+        "method": "ImageGen",
+        "image": "exec-5d28be86-bfd1-4aed-abcd-17b48917bf65.png",
+        "cell": [
+          0,
+          0,
+          362,
+          362
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0001.png"
+      },
+      "WALK_LEFT:2": {
+        "method": "ImageGen",
+        "image": "exec-5d28be86-bfd1-4aed-abcd-17b48917bf65.png",
+        "cell": [
+          362,
+          0,
+          724,
+          362
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0002.png"
+      },
+      "WALK_LEFT:3": {
+        "method": "ImageGen",
+        "image": "exec-5d28be86-bfd1-4aed-abcd-17b48917bf65.png",
+        "cell": [
+          724,
+          0,
+          1086,
+          362
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0003.png"
+      },
+      "WALK_LEFT:4": {
+        "method": "ImageGen",
+        "image": "exec-5d28be86-bfd1-4aed-abcd-17b48917bf65.png",
+        "cell": [
+          1086,
+          0,
+          1448,
+          362
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0004.png"
+      },
+      "WALK_LEFT:5": {
+        "method": "ImageGen",
+        "image": "exec-5d28be86-bfd1-4aed-abcd-17b48917bf65.png",
+        "cell": [
+          0,
+          362,
+          362,
+          724
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0005.png"
+      },
+      "WALK_LEFT:6": {
+        "method": "ImageGen",
+        "image": "exec-5d28be86-bfd1-4aed-abcd-17b48917bf65.png",
+        "cell": [
+          362,
+          362,
+          724,
+          724
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0006.png"
+      },
+      "WALK_LEFT:7": {
+        "method": "ImageGen",
+        "image": "exec-5d28be86-bfd1-4aed-abcd-17b48917bf65.png",
+        "cell": [
+          724,
+          362,
+          1086,
+          724
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0007.png"
+      },
+      "WALK_LEFT:8": {
+        "method": "ImageGen",
+        "image": "exec-5d28be86-bfd1-4aed-abcd-17b48917bf65.png",
+        "cell": [
+          1086,
+          362,
+          1448,
+          724
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0008.png"
+      },
+      "WALK_LEFT:9": {
+        "method": "ImageGen",
+        "image": "exec-5d28be86-bfd1-4aed-abcd-17b48917bf65.png",
+        "cell": [
+          0,
+          724,
+          362,
+          1086
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0009.png"
+      },
+      "WALK_LEFT:10": {
+        "method": "ImageGen",
+        "image": "exec-5d28be86-bfd1-4aed-abcd-17b48917bf65.png",
+        "cell": [
+          362,
+          724,
+          724,
+          1086
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0010.png"
+      },
+      "WALK_LEFT:11": {
+        "method": "ImageGen",
+        "image": "exec-5d28be86-bfd1-4aed-abcd-17b48917bf65.png",
+        "cell": [
+          724,
+          724,
+          1086,
+          1086
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0011.png"
+      },
+      "WALK_LEFT:12": {
+        "method": "ImageGen",
+        "image": "exec-5d28be86-bfd1-4aed-abcd-17b48917bf65.png",
+        "cell": [
+          1086,
+          724,
+          1448,
+          1086
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0012.png"
+      },
+      "WALK_RIGHT:1": {
+        "method": "mirrored_walk",
+        "image": "exec-5d28be86-bfd1-4aed-abcd-17b48917bf65.png",
+        "cell": [
+          0,
+          0,
+          362,
+          362
+        ],
+        "source_state": "WALK_LEFT:1",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0001.png"
+      },
+      "WALK_RIGHT:2": {
+        "method": "mirrored_walk",
+        "image": "exec-5d28be86-bfd1-4aed-abcd-17b48917bf65.png",
+        "cell": [
+          362,
+          0,
+          724,
+          362
+        ],
+        "source_state": "WALK_LEFT:2",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0002.png"
+      },
+      "WALK_RIGHT:3": {
+        "method": "mirrored_walk",
+        "image": "exec-5d28be86-bfd1-4aed-abcd-17b48917bf65.png",
+        "cell": [
+          724,
+          0,
+          1086,
+          362
+        ],
+        "source_state": "WALK_LEFT:3",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0003.png"
+      },
+      "WALK_RIGHT:4": {
+        "method": "mirrored_walk",
+        "image": "exec-5d28be86-bfd1-4aed-abcd-17b48917bf65.png",
+        "cell": [
+          1086,
+          0,
+          1448,
+          362
+        ],
+        "source_state": "WALK_LEFT:4",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0004.png"
+      },
+      "WALK_RIGHT:5": {
+        "method": "mirrored_walk",
+        "image": "exec-5d28be86-bfd1-4aed-abcd-17b48917bf65.png",
+        "cell": [
+          0,
+          362,
+          362,
+          724
+        ],
+        "source_state": "WALK_LEFT:5",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0005.png"
+      },
+      "WALK_RIGHT:6": {
+        "method": "mirrored_walk",
+        "image": "exec-5d28be86-bfd1-4aed-abcd-17b48917bf65.png",
+        "cell": [
+          362,
+          362,
+          724,
+          724
+        ],
+        "source_state": "WALK_LEFT:6",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0006.png"
+      },
+      "WALK_RIGHT:7": {
+        "method": "mirrored_walk",
+        "image": "exec-5d28be86-bfd1-4aed-abcd-17b48917bf65.png",
+        "cell": [
+          724,
+          362,
+          1086,
+          724
+        ],
+        "source_state": "WALK_LEFT:7",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0007.png"
+      },
+      "WALK_RIGHT:8": {
+        "method": "mirrored_walk",
+        "image": "exec-5d28be86-bfd1-4aed-abcd-17b48917bf65.png",
+        "cell": [
+          1086,
+          362,
+          1448,
+          724
+        ],
+        "source_state": "WALK_LEFT:8",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0008.png"
+      },
+      "WALK_RIGHT:9": {
+        "method": "mirrored_walk",
+        "image": "exec-5d28be86-bfd1-4aed-abcd-17b48917bf65.png",
+        "cell": [
+          0,
+          724,
+          362,
+          1086
+        ],
+        "source_state": "WALK_LEFT:9",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0009.png"
+      },
+      "WALK_RIGHT:10": {
+        "method": "mirrored_walk",
+        "image": "exec-5d28be86-bfd1-4aed-abcd-17b48917bf65.png",
+        "cell": [
+          362,
+          724,
+          724,
+          1086
+        ],
+        "source_state": "WALK_LEFT:10",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0010.png"
+      },
+      "WALK_RIGHT:11": {
+        "method": "mirrored_walk",
+        "image": "exec-5d28be86-bfd1-4aed-abcd-17b48917bf65.png",
+        "cell": [
+          724,
+          724,
+          1086,
+          1086
+        ],
+        "source_state": "WALK_LEFT:11",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0011.png"
+      },
+      "WALK_RIGHT:12": {
+        "method": "mirrored_walk",
+        "image": "exec-5d28be86-bfd1-4aed-abcd-17b48917bf65.png",
+        "cell": [
+          1086,
+          724,
+          1448,
+          1086
+        ],
+        "source_state": "WALK_LEFT:12",
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0012.png"
+      },
+      "DRINK:1": {
+        "method": "ImageGen",
+        "image": "exec-6b6a3cdb-c74b-412f-99df-b7720214005c.png",
+        "cell": [
+          0,
+          0,
+          768,
+          512
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/DRINK/0001.png"
+      },
+      "DRINK:2": {
+        "method": "ImageGen",
+        "image": "exec-6b6a3cdb-c74b-412f-99df-b7720214005c.png",
+        "cell": [
+          768,
+          0,
+          1536,
+          512
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/DRINK/0002.png"
+      },
+      "DRINK:3": {
+        "method": "ImageGen",
+        "image": "exec-6b6a3cdb-c74b-412f-99df-b7720214005c.png",
+        "cell": [
+          0,
+          512,
+          768,
+          1024
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/DRINK/0003.png"
+      },
+      "DRINK:4": {
+        "method": "ImageGen",
+        "image": "exec-6b6a3cdb-c74b-412f-99df-b7720214005c.png",
+        "cell": [
+          768,
+          512,
+          1536,
+          1024
+        ],
+        "asset": "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/DRINK/0004.png"
+      }
+    },
+    "NPC_CENTAUR_SHORT": {
+      "IDLE_N": {
+        "method": "ImageGen",
+        "image": "exec-0f505dd2-ccb8-4fca-9d0b-f4d8dd1b1752.png",
+        "cell": [
+          0,
+          0,
+          444,
+          444
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/IDLE_N/0001.png"
+      },
+      "IDLE_NE": {
+        "method": "ImageGen",
+        "image": "exec-0f505dd2-ccb8-4fca-9d0b-f4d8dd1b1752.png",
+        "cell": [
+          444,
+          0,
+          887,
+          444
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/IDLE_NE/0001.png"
+      },
+      "IDLE_E": {
+        "method": "ImageGen",
+        "image": "exec-0f505dd2-ccb8-4fca-9d0b-f4d8dd1b1752.png",
+        "cell": [
+          887,
+          0,
+          1330,
+          444
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/IDLE_E/0001.png"
+      },
+      "IDLE_SE": {
+        "method": "ImageGen",
+        "image": "exec-0f505dd2-ccb8-4fca-9d0b-f4d8dd1b1752.png",
+        "cell": [
+          1330,
+          0,
+          1774,
+          444
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/IDLE_SE/0001.png"
+      },
+      "IDLE_S": {
+        "method": "ImageGen",
+        "image": "exec-0f505dd2-ccb8-4fca-9d0b-f4d8dd1b1752.png",
+        "cell": [
+          0,
+          444,
+          444,
+          887
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/IDLE_S/0001.png"
+      },
+      "IDLE_SW": {
+        "method": "ImageGen",
+        "image": "exec-0f505dd2-ccb8-4fca-9d0b-f4d8dd1b1752.png",
+        "cell": [
+          444,
+          444,
+          887,
+          887
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/IDLE_SW/0001.png"
+      },
+      "IDLE_W": {
+        "method": "ImageGen",
+        "image": "exec-0f505dd2-ccb8-4fca-9d0b-f4d8dd1b1752.png",
+        "cell": [
+          887,
+          444,
+          1330,
+          887
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/IDLE_W/0001.png"
+      },
+      "IDLE_NW": {
+        "method": "ImageGen",
+        "image": "exec-0f505dd2-ccb8-4fca-9d0b-f4d8dd1b1752.png",
+        "cell": [
+          1330,
+          444,
+          1774,
+          887
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/IDLE_NW/0001.png"
+      },
+      "SIT": {
+        "method": "ImageGen",
+        "image": "exec-e9572f80-b442-4a09-9f88-f95174aafe33.png",
+        "cell": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/SIT/0001.png"
+      },
+      "TALK": {
+        "method": "ImageGen",
+        "image": "exec-e9572f80-b442-4a09-9f88-f95174aafe33.png",
+        "cell": [
+          512,
+          0,
+          1024,
+          512
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/TALK/0001.png"
+      },
+      "VIEW": {
+        "method": "ImageGen",
+        "image": "exec-e9572f80-b442-4a09-9f88-f95174aafe33.png",
+        "cell": [
+          1024,
+          0,
+          1536,
+          512
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/VIEW/0001.png"
+      },
+      "READ": {
+        "method": "ImageGen",
+        "image": "exec-e9572f80-b442-4a09-9f88-f95174aafe33.png",
+        "cell": [
+          0,
+          512,
+          512,
+          1024
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/READ/0001.png"
+      },
+      "CARRY_USE": {
+        "method": "ImageGen",
+        "image": "exec-e9572f80-b442-4a09-9f88-f95174aafe33.png",
+        "cell": [
+          512,
+          512,
+          1024,
+          1024
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/CARRY_USE/0001.png"
+      },
+      "RELAXED_SIT": {
+        "method": "ImageGen",
+        "image": "exec-e9572f80-b442-4a09-9f88-f95174aafe33.png",
+        "cell": [
+          1024,
+          512,
+          1536,
+          1024
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/RELAXED_SIT/0001.png"
+      },
+      "SLEEP": {
+        "method": "ImageGen",
+        "image": "exec-76d4141d-5d0d-41d5-a805-d7c9e563f4f6.png",
+        "cell": [
+          0,
+          0,
+          1024,
+          338
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/SLEEP/0001.png"
+      },
+      "LIE_SIDE_STRAIGHT": {
+        "method": "ImageGen",
+        "image": "exec-76d4141d-5d0d-41d5-a805-d7c9e563f4f6.png",
+        "cell": [
+          0,
+          338,
+          1024,
+          663
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/LIE_SIDE_STRAIGHT/0001.png"
+      },
+      "LIE_SIDE_CURLED": {
+        "method": "ImageGen",
+        "image": "exec-76d4141d-5d0d-41d5-a805-d7c9e563f4f6.png",
+        "cell": [
+          0,
+          663,
+          1024,
+          990
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/LIE_SIDE_CURLED/0001.png"
+      },
+      "SIT_HUG_KNEES": {
+        "method": "ImageGen",
+        "image": "exec-76d4141d-5d0d-41d5-a805-d7c9e563f4f6.png",
+        "cell": [
+          0,
+          990,
+          473,
+          1536
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/SIT_HUG_KNEES/0001.png"
+      },
+      "SIT_LEGS_TUCKED": {
+        "method": "ImageGen",
+        "image": "exec-76d4141d-5d0d-41d5-a805-d7c9e563f4f6.png",
+        "cell": [
+          473,
+          990,
+          1024,
+          1536
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/SIT_LEGS_TUCKED/0001.png"
+      },
+      "WALK_LEFT:1": {
+        "method": "ImageGen",
+        "image": "exec-6d7cb586-672a-4ea2-9b3d-b9ce27092387.png",
+        "cell": [
+          0,
+          0,
+          362,
+          362
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0001.png"
+      },
+      "WALK_LEFT:2": {
+        "method": "ImageGen",
+        "image": "exec-6d7cb586-672a-4ea2-9b3d-b9ce27092387.png",
+        "cell": [
+          362,
+          0,
+          724,
+          362
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0002.png"
+      },
+      "WALK_LEFT:3": {
+        "method": "ImageGen",
+        "image": "exec-6d7cb586-672a-4ea2-9b3d-b9ce27092387.png",
+        "cell": [
+          724,
+          0,
+          1086,
+          362
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0003.png"
+      },
+      "WALK_LEFT:4": {
+        "method": "ImageGen",
+        "image": "exec-6d7cb586-672a-4ea2-9b3d-b9ce27092387.png",
+        "cell": [
+          1086,
+          0,
+          1448,
+          362
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0004.png"
+      },
+      "WALK_LEFT:5": {
+        "method": "ImageGen",
+        "image": "exec-6d7cb586-672a-4ea2-9b3d-b9ce27092387.png",
+        "cell": [
+          0,
+          362,
+          362,
+          724
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0005.png"
+      },
+      "WALK_LEFT:6": {
+        "method": "ImageGen",
+        "image": "exec-6d7cb586-672a-4ea2-9b3d-b9ce27092387.png",
+        "cell": [
+          362,
+          362,
+          724,
+          724
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0006.png"
+      },
+      "WALK_LEFT:7": {
+        "method": "ImageGen",
+        "image": "exec-6d7cb586-672a-4ea2-9b3d-b9ce27092387.png",
+        "cell": [
+          724,
+          362,
+          1086,
+          724
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0007.png"
+      },
+      "WALK_LEFT:8": {
+        "method": "ImageGen",
+        "image": "exec-6d7cb586-672a-4ea2-9b3d-b9ce27092387.png",
+        "cell": [
+          1086,
+          362,
+          1448,
+          724
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0008.png"
+      },
+      "WALK_LEFT:9": {
+        "method": "ImageGen",
+        "image": "exec-6d7cb586-672a-4ea2-9b3d-b9ce27092387.png",
+        "cell": [
+          0,
+          724,
+          362,
+          1086
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0009.png"
+      },
+      "WALK_LEFT:10": {
+        "method": "ImageGen",
+        "image": "exec-6d7cb586-672a-4ea2-9b3d-b9ce27092387.png",
+        "cell": [
+          362,
+          724,
+          724,
+          1086
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0010.png"
+      },
+      "WALK_LEFT:11": {
+        "method": "ImageGen",
+        "image": "exec-6d7cb586-672a-4ea2-9b3d-b9ce27092387.png",
+        "cell": [
+          724,
+          724,
+          1086,
+          1086
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0011.png"
+      },
+      "WALK_LEFT:12": {
+        "method": "ImageGen",
+        "image": "exec-6d7cb586-672a-4ea2-9b3d-b9ce27092387.png",
+        "cell": [
+          1086,
+          724,
+          1448,
+          1086
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0012.png"
+      },
+      "WALK_RIGHT:1": {
+        "method": "mirrored_walk",
+        "image": "exec-6d7cb586-672a-4ea2-9b3d-b9ce27092387.png",
+        "cell": [
+          0,
+          0,
+          362,
+          362
+        ],
+        "source_state": "WALK_LEFT:1",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0001.png"
+      },
+      "WALK_RIGHT:2": {
+        "method": "mirrored_walk",
+        "image": "exec-6d7cb586-672a-4ea2-9b3d-b9ce27092387.png",
+        "cell": [
+          362,
+          0,
+          724,
+          362
+        ],
+        "source_state": "WALK_LEFT:2",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0002.png"
+      },
+      "WALK_RIGHT:3": {
+        "method": "mirrored_walk",
+        "image": "exec-6d7cb586-672a-4ea2-9b3d-b9ce27092387.png",
+        "cell": [
+          724,
+          0,
+          1086,
+          362
+        ],
+        "source_state": "WALK_LEFT:3",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0003.png"
+      },
+      "WALK_RIGHT:4": {
+        "method": "mirrored_walk",
+        "image": "exec-6d7cb586-672a-4ea2-9b3d-b9ce27092387.png",
+        "cell": [
+          1086,
+          0,
+          1448,
+          362
+        ],
+        "source_state": "WALK_LEFT:4",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0004.png"
+      },
+      "WALK_RIGHT:5": {
+        "method": "mirrored_walk",
+        "image": "exec-6d7cb586-672a-4ea2-9b3d-b9ce27092387.png",
+        "cell": [
+          0,
+          362,
+          362,
+          724
+        ],
+        "source_state": "WALK_LEFT:5",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0005.png"
+      },
+      "WALK_RIGHT:6": {
+        "method": "mirrored_walk",
+        "image": "exec-6d7cb586-672a-4ea2-9b3d-b9ce27092387.png",
+        "cell": [
+          362,
+          362,
+          724,
+          724
+        ],
+        "source_state": "WALK_LEFT:6",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0006.png"
+      },
+      "WALK_RIGHT:7": {
+        "method": "mirrored_walk",
+        "image": "exec-6d7cb586-672a-4ea2-9b3d-b9ce27092387.png",
+        "cell": [
+          724,
+          362,
+          1086,
+          724
+        ],
+        "source_state": "WALK_LEFT:7",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0007.png"
+      },
+      "WALK_RIGHT:8": {
+        "method": "mirrored_walk",
+        "image": "exec-6d7cb586-672a-4ea2-9b3d-b9ce27092387.png",
+        "cell": [
+          1086,
+          362,
+          1448,
+          724
+        ],
+        "source_state": "WALK_LEFT:8",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0008.png"
+      },
+      "WALK_RIGHT:9": {
+        "method": "mirrored_walk",
+        "image": "exec-6d7cb586-672a-4ea2-9b3d-b9ce27092387.png",
+        "cell": [
+          0,
+          724,
+          362,
+          1086
+        ],
+        "source_state": "WALK_LEFT:9",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0009.png"
+      },
+      "WALK_RIGHT:10": {
+        "method": "mirrored_walk",
+        "image": "exec-6d7cb586-672a-4ea2-9b3d-b9ce27092387.png",
+        "cell": [
+          362,
+          724,
+          724,
+          1086
+        ],
+        "source_state": "WALK_LEFT:10",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0010.png"
+      },
+      "WALK_RIGHT:11": {
+        "method": "mirrored_walk",
+        "image": "exec-6d7cb586-672a-4ea2-9b3d-b9ce27092387.png",
+        "cell": [
+          724,
+          724,
+          1086,
+          1086
+        ],
+        "source_state": "WALK_LEFT:11",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0011.png"
+      },
+      "WALK_RIGHT:12": {
+        "method": "mirrored_walk",
+        "image": "exec-6d7cb586-672a-4ea2-9b3d-b9ce27092387.png",
+        "cell": [
+          1086,
+          724,
+          1448,
+          1086
+        ],
+        "source_state": "WALK_LEFT:12",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0012.png"
+      },
+      "DRINK:1": {
+        "method": "ImageGen",
+        "image": "exec-3a069afc-bd23-47e7-a0f8-5f64714ccbe6.png",
+        "cell": [
+          0,
+          0,
+          600,
+          656
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/DRINK/0001.png"
+      },
+      "DRINK:2": {
+        "method": "ImageGen",
+        "image": "exec-3a069afc-bd23-47e7-a0f8-5f64714ccbe6.png",
+        "cell": [
+          600,
+          0,
+          1199,
+          656
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/DRINK/0002.png"
+      },
+      "DRINK:3": {
+        "method": "ImageGen",
+        "image": "exec-3a069afc-bd23-47e7-a0f8-5f64714ccbe6.png",
+        "cell": [
+          0,
+          656,
+          600,
+          1312
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/DRINK/0003.png"
+      },
+      "DRINK:4": {
+        "method": "ImageGen",
+        "image": "exec-3a069afc-bd23-47e7-a0f8-5f64714ccbe6.png",
+        "cell": [
+          600,
+          656,
+          1199,
+          1312
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/SHORT/DRINK/0004.png"
+      },
+      "IDENTITY": {
+        "method": "ImageGen",
+        "image": "exec-0f505dd2-ccb8-4fca-9d0b-f4d8dd1b1752.png",
+        "cell": [
+          0,
+          444,
+          444,
+          887
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/identity/front_0001.png"
+      }
+    },
+    "NPC_CENTAUR_HOME": {
+      "IDLE_N": {
+        "method": "ImageGen",
+        "image": "exec-c39b970e-6867-4f57-88c6-9a552e7f3da7.png",
+        "cell": [
+          0,
+          0,
+          444,
+          444
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/IDLE_N/0001.png"
+      },
+      "IDLE_NE": {
+        "method": "ImageGen",
+        "image": "exec-c39b970e-6867-4f57-88c6-9a552e7f3da7.png",
+        "cell": [
+          444,
+          0,
+          887,
+          444
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/IDLE_NE/0001.png"
+      },
+      "IDLE_E": {
+        "method": "ImageGen",
+        "image": "exec-c39b970e-6867-4f57-88c6-9a552e7f3da7.png",
+        "cell": [
+          887,
+          0,
+          1330,
+          444
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/IDLE_E/0001.png"
+      },
+      "IDLE_SE": {
+        "method": "ImageGen",
+        "image": "exec-c39b970e-6867-4f57-88c6-9a552e7f3da7.png",
+        "cell": [
+          1330,
+          0,
+          1774,
+          444
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/IDLE_SE/0001.png"
+      },
+      "IDLE_S": {
+        "method": "ImageGen",
+        "image": "exec-c39b970e-6867-4f57-88c6-9a552e7f3da7.png",
+        "cell": [
+          0,
+          444,
+          444,
+          887
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/IDLE_S/0001.png"
+      },
+      "IDLE_SW": {
+        "method": "ImageGen",
+        "image": "exec-c39b970e-6867-4f57-88c6-9a552e7f3da7.png",
+        "cell": [
+          444,
+          444,
+          887,
+          887
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/IDLE_SW/0001.png"
+      },
+      "IDLE_W": {
+        "method": "ImageGen",
+        "image": "exec-c39b970e-6867-4f57-88c6-9a552e7f3da7.png",
+        "cell": [
+          887,
+          444,
+          1330,
+          887
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/IDLE_W/0001.png"
+      },
+      "IDLE_NW": {
+        "method": "ImageGen",
+        "image": "exec-c39b970e-6867-4f57-88c6-9a552e7f3da7.png",
+        "cell": [
+          1330,
+          444,
+          1774,
+          887
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/IDLE_NW/0001.png"
+      },
+      "SIT": {
+        "method": "ImageGen",
+        "image": "exec-863ff0b0-cbce-474e-80df-70bda9f10f18.png",
+        "cell": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/SIT/0001.png"
+      },
+      "TALK": {
+        "method": "ImageGen",
+        "image": "exec-863ff0b0-cbce-474e-80df-70bda9f10f18.png",
+        "cell": [
+          512,
+          0,
+          1024,
+          512
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/TALK/0001.png"
+      },
+      "VIEW": {
+        "method": "ImageGen",
+        "image": "exec-863ff0b0-cbce-474e-80df-70bda9f10f18.png",
+        "cell": [
+          1024,
+          0,
+          1536,
+          512
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/VIEW/0001.png"
+      },
+      "READ": {
+        "method": "ImageGen",
+        "image": "exec-863ff0b0-cbce-474e-80df-70bda9f10f18.png",
+        "cell": [
+          0,
+          512,
+          512,
+          1024
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/READ/0001.png"
+      },
+      "CARRY_USE": {
+        "method": "ImageGen",
+        "image": "exec-863ff0b0-cbce-474e-80df-70bda9f10f18.png",
+        "cell": [
+          512,
+          512,
+          1024,
+          1024
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/CARRY_USE/0001.png"
+      },
+      "RELAXED_SIT": {
+        "method": "ImageGen",
+        "image": "exec-863ff0b0-cbce-474e-80df-70bda9f10f18.png",
+        "cell": [
+          1024,
+          512,
+          1536,
+          1024
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/RELAXED_SIT/0001.png"
+      },
+      "SLEEP": {
+        "method": "ImageGen",
+        "image": "exec-2440dc74-fdf9-4ba0-adba-933cf60308a4.png",
+        "cell": [
+          0,
+          0,
+          1024,
+          338
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/SLEEP/0001.png"
+      },
+      "LIE_SIDE_STRAIGHT": {
+        "method": "ImageGen",
+        "image": "exec-2440dc74-fdf9-4ba0-adba-933cf60308a4.png",
+        "cell": [
+          0,
+          338,
+          1024,
+          645
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/LIE_SIDE_STRAIGHT/0001.png"
+      },
+      "LIE_SIDE_CURLED": {
+        "method": "ImageGen",
+        "image": "exec-2440dc74-fdf9-4ba0-adba-933cf60308a4.png",
+        "cell": [
+          0,
+          645,
+          1024,
+          969
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/LIE_SIDE_CURLED/0001.png"
+      },
+      "SIT_HUG_KNEES": {
+        "method": "ImageGen",
+        "image": "exec-2440dc74-fdf9-4ba0-adba-933cf60308a4.png",
+        "cell": [
+          0,
+          969,
+          494,
+          1536
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/SIT_HUG_KNEES/0001.png"
+      },
+      "SIT_LEGS_TUCKED": {
+        "method": "ImageGen",
+        "image": "exec-2440dc74-fdf9-4ba0-adba-933cf60308a4.png",
+        "cell": [
+          494,
+          969,
+          1024,
+          1536
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/SIT_LEGS_TUCKED/0001.png"
+      },
+      "WALK_LEFT:1": {
+        "method": "ImageGen",
+        "image": "exec-06c14754-5740-4363-9f0f-0c57972a847a.png",
+        "cell": [
+          0,
+          0,
+          362,
+          362
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0001.png"
+      },
+      "WALK_LEFT:2": {
+        "method": "ImageGen",
+        "image": "exec-06c14754-5740-4363-9f0f-0c57972a847a.png",
+        "cell": [
+          362,
+          0,
+          724,
+          362
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0002.png"
+      },
+      "WALK_LEFT:3": {
+        "method": "ImageGen",
+        "image": "exec-06c14754-5740-4363-9f0f-0c57972a847a.png",
+        "cell": [
+          724,
+          0,
+          1086,
+          362
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0003.png"
+      },
+      "WALK_LEFT:4": {
+        "method": "ImageGen",
+        "image": "exec-06c14754-5740-4363-9f0f-0c57972a847a.png",
+        "cell": [
+          1086,
+          0,
+          1448,
+          362
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0004.png"
+      },
+      "WALK_LEFT:5": {
+        "method": "ImageGen",
+        "image": "exec-06c14754-5740-4363-9f0f-0c57972a847a.png",
+        "cell": [
+          0,
+          362,
+          362,
+          724
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0005.png"
+      },
+      "WALK_LEFT:6": {
+        "method": "ImageGen",
+        "image": "exec-06c14754-5740-4363-9f0f-0c57972a847a.png",
+        "cell": [
+          362,
+          362,
+          724,
+          724
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0006.png"
+      },
+      "WALK_LEFT:7": {
+        "method": "ImageGen",
+        "image": "exec-06c14754-5740-4363-9f0f-0c57972a847a.png",
+        "cell": [
+          724,
+          362,
+          1086,
+          724
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0007.png"
+      },
+      "WALK_LEFT:8": {
+        "method": "ImageGen",
+        "image": "exec-06c14754-5740-4363-9f0f-0c57972a847a.png",
+        "cell": [
+          1086,
+          362,
+          1448,
+          724
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0008.png"
+      },
+      "WALK_LEFT:9": {
+        "method": "ImageGen",
+        "image": "exec-06c14754-5740-4363-9f0f-0c57972a847a.png",
+        "cell": [
+          0,
+          724,
+          362,
+          1086
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0009.png"
+      },
+      "WALK_LEFT:10": {
+        "method": "ImageGen",
+        "image": "exec-06c14754-5740-4363-9f0f-0c57972a847a.png",
+        "cell": [
+          362,
+          724,
+          724,
+          1086
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0010.png"
+      },
+      "WALK_LEFT:11": {
+        "method": "ImageGen",
+        "image": "exec-06c14754-5740-4363-9f0f-0c57972a847a.png",
+        "cell": [
+          724,
+          724,
+          1086,
+          1086
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0011.png"
+      },
+      "WALK_LEFT:12": {
+        "method": "ImageGen",
+        "image": "exec-06c14754-5740-4363-9f0f-0c57972a847a.png",
+        "cell": [
+          1086,
+          724,
+          1448,
+          1086
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0012.png"
+      },
+      "WALK_RIGHT:1": {
+        "method": "mirrored_walk",
+        "image": "exec-06c14754-5740-4363-9f0f-0c57972a847a.png",
+        "cell": [
+          0,
+          0,
+          362,
+          362
+        ],
+        "source_state": "WALK_LEFT:1",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0001.png"
+      },
+      "WALK_RIGHT:2": {
+        "method": "mirrored_walk",
+        "image": "exec-06c14754-5740-4363-9f0f-0c57972a847a.png",
+        "cell": [
+          362,
+          0,
+          724,
+          362
+        ],
+        "source_state": "WALK_LEFT:2",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0002.png"
+      },
+      "WALK_RIGHT:3": {
+        "method": "mirrored_walk",
+        "image": "exec-06c14754-5740-4363-9f0f-0c57972a847a.png",
+        "cell": [
+          724,
+          0,
+          1086,
+          362
+        ],
+        "source_state": "WALK_LEFT:3",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0003.png"
+      },
+      "WALK_RIGHT:4": {
+        "method": "mirrored_walk",
+        "image": "exec-06c14754-5740-4363-9f0f-0c57972a847a.png",
+        "cell": [
+          1086,
+          0,
+          1448,
+          362
+        ],
+        "source_state": "WALK_LEFT:4",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0004.png"
+      },
+      "WALK_RIGHT:5": {
+        "method": "mirrored_walk",
+        "image": "exec-06c14754-5740-4363-9f0f-0c57972a847a.png",
+        "cell": [
+          0,
+          362,
+          362,
+          724
+        ],
+        "source_state": "WALK_LEFT:5",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0005.png"
+      },
+      "WALK_RIGHT:6": {
+        "method": "mirrored_walk",
+        "image": "exec-06c14754-5740-4363-9f0f-0c57972a847a.png",
+        "cell": [
+          362,
+          362,
+          724,
+          724
+        ],
+        "source_state": "WALK_LEFT:6",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0006.png"
+      },
+      "WALK_RIGHT:7": {
+        "method": "mirrored_walk",
+        "image": "exec-06c14754-5740-4363-9f0f-0c57972a847a.png",
+        "cell": [
+          724,
+          362,
+          1086,
+          724
+        ],
+        "source_state": "WALK_LEFT:7",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0007.png"
+      },
+      "WALK_RIGHT:8": {
+        "method": "mirrored_walk",
+        "image": "exec-06c14754-5740-4363-9f0f-0c57972a847a.png",
+        "cell": [
+          1086,
+          362,
+          1448,
+          724
+        ],
+        "source_state": "WALK_LEFT:8",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0008.png"
+      },
+      "WALK_RIGHT:9": {
+        "method": "mirrored_walk",
+        "image": "exec-06c14754-5740-4363-9f0f-0c57972a847a.png",
+        "cell": [
+          0,
+          724,
+          362,
+          1086
+        ],
+        "source_state": "WALK_LEFT:9",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0009.png"
+      },
+      "WALK_RIGHT:10": {
+        "method": "mirrored_walk",
+        "image": "exec-06c14754-5740-4363-9f0f-0c57972a847a.png",
+        "cell": [
+          362,
+          724,
+          724,
+          1086
+        ],
+        "source_state": "WALK_LEFT:10",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0010.png"
+      },
+      "WALK_RIGHT:11": {
+        "method": "mirrored_walk",
+        "image": "exec-06c14754-5740-4363-9f0f-0c57972a847a.png",
+        "cell": [
+          724,
+          724,
+          1086,
+          1086
+        ],
+        "source_state": "WALK_LEFT:11",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0011.png"
+      },
+      "WALK_RIGHT:12": {
+        "method": "mirrored_walk",
+        "image": "exec-06c14754-5740-4363-9f0f-0c57972a847a.png",
+        "cell": [
+          1086,
+          724,
+          1448,
+          1086
+        ],
+        "source_state": "WALK_LEFT:12",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0012.png"
+      },
+      "DRINK:1": {
+        "method": "ImageGen",
+        "image": "exec-215bf8ad-4da0-4aa4-bc5c-303a9791ef8f.png",
+        "cell": [
+          0,
+          0,
+          600,
+          656
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/DRINK/0001.png"
+      },
+      "DRINK:2": {
+        "method": "ImageGen",
+        "image": "exec-215bf8ad-4da0-4aa4-bc5c-303a9791ef8f.png",
+        "cell": [
+          600,
+          0,
+          1199,
+          656
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/DRINK/0002.png"
+      },
+      "DRINK:3": {
+        "method": "ImageGen",
+        "image": "exec-215bf8ad-4da0-4aa4-bc5c-303a9791ef8f.png",
+        "cell": [
+          0,
+          656,
+          600,
+          1312
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/DRINK/0003.png"
+      },
+      "DRINK:4": {
+        "method": "ImageGen",
+        "image": "exec-215bf8ad-4da0-4aa4-bc5c-303a9791ef8f.png",
+        "cell": [
+          600,
+          656,
+          1199,
+          1312
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/HOME/DRINK/0004.png"
+      }
+    },
+    "NPC_CENTAUR_CITY": {
+      "IDLE_N": {
+        "method": "ImageGen",
+        "image": "exec-dbac2311-fed9-4880-8b75-9d6212850381.png",
+        "cell": [
+          0,
+          0,
+          444,
+          444
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/IDLE_N/0001.png"
+      },
+      "IDLE_NE": {
+        "method": "ImageGen",
+        "image": "exec-dbac2311-fed9-4880-8b75-9d6212850381.png",
+        "cell": [
+          444,
+          0,
+          887,
+          444
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/IDLE_NE/0001.png"
+      },
+      "IDLE_E": {
+        "method": "ImageGen",
+        "image": "exec-dbac2311-fed9-4880-8b75-9d6212850381.png",
+        "cell": [
+          887,
+          0,
+          1330,
+          444
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/IDLE_E/0001.png"
+      },
+      "IDLE_SE": {
+        "method": "ImageGen",
+        "image": "exec-dbac2311-fed9-4880-8b75-9d6212850381.png",
+        "cell": [
+          1330,
+          0,
+          1774,
+          444
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/IDLE_SE/0001.png"
+      },
+      "IDLE_S": {
+        "method": "ImageGen",
+        "image": "exec-dbac2311-fed9-4880-8b75-9d6212850381.png",
+        "cell": [
+          0,
+          444,
+          444,
+          887
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/IDLE_S/0001.png"
+      },
+      "IDLE_SW": {
+        "method": "ImageGen",
+        "image": "exec-dbac2311-fed9-4880-8b75-9d6212850381.png",
+        "cell": [
+          444,
+          444,
+          887,
+          887
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/IDLE_SW/0001.png"
+      },
+      "IDLE_W": {
+        "method": "ImageGen",
+        "image": "exec-dbac2311-fed9-4880-8b75-9d6212850381.png",
+        "cell": [
+          887,
+          444,
+          1330,
+          887
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/IDLE_W/0001.png"
+      },
+      "IDLE_NW": {
+        "method": "ImageGen",
+        "image": "exec-dbac2311-fed9-4880-8b75-9d6212850381.png",
+        "cell": [
+          1330,
+          444,
+          1774,
+          887
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/IDLE_NW/0001.png"
+      },
+      "SIT": {
+        "method": "ImageGen",
+        "image": "exec-943bb0d8-fd9a-423e-a47b-1fefb96f6fbf.png",
+        "cell": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/SIT/0001.png"
+      },
+      "TALK": {
+        "method": "ImageGen",
+        "image": "exec-943bb0d8-fd9a-423e-a47b-1fefb96f6fbf.png",
+        "cell": [
+          512,
+          0,
+          1024,
+          512
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/TALK/0001.png"
+      },
+      "VIEW": {
+        "method": "ImageGen",
+        "image": "exec-943bb0d8-fd9a-423e-a47b-1fefb96f6fbf.png",
+        "cell": [
+          1024,
+          0,
+          1536,
+          512
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/VIEW/0001.png"
+      },
+      "READ": {
+        "method": "ImageGen",
+        "image": "exec-943bb0d8-fd9a-423e-a47b-1fefb96f6fbf.png",
+        "cell": [
+          0,
+          512,
+          512,
+          1024
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/READ/0001.png"
+      },
+      "CARRY_USE": {
+        "method": "ImageGen",
+        "image": "exec-943bb0d8-fd9a-423e-a47b-1fefb96f6fbf.png",
+        "cell": [
+          512,
+          512,
+          1024,
+          1024
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/CARRY_USE/0001.png"
+      },
+      "RELAXED_SIT": {
+        "method": "ImageGen",
+        "image": "exec-943bb0d8-fd9a-423e-a47b-1fefb96f6fbf.png",
+        "cell": [
+          1024,
+          512,
+          1536,
+          1024
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/RELAXED_SIT/0001.png"
+      },
+      "SLEEP": {
+        "method": "ImageGen",
+        "image": "exec-8fa0cf8a-42de-4f12-9084-37b469dd4a3d.png",
+        "cell": [
+          0,
+          0,
+          1024,
+          381
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/SLEEP/0001.png"
+      },
+      "LIE_SIDE_STRAIGHT": {
+        "method": "ImageGen",
+        "image": "exec-8fa0cf8a-42de-4f12-9084-37b469dd4a3d.png",
+        "cell": [
+          0,
+          381,
+          1024,
+          696
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/LIE_SIDE_STRAIGHT/0001.png"
+      },
+      "LIE_SIDE_CURLED": {
+        "method": "ImageGen",
+        "image": "exec-8fa0cf8a-42de-4f12-9084-37b469dd4a3d.png",
+        "cell": [
+          0,
+          696,
+          1024,
+          1016
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/LIE_SIDE_CURLED/0001.png"
+      },
+      "SIT_HUG_KNEES": {
+        "method": "ImageGen",
+        "image": "exec-8fa0cf8a-42de-4f12-9084-37b469dd4a3d.png",
+        "cell": [
+          0,
+          1016,
+          464,
+          1536
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/SIT_HUG_KNEES/0001.png"
+      },
+      "SIT_LEGS_TUCKED": {
+        "method": "ImageGen",
+        "image": "exec-8fa0cf8a-42de-4f12-9084-37b469dd4a3d.png",
+        "cell": [
+          464,
+          1016,
+          1024,
+          1536
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/SIT_LEGS_TUCKED/0001.png"
+      },
+      "WALK_LEFT:1": {
+        "method": "ImageGen",
+        "image": "exec-808caeee-ede0-4f68-8f9b-557f2829d199.png",
+        "cell": [
+          0,
+          0,
+          362,
+          362
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0001.png"
+      },
+      "WALK_LEFT:2": {
+        "method": "ImageGen",
+        "image": "exec-808caeee-ede0-4f68-8f9b-557f2829d199.png",
+        "cell": [
+          362,
+          0,
+          724,
+          362
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0002.png"
+      },
+      "WALK_LEFT:3": {
+        "method": "ImageGen",
+        "image": "exec-808caeee-ede0-4f68-8f9b-557f2829d199.png",
+        "cell": [
+          724,
+          0,
+          1086,
+          362
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0003.png"
+      },
+      "WALK_LEFT:4": {
+        "method": "ImageGen",
+        "image": "exec-808caeee-ede0-4f68-8f9b-557f2829d199.png",
+        "cell": [
+          1086,
+          0,
+          1448,
+          362
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0004.png"
+      },
+      "WALK_LEFT:5": {
+        "method": "ImageGen",
+        "image": "exec-808caeee-ede0-4f68-8f9b-557f2829d199.png",
+        "cell": [
+          0,
+          362,
+          362,
+          724
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0005.png"
+      },
+      "WALK_LEFT:6": {
+        "method": "ImageGen",
+        "image": "exec-808caeee-ede0-4f68-8f9b-557f2829d199.png",
+        "cell": [
+          362,
+          362,
+          724,
+          724
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0006.png"
+      },
+      "WALK_LEFT:7": {
+        "method": "ImageGen",
+        "image": "exec-808caeee-ede0-4f68-8f9b-557f2829d199.png",
+        "cell": [
+          724,
+          362,
+          1086,
+          724
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0007.png"
+      },
+      "WALK_LEFT:8": {
+        "method": "ImageGen",
+        "image": "exec-808caeee-ede0-4f68-8f9b-557f2829d199.png",
+        "cell": [
+          1086,
+          362,
+          1448,
+          724
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0008.png"
+      },
+      "WALK_LEFT:9": {
+        "method": "ImageGen",
+        "image": "exec-808caeee-ede0-4f68-8f9b-557f2829d199.png",
+        "cell": [
+          0,
+          724,
+          362,
+          1086
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0009.png"
+      },
+      "WALK_LEFT:10": {
+        "method": "ImageGen",
+        "image": "exec-808caeee-ede0-4f68-8f9b-557f2829d199.png",
+        "cell": [
+          362,
+          724,
+          724,
+          1086
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0010.png"
+      },
+      "WALK_LEFT:11": {
+        "method": "ImageGen",
+        "image": "exec-808caeee-ede0-4f68-8f9b-557f2829d199.png",
+        "cell": [
+          724,
+          724,
+          1086,
+          1086
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0011.png"
+      },
+      "WALK_LEFT:12": {
+        "method": "ImageGen",
+        "image": "exec-808caeee-ede0-4f68-8f9b-557f2829d199.png",
+        "cell": [
+          1086,
+          724,
+          1448,
+          1086
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0012.png"
+      },
+      "WALK_RIGHT:1": {
+        "method": "mirrored_walk",
+        "image": "exec-808caeee-ede0-4f68-8f9b-557f2829d199.png",
+        "cell": [
+          0,
+          0,
+          362,
+          362
+        ],
+        "source_state": "WALK_LEFT:1",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0001.png"
+      },
+      "WALK_RIGHT:2": {
+        "method": "mirrored_walk",
+        "image": "exec-808caeee-ede0-4f68-8f9b-557f2829d199.png",
+        "cell": [
+          362,
+          0,
+          724,
+          362
+        ],
+        "source_state": "WALK_LEFT:2",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0002.png"
+      },
+      "WALK_RIGHT:3": {
+        "method": "mirrored_walk",
+        "image": "exec-808caeee-ede0-4f68-8f9b-557f2829d199.png",
+        "cell": [
+          724,
+          0,
+          1086,
+          362
+        ],
+        "source_state": "WALK_LEFT:3",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0003.png"
+      },
+      "WALK_RIGHT:4": {
+        "method": "mirrored_walk",
+        "image": "exec-808caeee-ede0-4f68-8f9b-557f2829d199.png",
+        "cell": [
+          1086,
+          0,
+          1448,
+          362
+        ],
+        "source_state": "WALK_LEFT:4",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0004.png"
+      },
+      "WALK_RIGHT:5": {
+        "method": "mirrored_walk",
+        "image": "exec-808caeee-ede0-4f68-8f9b-557f2829d199.png",
+        "cell": [
+          0,
+          362,
+          362,
+          724
+        ],
+        "source_state": "WALK_LEFT:5",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0005.png"
+      },
+      "WALK_RIGHT:6": {
+        "method": "mirrored_walk",
+        "image": "exec-808caeee-ede0-4f68-8f9b-557f2829d199.png",
+        "cell": [
+          362,
+          362,
+          724,
+          724
+        ],
+        "source_state": "WALK_LEFT:6",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0006.png"
+      },
+      "WALK_RIGHT:7": {
+        "method": "mirrored_walk",
+        "image": "exec-808caeee-ede0-4f68-8f9b-557f2829d199.png",
+        "cell": [
+          724,
+          362,
+          1086,
+          724
+        ],
+        "source_state": "WALK_LEFT:7",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0007.png"
+      },
+      "WALK_RIGHT:8": {
+        "method": "mirrored_walk",
+        "image": "exec-808caeee-ede0-4f68-8f9b-557f2829d199.png",
+        "cell": [
+          1086,
+          362,
+          1448,
+          724
+        ],
+        "source_state": "WALK_LEFT:8",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0008.png"
+      },
+      "WALK_RIGHT:9": {
+        "method": "mirrored_walk",
+        "image": "exec-808caeee-ede0-4f68-8f9b-557f2829d199.png",
+        "cell": [
+          0,
+          724,
+          362,
+          1086
+        ],
+        "source_state": "WALK_LEFT:9",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0009.png"
+      },
+      "WALK_RIGHT:10": {
+        "method": "mirrored_walk",
+        "image": "exec-808caeee-ede0-4f68-8f9b-557f2829d199.png",
+        "cell": [
+          362,
+          724,
+          724,
+          1086
+        ],
+        "source_state": "WALK_LEFT:10",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0010.png"
+      },
+      "WALK_RIGHT:11": {
+        "method": "mirrored_walk",
+        "image": "exec-808caeee-ede0-4f68-8f9b-557f2829d199.png",
+        "cell": [
+          724,
+          724,
+          1086,
+          1086
+        ],
+        "source_state": "WALK_LEFT:11",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0011.png"
+      },
+      "WALK_RIGHT:12": {
+        "method": "mirrored_walk",
+        "image": "exec-808caeee-ede0-4f68-8f9b-557f2829d199.png",
+        "cell": [
+          1086,
+          724,
+          1448,
+          1086
+        ],
+        "source_state": "WALK_LEFT:12",
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0012.png"
+      },
+      "DRINK:1": {
+        "method": "ImageGen",
+        "image": "exec-ef313b1b-a4fd-4f42-80af-bf3860ee6d39.png",
+        "cell": [
+          0,
+          0,
+          600,
+          656
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/DRINK/0001.png"
+      },
+      "DRINK:2": {
+        "method": "ImageGen",
+        "image": "exec-ef313b1b-a4fd-4f42-80af-bf3860ee6d39.png",
+        "cell": [
+          600,
+          0,
+          1199,
+          656
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/DRINK/0002.png"
+      },
+      "DRINK:3": {
+        "method": "ImageGen",
+        "image": "exec-ef313b1b-a4fd-4f42-80af-bf3860ee6d39.png",
+        "cell": [
+          0,
+          656,
+          600,
+          1312
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/DRINK/0003.png"
+      },
+      "DRINK:4": {
+        "method": "ImageGen",
+        "image": "exec-ef313b1b-a4fd-4f42-80af-bf3860ee6d39.png",
+        "cell": [
+          600,
+          656,
+          1199,
+          1312
+        ],
+        "asset": "assets/residents/NPC_CENTAUR/wardrobes/CITY/DRINK/0004.png"
+      }
+    },
+    "npc_ai_magic_sphere": {
+      "FRONT": {
+        "method": "ImageGen",
+        "image": "exec-b8a5571b-eccb-4e58-b642-7dd439d9e70e.png",
+        "cell": [
+          0,
+          0,
+          415,
+          421
+        ],
+        "asset": "assets/creatures/npc_ai_magic_sphere/identity/front_0001.png"
+      },
+      "IDLE_LEFT": {
+        "method": "ImageGen",
+        "image": "exec-b8a5571b-eccb-4e58-b642-7dd439d9e70e.png",
+        "cell": [
+          415,
+          0,
+          830,
+          421
+        ],
+        "asset": "assets/creatures/npc_ai_magic_sphere/idle/idle_left_0001.png"
+      },
+      "IDLE_RIGHT": {
+        "method": "mirrored_idle",
+        "image": "exec-b8a5571b-eccb-4e58-b642-7dd439d9e70e.png",
+        "cell": [
+          415,
+          0,
+          830,
+          421
+        ],
+        "source_state": "IDLE_LEFT",
+        "asset": "assets/creatures/npc_ai_magic_sphere/idle/idle_right_0001.png"
+      },
+      "SIT": {
+        "method": "ImageGen",
+        "image": "exec-b8a5571b-eccb-4e58-b642-7dd439d9e70e.png",
+        "cell": [
+          0,
+          421,
+          415,
+          842
+        ],
+        "asset": "assets/creatures/npc_ai_magic_sphere/rest/sit_0001.png"
+      },
+      "REST": {
+        "method": "ImageGen",
+        "image": "exec-b8a5571b-eccb-4e58-b642-7dd439d9e70e.png",
+        "cell": [
+          415,
+          421,
+          830,
+          842
+        ],
+        "asset": "assets/creatures/npc_ai_magic_sphere/rest/rest_0001.png"
+      },
+      "WALK_LEFT:1": {
+        "method": "ImageGen",
+        "image": "exec-b8a5571b-eccb-4e58-b642-7dd439d9e70e.png",
+        "cell": [
+          830,
+          421,
+          1245,
+          842
+        ],
+        "asset": "assets/creatures/npc_ai_magic_sphere/walk_left/walk_left_0001.png"
+      },
+      "WALK_LEFT:2": {
+        "method": "ImageGen",
+        "image": "exec-b8a5571b-eccb-4e58-b642-7dd439d9e70e.png",
+        "cell": [
+          0,
+          842,
+          415,
+          1263
+        ],
+        "asset": "assets/creatures/npc_ai_magic_sphere/walk_left/walk_left_0002.png"
+      },
+      "WALK_LEFT:3": {
+        "method": "ImageGen",
+        "image": "exec-b8a5571b-eccb-4e58-b642-7dd439d9e70e.png",
+        "cell": [
+          415,
+          842,
+          830,
+          1263
+        ],
+        "asset": "assets/creatures/npc_ai_magic_sphere/walk_left/walk_left_0003.png"
+      },
+      "WALK_LEFT:4": {
+        "method": "ImageGen",
+        "image": "exec-b8a5571b-eccb-4e58-b642-7dd439d9e70e.png",
+        "cell": [
+          830,
+          842,
+          1245,
+          1263
+        ],
+        "asset": "assets/creatures/npc_ai_magic_sphere/walk_left/walk_left_0004.png"
+      },
+      "WALK_RIGHT:1": {
+        "method": "mirrored_walk",
+        "image": "exec-b8a5571b-eccb-4e58-b642-7dd439d9e70e.png",
+        "cell": [
+          830,
+          421,
+          1245,
+          842
+        ],
+        "source_state": "WALK_LEFT:1",
+        "asset": "assets/creatures/npc_ai_magic_sphere/walk_right/walk_right_0001.png"
+      },
+      "WALK_RIGHT:2": {
+        "method": "mirrored_walk",
+        "image": "exec-b8a5571b-eccb-4e58-b642-7dd439d9e70e.png",
+        "cell": [
+          0,
+          842,
+          415,
+          1263
+        ],
+        "source_state": "WALK_LEFT:2",
+        "asset": "assets/creatures/npc_ai_magic_sphere/walk_right/walk_right_0002.png"
+      },
+      "WALK_RIGHT:3": {
+        "method": "mirrored_walk",
+        "image": "exec-b8a5571b-eccb-4e58-b642-7dd439d9e70e.png",
+        "cell": [
+          415,
+          842,
+          830,
+          1263
+        ],
+        "source_state": "WALK_LEFT:3",
+        "asset": "assets/creatures/npc_ai_magic_sphere/walk_right/walk_right_0003.png"
+      },
+      "WALK_RIGHT:4": {
+        "method": "mirrored_walk",
+        "image": "exec-b8a5571b-eccb-4e58-b642-7dd439d9e70e.png",
+        "cell": [
+          830,
+          842,
+          1245,
+          1263
+        ],
+        "source_state": "WALK_LEFT:4",
+        "asset": "assets/creatures/npc_ai_magic_sphere/walk_right/walk_right_0004.png"
+      }
+    },
+    "npc_hedgehog_01": {
+      "FRONT": {
+        "method": "ImageGen",
+        "image": "exec-e1fd6732-aff4-428e-9231-c5caf4766c55.png",
+        "cell": [
+          0,
+          0,
+          724,
+          245
+        ],
+        "asset": "assets/creatures/npc_hedgehog_01/identity/front_0001.png"
+      },
+      "IDLE_LEFT": {
+        "method": "ImageGen",
+        "image": "exec-e1fd6732-aff4-428e-9231-c5caf4766c55.png",
+        "cell": [
+          724,
+          0,
+          1448,
+          245
+        ],
+        "asset": "assets/creatures/npc_hedgehog_01/idle/idle_left_0001.png"
+      },
+      "IDLE_RIGHT": {
+        "method": "ImageGen",
+        "image": "exec-e1fd6732-aff4-428e-9231-c5caf4766c55.png",
+        "cell": [
+          1448,
+          0,
+          2172,
+          245
+        ],
+        "asset": "assets/creatures/npc_hedgehog_01/idle/idle_right_0001.png"
+      },
+      "SIT": {
+        "method": "ImageGen",
+        "image": "exec-e1fd6732-aff4-428e-9231-c5caf4766c55.png",
+        "cell": [
+          0,
+          245,
+          724,
+          489
+        ],
+        "asset": "assets/creatures/npc_hedgehog_01/rest/sit_0001.png"
+      },
+      "REST": {
+        "method": "ImageGen",
+        "image": "exec-e1fd6732-aff4-428e-9231-c5caf4766c55.png",
+        "cell": [
+          724,
+          245,
+          1448,
+          489
+        ],
+        "asset": "assets/creatures/npc_hedgehog_01/rest/rest_0001.png"
+      },
+      "WALK_LEFT:1": {
+        "method": "ImageGen",
+        "image": "exec-e1fd6732-aff4-428e-9231-c5caf4766c55.png",
+        "cell": [
+          1448,
+          245,
+          2172,
+          489
+        ],
+        "asset": "assets/creatures/npc_hedgehog_01/walk_left/walk_left_0001.png"
+      },
+      "WALK_LEFT:2": {
+        "method": "ImageGen",
+        "image": "exec-e1fd6732-aff4-428e-9231-c5caf4766c55.png",
+        "cell": [
+          0,
+          489,
+          724,
+          724
+        ],
+        "asset": "assets/creatures/npc_hedgehog_01/walk_left/walk_left_0002.png"
+      },
+      "WALK_LEFT:3": {
+        "method": "ImageGen",
+        "image": "exec-e1fd6732-aff4-428e-9231-c5caf4766c55.png",
+        "cell": [
+          724,
+          489,
+          1448,
+          724
+        ],
+        "asset": "assets/creatures/npc_hedgehog_01/walk_left/walk_left_0003.png"
+      },
+      "WALK_LEFT:4": {
+        "method": "ImageGen",
+        "image": "exec-e1fd6732-aff4-428e-9231-c5caf4766c55.png",
+        "cell": [
+          1448,
+          489,
+          2172,
+          724
+        ],
+        "asset": "assets/creatures/npc_hedgehog_01/walk_left/walk_left_0004.png"
+      },
+      "WALK_RIGHT:1": {
+        "method": "mirrored_walk",
+        "image": "exec-e1fd6732-aff4-428e-9231-c5caf4766c55.png",
+        "cell": [
+          1448,
+          245,
+          2172,
+          489
+        ],
+        "source_state": "WALK_LEFT:1",
+        "asset": "assets/creatures/npc_hedgehog_01/walk_right/walk_right_0001.png"
+      },
+      "WALK_RIGHT:2": {
+        "method": "mirrored_walk",
+        "image": "exec-e1fd6732-aff4-428e-9231-c5caf4766c55.png",
+        "cell": [
+          0,
+          489,
+          724,
+          724
+        ],
+        "source_state": "WALK_LEFT:2",
+        "asset": "assets/creatures/npc_hedgehog_01/walk_right/walk_right_0002.png"
+      },
+      "WALK_RIGHT:3": {
+        "method": "mirrored_walk",
+        "image": "exec-e1fd6732-aff4-428e-9231-c5caf4766c55.png",
+        "cell": [
+          724,
+          489,
+          1448,
+          724
+        ],
+        "source_state": "WALK_LEFT:3",
+        "asset": "assets/creatures/npc_hedgehog_01/walk_right/walk_right_0003.png"
+      },
+      "WALK_RIGHT:4": {
+        "method": "mirrored_walk",
+        "image": "exec-e1fd6732-aff4-428e-9231-c5caf4766c55.png",
+        "cell": [
+          1448,
+          489,
+          2172,
+          724
+        ],
+        "source_state": "WALK_LEFT:4",
+        "asset": "assets/creatures/npc_hedgehog_01/walk_right/walk_right_0004.png"
+      }
+    },
+    "npc_hedgehog_02": {
+      "FRONT": {
+        "method": "ImageGen",
+        "image": "exec-2008a5e4-8e47-4a14-810e-de16f1c480c7.png",
+        "cell": [
+          0,
+          0,
+          512,
+          341
+        ],
+        "asset": "assets/creatures/npc_hedgehog_02/identity/front_0001.png"
+      },
+      "IDLE_LEFT": {
+        "method": "ImageGen",
+        "image": "exec-2008a5e4-8e47-4a14-810e-de16f1c480c7.png",
+        "cell": [
+          512,
+          0,
+          1024,
+          341
+        ],
+        "asset": "assets/creatures/npc_hedgehog_02/idle/idle_left_0001.png"
+      },
+      "IDLE_RIGHT": {
+        "method": "ImageGen",
+        "image": "exec-2008a5e4-8e47-4a14-810e-de16f1c480c7.png",
+        "cell": [
+          1024,
+          0,
+          1536,
+          341
+        ],
+        "asset": "assets/creatures/npc_hedgehog_02/idle/idle_right_0001.png"
+      },
+      "SIT": {
+        "method": "ImageGen",
+        "image": "exec-2008a5e4-8e47-4a14-810e-de16f1c480c7.png",
+        "cell": [
+          0,
+          341,
+          512,
+          683
+        ],
+        "asset": "assets/creatures/npc_hedgehog_02/rest/sit_0001.png"
+      },
+      "REST": {
+        "method": "ImageGen",
+        "image": "exec-2008a5e4-8e47-4a14-810e-de16f1c480c7.png",
+        "cell": [
+          512,
+          341,
+          1014,
+          683
+        ],
+        "asset": "assets/creatures/npc_hedgehog_02/rest/rest_0001.png"
+      },
+      "WALK_LEFT:1": {
+        "method": "ImageGen",
+        "image": "exec-2008a5e4-8e47-4a14-810e-de16f1c480c7.png",
+        "cell": [
+          1014,
+          341,
+          1536,
+          683
+        ],
+        "asset": "assets/creatures/npc_hedgehog_02/walk_left/walk_left_0001.png"
+      },
+      "WALK_LEFT:2": {
+        "method": "ImageGen",
+        "image": "exec-2008a5e4-8e47-4a14-810e-de16f1c480c7.png",
+        "cell": [
+          0,
+          683,
+          512,
+          1024
+        ],
+        "asset": "assets/creatures/npc_hedgehog_02/walk_left/walk_left_0002.png"
+      },
+      "WALK_LEFT:3": {
+        "method": "ImageGen",
+        "image": "exec-2008a5e4-8e47-4a14-810e-de16f1c480c7.png",
+        "cell": [
+          512,
+          683,
+          1024,
+          1024
+        ],
+        "asset": "assets/creatures/npc_hedgehog_02/walk_left/walk_left_0003.png"
+      },
+      "WALK_LEFT:4": {
+        "method": "ImageGen",
+        "image": "exec-2008a5e4-8e47-4a14-810e-de16f1c480c7.png",
+        "cell": [
+          1024,
+          683,
+          1536,
+          1024
+        ],
+        "asset": "assets/creatures/npc_hedgehog_02/walk_left/walk_left_0004.png"
+      },
+      "WALK_RIGHT:1": {
+        "method": "mirrored_walk",
+        "image": "exec-2008a5e4-8e47-4a14-810e-de16f1c480c7.png",
+        "cell": [
+          1014,
+          341,
+          1536,
+          683
+        ],
+        "source_state": "WALK_LEFT:1",
+        "asset": "assets/creatures/npc_hedgehog_02/walk_right/walk_right_0001.png"
+      },
+      "WALK_RIGHT:2": {
+        "method": "mirrored_walk",
+        "image": "exec-2008a5e4-8e47-4a14-810e-de16f1c480c7.png",
+        "cell": [
+          0,
+          683,
+          512,
+          1024
+        ],
+        "source_state": "WALK_LEFT:2",
+        "asset": "assets/creatures/npc_hedgehog_02/walk_right/walk_right_0002.png"
+      },
+      "WALK_RIGHT:3": {
+        "method": "mirrored_walk",
+        "image": "exec-2008a5e4-8e47-4a14-810e-de16f1c480c7.png",
+        "cell": [
+          512,
+          683,
+          1024,
+          1024
+        ],
+        "source_state": "WALK_LEFT:3",
+        "asset": "assets/creatures/npc_hedgehog_02/walk_right/walk_right_0003.png"
+      },
+      "WALK_RIGHT:4": {
+        "method": "mirrored_walk",
+        "image": "exec-2008a5e4-8e47-4a14-810e-de16f1c480c7.png",
+        "cell": [
+          1024,
+          683,
+          1536,
+          1024
+        ],
+        "source_state": "WALK_LEFT:4",
+        "asset": "assets/creatures/npc_hedgehog_02/walk_right/walk_right_0004.png"
+      }
+    },
+    "npc_hedgehog_03": {
+      "FRONT": {
+        "method": "ImageGen",
+        "image": "exec-04f2d7da-7274-4753-ab49-3c9ad9ceb320.png",
+        "cell": [
+          0,
+          0,
+          724,
+          241
+        ],
+        "asset": "assets/creatures/npc_hedgehog_03/identity/front_0001.png"
+      },
+      "IDLE_LEFT": {
+        "method": "ImageGen",
+        "image": "exec-04f2d7da-7274-4753-ab49-3c9ad9ceb320.png",
+        "cell": [
+          724,
+          0,
+          1448,
+          241
+        ],
+        "asset": "assets/creatures/npc_hedgehog_03/idle/idle_left_0001.png"
+      },
+      "IDLE_RIGHT": {
+        "method": "ImageGen",
+        "image": "exec-04f2d7da-7274-4753-ab49-3c9ad9ceb320.png",
+        "cell": [
+          1448,
+          0,
+          2172,
+          241
+        ],
+        "asset": "assets/creatures/npc_hedgehog_03/idle/idle_right_0001.png"
+      },
+      "SIT": {
+        "method": "ImageGen",
+        "image": "exec-04f2d7da-7274-4753-ab49-3c9ad9ceb320.png",
+        "cell": [
+          0,
+          241,
+          724,
+          483
+        ],
+        "asset": "assets/creatures/npc_hedgehog_03/rest/sit_0001.png"
+      },
+      "REST": {
+        "method": "ImageGen",
+        "image": "exec-04f2d7da-7274-4753-ab49-3c9ad9ceb320.png",
+        "cell": [
+          724,
+          241,
+          1448,
+          483
+        ],
+        "asset": "assets/creatures/npc_hedgehog_03/rest/rest_0001.png"
+      },
+      "WALK_LEFT:1": {
+        "method": "ImageGen",
+        "image": "exec-04f2d7da-7274-4753-ab49-3c9ad9ceb320.png",
+        "cell": [
+          1448,
+          241,
+          2172,
+          483
+        ],
+        "asset": "assets/creatures/npc_hedgehog_03/walk_left/walk_left_0001.png"
+      },
+      "WALK_LEFT:2": {
+        "method": "ImageGen",
+        "image": "exec-04f2d7da-7274-4753-ab49-3c9ad9ceb320.png",
+        "cell": [
+          0,
+          483,
+          724,
+          724
+        ],
+        "asset": "assets/creatures/npc_hedgehog_03/walk_left/walk_left_0002.png"
+      },
+      "WALK_LEFT:3": {
+        "method": "ImageGen",
+        "image": "exec-04f2d7da-7274-4753-ab49-3c9ad9ceb320.png",
+        "cell": [
+          724,
+          483,
+          1448,
+          724
+        ],
+        "asset": "assets/creatures/npc_hedgehog_03/walk_left/walk_left_0003.png"
+      },
+      "WALK_LEFT:4": {
+        "method": "ImageGen",
+        "image": "exec-04f2d7da-7274-4753-ab49-3c9ad9ceb320.png",
+        "cell": [
+          1448,
+          483,
+          2172,
+          724
+        ],
+        "asset": "assets/creatures/npc_hedgehog_03/walk_left/walk_left_0004.png"
+      },
+      "WALK_RIGHT:1": {
+        "method": "mirrored_walk",
+        "image": "exec-04f2d7da-7274-4753-ab49-3c9ad9ceb320.png",
+        "cell": [
+          1448,
+          241,
+          2172,
+          483
+        ],
+        "source_state": "WALK_LEFT:1",
+        "asset": "assets/creatures/npc_hedgehog_03/walk_right/walk_right_0001.png"
+      },
+      "WALK_RIGHT:2": {
+        "method": "mirrored_walk",
+        "image": "exec-04f2d7da-7274-4753-ab49-3c9ad9ceb320.png",
+        "cell": [
+          0,
+          483,
+          724,
+          724
+        ],
+        "source_state": "WALK_LEFT:2",
+        "asset": "assets/creatures/npc_hedgehog_03/walk_right/walk_right_0002.png"
+      },
+      "WALK_RIGHT:3": {
+        "method": "mirrored_walk",
+        "image": "exec-04f2d7da-7274-4753-ab49-3c9ad9ceb320.png",
+        "cell": [
+          724,
+          483,
+          1448,
+          724
+        ],
+        "source_state": "WALK_LEFT:3",
+        "asset": "assets/creatures/npc_hedgehog_03/walk_right/walk_right_0003.png"
+      },
+      "WALK_RIGHT:4": {
+        "method": "mirrored_walk",
+        "image": "exec-04f2d7da-7274-4753-ab49-3c9ad9ceb320.png",
+        "cell": [
+          1448,
+          483,
+          2172,
+          724
+        ],
+        "source_state": "WALK_LEFT:4",
+        "asset": "assets/creatures/npc_hedgehog_03/walk_right/walk_right_0004.png"
+      }
+    },
+    "npc_cat_black_hero": {
+      "FRONT": {
+        "method": "ImageGen",
+        "image": "exec-033edbb2-5a14-45ef-82ae-495d7987fcb0.png",
+        "cell": [
+          0,
+          0,
+          512,
+          341
+        ],
+        "asset": "assets/creatures/npc_cat_black_hero/identity/front_0001.png"
+      },
+      "IDLE_LEFT": {
+        "method": "ImageGen",
+        "image": "exec-033edbb2-5a14-45ef-82ae-495d7987fcb0.png",
+        "cell": [
+          512,
+          0,
+          1024,
+          341
+        ],
+        "asset": "assets/creatures/npc_cat_black_hero/idle/idle_left_0001.png"
+      },
+      "IDLE_RIGHT": {
+        "method": "ImageGen",
+        "image": "exec-033edbb2-5a14-45ef-82ae-495d7987fcb0.png",
+        "cell": [
+          1024,
+          0,
+          1536,
+          341
+        ],
+        "asset": "assets/creatures/npc_cat_black_hero/idle/idle_right_0001.png"
+      },
+      "SIT": {
+        "method": "ImageGen",
+        "image": "exec-033edbb2-5a14-45ef-82ae-495d7987fcb0.png",
+        "cell": [
+          0,
+          341,
+          512,
+          683
+        ],
+        "asset": "assets/creatures/npc_cat_black_hero/rest/sit_0001.png"
+      },
+      "REST": {
+        "method": "ImageGen",
+        "image": "exec-033edbb2-5a14-45ef-82ae-495d7987fcb0.png",
+        "cell": [
+          512,
+          341,
+          1024,
+          683
+        ],
+        "asset": "assets/creatures/npc_cat_black_hero/rest/rest_0001.png"
+      },
+      "WALK_LEFT:1": {
+        "method": "ImageGen",
+        "image": "exec-033edbb2-5a14-45ef-82ae-495d7987fcb0.png",
+        "cell": [
+          1024,
+          341,
+          1536,
+          683
+        ],
+        "asset": "assets/creatures/npc_cat_black_hero/walk_left/walk_left_0001.png"
+      },
+      "WALK_LEFT:2": {
+        "method": "ImageGen",
+        "image": "exec-033edbb2-5a14-45ef-82ae-495d7987fcb0.png",
+        "cell": [
+          0,
+          683,
+          512,
+          1024
+        ],
+        "asset": "assets/creatures/npc_cat_black_hero/walk_left/walk_left_0002.png"
+      },
+      "WALK_LEFT:3": {
+        "method": "ImageGen",
+        "image": "exec-033edbb2-5a14-45ef-82ae-495d7987fcb0.png",
+        "cell": [
+          512,
+          683,
+          1022,
+          1024
+        ],
+        "asset": "assets/creatures/npc_cat_black_hero/walk_left/walk_left_0003.png"
+      },
+      "WALK_LEFT:4": {
+        "method": "ImageGen",
+        "image": "exec-033edbb2-5a14-45ef-82ae-495d7987fcb0.png",
+        "cell": [
+          1022,
+          683,
+          1536,
+          1024
+        ],
+        "asset": "assets/creatures/npc_cat_black_hero/walk_left/walk_left_0004.png"
+      },
+      "WALK_RIGHT:1": {
+        "method": "mirrored_walk",
+        "image": "exec-033edbb2-5a14-45ef-82ae-495d7987fcb0.png",
+        "cell": [
+          1024,
+          341,
+          1536,
+          683
+        ],
+        "source_state": "WALK_LEFT:1",
+        "asset": "assets/creatures/npc_cat_black_hero/walk_right/walk_right_0001.png"
+      },
+      "WALK_RIGHT:2": {
+        "method": "mirrored_walk",
+        "image": "exec-033edbb2-5a14-45ef-82ae-495d7987fcb0.png",
+        "cell": [
+          0,
+          683,
+          512,
+          1024
+        ],
+        "source_state": "WALK_LEFT:2",
+        "asset": "assets/creatures/npc_cat_black_hero/walk_right/walk_right_0002.png"
+      },
+      "WALK_RIGHT:3": {
+        "method": "mirrored_walk",
+        "image": "exec-033edbb2-5a14-45ef-82ae-495d7987fcb0.png",
+        "cell": [
+          512,
+          683,
+          1022,
+          1024
+        ],
+        "source_state": "WALK_LEFT:3",
+        "asset": "assets/creatures/npc_cat_black_hero/walk_right/walk_right_0003.png"
+      },
+      "WALK_RIGHT:4": {
+        "method": "mirrored_walk",
+        "image": "exec-033edbb2-5a14-45ef-82ae-495d7987fcb0.png",
+        "cell": [
+          1022,
+          683,
+          1536,
+          1024
+        ],
+        "source_state": "WALK_LEFT:4",
+        "asset": "assets/creatures/npc_cat_black_hero/walk_right/walk_right_0004.png"
+      }
+    },
+    "npc_cat_tabby": {
+      "FRONT": {
+        "method": "ImageGen",
+        "image": "exec-1ed3da80-2cb5-4cce-9a30-333cd89d24bf.png",
+        "cell": [
+          0,
+          0,
+          476,
+          341
+        ],
+        "asset": "assets/creatures/npc_cat_tabby/identity/front_0001.png"
+      },
+      "IDLE_LEFT": {
+        "method": "ImageGen",
+        "image": "exec-1ed3da80-2cb5-4cce-9a30-333cd89d24bf.png",
+        "cell": [
+          476,
+          0,
+          1002,
+          341
+        ],
+        "asset": "assets/creatures/npc_cat_tabby/idle/idle_left_0001.png"
+      },
+      "IDLE_RIGHT": {
+        "method": "ImageGen",
+        "image": "exec-1ed3da80-2cb5-4cce-9a30-333cd89d24bf.png",
+        "cell": [
+          1002,
+          0,
+          1536,
+          341
+        ],
+        "asset": "assets/creatures/npc_cat_tabby/idle/idle_right_0001.png"
+      },
+      "SIT": {
+        "method": "ImageGen",
+        "image": "exec-1ed3da80-2cb5-4cce-9a30-333cd89d24bf.png",
+        "cell": [
+          0,
+          341,
+          500,
+          683
+        ],
+        "asset": "assets/creatures/npc_cat_tabby/rest/sit_0001.png"
+      },
+      "REST": {
+        "method": "ImageGen",
+        "image": "exec-1ed3da80-2cb5-4cce-9a30-333cd89d24bf.png",
+        "cell": [
+          500,
+          341,
+          1010,
+          683
+        ],
+        "asset": "assets/creatures/npc_cat_tabby/rest/rest_0001.png"
+      },
+      "WALK_LEFT:1": {
+        "method": "ImageGen",
+        "image": "exec-1ed3da80-2cb5-4cce-9a30-333cd89d24bf.png",
+        "cell": [
+          1010,
+          341,
+          1536,
+          683
+        ],
+        "asset": "assets/creatures/npc_cat_tabby/walk_left/walk_left_0001.png"
+      },
+      "WALK_LEFT:2": {
+        "method": "ImageGen",
+        "image": "exec-1ed3da80-2cb5-4cce-9a30-333cd89d24bf.png",
+        "cell": [
+          0,
+          683,
+          512,
+          1024
+        ],
+        "asset": "assets/creatures/npc_cat_tabby/walk_left/walk_left_0002.png"
+      },
+      "WALK_LEFT:3": {
+        "method": "ImageGen",
+        "image": "exec-1ed3da80-2cb5-4cce-9a30-333cd89d24bf.png",
+        "cell": [
+          512,
+          683,
+          1003,
+          1024
+        ],
+        "asset": "assets/creatures/npc_cat_tabby/walk_left/walk_left_0003.png"
+      },
+      "WALK_LEFT:4": {
+        "method": "ImageGen",
+        "image": "exec-1ed3da80-2cb5-4cce-9a30-333cd89d24bf.png",
+        "cell": [
+          1003,
+          683,
+          1536,
+          1024
+        ],
+        "asset": "assets/creatures/npc_cat_tabby/walk_left/walk_left_0004.png"
+      },
+      "WALK_RIGHT:1": {
+        "method": "mirrored_walk",
+        "image": "exec-1ed3da80-2cb5-4cce-9a30-333cd89d24bf.png",
+        "cell": [
+          1010,
+          341,
+          1536,
+          683
+        ],
+        "source_state": "WALK_LEFT:1",
+        "asset": "assets/creatures/npc_cat_tabby/walk_right/walk_right_0001.png"
+      },
+      "WALK_RIGHT:2": {
+        "method": "mirrored_walk",
+        "image": "exec-1ed3da80-2cb5-4cce-9a30-333cd89d24bf.png",
+        "cell": [
+          0,
+          683,
+          512,
+          1024
+        ],
+        "source_state": "WALK_LEFT:2",
+        "asset": "assets/creatures/npc_cat_tabby/walk_right/walk_right_0002.png"
+      },
+      "WALK_RIGHT:3": {
+        "method": "mirrored_walk",
+        "image": "exec-1ed3da80-2cb5-4cce-9a30-333cd89d24bf.png",
+        "cell": [
+          512,
+          683,
+          1003,
+          1024
+        ],
+        "source_state": "WALK_LEFT:3",
+        "asset": "assets/creatures/npc_cat_tabby/walk_right/walk_right_0003.png"
+      },
+      "WALK_RIGHT:4": {
+        "method": "mirrored_walk",
+        "image": "exec-1ed3da80-2cb5-4cce-9a30-333cd89d24bf.png",
+        "cell": [
+          1003,
+          683,
+          1536,
+          1024
+        ],
+        "source_state": "WALK_LEFT:4",
+        "asset": "assets/creatures/npc_cat_tabby/walk_right/walk_right_0004.png"
+      }
+    },
+    "npc_cat_white": {
+      "FRONT": {
+        "method": "ImageGen",
+        "image": "exec-606eff25-e37c-4eac-8f0d-a10dc50b23a1.png",
+        "cell": [
+          0,
+          0,
+          465,
+          341
+        ],
+        "asset": "assets/creatures/npc_cat_white/identity/front_0001.png"
+      },
+      "IDLE_LEFT": {
+        "method": "ImageGen",
+        "image": "exec-606eff25-e37c-4eac-8f0d-a10dc50b23a1.png",
+        "cell": [
+          465,
+          0,
+          1003,
+          341
+        ],
+        "asset": "assets/creatures/npc_cat_white/idle/idle_left_0001.png"
+      },
+      "IDLE_RIGHT": {
+        "method": "ImageGen",
+        "image": "exec-606eff25-e37c-4eac-8f0d-a10dc50b23a1.png",
+        "cell": [
+          1003,
+          0,
+          1536,
+          341
+        ],
+        "asset": "assets/creatures/npc_cat_white/idle/idle_right_0001.png"
+      },
+      "SIT": {
+        "method": "ImageGen",
+        "image": "exec-606eff25-e37c-4eac-8f0d-a10dc50b23a1.png",
+        "cell": [
+          0,
+          341,
+          501,
+          683
+        ],
+        "asset": "assets/creatures/npc_cat_white/rest/sit_0001.png"
+      },
+      "REST": {
+        "method": "ImageGen",
+        "image": "exec-606eff25-e37c-4eac-8f0d-a10dc50b23a1.png",
+        "cell": [
+          501,
+          341,
+          989,
+          683
+        ],
+        "asset": "assets/creatures/npc_cat_white/rest/rest_0001.png"
+      },
+      "WALK_LEFT:1": {
+        "method": "ImageGen",
+        "image": "exec-606eff25-e37c-4eac-8f0d-a10dc50b23a1.png",
+        "cell": [
+          989,
+          341,
+          1536,
+          683
+        ],
+        "asset": "assets/creatures/npc_cat_white/walk_left/walk_left_0001.png"
+      },
+      "WALK_LEFT:2": {
+        "method": "ImageGen",
+        "image": "exec-606eff25-e37c-4eac-8f0d-a10dc50b23a1.png",
+        "cell": [
+          0,
+          683,
+          512,
+          1024
+        ],
+        "asset": "assets/creatures/npc_cat_white/walk_left/walk_left_0002.png"
+      },
+      "WALK_LEFT:3": {
+        "method": "ImageGen",
+        "image": "exec-606eff25-e37c-4eac-8f0d-a10dc50b23a1.png",
+        "cell": [
+          512,
+          683,
+          1020,
+          1024
+        ],
+        "asset": "assets/creatures/npc_cat_white/walk_left/walk_left_0003.png"
+      },
+      "WALK_LEFT:4": {
+        "method": "ImageGen",
+        "image": "exec-606eff25-e37c-4eac-8f0d-a10dc50b23a1.png",
+        "cell": [
+          1020,
+          683,
+          1536,
+          1024
+        ],
+        "asset": "assets/creatures/npc_cat_white/walk_left/walk_left_0004.png"
+      },
+      "WALK_RIGHT:1": {
+        "method": "mirrored_walk",
+        "image": "exec-606eff25-e37c-4eac-8f0d-a10dc50b23a1.png",
+        "cell": [
+          989,
+          341,
+          1536,
+          683
+        ],
+        "source_state": "WALK_LEFT:1",
+        "asset": "assets/creatures/npc_cat_white/walk_right/walk_right_0001.png"
+      },
+      "WALK_RIGHT:2": {
+        "method": "mirrored_walk",
+        "image": "exec-606eff25-e37c-4eac-8f0d-a10dc50b23a1.png",
+        "cell": [
+          0,
+          683,
+          512,
+          1024
+        ],
+        "source_state": "WALK_LEFT:2",
+        "asset": "assets/creatures/npc_cat_white/walk_right/walk_right_0002.png"
+      },
+      "WALK_RIGHT:3": {
+        "method": "mirrored_walk",
+        "image": "exec-606eff25-e37c-4eac-8f0d-a10dc50b23a1.png",
+        "cell": [
+          512,
+          683,
+          1020,
+          1024
+        ],
+        "source_state": "WALK_LEFT:3",
+        "asset": "assets/creatures/npc_cat_white/walk_right/walk_right_0003.png"
+      },
+      "WALK_RIGHT:4": {
+        "method": "mirrored_walk",
+        "image": "exec-606eff25-e37c-4eac-8f0d-a10dc50b23a1.png",
+        "cell": [
+          1020,
+          683,
+          1536,
+          1024
+        ],
+        "source_state": "WALK_LEFT:4",
+        "asset": "assets/creatures/npc_cat_white/walk_right/walk_right_0004.png"
+      }
+    },
+    "npc_cat_ginger": {
+      "FRONT": {
+        "method": "ImageGen",
+        "image": "exec-c32c3da3-0f17-42b2-ae0e-b0d91d1db950.png",
+        "cell": [
+          0,
+          0,
+          512,
+          341
+        ],
+        "asset": "assets/creatures/npc_cat_ginger/identity/front_0001.png"
+      },
+      "IDLE_LEFT": {
+        "method": "ImageGen",
+        "image": "exec-c32c3da3-0f17-42b2-ae0e-b0d91d1db950.png",
+        "cell": [
+          512,
+          0,
+          1024,
+          341
+        ],
+        "asset": "assets/creatures/npc_cat_ginger/idle/idle_left_0001.png"
+      },
+      "IDLE_RIGHT": {
+        "method": "ImageGen",
+        "image": "exec-c32c3da3-0f17-42b2-ae0e-b0d91d1db950.png",
+        "cell": [
+          1024,
+          0,
+          1536,
+          341
+        ],
+        "asset": "assets/creatures/npc_cat_ginger/idle/idle_right_0001.png"
+      },
+      "SIT": {
+        "method": "ImageGen",
+        "image": "exec-c32c3da3-0f17-42b2-ae0e-b0d91d1db950.png",
+        "cell": [
+          0,
+          341,
+          512,
+          683
+        ],
+        "asset": "assets/creatures/npc_cat_ginger/rest/sit_0001.png"
+      },
+      "REST": {
+        "method": "ImageGen",
+        "image": "exec-c32c3da3-0f17-42b2-ae0e-b0d91d1db950.png",
+        "cell": [
+          512,
+          341,
+          1010,
+          683
+        ],
+        "asset": "assets/creatures/npc_cat_ginger/rest/rest_0001.png"
+      },
+      "WALK_LEFT:1": {
+        "method": "ImageGen",
+        "image": "exec-c32c3da3-0f17-42b2-ae0e-b0d91d1db950.png",
+        "cell": [
+          1010,
+          341,
+          1536,
+          683
+        ],
+        "asset": "assets/creatures/npc_cat_ginger/walk_left/walk_left_0001.png"
+      },
+      "WALK_LEFT:2": {
+        "method": "ImageGen",
+        "image": "exec-c32c3da3-0f17-42b2-ae0e-b0d91d1db950.png",
+        "cell": [
+          0,
+          683,
+          512,
+          1024
+        ],
+        "asset": "assets/creatures/npc_cat_ginger/walk_left/walk_left_0002.png"
+      },
+      "WALK_LEFT:3": {
+        "method": "ImageGen",
+        "image": "exec-c32c3da3-0f17-42b2-ae0e-b0d91d1db950.png",
+        "cell": [
+          512,
+          683,
+          1015,
+          1024
+        ],
+        "asset": "assets/creatures/npc_cat_ginger/walk_left/walk_left_0003.png"
+      },
+      "WALK_LEFT:4": {
+        "method": "ImageGen",
+        "image": "exec-c32c3da3-0f17-42b2-ae0e-b0d91d1db950.png",
+        "cell": [
+          1015,
+          683,
+          1536,
+          1024
+        ],
+        "asset": "assets/creatures/npc_cat_ginger/walk_left/walk_left_0004.png"
+      },
+      "WALK_RIGHT:1": {
+        "method": "mirrored_walk",
+        "image": "exec-c32c3da3-0f17-42b2-ae0e-b0d91d1db950.png",
+        "cell": [
+          1010,
+          341,
+          1536,
+          683
+        ],
+        "source_state": "WALK_LEFT:1",
+        "asset": "assets/creatures/npc_cat_ginger/walk_right/walk_right_0001.png"
+      },
+      "WALK_RIGHT:2": {
+        "method": "mirrored_walk",
+        "image": "exec-c32c3da3-0f17-42b2-ae0e-b0d91d1db950.png",
+        "cell": [
+          0,
+          683,
+          512,
+          1024
+        ],
+        "source_state": "WALK_LEFT:2",
+        "asset": "assets/creatures/npc_cat_ginger/walk_right/walk_right_0002.png"
+      },
+      "WALK_RIGHT:3": {
+        "method": "mirrored_walk",
+        "image": "exec-c32c3da3-0f17-42b2-ae0e-b0d91d1db950.png",
+        "cell": [
+          512,
+          683,
+          1015,
+          1024
+        ],
+        "source_state": "WALK_LEFT:3",
+        "asset": "assets/creatures/npc_cat_ginger/walk_right/walk_right_0003.png"
+      },
+      "WALK_RIGHT:4": {
+        "method": "mirrored_walk",
+        "image": "exec-c32c3da3-0f17-42b2-ae0e-b0d91d1db950.png",
+        "cell": [
+          1015,
+          683,
+          1536,
+          1024
+        ],
+        "source_state": "WALK_LEFT:4",
+        "asset": "assets/creatures/npc_cat_ginger/walk_right/walk_right_0004.png"
+      }
+    },
+    "npc_rat_hero": {
+      "FRONT": {
+        "method": "ImageGen",
+        "image": "exec-f5753c5c-61fd-4494-bfc1-166455f91930.png",
+        "cell": [
+          0,
+          0,
+          460,
+          341
+        ],
+        "asset": "assets/creatures/npc_rat_hero/identity/front_0001.png"
+      },
+      "IDLE_LEFT": {
+        "method": "ImageGen",
+        "image": "exec-f5753c5c-61fd-4494-bfc1-166455f91930.png",
+        "cell": [
+          460,
+          0,
+          986,
+          341
+        ],
+        "asset": "assets/creatures/npc_rat_hero/idle/idle_left_0001.png"
+      },
+      "IDLE_RIGHT": {
+        "method": "ImageGen",
+        "image": "exec-f5753c5c-61fd-4494-bfc1-166455f91930.png",
+        "cell": [
+          986,
+          0,
+          1536,
+          341
+        ],
+        "asset": "assets/creatures/npc_rat_hero/idle/idle_right_0001.png"
+      },
+      "SIT": {
+        "method": "ImageGen",
+        "image": "exec-f5753c5c-61fd-4494-bfc1-166455f91930.png",
+        "cell": [
+          0,
+          341,
+          484,
+          683
+        ],
+        "asset": "assets/creatures/npc_rat_hero/rest/sit_0001.png"
+      },
+      "REST": {
+        "method": "ImageGen",
+        "image": "exec-f5753c5c-61fd-4494-bfc1-166455f91930.png",
+        "cell": [
+          484,
+          341,
+          980,
+          683
+        ],
+        "asset": "assets/creatures/npc_rat_hero/rest/rest_0001.png"
+      },
+      "WALK_LEFT:1": {
+        "method": "ImageGen",
+        "image": "exec-f5753c5c-61fd-4494-bfc1-166455f91930.png",
+        "cell": [
+          980,
+          341,
+          1536,
+          683
+        ],
+        "asset": "assets/creatures/npc_rat_hero/walk_left/walk_left_0001.png"
+      },
+      "WALK_LEFT:2": {
+        "method": "ImageGen",
+        "image": "exec-f5753c5c-61fd-4494-bfc1-166455f91930.png",
+        "cell": [
+          0,
+          683,
+          512,
+          1024
+        ],
+        "asset": "assets/creatures/npc_rat_hero/walk_left/walk_left_0002.png"
+      },
+      "WALK_LEFT:3": {
+        "method": "ImageGen",
+        "image": "exec-f5753c5c-61fd-4494-bfc1-166455f91930.png",
+        "cell": [
+          512,
+          683,
+          1003,
+          1024
+        ],
+        "asset": "assets/creatures/npc_rat_hero/walk_left/walk_left_0003.png"
+      },
+      "WALK_LEFT:4": {
+        "method": "ImageGen",
+        "image": "exec-f5753c5c-61fd-4494-bfc1-166455f91930.png",
+        "cell": [
+          1003,
+          683,
+          1536,
+          1024
+        ],
+        "asset": "assets/creatures/npc_rat_hero/walk_left/walk_left_0004.png"
+      },
+      "WALK_RIGHT:1": {
+        "method": "mirrored_walk",
+        "image": "exec-f5753c5c-61fd-4494-bfc1-166455f91930.png",
+        "cell": [
+          980,
+          341,
+          1536,
+          683
+        ],
+        "source_state": "WALK_LEFT:1",
+        "asset": "assets/creatures/npc_rat_hero/walk_right/walk_right_0001.png"
+      },
+      "WALK_RIGHT:2": {
+        "method": "mirrored_walk",
+        "image": "exec-f5753c5c-61fd-4494-bfc1-166455f91930.png",
+        "cell": [
+          0,
+          683,
+          512,
+          1024
+        ],
+        "source_state": "WALK_LEFT:2",
+        "asset": "assets/creatures/npc_rat_hero/walk_right/walk_right_0002.png"
+      },
+      "WALK_RIGHT:3": {
+        "method": "mirrored_walk",
+        "image": "exec-f5753c5c-61fd-4494-bfc1-166455f91930.png",
+        "cell": [
+          512,
+          683,
+          1003,
+          1024
+        ],
+        "source_state": "WALK_LEFT:3",
+        "asset": "assets/creatures/npc_rat_hero/walk_right/walk_right_0003.png"
+      },
+      "WALK_RIGHT:4": {
+        "method": "mirrored_walk",
+        "image": "exec-f5753c5c-61fd-4494-bfc1-166455f91930.png",
+        "cell": [
+          1003,
+          683,
+          1536,
+          1024
+        ],
+        "source_state": "WALK_LEFT:4",
+        "asset": "assets/creatures/npc_rat_hero/walk_right/walk_right_0004.png"
+      }
+    },
+    "npc_rat_agouti": {
+      "FRONT": {
+        "method": "ImageGen",
+        "image": "exec-740166f4-3669-4cd1-b864-db4ca4527909.png",
+        "cell": [
+          0,
+          0,
+          454,
+          341
+        ],
+        "asset": "assets/creatures/npc_rat_agouti/identity/front_0001.png"
+      },
+      "IDLE_LEFT": {
+        "method": "ImageGen",
+        "image": "exec-740166f4-3669-4cd1-b864-db4ca4527909.png",
+        "cell": [
+          454,
+          0,
+          973,
+          341
+        ],
+        "asset": "assets/creatures/npc_rat_agouti/idle/idle_left_0001.png"
+      },
+      "IDLE_RIGHT": {
+        "method": "ImageGen",
+        "image": "exec-740166f4-3669-4cd1-b864-db4ca4527909.png",
+        "cell": [
+          973,
+          0,
+          1536,
+          341
+        ],
+        "asset": "assets/creatures/npc_rat_agouti/idle/idle_right_0001.png"
+      },
+      "SIT": {
+        "method": "ImageGen",
+        "image": "exec-740166f4-3669-4cd1-b864-db4ca4527909.png",
+        "cell": [
+          0,
+          341,
+          474,
+          683
+        ],
+        "asset": "assets/creatures/npc_rat_agouti/rest/sit_0001.png"
+      },
+      "REST": {
+        "method": "ImageGen",
+        "image": "exec-740166f4-3669-4cd1-b864-db4ca4527909.png",
+        "cell": [
+          474,
+          341,
+          982,
+          683
+        ],
+        "asset": "assets/creatures/npc_rat_agouti/rest/rest_0001.png"
+      },
+      "WALK_LEFT:1": {
+        "method": "ImageGen",
+        "image": "exec-740166f4-3669-4cd1-b864-db4ca4527909.png",
+        "cell": [
+          982,
+          341,
+          1536,
+          683
+        ],
+        "asset": "assets/creatures/npc_rat_agouti/walk_left/walk_left_0001.png"
+      },
+      "WALK_LEFT:2": {
+        "method": "ImageGen",
+        "image": "exec-740166f4-3669-4cd1-b864-db4ca4527909.png",
+        "cell": [
+          0,
+          683,
+          522,
+          1024
+        ],
+        "asset": "assets/creatures/npc_rat_agouti/walk_left/walk_left_0002.png"
+      },
+      "WALK_LEFT:3": {
+        "method": "ImageGen",
+        "image": "exec-740166f4-3669-4cd1-b864-db4ca4527909.png",
+        "cell": [
+          522,
+          683,
+          1020,
+          1024
+        ],
+        "asset": "assets/creatures/npc_rat_agouti/walk_left/walk_left_0003.png"
+      },
+      "WALK_LEFT:4": {
+        "method": "ImageGen",
+        "image": "exec-740166f4-3669-4cd1-b864-db4ca4527909.png",
+        "cell": [
+          1020,
+          683,
+          1536,
+          1024
+        ],
+        "asset": "assets/creatures/npc_rat_agouti/walk_left/walk_left_0004.png"
+      },
+      "WALK_RIGHT:1": {
+        "method": "mirrored_walk",
+        "image": "exec-740166f4-3669-4cd1-b864-db4ca4527909.png",
+        "cell": [
+          982,
+          341,
+          1536,
+          683
+        ],
+        "source_state": "WALK_LEFT:1",
+        "asset": "assets/creatures/npc_rat_agouti/walk_right/walk_right_0001.png"
+      },
+      "WALK_RIGHT:2": {
+        "method": "mirrored_walk",
+        "image": "exec-740166f4-3669-4cd1-b864-db4ca4527909.png",
+        "cell": [
+          0,
+          683,
+          522,
+          1024
+        ],
+        "source_state": "WALK_LEFT:2",
+        "asset": "assets/creatures/npc_rat_agouti/walk_right/walk_right_0002.png"
+      },
+      "WALK_RIGHT:3": {
+        "method": "mirrored_walk",
+        "image": "exec-740166f4-3669-4cd1-b864-db4ca4527909.png",
+        "cell": [
+          522,
+          683,
+          1020,
+          1024
+        ],
+        "source_state": "WALK_LEFT:3",
+        "asset": "assets/creatures/npc_rat_agouti/walk_right/walk_right_0003.png"
+      },
+      "WALK_RIGHT:4": {
+        "method": "mirrored_walk",
+        "image": "exec-740166f4-3669-4cd1-b864-db4ca4527909.png",
+        "cell": [
+          1020,
+          683,
+          1536,
+          1024
+        ],
+        "source_state": "WALK_LEFT:4",
+        "asset": "assets/creatures/npc_rat_agouti/walk_right/walk_right_0004.png"
+      }
+    },
+    "npc_rat_white": {
+      "FRONT": {
+        "method": "ImageGen",
+        "image": "exec-df1c001a-51b7-4789-a6a8-bb825afe1bc8.png",
+        "cell": [
+          0,
+          0,
+          469,
+          341
+        ],
+        "asset": "assets/creatures/npc_rat_white/identity/front_0001.png"
+      },
+      "IDLE_LEFT": {
+        "method": "ImageGen",
+        "image": "exec-df1c001a-51b7-4789-a6a8-bb825afe1bc8.png",
+        "cell": [
+          469,
+          0,
+          996,
+          341
+        ],
+        "asset": "assets/creatures/npc_rat_white/idle/idle_left_0001.png"
+      },
+      "IDLE_RIGHT": {
+        "method": "ImageGen",
+        "image": "exec-df1c001a-51b7-4789-a6a8-bb825afe1bc8.png",
+        "cell": [
+          996,
+          0,
+          1536,
+          341
+        ],
+        "asset": "assets/creatures/npc_rat_white/idle/idle_right_0001.png"
+      },
+      "SIT": {
+        "method": "ImageGen",
+        "image": "exec-df1c001a-51b7-4789-a6a8-bb825afe1bc8.png",
+        "cell": [
+          0,
+          341,
+          462,
+          683
+        ],
+        "asset": "assets/creatures/npc_rat_white/rest/sit_0001.png"
+      },
+      "REST": {
+        "method": "ImageGen",
+        "image": "exec-df1c001a-51b7-4789-a6a8-bb825afe1bc8.png",
+        "cell": [
+          462,
+          341,
+          980,
+          683
+        ],
+        "asset": "assets/creatures/npc_rat_white/rest/rest_0001.png"
+      },
+      "WALK_LEFT:1": {
+        "method": "ImageGen",
+        "image": "exec-df1c001a-51b7-4789-a6a8-bb825afe1bc8.png",
+        "cell": [
+          980,
+          341,
+          1536,
+          683
+        ],
+        "asset": "assets/creatures/npc_rat_white/walk_left/walk_left_0001.png"
+      },
+      "WALK_LEFT:2": {
+        "method": "ImageGen",
+        "image": "exec-df1c001a-51b7-4789-a6a8-bb825afe1bc8.png",
+        "cell": [
+          0,
+          683,
+          510,
+          1024
+        ],
+        "asset": "assets/creatures/npc_rat_white/walk_left/walk_left_0002.png"
+      },
+      "WALK_LEFT:3": {
+        "method": "ImageGen",
+        "image": "exec-df1c001a-51b7-4789-a6a8-bb825afe1bc8.png",
+        "cell": [
+          510,
+          683,
+          1010,
+          1024
+        ],
+        "asset": "assets/creatures/npc_rat_white/walk_left/walk_left_0003.png"
+      },
+      "WALK_LEFT:4": {
+        "method": "ImageGen",
+        "image": "exec-df1c001a-51b7-4789-a6a8-bb825afe1bc8.png",
+        "cell": [
+          1010,
+          683,
+          1536,
+          1024
+        ],
+        "asset": "assets/creatures/npc_rat_white/walk_left/walk_left_0004.png"
+      },
+      "WALK_RIGHT:1": {
+        "method": "mirrored_walk",
+        "image": "exec-df1c001a-51b7-4789-a6a8-bb825afe1bc8.png",
+        "cell": [
+          980,
+          341,
+          1536,
+          683
+        ],
+        "source_state": "WALK_LEFT:1",
+        "asset": "assets/creatures/npc_rat_white/walk_right/walk_right_0001.png"
+      },
+      "WALK_RIGHT:2": {
+        "method": "mirrored_walk",
+        "image": "exec-df1c001a-51b7-4789-a6a8-bb825afe1bc8.png",
+        "cell": [
+          0,
+          683,
+          510,
+          1024
+        ],
+        "source_state": "WALK_LEFT:2",
+        "asset": "assets/creatures/npc_rat_white/walk_right/walk_right_0002.png"
+      },
+      "WALK_RIGHT:3": {
+        "method": "mirrored_walk",
+        "image": "exec-df1c001a-51b7-4789-a6a8-bb825afe1bc8.png",
+        "cell": [
+          510,
+          683,
+          1010,
+          1024
+        ],
+        "source_state": "WALK_LEFT:3",
+        "asset": "assets/creatures/npc_rat_white/walk_right/walk_right_0003.png"
+      },
+      "WALK_RIGHT:4": {
+        "method": "mirrored_walk",
+        "image": "exec-df1c001a-51b7-4789-a6a8-bb825afe1bc8.png",
+        "cell": [
+          1010,
+          683,
+          1536,
+          1024
+        ],
+        "source_state": "WALK_LEFT:4",
+        "asset": "assets/creatures/npc_rat_white/walk_right/walk_right_0004.png"
+      }
+    },
+    "npc_rat_hooded": {
+      "FRONT": {
+        "method": "ImageGen",
+        "image": "exec-58821517-0639-4b89-8a07-b9ea380339e1.png",
+        "cell": [
+          0,
+          0,
+          463,
+          341
+        ],
+        "asset": "assets/creatures/npc_rat_hooded/identity/front_0001.png"
+      },
+      "IDLE_LEFT": {
+        "method": "ImageGen",
+        "image": "exec-58821517-0639-4b89-8a07-b9ea380339e1.png",
+        "cell": [
+          463,
+          0,
+          979,
+          341
+        ],
+        "asset": "assets/creatures/npc_rat_hooded/idle/idle_left_0001.png"
+      },
+      "IDLE_RIGHT": {
+        "method": "ImageGen",
+        "image": "exec-58821517-0639-4b89-8a07-b9ea380339e1.png",
+        "cell": [
+          979,
+          0,
+          1536,
+          341
+        ],
+        "asset": "assets/creatures/npc_rat_hooded/idle/idle_right_0001.png"
+      },
+      "SIT": {
+        "method": "ImageGen",
+        "image": "exec-58821517-0639-4b89-8a07-b9ea380339e1.png",
+        "cell": [
+          0,
+          341,
+          503,
+          683
+        ],
+        "asset": "assets/creatures/npc_rat_hooded/rest/sit_0001.png"
+      },
+      "REST": {
+        "method": "ImageGen",
+        "image": "exec-58821517-0639-4b89-8a07-b9ea380339e1.png",
+        "cell": [
+          503,
+          341,
+          992,
+          683
+        ],
+        "asset": "assets/creatures/npc_rat_hooded/rest/rest_0001.png"
+      },
+      "WALK_LEFT:1": {
+        "method": "ImageGen",
+        "image": "exec-58821517-0639-4b89-8a07-b9ea380339e1.png",
+        "cell": [
+          992,
+          341,
+          1536,
+          683
+        ],
+        "asset": "assets/creatures/npc_rat_hooded/walk_left/walk_left_0001.png"
+      },
+      "WALK_LEFT:2": {
+        "method": "ImageGen",
+        "image": "exec-58821517-0639-4b89-8a07-b9ea380339e1.png",
+        "cell": [
+          0,
+          683,
+          512,
+          1024
+        ],
+        "asset": "assets/creatures/npc_rat_hooded/walk_left/walk_left_0002.png"
+      },
+      "WALK_LEFT:3": {
+        "method": "ImageGen",
+        "image": "exec-58821517-0639-4b89-8a07-b9ea380339e1.png",
+        "cell": [
+          512,
+          683,
+          1011,
+          1024
+        ],
+        "asset": "assets/creatures/npc_rat_hooded/walk_left/walk_left_0003.png"
+      },
+      "WALK_LEFT:4": {
+        "method": "ImageGen",
+        "image": "exec-58821517-0639-4b89-8a07-b9ea380339e1.png",
+        "cell": [
+          1011,
+          683,
+          1536,
+          1024
+        ],
+        "asset": "assets/creatures/npc_rat_hooded/walk_left/walk_left_0004.png"
+      },
+      "WALK_RIGHT:1": {
+        "method": "mirrored_walk",
+        "image": "exec-58821517-0639-4b89-8a07-b9ea380339e1.png",
+        "cell": [
+          992,
+          341,
+          1536,
+          683
+        ],
+        "source_state": "WALK_LEFT:1",
+        "asset": "assets/creatures/npc_rat_hooded/walk_right/walk_right_0001.png"
+      },
+      "WALK_RIGHT:2": {
+        "method": "mirrored_walk",
+        "image": "exec-58821517-0639-4b89-8a07-b9ea380339e1.png",
+        "cell": [
+          0,
+          683,
+          512,
+          1024
+        ],
+        "source_state": "WALK_LEFT:2",
+        "asset": "assets/creatures/npc_rat_hooded/walk_right/walk_right_0002.png"
+      },
+      "WALK_RIGHT:3": {
+        "method": "mirrored_walk",
+        "image": "exec-58821517-0639-4b89-8a07-b9ea380339e1.png",
+        "cell": [
+          512,
+          683,
+          1011,
+          1024
+        ],
+        "source_state": "WALK_LEFT:3",
+        "asset": "assets/creatures/npc_rat_hooded/walk_right/walk_right_0003.png"
+      },
+      "WALK_RIGHT:4": {
+        "method": "mirrored_walk",
+        "image": "exec-58821517-0639-4b89-8a07-b9ea380339e1.png",
+        "cell": [
+          1011,
+          683,
+          1536,
+          1024
+        ],
+        "source_state": "WALK_LEFT:4",
+        "asset": "assets/creatures/npc_rat_hooded/walk_right/walk_right_0004.png"
+      }
+    },
+    "npc_cat_calico": {
+      "FRONT": {
+        "method": "ImageGen",
+        "image": "exec-3de5f600-8399-4fa6-a9a3-55864d3407b8.png",
+        "cell": [
+          0,
+          0,
+          500,
+          341
+        ],
+        "asset": "assets/creatures/npc_cat_calico/identity/front_0001.png"
+      },
+      "IDLE_LEFT": {
+        "method": "ImageGen",
+        "image": "exec-3de5f600-8399-4fa6-a9a3-55864d3407b8.png",
+        "cell": [
+          500,
+          0,
+          1020,
+          341
+        ],
+        "asset": "assets/creatures/npc_cat_calico/idle/idle_left_0001.png"
+      },
+      "IDLE_RIGHT": {
+        "method": "ImageGen",
+        "image": "exec-3de5f600-8399-4fa6-a9a3-55864d3407b8.png",
+        "cell": [
+          1020,
+          0,
+          1536,
+          341
+        ],
+        "asset": "assets/creatures/npc_cat_calico/idle/idle_right_0001.png"
+      },
+      "SIT": {
+        "method": "ImageGen",
+        "image": "exec-3de5f600-8399-4fa6-a9a3-55864d3407b8.png",
+        "cell": [
+          0,
+          341,
+          512,
+          683
+        ],
+        "asset": "assets/creatures/npc_cat_calico/rest/sit_0001.png"
+      },
+      "REST": {
+        "method": "ImageGen",
+        "image": "exec-3de5f600-8399-4fa6-a9a3-55864d3407b8.png",
+        "cell": [
+          512,
+          341,
+          1017,
+          683
+        ],
+        "asset": "assets/creatures/npc_cat_calico/rest/rest_0001.png"
+      },
+      "WALK_LEFT:1": {
+        "method": "ImageGen",
+        "image": "exec-3de5f600-8399-4fa6-a9a3-55864d3407b8.png",
+        "cell": [
+          1017,
+          341,
+          1536,
+          683
+        ],
+        "asset": "assets/creatures/npc_cat_calico/walk_left/walk_left_0001.png"
+      },
+      "WALK_LEFT:2": {
+        "method": "ImageGen",
+        "image": "exec-3de5f600-8399-4fa6-a9a3-55864d3407b8.png",
+        "cell": [
+          0,
+          683,
+          512,
+          1024
+        ],
+        "asset": "assets/creatures/npc_cat_calico/walk_left/walk_left_0002.png"
+      },
+      "WALK_LEFT:3": {
+        "method": "ImageGen",
+        "image": "exec-3de5f600-8399-4fa6-a9a3-55864d3407b8.png",
+        "cell": [
+          512,
+          683,
+          1006,
+          1024
+        ],
+        "asset": "assets/creatures/npc_cat_calico/walk_left/walk_left_0003.png"
+      },
+      "WALK_LEFT:4": {
+        "method": "ImageGen",
+        "image": "exec-3de5f600-8399-4fa6-a9a3-55864d3407b8.png",
+        "cell": [
+          1006,
+          683,
+          1536,
+          1024
+        ],
+        "asset": "assets/creatures/npc_cat_calico/walk_left/walk_left_0004.png"
+      },
+      "WALK_RIGHT:1": {
+        "method": "mirrored_walk",
+        "image": "exec-3de5f600-8399-4fa6-a9a3-55864d3407b8.png",
+        "cell": [
+          1017,
+          341,
+          1536,
+          683
+        ],
+        "source_state": "WALK_LEFT:1",
+        "asset": "assets/creatures/npc_cat_calico/walk_right/walk_right_0001.png"
+      },
+      "WALK_RIGHT:2": {
+        "method": "mirrored_walk",
+        "image": "exec-3de5f600-8399-4fa6-a9a3-55864d3407b8.png",
+        "cell": [
+          0,
+          683,
+          512,
+          1024
+        ],
+        "source_state": "WALK_LEFT:2",
+        "asset": "assets/creatures/npc_cat_calico/walk_right/walk_right_0002.png"
+      },
+      "WALK_RIGHT:3": {
+        "method": "mirrored_walk",
+        "image": "exec-3de5f600-8399-4fa6-a9a3-55864d3407b8.png",
+        "cell": [
+          512,
+          683,
+          1006,
+          1024
+        ],
+        "source_state": "WALK_LEFT:3",
+        "asset": "assets/creatures/npc_cat_calico/walk_right/walk_right_0003.png"
+      },
+      "WALK_RIGHT:4": {
+        "method": "mirrored_walk",
+        "image": "exec-3de5f600-8399-4fa6-a9a3-55864d3407b8.png",
+        "cell": [
+          1006,
+          683,
+          1536,
+          1024
+        ],
+        "source_state": "WALK_LEFT:4",
+        "asset": "assets/creatures/npc_cat_calico/walk_right/walk_right_0004.png"
+      }
+    },
+    "npc_cat_sphynx": {
+      "FRONT": {
+        "method": "ImageGen",
+        "image": "exec-88a3a73e-cc1d-4057-86f9-2ef55ae7198b.png",
+        "cell": [
+          0,
+          0,
+          508,
+          341
+        ],
+        "asset": "assets/creatures/npc_cat_sphynx/identity/front_0001.png"
+      },
+      "IDLE_LEFT": {
+        "method": "ImageGen",
+        "image": "exec-88a3a73e-cc1d-4057-86f9-2ef55ae7198b.png",
+        "cell": [
+          508,
+          0,
+          1024,
+          341
+        ],
+        "asset": "assets/creatures/npc_cat_sphynx/idle/idle_left_0001.png"
+      },
+      "IDLE_RIGHT": {
+        "method": "ImageGen",
+        "image": "exec-88a3a73e-cc1d-4057-86f9-2ef55ae7198b.png",
+        "cell": [
+          1024,
+          0,
+          1536,
+          341
+        ],
+        "asset": "assets/creatures/npc_cat_sphynx/idle/idle_right_0001.png"
+      },
+      "SIT": {
+        "method": "ImageGen",
+        "image": "exec-88a3a73e-cc1d-4057-86f9-2ef55ae7198b.png",
+        "cell": [
+          0,
+          341,
+          512,
+          683
+        ],
+        "asset": "assets/creatures/npc_cat_sphynx/rest/sit_0001.png"
+      },
+      "REST": {
+        "method": "ImageGen",
+        "image": "exec-88a3a73e-cc1d-4057-86f9-2ef55ae7198b.png",
+        "cell": [
+          512,
+          341,
+          997,
+          683
+        ],
+        "asset": "assets/creatures/npc_cat_sphynx/rest/rest_0001.png"
+      },
+      "WALK_LEFT:1": {
+        "method": "ImageGen",
+        "image": "exec-88a3a73e-cc1d-4057-86f9-2ef55ae7198b.png",
+        "cell": [
+          997,
+          341,
+          1536,
+          683
+        ],
+        "asset": "assets/creatures/npc_cat_sphynx/walk_left/walk_left_0001.png"
+      },
+      "WALK_LEFT:2": {
+        "method": "ImageGen",
+        "image": "exec-88a3a73e-cc1d-4057-86f9-2ef55ae7198b.png",
+        "cell": [
+          0,
+          683,
+          512,
+          1024
+        ],
+        "asset": "assets/creatures/npc_cat_sphynx/walk_left/walk_left_0002.png"
+      },
+      "WALK_LEFT:3": {
+        "method": "ImageGen",
+        "image": "exec-88a3a73e-cc1d-4057-86f9-2ef55ae7198b.png",
+        "cell": [
+          512,
+          683,
+          992,
+          1024
+        ],
+        "asset": "assets/creatures/npc_cat_sphynx/walk_left/walk_left_0003.png"
+      },
+      "WALK_LEFT:4": {
+        "method": "ImageGen",
+        "image": "exec-88a3a73e-cc1d-4057-86f9-2ef55ae7198b.png",
+        "cell": [
+          992,
+          683,
+          1536,
+          1024
+        ],
+        "asset": "assets/creatures/npc_cat_sphynx/walk_left/walk_left_0004.png"
+      },
+      "WALK_RIGHT:1": {
+        "method": "mirrored_walk",
+        "image": "exec-88a3a73e-cc1d-4057-86f9-2ef55ae7198b.png",
+        "cell": [
+          997,
+          341,
+          1536,
+          683
+        ],
+        "source_state": "WALK_LEFT:1",
+        "asset": "assets/creatures/npc_cat_sphynx/walk_right/walk_right_0001.png"
+      },
+      "WALK_RIGHT:2": {
+        "method": "mirrored_walk",
+        "image": "exec-88a3a73e-cc1d-4057-86f9-2ef55ae7198b.png",
+        "cell": [
+          0,
+          683,
+          512,
+          1024
+        ],
+        "source_state": "WALK_LEFT:2",
+        "asset": "assets/creatures/npc_cat_sphynx/walk_right/walk_right_0002.png"
+      },
+      "WALK_RIGHT:3": {
+        "method": "mirrored_walk",
+        "image": "exec-88a3a73e-cc1d-4057-86f9-2ef55ae7198b.png",
+        "cell": [
+          512,
+          683,
+          992,
+          1024
+        ],
+        "source_state": "WALK_LEFT:3",
+        "asset": "assets/creatures/npc_cat_sphynx/walk_right/walk_right_0003.png"
+      },
+      "WALK_RIGHT:4": {
+        "method": "mirrored_walk",
+        "image": "exec-88a3a73e-cc1d-4057-86f9-2ef55ae7198b.png",
+        "cell": [
+          992,
+          683,
+          1536,
+          1024
+        ],
+        "source_state": "WALK_LEFT:4",
+        "asset": "assets/creatures/npc_cat_sphynx/walk_right/walk_right_0004.png"
+      }
+    },
+    "npc_rat_juvenile_gray": {
+      "FRONT": {
+        "method": "ImageGen",
+        "image": "exec-ac38f069-27bb-48c3-90b0-7753fd531d8c.png",
+        "cell": [
+          0,
+          0,
+          494,
+          341
+        ],
+        "asset": "assets/creatures/npc_rat_juvenile_gray/identity/front_0001.png"
+      },
+      "IDLE_LEFT": {
+        "method": "ImageGen",
+        "image": "exec-ac38f069-27bb-48c3-90b0-7753fd531d8c.png",
+        "cell": [
+          494,
+          0,
+          1014,
+          341
+        ],
+        "asset": "assets/creatures/npc_rat_juvenile_gray/idle/idle_left_0001.png"
+      },
+      "IDLE_RIGHT": {
+        "method": "ImageGen",
+        "image": "exec-ac38f069-27bb-48c3-90b0-7753fd531d8c.png",
+        "cell": [
+          1014,
+          0,
+          1536,
+          341
+        ],
+        "asset": "assets/creatures/npc_rat_juvenile_gray/idle/idle_right_0001.png"
+      },
+      "SIT": {
+        "method": "ImageGen",
+        "image": "exec-ac38f069-27bb-48c3-90b0-7753fd531d8c.png",
+        "cell": [
+          0,
+          341,
+          498,
+          683
+        ],
+        "asset": "assets/creatures/npc_rat_juvenile_gray/rest/sit_0001.png"
+      },
+      "REST": {
+        "method": "ImageGen",
+        "image": "exec-ac38f069-27bb-48c3-90b0-7753fd531d8c.png",
+        "cell": [
+          498,
+          341,
+          1008,
+          683
+        ],
+        "asset": "assets/creatures/npc_rat_juvenile_gray/rest/rest_0001.png"
+      },
+      "WALK_LEFT:1": {
+        "method": "ImageGen",
+        "image": "exec-ac38f069-27bb-48c3-90b0-7753fd531d8c.png",
+        "cell": [
+          1008,
+          341,
+          1536,
+          683
+        ],
+        "asset": "assets/creatures/npc_rat_juvenile_gray/walk_left/walk_left_0001.png"
+      },
+      "WALK_LEFT:2": {
+        "method": "ImageGen",
+        "image": "exec-ac38f069-27bb-48c3-90b0-7753fd531d8c.png",
+        "cell": [
+          0,
+          683,
+          512,
+          1024
+        ],
+        "asset": "assets/creatures/npc_rat_juvenile_gray/walk_left/walk_left_0002.png"
+      },
+      "WALK_LEFT:3": {
+        "method": "ImageGen",
+        "image": "exec-ac38f069-27bb-48c3-90b0-7753fd531d8c.png",
+        "cell": [
+          512,
+          683,
+          1024,
+          1024
+        ],
+        "asset": "assets/creatures/npc_rat_juvenile_gray/walk_left/walk_left_0003.png"
+      },
+      "WALK_LEFT:4": {
+        "method": "ImageGen",
+        "image": "exec-ac38f069-27bb-48c3-90b0-7753fd531d8c.png",
+        "cell": [
+          1024,
+          683,
+          1536,
+          1024
+        ],
+        "asset": "assets/creatures/npc_rat_juvenile_gray/walk_left/walk_left_0004.png"
+      },
+      "WALK_RIGHT:1": {
+        "method": "mirrored_walk",
+        "image": "exec-ac38f069-27bb-48c3-90b0-7753fd531d8c.png",
+        "cell": [
+          1008,
+          341,
+          1536,
+          683
+        ],
+        "source_state": "WALK_LEFT:1",
+        "asset": "assets/creatures/npc_rat_juvenile_gray/walk_right/walk_right_0001.png"
+      },
+      "WALK_RIGHT:2": {
+        "method": "mirrored_walk",
+        "image": "exec-ac38f069-27bb-48c3-90b0-7753fd531d8c.png",
+        "cell": [
+          0,
+          683,
+          512,
+          1024
+        ],
+        "source_state": "WALK_LEFT:2",
+        "asset": "assets/creatures/npc_rat_juvenile_gray/walk_right/walk_right_0002.png"
+      },
+      "WALK_RIGHT:3": {
+        "method": "mirrored_walk",
+        "image": "exec-ac38f069-27bb-48c3-90b0-7753fd531d8c.png",
+        "cell": [
+          512,
+          683,
+          1024,
+          1024
+        ],
+        "source_state": "WALK_LEFT:3",
+        "asset": "assets/creatures/npc_rat_juvenile_gray/walk_right/walk_right_0003.png"
+      },
+      "WALK_RIGHT:4": {
+        "method": "mirrored_walk",
+        "image": "exec-ac38f069-27bb-48c3-90b0-7753fd531d8c.png",
+        "cell": [
+          1024,
+          683,
+          1536,
+          1024
+        ],
+        "source_state": "WALK_LEFT:4",
+        "asset": "assets/creatures/npc_rat_juvenile_gray/walk_right/walk_right_0004.png"
+      }
+    }
+  }
+}
