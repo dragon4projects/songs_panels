@@ -1,5 +1,46 @@
 # NPC and creature sprite-bank QA — 2026-11-23
 
+**Current status: PARTIAL PASS. Production and local binary verification complete. GitHub push and fresh remote checkout pending.**
+
+## Continuation from the exact GitHub branch
+
+- Branch: `art/znaechka-characters-ZNA_CHAR_NPC_20261123_001`.
+- Starting checkout: `994eb3f66436b2985cb94b1fc98b82274d8141c6`. The operator's authenticated GitHub clone completed LFS filtering for 4,218 files. A copied working checkout ran a scoped `git lfs pull` for creatures and residents with exit 0. Existing PNGs were decoded and hashed before art generation.
+- The tracked Git tree, registry, index, checksums, and creature folder inventory confirmed zero mouse banks before production. The tree has two Shurshun poster paths and no creature identity image. Recovered `docs/art_review/ZNA_CHAR_NPC_20261123_002_SMALL_LIFE_TASK_EN.md` specifies black-cat identity details and records a queued mouse behavior-art proposal. Neither that document nor the poster designates an approved Shurshun creature identity master.
+- `NPC_GINGER_CAT_GUEST` remains the sole Miu bank. The centaur, vampire girl, Miu, AI sphere, three hedgehogs, six cats, five rats, and Manjka passed the binary audit and were reused.
+- The active ZNA004 instruction takes the current seven-state 1024×640 creature bank grammar from the accepted branch manifests. The queued ZNA002 behavior-art proposal has no registered mouse bank or active run/flee/sniff contract in this checkout. The art delivery uses the registered seven-state grammar and leaves runtime binding disabled.
+
+## Production
+
+| New bank | States | PNGs |
+| --- | --- | ---: |
+| `npc_mouse_gray` | FRONT 1, IDLE_LEFT 1, IDLE_RIGHT 1, SIT 1, REST 1, WALK_LEFT 4, WALK_RIGHT 4 | 13 |
+| `npc_mouse_brown` | FRONT 1, IDLE_LEFT 1, IDLE_RIGHT 1, SIT 1, REST 1, WALK_LEFT 4, WALK_RIGHT 4 | 13 |
+| `npc_mouse_pale` | FRONT 1, IDLE_LEFT 1, IDLE_RIGHT 1, SIT 1, REST 1, WALK_LEFT 4, WALK_RIGHT 4 | 13 |
+| Shurshun | BLOCKED_MASTER_REQUIRED | 0 |
+
+Three separately generated visual variants share a realistic house-mouse pose plan. Right-facing sprites mirror the matching left-facing originals. Frames are aligned by the dense body silhouette and a common alpha floor. The pale sheet had translucent background spill corrected during alpha preparation. Ownership is unknown for each mouse. Existing states required no repair. Visual art approval is pending.
+
+Canonical updates are limited to the creature entries in `data/asset_registry_nov2026.json`, `assets/manifests/bank_coverage.json`, the 39 appended asset index and checksum records, and `assets/manifests/npc_20261123_004_mouse_provenance.json`. Per-frame source references, cut cells, mirror flags, and alpha bounds are in provenance.
+
+## Binary QA and no-touch verification
+
+| Check | Evidence |
+| --- | --- |
+| Existing bank audit | 966 decoded PNGs across 22 banks, including three protected residents. SHA-256 matches tracked checksums for all 966. |
+| New banks | 39 decoded PNGs, all 1024×640 RGBA. Every image has transparent canvas and a visible opaque or near-opaque subject. |
+| Naming, state coverage and duplicates | Seven states per mouse, consecutive four-digit numbering, 39 distinct SHA-256 values. |
+| Canvas and motion placement | Nonempty alpha strictly inside each canvas. Common floor at exclusive y=598. Walk-cycle height/width ratios under 1.25 and consecutive left alpha-bound changes (including wrap) below 70 px. Contact-sheet review found intact silhouettes and visibly distinct coats. |
+| Protected residents | All three identities and 423 wardrobe images matched pre-work SHA-256 byte-for-byte after integration. The digest table below remains valid. No asset redraw or existing asset edits. |
+| Git scope | Asset commit touches only the 39 mouse PNGs and five creature-related metadata files. This handoff update is the second commit. |
+| LFS pointer integrity | All 39 staged pointers exactly match image SHA-256 and byte length. Each corresponding local LFS object is byte-identical to its checked-out image. |
+| Fresh local checkout | A non-hardlinked Git clone at asset commit `436a16632c9cbeb71945dc6810384b91f8435143` started with smudge disabled, then fetched the resident/creature LFS objects from the local origin. The complete machine audit was byte-identical to the post-work audit. |
+| Remote GitHub push and fresh remote checkout | Pending at report creation. The sandbox cannot resolve github.com. Use the authenticated native Git connection to publish and verify the enclosing report commit. |
+
+## Historical manifest-only audit
+
+The evidence below records the first pass, before the authenticated operator checkout made the LFS payloads available. Its initial blockers and Git status are historical.
+
 **Overall: BLOCKED. Manifest audit completed. Binary checkout and asset delivery are pending.**
 
 ## Source state
