@@ -11,7 +11,10 @@ func _cleanup(path: String) -> void:
 		".world_events_v1.json",
 		".world_events_v1.json.bak",
 		".world_events_v1.json.tmp",
-		".world_events_v1.json.corrupt"
+		".world_events_v1.json.corrupt",
+		".world_events_v1.sqlite",".world_events_v1.sqlite.bak",
+		".world_events_v1.sqlite-wal",".world_events_v1.sqlite-shm",
+		".world_events_v1.sqlite.corrupt"
 	]:
 		DirAccess.remove_absolute(ProjectSettings.globalize_path(path+suffix))
 
@@ -24,9 +27,11 @@ func _has_event(entries: Array, event_name: String) -> bool:
 func run() -> void:
 	var path := "user://ambient_creatures_v018.json"
 	_cleanup(path)
+	OS.set_environment("DRAGON_OBJECT_EVENT_BACKEND","")
 	var world := World.new()
 	world.save_path = path
 	world.seed_world()
+	assert(str(world.runtime_state.get("object_event_backend",""))=="sqlite_v021_proof")
 
 	var common_a: Dictionary = world.get_room(-2,0)
 	var common_b: Dictionary = world.get_room(-1,0)
@@ -103,4 +108,5 @@ func run() -> void:
 
 	_cleanup(path)
 	print("AMBIENT_CREATURES_V018_PASS public_roam=yes private_bypass=no rejected_logged=yes waypoint_travel=yes owner_label=evidence_only opt_in_pickup=yes protected=no stash=persistent journal=causal guest=registered")
+	OS.set_environment("DRAGON_OBJECT_EVENT_BACKEND","")
 	quit(0)
