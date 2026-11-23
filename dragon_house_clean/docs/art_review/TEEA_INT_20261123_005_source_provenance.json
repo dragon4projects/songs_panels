@@ -1,0 +1,330 @@
+{
+  "schema": 1,
+  "batch_id": "TEEA_INT_20261123_005",
+  "visual_canon": "TEEA_INT_20261122_002_REWORK_R1",
+  "polyhaven_models": [
+    {
+      "asset_id": "Shelf_01",
+      "name": "Shelf 01",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/Shelf_01",
+      "resolution": "1k",
+      "polycount": 182,
+      "dimensions_mm": [
+        1003.443717956543,
+        256.9795063869833,
+        2080.310344696045
+      ]
+    },
+    {
+      "asset_id": "book_encyclopedia_set_01",
+      "name": "Book Encyclopedia Set 01",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/book_encyclopedia_set_01",
+      "resolution": "1k",
+      "polycount": 67306,
+      "dimensions_mm": [
+        551.2974057346582,
+        163.06233406066895,
+        237.41818653931634
+      ]
+    },
+    {
+      "asset_id": "desk_lamp_arm_01",
+      "name": "Desk Lamp Arm 01",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/desk_lamp_arm_01",
+      "resolution": "1k",
+      "polycount": 25710,
+      "dimensions_mm": [
+        617.3093914985657,
+        408.02252292633057,
+        879.0190517902374
+      ]
+    },
+    {
+      "asset_id": "mid_century_lounge_chair",
+      "name": "Mid Century Lounge Chair",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/mid_century_lounge_chair",
+      "resolution": "1k",
+      "polycount": 6148,
+      "dimensions_mm": [
+        1008.6143612861633,
+        1190.310776233673,
+        1169.0847246776136
+      ]
+    },
+    {
+      "asset_id": "modern_arm_chair_01",
+      "name": "Modern Arm Chair 01",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/modern_arm_chair_01",
+      "resolution": "1k",
+      "polycount": 8916,
+      "dimensions_mm": [
+        820.3444182872772,
+        986.5616858005524,
+        1022.8520567470696
+      ]
+    },
+    {
+      "asset_id": "painted_wooden_chair_01",
+      "name": "Painted Wooden Chair 01",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/painted_wooden_chair_01",
+      "resolution": "1k",
+      "polycount": 724,
+      "dimensions_mm": [
+        431.75144493579865,
+        539.8241728544235,
+        956.4821355743334
+      ]
+    },
+    {
+      "asset_id": "side_table_01",
+      "name": "Side Table 01",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/side_table_01",
+      "resolution": "1k",
+      "polycount": 2756,
+      "dimensions_mm": [
+        550.0000715255737,
+        450.00001788139343,
+        550.6622816901654
+      ]
+    },
+    {
+      "asset_id": "vintage_day_bed",
+      "name": "Vintage Day Bed",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/vintage_day_bed",
+      "resolution": "1k",
+      "polycount": 2715,
+      "dimensions_mm": [
+        1972.5552201271057,
+        854.77614402771,
+        1127.3465404283343
+      ]
+    },
+    {
+      "asset_id": "vintage_wooden_drawer_01",
+      "name": "Vintage Wooden Drawer 01",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/vintage_wooden_drawer_01",
+      "resolution": "1k",
+      "polycount": 5184,
+      "dimensions_mm": [
+        1715.1139974594116,
+        1006.912887096405,
+        1090.839296579361
+      ]
+    },
+    {
+      "asset_id": "wooden_bookshelf_worn",
+      "name": "Wooden Bookshelf Worn",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/wooden_bookshelf_worn",
+      "resolution": "1k",
+      "polycount": 10106,
+      "dimensions_mm": [
+        1373.95179271698,
+        581.3020169734955,
+        2063.442051410675
+      ]
+    }
+  ],
+  "ambientcg_materials": [
+    {
+      "asset_id": "Rock035",
+      "license": "CC0 1.0",
+      "source_page": "https://ambientcg.com/a/Rock035",
+      "use": "cave stone"
+    },
+    {
+      "asset_id": "Wood051",
+      "license": "CC0 1.0",
+      "source_page": "https://ambientcg.com/a/Wood051",
+      "use": "dark worn timber / wood overrides"
+    }
+  ],
+  "procedural_geometry": [
+    "continuous cave rear shell and restrained timber supports",
+    "Common unlit structural hearth recesses",
+    "Study rear recesses and heavy desks / reading tables",
+    "Rest rear alcoves and low quiet rest pads",
+    "Library rear recesses and reading tables",
+    "practical wall globe fixtures"
+  ],
+  "foreground": {
+    "common/R1": {
+      "physical_z": 0.15,
+      "plane_type": "front_edge",
+      "authored_target_front_z": 0.15,
+      "source_furniture_ids": [
+        "common_r1_front_chair"
+      ],
+      "source_measurements": [
+        {
+          "id": "common_r1_front_chair",
+          "front_z": 0.15000003576278687,
+          "seat_clip_z": -0.09974321258753664
+        }
+      ],
+      "geometry_clip_plane_type": "seat_centroid_minus_0.012_blender_y",
+      "note": "Runtime registration plane is the common camera-facing furniture front edge. Each source mesh was clipped separately behind its measured seat centroid to retain only true camera-facing occluder geometry."
+    },
+    "common/R2": {
+      "physical_z": 0.15,
+      "plane_type": "front_edge",
+      "authored_target_front_z": 0.15,
+      "source_furniture_ids": [
+        "common_r2_front_chair_left",
+        "common_r2_front_chair_right"
+      ],
+      "source_measurements": [
+        {
+          "id": "common_r2_front_chair_left",
+          "front_z": 0.15000003576278687,
+          "seat_clip_z": -0.09974321258753664
+        },
+        {
+          "id": "common_r2_front_chair_right",
+          "front_z": 0.15000036358833313,
+          "seat_clip_z": -0.04430356710404158
+        }
+      ],
+      "geometry_clip_plane_type": "seat_centroid_minus_0.012_blender_y",
+      "note": "Runtime registration plane is the common camera-facing furniture front edge. Each source mesh was clipped separately behind its measured seat centroid to retain only true camera-facing occluder geometry."
+    },
+    "study/R2": {
+      "physical_z": 0.15,
+      "plane_type": "front_edge",
+      "authored_target_front_z": 0.15,
+      "source_furniture_ids": [
+        "study_r2_front_reader"
+      ],
+      "source_measurements": [
+        {
+          "id": "study_r2_front_reader",
+          "front_z": 0.1499996781349182,
+          "seat_clip_z": -0.05320598270325398
+        }
+      ],
+      "geometry_clip_plane_type": "seat_centroid_minus_0.012_blender_y",
+      "note": "Runtime registration plane is the common camera-facing furniture front edge. Each source mesh was clipped separately behind its measured seat centroid to retain only true camera-facing occluder geometry."
+    },
+    "study/R3": {
+      "physical_z": 0.15,
+      "plane_type": "front_edge",
+      "authored_target_front_z": 0.15,
+      "source_furniture_ids": [
+        "study_r3_front_reader_left",
+        "study_r3_front_reader_right"
+      ],
+      "source_measurements": [
+        {
+          "id": "study_r3_front_reader_left",
+          "front_z": 0.15000036358833313,
+          "seat_clip_z": -0.04430356710404158
+        },
+        {
+          "id": "study_r3_front_reader_right",
+          "front_z": 0.1500004231929779,
+          "seat_clip_z": -0.08949935982659708
+        }
+      ],
+      "geometry_clip_plane_type": "seat_centroid_minus_0.012_blender_y",
+      "note": "Runtime registration plane is the common camera-facing furniture front edge. Each source mesh was clipped separately behind its measured seat centroid to retain only true camera-facing occluder geometry."
+    },
+    "rest/R2": {
+      "physical_z": 0.15,
+      "plane_type": "front_edge",
+      "authored_target_front_z": 0.15,
+      "source_furniture_ids": [
+        "rest_r2_front_lounge",
+        "rest_r2_front_chair"
+      ],
+      "source_measurements": [
+        {
+          "id": "rest_r2_front_lounge",
+          "front_z": 0.1499996781349182,
+          "seat_clip_z": -0.05320598270325398
+        },
+        {
+          "id": "rest_r2_front_chair",
+          "front_z": 0.15000036358833313,
+          "seat_clip_z": -0.04430356710404158
+        }
+      ],
+      "geometry_clip_plane_type": "seat_centroid_minus_0.012_blender_y",
+      "note": "Runtime registration plane is the common camera-facing furniture front edge. Each source mesh was clipped separately behind its measured seat centroid to retain only true camera-facing occluder geometry."
+    },
+    "rest/R3": {
+      "physical_z": 0.15,
+      "plane_type": "front_edge",
+      "authored_target_front_z": 0.15,
+      "source_furniture_ids": [
+        "rest_r3_front_lounge_left",
+        "rest_r3_front_chair_right"
+      ],
+      "source_measurements": [
+        {
+          "id": "rest_r3_front_lounge_left",
+          "front_z": 0.1499996781349182,
+          "seat_clip_z": -0.05320598270325398
+        },
+        {
+          "id": "rest_r3_front_chair_right",
+          "front_z": 0.1500004231929779,
+          "seat_clip_z": -0.08949935982659708
+        }
+      ],
+      "geometry_clip_plane_type": "seat_centroid_minus_0.012_blender_y",
+      "note": "Runtime registration plane is the common camera-facing furniture front edge. Each source mesh was clipped separately behind its measured seat centroid to retain only true camera-facing occluder geometry."
+    },
+    "library/R1": {
+      "physical_z": 0.15,
+      "plane_type": "front_edge",
+      "authored_target_front_z": 0.15,
+      "source_furniture_ids": [
+        "library_r1_front_reader"
+      ],
+      "source_measurements": [
+        {
+          "id": "library_r1_front_reader",
+          "front_z": 0.15000036358833313,
+          "seat_clip_z": -0.04430356710404158
+        }
+      ],
+      "geometry_clip_plane_type": "seat_centroid_minus_0.012_blender_y",
+      "note": "Runtime registration plane is the common camera-facing furniture front edge. Each source mesh was clipped separately behind its measured seat centroid to retain only true camera-facing occluder geometry."
+    },
+    "library/R3": {
+      "physical_z": 0.15,
+      "plane_type": "front_edge",
+      "authored_target_front_z": 0.15,
+      "source_furniture_ids": [
+        "library_r3_front_reader_left",
+        "library_r3_front_reader_right"
+      ],
+      "source_measurements": [
+        {
+          "id": "library_r3_front_reader_left",
+          "front_z": 0.15000036358833313,
+          "seat_clip_z": -0.04430356710404158
+        },
+        {
+          "id": "library_r3_front_reader_right",
+          "front_z": 0.1500004231929779,
+          "seat_clip_z": -0.08949935982659708
+        }
+      ],
+      "geometry_clip_plane_type": "seat_centroid_minus_0.012_blender_y",
+      "note": "Runtime registration plane is the common camera-facing furniture front edge. Each source mesh was clipped separately behind its measured seat centroid to retain only true camera-facing occluder geometry."
+    }
+  },
+  "source_rejections": [],
+  "source_policy_note": "No physically broken source was scaled by eye. Previously rejected steel_frame_shelves_01 and bench_vice_01 were not reused.",
+  "rights_note": "No Bethesda/Fallout visual assets, textures, branding or props were used. External models/materials listed here are CC0/CC0 1.0; procedural geometry is batch-original."
+}
