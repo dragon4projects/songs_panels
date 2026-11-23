@@ -1,0 +1,17 @@
+{
+  "books": 76,
+  "audio": 203,
+  "film": 0,
+  "unclassified": 495,
+  "artifacts_registered": 27,
+  "artifact_previews_ready": 0,
+  "artifact_missing_sources": 27,
+  "contact_sheet_pages": {
+    "books": 4,
+    "audio": 11,
+    "film": 0,
+    "unclassified": 25,
+    "artifacts": 0
+  },
+  "owner_approved": false
+}
