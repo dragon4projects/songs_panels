@@ -1,0 +1,33 @@
+Dragon House — Teea interiors batch 005 binary payload
+
+Batch: TEEA_INT_20261123_005
+Machine status: READY_FOR_INTEGRATOR_QA
+Owner approved: false
+Art branch: art/teea-interiors-TEEA_INT_20261123_005
+
+Binary ZIP:
+https://d2ol7oe51mr4n9.cloudfront.net/user_3JdI9kJ82xObF8Bi3EgU4P6DaoR/dcec30e5-df76-4440-a49a-446b500940e4.zip
+
+ZIP SHA-256:
+5cc946bcba991d0d357b02310a16109dda866e79b8e961d76766f4aa24641fbd
+
+Internal root:
+dragon_house_clean/
+
+Variants: common/R1, common/R2, study/R2, study/R3, rest/R2, rest/R3, library/R1, library/R3.
+Production PNG: 32 total, exact 1536x1024 RGBA8.
+Measured stations: 26.
+Foreground variants: 8.
+Foreground physical_z: +0.15 for all 8.
+Depth-readability machine pass: 8/8.
+Godot 4.7.2 staged image pass: 32/32.
+Station bounds errors: 0.
+Spacing errors: 0.
+Foreign collision / approach intersections: 0.
+
+Perspective proof:
+- common/R1 yaw -0.15 / 0 / +0.15
+- study/R2 yaw -0.15 / 0 / +0.15
+- library/R3 yaw -0.15 / 0 / +0.15
+
+No production PR was opened.
