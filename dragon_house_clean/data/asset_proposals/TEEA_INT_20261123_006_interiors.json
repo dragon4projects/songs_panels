@@ -1,0 +1,416 @@
+{
+  "schema": 2,
+  "batch_id": "TEEA_INT_20261123_006",
+  "parent_batches": [
+    "TEEA_INT_20261122_003",
+    "TEEA_INT_20261123_004"
+  ],
+  "replacement_candidate": true,
+  "owner_review_status": "READY_FOR_INTEGRATOR_QA",
+  "approved": false,
+  "owner_approved": false,
+  "production_head_validated_against": "78f2ae904585ffe01bc11b39f2762ce90e85f00c",
+  "branch": "art/teea-interiors-TEEA_INT_20261123_006",
+  "room_types": {
+    "music": {
+      "R1": {
+        "physical_width": 4.8,
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/music/R1/backdrop.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "ad3cb0797bb721776558ec1cb1824b579967d37610cebfe002590e984c68049b"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/music/R1/back_decor.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "89c34a02dee71c79efef54916458b4577b1bd370215095a842ebbe67581581a3"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/music/R1/furniture_back.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "2c498dd402b0ab71ea5fc161a0f086936876cdc4626adc3f3d03cbebc14122b0"
+          }
+        ],
+        "station_count": 1,
+        "depth_machine_pass": true
+      },
+      "R2": {
+        "physical_width": 9.6,
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/music/R2/backdrop.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "cbbd39c6bd032304519d7e3857b283b3c4ae069008782b2e8098c4177b37c602"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/music/R2/back_decor.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "ba95127698f37250f9195a26f461fb8b27a2473db35d675faa503a9d8d2dced8"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/music/R2/furniture_back.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "e99706cf6cb1f9cf4d0f9216d7b2acdba97804077869ec3f2c9ab8705edbd188"
+          },
+          {
+            "role": "foreground",
+            "path": "assets/rooms/music/R2/foreground.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "050ec9ad8ef77fcb9f79890a23cc7fdbf58e6214597a7da9242563408cdab573",
+            "physical_z": 0.515725,
+            "source_furniture_ids": [
+              "music_r2_chair_front"
+            ],
+            "clip_plane_z": [
+              0.254181
+            ]
+          }
+        ],
+        "station_count": 2,
+        "depth_machine_pass": true
+      },
+      "R3": {
+        "physical_width": 14.399999999999999,
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/music/R3/backdrop.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "60a82a775573136a95bc1d3d776031c0b3232c0dea1b580c139c120b2fb62401"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/music/R3/back_decor.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "f4f01d30e696409e597fd1fbedd1b9af6e29f1ddf73e04adddf92d189bb0663c"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/music/R3/furniture_back.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "9033fde520de0833c95dda83c43b9f9c671995a6f918549e65b5f7ab5009ed54"
+          },
+          {
+            "role": "foreground",
+            "path": "assets/rooms/music/R3/foreground.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "91a74845a355c1454984fc909506d6f7debdd22c82efd1a840f83fe83b9032bd",
+            "physical_z": 0.510694,
+            "source_furniture_ids": [
+              "music_r3_chair_front"
+            ],
+            "clip_plane_z": [
+              0.25459
+            ]
+          }
+        ],
+        "station_count": 3,
+        "depth_machine_pass": true
+      }
+    },
+    "cinema": {
+      "R1": {
+        "physical_width": 4.8,
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/cinema/R1/backdrop.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "e84f0d5381cc3d56b95f60905b37e5ebc961e87c806e4982a090bb7f9cf3ba38"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/cinema/R1/back_decor.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "5a31b7b699d140306f8ab264ad8c40ffa310818b4acefb20476c134422d3da13"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/cinema/R1/furniture_back.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "d325be253561c7cc28437f1953f0a849802fd0a78c33d423c3aa25bef82ef539"
+          }
+        ],
+        "station_count": 2,
+        "depth_machine_pass": true
+      },
+      "R2": {
+        "physical_width": 9.6,
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/cinema/R2/backdrop.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "7cab1d1799b9a73d388a0a243c62c62ac054354913bdad2047716953c19e2620"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/cinema/R2/back_decor.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "eddb88b596e9f02d1610813f1a9cc1ba3c78f47a9484fcb1e3e5eff9c438ef6a"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/cinema/R2/furniture_back.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "8cfa22242bd2e98bc1477e1ae8684075c17145f76a07123af46b546d902a60c1"
+          },
+          {
+            "role": "foreground",
+            "path": "assets/rooms/cinema/R2/foreground.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "ecfc499650de2ce5a642505d09930f583202d77d39150040d80e698d712611ea",
+            "physical_z": 0.572797,
+            "source_furniture_ids": [
+              "cinema_r2_chair_front"
+            ],
+            "clip_plane_z": [
+              0.224474
+            ]
+          }
+        ],
+        "station_count": 3,
+        "depth_machine_pass": true
+      },
+      "R3": {
+        "physical_width": 14.399999999999999,
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/cinema/R3/backdrop.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "f863dec9ac1bcad7434d5a04cc6a9f4e75d3dea106c4cfc0d394051bb855ebb8"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/cinema/R3/back_decor.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "2e39d20e61c01206152c5d8ac82160dd63e9719020f6019af76e9b1ec737b804"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/cinema/R3/furniture_back.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "5de9515b1e45aaf47d0968a8ee4701d969aede9dc74c54489f80330082aaea72"
+          },
+          {
+            "role": "foreground",
+            "path": "assets/rooms/cinema/R3/foreground.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "c26f510cb86ee8d30815937fb26766a9275bcff43de25f45169b95fd674c11b9",
+            "physical_z": 0.578528,
+            "source_furniture_ids": [
+              "cinema_r3_chair_front"
+            ],
+            "clip_plane_z": [
+              0.223631
+            ]
+          }
+        ],
+        "station_count": 4,
+        "depth_machine_pass": true
+      }
+    },
+    "artifact": {
+      "R1": {
+        "physical_width": 4.8,
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/artifact/R1/backdrop.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "97f34d0427633198c4da343329fbee154de850efc00ee41384cf9a4aca3c914b"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/artifact/R1/back_decor.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "aca6f534878d91e2272683b8d4dd43231d3f375b4c7549f3b314698f3948942a"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/artifact/R1/furniture_back.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "c2427bc38600b64a79f6b5748b816d789305b11540a5c0a29ee9eda096d96f1c"
+          }
+        ],
+        "station_count": 2,
+        "depth_machine_pass": true
+      },
+      "R2": {
+        "physical_width": 9.6,
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/artifact/R2/backdrop.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "35a485e6c424711869560c1884dbd30d0d1c63de161e13a33f25920cdbc89699"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/artifact/R2/back_decor.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "154e3c06d13d28aa5b9675829213e66e0284394f8ee600e3c89331d303cf5621"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/artifact/R2/furniture_back.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "21a60103feb6a20c259a2e4a4f5427d42b92afb2034eb2a41cc8d073286322fc"
+          }
+        ],
+        "station_count": 3,
+        "depth_machine_pass": true
+      },
+      "R3": {
+        "physical_width": 14.399999999999999,
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/artifact/R3/backdrop.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "0f2876e20cce0cc2143e9032d92286d8cb291678e750ccba0ce40280f0d4d40f"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/artifact/R3/back_decor.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "c805d361fd55aa6139134928af1bd826c85a93486390ec81d7ad5431b7946ac1"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/artifact/R3/furniture_back.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "61788229a7eea1bfbfb14931a342dcb8d026998aa8323cfffcaf731ae0086148"
+          }
+        ],
+        "station_count": 3,
+        "depth_machine_pass": true
+      }
+    },
+    "workshop": {
+      "R1": {
+        "physical_width": 4.8,
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/workshop/R1/backdrop.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "0ecef32815184e0b1ec1835b60b1b3d75d60dffed1e1a8bdc6ddfa43386de8a0"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/workshop/R1/back_decor.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "ee00f3acd6e1e9c55c9a1cb16ec986b76b0f041dda500db7b1b22715b20dbf78"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/workshop/R1/furniture_back.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "856f1b514a6975f71ad0aa9322636f0e500acac154e7ebbd4cf8531a6c7eb07a"
+          }
+        ],
+        "station_count": 2,
+        "depth_machine_pass": true
+      },
+      "R2": {
+        "physical_width": 9.6,
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/workshop/R2/backdrop.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "c7e0cfe0bd0afe145a029cf7bf778ef18d1c3ae95ee8d5a9a5830f33af8ad314"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/workshop/R2/back_decor.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "c09f367b34d7d72bc480594bdb4bca6eb763cfb18379fb723c200344dfecf203"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/workshop/R2/furniture_back.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "8017e2450dff70e74ed16d5f55f434fab0aa1004d81d78b88cc8a9448b5921ca"
+          }
+        ],
+        "station_count": 3,
+        "depth_machine_pass": true
+      },
+      "R3": {
+        "physical_width": 14.399999999999999,
+        "layers": [
+          {
+            "role": "backdrop",
+            "path": "assets/rooms/workshop/R3/backdrop.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "0010181e34f3d98935452282b4c8aa4dc8b198c83579a0478422cb691d863786"
+          },
+          {
+            "role": "back_decor",
+            "path": "assets/rooms/workshop/R3/back_decor.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "421b43050e84384a32d16ba667a768f5e12cbc2953f54753f71ea31d57b08933"
+          },
+          {
+            "role": "furniture_back",
+            "path": "assets/rooms/workshop/R3/furniture_back.png",
+            "approved": false,
+            "status": "TEEA006_MACHINE_QA_PASS_INTEGRATOR_LIVE_RUNTIME_PENDING",
+            "sha256": "d2e8f87adba4b29ac04e943812588604d7c4e60f11111790adf5a5bb972464f1"
+          }
+        ],
+        "station_count": 3,
+        "depth_machine_pass": true
+      }
+    }
+  }
+}
