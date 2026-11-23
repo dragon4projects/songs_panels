@@ -9,6 +9,14 @@ func _ids(items:Array)->Array:
 		out.append(str(item.get("id","")))
 	return out
 
+func _node_for_room(scene,room:Dictionary)->Node3D:
+	var group:Dictionary=scene.world.merged_group(int(room["x"]),int(room["level"]))
+	for key in scene.visual_room_groups:
+		var rendered:Dictionary=scene.visual_room_groups[key]
+		if str(rendered.get("primary_id",""))==str(group.get("primary_id","")):
+			return scene.room_root.get_node(str(key))
+	return null
+
 func _mount_room(scene,room:Dictionary)->Node3D:
 	scene.selected_room=str(room["id"])
 	scene.set_mode("ROOM")
@@ -16,8 +24,7 @@ func _mount_room(scene,room:Dictionary)->Node3D:
 	scene.smooth_focus=scene.desired_focus
 	scene.apply_camera(1.0)
 	scene.update_render_lod()
-	return scene.room_root.get_node(
-		scene.world.merged_group(int(room["x"]),int(room["level"]))["primary_id"])
+	return _node_for_room(scene,room)
 
 func _assert_foreground(scene,room:Dictionary,expected_z:float)->void:
 	var node:Node3D=_mount_room(scene,room)
@@ -50,6 +57,8 @@ func run()->void:
 	var workshop:Dictionary=scene.world.make_room(0,2,"workshop")
 	scene.make_rooms()
 	scene.make_residents()
+	await process_frame
+	await process_frame
 
 	var rooms={
 		"arrival":scene.world.get_room(-5,0),
@@ -67,10 +76,11 @@ func run()->void:
 		var layers:Array=scene.interior_skin.validated_layers(kind,1)
 		assert(layers.size()==int(layer_counts[kind]),
 			"Unexpected candidate layer count for "+kind)
-		var group:Dictionary=scene.world.merged_group(int(room["x"]),int(room["level"]))
-		var node:Node3D=scene.room_root.get_node(group["primary_id"])
-		assert(bool(scene.visual_room_groups[node.name]["has_art"]))
-		assert(bool(scene.visual_room_groups[node.name]["replaces_furniture"]))
+		var node:Node3D=_node_for_room(scene,room)
+		assert(node!=null)
+		var rendered:Dictionary=scene.visual_room_groups[node.name]
+		assert(bool(rendered["has_art"]))
+		assert(bool(rendered["replaces_furniture"]))
 
 	var raw=scene.life.stations.furniture
 	assert(raw.for_room_variant(rooms["arrival"],1,0).is_empty())
