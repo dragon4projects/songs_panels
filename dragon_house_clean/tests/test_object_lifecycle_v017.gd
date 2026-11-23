@@ -10,17 +10,22 @@ func _cleanup(path:String)->void:
 		".world_events_v1.json",
 		".world_events_v1.json.bak",
 		".world_events_v1.json.tmp",
-		".world_events_v1.json.corrupt"
+		".world_events_v1.json.corrupt",
+		".world_events_v1.sqlite",".world_events_v1.sqlite.bak",
+		".world_events_v1.sqlite-wal",".world_events_v1.sqlite-shm",
+		".world_events_v1.sqlite.corrupt"
 	]:
 		DirAccess.remove_absolute(ProjectSettings.globalize_path(path+suffix))
 
 func run()->void:
 	var path="user://object_lifecycle_v017.json"
 	_cleanup(path)
+	OS.set_environment("DRAGON_OBJECT_EVENT_BACKEND","")
 
 	var world=World.new()
 	world.save_path=path
 	world.seed_world()
+	assert(str(world.runtime_state.get("object_event_backend",""))=="sqlite_v021_proof")
 
 	var home:Dictionary=world.get_room(1,-1) # public artifact room
 	var lost_found:Dictionary=world.get_room(-2,0) # public common cell
@@ -101,4 +106,5 @@ func run()->void:
 
 	_cleanup(path)
 	print("OBJECT_LIFECYCLE_V017_PASS identity=unique owner=stable holder/location=persistent stash=explicit_opt_in lost_found=recoverable restore=home")
+	OS.set_environment("DRAGON_OBJECT_EVENT_BACKEND","")
 	quit(0)
