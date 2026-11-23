@@ -123,6 +123,23 @@ func run() -> void:
 	assert(restarted.event_core.events.size()==5)
 	assert(bool(restarted.runtime_state.get("world_event_core",{}).get("store_ready",false)))
 
+	# If both compatibility snapshot and readable event history are unavailable,
+	# the runtime may seed a diagnostic shell but must not persist a fake clean
+	# recovery over the evidence gap.
 	_cleanup(path)
-	print("WORLD_EVENT_CORE_V020_PASS durable=yes reducer=yes duplicate_idempotent=yes stale_revision_rejected=yes snapshotless_rebuild=yes owner_immutable=yes journal_reconciled=yes")
+	var corrupt := FileAccess.open(path+".events.json",FileAccess.WRITE)
+	assert(corrupt != null)
+	corrupt.store_string("{broken-event-store")
+	corrupt.flush()
+	corrupt.close()
+	var blocked := World.new()
+	blocked.save_path = path
+	blocked.load_or_seed()
+	assert(not blocked.event_core.store_ready)
+	assert(FileAccess.file_exists(path+".events.json"))
+	assert(not FileAccess.file_exists(path))
+	assert(str(blocked.event_core.last_error).contains("unreadable"))
+
+	_cleanup(path)
+	print("WORLD_EVENT_CORE_V020_PASS durable=yes reducer=yes duplicate_idempotent=yes stale_revision_rejected=yes semantic_invalid_rejected=yes presentation_cannot_mutate=yes snapshotless_rebuild=yes owner_immutable=yes journal_reconciled=yes corrupt_history_fail_closed=yes")
 	quit(0)
