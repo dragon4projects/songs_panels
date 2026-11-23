@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "batch_id": "TEEA_INT_20261122_003",
+  "approved": false,
+  "additive_layers": {
+    "music/R1": {
+      "role": "foreground",
+      "path": "assets/rooms/music/R1/foreground.png",
+      "approved": false,
+      "sha256": "466a0d393999cd37e25e7c3d630ac49f9c066406bc62d934153b0de8585075f7",
+      "source_furniture_id": "music_listen_chair",
+      "derivation": "camera-facing fragment cut from the same authored 3D furniture at the measured seat centroid"
+    },
+    "cinema/R1": {
+      "role": "foreground",
+      "path": "assets/rooms/cinema/R1/foreground.png",
+      "approved": false,
+      "sha256": "04fa142c176a9c66aebb74e205c13b1f9f333a262d5c8e04a05cf997260f76b3",
+      "source_furniture_id": "cinema_sofa",
+      "derivation": "camera-facing fragment cut from the same authored 3D furniture at the measured seat centroid"
+    }
+  },
+  "omissions": {
+    "arrival/R1": {
+      "foreground_required": false,
+      "reason": "No resident seat/work station; entry furniture is collision/drop-zone only."
+    },
+    "corridor/R1": {
+      "foreground_required": false,
+      "reason": "Transit room intentionally has no resident furniture and no foreground occluder."
+    },
+    "artifact/R1": {
+      "foreground_required": false,
+      "reason": "Standing-view interactions only; display furniture does not physically cross in front of the actor."
+    },
+    "workshop/R1": {
+      "foreground_required": false,
+      "reason": "Workbench and stool are behind/under the actor at authored depth; no front armrest/edge requires a separate foreground layer."
+    }
+  }
+}
