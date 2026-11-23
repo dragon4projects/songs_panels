@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "batch_id": "TEEA_INT_20261123_007",
+  "owner_approved": false,
+  "approved": false,
+  "teea006_reference_head": "887e5f1c874c7fb0deb600c58c06ad4e5dafb90f",
+  "production_head_rechecked": "1216e2f1a737008e3d9fea0f5d240d54a78a6ea2",
+  "media_surfaces_total": 32,
+  "library_surfaces_exact": 5,
+  "teea006_surfaces_bound": 27,
+  "binding_errors": 0,
+  "media_yaw_images": 27,
+  "media_yaw_machine_errors": 0,
+  "pass_b": "PASS",
+  "pass_d_media_portion": "PASS",
+  "remaining_blocker": "EXACT_GUEST_ALPHA_LFS_ART_BYTES",
+  "evidence_sha256": {
+    "media_binding_report": "367842a6b96c1dac3d1ef3985613b5d0e4a2b8b463695b8b05462870444264b0",
+    "media_yaw_report": "be08cfa83fe12283001f3c6f109da0921a10ab1721bb9136fa77eb01d8676e6f",
+    "media_yaw_contact_sheet": "6739f32796df57b617d00ba5acb3727b7ddfdfddba138eded75456a25c7ca99b",
+    "guest_alpha_blocker": "eecaa3a2aa3efa75569eed0974c300a9180fae43ee93d904ba21757e0919d11f"
+  }
+}
