@@ -185,6 +185,25 @@ Key v0.21 signals:
 - `SQLITE_SOURCE_CLOSURE_V021_PASS`;
 - `SQLITE_EXPORT_V021_PASS`.
 
+### Final production-equivalent integration acceptance
+- run #2 / `45209785046`: **SUCCESS**;
+- branch product head under test: `ac928f28ac6c9f5b300f142eaca2bd805e0380db`;
+- real LFS audit/import: PASS;
+- complete runtime suite: PASS;
+- v0.17 object lifecycle on default SQLite: PASS;
+- v0.18 ambient-creature object integration on default SQLite: PASS;
+- v0.19 scheduler/LEVEL regressions: PASS;
+- all five v0.21 SQLite migration/recovery/rebuild tests: PASS;
+- Windows/macOS private export: PASS;
+- Windows ZIP explicitly contains `libgdsqlite.windows.template_release.x86_64.dll`;
+- macOS ZIP explicitly contains release SQLite framework.
+
+Artifacts:
+- `dragon-house-v021-private-character-review` — ID `14836595238`, digest `sha256:b9c0eb1fbb4b5b2b6ce5faeabf85dd5dd6b35ee29a95eaa3d4b6b484d30b490b`;
+- `dragon-house-v021-lfs-qa-report` — ID `14835916732`, digest `sha256:da45c703d133cd426fca11fc419ce277138b2403b604ae32b4e2bf61be553be5`;
+- `dragon-house-v021-cutaway-review` — ID `14835818009`, digest `sha256:dfa20c7b8e3b56cf11359e142cb4cc6e3b9c926e195fe54ae4d82230595187d2`;
+- `dragon-house-v021-windows-mac` — ID `14835018720`, digest `sha256:bd4463a70bd4312d51c03014daec2f1991ac226372befb6b3f35834fbc13d736`.
+
 ## Production acceptance changes
 
 The main production LFS/Godot workflow in this integration branch now:
