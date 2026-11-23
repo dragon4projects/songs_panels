@@ -1,4 +1,5 @@
 extends RefCounted
+const WorldEventCore = preload("res://scripts/world_event_core.gd")
 ## One authoritative local simulation state. No chat/LLM interfaces.
 const SAVE_PATH := "user://dragon_house_world_v01.json"
 var save_path: String = SAVE_PATH
@@ -22,6 +23,7 @@ var media: Dictionary = {"books": [], "films": [], "tracks": []}
 # Persistent physical-object identities. Registration is explicit; seed_world does not
 # invent owner artifacts merely because the lifecycle exists.
 var objects: Dictionary = {}
+var event_core = WorldEventCore.new()
 var next_room_id := 1
 
 func cell_key(x: int, level: int) -> String:
@@ -275,21 +277,103 @@ func journal_entries(limit: int = 64) -> Array:
 	var start: int = maxi(0, journal.size() - limit)
 	return journal.slice(start, journal.size())
 
-func _object_event(object: Dictionary, event_name: String, actor_id: String,
-		from_value: String, to_value: String) -> void:
-	var history: Array = object.get("history", [])
-	history.append({
-		"event": event_name,
-		"actor_id": actor_id,
-		"from": from_value,
-		"to": to_value,
-		"sim_clock": sim_clock
-	})
-	while history.size() > 64:
-		history.pop_front()
-	object["history"] = history
-	_append_journal("OBJECT_" + event_name, actor_id, str(object.get("id","")),
-		from_value, to_value, {"display_name":str(object.get("display_name",""))})
+func _event_store_path() -> String:
+	return save_path + ".events.json"
+
+func _refresh_event_core_metrics() -> void:
+	runtime_state["world_event_core"] = event_core.metrics()
+
+func _ensure_event_core_loaded() -> bool:
+	var desired := _event_store_path()
+	if event_core.store_path != desired:
+		var configured := event_core.configure(desired)
+		_refresh_event_core_metrics()
+		return configured
+	_refresh_event_core_metrics()
+	return event_core.store_ready
+
+func _overlay_event_object_projections() -> void:
+	for raw_id in event_core.subject_ids():
+		var object_id := str(raw_id)
+		var projected: Dictionary = event_core.project_object(
+			object_id,objects.get(object_id,{}))
+		if not projected.is_empty():
+			objects[object_id] = projected
+	_refresh_event_core_metrics()
+
+func _reconcile_event_journal() -> void:
+	var known: Dictionary = {}
+	for row in journal:
+		var details: Dictionary = row.get("details",{})
+		var event_id := str(details.get("event_id",""))
+		if event_id != "":
+			known[event_id] = true
+	for raw in event_core.events:
+		var event: Dictionary = raw
+		var event_type := str(event.get("event_type",""))
+		if event_type == "OBJECT_BASELINE_IMPORTED":
+			continue
+		var event_id := str(event.get("event_id",""))
+		if event_id == "" or known.has(event_id):
+			continue
+		var payload: Dictionary = event.get("payload",{})
+		var object_id := str(event.get("subject_id",""))
+		var object: Dictionary = objects.get(object_id,{})
+		_append_journal(event_type,str(event.get("actor_id","")),object_id,
+			str(payload.get("from","")),str(payload.get("to","")),{
+				"event_id":event_id,
+				"authority":str(event.get("authority","")),
+				"truth_class":str(event.get("truth_class","")),
+				"display_name":str(object.get("display_name",""))
+			})
+		known[event_id] = true
+
+func _ensure_object_event_baseline(object_id: String) -> bool:
+	if event_core.object_revision(object_id) > 0:
+		return true
+	var object: Dictionary = objects.get(object_id,{})
+	if object.is_empty():
+		return false
+	var result: Dictionary = event_core.append_object_event(
+		"OBJECT_BASELINE_IMPORTED",object_id,"",
+		{"object":object.duplicate(true),"from":"","to":str(object.get("current_room_id",""))},
+		sim_clock,"SYSTEM_MIGRATION","EXPLICIT_WORLD_FACT",0)
+	_refresh_event_core_metrics()
+	return bool(result.get("ok",false))
+
+func _commit_object_event(object_id: String, event_type: String, actor_id: String,
+		payload: Dictionary, authority: String, truth_class: String) -> bool:
+	if not _ensure_event_core_loaded():
+		push_error("World event core unavailable: " + event_core.last_error)
+		return false
+	if event_type != "OBJECT_REGISTERED" and not _ensure_object_event_baseline(object_id):
+		push_error("Cannot establish event baseline for object " + object_id)
+		return false
+	var result: Dictionary = event_core.append_object_event(
+		event_type,object_id,actor_id,payload,sim_clock,authority,truth_class,
+		event_core.object_revision(object_id))
+	if not bool(result.get("ok",false)):
+		push_error("Object event rejected: " + str(result.get("error","unknown")))
+		_refresh_event_core_metrics()
+		return false
+	var projected: Dictionary = event_core.project_object(
+		object_id,objects.get(object_id,{}))
+	if projected.is_empty():
+		push_error("Object reducer produced empty projection for " + object_id)
+		_refresh_event_core_metrics()
+		return false
+	objects[object_id] = projected
+	var event: Dictionary = result.get("event",{})
+	var event_id := str(event.get("event_id",""))
+	_append_journal(event_type,actor_id,object_id,
+		str(payload.get("from","")),str(payload.get("to","")),{
+			"event_id":event_id,
+			"authority":authority,
+			"truth_class":truth_class,
+			"display_name":str(projected.get("display_name",""))
+		})
+	_refresh_event_core_metrics()
+	return true
 
 func register_physical_object(object_id: String, display_name: String,
 		canonical_owner_id: String, home_room_id: String,
@@ -301,7 +385,7 @@ func register_physical_object(object_id: String, display_name: String,
 	var home: Dictionary = room_by_id(home_room_id)
 	if home.is_empty():
 		return false
-	objects[object_id] = {
+	var object := {
 		"id": object_id,
 		"display_name": display_name,
 		"canonical_owner_id": canonical_owner_id,
@@ -326,9 +410,9 @@ func register_physical_object(object_id: String, display_name: String,
 			"sim_clock": sim_clock
 		}]
 	}
-	_append_journal("OBJECT_REGISTERED", "", object_id, "", home_room_id,
-		{"display_name":display_name,"canonical_owner_id":canonical_owner_id})
-	return true
+	return _commit_object_event(object_id,"OBJECT_REGISTERED","",{
+		"object":object,"from":"","to":home_room_id
+	},"SYSTEM_INIT","EXPLICIT_WORLD_FACT")
 
 func physical_object(object_id: String) -> Dictionary:
 	return objects.get(object_id, {})
@@ -352,10 +436,13 @@ func set_object_ambient_protection(object_id: String, protected: bool) -> bool:
 	var object: Dictionary = physical_object(object_id)
 	if object.is_empty():
 		return false
-	object["ambient_protected"] = protected
-	_append_journal("OBJECT_AMBIENT_PROTECTION_CHANGED", "", object_id,
-		"", "PROTECTED" if protected else "ELIGIBLE")
-	return true
+	var previous := "PROTECTED" if bool(object.get("ambient_protected",false)) else "ELIGIBLE"
+	var next := "PROTECTED" if protected else "ELIGIBLE"
+	if previous == next:
+		return true
+	return _commit_object_event(object_id,"OBJECT_AMBIENT_PROTECTION_CHANGED","",{
+		"protected":protected,"from":previous,"to":next
+	},"HOUSE_SYSTEM","EXPLICIT_WORLD_FACT")
 
 func pickup_physical_object(object_id: String, actor_id: String) -> bool:
 	var object: Dictionary = physical_object(object_id)
@@ -372,11 +459,9 @@ func pickup_physical_object(object_id: String, actor_id: String) -> bool:
 	var room: Dictionary = room_by_id(room_id)
 	if room.is_empty() or not is_accessible(room, actor_id):
 		return false
-	_object_event(object, "PICKED_UP", actor_id, room_id, actor_id)
-	object["current_holder_id"] = actor_id
-	object["current_room_id"] = ""
-	object["state"] = "HELD"
-	return true
+	return _commit_object_event(object_id,"OBJECT_PICKED_UP",actor_id,{
+		"from":room_id,"to":actor_id
+	},"SIMULATION","AMBIENT_SIMULATION")
 
 func place_physical_object(object_id: String, actor_id: String,
 		target_room_id: String, state: String = "PLACED") -> bool:
@@ -385,15 +470,16 @@ func place_physical_object(object_id: String, actor_id: String,
 	var target: Dictionary = room_by_id(target_room_id)
 	if object.is_empty() or actor.is_empty() or target.is_empty():
 		return false
+	if state not in ["PLACED","STASHED"]:
+		return false
 	if str(object.get("current_holder_id", "")) != actor_id:
 		return false
 	if not is_accessible(target, actor_id):
 		return false
-	_object_event(object, state, actor_id, actor_id, target_room_id)
-	object["current_holder_id"] = ""
-	object["current_room_id"] = target_room_id
-	object["state"] = state
-	return true
+	var event_type := "OBJECT_STASHED" if state == "STASHED" else "OBJECT_PLACED"
+	return _commit_object_event(object_id,event_type,actor_id,{
+		"from":actor_id,"to":target_room_id,"state":state
+	},"SIMULATION","AMBIENT_SIMULATION")
 
 func recover_physical_object_to_lost_found(object_id: String,
 		lost_found_room_id: String) -> bool:
@@ -408,12 +494,9 @@ func recover_physical_object_to_lost_found(object_id: String,
 	var from_value: String = str(object.get("current_holder_id", ""))
 	if from_value == "":
 		from_value = str(object.get("current_room_id", ""))
-	_object_event(object, "RECOVERED_TO_LOST_FOUND", "HOUSE_SPIRIT",
-		from_value, lost_found_room_id)
-	object["current_holder_id"] = ""
-	object["current_room_id"] = lost_found_room_id
-	object["state"] = "LOST_FOUND"
-	return true
+	return _commit_object_event(object_id,"OBJECT_RECOVERED_TO_LOST_FOUND",
+		"HOUSE_SPIRIT",{"from":from_value,"to":lost_found_room_id},
+		"HOUSE_SYSTEM","AMBIENT_SIMULATION")
 
 func restore_physical_object_home(object_id: String) -> bool:
 	var object: Dictionary = physical_object(object_id)
@@ -425,11 +508,9 @@ func restore_physical_object_home(object_id: String) -> bool:
 	var from_value: String = str(object.get("current_holder_id", ""))
 	if from_value == "":
 		from_value = str(object.get("current_room_id", ""))
-	_object_event(object, "RESTORED_HOME", "", from_value, home_room_id)
-	object["current_holder_id"] = ""
-	object["current_room_id"] = home_room_id
-	object["state"] = "PLACED"
-	return true
+	return _commit_object_event(object_id,"OBJECT_RESTORED_HOME","",{
+		"from":from_value,"to":home_room_id
+	},"HOUSE_SYSTEM","AMBIENT_SIMULATION")
 
 func register_creature(creature_id: String, display_name: String,
 		room_id: String, bank_id: String = "", owner_id: String = "",
@@ -535,7 +616,11 @@ func sync_resident_profiles() -> void:
 			if not actor.has("production_visual_ready"):
 				actor["production_visual_ready"] = false # asset validation is separate
 
-func seed_world() -> void:
+func seed_world(clear_event_log: bool = true) -> void:
+	if event_core.store_path != _event_store_path():
+		event_core.configure(_event_store_path())
+	if clear_event_log and not event_core.reset_store():
+		push_error("Could not reset world event store: " + event_core.last_error)
 	rooms.clear()
 	residents.clear()
 	creatures.clear()
@@ -596,6 +681,7 @@ func seed_world() -> void:
 	creatures = {}
 	journal = []
 	runtime_state = {}
+	_refresh_event_core_metrics()
 
 func _read_snapshot(path: String) -> Dictionary:
 	if not FileAccess.file_exists(path):
@@ -616,11 +702,17 @@ func _read_snapshot(path: String) -> Dictionary:
 	return parsed
 
 func load_or_seed() -> void:
+	var event_ready := event_core.configure(_event_store_path())
 	var parsed: Dictionary = _read_snapshot(save_path)
 	if parsed.is_empty():
 		parsed = _read_snapshot(save_path + ".bak")
 	if parsed.is_empty():
-		seed_world()
+		# The object-event slice can recover its projection over deterministic
+		# seeded topology even if the compatibility snapshot was lost.
+		seed_world(false)
+		if event_ready:
+			_overlay_event_object_projections()
+			_reconcile_event_journal()
 		save_world()
 		return
 	rooms.assign(parsed["rooms"])
@@ -643,8 +735,13 @@ func load_or_seed() -> void:
 	runtime_state = parsed.get("runtime_state", {})
 	next_room_id = int(parsed.get("next_room_id", rooms.size() + 1))
 	sim_clock = float(parsed.get("sim_clock", 0.0))
+	if event_ready:
+		_overlay_event_object_projections()
+		_reconcile_event_journal()
+	_refresh_event_core_metrics()
 
 func save_world() -> bool:
+	_refresh_event_core_metrics()
 	var scratch: String = save_path + ".tmp"
 	var backup: String = save_path + ".bak"
 	var data: Dictionary = {"schema": 1,"rooms": rooms,"residents": residents,
