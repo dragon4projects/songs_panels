@@ -268,7 +268,7 @@ func choose_intent(actor: Dictionary) -> Dictionary:
 					and intent in ["REST","SLEEP"]
 					and str(room.get("owner_id","")) != str(actor.get("id",""))):
 				continue
-			if stations.can_reserve(world,room,intent=="TALK_PAIR"):
+			if stations.can_reserve(world,room,intent=="TALK_PAIR",actor):
 				candidates.append(room)
 		if candidates.is_empty():
 			continue
