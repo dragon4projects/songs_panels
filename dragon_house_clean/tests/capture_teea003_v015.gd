@@ -56,6 +56,10 @@ func capture()->void:
 	scene.world.seed_world()
 	var workshop:Dictionary=scene.world.make_room(0,2,"workshop")
 	scene.make_rooms()
+	# Integrator review is explicitly allowed to use QA resident banks. This
+	# does not change resident approval; it prevents fallback silhouette width
+	# from corrupting the Music/Cinema occlusion verdict.
+	scene.qa_visual_preview=true
 	scene.make_residents()
 	_hide_all(scene)
 
