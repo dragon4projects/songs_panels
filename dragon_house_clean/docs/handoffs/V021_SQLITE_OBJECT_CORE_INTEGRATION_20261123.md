@@ -3,7 +3,7 @@
 Date: 2026-11-23  
 Role: INTEGRATOR  
 Status: integration candidate; NOT owner approval  
-Production base used for clean integration: `1216e2f1b73651c7b2bc2af42805612aa145ebde`
+Production base used for clean integration: `1216e2f1a737008e3d9fea0f5d240d54a78a6ea2`
 
 ## Scope boundary
 
@@ -153,7 +153,7 @@ One-shot vendoring workflow was removed after successful source closure.
 ## Evidence
 
 ### Existing production baseline
-- production `1216e2f1b73651c7b2bc2af42805612aa145ebde`;
+- production `1216e2f1a737008e3d9fea0f5d240d54a78a6ea2`;
 - full production acceptance #44 / `45203091451`: SUCCESS.
 
 ### v0.21 proof before vendoring
@@ -174,7 +174,7 @@ One-shot vendoring:
 
 Vendored SQLite source-closure, external SQLite download forbidden:
 - run #1 / `45208661619`: SUCCESS (pre-default-cutover proof).
-- final default-cutover source-closure run is tracked separately in CI evidence before merge.
+- final default-cutover source-closure run #8 / `45210009719`: SUCCESS; default SQLite also proven through v0.17 object lifecycle and v0.18 ambient-creature integration.
 
 Key v0.21 signals:
 - `OBJECT_EVENT_SQLITE_V021_PASS`;
