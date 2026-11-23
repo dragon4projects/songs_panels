@@ -1,4 +1,4 @@
-name: Znaechka media artifacts 004
+name: Znaechka media artifacts 004 fast
 
 on:
   push:
@@ -18,13 +18,11 @@ jobs:
         with:
           ref: art/znaechka-characters-ZNA_CHAR_NPC_20261123_001
           fetch-depth: 0
-          lfs: true
 
       - name: Prepare
         run: |
           set -euo pipefail
           git lfs install --local
-          git lfs pull
           python3 -m pip install --quiet pillow
           curl -fL --retry 4 'https://d2ol7oe51mr4n9.cloudfront.net/user_3JdI9kJ82xObF8Bi3EgU4P6DaoR/b2a6def9-7882-401c-9237-334ffb2476e6.zip' -o /tmp/patch.zip
           echo '035360f5dcfbf77c49e21bfaa0f4adb5e0462feb463153d2384721e4a354a544  /tmp/patch.zip' | sha256sum -c -
