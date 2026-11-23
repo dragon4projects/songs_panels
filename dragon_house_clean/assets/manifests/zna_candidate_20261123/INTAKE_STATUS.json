@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "status": "STAGED_CANDIDATE_NOT_ACTIVATED",
+  "source_agent": "ZNAECHKA",
+  "source_agent_team_status": "REMOVED_FROM_ACTIVE_TEAM",
+  "source_branch": "archive/znaechka-final-ZNA_CHAR_NPC_20261123_001",
+  "source_head": "3f7a9f831588a342ecdaec4df40c6775cfe59f5a",
+  "production_base": "1216e2f1a737008e3d9fea0f5d240d54a78a6ea2",
+  "staged_counts": {
+    "guest_frames": 332,
+    "creature_frames_new": 234,
+    "media_previews": 784
+  },
+  "guest_ids": [
+    "NPC_CENTAUR",
+    "NPC_VAMPIRE_GIRL",
+    "NPC_GINGER_CAT_GUEST"
+  ],
+  "creature_banks": [
+    "npc_ai_magic_sphere",
+    "npc_cat_black_hero",
+    "npc_cat_calico",
+    "npc_cat_ginger",
+    "npc_cat_sphynx",
+    "npc_cat_tabby",
+    "npc_cat_white",
+    "npc_hedgehog_01",
+    "npc_hedgehog_02",
+    "npc_hedgehog_03",
+    "npc_mouse_brown",
+    "npc_mouse_gray",
+    "npc_mouse_pale",
+    "npc_rat_agouti",
+    "npc_rat_hero",
+    "npc_rat_hooded",
+    "npc_rat_juvenile_gray",
+    "npc_rat_white"
+  ],
+  "protections": {
+    "production_asset_registry_replaced": false,
+    "production_media_preview_index_replaced": false,
+    "res22_24_touched": false,
+    "runtime_source_copied": false,
+    "shurshun": "BLOCKED_MASTER_REQUIRED",
+    "activation": false,
+    "owner_approved": false
+  },
+  "notes": [
+    "Existing Manjka 13-frame bank was byte-identical in production and was not duplicated.",
+    "ZNA source registries are quarantined under assets/manifests/zna_candidate_20261123 and are not runtime-loaded.",
+    "Media previews are candidate bytes only; canonical catalog promotion requires Integrator provenance binding and product evidence."
+  ]
+}

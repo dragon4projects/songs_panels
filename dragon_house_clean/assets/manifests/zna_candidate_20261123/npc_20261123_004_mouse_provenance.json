@@ -1,0 +1,451 @@
+{
+  "task": "ZNA_CHAR_NPC_20261123_004",
+  "activation_status": "ART_ONLY",
+  "owner_approved": false,
+  "sources": {
+    "npc_mouse_gray": {
+      "generated_sheet": "exec-62d2b646-ceef-4709-9fc7-9388ce7f79ef.png",
+      "source_sha256": "7402dae2ca15baaa6841f3214996cc026b9ff259b3471cb6d2636857dac78d6b",
+      "owner_entity_id": null,
+      "entity_type": "microfauna",
+      "activation_status": "ART_ONLY",
+      "frame_placement": {
+        "canvas": [
+          1024,
+          640
+        ],
+        "floor_alpha_exclusive": 598,
+        "body_center_x": 512,
+        "scale": 1.1263537906137184
+      },
+      "frames": {
+        "assets/creatures/npc_mouse_gray/identity/front_0001.png": {
+          "sheet_cell": 1,
+          "mirror": false,
+          "alpha_bbox": [
+            431,
+            363,
+            732,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_gray/idle/idle_left_0001.png": {
+          "sheet_cell": 2,
+          "mirror": false,
+          "alpha_bbox": [
+            363,
+            409,
+            776,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_gray/idle/idle_right_0001.png": {
+          "sheet_cell": 2,
+          "mirror": true,
+          "alpha_bbox": [
+            248,
+            409,
+            661,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_gray/rest/sit_0001.png": {
+          "sheet_cell": 3,
+          "mirror": false,
+          "alpha_bbox": [
+            408,
+            342,
+            721,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_gray/rest/rest_0001.png": {
+          "sheet_cell": 4,
+          "mirror": false,
+          "alpha_bbox": [
+            375,
+            427,
+            655,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_gray/walk_left/walk_left_0001.png": {
+          "sheet_cell": 5,
+          "mirror": false,
+          "alpha_bbox": [
+            355,
+            438,
+            741,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_gray/walk_left/walk_left_0002.png": {
+          "sheet_cell": 6,
+          "mirror": false,
+          "alpha_bbox": [
+            376,
+            441,
+            760,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_gray/walk_left/walk_left_0003.png": {
+          "sheet_cell": 7,
+          "mirror": false,
+          "alpha_bbox": [
+            377,
+            444,
+            761,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_gray/walk_left/walk_left_0004.png": {
+          "sheet_cell": 8,
+          "mirror": false,
+          "alpha_bbox": [
+            369,
+            443,
+            746,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_gray/walk_right/walk_right_0001.png": {
+          "sheet_cell": 5,
+          "mirror": true,
+          "alpha_bbox": [
+            283,
+            438,
+            669,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_gray/walk_right/walk_right_0002.png": {
+          "sheet_cell": 6,
+          "mirror": true,
+          "alpha_bbox": [
+            264,
+            441,
+            648,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_gray/walk_right/walk_right_0003.png": {
+          "sheet_cell": 7,
+          "mirror": true,
+          "alpha_bbox": [
+            263,
+            444,
+            647,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_gray/walk_right/walk_right_0004.png": {
+          "sheet_cell": 8,
+          "mirror": true,
+          "alpha_bbox": [
+            278,
+            443,
+            655,
+            598
+          ]
+        }
+      }
+    },
+    "npc_mouse_brown": {
+      "generated_sheet": "exec-32984553-f69b-4745-a84d-b12d93749eb6.png",
+      "source_sha256": "4398ea862ac86e81c2970d5eb2213984193d9f36610b7febe2e19148d24f1279",
+      "owner_entity_id": null,
+      "entity_type": "microfauna",
+      "activation_status": "ART_ONLY",
+      "frame_placement": {
+        "canvas": [
+          1024,
+          640
+        ],
+        "floor_alpha_exclusive": 598,
+        "body_center_x": 512,
+        "scale": 1.0365448504983388
+      },
+      "frames": {
+        "assets/creatures/npc_mouse_brown/identity/front_0001.png": {
+          "sheet_cell": 1,
+          "mirror": false,
+          "alpha_bbox": [
+            437,
+            372,
+            710,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_brown/idle/idle_left_0001.png": {
+          "sheet_cell": 2,
+          "mirror": false,
+          "alpha_bbox": [
+            374,
+            413,
+            751,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_brown/idle/idle_right_0001.png": {
+          "sheet_cell": 2,
+          "mirror": true,
+          "alpha_bbox": [
+            273,
+            413,
+            650,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_brown/rest/sit_0001.png": {
+          "sheet_cell": 3,
+          "mirror": false,
+          "alpha_bbox": [
+            413,
+            350,
+            706,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_brown/rest/rest_0001.png": {
+          "sheet_cell": 4,
+          "mirror": false,
+          "alpha_bbox": [
+            374,
+            430,
+            647,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_brown/walk_left/walk_left_0001.png": {
+          "sheet_cell": 5,
+          "mirror": false,
+          "alpha_bbox": [
+            363,
+            441,
+            732,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_brown/walk_left/walk_left_0002.png": {
+          "sheet_cell": 6,
+          "mirror": false,
+          "alpha_bbox": [
+            380,
+            441,
+            745,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_brown/walk_left/walk_left_0003.png": {
+          "sheet_cell": 7,
+          "mirror": false,
+          "alpha_bbox": [
+            380,
+            447,
+            749,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_brown/walk_left/walk_left_0004.png": {
+          "sheet_cell": 8,
+          "mirror": false,
+          "alpha_bbox": [
+            371,
+            443,
+            733,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_brown/walk_right/walk_right_0001.png": {
+          "sheet_cell": 5,
+          "mirror": true,
+          "alpha_bbox": [
+            292,
+            441,
+            661,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_brown/walk_right/walk_right_0002.png": {
+          "sheet_cell": 6,
+          "mirror": true,
+          "alpha_bbox": [
+            279,
+            441,
+            644,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_brown/walk_right/walk_right_0003.png": {
+          "sheet_cell": 7,
+          "mirror": true,
+          "alpha_bbox": [
+            275,
+            447,
+            644,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_brown/walk_right/walk_right_0004.png": {
+          "sheet_cell": 8,
+          "mirror": true,
+          "alpha_bbox": [
+            291,
+            443,
+            653,
+            598
+          ]
+        }
+      }
+    },
+    "npc_mouse_pale": {
+      "generated_sheet": "exec-be273187-6806-490d-bcf1-ab6ce3c971cf.png",
+      "source_sha256": "97484d3132ccc859f7a105267df56e357c0696b65cd3d4a479014aff4f37ddfc",
+      "owner_entity_id": null,
+      "entity_type": "microfauna",
+      "activation_status": "ART_ONLY",
+      "frame_placement": {
+        "canvas": [
+          1024,
+          640
+        ],
+        "floor_alpha_exclusive": 598,
+        "body_center_x": 512,
+        "scale": 1.0297029702970297
+      },
+      "frames": {
+        "assets/creatures/npc_mouse_pale/identity/front_0001.png": {
+          "sheet_cell": 1,
+          "mirror": false,
+          "alpha_bbox": [
+            436,
+            363,
+            713,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_pale/idle/idle_left_0001.png": {
+          "sheet_cell": 2,
+          "mirror": false,
+          "alpha_bbox": [
+            377,
+            411,
+            767,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_pale/idle/idle_right_0001.png": {
+          "sheet_cell": 2,
+          "mirror": true,
+          "alpha_bbox": [
+            257,
+            411,
+            647,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_pale/rest/sit_0001.png": {
+          "sheet_cell": 3,
+          "mirror": false,
+          "alpha_bbox": [
+            411,
+            345,
+            712,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_pale/rest/rest_0001.png": {
+          "sheet_cell": 4,
+          "mirror": false,
+          "alpha_bbox": [
+            370,
+            430,
+            654,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_pale/walk_left/walk_left_0001.png": {
+          "sheet_cell": 5,
+          "mirror": false,
+          "alpha_bbox": [
+            359,
+            440,
+            734,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_pale/walk_left/walk_left_0002.png": {
+          "sheet_cell": 6,
+          "mirror": false,
+          "alpha_bbox": [
+            380,
+            437,
+            745,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_pale/walk_left/walk_left_0003.png": {
+          "sheet_cell": 7,
+          "mirror": false,
+          "alpha_bbox": [
+            381,
+            445,
+            744,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_pale/walk_left/walk_left_0004.png": {
+          "sheet_cell": 8,
+          "mirror": false,
+          "alpha_bbox": [
+            370,
+            444,
+            730,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_pale/walk_right/walk_right_0001.png": {
+          "sheet_cell": 5,
+          "mirror": true,
+          "alpha_bbox": [
+            290,
+            440,
+            665,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_pale/walk_right/walk_right_0002.png": {
+          "sheet_cell": 6,
+          "mirror": true,
+          "alpha_bbox": [
+            279,
+            437,
+            644,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_pale/walk_right/walk_right_0003.png": {
+          "sheet_cell": 7,
+          "mirror": true,
+          "alpha_bbox": [
+            280,
+            445,
+            643,
+            598
+          ]
+        },
+        "assets/creatures/npc_mouse_pale/walk_right/walk_right_0004.png": {
+          "sheet_cell": 8,
+          "mirror": true,
+          "alpha_bbox": [
+            294,
+            444,
+            654,
+            598
+          ]
+        }
+      }
+    }
+  }
+}
