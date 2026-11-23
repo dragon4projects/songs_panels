@@ -22,11 +22,15 @@ func _select_store() -> void:
 		"DRAGON_OBJECT_EVENT_BACKEND").strip_edges().to_lower()
 	var sqlite_path := str(world.save_path)+".world_events_v1.sqlite"
 	var saved_backend := str(world.runtime_state.get("object_event_backend",""))
-	var sticky_sqlite := FileAccess.file_exists(sqlite_path) or 		saved_backend.begins_with("sqlite_")
-	# Once SQLite canonical state exists, it always wins. An environment
-	# variable may opt a clean store into SQLite, but may never downgrade an
-	# existing SQLite world back to a stale JSON history.
-	if sticky_sqlite or requested == "sqlite":
+	var sticky_sqlite: bool = FileAccess.file_exists(sqlite_path) or \
+		saved_backend.begins_with("sqlite_")
+	var sqlite_available: bool = ClassDB.class_exists("SQLite")
+	# Vendored SQLite is the normal backend for clean worlds. Explicit "json"
+	# remains a pre-cutover QA/compatibility choice only. Once SQLite canonical
+	# state exists it always wins, so no environment override can downgrade the
+	# House to a stale JSON history.
+	if sticky_sqlite or requested == "sqlite" or \
+			(requested == "" and sqlite_available):
 		store = SQLiteEventStore.new()
 		backend_requested = "sqlite"
 	else:
