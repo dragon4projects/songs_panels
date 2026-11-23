@@ -45,7 +45,7 @@ func _assert_foreground(scene,room:Dictionary,expected_z:float)->void:
 func run()->void:
     # If an assertion aborts this coroutine, do not leave CI waiting until its
     # outer shell timeout. A successful run quits long before this watchdog.
-    get_tree().create_timer(45.0).timeout.connect(func():
+    create_timer(45.0).timeout.connect(func():
         printerr("TEEA003_OWNER_PRODUCTION_V016_WATCHDOG")
         quit(3)
     )
