@@ -1,0 +1,60 @@
+name: Dragon House v0.16 media preview builder QA
+
+on:
+  push:
+    branches: [dev/dragon-house-v016-media-preview-builder]
+    paths:
+      - 'dragon_house_clean/tools/build_media_previews.py'
+      - 'dragon_house_clean/tests/test_media_preview_builder.py'
+      - '.github/workflows/dragon-house-v016-media-previews.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  preview-builder:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+          fetch-depth: 1
+
+      - name: Pull LFS bytes
+        shell: bash
+        run: |
+          set -euo pipefail
+          git lfs install --local
+          git lfs pull
+
+      - name: Ensure ffmpeg tools
+        shell: bash
+        run: |
+          set -euo pipefail
+          if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq ffmpeg
+          fi
+          ffmpeg -version | head -1
+          ffprobe -version | head -1
+
+      - name: Test dry-run, real-file previews and no fabrication
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd dragon_house_clean
+          python3 tests/test_media_preview_builder.py
+
+      - name: Prove production catalog remains empty
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json
+          p='dragon_house_clean/data/media_catalog.json'
+          j=json.load(open(p,encoding='utf-8'))
+          assert j=={"schema":1,"books":[],"films":[],"tracks":[]}
+          print("PRODUCTION_MEDIA_CATALOG_EMPTY_PASS")
+          PY
