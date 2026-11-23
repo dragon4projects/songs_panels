@@ -1,27 +1,41 @@
 {
-  "schema": 2,
+  "schema": 3,
   "batch_id": "TEEA_INT_20261123_007",
   "observed_sources": {
     "production_branch": {
       "branch": "dragon-house-fallout-fresh",
-      "head_observed": "c280f62778bcc4a4ac0093db48a852f0469b6bf2",
-      "message": "Dragon House v0.18: ambient creatures, guest access and content viewer"
+      "head_observed": "1216e2f1a737008e3d9fea0f5d240d54a78a6ea2"
     },
     "teea006_branch": {
       "branch": "art/teea-interiors-TEEA_INT_20261123_006",
-      "head_observed": "ac44724c39275d365c185af0435b6dea676d24ae",
-      "state": "DOCS_ONLY_AT_OBSERVATION"
+      "head_observed": "887e5f1c874c7fb0deb600c58c06ad4e5dafb90f",
+      "state": "FINAL_READY_FOR_INTEGRATOR_QA"
     },
     "znaechka_npc_branch": {
       "branch": "art/znaechka-characters-ZNA_CHAR_NPC_20261123_001",
-      "head_observed": "b3f81349840707b6c0b95ec025b7a8e827175752"
+      "head_observed": "994eb3f66436b2985cb94b1fc98b82274d8141c6",
+      "state": "GUEST_ART_CANDIDATE_LFS"
     }
   },
   "resolved_since_initial_007_work": [
-    "Canonical room type guest now exists in production.",
-    "Guest open/closed access and public-cutaway rules now exist.",
-    "Content viewer and register_content_hotspot API now exist.",
-    "Verified non-Manjka actor render contract uses pixel_size = 1.9 / texture_height."
+    "Canonical room type guest exists in production.",
+    "Guest open/closed access and public-cutaway rules exist.",
+    "Content viewer and register_content_hotspot API exist.",
+    "Verified non-Manjka actor render contract uses pixel_size = 1.9 / texture_height.",
+    "TEEA006 finalized all Music/Cinema/Artifact room geometry.",
+    "27/27 formerly TEEA006-dependent media surfaces are bound to final TEEA006 geometry with zero binding errors.",
+    "27/27 media holder current-camera yaw proof renders pass; runtime wall-media plane is registered 0.08 m in front of baked back_decor."
+  ],
+  "resolved_blockers": [
+    {
+      "id": "BLOCK_TEEA006_MEDIA_ROOM_FINALS",
+      "status": "RESOLVED",
+      "evidence": [
+        "TEEA006 final branch head 887e5f1c874c7fb0deb600c58c06ad4e5dafb90f",
+        "TEEA_INT_20261123_007_media_binding_006_final.json: 27 bound surfaces, 0 errors",
+        "TEEA_INT_20261123_007_media_yaw_proof_report.json: 27/27 proof images, 0 machine errors"
+      ]
+    }
   ],
   "blockers": [
     {
@@ -34,25 +48,14 @@
         "NPC_CENTAUR": "LFS oid sha256:2abcd9620fb249b37079235745516224bc39b46be6c4abec35fd69cd22fea47f size=61233",
         "NPC_VAMPIRE_GIRL": "LFS oid sha256:501284e9724441533d9cc34648c6956c564a1a097008f4e2b15bea6238f65fee size=55080",
         "NPC_GINGER_CAT_GUEST": "LFS oid sha256:5f3eb9dc8efef0c14a96de47887a099e9dec90d9cb0f14cb65162b5e66e05804 size=69827",
-        "sandbox_lfs_batch": "HTTP 401 Requires authentication"
+        "github_fetch_file": "returns LFS pointers, not image bytes",
+        "sandbox_lfs_batch": "HTTP 401 Requires authentication",
+        "production_tree_1216e2f1": "0 paths matching NPC_CENTAUR/NPC_VAMPIRE_GIRL/NPC_GINGER_CAT_GUEST",
+        "production_ci_run": "45200296771 success at 78f2ae904585ffe01bc11b39f2762ce90e85f00c",
+        "production_ci_pck": "DragonHouse_v014.pck inspected with Godot 4.7.2; all three guest identity res:// paths absent"
       },
-      "mitigation": "All three doors are 2.10x2.45 m and Centaur turning envelope is 2.50 m. This exceeds the full 1.9x1.9 m runtime Sprite3D plane bound for 512x512 verified actors; geometry pass uses this conservative runtime bound, not a guessed alpha silhouette.",
-      "resolution": "Integrator with GitHub/LFS access materializes canonical PNGs and records alpha bounds/world footprint; rerun actual-sprite proof."
-    },
-    {
-      "id": "BLOCK_TEEA006_MEDIA_ROOM_FINALS",
-      "affects": [
-        "PASS-B exact physical placement for Cinema/Music/Artifact",
-        "PASS-D final media-room occlusion/approach proof"
-      ],
-      "evidence": "TEEA006 observed head contains only BRIEF + DEPTH_ADDENDUM + ASSET_DRESSING_ADDENDUM; no final Music/Cinema/Artifact/Workshop production layers.",
-      "ready_without_regeneration": [
-        "neutral book/film/audio/artifact holder GLBs",
-        "32 media surface metadata records",
-        "current runtime category/API mapping",
-        "separate Cinema TV/console/gamepad zone contract"
-      ],
-      "resolution": "After TEEA006 final room geometry lands, bind existing 007 holder transforms/hotspots to measured furniture/walls and rerun occlusion/approach."
+      "mitigation": "All three doors are 2.10x2.45 m and Centaur turning envelope is 2.50 m. Conservative full 1.9x1.9 m runtime Sprite3D plane bound passes. No guessed alpha silhouette is claimed.",
+      "resolution": "Integrator/ZNA pipeline materializes the exact canonical guest PNG bytes from LFS candidate art, computes nontransparent alpha bounds/world footprint, and reruns actual-sprite guest yaw/occlusion proof."
     }
   ]
 }
