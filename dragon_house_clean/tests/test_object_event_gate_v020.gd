@@ -10,7 +10,10 @@ func _cleanup(path: String) -> void:
 		".world_events_v1.json",
 		".world_events_v1.json.bak",
 		".world_events_v1.json.tmp",
-		".world_events_v1.json.corrupt"
+		".world_events_v1.json.corrupt",
+		".world_events_v1.sqlite",".world_events_v1.sqlite.bak",
+		".world_events_v1.sqlite-wal",".world_events_v1.sqlite-shm",
+		".world_events_v1.sqlite.corrupt"
 	]:
 		DirAccess.remove_absolute(ProjectSettings.globalize_path(path+suffix))
 
@@ -42,6 +45,7 @@ func _manual_event(event_id: String, event_type: String, truth_class: String,
 func run() -> void:
 	var path := "user://object_event_gate_v020.json"
 	_cleanup(path)
+	OS.set_environment("DRAGON_OBJECT_EVENT_BACKEND","json")
 	var world := World.new()
 	world.save_path = path
 	world.seed_world()
@@ -166,4 +170,5 @@ func run() -> void:
 
 	_cleanup(path)
 	print("OBJECT_EVENT_GATE_V020_PASS direct_bypass=blocked protected=blocked creature_caps=central hide_caps=central presentation=no_truth renderer_elevation=blocked owner=stable duplicate=idempotent envelope=typed")
+	OS.set_environment("DRAGON_OBJECT_EVENT_BACKEND","")
 	quit(0)
