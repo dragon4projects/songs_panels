@@ -1,21 +1,21 @@
 {
   "schema": 1,
   "batch_id": "TEEA_INT_20261122_003",
-  "owner_approved": false,
-  "qa_only": true,
+  "owner_approved": true,
+  "qa_only": false,
   "source_head": "27a57e95b0185d263ade43c491cb9c450a56912a",
   "foreground_physical_z": {
     "music/R1": {
       "source_furniture_id": "music_listen_chair",
       "value": -0.1276819109916687,
       "basis": "TEEA_INT_20261122_003_anchor_measurements.json music_listen_chair.godot_z_front",
-      "status": "INTEGRATOR_QA_HYPOTHESIS"
+      "status": "OWNER_ACCEPTED_RUNTIME_CALIBRATION"
     },
     "cinema/R1": {
       "source_furniture_id": "cinema_sofa",
       "value": -0.1038343608379364,
       "basis": "TEEA_INT_20261122_003_anchor_measurements.json cinema_sofa.godot_z_front",
-      "status": "INTEGRATOR_QA_HYPOTHESIS"
+      "status": "OWNER_ACCEPTED_RUNTIME_CALIBRATION"
     }
   },
   "runtime_station_map": {
@@ -99,5 +99,7 @@
     "INSPECT": "VIEW",
     "view": "standing"
   },
-  "note": "This file records integrator QA mappings only. It must not elevate the artist candidate or production interior manifest to approved=true."
+  "note": "This file records integrator QA mappings only. It must not elevate the artist candidate or production interior manifest to approved=true.",
+  "promotion_status": "OWNER_APPROVED_PRODUCTION",
+  "owner_approved_date": "2026-11-23"
 }

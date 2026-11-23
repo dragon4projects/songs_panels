@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "source": "procedural R1 baselines + owner-accepted width-specific TEEA_INT_20261122_002_REWORK_R1 anchors",
+  "source": "procedural R1 baselines + owner-accepted width-specific TEEA_INT_20261122_002_REWORK_R1 anchors + owner-approved TEEA_INT_20261122_003 R1 anchors",
   "approval_scope": "variant_cell_overrides activate only when the exact R1/R2/R3 merged width exists; private rooms remain excluded",
   "room_profiles": {
     "common": [
@@ -155,7 +155,20 @@
     ],
     "library_table": "collision_only",
     "library_R2": "owner-accepted measured chair anchors activate only for an actual Library R2",
-    "common_R3": "owner-accepted measured anchors activate only for an actual Common R3"
+    "common_R3": "owner-accepted measured anchors activate only for an actual Common R3",
+    "TEEA_INT_20261122_003": {
+      "owner_approved": "2026-11-23",
+      "integrator_qa": "PASS frozen-yaw live resident sprites",
+      "rooms": [
+        "arrival",
+        "corridor",
+        "music",
+        "cinema",
+        "artifact",
+        "workshop"
+      ],
+      "stations": 7
+    }
   },
   "variant_cell_overrides": {
     "common:R3:0": [
@@ -220,6 +233,79 @@
         "pose_hint": "READ",
         "approach_z": 0.95
       }
-    ]
+    ],
+    "music:R1:0": [
+      {
+        "id": "music_listen_chair_seat_a",
+        "x": 0.55,
+        "z": -0.4742,
+        "kind": "seat",
+        "furniture_id": "music_listen_chair",
+        "pose_hint": "RELAXED_SIT",
+        "approach_z": 0.95
+      }
+    ],
+    "cinema:R1:0": [
+      {
+        "id": "cinema_sofa_seat_a",
+        "x": -0.5896,
+        "z": -0.3424,
+        "kind": "seat",
+        "furniture_id": "cinema_sofa",
+        "pose_hint": "RELAXED_SIT",
+        "approach_z": 0.95
+      },
+      {
+        "id": "cinema_sofa_seat_b",
+        "x": 0.0896,
+        "z": -0.3424,
+        "kind": "seat",
+        "furniture_id": "cinema_sofa",
+        "pose_hint": "RELAXED_SIT",
+        "approach_z": 0.95
+      }
+    ],
+    "artifact:R1:0": [
+      {
+        "id": "artifact_cabinet_view",
+        "x": 1.2,
+        "z": -0.5524,
+        "kind": "standing",
+        "furniture_id": "artifact_cabinet",
+        "pose_hint": "VIEW",
+        "approach_z": 0.95
+      },
+      {
+        "id": "artifact_pedestal_view",
+        "x": -0.38,
+        "z": -0.13,
+        "kind": "standing",
+        "furniture_id": "artifact_pedestal",
+        "pose_hint": "VIEW",
+        "approach_z": 0.95
+      }
+    ],
+    "workshop:R1:0": [
+      {
+        "id": "workshop_stool_work",
+        "x": -0.62,
+        "z": -0.2853,
+        "kind": "work",
+        "furniture_id": "workshop_stool",
+        "pose_hint": "USE",
+        "approach_z": 0.95
+      },
+      {
+        "id": "workshop_bench_work",
+        "x": 0.6,
+        "z": -0.31,
+        "kind": "work",
+        "furniture_id": "workshop_bench",
+        "pose_hint": "USE",
+        "approach_z": 0.95
+      }
+    ],
+    "arrival:R1:0": [],
+    "corridor:R1:0": []
   }
 }

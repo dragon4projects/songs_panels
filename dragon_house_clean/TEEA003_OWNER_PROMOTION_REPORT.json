@@ -1,0 +1,40 @@
+{
+  "batch_id": "TEEA_INT_20261122_003",
+  "owner_approved": true,
+  "owner_approved_date": "2026-11-23",
+  "production_png_count": 20,
+  "station_count": 7,
+  "rooms": [
+    "arrival",
+    "corridor",
+    "music",
+    "cinema",
+    "artifact",
+    "workshop"
+  ],
+  "copied_paths": [
+    "assets/rooms/arrival/R1/backdrop.png",
+    "assets/rooms/arrival/R1/back_decor.png",
+    "assets/rooms/arrival/R1/furniture_back.png",
+    "assets/rooms/corridor/R1/backdrop.png",
+    "assets/rooms/corridor/R1/back_decor.png",
+    "assets/rooms/corridor/R1/furniture_back.png",
+    "assets/rooms/music/R1/backdrop.png",
+    "assets/rooms/music/R1/back_decor.png",
+    "assets/rooms/music/R1/furniture_back.png",
+    "assets/rooms/music/R1/foreground.png",
+    "assets/rooms/cinema/R1/backdrop.png",
+    "assets/rooms/cinema/R1/back_decor.png",
+    "assets/rooms/cinema/R1/furniture_back.png",
+    "assets/rooms/cinema/R1/foreground.png",
+    "assets/rooms/artifact/R1/backdrop.png",
+    "assets/rooms/artifact/R1/back_decor.png",
+    "assets/rooms/artifact/R1/furniture_back.png",
+    "assets/rooms/workshop/R1/backdrop.png",
+    "assets/rooms/workshop/R1/back_decor.png",
+    "assets/rooms/workshop/R1/furniture_back.png"
+  ],
+  "resident_bank_approval_changed": false,
+  "private_room_assets_changed": false,
+  "status": "READY_TO_COMMIT_AFTER_RUNTIME_QA"
+}

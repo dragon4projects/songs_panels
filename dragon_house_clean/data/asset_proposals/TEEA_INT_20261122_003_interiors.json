@@ -2,8 +2,8 @@
   "schema": 1,
   "batch_id": "TEEA_INT_20261122_003",
   "predecessor": "TEEA_INT_20261122_002_REWORK_R1",
-  "owner_review_status": "READY_FOR_INTEGRATOR_QA",
-  "approved": false,
+  "owner_review_status": "OWNER_APPROVED",
+  "approved": true,
   "room_types": {
     "arrival": {
       "R1": {
@@ -11,22 +11,22 @@
           {
             "role": "backdrop",
             "path": "assets/rooms/arrival/R1/backdrop.png",
-            "approved": false,
-            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "approved": true,
+            "status": "OWNER_APPROVED_PRODUCTION",
             "sha256": "895378c790abf537140c894982a8b55ba85358f8ad519520e6534b2ee6edae5e"
           },
           {
             "role": "back_decor",
             "path": "assets/rooms/arrival/R1/back_decor.png",
-            "approved": false,
-            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "approved": true,
+            "status": "OWNER_APPROVED_PRODUCTION",
             "sha256": "b19c88c440ea76557eb266095841d52d9dce1c13ea2568612d22d410010ea886"
           },
           {
             "role": "furniture_back",
             "path": "assets/rooms/arrival/R1/furniture_back.png",
-            "approved": false,
-            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "approved": true,
+            "status": "OWNER_APPROVED_PRODUCTION",
             "sha256": "3cc5da1403ef9f605ac9848a3c810d0470a7b26bfd1b298f6e28d1cc17107216"
           }
         ],
@@ -39,22 +39,22 @@
           {
             "role": "backdrop",
             "path": "assets/rooms/corridor/R1/backdrop.png",
-            "approved": false,
-            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "approved": true,
+            "status": "OWNER_APPROVED_PRODUCTION",
             "sha256": "3df879e1fcd5860c9919fed56f35fec29d741eef25ce4b5033d024f0f0b680b8"
           },
           {
             "role": "back_decor",
             "path": "assets/rooms/corridor/R1/back_decor.png",
-            "approved": false,
-            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "approved": true,
+            "status": "OWNER_APPROVED_PRODUCTION",
             "sha256": "172b4b5bd941997aa07282d5dacbf0fb2a63c6c41f4a5e36b69dc60dd76e6d42"
           },
           {
             "role": "furniture_back",
             "path": "assets/rooms/corridor/R1/furniture_back.png",
-            "approved": false,
-            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "approved": true,
+            "status": "OWNER_APPROVED_PRODUCTION",
             "sha256": "64085d665f67f408b0cd67f69bebaa5a814b79eeed296c3d952e62988d7a440f"
           }
         ],
@@ -67,29 +67,29 @@
           {
             "role": "backdrop",
             "path": "assets/rooms/music/R1/backdrop.png",
-            "approved": false,
-            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "approved": true,
+            "status": "OWNER_APPROVED_PRODUCTION",
             "sha256": "91785d9d92c181eb0acd70d331bf47fc162ad694e454396fc2e10e36ca1f52ee"
           },
           {
             "role": "back_decor",
             "path": "assets/rooms/music/R1/back_decor.png",
-            "approved": false,
-            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "approved": true,
+            "status": "OWNER_APPROVED_PRODUCTION",
             "sha256": "4d289d485c5519ce1f15809fda41ba1bea0856e700cd4486e1efa4d0b82d0a40"
           },
           {
             "role": "furniture_back",
             "path": "assets/rooms/music/R1/furniture_back.png",
-            "approved": false,
-            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "approved": true,
+            "status": "OWNER_APPROVED_PRODUCTION",
             "sha256": "582c5a94a59b2150731c20e11d6b6fcfbdb55b766414e5bafddd7f9cacdbadf8"
           },
           {
             "role": "foreground",
             "path": "assets/rooms/music/R1/foreground.png",
-            "approved": false,
-            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "approved": true,
+            "status": "OWNER_APPROVED_PRODUCTION",
             "sha256": "466a0d393999cd37e25e7c3d630ac49f9c066406bc62d934153b0de8585075f7"
           }
         ],
@@ -102,29 +102,29 @@
           {
             "role": "backdrop",
             "path": "assets/rooms/cinema/R1/backdrop.png",
-            "approved": false,
-            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "approved": true,
+            "status": "OWNER_APPROVED_PRODUCTION",
             "sha256": "86e9e0fdd8d0d13d8d76a4d9e863b3a3e36e2e657de2fda01c38c848c044cfd0"
           },
           {
             "role": "back_decor",
             "path": "assets/rooms/cinema/R1/back_decor.png",
-            "approved": false,
-            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "approved": true,
+            "status": "OWNER_APPROVED_PRODUCTION",
             "sha256": "3872c0de50107045623b79b541500e8cca3e127d8f06f5dde6f995a9538df315"
           },
           {
             "role": "furniture_back",
             "path": "assets/rooms/cinema/R1/furniture_back.png",
-            "approved": false,
-            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "approved": true,
+            "status": "OWNER_APPROVED_PRODUCTION",
             "sha256": "44b6799d8c35e653575927c05d62960c2036b8b2a69e808b4accf4d5622d82ca"
           },
           {
             "role": "foreground",
             "path": "assets/rooms/cinema/R1/foreground.png",
-            "approved": false,
-            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "approved": true,
+            "status": "OWNER_APPROVED_PRODUCTION",
             "sha256": "04fa142c176a9c66aebb74e205c13b1f9f333a262d5c8e04a05cf997260f76b3"
           }
         ],
@@ -137,22 +137,22 @@
           {
             "role": "backdrop",
             "path": "assets/rooms/artifact/R1/backdrop.png",
-            "approved": false,
-            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "approved": true,
+            "status": "OWNER_APPROVED_PRODUCTION",
             "sha256": "55f15a6b2c6ff01185198acbf61c0d5a4406f7afad3c873bfbd7828b2da5052c"
           },
           {
             "role": "back_decor",
             "path": "assets/rooms/artifact/R1/back_decor.png",
-            "approved": false,
-            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "approved": true,
+            "status": "OWNER_APPROVED_PRODUCTION",
             "sha256": "b060d9965594d3fb487d642fc42443d92c3b2805ed7078e41ae7edc6a24cbaf0"
           },
           {
             "role": "furniture_back",
             "path": "assets/rooms/artifact/R1/furniture_back.png",
-            "approved": false,
-            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "approved": true,
+            "status": "OWNER_APPROVED_PRODUCTION",
             "sha256": "367cb1a30572d779f330485b306fc2da2446506e0566f8efd3ebeeea05fc9eb8"
           }
         ],
@@ -165,27 +165,30 @@
           {
             "role": "backdrop",
             "path": "assets/rooms/workshop/R1/backdrop.png",
-            "approved": false,
-            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "approved": true,
+            "status": "OWNER_APPROVED_PRODUCTION",
             "sha256": "d4b1ae8af0d4cf02f24238dfbe1380e65a00a300d5aed73526965556a90afafe"
           },
           {
             "role": "back_decor",
             "path": "assets/rooms/workshop/R1/back_decor.png",
-            "approved": false,
-            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "approved": true,
+            "status": "OWNER_APPROVED_PRODUCTION",
             "sha256": "cee0f76c8ab312afcc9fb245ce4a4658e8fcbce0083a1e5cab062dd5bc6aa9b3"
           },
           {
             "role": "furniture_back",
             "path": "assets/rooms/workshop/R1/furniture_back.png",
-            "approved": false,
-            "status": "GODOT_DECODE_PASS_CURRENT_CAMERA_PENDING",
+            "approved": true,
+            "status": "OWNER_APPROVED_PRODUCTION",
             "sha256": "09f92090d31c37b7dcc8059460ae8b6dec873f6c2ac30956604c41f905cf22e7"
           }
         ],
         "station_count": 2
       }
     }
-  }
+  },
+  "owner_approved_date": "2026-11-23",
+  "integrator_qa": "PASS",
+  "production_promotion": "THIS_BRANCH"
 }
