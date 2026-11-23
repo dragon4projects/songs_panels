@@ -4,7 +4,7 @@
 **Integrator base:** v0.14 fresh, full CI #25 PASS  
 **Integration branch:** `dev/dragon-house-v015-teea003-integration`  
 **Artist source head:** `27a57e95b0185d263ade43c491cb9c450a56912a`  
-**Integrator candidate head:** `f01a169ba06543c4248b6dbe29b827bceebbc5a5`  
+**Integrator evidence head:** `f65e000742167c93186dabce74ef2ac660e97a97`  
 **Owner approval:** false  
 **Production promotion:** NONE
 
@@ -73,7 +73,7 @@ Current-life regressions also pass with the candidate mounted:
 
 ## Live visual review
 
-GitHub workflow: #4 / `45126314587`
+Final GitHub workflow: #6 / `45127256466`
 
 Required evidence:
 - Arrival R1
@@ -85,16 +85,31 @@ Required evidence:
 
 Capture is configured with `qa_visual_preview=true` so Music/Cinema are reviewed against actual available QA resident banks rather than the oversized procedural fallback silhouette.
 
-**Final visual verdict: PENDING CURRENT WORKFLOW ARTIFACT INSPECTION.**
+**Final integrator visual verdict: PASS.**
+
+Run #6 freezes the staged residents across the three yaw captures, so camera/foreground comparison is state-identical.
+
+Observed with actual QA resident banks:
+- Music: chair foreground stays attached at yaw -0.18 / 0 / +0.18 and occludes the seated body at the intended front edge without cutting limbs.
+- Cinema: both residents remain on the two measured sofa seats at yaw -0.18 / 0 / +0.18; the sofa front remains registered and consistently occludes the seating zone.
+- Arrival / Corridor / Artifact / Workshop: no new layering or duplicate-furniture defect was found in the final live contact sheet.
+
+Final private evidence artifact:
+- workflow run: `45127256466`
+- artifact: `dragon-house-teea003-integrator-qa`
+- artifact id: `14795829839`
+- artifact digest: `sha256:799617b22c73b807f4df6064410c99d49274fb18fd9a7045c135bf4f36d834f3`
+
+Integrator QA is therefore closed. The remaining gate is Dragon's owner visual acceptance, not another Teea rework or another technical integration pass.
 
 ## Promotion gate
 
 TEEA 003 remains outside production until all are true:
 
-1. exact-payload CI completes PASS;
-2. integrator inspects the real-QA-sprite live-camera artifact;
-3. no foreground/body ordering defect remains in Music/Cinema;
-4. owner/Dragon visually accepts the six-room batch.
+1. ~~exact-payload CI completes PASS~~ — DONE, final run #6;
+2. ~~integrator inspects the real-QA-sprite live-camera artifact~~ — DONE;
+3. ~~no foreground/body ordering defect remains in Music/Cinema~~ — DONE;
+4. owner/Dragon visually accepts the six-room batch — PENDING OWNER DECISION.
 
 Only then:
 - commit the 20 production PNG through Git LFS;
