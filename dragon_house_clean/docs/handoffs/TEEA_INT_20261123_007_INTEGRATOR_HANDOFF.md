@@ -1,126 +1,139 @@
-# TEEA_INT_20261123_007 — INTEGRATOR HANDOFF
+# TEEA_INT_20261123_007 — CORRECTED INTEGRATOR HANDOFF
 
 Date: 2026-11-23
 Owner approval: false
 Production mutated by TEEA007: no
+Current integration target observed: dragon-house-fallout-fresh@7710734af88483bbdc6f828d623b82561319f7e8 (v0.19)
+TEEA007 branch: art/teea-interiors-TEEA_INT_20261123_007
+Overlapping TEEA006 remains separate: art/teea-interiors-TEEA_INT_20261123_006@ac44724c39275d365c185af0435b6dea676d24ae.
 
-## Routing
+This handoff supersedes the earlier 007 drop/pointer after camera, guest-access and evidence corrections.
 
-- Base production: `dragon-house-fallout-fresh@c280f62778bcc4a4ac0093db48a852f0469b6bf2`
-- TEEA007 branch: `art/teea-interiors-TEEA_INT_20261123_007`
-- Library pointer:
-  `/Dragon cave/DRAGON_HOUSE_ARCHITECT_2026-09-29/INTEGRATOR_DROP_TEEA007_20261123/TEEA_INT_20261123_007_HANDOFF_POINTER.md`
-- Full binary drop filename: `Dragon_House_TEEA007_integrator_drop.zip`
-- Full binary drop SHA256:
-  `3bcec6d95001cd3f240d2cb014634264fd9772638ef85ae548ff8f9c81b4c89c`
-- Permanent binary-drop URL:
-  `https://d2ol7oe51mr4n9.cloudfront.net/user_3JdI9kJ82xObF8Bi3EgU4P6DaoR/b635be89-3a5d-4c28-b48b-a00d1db81c5d.zip`
-- Archive manifest: 85 entries, zero missing referenced files.
-- Archive integrity: PASS (`unzip -t`).
-
-Active overlapping TEEA006 remains separate:
-`art/teea-interiors-TEEA_INT_20261123_006@ac44724c39275d365c185af0435b6dea676d24ae`.
-
-## Machine gate table
+## Exact machine gate table
 
 | Gate | Status | Evidence |
 |---|---|---|
-| PASS-A | PASS | 3/3 named guest room art profiles; measured geometry/stations/approaches; v0.18 guest access contract; 2.10×2.45 m doors; Centaur 2.50 m turning envelope; yaw -0.18/0/+0.18. |
-| PASS-B | BLOCKED | Library/Common pass. Exact Cinema/Music/Artifact placement intentionally waits for unfinished overlapping TEEA006. Holder geometry and metadata are already delivered. |
-| PASS-C | PASS | Project-original polygon mugs LOD0 empty/filled + LOD1; GLB round-trip manifold; source BLEND included; tabletop-access proof; Godot parse PASS. |
-| PASS-D | PASS | 13/13 RGBA8 room PNG 1536×1024; 9/9 GLB Godot 4.7.2 parse; source attribution, contact sheets, yaw proof, payload manifest and SHA256 included. |
-| PASS-E | PASS | Production branch untouched; isolated 007 branch created from current production; Library pointer and GitHub handoff reported; owner_approved=false. |
+| PASS-A | BLOCKED | 3/3 guest room candidates exist and geometry/access tests pass. Canonical room type is current production guest; proposed cells (6,0)/(6,1)/(6,-1) each pass adjacency to the existing lift spine. Doors are 2.10×2.45 m; Centaur turning diameter is 2.50 m. Exact canonical sprite alpha/body footprint cannot be claimed because the guest PNGs are Git LFS and sandbox LFS download returns HTTP 401. Conservative full runtime Sprite3D plane bound 1.9×1.9 m passes. |
+| PASS-B | BLOCKED | Neutral holders and 32 media-hook records exist for books/films/tracks/artifacts; Library exact placement and separate Cinema TV/console/gamepad contract are ready. Exact Cinema/Music/Artifact physical placement waits for unfinished TEEA006 geometry. |
+| PASS-C | PASS | Project-original polygon mugs: LOD0 empty/filled + LOD1, source BLEND + GLB, GLB round-trip weld-aware boundary/nonmanifold = 0, tabletop hand-envelope proof, Godot GLTF parse PASS. |
+| PASS-D | BLOCKED | Payload/provenance/SHA/contact sheets/Godot/HOUSE-LEVEL-ROOM/current-camera yaw/geometry/approach tests exist, but exact canonical guest-sprite proof and final TEEA006 media-room placement proof remain externally blocked. |
+| PASS-E | PASS | owner_approved=false; no production mutation; isolated 007 art branch and Library drop/pointer are used. Final branch head and new binary URL/SHA are reported in the Library pointer and final chat handoff. |
 
-## A — guest rooms
+## Guest rooms
 
-Three candidate R1 art profiles:
-- `guest_centaur` → `NPC_CENTAUR` / Кентавр
-- `guest_vampire` → `NPC_VAMPIRE_GIRL` / Вампирша
-- `guest_miu` → `NPC_GINGER_CAT_GUEST` / Миу
+Art profile keys, not room types:
+- guest_centaur -> NPC_CENTAUR / Кентавр
+- guest_vampire -> NPC_VAMPIRE_GIRL / Вампирша
+- guest_miu -> NPC_GINGER_CAT_GUEST / Миу
 
-Important: these are **art-profile keys, not new room types**.
+Canonical production room type is guest.
 
-Production v0.18 owns canonical room type `guest`.
-Bind with:
-- `configure_guest_room(room_id, guest_id, display_name)`
-- `set_guest_room_open(room_id, open)`
+Proposed room IDs/cells:
+- guest_centaur_01 -> (6,0) adjacent to lift (5,0)
+- guest_vampire_01 -> (6,1) adjacent to lift (5,1)
+- guest_miu_01 -> (6,-1) adjacent to lift (5,-1)
 
-Current verified non-Manjka actor visual contract in `main.gd` is
-`sprite.pixel_size = 1.9 / texture_height`.
-The guest banks are 512×512, therefore the full runtime visual plane is conservatively bounded by 1.9×1.9 m. TEEA007 room access was re-authored and re-tested against that complete plane, rather than pretending unavailable LFS alpha silhouettes had been inspected.
+All three proposed builds pass the seed-world adjacency contract.
 
-Миу remains physiology-neutral. Her perch/rest/feed locations are conditional integration hooks; no humanoid/quadruped form is silently canonized.
+Runtime access contract is current production:
+- configure_guest_room(room_id, guest_id, display_name)
+- set_guest_room_open(room_id, open)
+- open guest -> public cutaway allowed
+- closed guest -> public cutaway denied
 
-## B — public-room function work
+Миу remains physiology-neutral: 0 forced runtime stations, 4 form/scale-conditional physical hooks.
 
-PASS now:
-- Library: measured reading stations retained; 5 runtime book-preview surfaces added.
-- Common R2 candidate: sofa rest + floor-fur rest + 2 sparse mug object slots.
-  - no furniture collision overlap
-  - no existing approach-path blockage
-  - measured minimum station separation 1.179 m
+## Current camera proof
 
-Ready for TEEA006 binding:
-- Cinema: primary film screen holder, neutral poster holders, separate TV/console/gamepad corner contract.
-- Music: neutral audio holders plus boombox/cassette equipment contract.
-- Artifact: neutral artifact label/preview holders.
+v0.19 current ROOM camera:
+- R1 zoom 10.8
+- R2 zoom 13.9
+- automatic close-bias +0.075
+- manual Q/E yaw -0.18 / 0 / +0.18
+- effective yaw -0.105 / +0.075 / +0.255
 
-No Kitchen was introduced. Kitchen assets remain reserve-only.
+Guest rooms were re-rendered at those effective current-camera values.
 
-## C — mugs
+HOUSE/LEVEL/ROOM:
+- proposed guest cells all pass build adjacency
+- HOUSE zoom with proposed cells: 71.7542
+- LEVEL 0 zoom: 69.1915
+- LEVEL ±1 zoom: 36.3084
+- ROOM R1 zoom: 10.8
+- rich room art is correctly unloaded at HOUSE/LEVEL and loaded only near ROOM/FOLLOW.
 
-Project-original assets:
-- `dragon_mug_lod0_empty.glb/.blend`
-- `dragon_mug_lod0_filled.glb/.blend`
-- `dragon_mug_lod1_empty.glb/.blend`
+## Common R2 addendum
 
-Round-trip QA after GLB import:
-- ceramic boundary edges = 0
-- ceramic non-manifold edges = 0
+Base: accepted TEEA005 Common R2.
 
-Godot 4.7.2 sees:
-- `PLACEMENT_ANCHOR`
-- `PICKUP_ANCHOR`
-- `RIM_CENTER`
+Adds:
+- one measured Sofa_01 rest station
+- one project-original floor fur-rest station
+- two sparse runtime mug slots
 
-Tabletop hand-envelope authoring proof is included.
+Geometry QA:
+- foreign furniture overlaps: 0
+- blocked existing approaches: 0
+- minimum station separation: 1.179237 m
+- sofa measured front edge: z≈+0.15, aligned to the accepted Common foreground plane
+- current-camera R2 yaw proof PASS at the same manual/effective yaw values above.
 
-## D — media holders
+## Library / media hooks
 
-Neutral physical holders:
-- book
-- film poster
-- film screen
-- audio
-- artifact
+Library exact hook placement is bound to measured TEEA005 shelf anchors.
 
-Every holder contains:
-- `MEDIA_SURFACE`
-- `LABEL_ANCHOR`
-- `HOVER_HIT`
-- `FULLSCREEN_TRIGGER_ANCHOR`
-- `PLACEMENT_ANCHOR`
-
-Current production v0.18 API:
-`register_content_hotspot(anchor, category, item_id, display_name)`
+Current runtime API:
+register_content_hotspot(anchor, category, item_id, display_name)
 
 Runtime category mapping:
-- `book -> books`
-- `film -> films`
-- `audio -> tracks`
-- `artifact -> artifacts`
+- book -> books
+- film -> films
+- audio -> tracks
+- artifact -> artifacts
 
-No specific book cover, film poster, audio cover/recording, or artifact image is baked into neutral holder textures.
+No specific content is baked into neutral holder textures.
 
-## QA
+TEEA006 dependency:
+- current observed TEEA006 head is docs-only
+- final Cinema/Music/Artifact holder transforms must bind after TEEA006 final geometry lands
+- no 007 regeneration of those rooms is authorized or required.
 
-- Guest room geometry: PASS
-- Guest yaw proof: PASS
-- Final room PNG decode/size/mode: PASS
-- Prop GLB round-trip topology: PASS
-- Godot 4.7.2 parse: 9/9 GLB PASS
-- Common R2 addendum geometry: PASS
-- Payload manifest references: 0 missing
-- ZIP integrity: PASS
-- Production mutation: NONE
-- Owner approval: false
+## Mugs
+
+Delivered project-original:
+- dragon_mug_lod0_empty
+- dragon_mug_lod0_filled
+- dragon_mug_lod1_empty
+
+Anchors visible in Godot:
+- PLACEMENT_ANCHOR
+- PICKUP_ANCHOR
+- RIM_CENTER
+
+## Media holder GLBs
+
+- media_holder_book
+- media_holder_film_poster
+- media_holder_film_screen
+- media_holder_audio
+- media_holder_artifact
+
+Godot-visible holder nodes:
+- MEDIA_SURFACE
+- LABEL_ANCHOR
+- HOVER_HIT
+- FULLSCREEN_TRIGGER_ANCHOR
+- PLACEMENT_ANCHOR
+
+## QA summary
+
+- production-candidate room PNG: 13/13 exact 1536×1024 RGBA8 PASS
+- GLB Godot parse: 9/9 PASS
+- prop topology round-trip: PASS
+- guest geometry: PASS against conservative current runtime visual plane
+- H/L/R scale report: PASS
+- current-camera yaw proof: PASS
+- exact canonical guest alpha/body footprint: BLOCKED by Git LFS authorization
+- final Cinema/Music/Artifact physical binding: BLOCKED by unfinished TEEA006
+- owner approval: false
+- production mutation: none
