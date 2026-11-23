@@ -84,6 +84,11 @@ func load_store() -> bool:
 			last_error = "non-contiguous subject revision for " + subject_id
 			store_ready = false
 			return false
+		var invariant_error := _validate_candidate_object_event(event)
+		if invariant_error != "":
+			last_error = "invalid durable object event: " + invariant_error
+			store_ready = false
+			return false
 		events.append(event.duplicate(true))
 		event_ids[event_id] = event.duplicate(true)
 		subject_revisions[subject_id] = revision
