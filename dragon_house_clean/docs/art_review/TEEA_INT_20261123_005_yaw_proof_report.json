@@ -1,0 +1,169 @@
+{
+  "schema": 1,
+  "batch_id": "TEEA_INT_20261123_005",
+  "approved": false,
+  "author_visual_pass": true,
+  "method": "Production PNG planes composited in Blender using current Dragon House perspective camera math and the exact register_art_foreground interpolation formula. Actor-sized placeholders are placed at measured station X/Z. QA floor shell is review-only and is not baked into production PNG.",
+  "tested_variants": {
+    "R1": "common/R1",
+    "R2": "study/R2",
+    "R3": "library/R3"
+  },
+  "required_yaws": [
+    -0.15,
+    0.0,
+    0.15
+  ],
+  "checks": {
+    "rear_mid_front_relationship_readable": "PASS",
+    "foreground_fragment_detachment": "PASS",
+    "actor_placeholder_readability": "PASS",
+    "neighboring_floor_content_baked_into_texture": "PASS_NONE"
+  },
+  "images": [
+    {
+      "variant": "common/R1",
+      "yaw": -0.15,
+      "path": "docs/art_review/yaw_proof/common_R1_yaw_m015.png",
+      "foreground_registration_k": 0.8738456050221675,
+      "foreground_registered_godot_xyz": [
+        -0.2036045789718628,
+        1.568627953529358,
+        0.15000057220458984
+      ],
+      "sha256": "39e805800646a7f6512e9f8792dd53327f499dc9f21259b1ca5380024d9cb10d",
+      "dimensions": [
+        768,
+        512
+      ]
+    },
+    {
+      "variant": "common/R1",
+      "yaw": 0.0,
+      "path": "docs/art_review/yaw_proof/common_R1_yaw_z0.png",
+      "foreground_registration_k": 0.875102713200448,
+      "foreground_registered_godot_xyz": [
+        0.0,
+        1.567944049835205,
+        0.15000057220458984
+      ],
+      "sha256": "d069a676d23e620cf3a04b2a2b1174fb5257f31a1b7c09fe93a0c952e254177b",
+      "dimensions": [
+        768,
+        512
+      ]
+    },
+    {
+      "variant": "common/R1",
+      "yaw": 0.15,
+      "path": "docs/art_review/yaw_proof/common_R1_yaw_p015.png",
+      "foreground_registration_k": 0.8738456050221675,
+      "foreground_registered_godot_xyz": [
+        0.2036045789718628,
+        1.568627953529358,
+        0.15000057220458984
+      ],
+      "sha256": "7c370596ee79f5b7ee429e4f1e51dfbb918474e1fb9def0041e8adec251fa8cb",
+      "dimensions": [
+        768,
+        512
+      ]
+    },
+    {
+      "variant": "study/R2",
+      "yaw": -0.15,
+      "path": "docs/art_review/yaw_proof/study_R2_yaw_m015.png",
+      "foreground_registration_k": 0.8994304480041632,
+      "foreground_registered_godot_xyz": [
+        -0.2089020013809204,
+        1.579603672027588,
+        0.14999961853027344
+      ],
+      "sha256": "09e1a74e22670197761a8b2f7728458da122774d39472bc7a3a90ceb1f38f469",
+      "dimensions": [
+        768,
+        512
+      ]
+    },
+    {
+      "variant": "study/R2",
+      "yaw": 0.0,
+      "path": "docs/art_review/yaw_proof/study_R2_yaw_z0.png",
+      "foreground_registration_k": 0.9004584124252899,
+      "foreground_registered_godot_xyz": [
+        0.0,
+        1.5787900686264038,
+        0.15000057220458984
+      ],
+      "sha256": "f809fbc2dd2c8d3fb502273f9da51f0a9bd44d46cef7e2001b6bf2f5562413a8",
+      "dimensions": [
+        768,
+        512
+      ]
+    },
+    {
+      "variant": "study/R2",
+      "yaw": 0.15,
+      "path": "docs/art_review/yaw_proof/study_R2_yaw_p015.png",
+      "foreground_registration_k": 0.8994304480041632,
+      "foreground_registered_godot_xyz": [
+        0.2089020013809204,
+        1.579603672027588,
+        0.14999961853027344
+      ],
+      "sha256": "89c037515964a3fc6870e4fdd5c575c6474ba6580cd94052de43ef7865387fe6",
+      "dimensions": [
+        768,
+        512
+      ]
+    },
+    {
+      "variant": "library/R3",
+      "yaw": -0.15,
+      "path": "docs/art_review/yaw_proof/library_R3_yaw_m015.png",
+      "foreground_registration_k": 0.9163875398623965,
+      "foreground_registered_godot_xyz": [
+        -0.21241307258605957,
+        1.5947259664535522,
+        0.14999961853027344
+      ],
+      "sha256": "47e0fed92d41c295172d38aefa143342e1736ff076b90a09e1e7f44a26c73cce",
+      "dimensions": [
+        768,
+        512
+      ]
+    },
+    {
+      "variant": "library/R3",
+      "yaw": 0.0,
+      "path": "docs/art_review/yaw_proof/library_R3_yaw_z0.png",
+      "foreground_registration_k": 0.9172563960602168,
+      "foreground_registered_godot_xyz": [
+        0.0,
+        1.593741536140442,
+        0.14999961853027344
+      ],
+      "sha256": "9f35cb811e5a9063528fb1281e1f216db6499d01cfe0dd9011310fd431465458",
+      "dimensions": [
+        768,
+        512
+      ]
+    },
+    {
+      "variant": "library/R3",
+      "yaw": 0.15,
+      "path": "docs/art_review/yaw_proof/library_R3_yaw_p015.png",
+      "foreground_registration_k": 0.9163875398623965,
+      "foreground_registered_godot_xyz": [
+        0.21241307258605957,
+        1.5947259664535522,
+        0.14999961853027344
+      ],
+      "sha256": "21b0bc16741b614fef604b6945bb6a3dd7162973c33340d8bac5ace414ba9373",
+      "dimensions": [
+        768,
+        512
+      ]
+    }
+  ]
+}
