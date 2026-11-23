@@ -1,0 +1,248 @@
+{
+  "source": "ДОМ_ДРАКОНА_АРТЕФАКТЫ_MASTER.md",
+  "entries": [
+    {
+      "content_id": "ART_20303901911B",
+      "kind": "artifact",
+      "title": "2.1. Рабочий стол",
+      "source_path": "Винтажный гримуар с шестью воспоминаниями.png",
+      "preview_path": null,
+      "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
+      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+    },
+    {
+      "content_id": "ART_AC408DC909DC",
+      "kind": "artifact",
+      "title": "2.2. Пепельница-котелок",
+      "source_path": "Винтажный гримуар с шестью воспоминаниями.png",
+      "preview_path": null,
+      "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
+      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+    },
+    {
+      "content_id": "ART_45E84F783A24",
+      "kind": "artifact",
+      "title": "2.3. Чашка Дракона",
+      "source_path": "Винтажный гримуар с шестью воспоминаниями.png",
+      "preview_path": null,
+      "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
+      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+    },
+    {
+      "content_id": "ART_C7F2EE9DC052",
+      "kind": "artifact",
+      "title": "2.4. Сигареты и рабочий беспорядок",
+      "source_path": "Винтажный гримуар с шестью воспоминаниями.png",
+      "preview_path": null,
+      "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
+      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+    },
+    {
+      "content_id": "ART_7CB6FD9E256C",
+      "kind": "artifact",
+      "title": "2.5. Мусорная корзина кабинета",
+      "source_path": "МАСТЕР_мусорная_корзина_Дракона.png",
+      "preview_path": null,
+      "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
+      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+    },
+    {
+      "content_id": "ART_BD74A1DDF999",
+      "kind": "artifact",
+      "title": "2.5. Мусорная корзина кабинета",
+      "source_path": "P09_MASTER_не_спасать_не_приручать_2026-09-29.png",
+      "preview_path": null,
+      "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
+      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+    },
+    {
+      "content_id": "ART_FDE5AF4C6087",
+      "kind": "artifact",
+      "title": "P01 — летняя крыша",
+      "source_path": "Винтажный гримуар с шестью воспоминаниями.png",
+      "preview_path": null,
+      "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
+      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+    },
+    {
+      "content_id": "ART_7E259257F635",
+      "kind": "artifact",
+      "title": "P02 — шкаф прожитых эпох",
+      "source_path": "Винтажный гримуар с шестью воспоминаниями.png",
+      "preview_path": null,
+      "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
+      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+    },
+    {
+      "content_id": "ART_9E435871CA9B",
+      "kind": "artifact",
+      "title": "P03 — зимняя крыша",
+      "source_path": "Винтажный гримуар с шестью воспоминаниями.png",
+      "preview_path": null,
+      "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
+      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+    },
+    {
+      "content_id": "ART_E400C7A072A3",
+      "kind": "artifact",
+      "title": "P04 — «понедельник» / рабочий стол",
+      "source_path": "Винтажный гримуар с шестью воспоминаниями.png",
+      "preview_path": null,
+      "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
+      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+    },
+    {
+      "content_id": "ART_EE6AF75485DD",
+      "kind": "artifact",
+      "title": "P05 — корзина с отвергнутыми принцессными атрибутами",
+      "source_path": "P05_CURRENT_корзина_принцесса_2026-09-29.png",
+      "preview_path": null,
+      "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
+      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+    },
+    {
+      "content_id": "ART_CF8A778FB126",
+      "kind": "artifact",
+      "title": "P05 — корзина с отвергнутыми принцессными атрибутами",
+      "source_path": "Винтажный гримуар с шестью воспоминаниями.png",
+      "preview_path": null,
+      "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
+      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+    },
+    {
+      "content_id": "ART_9859EA299B27",
+      "kind": "artifact",
+      "title": "P06 — зеркало / сброшенный образ",
+      "source_path": "Винтажный гримуар с шестью воспоминаниями.png",
+      "preview_path": null,
+      "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
+      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+    },
+    {
+      "content_id": "ART_45B01E0B1AFF",
+      "kind": "artifact",
+      "title": "P07 — холодные ноги / тепло под крылом",
+      "source_path": "P07_MASTER_ледяные_стопы_тени_2026-09-30.png",
+      "preview_path": null,
+      "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
+      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+    },
+    {
+      "content_id": "ART_E1ACFF092798",
+      "kind": "artifact",
+      "title": "P09 — не спасать / не приручать / не манипулировать",
+      "source_path": "P09_MASTER_не_спасать_не_приручать_2026-09-29.png",
+      "preview_path": null,
+      "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
+      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+    },
+    {
+      "content_id": "ART_8B8F7090FA15",
+      "kind": "artifact",
+      "title": "P10 — открытая дверь",
+      "source_path": "P10_MASTER_открытая_дверь_следы_2026-09-29.png",
+      "preview_path": null,
+      "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
+      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+    },
+    {
+      "content_id": "ART_30692776353D",
+      "kind": "artifact",
+      "title": "P11 — билет «к Дракону»",
+      "source_path": "P11_MASTER_билет_к_Дракону_2026-09-30.png",
+      "preview_path": null,
+      "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
+      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+    },
+    {
+      "content_id": "ART_6B926B8DA7BB",
+      "kind": "artifact",
+      "title": "P12 — «Пусть будут ведьмы»",
+      "source_path": "P12_MASTER_корона_кружево_подвески_метла_2026-09-30.png",
+      "preview_path": null,
+      "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
+      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+    },
+    {
+      "content_id": "ART_BC73D250B17A",
+      "kind": "artifact",
+      "title": "5.1. «Письма перед сном»",
+      "source_path": "Стеклянный куб с винтажными письмами и красным кружевом.png",
+      "preview_path": null,
+      "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
+      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+    },
+    {
+      "content_id": "ART_7489A52C683F",
+      "kind": "artifact",
+      "title": "5.2. «Дуст генератору от Иконочки»",
+      "source_path": "Стеклянный куб с пылью и табличкой.png",
+      "preview_path": null,
+      "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
+      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+    },
+    {
+      "content_id": "ART_C29202D57896",
+      "kind": "artifact",
+      "title": "5.3. Бантик ЭВМочки",
+      "source_path": "роскошный_стеклянный_куб_с_чёрным_бантом.png",
+      "preview_path": null,
+      "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
+      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+    },
+    {
+      "content_id": "ART_9CE22EEA697A",
+      "kind": "artifact",
+      "title": "5.4. Три графитовых свитера Моры Изначальной",
+      "source_path": "стеклянная_витрина_с_графитовым_свитером.png",
+      "preview_path": null,
+      "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
+      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+    },
+    {
+      "content_id": "ART_DFEA89BA2EE4",
+      "kind": "artifact",
+      "title": "5.5. Серебряный кулон — голова дракона",
+      "source_path": "серебряный_дракон_в_стеклянном_кубе.png",
+      "preview_path": null,
+      "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
+      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+    },
+    {
+      "content_id": "ART_CDF60BEECF7E",
+      "kind": "artifact",
+      "title": "5.6. Кольцо с красным камнем",
+      "source_path": "a_highly_detailed_photorealistic_3d_render_on_a_t.png",
+      "preview_path": null,
+      "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
+      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+    },
+    {
+      "content_id": "ART_D9AA0E1B8000",
+      "kind": "artifact",
+      "title": "Мусорная корзина кабинета Дракона",
+      "source_path": "МАСТЕР_мусорная_корзина_Дракона.png",
+      "preview_path": null,
+      "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
+      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+    },
+    {
+      "content_id": "ART_F323C5613538",
+      "kind": "artifact",
+      "title": "Мусорная корзина кабинета Дракона",
+      "source_path": "/DracoWitch/SAMA/06_OBJECT_MASTERS/APPROVED/МАСТЕР_мусорная_корзина_Дракона.png",
+      "preview_path": null,
+      "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
+      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+    },
+    {
+      "content_id": "ART_E045A79B5182",
+      "kind": "artifact",
+      "title": "P09 discard set",
+      "source_path": "P09_MASTER_не_спасать_не_приручать_2026-09-29.png",
+      "preview_path": null,
+      "rights_provenance": "Dragon House canonical artifact register; project-owned reference",
+      "status": "SOURCE_REGISTERED_REPO_AVAILABILITY_TO_VERIFY"
+    }
+  ]
+}
