@@ -1,0 +1,134 @@
+{
+  "schema": 1,
+  "status": "CANDIDATE_RUNTIME_BINDING_NOT_OWNER_APPROVED",
+  "owner_approved": false,
+  "source": {
+    "batch": "TEEA_INT_20261123_007",
+    "final_closure_head": "996950493cc1e703abefc3659a13177160caa8d0",
+    "station_source": "TEEA_INT_20261123_007_guest_station_candidate.json",
+    "alpha_closure_run": 45207278966
+  },
+  "rooms": {
+    "guest_centaur_01": {
+      "guest_id": "NPC_CENTAUR",
+      "station_profile": "quadruped_large",
+      "human_seat_allowed": false,
+      "turning_diameter_m": 2.5,
+      "stations": [
+        {
+          "id": "centaur_talk",
+          "x": 0.1,
+          "z": 0.25,
+          "kind": "standing",
+          "pose_hint": "TALK",
+          "activity": "conversation",
+          "furniture_id": "ROOM_FLOOR",
+          "approach_z": 0.95
+        },
+        {
+          "id": "centaur_table_use",
+          "x": 1.35,
+          "z": -0.9,
+          "kind": "work",
+          "pose_hint": "CARRY_USE",
+          "activity": "object_use",
+          "furniture_id": "centaur_table",
+          "approach_z": 0.95
+        },
+        {
+          "id": "centaur_rest",
+          "x": -1.15,
+          "z": -1.25,
+          "kind": "floor_rest",
+          "pose_hint": "SLEEP",
+          "activity": "rest",
+          "furniture_id": "centaur_rest_platform",
+          "approach_z": 0.95
+        }
+      ]
+    },
+    "guest_vampire_01": {
+      "guest_id": "NPC_VAMPIRE_GIRL",
+      "station_profile": "humanoid",
+      "human_seat_allowed": true,
+      "stations": [
+        {
+          "id": "vampire_talk",
+          "x": 0.1,
+          "z": 0.55,
+          "kind": "standing",
+          "pose_hint": "TALK",
+          "activity": "conversation",
+          "furniture_id": "ROOM_FLOOR",
+          "approach_z": 0.95
+        },
+        {
+          "id": "vampire_daybed_rest",
+          "x": -1.28312,
+          "z": -1.25742,
+          "kind": "seat",
+          "pose_hint": "RELAXED_SIT",
+          "activity": "rest",
+          "furniture_id": "vampire_daybed",
+          "approach_z": 0.95,
+          "seat_height_m": 0.4537
+        },
+        {
+          "id": "vampire_read",
+          "x": 1.25159,
+          "z": 0.11803,
+          "kind": "seat",
+          "pose_hint": "READ",
+          "activity": "reading",
+          "furniture_id": "vampire_chair",
+          "approach_z": 0.95,
+          "seat_height_m": 0.40194
+        },
+        {
+          "id": "vampire_personal_item",
+          "x": 0.3,
+          "z": -0.87836,
+          "kind": "standing",
+          "pose_hint": "CARRY_USE",
+          "activity": "personal_item",
+          "furniture_id": "vampire_nightstand",
+          "approach_z": 0.95
+        }
+      ]
+    },
+    "guest_miu_01": {
+      "guest_id": "NPC_GINGER_CAT_GUEST",
+      "station_profile": "small_quadruped",
+      "human_seat_allowed": false,
+      "integrator_binding": "miu_low_pad hook promoted to floor_rest after exact alpha/yaw closure; perch/ottoman/bowl remain hooks only",
+      "stations": [
+        {
+          "id": "miu_low_pad_rest",
+          "x": 0.15,
+          "z": -1.1,
+          "kind": "floor_rest",
+          "pose_hint": "SLEEP",
+          "activity": "rest",
+          "furniture_id": "miu_low_pad",
+          "approach_z": 0.95,
+          "surface_height_m": 0.41607,
+          "source_hook": "miu_low_pad_hook"
+        }
+      ],
+      "inactive_hooks": [
+        {
+          "id": "miu_perch_hook",
+          "reason": "perch semantics not yet in core station grammar"
+        },
+        {
+          "id": "miu_ottoman_hook",
+          "reason": "rest semantics already covered by low pad; no duplicate station"
+        },
+        {
+          "id": "miu_bowl_hook",
+          "reason": "feed/drink intent is not yet a canonical guest-life action"
+        }
+      ]
+    }
+  }
+}
