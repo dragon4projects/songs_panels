@@ -319,7 +319,11 @@
             ]
           }
         }
-      }
+      },
+      "room_cell": [
+        6,
+        0
+      ]
     },
     "NPC_VAMPIRE_GIRL": {
       "id": "NPC_VAMPIRE_GIRL",
@@ -621,7 +625,11 @@
             ]
           }
         }
-      }
+      },
+      "room_cell": [
+        6,
+        1
+      ]
     },
     "NPC_GINGER_CAT_GUEST": {
       "id": "NPC_GINGER_CAT_GUEST",
@@ -733,7 +741,11 @@
             ]
           }
         }
-      }
+      },
+      "room_cell": [
+        6,
+        -1
+      ]
     }
   },
   "creatures": {
