@@ -1,0 +1,1371 @@
+{
+  "schema": 1,
+  "status": "CANDIDATE_NOT_ACTIVATED",
+  "owner_approved": false,
+  "source": {
+    "retired_agent": "ZNAECHKA",
+    "retired_branch": "archive/znaechka-final-ZNA_CHAR_NPC_20261123_001",
+    "retired_head": "3f7a9f831588a342ecdaec4df40c6775cfe59f5a",
+    "intake_branch": "int/dragon-house-content-candidate-intake-20261123",
+    "intake_head": "065bd89a8e42605aac2eba60dd53eee7aa5e778b"
+  },
+  "policy": {
+    "registration_does_not_imply_activation": true,
+    "asset_presence_does_not_create_world_entity": true,
+    "cat_ownership_requires_explicit_evidence": true,
+    "private_room_bypass": false,
+    "shurshun": "BLOCKED_MASTER_REQUIRED",
+    "manjka": "EXCLUDED_EXISTING_CANONICAL_BANK"
+  },
+  "guests": {
+    "NPC_CENTAUR": {
+      "id": "NPC_CENTAUR",
+      "display_name": "Кентавр",
+      "entity_type": "guest",
+      "species": "centaur",
+      "status": "ART_CANDIDATE",
+      "owner_approved": false,
+      "active_by_default": false,
+      "default_wardrobe": "HOME",
+      "room_candidate": "guest_centaur_01",
+      "turning_diameter_m": 2.5,
+      "bank_root": "assets/residents/NPC_CENTAUR",
+      "identity": [
+        "assets/residents/NPC_CENTAUR/identity/front_0001.png"
+      ],
+      "wardrobes": {
+        "CITY": {
+          "states": {
+            "CARRY_USE": [
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/CARRY_USE/0001.png"
+            ],
+            "DRINK": [
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/DRINK/0001.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/DRINK/0002.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/DRINK/0003.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/DRINK/0004.png"
+            ],
+            "IDLE_E": [
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/IDLE_E/0001.png"
+            ],
+            "IDLE_N": [
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/IDLE_N/0001.png"
+            ],
+            "IDLE_NE": [
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/IDLE_NE/0001.png"
+            ],
+            "IDLE_NW": [
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/IDLE_NW/0001.png"
+            ],
+            "IDLE_S": [
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/IDLE_S/0001.png"
+            ],
+            "IDLE_SE": [
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/IDLE_SE/0001.png"
+            ],
+            "IDLE_SW": [
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/IDLE_SW/0001.png"
+            ],
+            "IDLE_W": [
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/IDLE_W/0001.png"
+            ],
+            "LIE_SIDE_CURLED": [
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/LIE_SIDE_CURLED/0001.png"
+            ],
+            "LIE_SIDE_STRAIGHT": [
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/LIE_SIDE_STRAIGHT/0001.png"
+            ],
+            "READ": [
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/READ/0001.png"
+            ],
+            "RELAXED_SIT": [
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/RELAXED_SIT/0001.png"
+            ],
+            "SIT": [
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/SIT/0001.png"
+            ],
+            "SIT_HUG_KNEES": [
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/SIT_HUG_KNEES/0001.png"
+            ],
+            "SIT_LEGS_TUCKED": [
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/SIT_LEGS_TUCKED/0001.png"
+            ],
+            "SLEEP": [
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/SLEEP/0001.png"
+            ],
+            "TALK": [
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/TALK/0001.png"
+            ],
+            "VIEW": [
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/VIEW/0001.png"
+            ],
+            "WALK_LEFT": [
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0001.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0002.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0003.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0004.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0005.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0006.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0007.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0008.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0009.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0010.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0011.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0012.png"
+            ],
+            "WALK_RIGHT": [
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0001.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0002.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0003.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0004.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0005.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0006.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0007.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0008.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0009.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0010.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0011.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0012.png"
+            ]
+          }
+        },
+        "HOME": {
+          "states": {
+            "CARRY_USE": [
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/CARRY_USE/0001.png"
+            ],
+            "DRINK": [
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/DRINK/0001.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/DRINK/0002.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/DRINK/0003.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/DRINK/0004.png"
+            ],
+            "IDLE_E": [
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/IDLE_E/0001.png"
+            ],
+            "IDLE_N": [
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/IDLE_N/0001.png"
+            ],
+            "IDLE_NE": [
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/IDLE_NE/0001.png"
+            ],
+            "IDLE_NW": [
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/IDLE_NW/0001.png"
+            ],
+            "IDLE_S": [
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/IDLE_S/0001.png"
+            ],
+            "IDLE_SE": [
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/IDLE_SE/0001.png"
+            ],
+            "IDLE_SW": [
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/IDLE_SW/0001.png"
+            ],
+            "IDLE_W": [
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/IDLE_W/0001.png"
+            ],
+            "LIE_SIDE_CURLED": [
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/LIE_SIDE_CURLED/0001.png"
+            ],
+            "LIE_SIDE_STRAIGHT": [
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/LIE_SIDE_STRAIGHT/0001.png"
+            ],
+            "READ": [
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/READ/0001.png"
+            ],
+            "RELAXED_SIT": [
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/RELAXED_SIT/0001.png"
+            ],
+            "SIT": [
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/SIT/0001.png"
+            ],
+            "SIT_HUG_KNEES": [
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/SIT_HUG_KNEES/0001.png"
+            ],
+            "SIT_LEGS_TUCKED": [
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/SIT_LEGS_TUCKED/0001.png"
+            ],
+            "SLEEP": [
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/SLEEP/0001.png"
+            ],
+            "TALK": [
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/TALK/0001.png"
+            ],
+            "VIEW": [
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/VIEW/0001.png"
+            ],
+            "WALK_LEFT": [
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0001.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0002.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0003.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0004.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0005.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0006.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0007.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0008.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0009.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0010.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0011.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0012.png"
+            ],
+            "WALK_RIGHT": [
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0001.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0002.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0003.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0004.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0005.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0006.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0007.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0008.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0009.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0010.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0011.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0012.png"
+            ]
+          }
+        },
+        "SHORT": {
+          "states": {
+            "CARRY_USE": [
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/CARRY_USE/0001.png"
+            ],
+            "DRINK": [
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/DRINK/0001.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/DRINK/0002.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/DRINK/0003.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/DRINK/0004.png"
+            ],
+            "IDLE_E": [
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/IDLE_E/0001.png"
+            ],
+            "IDLE_N": [
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/IDLE_N/0001.png"
+            ],
+            "IDLE_NE": [
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/IDLE_NE/0001.png"
+            ],
+            "IDLE_NW": [
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/IDLE_NW/0001.png"
+            ],
+            "IDLE_S": [
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/IDLE_S/0001.png"
+            ],
+            "IDLE_SE": [
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/IDLE_SE/0001.png"
+            ],
+            "IDLE_SW": [
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/IDLE_SW/0001.png"
+            ],
+            "IDLE_W": [
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/IDLE_W/0001.png"
+            ],
+            "LIE_SIDE_CURLED": [
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/LIE_SIDE_CURLED/0001.png"
+            ],
+            "LIE_SIDE_STRAIGHT": [
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/LIE_SIDE_STRAIGHT/0001.png"
+            ],
+            "READ": [
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/READ/0001.png"
+            ],
+            "RELAXED_SIT": [
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/RELAXED_SIT/0001.png"
+            ],
+            "SIT": [
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/SIT/0001.png"
+            ],
+            "SIT_HUG_KNEES": [
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/SIT_HUG_KNEES/0001.png"
+            ],
+            "SIT_LEGS_TUCKED": [
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/SIT_LEGS_TUCKED/0001.png"
+            ],
+            "SLEEP": [
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/SLEEP/0001.png"
+            ],
+            "TALK": [
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/TALK/0001.png"
+            ],
+            "VIEW": [
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/VIEW/0001.png"
+            ],
+            "WALK_LEFT": [
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0001.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0002.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0003.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0004.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0005.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0006.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0007.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0008.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0009.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0010.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0011.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0012.png"
+            ],
+            "WALK_RIGHT": [
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0001.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0002.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0003.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0004.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0005.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0006.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0007.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0008.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0009.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0010.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0011.png",
+              "assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0012.png"
+            ]
+          }
+        }
+      }
+    },
+    "NPC_VAMPIRE_GIRL": {
+      "id": "NPC_VAMPIRE_GIRL",
+      "display_name": "Вампирша",
+      "entity_type": "guest",
+      "species": "vampire",
+      "status": "ART_CANDIDATE",
+      "owner_approved": false,
+      "active_by_default": false,
+      "default_wardrobe": "HOME",
+      "room_candidate": "guest_vampire_01",
+      "bank_root": "assets/residents/NPC_VAMPIRE_GIRL",
+      "identity": [
+        "assets/residents/NPC_VAMPIRE_GIRL/identity/front_0001.png"
+      ],
+      "wardrobes": {
+        "CITY": {
+          "states": {
+            "CARRY_USE": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/CARRY_USE/0001.png"
+            ],
+            "DRINK": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/DRINK/0001.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/DRINK/0002.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/DRINK/0003.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/DRINK/0004.png"
+            ],
+            "IDLE_E": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/IDLE_E/0001.png"
+            ],
+            "IDLE_N": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/IDLE_N/0001.png"
+            ],
+            "IDLE_NE": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/IDLE_NE/0001.png"
+            ],
+            "IDLE_NW": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/IDLE_NW/0001.png"
+            ],
+            "IDLE_S": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/IDLE_S/0001.png"
+            ],
+            "IDLE_SE": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/IDLE_SE/0001.png"
+            ],
+            "IDLE_SW": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/IDLE_SW/0001.png"
+            ],
+            "IDLE_W": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/IDLE_W/0001.png"
+            ],
+            "LIE_SIDE_CURLED": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/LIE_SIDE_CURLED/0001.png"
+            ],
+            "LIE_SIDE_STRAIGHT": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/LIE_SIDE_STRAIGHT/0001.png"
+            ],
+            "READ": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/READ/0001.png"
+            ],
+            "RELAXED_SIT": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/RELAXED_SIT/0001.png"
+            ],
+            "SIT": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/SIT/0001.png"
+            ],
+            "SIT_HUG_KNEES": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/SIT_HUG_KNEES/0001.png"
+            ],
+            "SIT_LEGS_TUCKED": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/SIT_LEGS_TUCKED/0001.png"
+            ],
+            "SLEEP": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/SLEEP/0001.png"
+            ],
+            "TALK": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/TALK/0001.png"
+            ],
+            "VIEW": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/VIEW/0001.png"
+            ],
+            "WALK_LEFT": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0001.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0002.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0003.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0004.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0005.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0006.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0007.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0008.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0009.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0010.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0011.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0012.png"
+            ],
+            "WALK_RIGHT": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0001.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0002.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0003.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0004.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0005.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0006.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0007.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0008.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0009.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0010.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0011.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0012.png"
+            ]
+          }
+        },
+        "HOME": {
+          "states": {
+            "CARRY_USE": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/CARRY_USE/0001.png"
+            ],
+            "DRINK": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/DRINK/0001.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/DRINK/0002.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/DRINK/0003.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/DRINK/0004.png"
+            ],
+            "IDLE_E": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/IDLE_E/0001.png"
+            ],
+            "IDLE_N": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/IDLE_N/0001.png"
+            ],
+            "IDLE_NE": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/IDLE_NE/0001.png"
+            ],
+            "IDLE_NW": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/IDLE_NW/0001.png"
+            ],
+            "IDLE_S": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/IDLE_S/0001.png"
+            ],
+            "IDLE_SE": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/IDLE_SE/0001.png"
+            ],
+            "IDLE_SW": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/IDLE_SW/0001.png"
+            ],
+            "IDLE_W": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/IDLE_W/0001.png"
+            ],
+            "LIE_SIDE_CURLED": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/LIE_SIDE_CURLED/0001.png"
+            ],
+            "LIE_SIDE_STRAIGHT": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/LIE_SIDE_STRAIGHT/0001.png"
+            ],
+            "READ": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/READ/0001.png"
+            ],
+            "RELAXED_SIT": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/RELAXED_SIT/0001.png"
+            ],
+            "SIT": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/SIT/0001.png"
+            ],
+            "SIT_HUG_KNEES": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/SIT_HUG_KNEES/0001.png"
+            ],
+            "SIT_LEGS_TUCKED": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/SIT_LEGS_TUCKED/0001.png"
+            ],
+            "SLEEP": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/SLEEP/0001.png"
+            ],
+            "TALK": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/TALK/0001.png"
+            ],
+            "VIEW": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/VIEW/0001.png"
+            ],
+            "WALK_LEFT": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0001.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0002.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0003.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0004.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0005.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0006.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0007.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0008.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0009.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0010.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0011.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0012.png"
+            ],
+            "WALK_RIGHT": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0001.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0002.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0003.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0004.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0005.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0006.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0007.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0008.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0009.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0010.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0011.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0012.png"
+            ]
+          }
+        },
+        "SHORT": {
+          "states": {
+            "CARRY_USE": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/CARRY_USE/0001.png"
+            ],
+            "DRINK": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/DRINK/0001.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/DRINK/0002.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/DRINK/0003.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/DRINK/0004.png"
+            ],
+            "IDLE_E": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/IDLE_E/0001.png"
+            ],
+            "IDLE_N": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/IDLE_N/0001.png"
+            ],
+            "IDLE_NE": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/IDLE_NE/0001.png"
+            ],
+            "IDLE_NW": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/IDLE_NW/0001.png"
+            ],
+            "IDLE_S": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/IDLE_S/0001.png"
+            ],
+            "IDLE_SE": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/IDLE_SE/0001.png"
+            ],
+            "IDLE_SW": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/IDLE_SW/0001.png"
+            ],
+            "IDLE_W": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/IDLE_W/0001.png"
+            ],
+            "LIE_SIDE_CURLED": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/LIE_SIDE_CURLED/0001.png"
+            ],
+            "LIE_SIDE_STRAIGHT": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/LIE_SIDE_STRAIGHT/0001.png"
+            ],
+            "READ": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/READ/0001.png"
+            ],
+            "RELAXED_SIT": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/RELAXED_SIT/0001.png"
+            ],
+            "SIT": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/SIT/0001.png"
+            ],
+            "SIT_HUG_KNEES": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/SIT_HUG_KNEES/0001.png"
+            ],
+            "SIT_LEGS_TUCKED": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/SIT_LEGS_TUCKED/0001.png"
+            ],
+            "SLEEP": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/SLEEP/0001.png"
+            ],
+            "TALK": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/TALK/0001.png"
+            ],
+            "VIEW": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/VIEW/0001.png"
+            ],
+            "WALK_LEFT": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0001.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0002.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0003.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0004.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0005.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0006.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0007.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0008.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0009.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0010.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0011.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0012.png"
+            ],
+            "WALK_RIGHT": [
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0001.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0002.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0003.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0004.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0005.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0006.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0007.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0008.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0009.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0010.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0011.png",
+              "assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0012.png"
+            ]
+          }
+        }
+      }
+    },
+    "NPC_GINGER_CAT_GUEST": {
+      "id": "NPC_GINGER_CAT_GUEST",
+      "display_name": "Миу",
+      "entity_type": "guest",
+      "species": "cat",
+      "status": "ART_CANDIDATE",
+      "owner_approved": false,
+      "active_by_default": false,
+      "default_wardrobe": "SHORT",
+      "room_candidate": "guest_miu_01",
+      "bank_root": "assets/residents/NPC_GINGER_CAT_GUEST",
+      "identity": [
+        "assets/residents/NPC_GINGER_CAT_GUEST/identity/front_0001.png"
+      ],
+      "wardrobes": {
+        "SHORT": {
+          "states": {
+            "CARRY_USE": [
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/CARRY_USE/0001.png"
+            ],
+            "DRINK": [
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/DRINK/0001.png",
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/DRINK/0002.png",
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/DRINK/0003.png",
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/DRINK/0004.png"
+            ],
+            "IDLE_E": [
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_E/0001.png"
+            ],
+            "IDLE_N": [
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_N/0001.png"
+            ],
+            "IDLE_NE": [
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_NE/0001.png"
+            ],
+            "IDLE_NW": [
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_NW/0001.png"
+            ],
+            "IDLE_S": [
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_S/0001.png"
+            ],
+            "IDLE_SE": [
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_SE/0001.png"
+            ],
+            "IDLE_SW": [
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_SW/0001.png"
+            ],
+            "IDLE_W": [
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_W/0001.png"
+            ],
+            "LIE_SIDE_CURLED": [
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/LIE_SIDE_CURLED/0001.png"
+            ],
+            "LIE_SIDE_STRAIGHT": [
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/LIE_SIDE_STRAIGHT/0001.png"
+            ],
+            "READ": [
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/READ/0001.png"
+            ],
+            "RELAXED_SIT": [
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/RELAXED_SIT/0001.png"
+            ],
+            "SIT": [
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/SIT/0001.png"
+            ],
+            "SIT_HUG_KNEES": [
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/SIT_HUG_KNEES/0001.png"
+            ],
+            "SIT_LEGS_TUCKED": [
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/SIT_LEGS_TUCKED/0001.png"
+            ],
+            "SLEEP": [
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/SLEEP/0001.png"
+            ],
+            "TALK": [
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/TALK/0001.png"
+            ],
+            "VIEW": [
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/VIEW/0001.png"
+            ],
+            "WALK_LEFT": [
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0001.png",
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0002.png",
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0003.png",
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0004.png",
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0005.png",
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0006.png",
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0007.png",
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0008.png",
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0009.png",
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0010.png",
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0011.png",
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0012.png"
+            ],
+            "WALK_RIGHT": [
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0001.png",
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0002.png",
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0003.png",
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0004.png",
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0005.png",
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0006.png",
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0007.png",
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0008.png",
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0009.png",
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0010.png",
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0011.png",
+              "assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0012.png"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "creatures": {
+    "npc_ai_magic_sphere": {
+      "id": "npc_ai_magic_sphere",
+      "entity_type": "creature",
+      "creature_kind": "zoo",
+      "status": "ART_CANDIDATE",
+      "owner_approved": false,
+      "active_by_default": false,
+      "owner_id": null,
+      "bank_root": "assets/creatures/npc_ai_magic_sphere",
+      "states": {
+        "identity": [
+          "assets/creatures/npc_ai_magic_sphere/identity/front_0001.png"
+        ],
+        "idle": [
+          "assets/creatures/npc_ai_magic_sphere/idle/idle_left_0001.png",
+          "assets/creatures/npc_ai_magic_sphere/idle/idle_right_0001.png"
+        ],
+        "rest": [
+          "assets/creatures/npc_ai_magic_sphere/rest/rest_0001.png",
+          "assets/creatures/npc_ai_magic_sphere/rest/sit_0001.png"
+        ],
+        "walk_left": [
+          "assets/creatures/npc_ai_magic_sphere/walk_left/walk_left_0001.png",
+          "assets/creatures/npc_ai_magic_sphere/walk_left/walk_left_0002.png",
+          "assets/creatures/npc_ai_magic_sphere/walk_left/walk_left_0003.png",
+          "assets/creatures/npc_ai_magic_sphere/walk_left/walk_left_0004.png"
+        ],
+        "walk_right": [
+          "assets/creatures/npc_ai_magic_sphere/walk_right/walk_right_0001.png",
+          "assets/creatures/npc_ai_magic_sphere/walk_right/walk_right_0002.png",
+          "assets/creatures/npc_ai_magic_sphere/walk_right/walk_right_0003.png",
+          "assets/creatures/npc_ai_magic_sphere/walk_right/walk_right_0004.png"
+        ]
+      }
+    },
+    "npc_cat_black_hero": {
+      "id": "npc_cat_black_hero",
+      "entity_type": "creature",
+      "creature_kind": "cat_candidate",
+      "status": "ART_CANDIDATE",
+      "owner_approved": false,
+      "active_by_default": false,
+      "owner_id": null,
+      "bank_root": "assets/creatures/npc_cat_black_hero",
+      "states": {
+        "identity": [
+          "assets/creatures/npc_cat_black_hero/identity/front_0001.png"
+        ],
+        "idle": [
+          "assets/creatures/npc_cat_black_hero/idle/idle_left_0001.png",
+          "assets/creatures/npc_cat_black_hero/idle/idle_right_0001.png"
+        ],
+        "rest": [
+          "assets/creatures/npc_cat_black_hero/rest/rest_0001.png",
+          "assets/creatures/npc_cat_black_hero/rest/sit_0001.png"
+        ],
+        "walk_left": [
+          "assets/creatures/npc_cat_black_hero/walk_left/walk_left_0001.png",
+          "assets/creatures/npc_cat_black_hero/walk_left/walk_left_0002.png",
+          "assets/creatures/npc_cat_black_hero/walk_left/walk_left_0003.png",
+          "assets/creatures/npc_cat_black_hero/walk_left/walk_left_0004.png"
+        ],
+        "walk_right": [
+          "assets/creatures/npc_cat_black_hero/walk_right/walk_right_0001.png",
+          "assets/creatures/npc_cat_black_hero/walk_right/walk_right_0002.png",
+          "assets/creatures/npc_cat_black_hero/walk_right/walk_right_0003.png",
+          "assets/creatures/npc_cat_black_hero/walk_right/walk_right_0004.png"
+        ]
+      }
+    },
+    "npc_cat_calico": {
+      "id": "npc_cat_calico",
+      "entity_type": "creature",
+      "creature_kind": "cat_candidate",
+      "status": "ART_CANDIDATE",
+      "owner_approved": false,
+      "active_by_default": false,
+      "owner_id": null,
+      "bank_root": "assets/creatures/npc_cat_calico",
+      "states": {
+        "identity": [
+          "assets/creatures/npc_cat_calico/identity/front_0001.png"
+        ],
+        "idle": [
+          "assets/creatures/npc_cat_calico/idle/idle_left_0001.png",
+          "assets/creatures/npc_cat_calico/idle/idle_right_0001.png"
+        ],
+        "rest": [
+          "assets/creatures/npc_cat_calico/rest/rest_0001.png",
+          "assets/creatures/npc_cat_calico/rest/sit_0001.png"
+        ],
+        "walk_left": [
+          "assets/creatures/npc_cat_calico/walk_left/walk_left_0001.png",
+          "assets/creatures/npc_cat_calico/walk_left/walk_left_0002.png",
+          "assets/creatures/npc_cat_calico/walk_left/walk_left_0003.png",
+          "assets/creatures/npc_cat_calico/walk_left/walk_left_0004.png"
+        ],
+        "walk_right": [
+          "assets/creatures/npc_cat_calico/walk_right/walk_right_0001.png",
+          "assets/creatures/npc_cat_calico/walk_right/walk_right_0002.png",
+          "assets/creatures/npc_cat_calico/walk_right/walk_right_0003.png",
+          "assets/creatures/npc_cat_calico/walk_right/walk_right_0004.png"
+        ]
+      }
+    },
+    "npc_cat_ginger": {
+      "id": "npc_cat_ginger",
+      "entity_type": "creature",
+      "creature_kind": "cat_candidate",
+      "status": "ART_CANDIDATE",
+      "owner_approved": false,
+      "active_by_default": false,
+      "owner_id": null,
+      "bank_root": "assets/creatures/npc_cat_ginger",
+      "states": {
+        "identity": [
+          "assets/creatures/npc_cat_ginger/identity/front_0001.png"
+        ],
+        "idle": [
+          "assets/creatures/npc_cat_ginger/idle/idle_left_0001.png",
+          "assets/creatures/npc_cat_ginger/idle/idle_right_0001.png"
+        ],
+        "rest": [
+          "assets/creatures/npc_cat_ginger/rest/rest_0001.png",
+          "assets/creatures/npc_cat_ginger/rest/sit_0001.png"
+        ],
+        "walk_left": [
+          "assets/creatures/npc_cat_ginger/walk_left/walk_left_0001.png",
+          "assets/creatures/npc_cat_ginger/walk_left/walk_left_0002.png",
+          "assets/creatures/npc_cat_ginger/walk_left/walk_left_0003.png",
+          "assets/creatures/npc_cat_ginger/walk_left/walk_left_0004.png"
+        ],
+        "walk_right": [
+          "assets/creatures/npc_cat_ginger/walk_right/walk_right_0001.png",
+          "assets/creatures/npc_cat_ginger/walk_right/walk_right_0002.png",
+          "assets/creatures/npc_cat_ginger/walk_right/walk_right_0003.png",
+          "assets/creatures/npc_cat_ginger/walk_right/walk_right_0004.png"
+        ]
+      }
+    },
+    "npc_cat_sphynx": {
+      "id": "npc_cat_sphynx",
+      "entity_type": "creature",
+      "creature_kind": "cat_candidate",
+      "status": "ART_CANDIDATE",
+      "owner_approved": false,
+      "active_by_default": false,
+      "owner_id": null,
+      "bank_root": "assets/creatures/npc_cat_sphynx",
+      "states": {
+        "identity": [
+          "assets/creatures/npc_cat_sphynx/identity/front_0001.png"
+        ],
+        "idle": [
+          "assets/creatures/npc_cat_sphynx/idle/idle_left_0001.png",
+          "assets/creatures/npc_cat_sphynx/idle/idle_right_0001.png"
+        ],
+        "rest": [
+          "assets/creatures/npc_cat_sphynx/rest/rest_0001.png",
+          "assets/creatures/npc_cat_sphynx/rest/sit_0001.png"
+        ],
+        "walk_left": [
+          "assets/creatures/npc_cat_sphynx/walk_left/walk_left_0001.png",
+          "assets/creatures/npc_cat_sphynx/walk_left/walk_left_0002.png",
+          "assets/creatures/npc_cat_sphynx/walk_left/walk_left_0003.png",
+          "assets/creatures/npc_cat_sphynx/walk_left/walk_left_0004.png"
+        ],
+        "walk_right": [
+          "assets/creatures/npc_cat_sphynx/walk_right/walk_right_0001.png",
+          "assets/creatures/npc_cat_sphynx/walk_right/walk_right_0002.png",
+          "assets/creatures/npc_cat_sphynx/walk_right/walk_right_0003.png",
+          "assets/creatures/npc_cat_sphynx/walk_right/walk_right_0004.png"
+        ]
+      }
+    },
+    "npc_cat_tabby": {
+      "id": "npc_cat_tabby",
+      "entity_type": "creature",
+      "creature_kind": "cat_candidate",
+      "status": "ART_CANDIDATE",
+      "owner_approved": false,
+      "active_by_default": false,
+      "owner_id": null,
+      "bank_root": "assets/creatures/npc_cat_tabby",
+      "states": {
+        "identity": [
+          "assets/creatures/npc_cat_tabby/identity/front_0001.png"
+        ],
+        "idle": [
+          "assets/creatures/npc_cat_tabby/idle/idle_left_0001.png",
+          "assets/creatures/npc_cat_tabby/idle/idle_right_0001.png"
+        ],
+        "rest": [
+          "assets/creatures/npc_cat_tabby/rest/rest_0001.png",
+          "assets/creatures/npc_cat_tabby/rest/sit_0001.png"
+        ],
+        "walk_left": [
+          "assets/creatures/npc_cat_tabby/walk_left/walk_left_0001.png",
+          "assets/creatures/npc_cat_tabby/walk_left/walk_left_0002.png",
+          "assets/creatures/npc_cat_tabby/walk_left/walk_left_0003.png",
+          "assets/creatures/npc_cat_tabby/walk_left/walk_left_0004.png"
+        ],
+        "walk_right": [
+          "assets/creatures/npc_cat_tabby/walk_right/walk_right_0001.png",
+          "assets/creatures/npc_cat_tabby/walk_right/walk_right_0002.png",
+          "assets/creatures/npc_cat_tabby/walk_right/walk_right_0003.png",
+          "assets/creatures/npc_cat_tabby/walk_right/walk_right_0004.png"
+        ]
+      }
+    },
+    "npc_cat_white": {
+      "id": "npc_cat_white",
+      "entity_type": "creature",
+      "creature_kind": "cat_candidate",
+      "status": "ART_CANDIDATE",
+      "owner_approved": false,
+      "active_by_default": false,
+      "owner_id": null,
+      "bank_root": "assets/creatures/npc_cat_white",
+      "states": {
+        "identity": [
+          "assets/creatures/npc_cat_white/identity/front_0001.png"
+        ],
+        "idle": [
+          "assets/creatures/npc_cat_white/idle/idle_left_0001.png",
+          "assets/creatures/npc_cat_white/idle/idle_right_0001.png"
+        ],
+        "rest": [
+          "assets/creatures/npc_cat_white/rest/rest_0001.png",
+          "assets/creatures/npc_cat_white/rest/sit_0001.png"
+        ],
+        "walk_left": [
+          "assets/creatures/npc_cat_white/walk_left/walk_left_0001.png",
+          "assets/creatures/npc_cat_white/walk_left/walk_left_0002.png",
+          "assets/creatures/npc_cat_white/walk_left/walk_left_0003.png",
+          "assets/creatures/npc_cat_white/walk_left/walk_left_0004.png"
+        ],
+        "walk_right": [
+          "assets/creatures/npc_cat_white/walk_right/walk_right_0001.png",
+          "assets/creatures/npc_cat_white/walk_right/walk_right_0002.png",
+          "assets/creatures/npc_cat_white/walk_right/walk_right_0003.png",
+          "assets/creatures/npc_cat_white/walk_right/walk_right_0004.png"
+        ]
+      }
+    },
+    "npc_hedgehog_01": {
+      "id": "npc_hedgehog_01",
+      "entity_type": "creature",
+      "creature_kind": "microfauna",
+      "status": "ART_CANDIDATE",
+      "owner_approved": false,
+      "active_by_default": false,
+      "owner_id": null,
+      "bank_root": "assets/creatures/npc_hedgehog_01",
+      "states": {
+        "identity": [
+          "assets/creatures/npc_hedgehog_01/identity/front_0001.png"
+        ],
+        "idle": [
+          "assets/creatures/npc_hedgehog_01/idle/idle_left_0001.png",
+          "assets/creatures/npc_hedgehog_01/idle/idle_right_0001.png"
+        ],
+        "rest": [
+          "assets/creatures/npc_hedgehog_01/rest/rest_0001.png",
+          "assets/creatures/npc_hedgehog_01/rest/sit_0001.png"
+        ],
+        "walk_left": [
+          "assets/creatures/npc_hedgehog_01/walk_left/walk_left_0001.png",
+          "assets/creatures/npc_hedgehog_01/walk_left/walk_left_0002.png",
+          "assets/creatures/npc_hedgehog_01/walk_left/walk_left_0003.png",
+          "assets/creatures/npc_hedgehog_01/walk_left/walk_left_0004.png"
+        ],
+        "walk_right": [
+          "assets/creatures/npc_hedgehog_01/walk_right/walk_right_0001.png",
+          "assets/creatures/npc_hedgehog_01/walk_right/walk_right_0002.png",
+          "assets/creatures/npc_hedgehog_01/walk_right/walk_right_0003.png",
+          "assets/creatures/npc_hedgehog_01/walk_right/walk_right_0004.png"
+        ]
+      }
+    },
+    "npc_hedgehog_02": {
+      "id": "npc_hedgehog_02",
+      "entity_type": "creature",
+      "creature_kind": "microfauna",
+      "status": "ART_CANDIDATE",
+      "owner_approved": false,
+      "active_by_default": false,
+      "owner_id": null,
+      "bank_root": "assets/creatures/npc_hedgehog_02",
+      "states": {
+        "identity": [
+          "assets/creatures/npc_hedgehog_02/identity/front_0001.png"
+        ],
+        "idle": [
+          "assets/creatures/npc_hedgehog_02/idle/idle_left_0001.png",
+          "assets/creatures/npc_hedgehog_02/idle/idle_right_0001.png"
+        ],
+        "rest": [
+          "assets/creatures/npc_hedgehog_02/rest/rest_0001.png",
+          "assets/creatures/npc_hedgehog_02/rest/sit_0001.png"
+        ],
+        "walk_left": [
+          "assets/creatures/npc_hedgehog_02/walk_left/walk_left_0001.png",
+          "assets/creatures/npc_hedgehog_02/walk_left/walk_left_0002.png",
+          "assets/creatures/npc_hedgehog_02/walk_left/walk_left_0003.png",
+          "assets/creatures/npc_hedgehog_02/walk_left/walk_left_0004.png"
+        ],
+        "walk_right": [
+          "assets/creatures/npc_hedgehog_02/walk_right/walk_right_0001.png",
+          "assets/creatures/npc_hedgehog_02/walk_right/walk_right_0002.png",
+          "assets/creatures/npc_hedgehog_02/walk_right/walk_right_0003.png",
+          "assets/creatures/npc_hedgehog_02/walk_right/walk_right_0004.png"
+        ]
+      }
+    },
+    "npc_hedgehog_03": {
+      "id": "npc_hedgehog_03",
+      "entity_type": "creature",
+      "creature_kind": "microfauna",
+      "status": "ART_CANDIDATE",
+      "owner_approved": false,
+      "active_by_default": false,
+      "owner_id": null,
+      "bank_root": "assets/creatures/npc_hedgehog_03",
+      "states": {
+        "identity": [
+          "assets/creatures/npc_hedgehog_03/identity/front_0001.png"
+        ],
+        "idle": [
+          "assets/creatures/npc_hedgehog_03/idle/idle_left_0001.png",
+          "assets/creatures/npc_hedgehog_03/idle/idle_right_0001.png"
+        ],
+        "rest": [
+          "assets/creatures/npc_hedgehog_03/rest/rest_0001.png",
+          "assets/creatures/npc_hedgehog_03/rest/sit_0001.png"
+        ],
+        "walk_left": [
+          "assets/creatures/npc_hedgehog_03/walk_left/walk_left_0001.png",
+          "assets/creatures/npc_hedgehog_03/walk_left/walk_left_0002.png",
+          "assets/creatures/npc_hedgehog_03/walk_left/walk_left_0003.png",
+          "assets/creatures/npc_hedgehog_03/walk_left/walk_left_0004.png"
+        ],
+        "walk_right": [
+          "assets/creatures/npc_hedgehog_03/walk_right/walk_right_0001.png",
+          "assets/creatures/npc_hedgehog_03/walk_right/walk_right_0002.png",
+          "assets/creatures/npc_hedgehog_03/walk_right/walk_right_0003.png",
+          "assets/creatures/npc_hedgehog_03/walk_right/walk_right_0004.png"
+        ]
+      }
+    },
+    "npc_mouse_brown": {
+      "id": "npc_mouse_brown",
+      "entity_type": "creature",
+      "creature_kind": "microfauna",
+      "status": "ART_CANDIDATE",
+      "owner_approved": false,
+      "active_by_default": false,
+      "owner_id": null,
+      "bank_root": "assets/creatures/npc_mouse_brown",
+      "states": {
+        "identity": [
+          "assets/creatures/npc_mouse_brown/identity/front_0001.png"
+        ],
+        "idle": [
+          "assets/creatures/npc_mouse_brown/idle/idle_left_0001.png",
+          "assets/creatures/npc_mouse_brown/idle/idle_right_0001.png"
+        ],
+        "rest": [
+          "assets/creatures/npc_mouse_brown/rest/rest_0001.png",
+          "assets/creatures/npc_mouse_brown/rest/sit_0001.png"
+        ],
+        "walk_left": [
+          "assets/creatures/npc_mouse_brown/walk_left/walk_left_0001.png",
+          "assets/creatures/npc_mouse_brown/walk_left/walk_left_0002.png",
+          "assets/creatures/npc_mouse_brown/walk_left/walk_left_0003.png",
+          "assets/creatures/npc_mouse_brown/walk_left/walk_left_0004.png"
+        ],
+        "walk_right": [
+          "assets/creatures/npc_mouse_brown/walk_right/walk_right_0001.png",
+          "assets/creatures/npc_mouse_brown/walk_right/walk_right_0002.png",
+          "assets/creatures/npc_mouse_brown/walk_right/walk_right_0003.png",
+          "assets/creatures/npc_mouse_brown/walk_right/walk_right_0004.png"
+        ]
+      }
+    },
+    "npc_mouse_gray": {
+      "id": "npc_mouse_gray",
+      "entity_type": "creature",
+      "creature_kind": "microfauna",
+      "status": "ART_CANDIDATE",
+      "owner_approved": false,
+      "active_by_default": false,
+      "owner_id": null,
+      "bank_root": "assets/creatures/npc_mouse_gray",
+      "states": {
+        "identity": [
+          "assets/creatures/npc_mouse_gray/identity/front_0001.png"
+        ],
+        "idle": [
+          "assets/creatures/npc_mouse_gray/idle/idle_left_0001.png",
+          "assets/creatures/npc_mouse_gray/idle/idle_right_0001.png"
+        ],
+        "rest": [
+          "assets/creatures/npc_mouse_gray/rest/rest_0001.png",
+          "assets/creatures/npc_mouse_gray/rest/sit_0001.png"
+        ],
+        "walk_left": [
+          "assets/creatures/npc_mouse_gray/walk_left/walk_left_0001.png",
+          "assets/creatures/npc_mouse_gray/walk_left/walk_left_0002.png",
+          "assets/creatures/npc_mouse_gray/walk_left/walk_left_0003.png",
+          "assets/creatures/npc_mouse_gray/walk_left/walk_left_0004.png"
+        ],
+        "walk_right": [
+          "assets/creatures/npc_mouse_gray/walk_right/walk_right_0001.png",
+          "assets/creatures/npc_mouse_gray/walk_right/walk_right_0002.png",
+          "assets/creatures/npc_mouse_gray/walk_right/walk_right_0003.png",
+          "assets/creatures/npc_mouse_gray/walk_right/walk_right_0004.png"
+        ]
+      }
+    },
+    "npc_mouse_pale": {
+      "id": "npc_mouse_pale",
+      "entity_type": "creature",
+      "creature_kind": "microfauna",
+      "status": "ART_CANDIDATE",
+      "owner_approved": false,
+      "active_by_default": false,
+      "owner_id": null,
+      "bank_root": "assets/creatures/npc_mouse_pale",
+      "states": {
+        "identity": [
+          "assets/creatures/npc_mouse_pale/identity/front_0001.png"
+        ],
+        "idle": [
+          "assets/creatures/npc_mouse_pale/idle/idle_left_0001.png",
+          "assets/creatures/npc_mouse_pale/idle/idle_right_0001.png"
+        ],
+        "rest": [
+          "assets/creatures/npc_mouse_pale/rest/rest_0001.png",
+          "assets/creatures/npc_mouse_pale/rest/sit_0001.png"
+        ],
+        "walk_left": [
+          "assets/creatures/npc_mouse_pale/walk_left/walk_left_0001.png",
+          "assets/creatures/npc_mouse_pale/walk_left/walk_left_0002.png",
+          "assets/creatures/npc_mouse_pale/walk_left/walk_left_0003.png",
+          "assets/creatures/npc_mouse_pale/walk_left/walk_left_0004.png"
+        ],
+        "walk_right": [
+          "assets/creatures/npc_mouse_pale/walk_right/walk_right_0001.png",
+          "assets/creatures/npc_mouse_pale/walk_right/walk_right_0002.png",
+          "assets/creatures/npc_mouse_pale/walk_right/walk_right_0003.png",
+          "assets/creatures/npc_mouse_pale/walk_right/walk_right_0004.png"
+        ]
+      }
+    },
+    "npc_rat_agouti": {
+      "id": "npc_rat_agouti",
+      "entity_type": "creature",
+      "creature_kind": "microfauna",
+      "status": "ART_CANDIDATE",
+      "owner_approved": false,
+      "active_by_default": false,
+      "owner_id": null,
+      "bank_root": "assets/creatures/npc_rat_agouti",
+      "states": {
+        "identity": [
+          "assets/creatures/npc_rat_agouti/identity/front_0001.png"
+        ],
+        "idle": [
+          "assets/creatures/npc_rat_agouti/idle/idle_left_0001.png",
+          "assets/creatures/npc_rat_agouti/idle/idle_right_0001.png"
+        ],
+        "rest": [
+          "assets/creatures/npc_rat_agouti/rest/rest_0001.png",
+          "assets/creatures/npc_rat_agouti/rest/sit_0001.png"
+        ],
+        "walk_left": [
+          "assets/creatures/npc_rat_agouti/walk_left/walk_left_0001.png",
+          "assets/creatures/npc_rat_agouti/walk_left/walk_left_0002.png",
+          "assets/creatures/npc_rat_agouti/walk_left/walk_left_0003.png",
+          "assets/creatures/npc_rat_agouti/walk_left/walk_left_0004.png"
+        ],
+        "walk_right": [
+          "assets/creatures/npc_rat_agouti/walk_right/walk_right_0001.png",
+          "assets/creatures/npc_rat_agouti/walk_right/walk_right_0002.png",
+          "assets/creatures/npc_rat_agouti/walk_right/walk_right_0003.png",
+          "assets/creatures/npc_rat_agouti/walk_right/walk_right_0004.png"
+        ]
+      }
+    },
+    "npc_rat_hero": {
+      "id": "npc_rat_hero",
+      "entity_type": "creature",
+      "creature_kind": "microfauna",
+      "status": "ART_CANDIDATE",
+      "owner_approved": false,
+      "active_by_default": false,
+      "owner_id": null,
+      "bank_root": "assets/creatures/npc_rat_hero",
+      "states": {
+        "identity": [
+          "assets/creatures/npc_rat_hero/identity/front_0001.png"
+        ],
+        "idle": [
+          "assets/creatures/npc_rat_hero/idle/idle_left_0001.png",
+          "assets/creatures/npc_rat_hero/idle/idle_right_0001.png"
+        ],
+        "rest": [
+          "assets/creatures/npc_rat_hero/rest/rest_0001.png",
+          "assets/creatures/npc_rat_hero/rest/sit_0001.png"
+        ],
+        "walk_left": [
+          "assets/creatures/npc_rat_hero/walk_left/walk_left_0001.png",
+          "assets/creatures/npc_rat_hero/walk_left/walk_left_0002.png",
+          "assets/creatures/npc_rat_hero/walk_left/walk_left_0003.png",
+          "assets/creatures/npc_rat_hero/walk_left/walk_left_0004.png"
+        ],
+        "walk_right": [
+          "assets/creatures/npc_rat_hero/walk_right/walk_right_0001.png",
+          "assets/creatures/npc_rat_hero/walk_right/walk_right_0002.png",
+          "assets/creatures/npc_rat_hero/walk_right/walk_right_0003.png",
+          "assets/creatures/npc_rat_hero/walk_right/walk_right_0004.png"
+        ]
+      }
+    },
+    "npc_rat_hooded": {
+      "id": "npc_rat_hooded",
+      "entity_type": "creature",
+      "creature_kind": "microfauna",
+      "status": "ART_CANDIDATE",
+      "owner_approved": false,
+      "active_by_default": false,
+      "owner_id": null,
+      "bank_root": "assets/creatures/npc_rat_hooded",
+      "states": {
+        "identity": [
+          "assets/creatures/npc_rat_hooded/identity/front_0001.png"
+        ],
+        "idle": [
+          "assets/creatures/npc_rat_hooded/idle/idle_left_0001.png",
+          "assets/creatures/npc_rat_hooded/idle/idle_right_0001.png"
+        ],
+        "rest": [
+          "assets/creatures/npc_rat_hooded/rest/rest_0001.png",
+          "assets/creatures/npc_rat_hooded/rest/sit_0001.png"
+        ],
+        "walk_left": [
+          "assets/creatures/npc_rat_hooded/walk_left/walk_left_0001.png",
+          "assets/creatures/npc_rat_hooded/walk_left/walk_left_0002.png",
+          "assets/creatures/npc_rat_hooded/walk_left/walk_left_0003.png",
+          "assets/creatures/npc_rat_hooded/walk_left/walk_left_0004.png"
+        ],
+        "walk_right": [
+          "assets/creatures/npc_rat_hooded/walk_right/walk_right_0001.png",
+          "assets/creatures/npc_rat_hooded/walk_right/walk_right_0002.png",
+          "assets/creatures/npc_rat_hooded/walk_right/walk_right_0003.png",
+          "assets/creatures/npc_rat_hooded/walk_right/walk_right_0004.png"
+        ]
+      }
+    },
+    "npc_rat_juvenile_gray": {
+      "id": "npc_rat_juvenile_gray",
+      "entity_type": "creature",
+      "creature_kind": "microfauna",
+      "status": "ART_CANDIDATE",
+      "owner_approved": false,
+      "active_by_default": false,
+      "owner_id": null,
+      "bank_root": "assets/creatures/npc_rat_juvenile_gray",
+      "states": {
+        "identity": [
+          "assets/creatures/npc_rat_juvenile_gray/identity/front_0001.png"
+        ],
+        "idle": [
+          "assets/creatures/npc_rat_juvenile_gray/idle/idle_left_0001.png",
+          "assets/creatures/npc_rat_juvenile_gray/idle/idle_right_0001.png"
+        ],
+        "rest": [
+          "assets/creatures/npc_rat_juvenile_gray/rest/rest_0001.png",
+          "assets/creatures/npc_rat_juvenile_gray/rest/sit_0001.png"
+        ],
+        "walk_left": [
+          "assets/creatures/npc_rat_juvenile_gray/walk_left/walk_left_0001.png",
+          "assets/creatures/npc_rat_juvenile_gray/walk_left/walk_left_0002.png",
+          "assets/creatures/npc_rat_juvenile_gray/walk_left/walk_left_0003.png",
+          "assets/creatures/npc_rat_juvenile_gray/walk_left/walk_left_0004.png"
+        ],
+        "walk_right": [
+          "assets/creatures/npc_rat_juvenile_gray/walk_right/walk_right_0001.png",
+          "assets/creatures/npc_rat_juvenile_gray/walk_right/walk_right_0002.png",
+          "assets/creatures/npc_rat_juvenile_gray/walk_right/walk_right_0003.png",
+          "assets/creatures/npc_rat_juvenile_gray/walk_right/walk_right_0004.png"
+        ]
+      }
+    },
+    "npc_rat_white": {
+      "id": "npc_rat_white",
+      "entity_type": "creature",
+      "creature_kind": "microfauna",
+      "status": "ART_CANDIDATE",
+      "owner_approved": false,
+      "active_by_default": false,
+      "owner_id": null,
+      "bank_root": "assets/creatures/npc_rat_white",
+      "states": {
+        "identity": [
+          "assets/creatures/npc_rat_white/identity/front_0001.png"
+        ],
+        "idle": [
+          "assets/creatures/npc_rat_white/idle/idle_left_0001.png",
+          "assets/creatures/npc_rat_white/idle/idle_right_0001.png"
+        ],
+        "rest": [
+          "assets/creatures/npc_rat_white/rest/rest_0001.png",
+          "assets/creatures/npc_rat_white/rest/sit_0001.png"
+        ],
+        "walk_left": [
+          "assets/creatures/npc_rat_white/walk_left/walk_left_0001.png",
+          "assets/creatures/npc_rat_white/walk_left/walk_left_0002.png",
+          "assets/creatures/npc_rat_white/walk_left/walk_left_0003.png",
+          "assets/creatures/npc_rat_white/walk_left/walk_left_0004.png"
+        ],
+        "walk_right": [
+          "assets/creatures/npc_rat_white/walk_right/walk_right_0001.png",
+          "assets/creatures/npc_rat_white/walk_right/walk_right_0002.png",
+          "assets/creatures/npc_rat_white/walk_right/walk_right_0003.png",
+          "assets/creatures/npc_rat_white/walk_right/walk_right_0004.png"
+        ]
+      }
+    }
+  }
+}
