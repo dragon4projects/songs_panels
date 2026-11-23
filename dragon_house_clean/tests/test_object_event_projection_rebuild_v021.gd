@@ -16,7 +16,7 @@ func _cleanup(path: String) -> void:
 func run() -> void:
 	var path := "user://object_event_projection_rebuild_v021.json"
 	_cleanup(path)
-	OS.set_environment("DRAGON_OBJECT_EVENT_BACKEND","sqlite")
+	OS.set_environment("DRAGON_OBJECT_EVENT_BACKEND","")
 
 	var world := World.new()
 	world.save_path = path
