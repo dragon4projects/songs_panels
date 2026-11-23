@@ -88,7 +88,7 @@ func install_guest_rooms_for_qa(world) -> int:
 		var room_id := str(spec["id"])
 		if not world.room_by_id(room_id).is_empty():
 			continue
-		var room := world.make_room_with_id(
+		var room: Dictionary = world.make_room_with_id(
 			room_id,int(spec["x"]),int(spec["level"]),"guest")
 		if room.is_empty():
 			last_error = "Failed to create guest room: " + room_id
@@ -145,7 +145,7 @@ func register_all_guests_for_qa(world) -> int:
 		return -1
 	var registered := 0
 	for guest_id in banks.guest_ids():
-		var existed := world.residents.has(str(guest_id))
+		var existed: bool = world.residents.has(str(guest_id))
 		if not register_guest_for_qa(world,str(guest_id)):
 			return -1
 		if not existed:
