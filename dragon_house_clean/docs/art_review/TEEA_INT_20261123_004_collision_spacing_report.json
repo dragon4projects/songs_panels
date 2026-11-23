@@ -1,0 +1,64 @@
+{
+  "pass": true,
+  "errors": [],
+  "variant_station_counts": {
+    "music/R2": 2,
+    "music/R3": 3,
+    "cinema/R2": 3,
+    "cinema/R3": 4,
+    "artifact/R2": 3,
+    "artifact/R3": 4,
+    "workshop/R2": 3,
+    "workshop/R3": 4
+  },
+  "foreground_measurements": {
+    "music/R2": [
+      {
+        "id": "music_r2_chair_left",
+        "front_z": -0.10000011324882507
+      },
+      {
+        "id": "music_r2_chair_right",
+        "front_z": -0.09999996423721313
+      }
+    ],
+    "music/R3": [
+      {
+        "id": "music_r3_chair_left",
+        "front_z": -0.10000011324882507
+      },
+      {
+        "id": "music_r3_chair_mid",
+        "front_z": -0.09999996423721313
+      },
+      {
+        "id": "music_r3_chair_right",
+        "front_z": -0.10000011324882507
+      }
+    ],
+    "cinema/R2": [
+      {
+        "id": "cinema_r2_sofa",
+        "front_z": -0.10000035166740417
+      },
+      {
+        "id": "cinema_r2_chair",
+        "front_z": -0.10000011324882507
+      }
+    ],
+    "cinema/R3": [
+      {
+        "id": "cinema_r3_sofa",
+        "front_z": -0.10000035166740417
+      },
+      {
+        "id": "cinema_r3_chair_mid",
+        "front_z": -0.09999996423721313
+      },
+      {
+        "id": "cinema_r3_chair_right",
+        "front_z": -0.10000011324882507
+      }
+    ]
+  }
+}
