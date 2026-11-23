@@ -1,0 +1,290 @@
+{
+  "schema": 1,
+  "batch_id": "TEEA_INT_20261122_003",
+  "calibration": {
+    "backwall_z": -2.04,
+    "aisle_z": 0.95,
+    "feet_y": 0,
+    "module_width": 4.8,
+    "axis_mapping": "godot_z=-blender_y"
+  },
+  "rooms": {
+    "arrival": {
+      "objects": [
+        {
+          "id": "arrival_bench",
+          "asset": "painted_wooden_bench",
+          "role": "furniture_back",
+          "x": -0.55,
+          "z": -0.72,
+          "scale": 1.05,
+          "rot": 0,
+          "collision": true,
+          "interaction": "NONE"
+        },
+        {
+          "id": "arrival_storage",
+          "asset": "painted_wooden_cabinet_02",
+          "role": "back_decor",
+          "x": 1.45,
+          "z": -1.68,
+          "scale": 0.68,
+          "rot": 0,
+          "collision": false,
+          "interaction": "NONE"
+        },
+        {
+          "id": "arrival_suitcase",
+          "asset": "vintage_suitcase",
+          "role": "furniture_back",
+          "x": 1.2,
+          "z": -0.72,
+          "scale": 0.48,
+          "rot": 0,
+          "collision": true,
+          "interaction": "NONE"
+        }
+      ]
+    },
+    "corridor": {
+      "objects": []
+    },
+    "music": {
+      "objects": [
+        {
+          "id": "music_media_shelf",
+          "asset": "Shelf_01",
+          "role": "back_decor",
+          "x": -1.42,
+          "z": -1.6,
+          "scale": 0.92,
+          "rot": 0,
+          "collision": false,
+          "interaction": "NONE"
+        },
+        {
+          "id": "music_boombox",
+          "asset": "boombox",
+          "role": "back_decor",
+          "x": -1.42,
+          "z": -1.52,
+          "height": 1.14,
+          "scale": 0.72,
+          "rot": 0,
+          "collision": false,
+          "interaction": "NONE"
+        },
+        {
+          "id": "music_cassette",
+          "asset": "cassette_player",
+          "role": "back_decor",
+          "x": -1.18,
+          "z": -1.5,
+          "height": 0.72,
+          "scale": 0.85,
+          "rot": 0,
+          "collision": false,
+          "interaction": "NONE"
+        },
+        {
+          "id": "music_ukulele",
+          "asset": "Ukulele_01",
+          "role": "back_decor",
+          "x": 1.53,
+          "z": -1.78,
+          "height": 1.18,
+          "scale": 0.95,
+          "rot": 0,
+          "collision": false,
+          "interaction": "NONE"
+        },
+        {
+          "id": "music_listen_chair",
+          "asset": "mid_century_lounge_chair",
+          "role": "furniture_back",
+          "x": 0.55,
+          "z": -0.58,
+          "scale": 0.76,
+          "rot": 0,
+          "collision": true,
+          "interaction": "LISTEN_SEAT"
+        },
+        {
+          "id": "music_side_table",
+          "asset": "side_table_01",
+          "role": "furniture_back",
+          "x": 1.52,
+          "z": -0.52,
+          "scale": 0.62,
+          "rot": 0,
+          "collision": true,
+          "interaction": "NONE"
+        }
+      ]
+    },
+    "cinema": {
+      "objects": [
+        {
+          "id": "cinema_sofa",
+          "asset": "sofa_02",
+          "role": "furniture_back",
+          "x": -0.25,
+          "z": -0.48,
+          "scale": 0.92,
+          "rot": 0,
+          "collision": true,
+          "interaction": "WATCH_SEATS_2"
+        },
+        {
+          "id": "cinema_projector_table",
+          "asset": "WoodenTable_03",
+          "role": "furniture_back",
+          "x": 1.55,
+          "z": -0.58,
+          "scale": 0.58,
+          "rot": 0,
+          "collision": true,
+          "interaction": "NONE"
+        },
+        {
+          "id": "cinema_projector",
+          "asset": "filmstrip_projector_8mm",
+          "role": "furniture_back",
+          "x": 1.55,
+          "z": -0.58,
+          "height": 0.5,
+          "scale": 0.65,
+          "rot": 0,
+          "collision": false,
+          "interaction": "NONE"
+        }
+      ]
+    },
+    "artifact": {
+      "objects": [
+        {
+          "id": "artifact_display_shelf",
+          "asset": "wooden_display_shelves_01",
+          "role": "back_decor",
+          "x": -1.45,
+          "z": -1.68,
+          "scale": 0.88,
+          "rot": 0,
+          "collision": false,
+          "interaction": "NONE"
+        },
+        {
+          "id": "artifact_cabinet",
+          "asset": "vintage_cabinet_01",
+          "role": "furniture_back",
+          "x": 1.2,
+          "z": -1.18,
+          "scale": 0.62,
+          "rot": 0,
+          "collision": true,
+          "interaction": "VIEW"
+        },
+        {
+          "id": "artifact_vase",
+          "asset": "brass_vase_03",
+          "role": "furniture_back",
+          "x": -0.38,
+          "z": -0.78,
+          "height": 0.73,
+          "scale": 1.15,
+          "rot": 0,
+          "collision": false,
+          "interaction": "NONE"
+        },
+        {
+          "id": "artifact_suitcase",
+          "asset": "vintage_suitcase",
+          "role": "furniture_back",
+          "x": 0.18,
+          "z": -0.68,
+          "height": 0.18,
+          "scale": 0.4,
+          "rot": 0,
+          "collision": true,
+          "interaction": "NONE"
+        }
+      ],
+      "procedural": [
+        {
+          "id": "artifact_pedestal",
+          "type": "pedestal",
+          "role": "furniture_back",
+          "x": -0.38,
+          "z": -0.78,
+          "width": 0.46,
+          "depth": 0.46,
+          "height": 0.72,
+          "collision": true,
+          "interaction": "VIEW"
+        }
+      ]
+    },
+    "workshop": {
+      "objects": [
+        {
+          "id": "workshop_shelf",
+          "asset": "Shelf_01",
+          "role": "back_decor",
+          "x": -1.55,
+          "z": -1.62,
+          "scale": 0.88,
+          "rot": 0,
+          "collision": false,
+          "interaction": "NONE"
+        },
+        {
+          "id": "workshop_tool_chest",
+          "asset": "metal_tool_chest",
+          "role": "furniture_back",
+          "x": 1.55,
+          "z": -1.2,
+          "scale": 0.78,
+          "rot": 0,
+          "collision": true,
+          "interaction": "NONE"
+        },
+        {
+          "id": "workshop_tool_cart",
+          "asset": "tool_cart",
+          "role": "furniture_back",
+          "x": -1.45,
+          "z": -1.12,
+          "scale": 0.58,
+          "rot": 0,
+          "collision": true,
+          "interaction": "NONE"
+        },
+        {
+          "id": "workshop_stool",
+          "asset": "metal_stool_02",
+          "role": "furniture_back",
+          "x": -0.62,
+          "z": -0.28,
+          "scale": 0.86,
+          "rot": 0,
+          "collision": true,
+          "interaction": "WORK_SEAT"
+        }
+      ],
+      "procedural": [
+        {
+          "id": "workshop_bench",
+          "type": "workbench",
+          "role": "furniture_back",
+          "x": 0.15,
+          "z": -0.98,
+          "width": 1.9,
+          "depth": 0.7,
+          "height": 0.82,
+          "collision": true,
+          "interaction": "WORK_STAND_1"
+        }
+      ]
+    }
+  }
+}
