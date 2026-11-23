@@ -1,0 +1,24 @@
+name: Znaechka review roundtrip
+on:
+  push:
+    branches:
+      - art/znaechka-characters-ZNA_CHAR_NPC_20261123_001
+    paths:
+      - .github/workflows/znaechka_review_roundtrip.yml
+permissions:
+  contents: read
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download review board
+        run: |
+          set -euo pipefail
+          curl -fL 'https://d2ol7oe51mr4n9.cloudfront.net/user_3JdI9kJ82xObF8Bi3EgU4P6DaoR/0ec405b7-7988-4761-9c66-53c823f4b871.jpg' -o RES22_PILOT_REVIEW_BOARD.jpg
+          file RES22_PILOT_REVIEW_BOARD.jpg
+          sha256sum RES22_PILOT_REVIEW_BOARD.jpg
+      - uses: actions/upload-artifact@v4
+        with:
+          name: res22-pilot-review-board
+          path: RES22_PILOT_REVIEW_BOARD.jpg
+          retention-days: 1
