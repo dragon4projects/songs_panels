@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "batch_id": "TEEA_INT_20261123_005",
+  "approved": false,
+  "pass": true,
+  "errors": [],
+  "variant_station_counts": {
+    "common/R1": 2,
+    "common/R2": 4,
+    "study/R2": 3,
+    "study/R3": 4,
+    "rest/R2": 3,
+    "rest/R3": 4,
+    "library/R1": 2,
+    "library/R3": 4
+  },
+  "foreground_measurements": {
+    "common/R1": [
+      {
+        "id": "common_r1_front_chair",
+        "front_z": 0.15000003576278687
+      }
+    ],
+    "common/R2": [
+      {
+        "id": "common_r2_front_chair_left",
+        "front_z": 0.15000003576278687
+      },
+      {
+        "id": "common_r2_front_chair_right",
+        "front_z": 0.15000036358833313
+      }
+    ],
+    "study/R2": [
+      {
+        "id": "study_r2_front_reader",
+        "front_z": 0.1499996781349182
+      }
+    ],
+    "study/R3": [
+      {
+        "id": "study_r3_front_reader_left",
+        "front_z": 0.15000036358833313
+      },
+      {
+        "id": "study_r3_front_reader_right",
+        "front_z": 0.1500004231929779
+      }
+    ],
+    "rest/R2": [
+      {
+        "id": "rest_r2_front_lounge",
+        "front_z": 0.1499996781349182
+      },
+      {
+        "id": "rest_r2_front_chair",
+        "front_z": 0.15000036358833313
+      }
+    ],
+    "rest/R3": [
+      {
+        "id": "rest_r3_front_lounge_left",
+        "front_z": 0.1499996781349182
+      },
+      {
+        "id": "rest_r3_front_chair_right",
+        "front_z": 0.1500004231929779
+      }
+    ],
+    "library/R1": [
+      {
+        "id": "library_r1_front_reader",
+        "front_z": 0.15000036358833313
+      }
+    ],
+    "library/R3": [
+      {
+        "id": "library_r3_front_reader_left",
+        "front_z": 0.15000036358833313
+      },
+      {
+        "id": "library_r3_front_reader_right",
+        "front_z": 0.1500004231929779
+      }
+    ]
+  }
+}
