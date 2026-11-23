@@ -57,6 +57,13 @@ func run() -> void:
 	assert(not bool(invalid_transition.get("ok",false)))
 	assert(world.event_core.events.size()==1)
 
+	var presentation_mutation: Dictionary = world.event_core.append_object_event(
+		"OBJECT_AMBIENT_PROTECTION_CHANGED","QA_EVENT_OBJECT_001","",
+		{"protected":true,"from":"ELIGIBLE","to":"PROTECTED"},
+		world.sim_clock,"PRESENTATION","PRESENTATION_ONLY",1)
+	assert(not bool(presentation_mutation.get("ok",false)))
+	assert(world.event_core.events.size()==1)
+
 	var manjka: Dictionary = world.residents["MANJKA"]
 	manjka["room_id"] = str(home["id"])
 	manjka["x"] = float(home["x"]) * World.MODULE_W
