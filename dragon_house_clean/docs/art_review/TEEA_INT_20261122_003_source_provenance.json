@@ -1,0 +1,280 @@
+{
+  "schema": 1,
+  "batch_id": "TEEA_INT_20261122_003",
+  "predecessor": "TEEA_INT_20261122_002_REWORK_R1",
+  "polyhaven_models": [
+    {
+      "asset_id": "Shelf_01",
+      "name": "Shelf 01",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/Shelf_01",
+      "resolution": "1k",
+      "polycount": 182,
+      "dimensions_mm": [
+        1003.443717956543,
+        256.9795063869833,
+        2080.310344696045
+      ]
+    },
+    {
+      "asset_id": "Ukulele_01",
+      "name": "Ukulele 01",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/Ukulele_01",
+      "resolution": "1k",
+      "polycount": 8912,
+      "dimensions_mm": [
+        177.8610646724701,
+        50.76222866773605,
+        526.9626826047897
+      ]
+    },
+    {
+      "asset_id": "WoodenTable_03",
+      "name": "Wooden Table 03",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/WoodenTable_03",
+      "resolution": "1k",
+      "polycount": 2298,
+      "dimensions_mm": [
+        1326.8529176712036,
+        561.7093443870544,
+        830.0816416740417
+      ]
+    },
+    {
+      "asset_id": "boombox",
+      "name": "Boombox",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/boombox",
+      "resolution": "1k",
+      "polycount": 10168,
+      "dimensions_mm": [
+        723.7796187400818,
+        186.46465986967087,
+        470.10064125061035
+      ]
+    },
+    {
+      "asset_id": "brass_vase_03",
+      "name": "Brass Vase 03",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/brass_vase_03",
+      "resolution": "1k",
+      "polycount": 2616,
+      "dimensions_mm": [
+        82.50189200043678,
+        82.50195905566216,
+        200.36906062159687
+      ]
+    },
+    {
+      "asset_id": "cassette_player",
+      "name": "Cassette Player",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/cassette_player",
+      "resolution": "1k",
+      "polycount": 4830,
+      "dimensions_mm": [
+        129.46044653654099,
+        48.87990656585117,
+        236.81782186031342
+      ]
+    },
+    {
+      "asset_id": "filmstrip_projector_8mm",
+      "name": "Filmstrip Projector 8mm",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/filmstrip_projector_8mm",
+      "resolution": "1k",
+      "polycount": 32697,
+      "dimensions_mm": [
+        253.67923080921173,
+        602.6187837123871,
+        345.4076647758484
+      ]
+    },
+    {
+      "asset_id": "metal_stool_02",
+      "name": "Metal Stool 02",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/metal_stool_02",
+      "resolution": "1k",
+      "polycount": 6532,
+      "dimensions_mm": [
+        448.09985160827637,
+        473.0903208255768,
+        458.12273025512695
+      ]
+    },
+    {
+      "asset_id": "metal_tool_chest",
+      "name": "Metal Tool Chest",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/metal_tool_chest",
+      "resolution": "1k",
+      "polycount": 14576,
+      "dimensions_mm": [
+        685.3884160518646,
+        407.15324878692627,
+        651.8355906009674
+      ]
+    },
+    {
+      "asset_id": "mid_century_lounge_chair",
+      "name": "Mid Century Lounge Chair",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/mid_century_lounge_chair",
+      "resolution": "1k",
+      "polycount": 6148,
+      "dimensions_mm": [
+        1008.6143612861633,
+        1190.310776233673,
+        1169.0847246776136
+      ]
+    },
+    {
+      "asset_id": "painted_wooden_bench",
+      "name": "Painted Wooden Bench",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/painted_wooden_bench",
+      "resolution": "1k",
+      "polycount": 630,
+      "dimensions_mm": [
+        1164.9435758590698,
+        496.5430945158005,
+        889.2914750613272
+      ]
+    },
+    {
+      "asset_id": "painted_wooden_cabinet_02",
+      "name": "Painted Wooden Cabinet 02",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/painted_wooden_cabinet_02",
+      "resolution": "1k",
+      "polycount": 966,
+      "dimensions_mm": [
+        996.9334602355957,
+        729.429692029953,
+        2568.572537857108
+      ]
+    },
+    {
+      "asset_id": "side_table_01",
+      "name": "Side Table 01",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/side_table_01",
+      "resolution": "1k",
+      "polycount": 2756,
+      "dimensions_mm": [
+        550.0000715255737,
+        450.00001788139343,
+        550.6622816901654
+      ]
+    },
+    {
+      "asset_id": "sofa_02",
+      "name": "Sofa 02",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/sofa_02",
+      "resolution": "1k",
+      "polycount": 2728,
+      "dimensions_mm": [
+        1807.1673512458801,
+        817.7513778209686,
+        709.4888985157013
+      ]
+    },
+    {
+      "asset_id": "tool_cart",
+      "name": "Tool Cart",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/tool_cart",
+      "resolution": "1k",
+      "polycount": 29394,
+      "dimensions_mm": [
+        1273.4254002571106,
+        753.6306381225586,
+        964.644730091095
+      ]
+    },
+    {
+      "asset_id": "vintage_cabinet_01",
+      "name": "Vintage Cabinet 01",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/vintage_cabinet_01",
+      "resolution": "1k",
+      "polycount": 61096,
+      "dimensions_mm": [
+        2021.7604637145996,
+        669.8037981987,
+        2235.0515127764083
+      ]
+    },
+    {
+      "asset_id": "vintage_suitcase",
+      "name": "Vintage Suitcase",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/vintage_suitcase",
+      "resolution": "1k",
+      "polycount": 16474,
+      "dimensions_mm": [
+        1608.1829071044922,
+        239.17551338672638,
+        567.9050989929237
+      ]
+    },
+    {
+      "asset_id": "wooden_display_shelves_01",
+      "name": "Wooden Display Shelves 01",
+      "license": "CC0",
+      "source_page": "https://polyhaven.com/a/wooden_display_shelves_01",
+      "resolution": "1k",
+      "polycount": 3174,
+      "dimensions_mm": [
+        1077.760934829712,
+        371.50970101356506,
+        1556.1838150024414
+      ]
+    }
+  ],
+  "ambientcg_materials": [
+    {
+      "asset_id": "Rock035",
+      "license": "CC0 1.0",
+      "source_page": "https://ambientcg.com/a/Rock035",
+      "use": "rear cave stone"
+    },
+    {
+      "asset_id": "Wood051",
+      "license": "CC0 1.0",
+      "source_page": "https://ambientcg.com/a/Wood051",
+      "use": "dark structural / override wood"
+    }
+  ],
+  "procedural_geometry": [
+    "rear cave shell segmentation and restrained timber supports",
+    "arrival threshold framing and wall hooks",
+    "corridor recesses, wall ledge and globe fixtures",
+    "music rear timber slat zone",
+    "cinema fixed matte screen and border",
+    "artifact wall recesses and display pedestal",
+    "workshop rear rail, pegboard/tool hooks and workbench",
+    "simple accepted-family wall globe fixtures"
+  ],
+  "foreground_derivation": {
+    "music/R1": "front-facing slice of mid_century_lounge_chair at raycast-measured seat centroid",
+    "cinema/R1": "front-facing slice of sofa_02 at raycast-measured seat centroid"
+  },
+  "rejected_sources": [
+    {
+      "asset_id": "steel_frame_shelves_01",
+      "reason": "glTF imported composite bbox grossly exceeded source metadata and produced scene-spanning geometry; removed before final render"
+    },
+    {
+      "asset_id": "bench_vice_01",
+      "reason": "glTF imported bbox was ~7\u20138x expected source dimensions in this pipeline; removed rather than hand-scaling a suspect source"
+    }
+  ],
+  "rights_note": "No Bethesda/Fallout visual assets used. No new fictional labels or readable lore text generated."
+}
