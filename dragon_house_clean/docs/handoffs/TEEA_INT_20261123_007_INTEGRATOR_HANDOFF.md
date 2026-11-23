@@ -3,11 +3,19 @@
 Date: 2026-11-23
 Owner approval: false
 Production mutated by TEEA007: no
-Current integration target observed: dragon-house-fallout-fresh@7710734af88483bbdc6f828d623b82561319f7e8 (v0.19)
+Current integration target revalidated: dragon-house-fallout-fresh@917d2d02cbc5ac6b0d8b69539a6ec266a37ebbdc (v0.19)
 TEEA007 branch: art/teea-interiors-TEEA_INT_20261123_007
 Overlapping TEEA006 remains separate: art/teea-interiors-TEEA_INT_20261123_006@ac44724c39275d365c185af0435b6dea676d24ae.
 
 This handoff supersedes the earlier 007 drop/pointer after camera, guest-access and evidence corrections.
+
+## 2026-11-23 current-production revalidation
+
+TEEA007 was rechecked after production advanced from `7710734af88483bbdc6f828d623b82561319f7e8` to `917d2d02cbc5ac6b0d8b69539a6ec266a37ebbdc`.
+
+The nine-commit delta changes only `scripts/main.gd` and three detail/furniture tests. The production code now explicitly exposes `HOUSE / LEVEL / ROOM / FOLLOW`; detail modes are semantic, not numeric-zoom aliases. The final merge adds semantic furniture fallback proxies for data-owned `furniture_id` anchors when approved room art is unavailable. It does not change the ROOM camera/yaw/zoom values used by this handoff.
+
+Therefore the existing TEEA007 camera, HOUSE/LEVEL/ROOM scale, guest-room geometry, Common R2, mug and holder evidence remains valid against current production. PASS-A remains blocked only because the available ZNA handoff proves 512×512 RGBA/non-empty alpha but does not publish exact alpha bounding boxes; PASS-B remains blocked by unfinished TEEA006 Cinema/Music/Artifact geometry.
 
 ## Exact machine gate table
 
