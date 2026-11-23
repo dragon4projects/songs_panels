@@ -12,6 +12,7 @@ from __future__ import annotations
 import argparse, copy, hashlib, json, shutil
 from pathlib import Path
 
+# Integrator calibration provenance is committed beside this script before promotion.
 BATCH="TEEA_INT_20261122_003"
 ROOMS=("arrival","corridor","music","cinema","artifact","workshop")
 
