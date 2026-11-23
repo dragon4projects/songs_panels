@@ -81,9 +81,10 @@ func room_by_id(room_id: String) -> Dictionary:
 func world_pos(x: int, level: int) -> Vector3:
 	return Vector3(float(x) * MODULE_W, float(level) * FLOOR_H, 0.0)
 
-func make_room(x: int, level: int, room_type: String) -> Dictionary:
-	var room := {
-		"id": "ROOM_%04d" % next_room_id,
+func _new_room_record(room_id: String, x: int, level: int,
+		room_type: String) -> Dictionary:
+	return {
+		"id": room_id,
 		"x": x,
 		"level": level,
 		"type": room_type,
@@ -93,9 +94,40 @@ func make_room(x: int, level: int, room_type: String) -> Dictionary:
 		"guest_access_state": "open" if room_type == "guest" else "",
 		"display_name": "Гостевая" if room_type == "guest" else "",
 	}
+
+func make_room(x: int, level: int, room_type: String) -> Dictionary:
+	var room_id := "ROOM_%04d" % next_room_id
 	next_room_id += 1
+	var room := _new_room_record(room_id,x,level,room_type)
 	rooms.append(room)
 	return room
+
+func make_room_with_id(room_id: String, x: int, level: int,
+		room_type: String) -> Dictionary:
+	# Named IDs are required for imported/canonical room contracts. This API
+	# never replaces an existing room and never silently aliases a coordinate.
+	if room_id.strip_edges() == "" or not ROOM_TYPES.has(room_type):
+		return {}
+	if not room_by_id(room_id).is_empty() or not get_room(x,level).is_empty():
+		return {}
+	var room := _new_room_record(room_id,x,level,room_type)
+	rooms.append(room)
+	# Keep generated ROOM_#### IDs collision-safe if a migration ever asks for
+	# an explicit legacy-style ROOM_ ID.
+	if room_id.begins_with("ROOM_"):
+		var suffix := room_id.trim_prefix("ROOM_")
+		if suffix.is_valid_int():
+			next_room_id = maxi(next_room_id,int(suffix)+1)
+	return room
+
+func build_named(room_id: String, x: int, level: int,
+		room_type: String) -> bool:
+	if not room_by_id(room_id).is_empty() or not can_build(x,level,room_type):
+		return false
+	if make_room_with_id(room_id,x,level,room_type).is_empty():
+		return false
+	save_world()
+	return true
 
 func _left_right_run(x: int, level: int, room_type: String) -> int:
 	var count := 1
