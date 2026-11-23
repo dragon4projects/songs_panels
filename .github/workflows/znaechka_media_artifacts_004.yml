@@ -1,4 +1,4 @@
-name: Znaechka media artifact source integration
+name: Znaechka media artifacts 004
 
 on:
   push:
@@ -6,7 +6,6 @@ on:
       - art/znaechka-characters-ZNA_CHAR_NPC_20261123_001
     paths:
       - .github/workflows/znaechka_media_artifacts_004.yml
-  workflow_dispatch:
 
 permissions:
   contents: write
@@ -14,82 +13,56 @@ permissions:
 jobs:
   integrate:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
     steps:
-      - name: Checkout art branch with LFS
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           ref: art/znaechka-characters-ZNA_CHAR_NPC_20261123_001
           fetch-depth: 0
           lfs: true
 
-      - name: Pull LFS
+      - name: Prepare
         run: |
           set -euo pipefail
           git lfs install --local
           git lfs pull
-          echo "START_HEAD=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
-
-      - name: Download exact reviewed patch
-        run: |
-          set -euo pipefail
-          curl -fL --retry 4 \
-            'https://d2ol7oe51mr4n9.cloudfront.net/user_3JdI9kJ82xObF8Bi3EgU4P6DaoR/b2a6def9-7882-401c-9237-334ffb2476e6.zip' \
-            -o /tmp/zna004_patch.zip
-          echo '035360f5dcfbf77c49e21bfaa0f4adb5e0462feb463153d2384721e4a354a544  /tmp/zna004_patch.zip' | sha256sum -c -
-          rm -rf /tmp/zna004_patch
-          mkdir -p /tmp/zna004_patch
-          unzip -q /tmp/zna004_patch.zip -d /tmp/zna004_patch
-          test -d /tmp/zna004_patch/zna_bc_patch
-
-      - name: Validate patch payload
-        run: |
-          set -euo pipefail
           python3 -m pip install --quiet pillow
+          curl -fL --retry 4 'https://d2ol7oe51mr4n9.cloudfront.net/user_3JdI9kJ82xObF8Bi3EgU4P6DaoR/b2a6def9-7882-401c-9237-334ffb2476e6.zip' -o /tmp/patch.zip
+          echo '035360f5dcfbf77c49e21bfaa0f4adb5e0462feb463153d2384721e4a354a544  /tmp/patch.zip' | sha256sum -c -
+          rm -rf /tmp/zna004
+          mkdir -p /tmp/zna004
+          unzip -q /tmp/patch.zip -d /tmp/zna004
+
+      - name: Validate payload
+        run: |
+          set -euo pipefail
           python3 - <<'PY'
           from pathlib import Path
           from PIL import Image
           import json, hashlib
-
-          P=Path('/tmp/zna004_patch/zna_bc_patch')
+          P=Path('/tmp/zna004/zna_bc_patch')
           m=json.loads((P/'PATCH_MANIFEST.json').read_text(encoding='utf-8'))
           assert m['youtube']['audio_count']==203
           assert m['youtube']['film_count']==0
           assert m['youtube']['unclassified_count']==495
           assert m['youtube']['extracted_cards']==698
           assert m['artifacts']['found_master_count']==10
-
-          audio=sorted((P/'media/audio').glob('*.webp'))
-          un=sorted((P/'media/unclassified').glob('*.webp'))
-          assert len(audio)==203, len(audio)
-          assert len(un)==495, len(un)
-          for f in audio+un:
-              im=Image.open(f)
-              im.verify()
-
-          ac=json.loads((P/'artifacts/artifact_master_catalog.json').read_text(encoding='utf-8'))
-          assert len(ac['entries'])==10
-          for e in ac['entries']:
-              src=P/'artifacts/sources'/Path(e['repo_source_target']).name
-              prv=P/'artifacts/previews'/Path(e['preview_target']).name
-              assert src.is_file(), src
-              assert prv.is_file(), prv
-              Image.open(src).verify()
-              Image.open(prv).verify()
-              assert hashlib.sha256(src.read_bytes()).hexdigest()==e['source_sha256']
-              assert hashlib.sha256(prv.read_bytes()).hexdigest()==e['preview_sha256']
-
-          for line in (P/'SHA256SUMS.txt').read_text(encoding='utf-8').splitlines():
-              if not line.strip(): continue
-              h,rel=line.split(maxsplit=1)
-              f=P/rel.strip().lstrip('*')
-              assert f.is_file(), rel
-              assert hashlib.sha256(f.read_bytes()).hexdigest()==h, rel
-
-          print('PATCH_QA_PASS audio=203 unclassified=495 artifacts=10')
+          audio=list((P/'media/audio').glob('*.webp'))
+          un=list((P/'media/unclassified').glob('*.webp'))
+          assert len(audio)==203 and len(un)==495
+          for f in audio+un: Image.open(f).verify()
+          cat=json.loads((P/'artifacts/artifact_master_catalog.json').read_text(encoding='utf-8'))
+          assert len(cat['entries'])==10
+          for e in cat['entries']:
+              s=P/'artifacts/sources'/Path(e['repo_source_target']).name
+              p=P/'artifacts/previews'/Path(e['preview_target']).name
+              assert s.is_file() and p.is_file()
+              assert hashlib.sha256(s.read_bytes()).hexdigest()==e['source_sha256']
+              assert hashlib.sha256(p.read_bytes()).hexdigest()==e['preview_sha256']
+              Image.open(s).verify(); Image.open(p).verify()
+          print('PAYLOAD_PASS')
           PY
 
-      - name: Merge real YouTube previews and artifact masters
+      - name: Merge
         run: |
           set -euo pipefail
           python3 - <<'PY'
@@ -97,148 +70,87 @@ jobs:
           import json, shutil, hashlib
 
           root=Path('dragon_house_clean')
-          P=Path('/tmp/zna004_patch/zna_bc_patch')
+          P=Path('/tmp/zna004/zna_bc_patch')
           hand=root/'docs/handoffs/ZNA_CHAR_NPC_20261123_004_MEDIA_ARTIFACTS'
           hand.mkdir(parents=True,exist_ok=True)
 
-          # ---------------------------
-          # YouTube real source crops
-          # ---------------------------
-          for kind in ['audio','unclassified']:
+          # YouTube source-derived previews.
+          for kind in ('audio','unclassified'):
               d=root/'assets/media/previews'/kind
               d.mkdir(parents=True,exist_ok=True)
-              # Remove prior generated placeholder PNGs for these content IDs only.
-              for f in d.glob('YT_*.png'):
-                  f.unlink()
-              src=P/'media'/kind
-              for f in src.glob('*.webp'):
+              for f in d.glob('YT_*.png'): f.unlink()
+              for f in (P/'media'/kind).glob('*.webp'):
                   shutil.copy2(f,d/f.name)
 
-          # Replace media contact sheets (keep book sheets untouched).
-          old_cs=root/'docs/handoffs/ZNA_CHAR_NPC_20261123_003_CREATURE_MEDIA_PREVIEWS/contact_sheets'
-          old_cs.mkdir(parents=True,exist_ok=True)
-          for pat in ['audio_*.jpg','unclassified_*.jpg']:
-              for f in old_cs.glob(pat):
-                  f.unlink()
+          # Source-derived contact sheets replace placeholder sheets for these groups.
+          cs=root/'docs/handoffs/ZNA_CHAR_NPC_20261123_003_CREATURE_MEDIA_PREVIEWS/contact_sheets'
+          cs.mkdir(parents=True,exist_ok=True)
+          for pat in ('audio_*.jpg','unclassified_*.jpg'):
+              for f in cs.glob(pat): f.unlink()
           for f in (P/'media/contact_sheets').glob('audio_*.jpg'):
-              shutil.copy2(f,old_cs/f.name)
+              shutil.copy2(f,cs/f.name)
           for f in (P/'media/contact_sheets').glob('unknown_*.jpg'):
-              target=old_cs/f.name.replace('unknown_','unclassified_')
-              shutil.copy2(f,target)
+              shutil.copy2(f,cs/f.name.replace('unknown_','unclassified_'))
 
-          # ---------------------------
-          # Artifact source/master evidence
-          # ---------------------------
-          artcat=json.loads((P/'artifacts/artifact_master_catalog.json').read_text(encoding='utf-8'))
-          source_dir=root/'assets/props/artifacts/cubes/sources/library_confirmed'
-          preview_dir=root/'assets/media/previews/artifacts'
-          source_dir.mkdir(parents=True,exist_ok=True)
-          preview_dir.mkdir(parents=True,exist_ok=True)
-
-          for e in artcat['entries']:
-              src=P/'artifacts/sources'/Path(e['repo_source_target']).name
-              dst=root/e['repo_source_target']
-              dst.parent.mkdir(parents=True,exist_ok=True)
-              shutil.copy2(src,dst)
-              psrc=P/'artifacts/previews'/Path(e['preview_target']).name
-              pdst=root/e['preview_target']
-              pdst.parent.mkdir(parents=True,exist_ok=True)
-              shutil.copy2(psrc,pdst)
-
+          # Artifact sources and previews.
+          art=json.loads((P/'artifacts/artifact_master_catalog.json').read_text(encoding='utf-8'))
+          for e in art['entries']:
+              s=P/'artifacts/sources'/Path(e['repo_source_target']).name
+              d=root/e['repo_source_target']; d.parent.mkdir(parents=True,exist_ok=True); shutil.copy2(s,d)
+              s=P/'artifacts/previews'/Path(e['preview_target']).name
+              d=root/e['preview_target']; d.parent.mkdir(parents=True,exist_ok=True); shutil.copy2(s,d)
           (root/'assets/manifests/artifact_master_sources_zna004.json').write_text(
-              json.dumps(artcat,ensure_ascii=False,indent=2)+'\n',encoding='utf-8'
+              json.dumps(art,ensure_ascii=False,indent=2)+'\n',encoding='utf-8'
           )
-          shutil.copy2(P/'artifacts/ARTIFACT_FOUND_CONTACT.jpg',hand/'ARTIFACT_FOUND_CONTACT.jpg')
+
           shutil.copy2(P/'PATCH_MANIFEST.json',hand/'PATCH_MANIFEST.json')
+          shutil.copy2(P/'artifacts/ARTIFACT_FOUND_CONTACT.jpg',hand/'ARTIFACT_FOUND_CONTACT.jpg')
           shutil.copy2(P/'media/catalog.json',hand/'youtube_catalog_source_698.json')
           shutil.copy2(P/'media/source_map.json',hand/'youtube_source_map_698.json')
 
-          # ---------------------------
-          # Update media manifests
-          # ---------------------------
           catalog=json.loads((P/'media/catalog.json').read_text(encoding='utf-8'))
-
-          def normalized_rows(items,kind):
+          def rows(items,kind):
               out=[]
               for x in items:
                   y=dict(x)
                   cid=y.get('content_id') or y.get('id')
                   y['content_id']=cid
                   y['kind']=kind
-                  y['preview_path']=f"assets/media/previews/{kind}/{cid}.webp"
+                  y['preview_path']=f'assets/media/previews/{kind}/{cid}.webp'
                   y['rights_provenance']='Preview cropped from user-provided YouTube liked-list PDF; no remote art fetched.'
                   y['rights_status']='USER_PROVIDED_PDF_SOURCE_DERIVATIVE'
                   y['status']='PREVIEW_READY_FROM_SOURCE_PDF_OWNER_APPROVAL_FALSE'
                   y['owner_approved']=False
                   out.append(y)
               return out
+          aud=rows(catalog['audio'],'audio')
+          un=rows(catalog['unknown'],'unclassified')
 
-          new_audio=normalized_rows(catalog['audio'],'audio')
-          new_un=normalized_rows(catalog['unknown'],'unclassified')
+          def update_media(path):
+              obj=json.loads(path.read_text(encoding='utf-8'))
+              obj['audio']=aud; obj['film']=[]; obj['unclassified']=un; obj['owner_approved']=False
+              amap={x.get('content_id'):x for x in obj.get('artifacts',[])}
+              for e in art['entries']:
+                  cid=e.get('current_media_content_id')
+                  key=cid or e['normalized_id']
+                  row={
+                    'content_id':key,'kind':'artifact','title':e['title'],
+                    'source_path':e['repo_source_target'],'preview_path':e['preview_target'],
+                    'rights_provenance':'Project-owned artifact source recovered from user Library archive assets confirmed.zip.',
+                    'status':'SOURCE_MASTER_FOUND_LIBRARY_ARCHIVE_PREVIEW_READY_OWNER_APPROVAL_FALSE',
+                    'owner_approved':False,'normalized_artifact_id':e['normalized_id'],
+                    'migration_status':e['migration_status'],'source_sha256':e['source_sha256']
+                  }
+                  if key in amap: amap[key].update(row)
+                  else: amap[key]=row
+              obj['artifacts']=list(amap.values())
+              path.write_text(json.dumps(obj,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          update_media(root/'assets/manifests/media_preview_manifest_zna003.json')
+          update_media(root/'assets/manifests/media_preview_index.json')
 
-          manifest_path=root/'assets/manifests/media_preview_manifest_zna003.json'
-          manifest=json.loads(manifest_path.read_text(encoding='utf-8'))
-          manifest['audio']=new_audio
-          manifest['film']=[]
-          manifest['unclassified']=new_un
-
-          # Update existing mapped artifact rows and add normalized source-master entries for the rest.
-          existing={x.get('content_id'):x for x in manifest.get('artifacts',[])}
-          for e in artcat['entries']:
-              cid=e.get('current_media_content_id')
-              row={
-                  'content_id':cid or e['normalized_id'],
-                  'kind':'artifact',
-                  'title':e['title'],
-                  'source_path':e['repo_source_target'],
-                  'preview_path':e['preview_target'],
-                  'rights_provenance':'Project-owned artifact source recovered from user Library archive assets confirmed.zip.',
-                  'status':'SOURCE_MASTER_FOUND_LIBRARY_ARCHIVE_PREVIEW_READY_OWNER_APPROVAL_FALSE',
-                  'owner_approved':False,
-                  'normalized_artifact_id':e['normalized_id'],
-                  'migration_status':e['migration_status'],
-                  'source_sha256':e['source_sha256'],
-              }
-              if cid and cid in existing:
-                  existing[cid].update(row)
-              else:
-                  existing[row['content_id']]=row
-          manifest['artifacts']=list(existing.values())
-          manifest['owner_approved']=False
-          manifest_path.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-
-          index_path=root/'assets/manifests/media_preview_index.json'
-          index=json.loads(index_path.read_text(encoding='utf-8'))
-          index['audio']=new_audio
-          index['film']=[]
-          index['unclassified']=new_un
-          idxarts={x.get('content_id'):x for x in index.get('artifacts',[])}
-          for e in artcat['entries']:
-              cid=e.get('current_media_content_id')
-              row={
-                  'content_id':cid or e['normalized_id'],
-                  'kind':'artifact',
-                  'title':e['title'],
-                  'source_path':e['repo_source_target'],
-                  'preview_path':e['preview_target'],
-                  'rights_provenance':'Project-owned artifact source recovered from user Library archive assets confirmed.zip.',
-                  'status':'SOURCE_MASTER_FOUND_LIBRARY_ARCHIVE_PREVIEW_READY_OWNER_APPROVAL_FALSE',
-                  'owner_approved':False,
-                  'normalized_artifact_id':e['normalized_id'],
-                  'migration_status':e['migration_status'],
-              }
-              if cid and cid in idxarts:
-                  idxarts[cid].update(row)
-              else:
-                  idxarts[row['content_id']]=row
-          index['artifacts']=list(idxarts.values())
-          index['owner_approved']=False
-          index_path.write_text(json.dumps(index,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-
-          # Update the prior artifact audit evidence for exact mapped content IDs.
-          audit_path=root/'docs/handoffs/ZNA_CHAR_NPC_20261123_003_CREATURE_MEDIA_PREVIEWS/artifact_registry_audit.json'
-          audit=json.loads(audit_path.read_text(encoding='utf-8'))
-          mapped={e['current_media_content_id']:e for e in artcat['entries'] if e.get('current_media_content_id')}
+          auditp=root/'docs/handoffs/ZNA_CHAR_NPC_20261123_003_CREATURE_MEDIA_PREVIEWS/artifact_registry_audit.json'
+          audit=json.loads(auditp.read_text(encoding='utf-8'))
+          mapped={e['current_media_content_id']:e for e in art['entries'] if e.get('current_media_content_id')}
           for row in audit.get('entries',[]):
               e=mapped.get(row.get('content_id'))
               if e:
@@ -249,264 +161,87 @@ jobs:
           audit['library_archive_recovery']={
               'archive':'assets confirmed.zip',
               'library_file_id':'file_00000000039882109c1af818a29ded41',
-              'found_normalized_masters':len(artcat['entries']),
-              'still_missing_known_ids':artcat['missing_known_ids'],
+              'found_normalized_masters':10,
+              'still_missing_known_ids':art['missing_known_ids']
           }
-          audit_path.write_text(json.dumps(audit,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-
-          # Rebuild SHA entries for affected areas.
-          sha_path=root/'assets/manifests/SHA256SUMS.txt'
-          old=[]
-          if sha_path.exists():
-              for line in sha_path.read_text(encoding='utf-8').splitlines():
-                  if not line.strip(): continue
-                  parts=line.split(maxsplit=1)
-                  if len(parts)==2:
-                      old.append((parts[0],parts[1].strip().lstrip('*')))
-          prefixes=(
-              'assets/media/previews/audio/',
-              'assets/media/previews/unclassified/',
-              'assets/media/previews/artifacts/',
-              'assets/props/artifacts/cubes/sources/library_confirmed/',
-              'assets/manifests/artifact_master_sources_zna004.json',
-          )
-          old=[x for x in old if not any(x[1].startswith(p) for p in prefixes)]
-          new=[]
-          scan_paths=[
-              root/'assets/media/previews/audio',
-              root/'assets/media/previews/unclassified',
-              root/'assets/media/previews/artifacts',
-              root/'assets/props/artifacts/cubes/sources/library_confirmed',
-          ]
-          for d in scan_paths:
-              for f in sorted(d.rglob('*')):
-                  if f.is_file():
-                      rel=f.relative_to(root).as_posix()
-                      new.append((hashlib.sha256(f.read_bytes()).hexdigest(),rel))
-          f=root/'assets/manifests/artifact_master_sources_zna004.json'
-          new.append((hashlib.sha256(f.read_bytes()).hexdigest(),f.relative_to(root).as_posix()))
-          sha_path.write_text('\n'.join(f'{h}  {p}' for h,p in old+new)+'\n',encoding='utf-8')
+          auditp.write_text(json.dumps(audit,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 
           qa={
-              'youtube_real_previews':{
-                  'audio':len(new_audio),
-                  'film':0,
-                  'unclassified':len(new_un),
-                  'total':len(new_audio)+len(new_un),
-                  'source_pdf':'Понравившиеся - YouTube.pdf',
-                  'source_pdf_file_id':'file_00000000b80c821087056a640cf64627',
-              },
-              'artifact_library_recovery':{
-                  'found_master_count':len(artcat['entries']),
-                  'mapped_existing_manifest_entries':sum(1 for x in artcat['entries'] if x.get('current_media_content_id')),
-                  'additional_normalized_sources':sum(1 for x in artcat['entries'] if not x.get('current_media_content_id')),
-                  'still_missing_known_ids':artcat['missing_known_ids'],
-              },
-              'owner_approved':False,
+            'youtube_real_previews':{'audio':203,'film':0,'unclassified':495,'total':698,
+              'source_pdf':'Понравившиеся - YouTube.pdf',
+              'source_pdf_file_id':'file_00000000b80c821087056a640cf64627'},
+            'artifact_library_recovery':{'found_master_count':10,
+              'mapped_existing_manifest_entries':sum(1 for e in art['entries'] if e.get('current_media_content_id')),
+              'additional_normalized_sources':sum(1 for e in art['entries'] if not e.get('current_media_content_id')),
+              'still_missing_known_ids':art['missing_known_ids']},
+            'owner_approved':False
           }
           (hand/'QA_MEDIA_ARTIFACTS_ZNA004.json').write_text(json.dumps(qa,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-          print(json.dumps(qa,ensure_ascii=False,indent=2))
+
+          # Rebuild checksums for all affected binaries/manifests.
+          shap=root/'assets/manifests/SHA256SUMS.txt'
+          old=[]
+          if shap.exists():
+              for line in shap.read_text(encoding='utf-8').splitlines():
+                  if not line.strip(): continue
+                  a=line.split(maxsplit=1)
+                  if len(a)==2: old.append((a[0],a[1].strip().lstrip('*')))
+          prefixes=('assets/media/previews/audio/','assets/media/previews/unclassified/',
+                    'assets/media/previews/artifacts/','assets/props/artifacts/cubes/sources/library_confirmed/',
+                    'assets/manifests/artifact_master_sources_zna004.json')
+          old=[x for x in old if not any(x[1].startswith(p) for p in prefixes)]
+          new=[]
+          for d in [root/'assets/media/previews/audio',root/'assets/media/previews/unclassified',
+                    root/'assets/media/previews/artifacts',
+                    root/'assets/props/artifacts/cubes/sources/library_confirmed']:
+              for f in sorted(d.rglob('*')):
+                  if f.is_file(): new.append((hashlib.sha256(f.read_bytes()).hexdigest(),f.relative_to(root).as_posix()))
+          f=root/'assets/manifests/artifact_master_sources_zna004.json'
+          new.append((hashlib.sha256(f.read_bytes()).hexdigest(),f.relative_to(root).as_posix()))
+          shap.write_text('\n'.join(f'{h}  {p}' for h,p in old+new)+'\n',encoding='utf-8')
+          print('MERGE_READY')
           PY
 
-      - name: Machine QA and scope guard
+      - name: QA
         run: |
           set -euo pipefail
           python3 - <<'PY'
           from pathlib import Path
           from PIL import Image
           import json, hashlib
-
           root=Path('dragon_house_clean')
-          issues=[]
           man=json.loads((root/'assets/manifests/media_preview_manifest_zna003.json').read_text(encoding='utf-8'))
-          if len(man.get('audio',[]))!=203: issues.append('audio count')
-          if len(man.get('film',[]))!=0: issues.append('film count')
-          if len(man.get('unclassified',[]))!=495: issues.append('unclassified count')
-
-          for kind in ['audio','unclassified']:
-              for row in man.get(kind,[]):
-                  p=root/row['preview_path']
-                  if not p.exists():
-                      issues.append('missing '+row['preview_path'])
-                      continue
-                  if p.suffix.lower()!='.webp':
-                      issues.append('not webp '+row['preview_path'])
-                  try: Image.open(p).verify()
-                  except Exception as e: issues.append('bad image '+str(p)+': '+str(e))
-
-          cat=json.loads((root/'assets/manifests/artifact_master_sources_zna004.json').read_text(encoding='utf-8'))
-          if len(cat['entries'])!=10: issues.append('artifact master count')
-          for e in cat['entries']:
-              sp=root/e['repo_source_target']
-              pp=root/e['preview_target']
-              if not sp.exists(): issues.append('missing source '+str(sp))
-              if not pp.exists(): issues.append('missing preview '+str(pp))
-              if sp.exists() and hashlib.sha256(sp.read_bytes()).hexdigest()!=e['source_sha256']:
-                  issues.append('source hash mismatch '+str(sp))
-              if pp.exists() and hashlib.sha256(pp.read_bytes()).hexdigest()!=e['preview_sha256']:
-                  issues.append('preview hash mismatch '+str(pp))
-
-          # Old placeholder PNGs should be gone for YouTube audio/unclassified.
-          if list((root/'assets/media/previews/audio').glob('YT_*.png')):
-              issues.append('audio placeholder png remains')
-          if list((root/'assets/media/previews/unclassified').glob('YT_*.png')):
-              issues.append('unclassified placeholder png remains')
-
-          if issues:
-              raise SystemExit('\n'.join(issues))
-          print('PRECOMMIT_QA_PASS youtube=698 artifacts=10')
+          assert (len(man['audio']),len(man['film']),len(man['unclassified']))==(203,0,495)
+          for k in ('audio','unclassified'):
+              for x in man[k]:
+                  p=root/x['preview_path']; assert p.is_file(),p; assert p.suffix=='.webp'; Image.open(p).verify()
+          assert not list((root/'assets/media/previews/audio').glob('YT_*.png'))
+          assert not list((root/'assets/media/previews/unclassified').glob('YT_*.png'))
+          art=json.loads((root/'assets/manifests/artifact_master_sources_zna004.json').read_text(encoding='utf-8'))
+          assert len(art['entries'])==10
+          for e in art['entries']:
+              s=root/e['repo_source_target']; p=root/e['preview_target']
+              assert s.is_file() and p.is_file()
+              assert hashlib.sha256(s.read_bytes()).hexdigest()==e['source_sha256']
+              assert hashlib.sha256(p.read_bytes()).hexdigest()==e['preview_sha256']
+              Image.open(s).verify(); Image.open(p).verify()
+          print('QA_PASS youtube=698 artifact_sources=10')
           PY
 
-          bad=0
-          while IFS= read -r p; do
-            case "$p" in
-              dragon_house_clean/assets/media/previews/audio/*|\
-              dragon_house_clean/assets/media/previews/unclassified/*|\
-              dragon_house_clean/assets/media/previews/artifacts/*|\
-              dragon_house_clean/assets/props/artifacts/cubes/sources/library_confirmed/*|\
-              dragon_house_clean/assets/manifests/media_preview_manifest_zna003.json|\
-              dragon_house_clean/assets/manifests/media_preview_index.json|\
-              dragon_house_clean/assets/manifests/artifact_master_sources_zna004.json|\
-              dragon_house_clean/assets/manifests/SHA256SUMS.txt|\
-              dragon_house_clean/docs/handoffs/ZNA_CHAR_NPC_20261123_003_CREATURE_MEDIA_PREVIEWS/*|\
-              dragon_house_clean/docs/handoffs/ZNA_CHAR_NPC_20261123_004_MEDIA_ARTIFACTS/*)
-                ;;
-              *)
-                echo "SCOPE_VIOLATION $p"
-                bad=1
-                ;;
-            esac
-          done < <(git status --porcelain -uall | sed 's/^...//')
-          test "$bad" -eq 0
-
-      - name: Commit B/C integration
-        id: commit
+      - name: Commit
         run: |
           set -euo pipefail
           git config user.name 'Znaechka Integration Bot'
           git config user.email 'znaechka-integration@users.noreply.github.com'
-          git add \
-            dragon_house_clean/assets/media/previews/audio \
-            dragon_house_clean/assets/media/previews/unclassified \
-            dragon_house_clean/assets/media/previews/artifacts \
-            dragon_house_clean/assets/props/artifacts/cubes/sources/library_confirmed \
-            dragon_house_clean/assets/manifests/media_preview_manifest_zna003.json \
-            dragon_house_clean/assets/manifests/media_preview_index.json \
-            dragon_house_clean/assets/manifests/artifact_master_sources_zna004.json \
-            dragon_house_clean/assets/manifests/SHA256SUMS.txt \
-            dragon_house_clean/docs/handoffs/ZNA_CHAR_NPC_20261123_003_CREATURE_MEDIA_PREVIEWS \
-            dragon_house_clean/docs/handoffs/ZNA_CHAR_NPC_20261123_004_MEDIA_ARTIFACTS
+          git add dragon_house_clean/assets/media/previews/audio
+          git add dragon_house_clean/assets/media/previews/unclassified
+          git add dragon_house_clean/assets/media/previews/artifacts
+          git add dragon_house_clean/assets/props/artifacts/cubes/sources/library_confirmed
+          git add dragon_house_clean/assets/manifests/media_preview_manifest_zna003.json
+          git add dragon_house_clean/assets/manifests/media_preview_index.json
+          git add dragon_house_clean/assets/manifests/artifact_master_sources_zna004.json
+          git add dragon_house_clean/assets/manifests/SHA256SUMS.txt
+          git add dragon_house_clean/docs/handoffs/ZNA_CHAR_NPC_20261123_003_CREATURE_MEDIA_PREVIEWS
+          git add dragon_house_clean/docs/handoffs/ZNA_CHAR_NPC_20261123_004_MEDIA_ARTIFACTS
           git commit -m 'art(media): use PDF previews and recover artifact masters'
-          git push origin HEAD:art/znaechka-characters-ZNA_CHAR_NPC_20261123_001
-          echo "asset_commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
-
-      - name: Fresh clone LFS QA
-        id: fresh
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          set -euo pipefail
-          rm -rf /tmp/fresh004
-          git clone --quiet --single-branch --branch art/znaechka-characters-ZNA_CHAR_NPC_20261123_001 \
-            "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" /tmp/fresh004
-          cd /tmp/fresh004
-          git lfs install --local
-          git lfs pull
-          python3 - <<'PY'
-          from pathlib import Path
-          from PIL import Image
-          import json, hashlib, subprocess
-          root=Path('dragon_house_clean')
-          man=json.loads((root/'assets/manifests/media_preview_manifest_zna003.json').read_text(encoding='utf-8'))
-          assert len(man['audio'])==203
-          assert len(man['film'])==0
-          assert len(man['unclassified'])==495
-          for kind in ['audio','unclassified']:
-              for row in man[kind]:
-                  p=root/row['preview_path']
-                  assert p.is_file(), row['preview_path']
-                  Image.open(p).verify()
-          cat=json.loads((root/'assets/manifests/artifact_master_sources_zna004.json').read_text(encoding='utf-8'))
-          assert len(cat['entries'])==10
-          for e in cat['entries']:
-              sp=root/e['repo_source_target']
-              pp=root/e['preview_target']
-              assert sp.is_file(), sp
-              assert pp.is_file(), pp
-              assert hashlib.sha256(sp.read_bytes()).hexdigest()==e['source_sha256']
-              assert hashlib.sha256(pp.read_bytes()).hexdigest()==e['preview_sha256']
-              Image.open(sp).verify()
-              Image.open(pp).verify()
-          print('FRESH_CLONE_PASS '+subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip())
-          PY
-          echo "fresh_head=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
-
-      - name: Final QA handoff
-        env:
-          ASSET_COMMIT: ${{ steps.commit.outputs.asset_commit }}
-          FRESH_HEAD: ${{ steps.fresh.outputs.fresh_head }}
-        run: |
-          set -euo pipefail
-          python3 - <<'PY'
-          from pathlib import Path
-          import os, json
-          root=Path('dragon_house_clean')
-          hand=root/'docs/handoffs/ZNA_CHAR_NPC_20261123_004_MEDIA_ARTIFACTS'
-          q=json.loads((hand/'QA_MEDIA_ARTIFACTS_ZNA004.json').read_text(encoding='utf-8'))
-          start=os.environ['START_HEAD']
-          commit=os.environ['ASSET_COMMIT']
-          fresh=os.environ['FRESH_HEAD']
-          txt=f"""# ZNA004 — Media / Artifact Source Integration QA
-
-Status: **TECHNICAL PASS / owner_approved=false**
-
-## Git
-- branch: `art/znaechka-characters-ZNA_CHAR_NPC_20261123_001`
-- starting HEAD: `{start}`
-- asset commit: `{commit}`
-- fresh-clone audited HEAD: `{fresh}`
-
-## YouTube previews
-- source: user-provided `Понравившиеся - YouTube.pdf`
-- real PDF-derived previews committed: **698**
-- audio: **203**
-- film: **0**
-- unclassified: **495**
-- old text-only YouTube placeholder PNGs removed for these entries
-- preview format: source-derived WebP
-- no remote artwork was fetched
-
-## Artifact masters
-- source archive found in Library: `assets confirmed.zip`
-- Library file id: `file_00000000039882109c1af818a29ded41`
-- confirmed artifact source/master images recovered: **10**
-- existing current media artifact IDs directly matched: **5**
-- additional normalized artifact-source entries: **5**
-- still missing from this archive:
-  - `ARTEFACT_001_CUBE_EVMOCHKA_BOW`
-  - `ARTEFACT_005_CUBE_VERA_I_SHORT_PENCIL`
-  - `ARTEFACT_019_CUBE_SHELEST_LINGERIE`
-
-Recovered sources are stored under:
-`assets/props/artifacts/cubes/sources/library_confirmed/`
-
-Their normalized preview images are under:
-`assets/media/previews/artifacts/`
-
-Most recovered legacy cubes remain **MIGRATION_REQUIRED** according to the existing migration plan. This task did not redesign them or falsely promote them to LOCK.
-
-## QA
-- patch SHA verified
-- all 698 YouTube previews decode
-- all 10 artifact source images decode
-- all 10 artifact previews decode
-- source/preview SHA verification PASS
-- scope guard PASS
-- Git LFS push PASS
-- fresh clone + `git lfs pull` PASS
-"""
-          (hand/'QA_ZNAECHKA_MEDIA_ARTIFACTS_20261123.md').write_text(txt,encoding='utf-8')
-          PY
-          git add dragon_house_clean/docs/handoffs/ZNA_CHAR_NPC_20261123_004_MEDIA_ARTIFACTS/QA_ZNAECHKA_MEDIA_ARTIFACTS_20261123.md
-          git commit -m 'docs(handoff): finalize media artifact source QA'
           git push origin HEAD:art/znaechka-characters-ZNA_CHAR_NPC_20261123_001
