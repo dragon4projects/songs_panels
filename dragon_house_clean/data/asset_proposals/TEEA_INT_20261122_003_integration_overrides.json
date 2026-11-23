@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "batch_id": "TEEA_INT_20261122_003",
+  "owner_approved": false,
+  "qa_only": true,
+  "source_head": "27a57e95b0185d263ade43c491cb9c450a56912a",
+  "foreground_physical_z": {
+    "music/R1": {
+      "source_furniture_id": "music_listen_chair",
+      "value": -0.1276819109916687,
+      "basis": "TEEA_INT_20261122_003_anchor_measurements.json music_listen_chair.godot_z_front",
+      "status": "INTEGRATOR_QA_HYPOTHESIS"
+    },
+    "cinema/R1": {
+      "source_furniture_id": "cinema_sofa",
+      "value": -0.1038343608379364,
+      "basis": "TEEA_INT_20261122_003_anchor_measurements.json cinema_sofa.godot_z_front",
+      "status": "INTEGRATOR_QA_HYPOTHESIS"
+    }
+  },
+  "runtime_station_map": {
+    "music/R1": [
+      {
+        "id": "music_listen_chair_seat_a",
+        "x": 0.55,
+        "z": -0.4742,
+        "kind": "seat",
+        "furniture_id": "music_listen_chair",
+        "pose_hint": "RELAXED_SIT",
+        "approach_z": 0.95
+      }
+    ],
+    "cinema/R1": [
+      {
+        "id": "cinema_sofa_seat_a",
+        "x": -0.5896,
+        "z": -0.3424,
+        "kind": "seat",
+        "furniture_id": "cinema_sofa",
+        "pose_hint": "RELAXED_SIT",
+        "approach_z": 0.95
+      },
+      {
+        "id": "cinema_sofa_seat_b",
+        "x": 0.0896,
+        "z": -0.3424,
+        "kind": "seat",
+        "furniture_id": "cinema_sofa",
+        "pose_hint": "RELAXED_SIT",
+        "approach_z": 0.95
+      }
+    ],
+    "artifact/R1": [
+      {
+        "id": "artifact_cabinet_view",
+        "x": 1.2,
+        "z": -0.5524,
+        "kind": "standing",
+        "furniture_id": "artifact_cabinet",
+        "pose_hint": "VIEW",
+        "approach_z": 0.95
+      },
+      {
+        "id": "artifact_pedestal_view",
+        "x": -0.38,
+        "z": -0.13,
+        "kind": "standing",
+        "furniture_id": "artifact_pedestal",
+        "pose_hint": "VIEW",
+        "approach_z": 0.95
+      }
+    ],
+    "workshop/R1": [
+      {
+        "id": "workshop_stool_work",
+        "x": -0.62,
+        "z": -0.2853,
+        "kind": "work",
+        "furniture_id": "workshop_stool",
+        "pose_hint": "USE",
+        "approach_z": 0.95
+      },
+      {
+        "id": "workshop_bench_work",
+        "x": 0.6,
+        "z": -0.31,
+        "kind": "work",
+        "furniture_id": "workshop_bench",
+        "pose_hint": "USE",
+        "approach_z": 0.95
+      }
+    ],
+    "arrival/R1": [],
+    "corridor/R1": []
+  },
+  "semantic_mapping": {
+    "LISTEN": "RELAXED_SIT",
+    "WATCH": "RELAXED_SIT",
+    "INSPECT": "VIEW",
+    "view": "standing"
+  },
+  "note": "This file records integrator QA mappings only. It must not elevate the artist candidate or production interior manifest to approved=true."
+}
