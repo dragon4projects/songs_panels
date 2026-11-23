@@ -1,0 +1,258 @@
+{
+  "schema": 1,
+  "batch_id": "TEEA_INT_20261123_005",
+  "approved": false,
+  "layers": {
+    "common/R1": {
+      "role": "foreground",
+      "path": "assets/rooms/common/R1/foreground.png",
+      "approved": false,
+      "physical_z": 0.15,
+      "source_furniture_ids": [
+        "common_r1_front_chair"
+      ],
+      "measurement": {
+        "physical_z": 0.15,
+        "plane_type": "front_edge",
+        "authored_target_front_z": 0.15,
+        "source_furniture_ids": [
+          "common_r1_front_chair"
+        ],
+        "source_measurements": [
+          {
+            "id": "common_r1_front_chair",
+            "front_z": 0.15000003576278687,
+            "seat_clip_z": -0.09974321258753664
+          }
+        ],
+        "geometry_clip_plane_type": "seat_centroid_minus_0.012_blender_y",
+        "note": "Runtime registration plane is the common camera-facing furniture front edge. Each source mesh was clipped separately behind its measured seat centroid to retain only true camera-facing occluder geometry."
+      },
+      "sha256": "6c3bd56799988e7c6cff5594fd04e161b0636518cf188ff455f34789d2e5d296"
+    },
+    "common/R2": {
+      "role": "foreground",
+      "path": "assets/rooms/common/R2/foreground.png",
+      "approved": false,
+      "physical_z": 0.15,
+      "source_furniture_ids": [
+        "common_r2_front_chair_left",
+        "common_r2_front_chair_right"
+      ],
+      "measurement": {
+        "physical_z": 0.15,
+        "plane_type": "front_edge",
+        "authored_target_front_z": 0.15,
+        "source_furniture_ids": [
+          "common_r2_front_chair_left",
+          "common_r2_front_chair_right"
+        ],
+        "source_measurements": [
+          {
+            "id": "common_r2_front_chair_left",
+            "front_z": 0.15000003576278687,
+            "seat_clip_z": -0.09974321258753664
+          },
+          {
+            "id": "common_r2_front_chair_right",
+            "front_z": 0.15000036358833313,
+            "seat_clip_z": -0.04430356710404158
+          }
+        ],
+        "geometry_clip_plane_type": "seat_centroid_minus_0.012_blender_y",
+        "note": "Runtime registration plane is the common camera-facing furniture front edge. Each source mesh was clipped separately behind its measured seat centroid to retain only true camera-facing occluder geometry."
+      },
+      "sha256": "b09b659176da7b57ad4a18fecd15907bd427b4ee9e5b2006e83d1a4ec16b3132"
+    },
+    "study/R2": {
+      "role": "foreground",
+      "path": "assets/rooms/study/R2/foreground.png",
+      "approved": false,
+      "physical_z": 0.15,
+      "source_furniture_ids": [
+        "study_r2_front_reader"
+      ],
+      "measurement": {
+        "physical_z": 0.15,
+        "plane_type": "front_edge",
+        "authored_target_front_z": 0.15,
+        "source_furniture_ids": [
+          "study_r2_front_reader"
+        ],
+        "source_measurements": [
+          {
+            "id": "study_r2_front_reader",
+            "front_z": 0.1499996781349182,
+            "seat_clip_z": -0.05320598270325398
+          }
+        ],
+        "geometry_clip_plane_type": "seat_centroid_minus_0.012_blender_y",
+        "note": "Runtime registration plane is the common camera-facing furniture front edge. Each source mesh was clipped separately behind its measured seat centroid to retain only true camera-facing occluder geometry."
+      },
+      "sha256": "db6e61fb0f363ea07ca6d9742fb4705b0aa377347a28b8b718d5a35066e39ece"
+    },
+    "study/R3": {
+      "role": "foreground",
+      "path": "assets/rooms/study/R3/foreground.png",
+      "approved": false,
+      "physical_z": 0.15,
+      "source_furniture_ids": [
+        "study_r3_front_reader_left",
+        "study_r3_front_reader_right"
+      ],
+      "measurement": {
+        "physical_z": 0.15,
+        "plane_type": "front_edge",
+        "authored_target_front_z": 0.15,
+        "source_furniture_ids": [
+          "study_r3_front_reader_left",
+          "study_r3_front_reader_right"
+        ],
+        "source_measurements": [
+          {
+            "id": "study_r3_front_reader_left",
+            "front_z": 0.15000036358833313,
+            "seat_clip_z": -0.04430356710404158
+          },
+          {
+            "id": "study_r3_front_reader_right",
+            "front_z": 0.1500004231929779,
+            "seat_clip_z": -0.08949935982659708
+          }
+        ],
+        "geometry_clip_plane_type": "seat_centroid_minus_0.012_blender_y",
+        "note": "Runtime registration plane is the common camera-facing furniture front edge. Each source mesh was clipped separately behind its measured seat centroid to retain only true camera-facing occluder geometry."
+      },
+      "sha256": "812579b7a3d212e162aa9eb3d16e363bb70e3fceda3f9b388525e8959643a6a6"
+    },
+    "rest/R2": {
+      "role": "foreground",
+      "path": "assets/rooms/rest/R2/foreground.png",
+      "approved": false,
+      "physical_z": 0.15,
+      "source_furniture_ids": [
+        "rest_r2_front_lounge",
+        "rest_r2_front_chair"
+      ],
+      "measurement": {
+        "physical_z": 0.15,
+        "plane_type": "front_edge",
+        "authored_target_front_z": 0.15,
+        "source_furniture_ids": [
+          "rest_r2_front_lounge",
+          "rest_r2_front_chair"
+        ],
+        "source_measurements": [
+          {
+            "id": "rest_r2_front_lounge",
+            "front_z": 0.1499996781349182,
+            "seat_clip_z": -0.05320598270325398
+          },
+          {
+            "id": "rest_r2_front_chair",
+            "front_z": 0.15000036358833313,
+            "seat_clip_z": -0.04430356710404158
+          }
+        ],
+        "geometry_clip_plane_type": "seat_centroid_minus_0.012_blender_y",
+        "note": "Runtime registration plane is the common camera-facing furniture front edge. Each source mesh was clipped separately behind its measured seat centroid to retain only true camera-facing occluder geometry."
+      },
+      "sha256": "44c231de98e4fda51e956bc4bd720cbe2b5e82293d0588de1bc40286156775c1"
+    },
+    "rest/R3": {
+      "role": "foreground",
+      "path": "assets/rooms/rest/R3/foreground.png",
+      "approved": false,
+      "physical_z": 0.15,
+      "source_furniture_ids": [
+        "rest_r3_front_lounge_left",
+        "rest_r3_front_chair_right"
+      ],
+      "measurement": {
+        "physical_z": 0.15,
+        "plane_type": "front_edge",
+        "authored_target_front_z": 0.15,
+        "source_furniture_ids": [
+          "rest_r3_front_lounge_left",
+          "rest_r3_front_chair_right"
+        ],
+        "source_measurements": [
+          {
+            "id": "rest_r3_front_lounge_left",
+            "front_z": 0.1499996781349182,
+            "seat_clip_z": -0.05320598270325398
+          },
+          {
+            "id": "rest_r3_front_chair_right",
+            "front_z": 0.1500004231929779,
+            "seat_clip_z": -0.08949935982659708
+          }
+        ],
+        "geometry_clip_plane_type": "seat_centroid_minus_0.012_blender_y",
+        "note": "Runtime registration plane is the common camera-facing furniture front edge. Each source mesh was clipped separately behind its measured seat centroid to retain only true camera-facing occluder geometry."
+      },
+      "sha256": "b06cc70424e72475c8837e285353849a6eeab1894c78805bcb687a9c7dbbf585"
+    },
+    "library/R1": {
+      "role": "foreground",
+      "path": "assets/rooms/library/R1/foreground.png",
+      "approved": false,
+      "physical_z": 0.15,
+      "source_furniture_ids": [
+        "library_r1_front_reader"
+      ],
+      "measurement": {
+        "physical_z": 0.15,
+        "plane_type": "front_edge",
+        "authored_target_front_z": 0.15,
+        "source_furniture_ids": [
+          "library_r1_front_reader"
+        ],
+        "source_measurements": [
+          {
+            "id": "library_r1_front_reader",
+            "front_z": 0.15000036358833313,
+            "seat_clip_z": -0.04430356710404158
+          }
+        ],
+        "geometry_clip_plane_type": "seat_centroid_minus_0.012_blender_y",
+        "note": "Runtime registration plane is the common camera-facing furniture front edge. Each source mesh was clipped separately behind its measured seat centroid to retain only true camera-facing occluder geometry."
+      },
+      "sha256": "c43024aef55672094cfd9746b8b5139d8efd6cdd4930b3afca52b593dc5995f8"
+    },
+    "library/R3": {
+      "role": "foreground",
+      "path": "assets/rooms/library/R3/foreground.png",
+      "approved": false,
+      "physical_z": 0.15,
+      "source_furniture_ids": [
+        "library_r3_front_reader_left",
+        "library_r3_front_reader_right"
+      ],
+      "measurement": {
+        "physical_z": 0.15,
+        "plane_type": "front_edge",
+        "authored_target_front_z": 0.15,
+        "source_furniture_ids": [
+          "library_r3_front_reader_left",
+          "library_r3_front_reader_right"
+        ],
+        "source_measurements": [
+          {
+            "id": "library_r3_front_reader_left",
+            "front_z": 0.15000036358833313,
+            "seat_clip_z": -0.04430356710404158
+          },
+          {
+            "id": "library_r3_front_reader_right",
+            "front_z": 0.1500004231929779,
+            "seat_clip_z": -0.08949935982659708
+          }
+        ],
+        "geometry_clip_plane_type": "seat_centroid_minus_0.012_blender_y",
+        "note": "Runtime registration plane is the common camera-facing furniture front edge. Each source mesh was clipped separately behind its measured seat centroid to retain only true camera-facing occluder geometry."
+      },
+      "sha256": "4d8a0efb9fc003601e9e0ef034ac0a889109446561bf12bfdc19996cb29559b3"
+    }
+  }
+}
