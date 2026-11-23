@@ -10,7 +10,10 @@ func _cleanup(path: String) -> void:
 		".world_events_v1.json",
 		".world_events_v1.json.bak",
 		".world_events_v1.json.tmp",
-		".world_events_v1.json.corrupt"
+		".world_events_v1.json.corrupt",
+		".world_events_v1.sqlite",".world_events_v1.sqlite.bak",
+		".world_events_v1.sqlite-wal",".world_events_v1.sqlite-shm",
+		".world_events_v1.sqlite.corrupt"
 	]:
 		DirAccess.remove_absolute(ProjectSettings.globalize_path(path+suffix))
 
@@ -24,6 +27,7 @@ func _journal_event(entries: Array, event_name: String) -> Dictionary:
 func run() -> void:
 	var path := "user://object_event_replay_v020.json"
 	_cleanup(path)
+	OS.set_environment("DRAGON_OBJECT_EVENT_BACKEND","json")
 
 	# No JSON snapshot is saved after these object events. The event stream must
 	# be sufficient to reconstruct the object projection on restart.
@@ -92,4 +96,5 @@ func run() -> void:
 
 	_cleanup(path)
 	print("OBJECT_EVENT_REPLAY_V020_PASS crash_gap=recovered event_stream=authoritative provenance=queryable journal=reconciled ambient_keeps_explicit_location=yes restart=equivalent")
+	OS.set_environment("DRAGON_OBJECT_EVENT_BACKEND","")
 	quit(0)
