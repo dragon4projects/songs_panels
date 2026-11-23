@@ -1,0 +1,37 @@
+TEEA_INT_20261123_007 corrected binary payload
+
+Status: PARTIAL_COMPLETE_EXTERNAL_BLOCKERS
+Owner approved: false
+Production mutated by TEEA007: no
+
+Current integration target:
+dragon-house-fallout-fresh@7710734af88483bbdc6f828d623b82561319f7e8
+
+Branch:
+art/teea-interiors-TEEA_INT_20261123_007
+
+Corrected binary drop:
+https://d2ol7oe51mr4n9.cloudfront.net/user_3JdI9kJ82xObF8Bi3EgU4P6DaoR/a02ff970-27ea-40f0-b35d-0c42c200bc51.zip
+
+Corrected ZIP SHA-256:
+7004aaf556fdcd1bac5b7090ac2089416acc4ba6e76e2aa540a45f2bde0bc2d5
+
+Supersedes old ZIP SHA-256:
+3bcec6d95001cd3f240d2cb014634264fd9772638ef85ae548ff8f9c81b4c89c
+
+Corrected drop:
+- 94 files
+- 13 candidate room PNG
+- 9 source/runtime GLB
+- source BLEND files
+- guest and Common yaw proof
+- HOUSE/LEVEL/ROOM scale proof
+- Godot 4.7.2 QA
+- source provenance
+- payload manifest and SHA256SUMS
+
+External blockers retained:
+1. exact canonical guest PNG alpha/body footprint: Git LFS download from sandbox returns HTTP 401;
+2. exact Cinema/Music/Artifact holder placement: waits for unfinished TEEA006 final geometry.
+
+Do not use the earlier TEEA007 ZIP after this correction.
