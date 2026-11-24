@@ -288,6 +288,9 @@ func _default_anchor(object_id: String) -> Array:
 	return [x,z]
 
 func _anchor_or_default(raw, object_id: String) -> Array:
+	if raw is Vector2:
+		var point:Vector2=raw
+		return [point.x,point.y]
 	if typeof(raw)==TYPE_ARRAY:
 		var value:Array=raw
 		if value.size()==2 and typeof(value[0]) in [TYPE_INT,TYPE_FLOAT] and (
