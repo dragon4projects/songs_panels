@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "task_id": "TEEA_INT_20261124_008",
+  "base_repo": "dragon4projects/songs_panels",
+  "base_sha": "9c45da4f59dd40fb03f07ae0842000bb448efa93",
+  "latest_integration_sha_reviewed": "182360601f5c382d55e51a7c4566d553f8a8b42b",
+  "owner_approved": false,
+  "units": "m",
+  "axis": "X-right,Y-up,Z-front",
+  "status": "PARTIAL_READY",
+  "items": [
+    {
+      "category": "Source bank",
+      "status": "PRESENT_VERIFIED",
+      "evidence": "158/158 original source IDs represented as distinct native/domestically normalized models, plus variants and authored structures; 243 distinct models and 10 material sets."
+    },
+    {
+      "category": "Architecture and materials",
+      "status": "PARTIAL_READY",
+      "evidence": "Physical R1–R3 skins, connector, lift, frontage; model dependencies and import pass.",
+      "remaining": "Actual runtime cutaway/connector attachment and material seam/UV appearance; no topology changes."
+    },
+    {
+      "category": "Room layouts",
+      "status": "PARTIAL_READY",
+      "evidence": "33/33 merged grid checks. Common centered active hearth reserved; neutral Cinema screen.",
+      "remaining": "Real actor route/pose and accepted art overlap, existing hearth/skins, no automatic activation; see each merged_qa."
+    },
+    {
+      "category": "Media and frames",
+      "status": "PARTIAL_READY",
+      "evidence": "32 existing hooks preserved and geometrically proposed; 7 stock frame aperture candidates neutralized.",
+      "remaining": "Actual runtime yaw, click and content bind, canonical historical art stays unchanged."
+    },
+    {
+      "category": "Portable and stash",
+      "status": "PARTIAL_READY",
+      "evidence": "15 distinct explicit small candidates; ordinary and heavy props nonstealable; original native-size items separate.",
+      "remaining": "Animal-specific actual grip/physical envelope and accessible stash policy; theft disabled."
+    },
+    {
+      "category": "Guest",
+      "status": "PARTIAL_READY",
+      "evidence": "332/332 actual PNGs measured at current integration SHA; full visual plane fit and 3 generic open guest layout turn zones; no sprite modifications.",
+      "remaining": "True body depth not inferable from flat sprite; actual collision/animation pose and permission gate integration."
+    },
+    {
+      "category": "Git LFS",
+      "status": "BLOCKED_TRANSFER",
+      "evidence": "Actual complete standalone asset archive; catalog and handoff in existing branch. No writable Git credentials in sandbox.",
+      "remaining": "Integrator materialize archive, apply existing Git LFS rules, commit actual bytes and verify clean checkout."
+    },
+    {
+      "category": "Runtime/owner gate",
+      "status": "NOT_RUNTIME_VERIFIED",
+      "evidence": "243 isolated Godot imports; 55 earlier isolated rendered room images, not full runtime.",
+      "remaining": "Live scene camera, collisions, pose, media interactions, owner approval; production untouched."
+    }
+  ]
+}
