@@ -83,6 +83,9 @@ var media_panel: PanelContainer
 var content_viewer: PanelContainer
 var content_hover_label: Label
 var content_hotspots: Array = []
+var object_home_drag_id := ""
+var object_home_drag_room_id := ""
+var object_home_drag_anchor := Vector2.ZERO
 var bank_gallery: PanelContainer
 var door_note_panel: PanelContainer
 var door_note_title: Label
@@ -1406,7 +1409,7 @@ func build_interface() -> void:
 	import_button.pressed.connect(func(): catalog_picker.popup_centered_ratio(0.65))
 	hud_main_body.add_child(import_button)
 	hud_help = Label.new()
-	hud_help.text = "Колесо: масштаб | ПКМ: перемещение\nЛКМ: выбрать | Q/E: поворот\nPgUp/PgDn: этаж | F: следить | B: строить\nEsc: Follow→Room→Level→House | 1/2/3: House/Level/Room\nV: QA-спрайты | M: медиа | J: журнал"
+	hud_help.text = "Колесо: масштаб | ПКМ: перемещение\nЛКМ: выбрать | Shift+ЛКМ: переставить предмет и назначить дом\nQ/E: поворот | PgUp/PgDn: этаж | F: следить | B: строить\nEsc: Follow→Room→Level→House | 1/2/3: House/Level/Room\nV: QA-спрайты | M: медиа | J: журнал"
 	hud_main_body.add_child(hud_help)
 	hud_help.visible = false
 	var help_button := Button.new()
@@ -1522,6 +1525,8 @@ func update_content_hover(point: Vector2) -> void:
 	if entry.is_empty():
 		return
 	content_hover_label.text = str(entry.get("display_name",entry.get("item_id","")))
+	if world.objects.has(str(entry.get("item_id",""))):
+		content_hover_label.text += "  ·  Shift+ЛКМ: переставить/дом"
 	content_hover_label.position = point + Vector2(14,12)
 
 func close_door_note()->void:
@@ -1920,6 +1925,38 @@ func zoom_around_pointer(mouse: Vector2, multiplier: float) -> void:
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
 		var e: InputEventMouseButton = event
+		if e.button_index==MOUSE_BUTTON_LEFT and e.pressed and e.shift_pressed:
+			var entry:Dictionary=content_hotspot_at_screen(e.position)
+			var object_id:String=str(entry.get("item_id",""))
+			var object:Dictionary=world.physical_object(object_id)
+			if not object.is_empty() and str(object.get("current_holder_id",""))=="" and (
+					str(object.get("state",""))!="STASHED"):
+				var room_id:String=str(object.get("current_room_id",""))
+				var room:Dictionary=world.room_by_id(room_id)
+				var raw=object.get("current_anchor",[])
+				if not room.is_empty() and typeof(raw)==TYPE_ARRAY and (raw as Array).size()==2:
+					object_home_drag_id=object_id
+					object_home_drag_room_id=room_id
+					object_home_drag_anchor=Vector2(float(raw[0]),float(raw[1]))
+					notice.text="Переставляю %s · отпусти ЛКМ, чтобы назначить новый дом" % [
+						str(object.get("display_name",object_id))]
+					get_viewport().set_input_as_handled()
+					return
+		if e.button_index==MOUSE_BUTTON_LEFT and not e.pressed and object_home_drag_id!="":
+			var moved_id:String=object_home_drag_id
+			var moved_room:String=object_home_drag_room_id
+			var moved_anchor:Vector2=object_home_drag_anchor
+			object_home_drag_id=""
+			object_home_drag_room_id=""
+			if world.assign_physical_object_home(moved_id,moved_room,moved_anchor,true):
+				notice.text="Новое место назначено домом: %s" % str(
+					world.physical_object(moved_id).get("display_name",moved_id))
+			else:
+				notice.text="Не удалось назначить новое место"
+			update_physical_objects()
+			update_hud()
+			get_viewport().set_input_as_handled()
+			return
 		if e.button_index == MOUSE_BUTTON_WHEEL_UP and e.pressed:
 			zoom_around_pointer(e.position,0.87)
 		elif e.button_index == MOUSE_BUTTON_WHEEL_DOWN and e.pressed:
@@ -1928,6 +1965,28 @@ func _input(event: InputEvent) -> void:
 			moving_view = e.pressed
 	if event is InputEventMouseMotion:
 		var e: InputEventMouseMotion = event
+		if object_home_drag_id!="":
+			var room:Dictionary=world.room_by_id(object_home_drag_room_id)
+			if not room.is_empty():
+				var drag_scale:float=zoom_current*0.0019
+				object_home_drag_anchor.x+=e.relative.x*drag_scale
+				object_home_drag_anchor.y+=e.relative.y*drag_scale
+				var half_width:float=world.room_space.half_width(room)
+				object_home_drag_anchor.x=clampf(
+					object_home_drag_anchor.x,-half_width+0.16,half_width-0.16)
+				object_home_drag_anchor.y=clampf(
+					object_home_drag_anchor.y,
+					float(world.room_space.BACK_Z)+0.12,
+					float(world.room_space.FRONT_Z)-0.12)
+				var node:Node3D=object_nodes.get(object_home_drag_id)
+				if node!=null:
+					var pos:Vector3=world.room_local_to_world(room,object_home_drag_anchor)
+					node.position=Vector3(pos.x,pos.y+0.22,pos.z)
+					node.scale=Vector3.ONE*depth_visual_scale(object_home_drag_anchor.y)
+				notice.text="Новый дом X %.2f · Z %.2f" % [
+					object_home_drag_anchor.x,object_home_drag_anchor.y]
+			get_viewport().set_input_as_handled()
+			return
 		if not moving_view and not build_mode:
 			update_content_hover(e.position)
 		if moving_view and not build_mode:
