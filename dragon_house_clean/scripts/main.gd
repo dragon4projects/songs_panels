@@ -1124,12 +1124,16 @@ func update_physical_objects() -> void:
 		anchor.visible = current_mode == "HOUSE" or int(room.get("level",0)) == semantic_view.level
 		if not anchor.visible:
 			continue
-		var room_center:Vector3=world.room_center_pos(room)
-		anchor.position = Vector3(
-			room_center.x,
-			room_center.y+0.22,
-			0.72) + _object_offset(str(object_id))
-		anchor.scale=Vector3.ONE*depth_visual_scale(anchor.position.z)
+		var raw_anchor=object.get("current_anchor",[])
+		var local_anchor:Vector2
+		if typeof(raw_anchor)==TYPE_ARRAY and (raw_anchor as Array).size()==2:
+			local_anchor=Vector2(float(raw_anchor[0]),float(raw_anchor[1]))
+		else:
+			var fallback:Vector3=_object_offset(str(object_id))
+			local_anchor=Vector2(fallback.x,0.72+fallback.z)
+		var room_world:Vector3=world.room_local_to_world(room,local_anchor)
+		anchor.position=Vector3(room_world.x,room_world.y+0.22,room_world.z)
+		anchor.scale=Vector3.ONE*depth_visual_scale(local_anchor.y)
 
 func make_residents() -> void:
 	var resident_tex := make_sprite_texture(false)
