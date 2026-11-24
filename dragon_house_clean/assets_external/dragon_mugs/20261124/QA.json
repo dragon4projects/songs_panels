@@ -1,0 +1,33 @@
+{
+  "status": "CANDIDATE_NOT_OWNER_APPROVED",
+  "reference": "Library: Референсный лист красной и синей кружек.png; SAMA_SUCCESSOR_HANDOFF_SHURSHA_2026-10-03.md section 6.9",
+  "geometry": {
+    "vertices": 2696,
+    "triangles": 4480,
+    "identical_binary_geometry": true,
+    "dimensions_m_approx": {
+      "height": 0.105,
+      "body_diameter": 0.098
+    },
+    "bounds_m": {
+      "min": [
+        -0.049,
+        0,
+        -0.049
+      ],
+      "max": [
+        0.089,
+        0.105,
+        0.049
+      ]
+    }
+  },
+  "notes": [
+    "Dimensions estimated from reference proportions, not physically measured.",
+    "Hollow ceramic body, separate intersecting capped handle, no union claim.",
+    "Four parallel capsule outlines and four concentric circles; approximate wrap inferred from two side views.",
+    "No colored base ring per handoff; no saucer.",
+    "Empty mugs; independent candidate files, no production promotion.",
+    "Geometry generated and GLB headers/index ranges checked; visual render and Godot import pending."
+  ]
+}
