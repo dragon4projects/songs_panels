@@ -10,20 +10,23 @@ State:
 - structural validation of downloaded source files: 77/77 PASS
 
 Public-repository rule:
-dragon_home_project is public. Raw Blendkit Royalty Free models are deliberately not committed here because they would be directly extractable as standalone 3D assets.
+dragon_home_project is public. Raw Blendkit Royalty Free models are deliberately not committed because they would be directly extractable as standalone 3D assets.
 
 Instead:
 - exact Blendkit asset/version/download UUIDs are pinned in BLENDKIT_HARVEST_20261124.json;
-- fetch_blendkit_assets.py materializes the free files into a local ignored cache;
+- fetch_blendkit_assets.py materializes the 77 free files into a local ignored cache;
 - downloaded SHA-256 values are pinned to detect source/version drift;
-- Royalty Free assets are intended as BAKED_ART_SOURCE;
-- only CC0 source assets may be committed raw.
+- Royalty Free assets are treated as BAKED_ART_SOURCE;
+- the sole CC0 asset is also materialized through the same pinned fetcher.
 
 No user credentials are stored in this package.
 
-Raw CC0 source included:
-Kitchen Set - Nuts and Accessories:
-cc0/kitchen_set_nuts_and_accessories/source.glb
+The current ChatGPT GitHub connection can write to songs_panels but has read-only access to dragon_home_project. This branch is therefore a staging branch on the same Dragon House production base and is intended to be copied to dragon_home_project once repository write access is granted.
 
 Missing item:
-Vintage Wooden Bellows Camera is currently Full Plan. It is retained in the manifest but not fetched anonymously and no substitute asset was silently chosen.
+Vintage Wooden Bellows Camera is currently Full Plan. It is retained in the manifest but was not fetched anonymously and no substitute asset was silently chosen.
+
+License references:
+- https://www.blendkit.com/docs/licenses/
+- https://www.blendkit.com/docs/licenses/licensing-faq/
+- https://www.blendkit.com/terms-and-conditions-2026/
