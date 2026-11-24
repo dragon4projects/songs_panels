@@ -1,0 +1,57 @@
+{
+  "batch": "CGTRADER_CINEMA_20261124",
+  "requested": 4,
+  "downloaded": 0,
+  "owner_preference": "3D Isometric Modern Home Cinema Interior",
+  "status": "PENDING_OFFICIAL_DOWNLOAD",
+  "items": [
+    {
+      "url": "https://www.cgtrader.com/free-3d-models/interior/other/cinema-87b087f8-0b00-4683-8ba8-ee786da17eeb",
+      "priority": "SECONDARY",
+      "probe": {
+        "http": 202,
+        "bytes": 0
+      },
+      "downloaded": false
+    },
+    {
+      "url": "https://www.cgtrader.com/free-3d-models/architectural/other/modular-theater-pack",
+      "priority": "SECONDARY",
+      "probe": {
+        "http": 202,
+        "bytes": 0
+      },
+      "downloaded": false
+    },
+    {
+      "url": "https://www.cgtrader.com/free-3d-models/interior/other/movie-theater--2",
+      "priority": "SECONDARY",
+      "probe": {
+        "http": 202,
+        "bytes": 0
+      },
+      "downloaded": false
+    },
+    {
+      "url": "https://www.cgtrader.com/free-3d-models/interior/other/3d-isometric-modern-home-cinema-interior",
+      "priority": "OWNER_PREFERRED",
+      "probe": {
+        "http": 202,
+        "bytes": 0
+      },
+      "downloaded": false,
+      "listing_license": "Royalty Free License (no AI)",
+      "native_format": "BLEND",
+      "native_size": "6.1 MB",
+      "listing_features": [
+        "four theater chairs",
+        "tiered seating",
+        "projection screen",
+        "wall speakers",
+        "curtains",
+        "media console"
+      ]
+    }
+  ],
+  "integration": "Use as decor source or visual reference; preserve existing X/Z room shells and connectors. Check license before use; no standalone restricted source redistribution. No production changes."
+}
