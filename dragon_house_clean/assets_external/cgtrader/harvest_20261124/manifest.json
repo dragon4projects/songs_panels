@@ -1,0 +1,220 @@
+{
+  "schema": 1,
+  "batch": "CGTRADER_HARVEST_20261124",
+  "requested": 26,
+  "downloaded": 0,
+  "status": "BLOCKED_HTTP_202_EMPTY_RESPONSE",
+  "probe": "Higgsfield HTTPS GET, 26/26 HTTP 202, zero bytes. No model file, license entitlement or checksum obtained. Manual official free download needed.",
+  "public_repo_policy": "Do not commit vendor sources unless explicit redistribution license verified; Royalty Free is not raw redistribution permission. Review per model before use.",
+  "license_help": "https://help.cgtrader.com/hc/en-us/articles/360015124437-Royalty-Free-License",
+  "items": [
+    {
+      "id": 1,
+      "url": "https://www.cgtrader.com/free-3d-models/electronics/other/coffee-machine-f862a56d-3194-4702-85cf-fce4ff69a3e4",
+      "status": "PENDING_OFFICIAL_DOWNLOAD",
+      "http": 202,
+      "response_bytes": 0,
+      "license": "UNVERIFIED"
+    },
+    {
+      "id": 2,
+      "url": "https://www.cgtrader.com/free-3d-models/interior/kitchen/sunbeam-espresso-coffee-machine-28562369-5b74-4565-a87d-9f802d1495f2",
+      "status": "PENDING_OFFICIAL_DOWNLOAD",
+      "http": 202,
+      "response_bytes": 0,
+      "license": "UNVERIFIED"
+    },
+    {
+      "id": 3,
+      "url": "https://www.cgtrader.com/free-3d-models/household/kitchenware/medium-coffee-machine",
+      "status": "PENDING_OFFICIAL_DOWNLOAD",
+      "http": 202,
+      "response_bytes": 0,
+      "license": "Royalty Free (no AI) — public listing observed"
+    },
+    {
+      "id": 4,
+      "url": "https://www.cgtrader.com/free-3d-models/household/kitchenware/stovetop-coffee-maker-5ee822d1-5977-441a-acc0-0fedd3ea00cd",
+      "status": "PENDING_OFFICIAL_DOWNLOAD",
+      "http": 202,
+      "response_bytes": 0,
+      "license": "UNVERIFIED"
+    },
+    {
+      "id": 5,
+      "url": "https://www.cgtrader.com/free-3d-models/household/kitchenware/coffee-cups-7f232214-5b4a-4314-bd2f-875194e6844b",
+      "status": "PENDING_OFFICIAL_DOWNLOAD",
+      "http": 202,
+      "response_bytes": 0,
+      "license": "UNVERIFIED"
+    },
+    {
+      "id": 6,
+      "url": "https://www.cgtrader.com/free-3d-models/food/miscellaneous/coffee-cup-dfe3b90b-2675-4442-bba9-d4059a3ef933",
+      "status": "PENDING_OFFICIAL_DOWNLOAD",
+      "http": 202,
+      "response_bytes": 0,
+      "license": "UNVERIFIED"
+    },
+    {
+      "id": 7,
+      "url": "https://www.cgtrader.com/free-3d-models/interior/kitchen/coffee-cup-and-latte-mug",
+      "status": "PENDING_OFFICIAL_DOWNLOAD",
+      "http": 202,
+      "response_bytes": 0,
+      "license": "UNVERIFIED"
+    },
+    {
+      "id": 8,
+      "url": "https://www.cgtrader.com/free-3d-models/household/kitchenware/coffee-grinder-de0df12e-4667-4c8b-8965-e3e83a55ad81",
+      "status": "PENDING_OFFICIAL_DOWNLOAD",
+      "http": 202,
+      "response_bytes": 0,
+      "license": "UNVERIFIED"
+    },
+    {
+      "id": 9,
+      "url": "https://www.cgtrader.com/free-3d-models/various/various-models/a-cup-of-coffee-da238620-80d6-4789-bb20-6c23e93c10f7",
+      "status": "PENDING_OFFICIAL_DOWNLOAD",
+      "http": 202,
+      "response_bytes": 0,
+      "license": "UNVERIFIED"
+    },
+    {
+      "id": 10,
+      "url": "https://www.cgtrader.com/free-3d-models/food/beverage/coffee-cup-342f5ea5-bc9c-45b5-a37f-2b870691c140",
+      "status": "PENDING_OFFICIAL_DOWNLOAD",
+      "http": 202,
+      "response_bytes": 0,
+      "license": "UNVERIFIED"
+    },
+    {
+      "id": 11,
+      "url": "https://www.cgtrader.com/free-3d-models/household/other/coffee-cup-baf2d3e3-fd4a-46ae-9e7d-e82c5da4f658",
+      "status": "PENDING_OFFICIAL_DOWNLOAD",
+      "http": 202,
+      "response_bytes": 0,
+      "license": "UNVERIFIED"
+    },
+    {
+      "id": 12,
+      "url": "https://www.cgtrader.com/free-3d-models/food/beverage/coffee-cup-a5c31f46-7c1f-40f9-9228-ec1e5683c7ee",
+      "status": "PENDING_OFFICIAL_DOWNLOAD",
+      "http": 202,
+      "response_bytes": 0,
+      "license": "UNVERIFIED"
+    },
+    {
+      "id": 13,
+      "url": "https://www.cgtrader.com/free-3d-models/food/beverage/coffee-mug-8feee7cb-cba4-4fcd-9c24-67f490cf67e5",
+      "status": "PENDING_OFFICIAL_DOWNLOAD",
+      "http": 202,
+      "response_bytes": 0,
+      "license": "UNVERIFIED"
+    },
+    {
+      "id": 14,
+      "url": "https://www.cgtrader.com/free-3d-models/food/beverage/cappuccino-cup-f3b06ccd-cc78-476a-9f90-948bb01c454e",
+      "status": "PENDING_OFFICIAL_DOWNLOAD",
+      "http": 202,
+      "response_bytes": 0,
+      "license": "UNVERIFIED"
+    },
+    {
+      "id": 15,
+      "url": "https://www.cgtrader.com/free-3d-models/furniture/kitchen-furniture/ikea-mugs",
+      "status": "PENDING_OFFICIAL_DOWNLOAD",
+      "http": 202,
+      "response_bytes": 0,
+      "license": "UNVERIFIED"
+    },
+    {
+      "id": 16,
+      "url": "https://www.cgtrader.com/free-3d-models/household/kitchenware/glass-mug-a381e7af-fb25-4fca-9798-6384039866af",
+      "status": "PENDING_OFFICIAL_DOWNLOAD",
+      "http": 202,
+      "response_bytes": 0,
+      "license": "UNVERIFIED"
+    },
+    {
+      "id": 17,
+      "url": "https://www.cgtrader.com/free-3d-models/household/kitchenware/mugs-pack",
+      "status": "PENDING_OFFICIAL_DOWNLOAD",
+      "http": 202,
+      "response_bytes": 0,
+      "license": "UNVERIFIED"
+    },
+    {
+      "id": 18,
+      "url": "https://www.cgtrader.com/free-3d-models/interior/kitchen/grey-bliss-set",
+      "status": "PENDING_OFFICIAL_DOWNLOAD",
+      "http": 202,
+      "response_bytes": 0,
+      "license": "UNVERIFIED"
+    },
+    {
+      "id": 19,
+      "url": "https://www.cgtrader.com/free-3d-models/interior/kitchen/nescafe-mug-f74eb43e-2b62-437d-a3eb-d3b8305ff027",
+      "status": "PENDING_OFFICIAL_DOWNLOAD",
+      "http": 202,
+      "response_bytes": 0,
+      "license": "UNVERIFIED"
+    },
+    {
+      "id": 20,
+      "url": "https://www.cgtrader.com/free-3d-models/food/miscellaneous/breakfast-coffee-and-donut-3d-model",
+      "status": "PENDING_OFFICIAL_DOWNLOAD",
+      "http": 202,
+      "response_bytes": 0,
+      "license": "UNVERIFIED"
+    },
+    {
+      "id": 21,
+      "url": "https://www.cgtrader.com/free-3d-models/food/beverage/leet-glass",
+      "status": "PENDING_OFFICIAL_DOWNLOAD",
+      "http": 202,
+      "response_bytes": 0,
+      "license": "UNVERIFIED"
+    },
+    {
+      "id": 22,
+      "url": "https://www.cgtrader.com/free-3d-models/food/beverage/realistic-wines-and-glasses",
+      "status": "PENDING_OFFICIAL_DOWNLOAD",
+      "http": 202,
+      "response_bytes": 0,
+      "license": "UNVERIFIED"
+    },
+    {
+      "id": 23,
+      "url": "https://www.cgtrader.com/free-3d-models/space/other/wine-glass-3d-model-288cf956-3234-46ef-8c40-47486598d593",
+      "status": "PENDING_OFFICIAL_DOWNLOAD",
+      "http": 202,
+      "response_bytes": 0,
+      "license": "UNVERIFIED"
+    },
+    {
+      "id": 24,
+      "url": "https://www.cgtrader.com/free-3d-models/interior/kitchen/wine-glasses-15-common-types",
+      "status": "PENDING_OFFICIAL_DOWNLOAD",
+      "http": 202,
+      "response_bytes": 0,
+      "license": "UNVERIFIED"
+    },
+    {
+      "id": 25,
+      "url": "https://www.cgtrader.com/free-3d-models/food/miscellaneous/bebidas-drinks-set-for-iclone",
+      "status": "PENDING_OFFICIAL_DOWNLOAD",
+      "http": 202,
+      "response_bytes": 0,
+      "license": "UNVERIFIED"
+    },
+    {
+      "id": 26,
+      "url": "https://www.cgtrader.com/free-3d-models/furniture/furniture-set/set-collection-of-glass",
+      "status": "PENDING_OFFICIAL_DOWNLOAD",
+      "http": 202,
+      "response_bytes": 0,
+      "license": "UNVERIFIED"
+    }
+  ]
+}
