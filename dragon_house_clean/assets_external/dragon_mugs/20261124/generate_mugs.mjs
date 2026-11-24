@@ -53,7 +53,9 @@ function buildMug(color,name) {
  for(let i=0;i<4;i++){
   const r=.0128+i*.00165,cy=.055,left=.096,right=.219,points=[];
   for(let j=0;j<=24;j++){const a=Math.PI/2+Math.PI*j/24;points.push([left+r*Math.cos(a),cy+r*Math.sin(a)]);}
+  for(let j=1;j<=64;j++)points.push([left+(right-left)*j/64,cy-r]);
   for(let j=1;j<=24;j++){const a=-Math.PI/2+Math.PI*j/24;points.push([right+r*Math.cos(a),cy+r*Math.sin(a)]);}
+  for(let j=1;j<64;j++)points.push([right-(right-left)*j/64,cy+r]);
   strip(points);
   const cp=[];for(let j=0;j<64;j++){const a=TAU*j/64;cp.push([.043+r*Math.cos(a),cy+r*Math.sin(a)]);}strip(cp);
  }
