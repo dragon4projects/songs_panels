@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "task_id": "TEEA_INT_20261124_008",
+  "base_repo": "dragon4projects/songs_panels",
+  "base_sha": "9c45da4f59dd40fb03f07ae0842000bb448efa93",
+  "newer_integration_sha": "ce429f0b9c907526ec31e50a8af6b3c3f30997df",
+  "owner_approved": false,
+  "units": "m",
+  "axis": "X-right,Y-up,Z-front",
+  "phase": 3,
+  "previous_asset_commit": "5c258102712f23da38a525795bf0f9b68d4f30a4",
+  "status": "PARTIAL_READY",
+  "previous_models": 132,
+  "items": [
+    {
+      "category": "Source coverage",
+      "status": "PARTIAL_READY",
+      "detail": "95/158 physical source IDs represented across phases, 63 remaining enumerated with source geometry; reserve bed is not placed."
+    },
+    {
+      "category": "Common R3",
+      "status": "PARTIAL_READY",
+      "detail": "Revised geometry grid passes with hearth reservation. Existing actual hearth and accepted room art omitted from isolated render; current visual remains provisional. Canonical mugs rebind required; fur mats are visual replacements for existing skins, not copies."
+    },
+    {
+      "category": "Cinema",
+      "status": "PARTIAL_READY",
+      "detail": "Neutral 16:9 carrier, dark carpet and rear tint, real seats, separate TV/console/gamepad retained in R2/R3. Large room visual remains sparse; no unverified recliner/podium station claimed. Actual media and seat runtime required."
+    },
+    {
+      "category": "Media",
+      "status": "PARTIAL_READY",
+      "detail": "32 legacy IDs retained, 29 wall candidates associated with actual furniture or zone, 3 cinema screen choices. Frontal AABB checks pass; full runtime yaw/readability/click mapping and actual content remain pending. Render sheet does not include all new wall-mounted media deltas."
+    },
+    {
+      "category": "Guest fit and privacy",
+      "status": "BLOCKED_GUEST_ENVELOPE",
+      "detail": "Actual canonical guest sprite dimensions must be supplied and tested. No private interior authored."
+    },
+    {
+      "category": "Git LFS and runtime",
+      "status": "BLOCKED_EXTERNAL_TRANSFER",
+      "detail": "Real asset payload external verified archive; branch docs/catalog. No clean LFS checkout, actual house integration or owner approval."
+    }
+  ]
+}
