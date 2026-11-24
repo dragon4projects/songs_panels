@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "task_id": "TEEA_INT_20261124_008",
+  "base_repo": "dragon4projects/songs_panels",
+  "base_sha": "9c45da4f59dd40fb03f07ae0842000bb448efa93",
+  "newer_integration_sha": "ce429f0b9c907526ec31e50a8af6b3c3f30997df",
+  "owner_approved": false,
+  "units": "m",
+  "axis": "X-right,Y-up,Z-front",
+  "phase": 2,
+  "previous_asset_commit": "3e534fc84003878c80628519a3e7389ad922a56b",
+  "status": "PARTIAL_READY",
+  "previous_models": 45,
+  "items": [
+    {
+      "category": "Architecture",
+      "status": "PARTIAL_READY",
+      "evidence": "41 separate structural meshes, 3 sizes, exact physical floor and rear skin variants, connector, lift and closed frontage. No new topology or collision.",
+      "remaining": "Integrate as replacement not overlay; room/connector cutaway visibility, side returns, current floor pitch and lift platform attachment need live-runtime verification."
+    },
+    {
+      "category": "Materials",
+      "status": "PRESENT_VERIFIED",
+      "evidence": "6 additional verified 1K PBR sets plus 4 from phase1; UV metre scale for new sets.",
+      "remaining": "Tune color and emission in actual house; visually check seam/texture filtering and memory."
+    },
+    {
+      "category": "Furniture and ordinary props",
+      "status": "PARTIAL_READY",
+      "evidence": "35 previously harvested source models reused; remaining old harvest not normalized. 18 geometry reductions verified.",
+      "remaining": "Remaining 107 of 158 Poly Haven sources not normalized as individual runtime assets; explicit reserve/source inventory remains. Some grouped props fixed-only; additional optimization/texture budgets and single-object variants pending."
+    },
+    {
+      "category": "Small artifacts",
+      "status": "PARTIAL_READY",
+      "evidence": "15 prior candidates + generic empty container and open stash crate; no theft permission.",
+      "remaining": "Actual animal grip, mass, species clearance, placement/access policy; no historical ID replacement."
+    },
+    {
+      "category": "Media",
+      "status": "PARTIAL_READY",
+      "evidence": "5 existing neutral holders reused, exact media mesh surfaces, 32 hook IDs retained. TV/console/gamepad fit R2/R3 table.",
+      "remaining": "Rebind old anchors to final physical shelf/cabinet, screen choice mutually exclusive. Actual screen brightness/content aperture needs review. TV, laptop geometry present; their exact content apertures and runtime interaction remain unverified."
+    },
+    {
+      "category": "Layout",
+      "status": "PARTIAL_READY",
+      "evidence": "30 prior room variants updated by 94 placements and 29 support slots; zero omitted after measured fitting.",
+      "remaining": "No blanket final path PASS: new floor game table has direct candidate access check only; actual actor and whole-world routing required. Common remains sparse and lacks integrated accepted hearth. Existing approved art/baked furniture conflict unresolved."
+    },
+    {
+      "category": "Guest/private",
+      "status": "BLOCKED_GUEST_ENVELOPE",
+      "evidence": "Generic frontage only, no private interior.",
+      "remaining": "Actual canonical guest alpha/sprite measurements and guest-specific layouts; Miu remains guest."
+    },
+    {
+      "category": "Visual QA",
+      "status": "PARTIAL_READY",
+      "evidence": "35 actual Godot renderer frames, 7 variants x 5 effective yaw angles.",
+      "remaining": "Not production runtime. Common appears sparse; cinema screen too bright; visual sample omits existing accepted layers/actor sprites and full side cutaway dressing. Owner acceptance pending."
+    },
+    {
+      "category": "Git delivery",
+      "status": "BLOCKED_LFS_TRANSFER",
+      "evidence": "Actual binaries in separate immutable delta archive; catalog/docs in same asset branch.",
+      "remaining": "Materialize phase1 and phase2 in staging, verify SHA then commit with existing LFS; no LFS pointer-only files."
+    }
+  ]
+}
