@@ -56,14 +56,14 @@ func run() -> void:
 	# Direct WorldModel calls may no longer bypass ambient policy.
 	assert(world.register_physical_object(
 		"NO_AMBIENT","Not ambient","RES_01",room["id"],
-		true,true,false,true,false))
+		true,true,false,true,false,{"object_class":"small_artifact"}))
 	var rev_no_ambient: int = world.object_event_revision()
 	assert(not world.pickup_physical_object("NO_AMBIENT","MANJKA"))
 	assert(world.object_event_revision()==rev_no_ambient)
 
 	assert(world.register_physical_object(
 		"PROTECTED","Protected","RES_01",room["id"],
-		true,true,true,true,true))
+		true,true,true,true,true,{"object_class":"small_artifact"}))
 	var rev_protected: int = world.object_event_revision()
 	assert(not world.pickup_physical_object("PROTECTED","MANJKA"))
 	assert(world.object_event_revision()==rev_protected)
@@ -72,7 +72,7 @@ func run() -> void:
 		"NO_PICK","No pick",room["id"],"", "",false,false,false))
 	assert(world.register_physical_object(
 		"CREATURE_DENIED","Creature denied","",room["id"],
-		true,true,true,true,false))
+		true,true,true,true,false,{"object_class":"small_artifact"}))
 	var rev_creature: int = world.object_event_revision()
 	assert(not world.pickup_physical_object("CREATURE_DENIED","NO_PICK"))
 	assert(world.object_event_revision()==rev_creature)
@@ -81,7 +81,7 @@ func run() -> void:
 		"PICK_NO_HIDE","Pick no hide",room["id"],"", "",true,false,false))
 	assert(world.register_physical_object(
 		"HIDE_BY_CREATURE","Hide candidate","",room["id"],
-		true,true,true,true,false))
+		true,true,true,true,false,{"object_class":"small_artifact"}))
 	assert(world.pickup_physical_object("HIDE_BY_CREATURE","PICK_NO_HIDE"))
 	var hide_obj: Dictionary = world.physical_object("HIDE_BY_CREATURE")
 	var rev_hide_denied: int = world.object_event_revision()
@@ -96,7 +96,7 @@ func run() -> void:
 		"PICK_HIDE","Pick hide",room["id"],"", "",true,true,false))
 	assert(world.register_physical_object(
 		"HIDE_POLICY_DENIED","No hide policy","",room["id"],
-		true,true,true,false,false))
+		true,true,true,false,false,{"object_class":"small_artifact"}))
 	assert(world.pickup_physical_object("HIDE_POLICY_DENIED","PICK_HIDE"))
 	var rev_hide_policy: int = world.object_event_revision()
 	assert(not world.place_physical_object(

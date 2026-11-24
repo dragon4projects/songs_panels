@@ -52,19 +52,25 @@ func run() -> void:
 	assert(world.register_physical_object(
 		"LOOSE_MUG","Кружка","",common_a["id"],true,true,true,true,false))
 	assert(world.register_physical_object(
+		"SMALL_TRINKET","Мелкий артефакт","",common_a["id"],
+		true,true,true,true,false,{"object_class":"small_artifact"}))
+	assert(world.register_physical_object(
 		"PROTECTED_ARTIFACT","Защищённый артефакт","RES_01",common_a["id"],
-		true,true,true,true,true))
-	assert(world.can_ambient_pickup_object("LOOSE_MUG"))
+		true,true,true,true,true,{"object_class":"small_artifact"}))
+	assert(not world.can_ambient_pickup_object("LOOSE_MUG"),
+		"Display objects such as mugs are never carryable")
+	assert(world.can_ambient_pickup_object("SMALL_TRINKET"))
 	assert(not world.can_ambient_pickup_object("PROTECTED_ARTIFACT"))
 
 	var ambient := Ambient.new()
 	ambient.setup(world)
+	assert(not ambient.pickup_eligible_here("npc_rat_hero","LOOSE_MUG"))
 	assert(not ambient.pickup_eligible_here("npc_rat_hero","PROTECTED_ARTIFACT"))
-	assert(ambient.pickup_eligible_here("npc_rat_hero","LOOSE_MUG"))
-	var mug: Dictionary = world.physical_object("LOOSE_MUG")
-	assert(str(mug["current_holder_id"])=="npc_rat_hero")
-	assert(str(mug["current_room_id"])=="")
-	assert(str(mug["canonical_owner_id"])=="")
+	assert(ambient.pickup_eligible_here("npc_rat_hero","SMALL_TRINKET"))
+	var trinket: Dictionary = world.physical_object("SMALL_TRINKET")
+	assert(str(trinket["current_holder_id"])=="npc_rat_hero")
+	assert(str(trinket["current_room_id"])=="")
+	assert(str(trinket["canonical_owner_id"])=="")
 
 	# Closed/private rooms are not destinations even though their public frontage
 	# may participate in resident transit.
@@ -80,9 +86,9 @@ func run() -> void:
 	assert(str(world.creatures["npc_rat_hero"]["room_id"])==str(common_b["id"]))
 	assert(_has_event(world.journal_entries(64),"CREATURE_ROAMED"))
 	assert(ambient.stash_carried("npc_rat_hero"))
-	assert(str(mug["state"])=="STASHED")
-	assert(str(mug["current_room_id"])==str(common_b["id"]))
-	assert(str(mug["current_holder_id"])=="")
+	assert(str(trinket["state"])=="STASHED")
+	assert(str(trinket["current_room_id"])==str(common_b["id"]))
+	assert(str(trinket["current_holder_id"])=="")
 	assert(str(world.creatures["npc_rat_hero"]["carried_object_id"])=="")
 
 	var events: Array = world.journal_entries(64)
@@ -98,9 +104,10 @@ func run() -> void:
 	loaded.load_or_seed()
 	assert(loaded.creatures.has("npc_rat_hero"))
 	assert(str(loaded.creatures["npc_rat_hero"]["room_id"])==str(common_b["id"]))
-	assert(str(loaded.physical_object("LOOSE_MUG")["state"])=="STASHED")
+	assert(str(loaded.physical_object("LOOSE_MUG")["state"])=="PLACED")
+	assert(str(loaded.physical_object("SMALL_TRINKET")["state"])=="STASHED")
 	assert(_has_event(loaded.journal_entries(64),"OBJECT_STASHED"))
 
 	_cleanup(path)
-	print("AMBIENT_CREATURES_V018_PASS public_roam=yes private_bypass=no rejected_logged=yes waypoint_travel=yes owner_label=evidence_only opt_in_pickup=yes protected=no stash=persistent journal=causal guest=registered")
+	print("AMBIENT_CREATURES_V018_PASS public_roam=yes private_bypass=no rejected_logged=yes waypoint_travel=yes owner_label=evidence_only small_artifact_only=yes mug_not_carryable=yes protected=no stash=persistent journal=causal guest=registered")
 	quit(0)

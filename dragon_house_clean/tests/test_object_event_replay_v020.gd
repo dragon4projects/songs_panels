@@ -35,7 +35,7 @@ func run() -> void:
 	var stash: Dictionary = world.get_room(-2,0)
 	assert(world.register_physical_object(
 		"CRASH_GAP_OBJECT","Crash gap object","RES_01",home["id"],
-		true,true,true,true,false))
+		true,true,true,true,false,{"object_class":"small_artifact"}))
 	var manjka: Dictionary = world.residents["MANJKA"]
 	manjka["room_id"] = home["id"]
 	manjka["x"] = float(home["x"])*World.MODULE_W

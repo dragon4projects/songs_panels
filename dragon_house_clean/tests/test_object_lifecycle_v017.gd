@@ -29,7 +29,7 @@ func run()->void:
 
 	assert(world.register_physical_object(
 		"QA_ARTIFACT_001","QA single persistent artifact","RES_01",home["id"],
-		true,true,true,true))
+		true,true,true,true,false,{"object_class":"small_artifact","home_anchor":[0.25,-0.80]}))
 	assert(not world.register_physical_object(
 		"QA_ARTIFACT_001","duplicate","RES_02",home["id"]))
 

@@ -32,8 +32,8 @@ func _assert_projection_equivalent(a: Dictionary, b: Dictionary) -> void:
 		var left: Dictionary = a[id]
 		var right: Dictionary = b[id]
 		for field in [
-			"id","display_name","canonical_owner_id","home_room_id",
-			"current_holder_id","current_room_id","state","movable","recoverable",
+			"id","display_name","canonical_owner_id","object_class","home_room_id","home_anchor",
+			"current_holder_id","current_room_id","current_anchor","state","movable","recoverable",
 			"ambient_pickup_allowed","ambient_hide_allowed","ambient_protected",
 			"last_explicit_location","movement_reason","movement_authority",
 			"updated_event_id"
@@ -56,7 +56,8 @@ func run() -> void:
 	assert(world.register_physical_object(
 		"SQLITE_OBJECT","SQLite proof object","RES_01",home["id"],
 		true,true,true,true,false,
-		{"description":"v0.21 sqlite proof","asset_id":"QA_SQLITE"}))
+		{"description":"v0.21 sqlite proof","asset_id":"QA_SQLITE",
+		 "object_class":"small_artifact"}))
 	assert(str(world.runtime_state.get("object_event_backend",""))=="sqlite_v021_proof")
 	assert(FileAccess.file_exists(path+".world_events_v1.sqlite"))
 	assert(not FileAccess.file_exists(path+".world_events_v1.json"))

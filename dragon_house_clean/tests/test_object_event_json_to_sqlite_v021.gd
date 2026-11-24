@@ -37,7 +37,7 @@ func run() -> void:
 	var stash: Dictionary = legacy.get_room(-2,0)
 	assert(legacy.register_physical_object(
 		"MIGRATE_OBJECT","Migration object","RES_01",home["id"],
-		true,true,true,true,false))
+		true,true,true,true,false,{"object_class":"small_artifact"}))
 	var manjka: Dictionary = legacy.residents["MANJKA"]
 	manjka["room_id"] = home["id"]
 	manjka["x"] = float(home["x"])*World.MODULE_W
