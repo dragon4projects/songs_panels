@@ -1,0 +1,79 @@
+name: Dragon House Iteration 2 object home contract
+
+on:
+  push:
+    branches: [integration/dragon-house-iter2-object-home]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  object-contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+        with:
+          lfs: false
+          fetch-depth: 1
+
+      - name: Fetch only SQLite LFS binaries
+        shell: bash
+        run: |
+          set -euo pipefail
+          git lfs install --local
+          git lfs pull --include="dragon_house_clean/addons/godot-sqlite/**"
+
+      - name: Godot 4.7.2
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fLsS --retry 3 -o /tmp/godot.zip             https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_linux.x86_64.zip
+          unzip -q /tmp/godot.zip -d /tmp
+          chmod +x /tmp/Godot_v4.7.2-stable_linux.x86_64
+          /tmp/Godot_v4.7.2-stable_linux.x86_64 --headless --version
+
+      - name: Parse object runtime
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd dragon_house_clean
+          timeout 300s /tmp/Godot_v4.7.2-stable_linux.x86_64             --headless --path . --editor --quit > object_home_import.log 2>&1 || {
+              tail -200 object_home_import.log
+              exit 1
+            }
+          if grep -Eq "SCRIPT ERROR|Parse Error" object_home_import.log; then
+            tail -200 object_home_import.log
+            exit 1
+          fi
+
+      - name: Object event and daily-home regressions
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd dragon_house_clean
+          : > object_home_tests.log
+          for t in             tests/test_object_lifecycle_v017.gd             tests/test_object_event_gate_v020.gd             tests/test_object_event_replay_v020.gd             tests/test_object_event_migration_v020.gd             tests/test_object_event_default_sqlite_v021.gd             tests/test_object_event_json_to_sqlite_v021.gd             tests/test_object_event_projection_rebuild_v021.gd             tests/test_object_event_snapshot_to_sqlite_v021.gd             tests/test_object_event_sqlite_backup_warning_v021.gd             tests/test_object_event_sqlite_canonical_loss_v021.gd             tests/test_object_event_sqlite_recovery_v021.gd             tests/test_object_event_sqlite_v021.gd             tests/test_ambient_creatures_v018.gd             tests/test_object_home_v022.gd
+          do
+            echo "RUN $t" | tee -a object_home_tests.log
+            result="$(timeout 100s /tmp/Godot_v4.7.2-stable_linux.x86_64               --headless --path . --script "res://$t" 2>&1)" || {
+                echo "$result" | tee -a object_home_tests.log
+                exit 1
+              }
+            echo "$result" | tee -a object_home_tests.log
+            echo "$result" | grep -q "_PASS"
+            ! echo "$result" | grep -qE "SCRIPT ERROR|Parse Error|Assertion failed"
+          done
+
+      - name: Upload object QA
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: DragonHouse-Iter2-ObjectHome-QA
+          path: |
+            dragon_house_clean/object_home_import.log
+            dragon_house_clean/object_home_tests.log
+          if-no-files-found: ignore
+          retention-days: 7
