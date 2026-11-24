@@ -8,5 +8,11 @@
   "diameter_m": 0.098,
   "dimensions_estimated": true,
   "pattern": "four continuous projected capsule lines + four rings, no base stripe",
-  "validation": "GLB structural construction and index bounds; rendered appearance and Godot import pending"
+  "validation": "Both GLBs retrieved back from GitHub: header, chunk lengths, buffer ranges PASS. Node generator recreates both byte-for-byte (SHA-256 PASS). Four-view orthographic software raster preview inspected: colored interiors, both wrap sides and handles visible. Godot runtime import/interaction not yet tested.",
+  "sha256": {
+    "red": "d651a3c318c915c2f2b8427e819cc457fa7acdb2e99fdab7273b791dbbd57945",
+    "blue": "9e7602fb0316ef60d98534bcd0529458ec8c52a49a872e4007825d56e27a8198"
+  },
+  "file_bytes_each": 124248,
+  "preview": "preview.jpg — neutral software-rendered visual check, not photorealistic material render."
 }
