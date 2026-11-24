@@ -699,6 +699,9 @@ func _process_due_actor(id: String, wake_reason: String) -> void:
 func tick(delta: float) -> void:
 	clock += delta
 	world.sim_clock = clock
+	var home_restored:int=world.tick_object_home_reset()
+	if home_restored>0:
+		_record("Дом вернул вещи на назначенные места: %d" % home_restored)
 	creature_runtime.tick(delta)
 	# Movement stays frame-driven, but only actors actually travelling are touched.
 	for raw_id in moving_ids.keys().duplicate():
