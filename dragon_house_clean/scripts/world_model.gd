@@ -8,6 +8,7 @@ var save_path: String = SAVE_PATH
 var sim_clock: float = 0.0
 const MODULE_W := RoomSpaceV2.MODULE_W
 const FLOOR_H := RoomSpaceV2.FLOOR_H
+const GAME_DAY_SECONDS := 86400.0
 const ROOM_TYPES := ["arrival", "corridor", "common", "study", "rest", "library", "cinema", "music", "workshop", "private", "guest", "lift", "artifact"]
 const MERGEABLE_TYPES := ["common", "study", "rest", "library", "cinema", "music", "workshop", "artifact"]
 const MAX_MERGE := 3
@@ -358,7 +359,8 @@ func can_ambient_pickup_object(object_id: String) -> bool:
 	var object: Dictionary = physical_object(object_id)
 	if object.is_empty():
 		return false
-	return (bool(object.get("movable",false))
+	return (str(object.get("object_class","display_object"))=="small_artifact"
+		and bool(object.get("movable",false))
 		and bool(object.get("ambient_pickup_allowed",false))
 		and not bool(object.get("ambient_protected",false))
 		and str(object.get("current_holder_id","")) == ""
@@ -375,10 +377,11 @@ func pickup_physical_object(object_id: String, actor_id: String) -> bool:
 	return object_events.pickup(object_id,actor_id)
 
 func place_physical_object(object_id: String, actor_id: String,
-		target_room_id: String, state: String = "PLACED") -> bool:
+		target_room_id: String, state: String = "PLACED",
+		target_anchor: Variant = null) -> bool:
 	if not _ensure_object_events():
 		return false
-	return object_events.place(object_id,actor_id,target_room_id,state)
+	return object_events.place(object_id,actor_id,target_room_id,state,target_anchor)
 
 func recover_physical_object_to_lost_found(object_id: String,
 		lost_found_room_id: String) -> bool:
@@ -386,10 +389,91 @@ func recover_physical_object_to_lost_found(object_id: String,
 		return false
 	return object_events.recover_to_lost_found(object_id,lost_found_room_id)
 
-func restore_physical_object_home(object_id: String) -> bool:
+func restore_physical_object_home(object_id: String, reset_day: int = -1) -> bool:
 	if not _ensure_object_events():
 		return false
-	return object_events.restore_home(object_id)
+	return object_events.restore_home(object_id,reset_day)
+
+func assign_physical_object_home(object_id: String, target_room_id: String,
+		home_anchor: Vector2, move_now: bool = true) -> bool:
+	if not _ensure_object_events():
+		return false
+	return object_events.assign_home(
+		object_id,target_room_id,home_anchor,move_now,"LOCAL_DRAGON")
+
+func game_day_index() -> int:
+	return maxi(0,int(floor(sim_clock/GAME_DAY_SECONDS)))
+
+func _anchors_equal(a, b) -> bool:
+	if typeof(a)!=TYPE_ARRAY or typeof(b)!=TYPE_ARRAY:
+		return false
+	var aa:Array=a
+	var bb:Array=b
+	if aa.size()!=2 or bb.size()!=2:
+		return false
+	return absf(float(aa[0])-float(bb[0]))<0.001 and (
+		absf(float(aa[1])-float(bb[1]))<0.001)
+
+func object_is_displaced(object: Dictionary) -> bool:
+	if object.is_empty() or not bool(object.get("reset_eligible",true)):
+		return false
+	var home_room:String=str(object.get("home_room_id",""))
+	if home_room=="" or room_by_id(home_room).is_empty():
+		return false
+	if str(object.get("current_holder_id",""))!="":
+		return true
+	if str(object.get("current_room_id",""))!=home_room:
+		return true
+	if str(object.get("state","PLACED"))!="PLACED":
+		return true
+	return not _anchors_equal(
+		object.get("current_anchor",[]),object.get("home_anchor",[]))
+
+func _clear_carrier_reference(object_id: String, previous_holder: String) -> void:
+	if previous_holder=="":
+		return
+	if creatures.has(previous_holder):
+		var creature:Dictionary=creatures[previous_holder]
+		if str(creature.get("carried_object_id",""))==object_id:
+			creature["carried_object_id"]=""
+	if residents.has(previous_holder):
+		var actor:Dictionary=residents[previous_holder]
+		if str(actor.get("carried_object_id",""))==object_id:
+			actor["carried_object_id"]=""
+
+func tick_object_home_reset() -> int:
+	var day:int=game_day_index()
+	if not runtime_state.has("object_home_reset_day"):
+		runtime_state["object_home_reset_day"]=day
+		runtime_state["object_game_day_seconds"]=GAME_DAY_SECONDS
+		return 0
+	var previous_day:int=int(runtime_state.get("object_home_reset_day",day))
+	if day<=previous_day:
+		return 0
+	var restored:=0
+	var failed:=0
+	var ids:Array=objects.keys()
+	ids.sort()
+	for raw_id in ids:
+		var object_id:String=str(raw_id)
+		var object:Dictionary=objects[object_id]
+		if not object_is_displaced(object):
+			continue
+		var previous_holder:String=str(object.get("current_holder_id",""))
+		if restore_physical_object_home(object_id,day):
+			_clear_carrier_reference(object_id,previous_holder)
+			restored+=1
+		else:
+			failed+=1
+	runtime_state["object_home_reset_day"]=day
+	runtime_state["object_home_reset_last_count"]=restored
+	runtime_state["object_home_reset_last_failed"]=failed
+	runtime_state["object_home_reset_last_clock"]=sim_clock
+	runtime_state["object_game_day_seconds"]=GAME_DAY_SECONDS
+	if restored>0 or failed>0:
+		_append_journal("OBJECT_HOME_DAILY_SWEEP","HOUSE_SPIRIT","",
+			str(previous_day),str(day),{"restored":restored,"failed":failed})
+	return restored
 
 func register_creature(creature_id: String, display_name: String,
 		room_id: String, bank_id: String = "", owner_id: String = "",
