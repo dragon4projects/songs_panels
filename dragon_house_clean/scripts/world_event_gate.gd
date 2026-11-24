@@ -20,7 +20,8 @@ const REVERSIBILITY := [
 	"HISTORICAL_RECORD_ONLY","OWNER_CONTROLLED"
 ]
 const OBJECT_EVENTS := [
-	"OBJECT_REGISTERED","OBJECT_MOVED","OBJECT_POLICY_SET","OBJECT_OWNER_CHANGED"
+	"OBJECT_REGISTERED","OBJECT_MOVED","OBJECT_POLICY_SET","OBJECT_OWNER_CHANGED",
+	"OBJECT_HOME_ASSIGNED"
 ]
 const MOVEMENT_KINDS := [
 	"PICKED_UP","PLACED","STASHED","RECOVERED_TO_LOST_FOUND","RESTORED_HOME"
@@ -50,6 +51,19 @@ func _valid_location_invariant(holder: String, location: String, state: String) 
 	if state in ["PLACED","STASHED","LOST_FOUND"]:
 		return holder == "" and location != ""
 	return false
+
+func _valid_anchor(world, room_id: String, raw) -> bool:
+	if typeof(raw) != TYPE_ARRAY:
+		return false
+	var anchor:Array=raw
+	if anchor.size()!=2 or typeof(anchor[0]) not in [TYPE_INT,TYPE_FLOAT] or (
+			typeof(anchor[1]) not in [TYPE_INT,TYPE_FLOAT]):
+		return false
+	var room:Dictionary=world.room_by_id(room_id)
+	if room.is_empty():
+		return false
+	return world.room_contains_local(
+		room,Vector2(float(anchor[0]),float(anchor[1])),0.08)
 
 func _validate_source_authority(event: Dictionary) -> bool:
 	var source_type: String = str(event.get("source_type",""))
@@ -139,11 +153,19 @@ func validate(world, projection: Dictionary, event: Dictionary) -> bool:
 			return reject("registered object requires display_name")
 		if world.room_by_id(home_room_id).is_empty():
 			return reject("registered object requires existing home room")
+		if not _valid_anchor(world,home_room_id,payload.get("home_anchor",[])):
+			return reject("registered object requires valid home anchor")
+		var object_class:String=str(payload.get("object_class","display_object"))
+		if object_class not in ["display_object","small_artifact"]:
+			return reject("registered object has invalid object_class")
 		var holder: String = str(payload.get("current_holder",""))
 		var location: String = str(payload.get("current_location",home_room_id))
 		var state: String = str(payload.get("state","PLACED"))
 		if not _valid_location_invariant(holder,location,state):
 			return reject("invalid initial holder/location invariant")
+		if location!="" and not _valid_anchor(
+				world,location,payload.get("current_anchor",payload.get("home_anchor",[]))):
+			return reject("registered object requires valid current anchor")
 		return true
 
 	var object_id: String = str(payload.get("object_id",""))
@@ -161,9 +183,26 @@ func validate(world, projection: Dictionary, event: Dictionary) -> bool:
 	if event_type == "OBJECT_POLICY_SET":
 		if truth == "AMBIENT_SIMULATION":
 			return reject("ambient simulation cannot change object policy")
-		for field in ["ambient_pickup_allowed","ambient_hide_allowed","ambient_protected"]:
+		for field in ["ambient_pickup_allowed","ambient_hide_allowed","ambient_protected","reset_eligible"]:
 			if payload.has(field) and typeof(payload[field]) != TYPE_BOOL:
 				return reject("object policy field must be boolean: "+field)
+		return true
+
+	if event_type == "OBJECT_HOME_ASSIGNED":
+		if truth == "AMBIENT_SIMULATION":
+			return reject("ambient simulation cannot assign object home")
+		var previous_home:String=str(payload.get("previous_home_room_id",""))
+		if previous_home!=str(object.get("home_room_id","")):
+			return reject("object home changed before assignment commit")
+		var target_home:String=str(payload.get("home_room_id",""))
+		if world.room_by_id(target_home).is_empty():
+			return reject("assigned home room does not exist")
+		if not _valid_anchor(world,target_home,payload.get("home_anchor",[])):
+			return reject("assigned home anchor is outside room")
+		if typeof(payload.get("move_now",true))!=TYPE_BOOL:
+			return reject("home assignment move_now must be boolean")
+		if bool(payload.get("move_now",true)) and str(object.get("current_holder_id",""))!="":
+			return reject("cannot re-home object while held")
 		return true
 
 	# OBJECT_MOVED
@@ -192,6 +231,8 @@ func validate(world, projection: Dictionary, event: Dictionary) -> bool:
 			return reject("pickup actor is unavailable")
 		if not bool(object.get("movable",false)):
 			return reject("object is not movable")
+		if str(object.get("object_class","display_object"))!="small_artifact":
+			return reject("only small_artifact may be picked up/carried")
 		if previous_holder != "" or previous_location == "":
 			return reject("pickup requires placed object")
 		if previous_location != str(actor.get("room_id","")):
@@ -212,6 +253,8 @@ func validate(world, projection: Dictionary, event: Dictionary) -> bool:
 		return true
 
 	if movement_kind in ["PLACED","STASHED"]:
+		if str(object.get("object_class","display_object"))!="small_artifact":
+			return reject("only small_artifact may be carried/placed from a holder")
 		if actor_id == "":
 			return reject("placement requires actor")
 		var actor: Dictionary = _actor(world,actor_id)
@@ -224,6 +267,8 @@ func validate(world, projection: Dictionary, event: Dictionary) -> bool:
 			return reject("placement target is inaccessible")
 		if holder != "" or state != movement_kind:
 			return reject("placement projection is invalid")
+		if not _valid_anchor(world,location,payload.get("current_anchor",[])):
+			return reject("placement anchor is outside target room")
 		if ambient and bool(object.get("ambient_protected",false)):
 			return reject("ambient actor cannot place protected object")
 		if movement_kind == "STASHED" and ambient:
@@ -249,6 +294,8 @@ func validate(world, projection: Dictionary, event: Dictionary) -> bool:
 			return reject("lost/found target must be public")
 		if holder != "" or state != "LOST_FOUND":
 			return reject("lost/found projection is invalid")
+		if not _valid_anchor(world,location,payload.get("current_anchor",[])):
+			return reject("lost/found anchor is outside target room")
 		return true
 
 	if movement_kind == "RESTORED_HOME":
@@ -259,6 +306,11 @@ func validate(world, projection: Dictionary, event: Dictionary) -> bool:
 			return reject("restore target must be canonical home")
 		if holder != "" or state != "PLACED":
 			return reject("restore projection is invalid")
+		if not _valid_anchor(world,home_room_id,payload.get("current_anchor",[])):
+			return reject("restore anchor must be valid canonical home anchor")
+		var home_anchor:Array=object.get("home_anchor",[])
+		if payload.get("current_anchor",[]) != home_anchor:
+			return reject("restore anchor must equal canonical home anchor")
 		return true
 
 	return reject("unhandled object movement")
