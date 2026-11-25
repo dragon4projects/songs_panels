@@ -11,6 +11,8 @@ var sim_clock: float = 0.0
 const MODULE_W := RoomSpaceV2.MODULE_W
 const FLOOR_H := RoomSpaceV2.FLOOR_H
 const GAME_DAY_SECONDS := 86400.0
+const DRINK_VESSEL_IDLE_SECONDS := 86400.0
+var vessel_reset_scan_at:float=-1.0
 const ROOM_TYPES := ["arrival", "corridor", "common", "study", "rest", "library", "cinema", "music", "workshop", "private", "guest", "lift", "artifact", "kitchen"]
 const MERGEABLE_TYPES := ["common", "study", "rest", "library", "cinema", "music", "workshop", "artifact"]
 const MAX_MERGE := 3
@@ -485,14 +487,15 @@ func _clear_carrier_reference(object_id: String, previous_holder: String) -> voi
 			actor["carried_object_id"]=""
 
 func tick_object_home_reset() -> int:
+	var vessel_restored:int=tick_abandoned_vessel_reset() if canonical_house_seed else 0
 	var day:int=game_day_index()
 	if not runtime_state.has("object_home_reset_day"):
 		runtime_state["object_home_reset_day"]=day
 		runtime_state["object_game_day_seconds"]=GAME_DAY_SECONDS
-		return 0
+		return vessel_restored
 	var previous_day:int=int(runtime_state.get("object_home_reset_day",day))
 	if day<=previous_day:
-		return 0
+		return vessel_restored
 	var restored:=0
 	var failed:=0
 	var ids:Array=objects.keys()
@@ -500,6 +503,8 @@ func tick_object_home_reset() -> int:
 	for raw_id in ids:
 		var object_id:String=str(raw_id)
 		var object:Dictionary=objects[object_id]
+		if canonical_house_seed and is_drink_vessel(object):
+			continue # Rolling inactivity, never the midnight sweep.
 		if not object_is_displaced(object):
 			continue
 		var previous_holder:String=str(object.get("current_holder_id",""))
@@ -516,7 +521,7 @@ func tick_object_home_reset() -> int:
 	if restored>0 or failed>0:
 		_append_journal("OBJECT_HOME_DAILY_SWEEP","HOUSE_SPIRIT","",
 			str(previous_day),str(day),{"restored":restored,"failed":failed})
-	return restored
+	return restored+vessel_restored
 
 func register_creature(creature_id: String, display_name: String,
 		room_id: String, bank_id: String = "", owner_id: String = "",
@@ -936,3 +941,60 @@ func import_catalog(path: String) -> bool:
 		return true
 	media=previous
 	return false
+
+# All portable drinkware retains the existing cups viewer category, so old
+# mug identities and pickup rules survive. Bar display sets are not vessels.
+func is_drink_vessel(object:Dictionary)->bool:
+	return str(object.get("viewer_category",""))=="cups"
+
+func _vessel_last_activity(object:Dictionary)->float:
+	var last:float=-1.0
+	for entry in object.get("history",[]):
+		if str(entry.get("event","")) in ["REGISTERED","PICKED_UP","PLACED","STASHED","RESTORED_HOME","HOME_ASSIGNED","RECOVERED_TO_LOST_FOUND"]:
+			last=maxf(last,float(entry.get("sim_clock",0.0)))
+	var observed:Dictionary=runtime_state.get("drink_vessel_last_use",{})
+	last=maxf(last,float(observed.get(str(object.get("id","")),-1.0)))
+	# A migrated object with no valid activity timestamp is not immediately
+	# treated as ancient; its observed clock starts in this save.
+	if last<0.0:
+		observed[str(object["id"])]=sim_clock
+		runtime_state["drink_vessel_last_use"]=observed
+		return sim_clock
+	return minf(last,sim_clock)
+
+# Hook for successful sip/use events. Ownership and position are untouched.
+# Current pickup/place events already supply replayable activity timestamps.
+func note_drink_vessel_use(object_id:String,actor_id:String)->bool:
+	var object:Dictionary=physical_object(object_id)
+	if not is_drink_vessel(object) or str(object.get("current_holder_id",""))!=actor_id or actor_id=="":return false
+	var actor:Dictionary=_physical_actor(actor_id)
+	if actor.is_empty() or not bool(actor.get("active",false)):return false
+	var observed:Dictionary=runtime_state.get("drink_vessel_last_use",{})
+	observed[object_id]=sim_clock
+	runtime_state["drink_vessel_last_use"]=observed
+	return true
+
+func tick_abandoned_vessel_reset()->int:
+	# One scan per simulated second, not one per frame. No wall clock or
+	# midnight reset; an unattended placement gets its own full day.
+	if vessel_reset_scan_at>=0.0 and sim_clock>=vessel_reset_scan_at and sim_clock-vessel_reset_scan_at<1.0:return 0
+	vessel_reset_scan_at=sim_clock
+	var reserved:Dictionary={}
+	for actor in residents.values():
+		if bool(actor.get("active",false)) and bool(actor.get("autonomy_enabled",true)) and str(actor.get("phase","")) in ["travel","perform"] and str(actor.get("cup_task_stage",""))=="fetch":
+			reserved[str(actor.get("cup_task_id",""))]=true
+	var count:=0
+	var ids:Array=objects.keys()
+	ids.sort()
+	for raw_id in ids:
+		var id:String=str(raw_id)
+		var object:Dictionary=objects[id]
+		if not is_drink_vessel(object) or not object_is_displaced(object):continue
+		if str(object.get("current_holder_id",""))!="":continue
+		if reserved.has(id):continue
+		var last:float=_vessel_last_activity(object)
+		if sim_clock-last<DRINK_VESSEL_IDLE_SECONDS:continue
+		if restore_physical_object_home(id):
+			_append_journal("DRINK_VESSEL_IDLE_RETURN","HOUSE_SPIRIT",id,"",str(object.get("home_room_id","")),{"idle_seconds":sim_clock-last})
+			count+=1
+	return count

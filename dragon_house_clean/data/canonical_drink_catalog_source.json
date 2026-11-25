@@ -1,534 +1,639 @@
 {
   "source": "Owner project specification, sections 22–31, printed pp.149–153",
-  "status": "SOURCE_LIST_EXTRACTED_METADATA_AND_RUNTIME_PENDING",
-  "vessel": "CUP",
+  "status": "SOURCE_LIST_WITH_VESSEL_POLICY_RUNTIME_CONTENT_PENDING",
+  "vessel": "DRINK_VESSEL_BY_BEVERAGE",
   "cooking_simulation": false,
   "recipe_simulation": false,
   "entries": [
     {
       "drink_id": "WATER",
       "source_name": "WATER",
-      "family": "NONALCOHOLIC_TEA"
+      "family": "NONALCOHOLIC_TEA",
+      "preferred_vessel": "HIGHBALL"
     },
     {
       "drink_id": "JUICE",
       "source_name": "JUICE",
-      "family": "NONALCOHOLIC_TEA"
+      "family": "NONALCOHOLIC_TEA",
+      "preferred_vessel": "HIGHBALL"
     },
     {
       "drink_id": "COLA",
       "source_name": "COLA",
-      "family": "NONALCOHOLIC_TEA"
+      "family": "NONALCOHOLIC_TEA",
+      "preferred_vessel": "HIGHBALL"
     },
     {
       "drink_id": "SPRITE",
       "source_name": "SPRITE",
-      "family": "NONALCOHOLIC_TEA"
+      "family": "NONALCOHOLIC_TEA",
+      "preferred_vessel": "HIGHBALL"
     },
     {
       "drink_id": "FANTA",
       "source_name": "FANTA",
-      "family": "NONALCOHOLIC_TEA"
+      "family": "NONALCOHOLIC_TEA",
+      "preferred_vessel": "HIGHBALL"
     },
     {
       "drink_id": "BLACK_TEA",
       "source_name": "BLACK_TEA",
-      "family": "NONALCOHOLIC_TEA"
+      "family": "NONALCOHOLIC_TEA",
+      "preferred_vessel": "TEA_CUP"
     },
     {
       "drink_id": "GREEN_TEA",
       "source_name": "GREEN_TEA",
-      "family": "NONALCOHOLIC_TEA"
+      "family": "NONALCOHOLIC_TEA",
+      "preferred_vessel": "TEA_CUP"
     },
     {
       "drink_id": "RED_WINE",
       "source_name": "RED_WINE",
-      "family": "WINE"
+      "family": "WINE",
+      "preferred_vessel": "WINE_GLASS"
     },
     {
       "drink_id": "WHITE_WINE",
       "source_name": "WHITE_WINE",
-      "family": "WINE"
+      "family": "WINE",
+      "preferred_vessel": "WINE_GLASS"
     },
     {
       "drink_id": "ROSE_WINE",
       "source_name": "ROSE_WINE",
-      "family": "WINE"
+      "family": "WINE",
+      "preferred_vessel": "WINE_GLASS"
     },
     {
       "drink_id": "ESPRESSO",
       "source_name": "ESPRESSO",
-      "family": "COFFEE"
+      "family": "COFFEE",
+      "preferred_vessel": "ESPRESSO_CUP"
     },
     {
       "drink_id": "DOPPIO",
       "source_name": "DOPPIO",
-      "family": "COFFEE"
+      "family": "COFFEE",
+      "preferred_vessel": "ESPRESSO_CUP"
     },
     {
       "drink_id": "AMERICANO",
       "source_name": "AMERICANO",
-      "family": "COFFEE"
+      "family": "COFFEE",
+      "preferred_vessel": "MUG"
     },
     {
       "drink_id": "LONG_BLACK",
       "source_name": "LONG_BLACK",
-      "family": "COFFEE"
+      "family": "COFFEE",
+      "preferred_vessel": "MUG"
     },
     {
       "drink_id": "CAPPUCCINO",
       "source_name": "CAPPUCCINO",
-      "family": "COFFEE"
+      "family": "COFFEE",
+      "preferred_vessel": "MUG"
     },
     {
       "drink_id": "LATTE",
       "source_name": "LATTE",
-      "family": "COFFEE"
+      "family": "COFFEE",
+      "preferred_vessel": "MUG"
     },
     {
       "drink_id": "FLAT_WHITE",
       "source_name": "FLAT_WHITE",
-      "family": "COFFEE"
+      "family": "COFFEE",
+      "preferred_vessel": "MUG"
     },
     {
       "drink_id": "RAF",
       "source_name": "RAF",
-      "family": "COFFEE"
+      "family": "COFFEE",
+      "preferred_vessel": "MUG"
     },
     {
       "drink_id": "MOCHA",
       "source_name": "MOCHA",
-      "family": "COFFEE"
+      "family": "COFFEE",
+      "preferred_vessel": "MUG"
     },
     {
       "drink_id": "ESPRESSO_MACCHIATO",
       "source_name": "ESPRESSO_MACCHIATO",
-      "family": "COFFEE"
+      "family": "COFFEE",
+      "preferred_vessel": "ESPRESSO_CUP"
     },
     {
       "drink_id": "LATTE_MACCHIATO",
       "source_name": "LATTE_MACCHIATO",
-      "family": "COFFEE"
+      "family": "COFFEE",
+      "preferred_vessel": "MUG"
     },
     {
       "drink_id": "CORTADO",
       "source_name": "CORTADO",
-      "family": "COFFEE"
+      "family": "COFFEE",
+      "preferred_vessel": "MUG"
     },
     {
       "drink_id": "CAFE_AU_LAIT",
       "source_name": "CAFE_AU_LAIT",
-      "family": "COFFEE"
+      "family": "COFFEE",
+      "preferred_vessel": "MUG"
     },
     {
       "drink_id": "TURKISH_COFFEE",
       "source_name": "TURKISH_COFFEE",
-      "family": "COFFEE"
+      "family": "COFFEE",
+      "preferred_vessel": "ESPRESSO_CUP"
     },
     {
       "drink_id": "COLD_BREW",
       "source_name": "COLD_BREW",
-      "family": "COFFEE"
+      "family": "COFFEE",
+      "preferred_vessel": "HIGHBALL"
     },
     {
       "drink_id": "VODKA",
       "source_name": "VODKA",
-      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE"
+      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE",
+      "preferred_vessel": "SHOT_GLASS"
     },
     {
       "drink_id": "WHISKY",
       "source_name": "WHISKY",
-      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE"
+      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE",
+      "preferred_vessel": "ROCKS_GLASS"
     },
     {
       "drink_id": "BOURBON",
       "source_name": "BOURBON",
-      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE"
+      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE",
+      "preferred_vessel": "ROCKS_GLASS"
     },
     {
       "drink_id": "SCOTCH",
       "source_name": "SCOTCH",
-      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE"
+      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE",
+      "preferred_vessel": "ROCKS_GLASS"
     },
     {
       "drink_id": "RYE_WHISKEY",
       "source_name": "RYE_WHISKEY",
-      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE"
+      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE",
+      "preferred_vessel": "ROCKS_GLASS"
     },
     {
       "drink_id": "GIN",
       "source_name": "GIN",
-      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE"
+      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE",
+      "preferred_vessel": "ROCKS_GLASS"
     },
     {
       "drink_id": "RUM",
       "source_name": "RUM",
-      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE"
+      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE",
+      "preferred_vessel": "ROCKS_GLASS"
     },
     {
       "drink_id": "TEQUILA",
       "source_name": "TEQUILA",
-      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE"
+      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE",
+      "preferred_vessel": "SHOT_GLASS"
     },
     {
       "drink_id": "COGNAC",
       "source_name": "COGNAC",
-      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE"
+      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE",
+      "preferred_vessel": "SNIFTER"
     },
     {
       "drink_id": "BRANDY",
       "source_name": "BRANDY",
-      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE"
+      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE",
+      "preferred_vessel": "SNIFTER"
     },
     {
       "drink_id": "CALVADOS",
       "source_name": "CALVADOS",
-      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE"
+      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE",
+      "preferred_vessel": "SNIFTER"
     },
     {
       "drink_id": "ARMAGNAC",
       "source_name": "ARMAGNAC",
-      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE"
+      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE",
+      "preferred_vessel": "SNIFTER"
     },
     {
       "drink_id": "GRAPPA",
       "source_name": "GRAPPA",
-      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE"
+      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE",
+      "preferred_vessel": "SHOT_GLASS"
     },
     {
       "drink_id": "ABSINTHE",
       "source_name": "ABSINTHE",
-      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE"
+      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE",
+      "preferred_vessel": "SHOT_GLASS"
     },
     {
       "drink_id": "SAMBUCA",
       "source_name": "SAMBUCA",
-      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE"
+      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE",
+      "preferred_vessel": "SHOT_GLASS"
     },
     {
       "drink_id": "MOONSHINE",
       "source_name": "MOONSHINE",
-      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE"
+      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE",
+      "preferred_vessel": "SHOT_GLASS"
     },
     {
       "drink_id": "AMARO",
       "source_name": "AMARO",
-      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE"
+      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE",
+      "preferred_vessel": "ROCKS_GLASS"
     },
     {
       "drink_id": "VERMOUTH_MARTINI",
       "source_name": "VERMOUTH_MARTINI",
-      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE"
+      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE",
+      "preferred_vessel": "WINE_GLASS"
     },
     {
       "drink_id": "CHAMPAGNE",
       "source_name": "CHAMPAGNE",
-      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE"
+      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE",
+      "preferred_vessel": "FLUTE"
     },
     {
       "drink_id": "PORT",
       "source_name": "PORT",
-      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE"
+      "family": "ALCOHOL_STRAIGHT_OR_SIMPLE",
+      "preferred_vessel": "WINE_GLASS"
     },
     {
       "drink_id": "COCKTAIL_ALEXANDER",
       "source_name": "Alexander",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_AMERICANO",
       "source_name": "Americano",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_AVIATION",
       "source_name": "Aviation",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_BEE_S_KNEES",
       "source_name": "Bee's Knees",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_BELLINI",
       "source_name": "Bellini",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "FLUTE"
     },
     {
       "drink_id": "COCKTAIL_BLACK_RUSSIAN",
       "source_name": "Black Russian",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "ROCKS_GLASS"
     },
     {
       "drink_id": "COCKTAIL_BLOODY_MARY",
       "source_name": "Bloody Mary",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_BOULEVARDIER",
       "source_name": "Boulevardier",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_BRAMBLE",
       "source_name": "Bramble",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_CAIPIRINHA",
       "source_name": "Caipirinha",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_CHAMPAGNE_COCKTAIL",
       "source_name": "Champagne Cocktail",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "FLUTE"
     },
     {
       "drink_id": "COCKTAIL_CLOVER_CLUB",
       "source_name": "Clover Club",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_COSMOPOLITAN",
       "source_name": "Cosmopolitan",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "MARTINI_GLASS"
     },
     {
       "drink_id": "COCKTAIL_CUBA_LIBRE",
       "source_name": "Cuba Libre",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_DAIQUIRI",
       "source_name": "Daiquiri",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_DARK_N_STORMY",
       "source_name": "Dark 'N' Stormy",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_DRY_MARTINI",
       "source_name": "Dry Martini",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "MARTINI_GLASS"
     },
     {
       "drink_id": "COCKTAIL_ESPRESSO_MARTINI",
       "source_name": "Espresso Martini",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "MARTINI_GLASS"
     },
     {
       "drink_id": "COCKTAIL_FRENCH_75",
       "source_name": "French 75",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "FLUTE"
     },
     {
       "drink_id": "COCKTAIL_FRENCH_CONNECTION",
       "source_name": "French Connection",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_GARIBALDI",
       "source_name": "Garibaldi",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_GIN_BASIL_SMASH",
       "source_name": "Gin Basil Smash",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_GIN_FIZZ",
       "source_name": "Gin Fizz",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_GRASSHOPPER",
       "source_name": "Grasshopper",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_HEMINGWAY_SPECIAL",
       "source_name": "Hemingway Special",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_IRISH_COFFEE",
       "source_name": "Irish Coffee",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "MUG"
     },
     {
       "drink_id": "COCKTAIL_JUNGLE_BIRD",
       "source_name": "Jungle Bird",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_KIR",
       "source_name": "Kir",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_LAST_WORD",
       "source_name": "Last Word",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_LONG_ISLAND_ICED_TEA",
       "source_name": "Long Island Iced Tea",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_MAI_TAI",
       "source_name": "Mai Tai",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_MANHATTAN",
       "source_name": "Manhattan",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_MARGARITA",
       "source_name": "Margarita",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_MIMOSA",
       "source_name": "Mimosa",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "FLUTE"
     },
     {
       "drink_id": "COCKTAIL_MINT_JULEP",
       "source_name": "Mint Julep",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_MOJITO",
       "source_name": "Mojito",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_MOSCOW_MULE",
       "source_name": "Moscow Mule",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_NAKED_AND_FAMOUS",
       "source_name": "Naked and Famous",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_NEGRONI",
       "source_name": "Negroni",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "ROCKS_GLASS"
     },
     {
       "drink_id": "COCKTAIL_NEW_YORK_SOUR",
       "source_name": "New York Sour",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_OLD_CUBAN",
       "source_name": "Old Cuban",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_OLD_FASHIONED",
       "source_name": "Old Fashioned",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "ROCKS_GLASS"
     },
     {
       "drink_id": "COCKTAIL_PALOMA",
       "source_name": "Paloma",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_PAPER_PLANE",
       "source_name": "Paper Plane",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_PENICILLIN",
       "source_name": "Penicillin",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_PINA_COLADA",
       "source_name": "Piña Colada",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_PISCO_SOUR",
       "source_name": "Pisco Sour",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_PLANTER_S_PUNCH",
       "source_name": "Planter's Punch",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_PORN_STAR_MARTINI",
       "source_name": "Porn Star Martini",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "MARTINI_GLASS"
     },
     {
       "drink_id": "COCKTAIL_RAMOS_FIZZ",
       "source_name": "Ramos Fizz",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_RUSTY_NAIL",
       "source_name": "Rusty Nail",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "ROCKS_GLASS"
     },
     {
       "drink_id": "COCKTAIL_SAZERAC",
       "source_name": "Sazerac",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_SEA_BREEZE",
       "source_name": "Sea Breeze",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_SEX_ON_THE_BEACH",
       "source_name": "Sex on the Beach",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_SIDECAR",
       "source_name": "Sidecar",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_SINGAPORE_SLING",
       "source_name": "Singapore Sling",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_SPRITZ",
       "source_name": "Spritz",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_TEQUILA_SUNRISE",
       "source_name": "Tequila Sunrise",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "COCKTAIL_GLASS"
     },
     {
       "drink_id": "COCKTAIL_VESPER",
       "source_name": "Vesper",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "MARTINI_GLASS"
     },
     {
       "drink_id": "COCKTAIL_WHISKEY_SOUR",
       "source_name": "Whiskey Sour",
-      "family": "COCKTAIL"
+      "family": "COCKTAIL",
+      "preferred_vessel": "ROCKS_GLASS"
     }
   ],
   "decor_asset_groups": {
@@ -552,5 +657,15 @@
       "brass_goblets"
     ]
   },
-  "decor_is_not_drinking_vessel": true
+  "decor_is_not_drinking_vessel": true,
+  "vessel_policy": {
+    "default": "MUG",
+    "physical_identity": "persistent portable object; never replace or duplicate a held object",
+    "selection": "compatible available vessel; beverage preference weights unchanged",
+    "idle_return_seconds": 86400,
+    "clock": "simulation",
+    "held_exempt": true,
+    "cleanup": "abandoned placed vessel returns to assigned home; content clearing on return to be implemented with beverage content state",
+    "asset_binding_status": "only individual mug assets verified in current integration; bundled goblets/tea set decor only; independent glass models pending import and grip/support checks"
+  }
 }

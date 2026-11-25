@@ -1,0 +1,35 @@
+name: Canonical vessel inactivity QA
+on:
+  push:
+    branches: [integration/canonical-vessels-20261125]
+    paths:
+      - 'dragon_house_clean/scripts/**'
+      - 'dragon_house_clean/tests/**'
+      - '.github/workflows/canonical-vessel-idle.yml'
+permissions:
+  contents: read
+jobs:
+  vessel-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+          fetch-depth: 1
+          persist-credentials: false
+      - name: Install Godot 4.7.2
+        run: |
+          curl -fLsS --retry 3 -o /tmp/godot.zip https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_linux.x86_64.zip
+          unzip -q /tmp/godot.zip -d /tmp
+          chmod +x /tmp/Godot_v4.7.2-stable_linux.x86_64
+      - name: Focused object lifecycle tests
+        working-directory: dragon_house_clean
+        run: |
+          set -euo pipefail
+          godot=/tmp/Godot_v4.7.2-stable_linux.x86_64
+          for t in test_canonical_vessel_idle test_object_home_v022; do
+            XDG_DATA_HOME="$RUNNER_TEMP/$t" timeout 90 "$godot" --headless --path . --script "res://tests/$t.gd" 2>&1 | tee "$t.log"
+            grep -q '_PASS' "$t.log"
+            ! grep -Eq 'SCRIPT ERROR|Parse Error|Assertion failed' "$t.log"
+          done
