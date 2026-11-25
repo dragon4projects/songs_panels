@@ -1,0 +1,3 @@
+https://www.blendkit.com/asset-gallery-detail/770f7d0a-5b68-4806-9fea-b796949c0e46/
+CC0
+Blender node group; no Godot shader conversion.

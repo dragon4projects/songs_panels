@@ -1,0 +1,80 @@
+{
+  "items": [
+    {
+      "path": "assets/decor_bank/blendkit_industrial_pipe_lamp/SOURCE.txt",
+      "bytes": 865,
+      "sha256": "fe836e606327eaf7c7ff0bf83ee28e87357811e275361c7311a2a14e0a841a11"
+    },
+    {
+      "path": "assets/decor_bank/blendkit_industrial_pipe_lamp/deps/model.bin",
+      "bytes": 237836,
+      "sha256": "cc28da33852b2459cb2bd8852d3bd1e6ba7b842cb857c45c7652cdb9d2d74aa8"
+    },
+    {
+      "path": "assets/decor_bank/blendkit_industrial_pipe_lamp/deps/tex_00.jpg",
+      "bytes": 6091,
+      "sha256": "49be5560c61ba4bbd6384aa20a70dd4d234d774ad0c675a9c007f55bc3578c9c"
+    },
+    {
+      "path": "assets/decor_bank/blendkit_industrial_pipe_lamp/deps/tex_01.png",
+      "bytes": 309290,
+      "sha256": "87d3ac72cc1be640ccfc8784bf7aebeb327f7da8077fcb1625658b8ef3e1a6e5"
+    },
+    {
+      "path": "assets/decor_bank/blendkit_industrial_pipe_lamp/deps/tex_02.jpg",
+      "bytes": 61100,
+      "sha256": "88d1d1e5db21b9177e6a41161fc337fc731b4717ec20251d1700fd5119d40e3f"
+    },
+    {
+      "path": "assets/decor_bank/blendkit_industrial_pipe_lamp/deps/tex_03.png",
+      "bytes": 363053,
+      "sha256": "000db62c1d47b6753b672cca8a4ed1879e61d11949c15a9f99b061ba50abca10"
+    },
+    {
+      "path": "assets/decor_bank/blendkit_industrial_pipe_lamp/model.gltf",
+      "bytes": 5650,
+      "sha256": "73cd12b377381fea4fc3b9402f6822c5fe76f26f119fbdda19fae6fc8d79db79"
+    },
+    {
+      "path": "assets/decor_bank/owner_sleeping_dragon/SOURCE.txt",
+      "bytes": 247,
+      "sha256": "ed15eaad44245e3a272ef94e16e9a619329d672f4a74567f5de46aa1696f4b42"
+    },
+    {
+      "path": "assets/decor_bank/owner_sleeping_dragon/deps/model.bin",
+      "bytes": 354602,
+      "sha256": "6b6968b78b2eb98dedc3c549d4cbc4e1e3a23a1e65b85b31922f2d75fc32759d"
+    },
+    {
+      "path": "assets/decor_bank/owner_sleeping_dragon/deps/tex_00.jpg",
+      "bytes": 182087,
+      "sha256": "59d8292d18f51c59a849325b4ccd4e063cb03055c1833ecea17c7cacd9e9f35d"
+    },
+    {
+      "path": "assets/decor_bank/owner_sleeping_dragon/deps/tex_01.jpg",
+      "bytes": 163358,
+      "sha256": "e9e0753fc3bfdd17155ccc7b29de0b251e77299f2ceed4269ba6777a32be0585"
+    },
+    {
+      "path": "assets/decor_bank/owner_sleeping_dragon/deps/tex_02.jpg",
+      "bytes": 171249,
+      "sha256": "8e41e9748cd42bcea9ebc1344807898ea8d55e036ee876c4fe4417572eeb4d61"
+    },
+    {
+      "path": "assets/decor_bank/owner_sleeping_dragon/model.gltf",
+      "bytes": 4499,
+      "sha256": "1f791b603dc3822f1b4c43dd3eae9f505b532ef0acb8b9f3c57f9082d7098364"
+    },
+    {
+      "path": "assets_external/authoring/ultimate_low_poly_shader/SOURCE.txt",
+      "bytes": 136,
+      "sha256": "849d1c47fbeded4ad989c0fa24455c5ef38f0149f1a3087ee84d309c3dfbb598"
+    },
+    {
+      "path": "assets_external/authoring/ultimate_low_poly_shader/source.blend",
+      "bytes": 70810,
+      "sha256": "7d4b16e41ac5fe9b19c5783d09ad632c29736261ae73603734a7ede6b1976bd3"
+    }
+  ],
+  "bytes": 1930873
+}

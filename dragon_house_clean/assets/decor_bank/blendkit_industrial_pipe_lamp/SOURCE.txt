@@ -1,0 +1,5 @@
+{'id': 118455, 'firstName': 'Poly Haven', 'lastName': '', 'gravatarHash': '84ee1bc29360e65381f2d231fc6b254a', 'avatar128': '/avatar-redirect/32aebffe-2245-417d-8710-c0ea1442ba07/128/', 'avatar256': '/avatar-redirect/32aebffe-2245-417d-8710-c0ea1442ba07/256/', 'avatar512': '/avatar-redirect/32aebffe-2245-417d-8710-c0ea1442ba07/512/', 'aboutMe': 'We publish 100% free high quality 3D assets with no strings attached :) If you want to support our work and help us keep making new assets, find us on Patreon: https://polyhaven.com/support-us', 'aboutMeUrl': 'https://polyhaven.com/', 'fullName': 'Poly Haven ', 'socialNetworks': []}
+https://www.blendkit.com/asset-gallery-detail/eedf2bf8-e353-4f7c-9116-6a66dcebbae8/
+cc_zero
+Source SHA-256 664831ed537c808b95063591c807509bb7bbf2967fb68d7ddbcdb18bc31b5f48
+Modified mesh, textures, pivot as documented. Candidate only.

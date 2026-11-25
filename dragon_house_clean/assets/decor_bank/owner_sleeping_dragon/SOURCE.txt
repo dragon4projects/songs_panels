@@ -1,0 +1,5 @@
+Chris (cebbi)
+https://sketchfab.com/3d-models/sleeping-dragon-8c005da8895a48cabfa3fb182e4762a0
+CC-BY-4.0
+Source SHA-256 f3db57d99a0161e7b3cfbd2b3c38d62681ded6375b5c76963c157d2c8a801687
+Modified mesh, textures, pivot as documented. Candidate only.

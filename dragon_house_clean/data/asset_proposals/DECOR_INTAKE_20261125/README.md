@@ -1,0 +1,1 @@
+Public subset: CC0 industrial pipe lamp, CC-BY sleeping dragon, CC0 Blender authoring node group. Full personal project pack contains 23 models and shader; 21 models intentionally not present in public git due to redistribution restrictions or unverified rights. Isolated Godot QA only. No production activation, owner approval false.

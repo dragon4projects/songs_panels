@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "id": "blendkit_industrial_pipe_lamp",
+      "imported_aabb_max": [
+        0.091498926281929,
+        0.364149272441864,
+        0.131040871143341
+      ],
+      "imported_aabb_min": [
+        -0.0914981961250305,
+        -8.94069671630859e-08,
+        -0.131040871143341
+      ],
+      "material_slots": 3,
+      "max_vertex_bounds_error_m": 3.08997044839998e-07,
+      "meshes": 3,
+      "status": "PASS",
+      "triangles": 6796,
+      "vertices": 6158
+    },
+    {
+      "id": "owner_sleeping_dragon",
+      "imported_aabb_max": [
+        0.175000354647636,
+        0.0451606512069702,
+        0.137336418032646
+      ],
+      "imported_aabb_min": [
+        -0.17499965429306,
+        -2.53552570939064e-07,
+        -0.137336477637291
+      ],
+      "material_slots": 3,
+      "max_vertex_bounds_error_m": 6.51617085623002e-07,
+      "meshes": 3,
+      "status": "PASS",
+      "triangles": 12748,
+      "vertices": 8691
+    }
+  ],
+  "owner_approved": false,
+  "runtime_integration_verified": false,
+  "glass_visual_QA": "PENDING",
+  "orientation_visual_QA": "PENDING"
+}

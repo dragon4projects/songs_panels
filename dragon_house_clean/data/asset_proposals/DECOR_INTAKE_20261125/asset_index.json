@@ -1,0 +1,171 @@
+{
+  "schema": 1,
+  "owner_approved": false,
+  "items": [
+    {
+      "asset_id": "blendkit_industrial_pipe_lamp",
+      "runtime_path": "res://assets/decor_bank/blendkit_industrial_pipe_lamp/model.gltf",
+      "source_page": "https://www.blendkit.com/asset-gallery-detail/eedf2bf8-e353-4f7c-9116-6a66dcebbae8/",
+      "author": {
+        "id": 118455,
+        "firstName": "Poly Haven",
+        "lastName": "",
+        "gravatarHash": "84ee1bc29360e65381f2d231fc6b254a",
+        "avatar128": "/avatar-redirect/32aebffe-2245-417d-8710-c0ea1442ba07/128/",
+        "avatar256": "/avatar-redirect/32aebffe-2245-417d-8710-c0ea1442ba07/256/",
+        "avatar512": "/avatar-redirect/32aebffe-2245-417d-8710-c0ea1442ba07/512/",
+        "aboutMe": "We publish 100% free high quality 3D assets with no strings attached :) If you want to support our work and help us keep making new assets, find us on Patreon: https://polyhaven.com/support-us",
+        "aboutMeUrl": "https://polyhaven.com/",
+        "fullName": "Poly Haven ",
+        "socialNetworks": []
+      },
+      "license": "cc_zero",
+      "public_repository_eligible": true,
+      "source_sha256": "664831ed537c808b95063591c807509bb7bbf2967fb68d7ddbcdb18bc31b5f48",
+      "source_triangles": 8626,
+      "triangles": 6796,
+      "dimensions_m": [
+        0.182997,
+        0.364149,
+        0.262082
+      ],
+      "normalized_aabb_min_m": [
+        -0.091498,
+        -0.0,
+        -0.131041
+      ],
+      "normalized_aabb_max_m": [
+        0.091499,
+        0.364149,
+        0.131041
+      ],
+      "pivot": "footprint_center_support_plane",
+      "import_uniform_scale": 1.0,
+      "yaw_deg": 0,
+      "forward_status": "NEEDS_VISUAL_REVIEW",
+      "materials": 3,
+      "textures": [
+        {
+          "file": "tex_00.jpg",
+          "px": [
+            512,
+            512
+          ],
+          "alpha": false,
+          "normal": false
+        },
+        {
+          "file": "tex_01.png",
+          "px": [
+            512,
+            512
+          ],
+          "alpha": false,
+          "normal": true
+        },
+        {
+          "file": "tex_02.jpg",
+          "px": [
+            512,
+            512
+          ],
+          "alpha": false,
+          "normal": false
+        },
+        {
+          "file": "tex_03.png",
+          "px": [
+            512,
+            512
+          ],
+          "alpha": false,
+          "normal": false
+        }
+      ],
+      "animations": [],
+      "skins": 0,
+      "glass_note": null,
+      "source_nodes": null,
+      "grouped_model": false,
+      "owner_approved": false,
+      "status": "NORMALIZED_CANDIDATE",
+      "godot_import_status": "PASS_ISOLATED_4.7.2",
+      "delivery_policy": "PUBLIC_OK"
+    },
+    {
+      "asset_id": "owner_sleeping_dragon",
+      "runtime_path": "res://assets/decor_bank/owner_sleeping_dragon/model.gltf",
+      "source_page": "https://sketchfab.com/3d-models/sleeping-dragon-8c005da8895a48cabfa3fb182e4762a0",
+      "author": "Chris (cebbi)",
+      "license": "CC-BY-4.0",
+      "public_repository_eligible": true,
+      "source_sha256": "f3db57d99a0161e7b3cfbd2b3c38d62681ded6375b5c76963c157d2c8a801687",
+      "source_triangles": 277924,
+      "triangles": 12748,
+      "dimensions_m": [
+        0.35,
+        0.045161,
+        0.274673
+      ],
+      "normalized_aabb_min_m": [
+        -0.175,
+        -0.0,
+        -0.137336
+      ],
+      "normalized_aabb_max_m": [
+        0.175,
+        0.045161,
+        0.137336
+      ],
+      "pivot": "footprint_center_support_plane",
+      "import_uniform_scale": 0.005381849502792595,
+      "yaw_deg": 0,
+      "forward_status": "NEEDS_VISUAL_REVIEW",
+      "materials": 3,
+      "textures": [
+        {
+          "file": "tex_00.jpg",
+          "px": [
+            1024,
+            1024
+          ],
+          "alpha": false,
+          "normal": false
+        },
+        {
+          "file": "tex_01.jpg",
+          "px": [
+            1024,
+            1024
+          ],
+          "alpha": false,
+          "normal": false
+        },
+        {
+          "file": "tex_02.jpg",
+          "px": [
+            1024,
+            1024
+          ],
+          "alpha": false,
+          "normal": false
+        }
+      ],
+      "animations": [],
+      "skins": 0,
+      "glass_note": null,
+      "source_nodes": null,
+      "grouped_model": false,
+      "owner_approved": false,
+      "status": "NORMALIZED_CANDIDATE",
+      "godot_import_status": "PASS_ISOLATED_4.7.2",
+      "delivery_policy": "PUBLIC_OK"
+    }
+  ],
+  "authoring_shader": {
+    "source": "https://www.blendkit.com/asset-gallery-detail/770f7d0a-5b68-4806-9fea-b796949c0e46/",
+    "license": "CC0",
+    "path": "assets_external/authoring/ultimate_low_poly_shader/source.blend",
+    "status": "BLENDER_NODE_GROUP_ONLY"
+  }
+}
