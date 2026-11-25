@@ -1,0 +1,4 @@
+Ren Viro Store
+https://sketchfab.com/3d-models/fireplace-animated-963a461f9ddf4dccba809ca861b7f0cc
+CC-BY-4.0
+Modified: static mesh decimation, texture resize/encoding, metric pivot; original animation channels unchanged for animated fireplace.

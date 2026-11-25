@@ -1,0 +1,370 @@
+{
+  "items": [
+    {
+      "path": "assets/decor_bank/sketchfab_coffee_machine_serg0k/SOURCE.txt",
+      "bytes": 235,
+      "sha256": "89d0add68326580455d8d9b60adaf70e2048f03778ac378fb7a3714d0b593c46"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_coffee_machine_serg0k/deps/model.bin",
+      "bytes": 242468,
+      "sha256": "4e99d7fffa3dbb8bb8be669116edd0134de15fef6641395bff6765e698200692"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_coffee_machine_serg0k/deps/tex_00.png",
+      "bytes": 10724,
+      "sha256": "ad6022c9592014eb597a92c3741baa9a7a1029c9e5997ab58b032bc311128321"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_coffee_machine_serg0k/deps/tex_01.jpg",
+      "bytes": 7439,
+      "sha256": "e053fd448640191f455330aca02db789b5a8792e3d469b15c6c2f0e09a0ecfec"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_coffee_machine_serg0k/deps/tex_02.jpg",
+      "bytes": 58408,
+      "sha256": "8dfab1d94b2e043a860abadc2835bc09f4a69843a36b6ffa94bcf65b28e412de"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_coffee_machine_serg0k/deps/tex_03.jpg",
+      "bytes": 7174,
+      "sha256": "ad1f6f05fc7f5dc092a47edead4b52c2d96cefb0f9b3ea3dcc1da7ea77cfb189"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_coffee_machine_serg0k/deps/tex_04.png",
+      "bytes": 157249,
+      "sha256": "e7b66ce81335311a9b645996dbe4d0eb4aad073a4e8f8f4738abd22587a124eb"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_coffee_machine_serg0k/deps/tex_05.jpg",
+      "bytes": 24236,
+      "sha256": "3bc8dfe03e5b0f79b4f9a33990c0d5900f73ad3267a7fd7cf8f724385a8d7246"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_coffee_machine_serg0k/deps/tex_06.jpg",
+      "bytes": 7428,
+      "sha256": "5c6f1bc569126fd1e5e81d876f7744eb871ef0a6b7c4dec60e58e8860a474225"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_coffee_machine_serg0k/deps/tex_07.jpg",
+      "bytes": 8752,
+      "sha256": "31e292532a9fa913f35e971ac4fb8506342127b0419f66735e8b124c47cfd47a"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_coffee_machine_serg0k/deps/tex_08.jpg",
+      "bytes": 7428,
+      "sha256": "5c6f1bc569126fd1e5e81d876f7744eb871ef0a6b7c4dec60e58e8860a474225"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_coffee_machine_serg0k/deps/tex_09.jpg",
+      "bytes": 7428,
+      "sha256": "5c6f1bc569126fd1e5e81d876f7744eb871ef0a6b7c4dec60e58e8860a474225"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_coffee_machine_serg0k/model.gltf",
+      "bytes": 22938,
+      "sha256": "ca29ac93c8a23b8a9a817dc061765811899fea5aa593eecd62b9057c027cb3cf"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_coffee_machine_vervoortward/SOURCE.txt",
+      "bytes": 238,
+      "sha256": "105c5665a683e6c60a1ba803017779001ffd82800f2fb6ab7287d256c92ed2dc"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_coffee_machine_vervoortward/deps/model.bin",
+      "bytes": 412088,
+      "sha256": "0a8d04b185b64b92340b084a7550936270f703ace477836c5e02ed189317b50f"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_coffee_machine_vervoortward/model.gltf",
+      "bytes": 37222,
+      "sha256": "e1874bfd557c2df2f1d6272cd0a710d19bc34f760628818cdb49acd43c2d3179"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_animated/SOURCE.txt",
+      "bytes": 244,
+      "sha256": "329b75b2e772b20cf2ad64ffec1b8fc7c9712fe33017a8685fa7eb696bb4cf18"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_animated/deps/model.bin",
+      "bytes": 673528,
+      "sha256": "25e8dd9639019dca77be9b2cbd8417e376f060eab66420245a6d06d9a9c964c9"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_animated/deps/tex_00.jpg",
+      "bytes": 345728,
+      "sha256": "5078d07743907c4222f814927d3648a9d14be49fa37ac50d6e4a78c141c1c0e6"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_animated/deps/tex_01.jpg",
+      "bytes": 216610,
+      "sha256": "60d69ffe57b2ae059e1e4e5c8cecc117868d711be916893aa65ec349967e1a06"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_animated/deps/tex_02.png",
+      "bytes": 937560,
+      "sha256": "a0f7a864bda68cab00fd31248fa6c23b45ecdc6d400e707df3af08d919127183"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_animated/deps/tex_03.jpg",
+      "bytes": 47318,
+      "sha256": "e53b481fd2fb188f395693b423dbc4743cd46e52ac03f3d5d18347cbb3c9f451"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_animated/deps/tex_04.jpg",
+      "bytes": 149611,
+      "sha256": "0ad68904a6984e40f90a79f82f3c0859a1336129624f50c7d623942f57b7271d"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_animated/deps/tex_05.png",
+      "bytes": 188707,
+      "sha256": "89e9d7a4036cd0cb5c1b901728074247b8df7a604eda44d78ce6acbe4e13acd2"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_animated/deps/tex_06.jpg",
+      "bytes": 349946,
+      "sha256": "2d1464e5e277c6591c4ad3fa20fc20f0f223b1f24688cb4f0e5fda87a6664be3"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_animated/deps/tex_07.jpg",
+      "bytes": 369309,
+      "sha256": "db1956520e6c62e5a49e5292e292fcb95cd0ad76f61e2606e04a61894d4955c8"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_animated/deps/tex_08.png",
+      "bytes": 1500489,
+      "sha256": "2d551cd43dd885f7e308f039ac14a76254aa882c6df17381e0cf1800aae2d065"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_animated/deps/tex_09.jpg",
+      "bytes": 39163,
+      "sha256": "d9da89be2ade8b76f22806a858fcc858ac24b6821a283ea16a65feec4d52fddd"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_animated/deps/tex_10.jpg",
+      "bytes": 25589,
+      "sha256": "1c08d06cc7522b88968427ac3ea821e170bbe04ae371f1439dfbac559247cf03"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_animated/deps/tex_11.png",
+      "bytes": 330579,
+      "sha256": "52deb6cfb4838320a21b5d0c01bda447ee9a5aafbfea4308c064b26568f27d2a"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_animated/deps/tex_12.jpg",
+      "bytes": 249045,
+      "sha256": "5df7ae63fc6fad834940947255a01d8d51b6540382d488d1f754057f3b7b842e"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_animated/model.gltf",
+      "bytes": 49022,
+      "sha256": "37a4b9c554a88fc865d43f614d7079eaf669e51235f991522d624056230e4554"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_annabelle_fibonacci/SOURCE.txt",
+      "bytes": 240,
+      "sha256": "426a9939c3c1bdebdd8355ba3a11835b453c19d751e9871ca7163dfd9377cd36"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_annabelle_fibonacci/deps/model.bin",
+      "bytes": 793266,
+      "sha256": "34e9df691f1d2e53c271c7782c0ab6d3eada7288e0927817c5aa20a8a0863bc2"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_annabelle_fibonacci/deps/tex_00.jpg",
+      "bytes": 85615,
+      "sha256": "fcf0cbff8f949ba13495d9c7445da2e69156556b8401aa88157eb3d38db3b39c"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_annabelle_fibonacci/deps/tex_01.png",
+      "bytes": 663521,
+      "sha256": "37d42af6484e3e603e0bf06a7878b4d3716a945b9c5cb3015e400929ef4fafb0"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_annabelle_fibonacci/deps/tex_02.png",
+      "bytes": 953234,
+      "sha256": "d086af846157042065c778dd19abf15b588da782d9bc4dda61762d2e59a658ce"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_annabelle_fibonacci/deps/tex_03.jpg",
+      "bytes": 431548,
+      "sha256": "89f9624d5cb38bcf084ae398b19863500fc644f0773458a7bf2bc39d6294c97f"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_annabelle_fibonacci/deps/tex_04.jpg",
+      "bytes": 336314,
+      "sha256": "b84f589be23e3c10863701ed62351fa79ae4b8e1ec22492f31db2345a16989a2"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_annabelle_fibonacci/deps/tex_05.png",
+      "bytes": 1559158,
+      "sha256": "b6af9ed679b815ce6c5f0d8835f42bff2c51971619b84bc94c6d729875713878"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_annabelle_fibonacci/deps/tex_06.jpg",
+      "bytes": 254531,
+      "sha256": "abae472a2c23d9794f337f11830a3f462012ea77a212d6ad3c7ec8e662a45ff2"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_annabelle_fibonacci/deps/tex_07.jpg",
+      "bytes": 208623,
+      "sha256": "382c3d7a9fca46a9c4ad9ae25a1bc60763ab1dec3b9a2c121407fc37de67136c"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_annabelle_fibonacci/deps/tex_08.png",
+      "bytes": 1149548,
+      "sha256": "257f248d657bc9244115da06e749ca705af688f0016778b83c577d4c0c32bda9"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_annabelle_fibonacci/deps/tex_09.jpg",
+      "bytes": 476592,
+      "sha256": "dfb1f04533ecd8ac9d9b316dc534b841a7746ad356fd78b029a2f1398e1c4b7f"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_annabelle_fibonacci/deps/tex_10.png",
+      "bytes": 2077272,
+      "sha256": "b14ef95dcbfc0960814922677dd17764b253ad6d87f9478f31c968bf54e8306d"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_annabelle_fibonacci/deps/tex_11.jpg",
+      "bytes": 118468,
+      "sha256": "fda72672bd5806edac4db3aa116c0b2901adf7e02e009f6947b3699a0f98eae4"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_annabelle_fibonacci/deps/tex_12.png",
+      "bytes": 906389,
+      "sha256": "0962181f2a82550054a0e56972cec89216ae592801af4343da6584d883725ff2"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_annabelle_fibonacci/deps/tex_13.jpg",
+      "bytes": 282550,
+      "sha256": "62c7f0f9de012b2066ad410478f95b508ca5d799912e9571f07e43341fa06d7e"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_annabelle_fibonacci/deps/tex_14.jpg",
+      "bytes": 30062,
+      "sha256": "3c15f22329884888806992810fda3a1f836814c450865cd8041a49b3841a478e"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_annabelle_fibonacci/model.gltf",
+      "bytes": 13217,
+      "sha256": "d5953ce85366253846fe650c35d89bfda507afba9dae14c4021486ad240917ce"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_mark_bai/SOURCE.txt",
+      "bytes": 229,
+      "sha256": "f3e5a6a533cd4bddd1d8f0a8296a01618ce79685282b9750b9d6f99d0ffb141b"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_mark_bai/deps/model.bin",
+      "bytes": 328536,
+      "sha256": "ff685b8f58a2ff2a1a823b2c866b8d29dc2c167a1b0e483f720907e32cff7120"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_mark_bai/deps/tex_00.png",
+      "bytes": 884361,
+      "sha256": "fb0efd671669987c90bf65592f4dd8b30e0b4c3cedcb373fcd567945fb15035e"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_mark_bai/deps/tex_01.jpg",
+      "bytes": 236955,
+      "sha256": "79c1b2d6480fbf63c66bc49ef63e5df1fdc42f9df2c9966a9364cf918117bd03"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_mark_bai/deps/tex_02.jpg",
+      "bytes": 12575,
+      "sha256": "acd2814d0eb92c431459a6a782c655374a868145c2c01266af1a0fe80db1b2b7"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_mark_bai/deps/tex_03.jpg",
+      "bytes": 124997,
+      "sha256": "0a6ad94c0fdf385e3d1bea0e765c765fdab14f8f981336fb0d8c73ad4dc24895"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_mark_bai/deps/tex_04.png",
+      "bytes": 906050,
+      "sha256": "0e707fe1c9d4ebca94ffe9300cc52ca9533280f9e3a0bb0b38605ea7e2f21ea4"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_mark_bai/deps/tex_05.jpg",
+      "bytes": 12575,
+      "sha256": "acd2814d0eb92c431459a6a782c655374a868145c2c01266af1a0fe80db1b2b7"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_mark_bai/deps/tex_06.jpg",
+      "bytes": 197066,
+      "sha256": "e62bec969176cac4c9e6aa51292896720a417ed32c3b74cbce5c6bb3d7f82497"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_mark_bai/deps/tex_07.png",
+      "bytes": 968246,
+      "sha256": "ce42ce724051fbc5cefcb3415f4fee4f7f9369a472cc45a1a7832d7a0cf7a4e5"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_mark_bai/deps/tex_08.jpg",
+      "bytes": 139550,
+      "sha256": "7f2dd42510f8694708d6ea18f77b7c80c7d48a91de69f680942e172b22b32528"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_mark_bai/deps/tex_09.jpg",
+      "bytes": 113760,
+      "sha256": "b71d1fab5499f34b35ad99561eedab58761cb2d9b47ce46fe5d3062cb5a6d472"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_mark_bai/deps/tex_10.jpg",
+      "bytes": 23781,
+      "sha256": "b34f10240fbe0d6634b58c0193e8aed31250e7fb5d417d4ebeedfc45389078ee"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_mark_bai/deps/tex_11.png",
+      "bytes": 546401,
+      "sha256": "25c18b83f57a88f41281e7be0047412574adef8859b5580f47c2049e7ed4070f"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_mark_bai/deps/tex_12.jpg",
+      "bytes": 86444,
+      "sha256": "ce93bc027de5fdd9635e83a03f648b6377d5dd308ddadfa888791e31e3b5932d"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_mark_bai/deps/tex_13.jpg",
+      "bytes": 118309,
+      "sha256": "733a210377c1f87a5314c00d9ed204544655b4a157d58a2032b73adad987348a"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_fireplace_mark_bai/model.gltf",
+      "bytes": 28542,
+      "sha256": "464031f766a3d9b14424dc8036ec07a0b6e7f30e5e1d7522519f4a09cbc0bdfd"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_steampunk_coffee_machine/SOURCE.txt",
+      "bytes": 250,
+      "sha256": "161ba915423430c7edfd672b749fba43de9e69316a93ac44b6c80c29d3283bf2"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_steampunk_coffee_machine/deps/model.bin",
+      "bytes": 537004,
+      "sha256": "431c61bf404777ecf8322bd25e9988b46d66cf3f6493c1c641a4ffaf1218643a"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_steampunk_coffee_machine/deps/tex_00.jpg",
+      "bytes": 79035,
+      "sha256": "ea5198e3687bf5dd66df2196664c5204cca71032570608300c535d2a54e493e6"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_steampunk_coffee_machine/deps/tex_01.jpg",
+      "bytes": 101474,
+      "sha256": "6075fd5adf816c64ad599351daf37b47cce672f4a763e8e6f09c48c93db8383b"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_steampunk_coffee_machine/deps/tex_02.png",
+      "bytes": 234640,
+      "sha256": "f8e19afb658ceb1b4bd6365845c737ea898c74844f57fee375535ca05c0c59e5"
+    },
+    {
+      "path": "assets/decor_bank/sketchfab_steampunk_coffee_machine/model.gltf",
+      "bytes": 67239,
+      "sha256": "09ade92d40d5d15dce3f99f1c2b4dfbd2df62bb71cf884e14f7138a104c7365a"
+    }
+  ],
+  "bytes": 22572070
+}

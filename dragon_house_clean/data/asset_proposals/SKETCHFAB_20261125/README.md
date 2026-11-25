@@ -1,0 +1,1 @@
+Six independent normalized candidate assets. Static mesh reduction; 512px coffee-machine / 1024px fireplace texture caps; animation key data preserved. No runtime activation, no owner approval. Source attribution in each SOURCE.txt and glTF asset.extras. One model is CC BY-NC 4.0. No replacement of accepted fireplace.

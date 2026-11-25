@@ -1,0 +1,4 @@
+Mark Bai
+https://sketchfab.com/3d-models/fireplace-e9854400c0c1410db01c8db897ef5359
+CC-BY-4.0
+Modified: static mesh decimation, texture resize/encoding, metric pivot; original animation channels unchanged for animated fireplace.

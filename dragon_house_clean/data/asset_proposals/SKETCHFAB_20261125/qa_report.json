@@ -1,0 +1,126 @@
+{
+  "models": [
+    {
+      "id": "sketchfab_coffee_machine_vervoortward",
+      "imported_aabb_max": [
+        0.162912547588348,
+        0.446670800447464,
+        0.334384799003601
+      ],
+      "imported_aabb_min": [
+        -0.16291281580925,
+        -4.83705662190914e-07,
+        -0.334385097026825
+      ],
+      "material_slots": 33,
+      "max_vertex_bounds_error_m": 5.35613310148619e-07,
+      "meshes": 33,
+      "status": "PASS",
+      "triangles": 7894,
+      "vertices": 11397
+    },
+    {
+      "id": "sketchfab_coffee_machine_serg0k",
+      "imported_aabb_max": [
+        0.139571890234947,
+        0.434655785560608,
+        0.267896443605423
+      ],
+      "imported_aabb_min": [
+        -0.139572113752365,
+        -4.4703483581543e-07,
+        -0.267895638942719
+      ],
+      "material_slots": 16,
+      "max_vertex_bounds_error_m": 5.84763768074481e-07,
+      "meshes": 16,
+      "status": "PASS",
+      "triangles": 7929,
+      "vertices": 7200
+    },
+    {
+      "id": "sketchfab_fireplace_mark_bai",
+      "imported_aabb_max": [
+        1.00166940689087,
+        1.30292797088623,
+        0.373224496841431
+      ],
+      "imported_aabb_min": [
+        -1.00166940689087,
+        5.96046447753906e-08,
+        -0.373224437236786
+      ],
+      "material_slots": 31,
+      "max_vertex_bounds_error_m": 6.20146181518066e-07,
+      "meshes": 31,
+      "status": "PASS",
+      "triangles": 12378,
+      "vertices": 8549
+    },
+    {
+      "id": "sketchfab_fireplace_animated",
+      "imported_aabb_max": [
+        0.900000274181366,
+        1.71164774894714,
+        0.527231514453888
+      ],
+      "imported_aabb_min": [
+        -0.899999797344208,
+        -4.09781932830811e-07,
+        -0.527231395244598
+      ],
+      "material_slots": 31,
+      "max_vertex_bounds_error_m": 7.45095292131737e-07,
+      "meshes": 31,
+      "status": "PASS",
+      "triangles": 11262,
+      "vertices": 11870
+    },
+    {
+      "id": "sketchfab_fireplace_annabelle_fibonacci",
+      "imported_aabb_max": [
+        0.931078433990479,
+        1.11221992969513,
+        0.289149701595306
+      ],
+      "imported_aabb_min": [
+        -0.931078433990479,
+        1.19209289550781e-07,
+        -0.289148718118668
+      ],
+      "material_slots": 11,
+      "max_vertex_bounds_error_m": 5.26413941770443e-07,
+      "meshes": 11,
+      "status": "PASS",
+      "triangles": 12322,
+      "vertices": 22480
+    },
+    {
+      "id": "sketchfab_steampunk_coffee_machine",
+      "imported_aabb_max": [
+        0.323141574859619,
+        0.622284531593323,
+        0.275943517684937
+      ],
+      "imported_aabb_min": [
+        -0.323130875825882,
+        7.45058059692383e-09,
+        -0.275941073894501
+      ],
+      "material_slots": 52,
+      "max_vertex_bounds_error_m": 7.69829603086691e-06,
+      "meshes": 52,
+      "status": "PASS",
+      "triangles": 10526,
+      "vertices": 9891
+    }
+  ],
+  "animation": {
+    "name": "Fire",
+    "tracks": 25,
+    "length_seconds": 0.83333331346512,
+    "seek_test": "PASS"
+  },
+  "runtime_integration_verified": false,
+  "owner_approved": false
+}

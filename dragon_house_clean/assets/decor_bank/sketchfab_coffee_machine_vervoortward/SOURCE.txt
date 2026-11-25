@@ -1,0 +1,4 @@
+vervoortward
+https://sketchfab.com/3d-models/coffee-machine-5aee9b1f39f3400f890040c710467fdf
+CC-BY-4.0
+Modified: static mesh decimation, texture resize/encoding, metric pivot; original animation channels unchanged for animated fireplace.

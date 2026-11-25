@@ -1,0 +1,1116 @@
+{
+  "schema": 1,
+  "owner_approved": false,
+  "items": [
+    {
+      "asset_id": "sketchfab_coffee_machine_vervoortward",
+      "runtime_path": "res://assets/decor_bank/sketchfab_coffee_machine_vervoortward/model.gltf",
+      "original_filename": "coffee_machine_vervoortward.glb",
+      "source_page": "https://sketchfab.com/3d-models/coffee-machine-5aee9b1f39f3400f890040c710467fdf",
+      "author": "vervoortward",
+      "license": "CC-BY-4.0",
+      "source_sha256": "772b99441eec73137689c92ffe9639717dd3a555e9be61bfd5843ff934a91b32",
+      "source_triangles": 621504,
+      "triangles": 7894,
+      "source_dimensions_m_unscaled": [
+        0.756,
+        1.035219,
+        1.553171
+      ],
+      "dimensions_m": [
+        0.325825,
+        0.446671,
+        0.66877
+      ],
+      "normalized_aabb_min_m": [
+        -0.162913,
+        -0.0,
+        -0.334385
+      ],
+      "normalized_aabb_max_m": [
+        0.162913,
+        0.446671,
+        0.334385
+      ],
+      "import_uniform_scale": 0.43,
+      "pivot": "footprint_center_support_plane",
+      "forward_xyz": [
+        0,
+        0,
+        1
+      ],
+      "footprint_xz": [
+        [
+          -0.162913,
+          -0.334385
+        ],
+        [
+          0.162913,
+          -0.334385
+        ],
+        [
+          0.162913,
+          0.334385
+        ],
+        [
+          -0.162913,
+          0.334385
+        ]
+      ],
+      "materials": 8,
+      "textures": [],
+      "animations": [],
+      "owner_approved": false,
+      "category": "coffee_machine",
+      "interaction_status": "PLACEMENT_CANDIDATE_NO_RUNTIME_ACTIVATION",
+      "status": "NORMALIZED_CANDIDATE",
+      "godot_import_status": "PASS_ISOLATED_4.7.2"
+    },
+    {
+      "asset_id": "sketchfab_coffee_machine_serg0k",
+      "runtime_path": "res://assets/decor_bank/sketchfab_coffee_machine_serg0k/model.gltf",
+      "original_filename": "coffee_machine_serg0k.glb",
+      "source_page": "https://sketchfab.com/3d-models/coffee-machine-61e263978202451b9aab7d569aa0ec43",
+      "author": "serg0k",
+      "license": "CC-BY-NC-4.0",
+      "source_sha256": "6e790ed82c68e101c8f361742cc194bdd1c021959d95074ca4c1710abe05557f",
+      "source_triangles": 243576,
+      "triangles": 7929,
+      "source_dimensions_m_unscaled": [
+        0.279011,
+        0.434796,
+        0.535955
+      ],
+      "dimensions_m": [
+        0.279144,
+        0.434656,
+        0.535792
+      ],
+      "normalized_aabb_min_m": [
+        -0.139572,
+        -0.0,
+        -0.267896
+      ],
+      "normalized_aabb_max_m": [
+        0.139572,
+        0.434656,
+        0.267896
+      ],
+      "import_uniform_scale": 1.0,
+      "pivot": "footprint_center_support_plane",
+      "forward_xyz": [
+        0,
+        0,
+        1
+      ],
+      "footprint_xz": [
+        [
+          -0.139572,
+          -0.267896
+        ],
+        [
+          0.139572,
+          -0.267896
+        ],
+        [
+          0.139572,
+          0.267896
+        ],
+        [
+          -0.139572,
+          0.267896
+        ]
+      ],
+      "materials": 16,
+      "textures": [
+        {
+          "file": "tex_00.png",
+          "original_px": [
+            1024,
+            256
+          ],
+          "optimized_px": [
+            512,
+            128
+          ],
+          "normal": false,
+          "alpha": true
+        },
+        {
+          "file": "tex_01.jpg",
+          "original_px": [
+            1024,
+            256
+          ],
+          "optimized_px": [
+            512,
+            128
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_02.jpg",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            512,
+            512
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_03.jpg",
+          "original_px": [
+            512,
+            256
+          ],
+          "optimized_px": [
+            512,
+            256
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_04.png",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            512,
+            512
+          ],
+          "normal": true,
+          "alpha": false
+        },
+        {
+          "file": "tex_05.jpg",
+          "original_px": [
+            512,
+            512
+          ],
+          "optimized_px": [
+            512,
+            512
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_06.jpg",
+          "original_px": [
+            1024,
+            256
+          ],
+          "optimized_px": [
+            512,
+            128
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_07.jpg",
+          "original_px": [
+            1024,
+            256
+          ],
+          "optimized_px": [
+            512,
+            128
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_08.jpg",
+          "original_px": [
+            1024,
+            256
+          ],
+          "optimized_px": [
+            512,
+            128
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_09.jpg",
+          "original_px": [
+            1024,
+            256
+          ],
+          "optimized_px": [
+            512,
+            128
+          ],
+          "normal": false,
+          "alpha": false
+        }
+      ],
+      "animations": [],
+      "owner_approved": false,
+      "category": "coffee_machine",
+      "interaction_status": "PLACEMENT_CANDIDATE_NO_RUNTIME_ACTIVATION",
+      "status": "NORMALIZED_CANDIDATE",
+      "godot_import_status": "PASS_ISOLATED_4.7.2"
+    },
+    {
+      "asset_id": "sketchfab_fireplace_mark_bai",
+      "runtime_path": "res://assets/decor_bank/sketchfab_fireplace_mark_bai/model.gltf",
+      "original_filename": "fireplace_mark_bai.glb",
+      "source_page": "https://sketchfab.com/3d-models/fireplace-e9854400c0c1410db01c8db897ef5359",
+      "author": "Mark Bai",
+      "license": "CC-BY-4.0",
+      "source_sha256": "1034b01c6ada658ab60555654b27265d89e4ecc45c22e0dc020cd54a42bed000",
+      "source_triangles": 90159,
+      "triangles": 12378,
+      "source_dimensions_m_unscaled": [
+        1.999998,
+        1.302928,
+        0.74542
+      ],
+      "dimensions_m": [
+        2.003339,
+        1.302928,
+        0.746449
+      ],
+      "normalized_aabb_min_m": [
+        -1.001669,
+        0.0,
+        -0.373224
+      ],
+      "normalized_aabb_max_m": [
+        1.001669,
+        1.302928,
+        0.373224
+      ],
+      "import_uniform_scale": 1.0,
+      "pivot": "footprint_center_support_plane",
+      "forward_xyz": [
+        0,
+        0,
+        1
+      ],
+      "footprint_xz": [
+        [
+          -1.001669,
+          -0.373224
+        ],
+        [
+          1.001669,
+          -0.373224
+        ],
+        [
+          1.001669,
+          0.373224
+        ],
+        [
+          -1.001669,
+          0.373224
+        ]
+      ],
+      "materials": 4,
+      "textures": [
+        {
+          "file": "tex_00.png",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": true,
+          "alpha": false
+        },
+        {
+          "file": "tex_01.jpg",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_02.jpg",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_03.jpg",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_04.png",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": false,
+          "alpha": true
+        },
+        {
+          "file": "tex_05.jpg",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_06.jpg",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_07.png",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": true,
+          "alpha": false
+        },
+        {
+          "file": "tex_08.jpg",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_09.jpg",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_10.jpg",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_11.png",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": true,
+          "alpha": false
+        },
+        {
+          "file": "tex_12.jpg",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_13.jpg",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": false,
+          "alpha": false
+        }
+      ],
+      "animations": [],
+      "owner_approved": false,
+      "category": "fireplace",
+      "interaction_status": "PLACEMENT_CANDIDATE_NO_RUNTIME_ACTIVATION",
+      "status": "NORMALIZED_CANDIDATE",
+      "godot_import_status": "PASS_ISOLATED_4.7.2"
+    },
+    {
+      "asset_id": "sketchfab_fireplace_animated",
+      "runtime_path": "res://assets/decor_bank/sketchfab_fireplace_animated/model.gltf",
+      "original_filename": "fireplace_animated.glb",
+      "source_page": "https://sketchfab.com/3d-models/fireplace-animated-963a461f9ddf4dccba809ca861b7f0cc",
+      "author": "Ren Viro Store",
+      "license": "CC-BY-4.0",
+      "source_sha256": "241d80855a47b0f08936d62369dd8cda7c8545f6b1d3684d6eb36050a0a20767",
+      "source_triangles": 11262,
+      "triangles": 11262,
+      "source_dimensions_m_unscaled": [
+        990.910339,
+        942.272275,
+        580.488048
+      ],
+      "dimensions_m": [
+        1.8,
+        1.711648,
+        1.054463
+      ],
+      "normalized_aabb_min_m": [
+        -0.9,
+        -0.0,
+        -0.527232
+      ],
+      "normalized_aabb_max_m": [
+        0.9,
+        1.711648,
+        0.527232
+      ],
+      "import_uniform_scale": 0.0018165114728367529,
+      "pivot": "footprint_center_support_plane",
+      "forward_xyz": [
+        0,
+        0,
+        1
+      ],
+      "footprint_xz": [
+        [
+          -0.9,
+          -0.527232
+        ],
+        [
+          0.9,
+          -0.527232
+        ],
+        [
+          0.9,
+          0.527232
+        ],
+        [
+          -0.9,
+          0.527232
+        ]
+      ],
+      "materials": 6,
+      "textures": [
+        {
+          "file": "tex_00.jpg",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_01.jpg",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_02.png",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": true,
+          "alpha": false
+        },
+        {
+          "file": "tex_03.jpg",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_04.jpg",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_05.png",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": true,
+          "alpha": false
+        },
+        {
+          "file": "tex_06.jpg",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_07.jpg",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_08.png",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": true,
+          "alpha": false
+        },
+        {
+          "file": "tex_09.jpg",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_10.jpg",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_11.png",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": true,
+          "alpha": false
+        },
+        {
+          "file": "tex_12.jpg",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": false,
+          "alpha": false
+        }
+      ],
+      "animations": [
+        {
+          "name": "Fire",
+          "channels": 25,
+          "samplers": 25
+        }
+      ],
+      "owner_approved": false,
+      "category": "fireplace",
+      "interaction_status": "PLACEMENT_CANDIDATE_NO_RUNTIME_ACTIVATION",
+      "status": "NORMALIZED_CANDIDATE",
+      "godot_import_status": "PASS_ISOLATED_4.7.2"
+    },
+    {
+      "asset_id": "sketchfab_fireplace_annabelle_fibonacci",
+      "runtime_path": "res://assets/decor_bank/sketchfab_fireplace_annabelle_fibonacci/model.gltf",
+      "original_filename": "fireplace_annabelle_fibonacci.glb",
+      "source_page": "https://sketchfab.com/3d-models/fireplace-cdefddeef92940089d02bf3ee76fa9e5",
+      "author": "AnnaBelle Fibonacci",
+      "license": "CC-BY-4.0",
+      "source_sha256": "9a2c57b1f9f2604237083057310ba4d227e296e8a6e0bd47c32599e2b7d1c9e9",
+      "source_triangles": 45046,
+      "triangles": 12322,
+      "source_dimensions_m_unscaled": [
+        1.862157,
+        1.11222,
+        0.578959
+      ],
+      "dimensions_m": [
+        1.862157,
+        1.11222,
+        0.578298
+      ],
+      "normalized_aabb_min_m": [
+        -0.931078,
+        0.0,
+        -0.289149
+      ],
+      "normalized_aabb_max_m": [
+        0.931078,
+        1.11222,
+        0.28915
+      ],
+      "import_uniform_scale": 1.0,
+      "pivot": "footprint_center_support_plane",
+      "forward_xyz": [
+        0,
+        0,
+        1
+      ],
+      "footprint_xz": [
+        [
+          -0.931078,
+          -0.289149
+        ],
+        [
+          0.931078,
+          -0.289149
+        ],
+        [
+          0.931078,
+          0.28915
+        ],
+        [
+          -0.931078,
+          0.28915
+        ]
+      ],
+      "materials": 8,
+      "textures": [
+        {
+          "file": "tex_00.jpg",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_01.png",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": false,
+          "alpha": true
+        },
+        {
+          "file": "tex_02.png",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": true,
+          "alpha": false
+        },
+        {
+          "file": "tex_03.jpg",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_04.jpg",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_05.png",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": true,
+          "alpha": false
+        },
+        {
+          "file": "tex_06.jpg",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_07.jpg",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_08.png",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": true,
+          "alpha": false
+        },
+        {
+          "file": "tex_09.jpg",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_10.png",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": false,
+          "alpha": true
+        },
+        {
+          "file": "tex_11.jpg",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_12.png",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": true,
+          "alpha": false
+        },
+        {
+          "file": "tex_13.jpg",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_14.jpg",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            1024,
+            1024
+          ],
+          "normal": false,
+          "alpha": false
+        }
+      ],
+      "animations": [],
+      "owner_approved": false,
+      "category": "fireplace",
+      "interaction_status": "PLACEMENT_CANDIDATE_NO_RUNTIME_ACTIVATION",
+      "status": "NORMALIZED_CANDIDATE",
+      "godot_import_status": "PASS_ISOLATED_4.7.2"
+    },
+    {
+      "asset_id": "sketchfab_steampunk_coffee_machine",
+      "runtime_path": "res://assets/decor_bank/sketchfab_steampunk_coffee_machine/model.gltf",
+      "original_filename": "steampunk_coffee_machine.glb",
+      "source_page": "https://sketchfab.com/3d-models/steampunk-coffee-machine-2338d46c5e564741ad01a3934cf7c402",
+      "author": "candelasoriano",
+      "license": "CC-BY-4.0",
+      "source_sha256": "6e440d46335b4a1d6c61d263e5c9058e305185fda227778b132b602ef3003e3f",
+      "source_triangles": 134799,
+      "triangles": 10526,
+      "source_dimensions_m_unscaled": [
+        4.958429,
+        4.784581,
+        4.232735
+      ],
+      "dimensions_m": [
+        0.646276,
+        0.622285,
+        0.551888
+      ],
+      "normalized_aabb_min_m": [
+        -0.323138,
+        -0.0,
+        -0.275944
+      ],
+      "normalized_aabb_max_m": [
+        0.323138,
+        0.622284,
+        0.275943
+      ],
+      "import_uniform_scale": 0.13,
+      "pivot": "footprint_center_support_plane",
+      "forward_xyz": [
+        0,
+        0,
+        1
+      ],
+      "footprint_xz": [
+        [
+          -0.323138,
+          -0.275944
+        ],
+        [
+          0.323138,
+          -0.275944
+        ],
+        [
+          0.323138,
+          0.275943
+        ],
+        [
+          -0.323138,
+          0.275943
+        ]
+      ],
+      "materials": 7,
+      "textures": [
+        {
+          "file": "tex_00.jpg",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            512,
+            512
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_01.jpg",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            512,
+            512
+          ],
+          "normal": false,
+          "alpha": false
+        },
+        {
+          "file": "tex_02.png",
+          "original_px": [
+            1024,
+            1024
+          ],
+          "optimized_px": [
+            512,
+            512
+          ],
+          "normal": true,
+          "alpha": false
+        }
+      ],
+      "animations": [],
+      "owner_approved": false,
+      "category": "coffee_machine",
+      "interaction_status": "PLACEMENT_CANDIDATE_NO_RUNTIME_ACTIVATION",
+      "status": "NORMALIZED_CANDIDATE",
+      "godot_import_status": "PASS_ISOLATED_4.7.2"
+    }
+  ]
+}

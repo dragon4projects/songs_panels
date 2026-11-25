@@ -1,0 +1,4 @@
+AnnaBelle Fibonacci
+https://sketchfab.com/3d-models/fireplace-cdefddeef92940089d02bf3ee76fa9e5
+CC-BY-4.0
+Modified: static mesh decimation, texture resize/encoding, metric pivot; original animation channels unchanged for animated fireplace.

@@ -1,0 +1,4 @@
+candelasoriano
+https://sketchfab.com/3d-models/steampunk-coffee-machine-2338d46c5e564741ad01a3934cf7c402
+CC-BY-4.0
+Modified: static mesh decimation, texture resize/encoding, metric pivot; original animation channels unchanged for animated fireplace.
