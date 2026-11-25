@@ -1,0 +1,198 @@
+{
+  "schema": 1,
+  "owner_approved": false,
+  "items": [
+    {
+      "asset_id": "artifact_glass_cube_s",
+      "runtime_path": "res://assets/decor_bank/artifact_glass_cube_s/model.gltf",
+      "source_blend": "assets_external/authoring/artifact_glass_cubes/artifact_glass_cube_s.blend",
+      "category": "display_content_carrier",
+      "source": "PROJECT_ORIGINAL",
+      "content_id": null,
+      "empty": true,
+      "nominal_glass_cube_side_m": 0.2,
+      "dimensions_m": [
+        0.2,
+        0.22,
+        0.2
+      ],
+      "normalized_aabb_min_m": [
+        -0.1,
+        0.0,
+        -0.1
+      ],
+      "normalized_aabb_max_m": [
+        0.1,
+        0.22,
+        0.1
+      ],
+      "triangles": 792,
+      "materials": 3,
+      "texture_count": 0,
+      "glass_thickness_m": 0.003,
+      "base_height_m": 0.02,
+      "frame_width_m": 0.0035,
+      "pivot": "footprint_center_support_plane",
+      "forward_xyz": [
+        0,
+        0,
+        1
+      ],
+      "interior_clearance_m": [
+        0.193,
+        0.1965,
+        0.193
+      ],
+      "support_slots": [
+        {
+          "id": "artifact_display_base",
+          "local_xyz": [
+            0,
+            0.02,
+            0
+          ],
+          "max_dimensions_m": [
+            0.185,
+            0.1885,
+            0.185
+          ],
+          "status": "MEASURED_GEOMETRY_EMPTY_CANDIDATE"
+        }
+      ],
+      "front_panel_node": "artifact_glass_cube_s_glass_front_removable",
+      "collision_policy": "candidate outer footprint only; runtime access/opening not implemented",
+      "owner_approved": false,
+      "status": "NORMALIZED_CANDIDATE",
+      "runtime_glass": "alpha-blended, no refraction; Blender source physically transmissive",
+      "godot_import_status": "PASS_ISOLATED_4.7.2"
+    },
+    {
+      "asset_id": "artifact_glass_cube_m",
+      "runtime_path": "res://assets/decor_bank/artifact_glass_cube_m/model.gltf",
+      "source_blend": "assets_external/authoring/artifact_glass_cubes/artifact_glass_cube_m.blend",
+      "category": "display_content_carrier",
+      "source": "PROJECT_ORIGINAL",
+      "content_id": null,
+      "empty": true,
+      "nominal_glass_cube_side_m": 0.35,
+      "dimensions_m": [
+        0.35,
+        0.38,
+        0.35
+      ],
+      "normalized_aabb_min_m": [
+        -0.175,
+        0.0,
+        -0.175
+      ],
+      "normalized_aabb_max_m": [
+        0.175,
+        0.38,
+        0.175
+      ],
+      "triangles": 792,
+      "materials": 3,
+      "texture_count": 0,
+      "glass_thickness_m": 0.004,
+      "base_height_m": 0.03,
+      "frame_width_m": 0.005,
+      "pivot": "footprint_center_support_plane",
+      "forward_xyz": [
+        0,
+        0,
+        1
+      ],
+      "interior_clearance_m": [
+        0.33999999999999997,
+        0.345,
+        0.33999999999999997
+      ],
+      "support_slots": [
+        {
+          "id": "artifact_display_base",
+          "local_xyz": [
+            0,
+            0.03,
+            0
+          ],
+          "max_dimensions_m": [
+            0.332,
+            0.337,
+            0.332
+          ],
+          "status": "MEASURED_GEOMETRY_EMPTY_CANDIDATE"
+        }
+      ],
+      "front_panel_node": "artifact_glass_cube_m_glass_front_removable",
+      "collision_policy": "candidate outer footprint only; runtime access/opening not implemented",
+      "owner_approved": false,
+      "status": "NORMALIZED_CANDIDATE",
+      "runtime_glass": "alpha-blended, no refraction; Blender source physically transmissive",
+      "godot_import_status": "PASS_ISOLATED_4.7.2"
+    },
+    {
+      "asset_id": "artifact_glass_cube_l",
+      "runtime_path": "res://assets/decor_bank/artifact_glass_cube_l/model.gltf",
+      "source_blend": "assets_external/authoring/artifact_glass_cubes/artifact_glass_cube_l.blend",
+      "category": "display_content_carrier",
+      "source": "PROJECT_ORIGINAL",
+      "content_id": null,
+      "empty": true,
+      "nominal_glass_cube_side_m": 0.5,
+      "dimensions_m": [
+        0.5,
+        0.54,
+        0.5
+      ],
+      "normalized_aabb_min_m": [
+        -0.25,
+        0.0,
+        -0.25
+      ],
+      "normalized_aabb_max_m": [
+        0.25,
+        0.54,
+        0.25
+      ],
+      "triangles": 792,
+      "materials": 3,
+      "texture_count": 0,
+      "glass_thickness_m": 0.005,
+      "base_height_m": 0.04,
+      "frame_width_m": 0.007,
+      "pivot": "footprint_center_support_plane",
+      "forward_xyz": [
+        0,
+        0,
+        1
+      ],
+      "interior_clearance_m": [
+        0.486,
+        0.493,
+        0.486
+      ],
+      "support_slots": [
+        {
+          "id": "artifact_display_base",
+          "local_xyz": [
+            0,
+            0.04,
+            0
+          ],
+          "max_dimensions_m": [
+            0.478,
+            0.485,
+            0.478
+          ],
+          "status": "MEASURED_GEOMETRY_EMPTY_CANDIDATE"
+        }
+      ],
+      "front_panel_node": "artifact_glass_cube_l_glass_front_removable",
+      "collision_policy": "candidate outer footprint only; runtime access/opening not implemented",
+      "owner_approved": false,
+      "status": "NORMALIZED_CANDIDATE",
+      "runtime_glass": "alpha-blended, no refraction; Blender source physically transmissive",
+      "godot_import_status": "PASS_ISOLATED_4.7.2"
+    }
+  ]
+}

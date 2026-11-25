@@ -1,0 +1,1 @@
+Project-original geometry authored in Blender. Empty enclosure, separate glass panes; no historical artifact identity or content. Source blend uses transmission; Godot model uses alpha-blend material.

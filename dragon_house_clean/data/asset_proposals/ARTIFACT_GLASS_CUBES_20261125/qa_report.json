@@ -1,0 +1,69 @@
+{
+  "items": [
+    {
+      "id": "artifact_glass_cube_s",
+      "imported_aabb_max": [
+        0.100000001490116,
+        0.220000013709068,
+        0.100000001490116
+      ],
+      "imported_aabb_min": [
+        -0.100000001490116,
+        0.0,
+        -0.100000001490116
+      ],
+      "material_slots": 18,
+      "max_vertex_bounds_error_m": 1.49011611938477e-08,
+      "meshes": 18,
+      "status": "PASS",
+      "triangles": 792,
+      "vertices": 1728
+    },
+    {
+      "id": "artifact_glass_cube_m",
+      "imported_aabb_max": [
+        0.174999997019768,
+        0.379999995231628,
+        0.174999997019768
+      ],
+      "imported_aabb_min": [
+        -0.174999997019768,
+        0.0,
+        -0.174999997019768
+      ],
+      "material_slots": 18,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 18,
+      "status": "PASS",
+      "triangles": 792,
+      "vertices": 1728
+    },
+    {
+      "id": "artifact_glass_cube_l",
+      "imported_aabb_max": [
+        0.25,
+        0.540000021457672,
+        0.25
+      ],
+      "imported_aabb_min": [
+        -0.25,
+        0.0,
+        -0.25
+      ],
+      "material_slots": 18,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 18,
+      "status": "PASS",
+      "triangles": 792,
+      "vertices": 1728
+    }
+  ],
+  "glass_import": {
+    "panes_per_model": 5,
+    "godot_transparency_enum_observed": 4,
+    "alpha": 0.14
+  },
+  "blender_render_review": "PASS_EMPTY_CASES_VISIBLE",
+  "runtime_visual_integration": "NOT_VERIFIED",
+  "owner_approved": false
+}

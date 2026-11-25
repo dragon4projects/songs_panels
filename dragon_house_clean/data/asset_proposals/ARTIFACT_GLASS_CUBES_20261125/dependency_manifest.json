@@ -1,0 +1,90 @@
+{
+  "items": [
+    {
+      "path": "assets/decor_bank/artifact_glass_cube_l/SOURCE.txt",
+      "bytes": 201,
+      "sha256": "1f38d186b6f6879ad892a2f382282e8ea89ff6bf234c0d7e45c5cd466af65adc"
+    },
+    {
+      "path": "assets/decor_bank/artifact_glass_cube_l/deps/model.bin",
+      "bytes": 55560,
+      "sha256": "33c357a1316210a0d76b774ec06bc30e12da98a63041472c4de2f5c29ac32fff"
+    },
+    {
+      "path": "assets/decor_bank/artifact_glass_cube_l/model.gltf",
+      "bytes": 14779,
+      "sha256": "2e4e365cdc261b9ca20a257ec612ffaa82ec2ef986feb63230ac0bcaa6f636bf"
+    },
+    {
+      "path": "assets/decor_bank/artifact_glass_cube_m/SOURCE.txt",
+      "bytes": 201,
+      "sha256": "1f38d186b6f6879ad892a2f382282e8ea89ff6bf234c0d7e45c5cd466af65adc"
+    },
+    {
+      "path": "assets/decor_bank/artifact_glass_cube_m/deps/model.bin",
+      "bytes": 55560,
+      "sha256": "1c13c44298d0f8b8e3c04f4a4a26346499b81226e684bb6de7b8a0bc9bb1c5a6"
+    },
+    {
+      "path": "assets/decor_bank/artifact_glass_cube_m/model.gltf",
+      "bytes": 14967,
+      "sha256": "12b96f975cfbf0230de468131db22778f65b4e6acc44c5d40ef8f6a55655dbf2"
+    },
+    {
+      "path": "assets/decor_bank/artifact_glass_cube_s/SOURCE.txt",
+      "bytes": 201,
+      "sha256": "1f38d186b6f6879ad892a2f382282e8ea89ff6bf234c0d7e45c5cd466af65adc"
+    },
+    {
+      "path": "assets/decor_bank/artifact_glass_cube_s/deps/model.bin",
+      "bytes": 55560,
+      "sha256": "9b852cdf354c8c7e5c5e5a9a9bdb7b0dda1ab172e7999e46a0288cae0c75fe25"
+    },
+    {
+      "path": "assets/decor_bank/artifact_glass_cube_s/model.gltf",
+      "bytes": 14958,
+      "sha256": "1739e10d783d0e264d863791a159a07c8ab3b76c5fbd7bb7413e79c534c0e7a2"
+    },
+    {
+      "path": "assets_external/authoring/artifact_glass_cubes/artifact_glass_cube_l.blend",
+      "bytes": 95434,
+      "sha256": "2e8e83e336bd313be32d3e74048a2c5cca3b76081e3fa217ede449e8df4160fd"
+    },
+    {
+      "path": "assets_external/authoring/artifact_glass_cubes/artifact_glass_cube_m.blend",
+      "bytes": 95352,
+      "sha256": "6f9ea911855640a7f79b16a885831d2faec1c84f1cd08eb511167b041de9d1fb"
+    },
+    {
+      "path": "assets_external/authoring/artifact_glass_cubes/artifact_glass_cube_s.blend",
+      "bytes": 95116,
+      "sha256": "ee11e36bbd9a7d0290b87e100ebfb170f3ebb73f7d0039d95af912baea35312e"
+    },
+    {
+      "path": "assets_external/authoring/artifact_glass_cubes/build_source.py",
+      "bytes": 4754,
+      "sha256": "f824e78e8a006d90fc509fcd5e87936776f62892ee4e7845bfee1db76b0f463f"
+    },
+    {
+      "path": "data/asset_proposals/ARTIFACT_GLASS_CUBES_20261125/README.md",
+      "bytes": 515,
+      "sha256": "e99fd2e423953c7f3e350c0c7bbe9fed9d2a9d35fd7391ad7941457f3132685a"
+    },
+    {
+      "path": "data/asset_proposals/ARTIFACT_GLASS_CUBES_20261125/asset_index.json",
+      "bytes": 5300,
+      "sha256": "0957c267544ddfacb53b97a09612d615f565f213ee8566e24a8afa33a6f4402a"
+    },
+    {
+      "path": "data/asset_proposals/ARTIFACT_GLASS_CUBES_20261125/preview_blender.jpg",
+      "bytes": 22903,
+      "sha256": "ef4ef18bd589954f0d3523f1f41135675e693148631b0e7df78ebe92573a9034"
+    },
+    {
+      "path": "data/asset_proposals/ARTIFACT_GLASS_CUBES_20261125/qa_report.json",
+      "bytes": 1525,
+      "sha256": "81e4907d0b450ec1c2998d7e6d5eecdcb92d5d4ea077693ae1b7504137414db7"
+    }
+  ],
+  "bytes": 532886
+}
