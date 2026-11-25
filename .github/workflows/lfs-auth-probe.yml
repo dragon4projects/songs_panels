@@ -1,0 +1,42 @@
+name: LFS authorization probe
+on:
+  push:
+    branches: [qa/lfs-auth-probe-20261125]
+    paths: [.github/workflows/lfs-auth-probe.yml]
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+          fetch-depth: 1
+      - name: Push and independently retrieve harmless LFS object
+        shell: bash
+        env:
+          GIT_LFS_SKIP_SMUDGE: "1"
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REF_NAME" = qa/lfs-auth-probe-20261125
+          git lfs install --local
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          mkdir -p .lfs-auth-probe
+          printf '*.bin filter=lfs diff=lfs merge=lfs -text\n' > .lfs-auth-probe/.gitattributes
+          printf 'Non-sensitive LFS permission probe %s\n' "$GITHUB_RUN_ID" > .lfs-auth-probe/probe.bin
+          expected=$(sha256sum .lfs-auth-probe/probe.bin | cut -d' ' -f1)
+          git add .lfs-auth-probe
+          git commit -m 'QA: synthetic LFS authorization probe [skip ci]'
+          git show HEAD:.lfs-auth-probe/probe.bin | grep -q "^oid sha256:$expected$"
+          git lfs push --object-id origin "$expected"
+          git push origin HEAD:"refs/heads/$GITHUB_REF_NAME"
+          git config lfs.storage "$RUNNER_TEMP/lfs-independent"
+          rm .lfs-auth-probe/probe.bin
+          git lfs fetch --include='.lfs-auth-probe/probe.bin' --exclude='' origin HEAD
+          git lfs checkout .lfs-auth-probe/probe.bin
+          actual=$(sha256sum .lfs-auth-probe/probe.bin | cut -d' ' -f1)
+          test "$actual" = "$expected"
+          echo "LFS_AUTH_PUSH_AND_FETCH_PASS $actual"
