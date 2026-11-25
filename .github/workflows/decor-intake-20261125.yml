@@ -1,0 +1,48 @@
+name: Decor intake 20261125 public subset
+on:
+  push:
+    branches: [assets/cgtrader-coffee-mugs-20261124]
+    paths: ['.github/workflows/decor-intake-20261125.yml']
+permissions:
+  contents: write
+jobs:
+  intake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GIT_LFS_SKIP_SMUDGE: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+          fetch-depth: 1
+      - name: Import verified public asset subset
+        shell: bash
+        run: |
+          set -euo pipefail
+          git lfs install --local
+          curl -fLsS --retry 2 'https://d2ol7oe51mr4n9.cloudfront.net/user_3JdI9kJ82xObF8Bi3EgU4P6DaoR/9388b70d-a75e-4ae9-9773-e37cc6f5a460.zip' -o /tmp/decor.zip
+          echo '9c9f6af07ae9f88d16dc2207388e9a770174f336f7bc77b50f13ac12725fa771  /tmp/decor.zip' | sha256sum -c -
+          python3 - <<'PY'
+          import zipfile, pathlib, hashlib, json
+          base=pathlib.Path('dragon_house_clean')
+          prefixes=["dragon_house_clean/assets/decor_bank/blendkit_industrial_pipe_lamp/","dragon_house_clean/assets/decor_bank/owner_sleeping_dragon/","dragon_house_clean/assets_external/authoring/ultimate_low_poly_shader/","dragon_house_clean/data/asset_proposals/DECOR_INTAKE_20261125/"]
+          with zipfile.ZipFile('/tmp/decor.zip') as z:
+              for f in z.infolist():
+                  if f.is_dir(): continue
+                  assert '..' not in pathlib.PurePosixPath(f.filename).parts and any(f.filename.startswith(p) for p in prefixes), f.filename
+                  p=pathlib.Path(f.filename)
+                  assert not p.exists(), p
+                  p.parent.mkdir(parents=True,exist_ok=True)
+                  p.write_bytes(z.read(f))
+          manifest=json.loads((base/'data/asset_proposals/DECOR_INTAKE_20261125/dependency_manifest.json').read_text())
+          for row in manifest['items']:
+              p=base/row['path']
+              assert p.stat().st_size==row['bytes'] and hashlib.sha256(p.read_bytes()).hexdigest()==row['sha256'], p
+          print('Verified',len(manifest['items']),'files')
+          PY
+          git config user.name 'dragon-house-asset-intake'
+          git config user.email 'dragon-house-asset-intake@users.noreply.github.com'
+          git add -- dragon_house_clean/assets/decor_bank/blendkit_industrial_pipe_lamp/ dragon_house_clean/assets/decor_bank/owner_sleeping_dragon/ dragon_house_clean/assets_external/authoring/ultimate_low_poly_shader/ dragon_house_clean/data/asset_proposals/DECOR_INTAKE_20261125/
+          git commit -m 'assets: add public decor models, shader and verified intake catalog'
+          git push origin HEAD:refs/heads/assets/cgtrader-coffee-mugs-20261124
