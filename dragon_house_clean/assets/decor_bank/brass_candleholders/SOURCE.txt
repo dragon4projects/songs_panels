@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/brass_candleholders
+Source SHA-256 a1de928d1c7d2241f0727dbad2c9b52d49c3245e1f7dd0c45a9a6482bc5c9101
+Source yaw 0 degrees; uniform scale 0.68; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 41936 -> 9097; original source unchanged, optimized GLB SHA-256 fc74d0570f68bfa40ccb5522f07f23eb81441ee5e30daadf705ae028473f7e8d. Bounds delta before recenter: 0.000001 m.

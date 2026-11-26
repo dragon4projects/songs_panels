@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/industrial_wall_sconce
+Source SHA-256 d36361a9163c9543546f17de223de27db53423ea6aa905b75609142f45af2893
+Source yaw 0 degrees; uniform scale 1; pivot wall
+Native scale; no aspect stretch.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 9826 -> 7279; original source unchanged, optimized GLB SHA-256 a86b4588e0b17723d8374ed5155fe96ae0a1bd3d217db9fbe7a0580bd49581bb. Bounds delta before recenter: 0.000002 m.

@@ -1,0 +1,5 @@
+PROJECT_AUTHORED_CANDIDATE
+Project-authored generic small prop
+Derived toy-sized mesh; no historical or owned object identity.
+Working GLB SHA-256 b6f483d3717add892e242d91ab38b8b20af69456f053386ddf58957b536e69de
+Rounded wooden die, six numbered faces; no real-world content.

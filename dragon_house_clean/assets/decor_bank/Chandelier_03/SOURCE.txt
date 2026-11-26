@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/Chandelier_03
+Source SHA-256 ab3c57ada6a22e472778b4c7f7e7d5e9b3b10fe91d4566de95e89497f282e00f
+Source yaw 0 degrees; uniform scale 0.65; pivot ceiling
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 29301 -> 7280; original source unchanged, optimized GLB SHA-256 42f02d64ed5974392b04b67608105a94a3495d8b704f8eee510027289a2b88dc. Bounds delta before recenter: 0.000507 m.

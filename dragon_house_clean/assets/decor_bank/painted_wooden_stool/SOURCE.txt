@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/painted_wooden_stool
+Source SHA-256 f9a9a4a7c38b3421c30dac35d91c41c8864452d6dbb398911494b8324d312ef9
+Source yaw 0 degrees; uniform scale 0.85; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.

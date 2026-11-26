@@ -1,0 +1,6 @@
+PROJECT_ORIGINAL
+TEEA007 original neutral media holder
+Source SHA-256 bcb232b3a62f2c0a8565a1adbc1b425f30cf4bc9786821a2ee288f3929ad2fe1
+Source yaw 0 degrees; uniform scale 1; pivot wall
+Original mesh geometry; no actual content baked.
+Candidate: owner_approved=false.

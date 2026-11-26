@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/hanging_picture_frame_01
+Source SHA-256 00aaeab14751485287443b4c5cc2ee5673136510595daa6a2948519c116ad47b
+Source yaw 0 degrees; uniform scale 1; pivot wall
+Native source scale.
+Candidate: owner_approved=false.

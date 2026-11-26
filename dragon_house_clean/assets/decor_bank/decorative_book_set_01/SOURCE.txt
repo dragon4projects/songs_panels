@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/decorative_book_set_01
+Source SHA-256 d424c01decfe3e736e370b0282731f5cccc16873fcdd1f05951450fc0761fab0
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 397856 -> 9405; original source unchanged, optimized GLB SHA-256 84a9433175d22fdff22d265df0993dabacf546a11c6b7baade3e3924fa764bd4. Bounds delta before recenter: 0.005745 m.

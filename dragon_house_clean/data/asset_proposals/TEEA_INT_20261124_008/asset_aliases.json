@@ -1,0 +1,1471 @@
+{
+  "schema": 1,
+  "task_id": "TEEA_INT_20261124_008",
+  "base_repo": "dragon4projects/songs_panels",
+  "base_sha": "9c45da4f59dd40fb03f07ae0842000bb448efa93",
+  "latest_integration_sha_reviewed": "182360601f5c382d55e51a7c4566d553f8a8b42b",
+  "owner_approved": false,
+  "units": "m",
+  "axis": "X-right,Y-up,Z-front",
+  "status": "PARTIAL_READY",
+  "items": [
+    {
+      "source_id": "sofa_02",
+      "candidate_id": "sofa_02",
+      "runtime_path": "res://assets/decor_bank/sofa_02/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "chinese_armchair",
+      "candidate_id": "chinese_armchair",
+      "runtime_path": "res://assets/decor_bank/chinese_armchair/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "gothic_coffee_table",
+      "candidate_id": "gothic_coffee_table",
+      "runtime_path": "res://assets/decor_bank/gothic_coffee_table/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "wooden_display_shelves_01",
+      "candidate_id": "wooden_display_shelves_01",
+      "runtime_path": "res://assets/decor_bank/wooden_display_shelves_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "chinese_commode",
+      "candidate_id": "chinese_commode",
+      "runtime_path": "res://assets/decor_bank/chinese_commode/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "wooden_table_02",
+      "candidate_id": "wooden_table_02",
+      "runtime_path": "res://assets/decor_bank/wooden_table_02/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "metal_stool_02",
+      "candidate_id": "metal_stool_02",
+      "runtime_path": "res://assets/decor_bank/metal_stool_02/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "worn_metal_rack",
+      "candidate_id": "worn_metal_rack",
+      "runtime_path": "res://assets/decor_bank/worn_metal_rack/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "wooden_bookshelf_worn",
+      "candidate_id": "wooden_bookshelf_worn",
+      "runtime_path": "res://assets/decor_bank/wooden_bookshelf_worn/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "Sofa_01",
+      "candidate_id": "Sofa_01",
+      "runtime_path": "res://assets/decor_bank/Sofa_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "ArmChair_01",
+      "candidate_id": "ArmChair_01",
+      "runtime_path": "res://assets/decor_bank/ArmChair_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "ClassicConsole_01",
+      "candidate_id": "ClassicConsole_01",
+      "runtime_path": "res://assets/decor_bank/ClassicConsole_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "vintage_day_bed",
+      "candidate_id": "vintage_day_bed",
+      "runtime_path": "res://assets/decor_bank/vintage_day_bed/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "Rockingchair_01",
+      "candidate_id": "Rockingchair_01",
+      "runtime_path": "res://assets/decor_bank/Rockingchair_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "steel_frame_shelves_01",
+      "candidate_id": "steel_frame_shelves_01",
+      "runtime_path": "res://assets/decor_bank/steel_frame_shelves_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "projector_screen",
+      "candidate_id": "projector_screen",
+      "runtime_path": "res://assets/decor_bank/projector_screen/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "carved_wooden_elephant",
+      "candidate_id": "generic_small_wooden_elephant",
+      "runtime_path": "res://assets/decor_bank/generic_small_wooden_elephant/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "bronze_ray_statue",
+      "candidate_id": "generic_miniature_ray_replica",
+      "runtime_path": "res://assets/decor_bank/generic_miniature_ray_replica/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "premium_recliner_row",
+      "candidate_id": "cinema_premium_recliner_row",
+      "runtime_path": "res://assets/decor_bank/cinema_premium_recliner_row/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "screen_masking_frame",
+      "candidate_id": "cinema_screen_masking_frame",
+      "runtime_path": "res://assets/decor_bank/cinema_screen_masking_frame/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "aisle_step",
+      "candidate_id": "cinema_aisle_step",
+      "runtime_path": "res://assets/decor_bank/cinema_aisle_step/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "acoustic_wall_panel",
+      "candidate_id": "cinema_acoustic_wall_panel",
+      "runtime_path": "res://assets/decor_bank/cinema_acoustic_wall_panel/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "side_wall_light",
+      "candidate_id": "cinema_side_wall_light",
+      "runtime_path": "res://assets/decor_bank/cinema_side_wall_light/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "surround_speaker",
+      "candidate_id": "cinema_surround_speaker",
+      "runtime_path": "res://assets/decor_bank/cinema_surround_speaker/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "digital_projector",
+      "candidate_id": "cinema_digital_projector",
+      "runtime_path": "res://assets/decor_bank/cinema_digital_projector/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arcade_cabinet",
+      "candidate_id": "cinema_arcade_cabinet",
+      "runtime_path": "res://assets/decor_bank/cinema_arcade_cabinet/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "wall_poster_lightbox",
+      "candidate_id": "cinema_wall_poster_lightbox",
+      "runtime_path": "res://assets/decor_bank/cinema_wall_poster_lightbox/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "aisle_floor_tile",
+      "candidate_id": "cinema_aisle_floor_tile",
+      "runtime_path": "res://assets/decor_bank/cinema_aisle_floor_tile/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "cupholder_armrest",
+      "candidate_id": "cinema_cupholder_armrest",
+      "runtime_path": "res://assets/decor_bank/cinema_cupholder_armrest/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "stage_curtains_open",
+      "candidate_id": "cinema_stage_curtains_open",
+      "runtime_path": "res://assets/decor_bank/cinema_stage_curtains_open/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "dragon_mug_red",
+      "candidate_id": "candidate_dragon_mug_red",
+      "runtime_path": "res://assets/decor_bank/candidate_dragon_mug_red/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "guest_mug_blue",
+      "candidate_id": "candidate_guest_mug_blue",
+      "runtime_path": "res://assets/decor_bank/candidate_guest_mug_blue/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "rubber_duck_toy",
+      "candidate_id": "generic_toy_duck",
+      "runtime_path": "res://assets/decor_bank/generic_toy_duck/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "bronze_whale_statue",
+      "candidate_id": "generic_toy_whale",
+      "runtime_path": "res://assets/decor_bank/generic_toy_whale/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "concrete_cat_statue",
+      "candidate_id": "generic_toy_cat",
+      "runtime_path": "res://assets/decor_bank/generic_toy_cat/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "bronze_shark_statue",
+      "candidate_id": "generic_toy_shark",
+      "runtime_path": "res://assets/decor_bank/generic_toy_shark/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "seadogs_compass",
+      "candidate_id": "generic_mini_compass",
+      "runtime_path": "res://assets/decor_bank/generic_mini_compass/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "garden_gnome",
+      "candidate_id": "generic_toy_gnome",
+      "runtime_path": "res://assets/decor_bank/generic_toy_gnome/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "generic_small_wooden_die",
+      "candidate_id": "generic_small_wooden_die",
+      "runtime_path": "res://assets/decor_bank/generic_small_wooden_die/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "generic_wooden_game_token",
+      "candidate_id": "generic_wooden_game_token",
+      "runtime_path": "res://assets/decor_bank/generic_wooden_game_token/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "generic_resin_medallion",
+      "candidate_id": "generic_resin_medallion",
+      "runtime_path": "res://assets/decor_bank/generic_resin_medallion/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "generic_closed_trinket_case",
+      "candidate_id": "generic_closed_trinket_case",
+      "runtime_path": "res://assets/decor_bank/generic_closed_trinket_case/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "generic_toy_ball",
+      "candidate_id": "generic_toy_ball",
+      "runtime_path": "res://assets/decor_bank/generic_toy_ball/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "generic_thread_spool",
+      "candidate_id": "generic_thread_spool",
+      "runtime_path": "res://assets/decor_bank/generic_thread_spool/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "generic_smooth_worry_stone",
+      "candidate_id": "generic_smooth_worry_stone",
+      "runtime_path": "res://assets/decor_bank/generic_smooth_worry_stone/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "industrial_wall_lamp",
+      "candidate_id": "industrial_wall_lamp",
+      "runtime_path": "res://assets/decor_bank/industrial_wall_lamp/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "industrial_wall_sconce",
+      "candidate_id": "industrial_wall_sconce",
+      "runtime_path": "res://assets/decor_bank/industrial_wall_sconce/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "desk_lamp_arm_01",
+      "candidate_id": "desk_lamp_arm_01",
+      "runtime_path": "res://assets/decor_bank/desk_lamp_arm_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "chinese_chandelier",
+      "candidate_id": "chinese_chandelier",
+      "runtime_path": "res://assets/decor_bank/chinese_chandelier/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "vintage_oil_lamp",
+      "candidate_id": "vintage_oil_lamp",
+      "runtime_path": "res://assets/decor_bank/vintage_oil_lamp/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "wooden_lantern_01",
+      "candidate_id": "wooden_lantern_01",
+      "runtime_path": "res://assets/decor_bank/wooden_lantern_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "throw_pillows_01",
+      "candidate_id": "throw_pillows_01",
+      "runtime_path": "res://assets/decor_bank/throw_pillows_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "side_table_01",
+      "candidate_id": "side_table_01",
+      "runtime_path": "res://assets/decor_bank/side_table_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "chinese_tea_table",
+      "candidate_id": "chinese_tea_table",
+      "runtime_path": "res://assets/decor_bank/chinese_tea_table/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "round_wooden_table_02",
+      "candidate_id": "round_wooden_table_02",
+      "runtime_path": "res://assets/decor_bank/round_wooden_table_02/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "modern_wooden_cabinet",
+      "candidate_id": "modern_wooden_cabinet",
+      "runtime_path": "res://assets/decor_bank/modern_wooden_cabinet/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "painted_wooden_chair_01",
+      "candidate_id": "painted_wooden_chair_01",
+      "runtime_path": "res://assets/decor_bank/painted_wooden_chair_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "classic_laptop",
+      "candidate_id": "classic_laptop",
+      "runtime_path": "res://assets/decor_bank/classic_laptop/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "boombox",
+      "candidate_id": "boombox",
+      "runtime_path": "res://assets/decor_bank/boombox/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "portable_cassette_player",
+      "candidate_id": "portable_cassette_player",
+      "runtime_path": "res://assets/decor_bank/portable_cassette_player/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "Television_01",
+      "candidate_id": "Television_01",
+      "runtime_path": "res://assets/decor_bank/Television_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "gaming_console",
+      "candidate_id": "gaming_console",
+      "runtime_path": "res://assets/decor_bank/gaming_console/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "gamepad",
+      "candidate_id": "gamepad",
+      "runtime_path": "res://assets/decor_bank/gamepad/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "korean_public_payphone_01",
+      "candidate_id": "korean_public_payphone_01",
+      "runtime_path": "res://assets/decor_bank/korean_public_payphone_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "wall_clock",
+      "candidate_id": "wall_clock",
+      "runtime_path": "res://assets/decor_bank/wall_clock/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "standing_chalkboard_01",
+      "candidate_id": "standing_chalkboard_01",
+      "runtime_path": "res://assets/decor_bank/standing_chalkboard_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "wicker_basket_01",
+      "candidate_id": "wicker_basket_01",
+      "runtime_path": "res://assets/decor_bank/wicker_basket_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "wicker_basket_02",
+      "candidate_id": "wicker_basket_02",
+      "runtime_path": "res://assets/decor_bank/wicker_basket_02/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "binder_notebook",
+      "candidate_id": "binder_notebook",
+      "runtime_path": "res://assets/decor_bank/binder_notebook/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "vintage_suitcase",
+      "candidate_id": "vintage_suitcase",
+      "runtime_path": "res://assets/decor_bank/vintage_suitcase/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "wooden_bowl_02",
+      "candidate_id": "wooden_bowl_02",
+      "runtime_path": "res://assets/decor_bank/wooden_bowl_02/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "tea_set_01",
+      "candidate_id": "tea_set_01",
+      "runtime_path": "res://assets/decor_bank/tea_set_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "modified_thermos",
+      "candidate_id": "modified_thermos",
+      "runtime_path": "res://assets/decor_bank/modified_thermos/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "russian_food_cans_01",
+      "candidate_id": "russian_food_cans_01",
+      "runtime_path": "res://assets/decor_bank/russian_food_cans_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "croissant",
+      "candidate_id": "croissant",
+      "runtime_path": "res://assets/decor_bank/croissant/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "potted_plant_04",
+      "candidate_id": "potted_plant_04",
+      "runtime_path": "res://assets/decor_bank/potted_plant_04/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "metal_tool_chest",
+      "candidate_id": "metal_tool_chest",
+      "runtime_path": "res://assets/decor_bank/metal_tool_chest/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "painted_wooden_cabinet_02",
+      "candidate_id": "painted_wooden_cabinet_02",
+      "runtime_path": "res://assets/decor_bank/painted_wooden_cabinet_02/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "chinese_cabinet",
+      "candidate_id": "chinese_cabinet",
+      "runtime_path": "res://assets/decor_bank/chinese_cabinet/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "vintage_wooden_drawer_01",
+      "candidate_id": "vintage_wooden_drawer_01",
+      "runtime_path": "res://assets/decor_bank/vintage_wooden_drawer_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "dragon_fur_rest_mat",
+      "candidate_id": "dragon_fur_rest_mat",
+      "runtime_path": "res://assets/decor_bank/dragon_fur_rest_mat/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "dragon_mug_lod0_empty",
+      "candidate_id": "dragon_mug_lod0_empty",
+      "runtime_path": "res://assets/decor_bank/dragon_mug_lod0_empty/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "dragon_mug_lod0_filled",
+      "candidate_id": "dragon_mug_lod0_filled",
+      "runtime_path": "res://assets/decor_bank/dragon_mug_lod0_filled/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "dragon_mug_lod1_empty",
+      "candidate_id": "dragon_mug_lod1_empty",
+      "runtime_path": "res://assets/decor_bank/dragon_mug_lod1_empty/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "media_holder_book",
+      "candidate_id": "media_holder_book",
+      "runtime_path": "res://assets/decor_bank/media_holder_book/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "media_holder_film_poster",
+      "candidate_id": "media_holder_film_poster",
+      "runtime_path": "res://assets/decor_bank/media_holder_film_poster/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "media_holder_audio",
+      "candidate_id": "media_holder_audio",
+      "runtime_path": "res://assets/decor_bank/media_holder_audio/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "media_holder_artifact",
+      "candidate_id": "media_holder_artifact",
+      "runtime_path": "res://assets/decor_bank/media_holder_artifact/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "media_holder_film_screen",
+      "candidate_id": "media_holder_film_screen",
+      "runtime_path": "res://assets/decor_bank/media_holder_film_screen/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_floor_wood_r1",
+      "candidate_id": "arch_floor_wood_r1",
+      "runtime_path": "res://assets/decor_bank/arch_floor_wood_r1/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_floor_stone_r1",
+      "candidate_id": "arch_floor_stone_r1",
+      "runtime_path": "res://assets/decor_bank/arch_floor_stone_r1/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_floor_workshop_r1",
+      "candidate_id": "arch_floor_workshop_r1",
+      "runtime_path": "res://assets/decor_bank/arch_floor_workshop_r1/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_rear_stone_r1",
+      "candidate_id": "arch_rear_stone_r1",
+      "runtime_path": "res://assets/decor_bank/arch_rear_stone_r1/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_rear_plaster_r1",
+      "candidate_id": "arch_rear_plaster_r1",
+      "runtime_path": "res://assets/decor_bank/arch_rear_plaster_r1/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_rear_timber_r1",
+      "candidate_id": "arch_rear_timber_r1",
+      "runtime_path": "res://assets/decor_bank/arch_rear_timber_r1/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_ceiling_r1",
+      "candidate_id": "arch_ceiling_r1",
+      "runtime_path": "res://assets/decor_bank/arch_ceiling_r1/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_header_r1",
+      "candidate_id": "arch_header_r1",
+      "runtime_path": "res://assets/decor_bank/arch_header_r1/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_skirting_r1",
+      "candidate_id": "arch_skirting_r1",
+      "runtime_path": "res://assets/decor_bank/arch_skirting_r1/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_front_lip_r1",
+      "candidate_id": "arch_front_lip_r1",
+      "runtime_path": "res://assets/decor_bank/arch_front_lip_r1/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_floor_wood_r2",
+      "candidate_id": "arch_floor_wood_r2",
+      "runtime_path": "res://assets/decor_bank/arch_floor_wood_r2/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_floor_stone_r2",
+      "candidate_id": "arch_floor_stone_r2",
+      "runtime_path": "res://assets/decor_bank/arch_floor_stone_r2/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_floor_workshop_r2",
+      "candidate_id": "arch_floor_workshop_r2",
+      "runtime_path": "res://assets/decor_bank/arch_floor_workshop_r2/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_rear_stone_r2",
+      "candidate_id": "arch_rear_stone_r2",
+      "runtime_path": "res://assets/decor_bank/arch_rear_stone_r2/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_rear_plaster_r2",
+      "candidate_id": "arch_rear_plaster_r2",
+      "runtime_path": "res://assets/decor_bank/arch_rear_plaster_r2/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_rear_timber_r2",
+      "candidate_id": "arch_rear_timber_r2",
+      "runtime_path": "res://assets/decor_bank/arch_rear_timber_r2/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_ceiling_r2",
+      "candidate_id": "arch_ceiling_r2",
+      "runtime_path": "res://assets/decor_bank/arch_ceiling_r2/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_header_r2",
+      "candidate_id": "arch_header_r2",
+      "runtime_path": "res://assets/decor_bank/arch_header_r2/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_skirting_r2",
+      "candidate_id": "arch_skirting_r2",
+      "runtime_path": "res://assets/decor_bank/arch_skirting_r2/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_front_lip_r2",
+      "candidate_id": "arch_front_lip_r2",
+      "runtime_path": "res://assets/decor_bank/arch_front_lip_r2/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_floor_wood_r3",
+      "candidate_id": "arch_floor_wood_r3",
+      "runtime_path": "res://assets/decor_bank/arch_floor_wood_r3/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_floor_stone_r3",
+      "candidate_id": "arch_floor_stone_r3",
+      "runtime_path": "res://assets/decor_bank/arch_floor_stone_r3/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_floor_workshop_r3",
+      "candidate_id": "arch_floor_workshop_r3",
+      "runtime_path": "res://assets/decor_bank/arch_floor_workshop_r3/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_rear_stone_r3",
+      "candidate_id": "arch_rear_stone_r3",
+      "runtime_path": "res://assets/decor_bank/arch_rear_stone_r3/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_rear_plaster_r3",
+      "candidate_id": "arch_rear_plaster_r3",
+      "runtime_path": "res://assets/decor_bank/arch_rear_plaster_r3/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_rear_timber_r3",
+      "candidate_id": "arch_rear_timber_r3",
+      "runtime_path": "res://assets/decor_bank/arch_rear_timber_r3/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_ceiling_r3",
+      "candidate_id": "arch_ceiling_r3",
+      "runtime_path": "res://assets/decor_bank/arch_ceiling_r3/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_header_r3",
+      "candidate_id": "arch_header_r3",
+      "runtime_path": "res://assets/decor_bank/arch_header_r3/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_skirting_r3",
+      "candidate_id": "arch_skirting_r3",
+      "runtime_path": "res://assets/decor_bank/arch_skirting_r3/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_front_lip_r3",
+      "candidate_id": "arch_front_lip_r3",
+      "runtime_path": "res://assets/decor_bank/arch_front_lip_r3/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_connector_rear_return",
+      "candidate_id": "arch_connector_rear_return",
+      "runtime_path": "res://assets/decor_bank/arch_connector_rear_return/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_connector_header",
+      "candidate_id": "arch_connector_header",
+      "runtime_path": "res://assets/decor_bank/arch_connector_header/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_connector_rear_jamb",
+      "candidate_id": "arch_connector_rear_jamb",
+      "runtime_path": "res://assets/decor_bank/arch_connector_rear_jamb/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_closed_side_return",
+      "candidate_id": "arch_closed_side_return",
+      "runtime_path": "res://assets/decor_bank/arch_closed_side_return/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_lift_rail",
+      "candidate_id": "arch_lift_rail",
+      "runtime_path": "res://assets/decor_bank/arch_lift_rail/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_lift_control",
+      "candidate_id": "arch_lift_control",
+      "runtime_path": "res://assets/decor_bank/arch_lift_control/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_lift_floor_skin",
+      "candidate_id": "arch_lift_floor_skin",
+      "runtime_path": "res://assets/decor_bank/arch_lift_floor_skin/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_lift_shaft_wall",
+      "candidate_id": "arch_lift_shaft_wall",
+      "runtime_path": "res://assets/decor_bank/arch_lift_shaft_wall/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_generic_door",
+      "candidate_id": "arch_generic_door",
+      "runtime_path": "res://assets/decor_bank/arch_generic_door/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_generic_plaque",
+      "candidate_id": "arch_generic_plaque",
+      "runtime_path": "res://assets/decor_bank/arch_generic_plaque/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "arch_generic_note_frame",
+      "candidate_id": "arch_generic_note_frame",
+      "runtime_path": "res://assets/decor_bank/arch_generic_note_frame/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "generic_artifact_cube_empty",
+      "candidate_id": "generic_artifact_cube_empty",
+      "runtime_path": "res://assets/decor_bank/generic_artifact_cube_empty/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "generic_open_stash_crate",
+      "candidate_id": "generic_open_stash_crate",
+      "runtime_path": "res://assets/decor_bank/generic_open_stash_crate/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "sofa_03",
+      "candidate_id": "sofa_03",
+      "runtime_path": "res://assets/decor_bank/sofa_03/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "GreenChair_01",
+      "candidate_id": "GreenChair_01",
+      "runtime_path": "res://assets/decor_bank/GreenChair_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "Ottoman_01",
+      "candidate_id": "Ottoman_01",
+      "runtime_path": "res://assets/decor_bank/Ottoman_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "painted_wooden_bench",
+      "candidate_id": "painted_wooden_bench",
+      "runtime_path": "res://assets/decor_bank/painted_wooden_bench/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "WoodenTable_01",
+      "candidate_id": "WoodenTable_01",
+      "runtime_path": "res://assets/decor_bank/WoodenTable_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "WoodenTable_03",
+      "candidate_id": "WoodenTable_03",
+      "runtime_path": "res://assets/decor_bank/WoodenTable_03/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "coffee_table_round_01",
+      "candidate_id": "coffee_table_round_01",
+      "runtime_path": "res://assets/decor_bank/coffee_table_round_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "painted_wooden_nightstand",
+      "candidate_id": "painted_wooden_nightstand",
+      "runtime_path": "res://assets/decor_bank/painted_wooden_nightstand/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "painted_wooden_stool",
+      "candidate_id": "painted_wooden_stool",
+      "runtime_path": "res://assets/decor_bank/painted_wooden_stool/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "gallinera_chair",
+      "candidate_id": "gallinera_chair",
+      "runtime_path": "res://assets/decor_bank/gallinera_chair/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "gallinera_table",
+      "candidate_id": "gallinera_table",
+      "runtime_path": "res://assets/decor_bank/gallinera_table/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "round_wooden_table_01",
+      "candidate_id": "round_wooden_table_01",
+      "runtime_path": "res://assets/decor_bank/round_wooden_table_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "Shelf_01",
+      "candidate_id": "Shelf_01",
+      "runtime_path": "res://assets/decor_bank/Shelf_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "steel_frame_shelves_03",
+      "candidate_id": "steel_frame_shelves_03",
+      "runtime_path": "res://assets/decor_bank/steel_frame_shelves_03/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "Ukulele_01",
+      "candidate_id": "Ukulele_01",
+      "runtime_path": "res://assets/decor_bank/Ukulele_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "alarm_clock_01",
+      "candidate_id": "alarm_clock_01",
+      "runtime_path": "res://assets/decor_bank/alarm_clock_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "vintage_grandfather_clock_01",
+      "candidate_id": "vintage_grandfather_clock_01",
+      "runtime_path": "res://assets/decor_bank/vintage_grandfather_clock_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "brass_vase_03",
+      "candidate_id": "brass_vase_03",
+      "runtime_path": "res://assets/decor_bank/brass_vase_03/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "ceramic_vase_02",
+      "candidate_id": "ceramic_vase_02",
+      "runtime_path": "res://assets/decor_bank/ceramic_vase_02/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "planter_box_01",
+      "candidate_id": "planter_box_01",
+      "runtime_path": "res://assets/decor_bank/planter_box_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "potted_plant_02",
+      "candidate_id": "potted_plant_02",
+      "runtime_path": "res://assets/decor_bank/potted_plant_02/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "chess_set",
+      "candidate_id": "chess_set",
+      "runtime_path": "res://assets/decor_bank/chess_set/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "sungka_board",
+      "candidate_id": "sungka_board",
+      "runtime_path": "res://assets/decor_bank/sungka_board/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "book_encyclopedia_set_01",
+      "candidate_id": "book_encyclopedia_set_01",
+      "runtime_path": "res://assets/decor_bank/book_encyclopedia_set_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "carved_wooden_plate",
+      "candidate_id": "carved_wooden_plate",
+      "runtime_path": "res://assets/decor_bank/carved_wooden_plate/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "jug_01",
+      "candidate_id": "jug_01",
+      "runtime_path": "res://assets/decor_bank/jug_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "wooden_bowl_01",
+      "candidate_id": "wooden_bowl_01",
+      "runtime_path": "res://assets/decor_bank/wooden_bowl_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "industrial_storage_cart",
+      "candidate_id": "industrial_storage_cart",
+      "runtime_path": "res://assets/decor_bank/industrial_storage_cart/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "tool_cart",
+      "candidate_id": "tool_cart",
+      "runtime_path": "res://assets/decor_bank/tool_cart/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "brass_diya_lantern",
+      "candidate_id": "brass_diya_lantern",
+      "runtime_path": "res://assets/decor_bank/brass_diya_lantern/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "brass_candleholders",
+      "candidate_id": "brass_candleholders",
+      "runtime_path": "res://assets/decor_bank/brass_candleholders/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "metal_stool_01",
+      "candidate_id": "metal_stool_01",
+      "runtime_path": "res://assets/decor_bank/metal_stool_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "metal_stool_03",
+      "candidate_id": "metal_stool_03",
+      "runtime_path": "res://assets/decor_bank/metal_stool_03/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "painted_wooden_chair_02",
+      "candidate_id": "painted_wooden_chair_02",
+      "runtime_path": "res://assets/decor_bank/painted_wooden_chair_02/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "treasure_chest",
+      "candidate_id": "treasure_chest",
+      "runtime_path": "res://assets/decor_bank/treasure_chest/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "GothicBed_01",
+      "candidate_id": "GothicBed_01",
+      "runtime_path": "res://assets/decor_bank/GothicBed_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "common_woven_rug",
+      "candidate_id": "common_woven_rug",
+      "runtime_path": "res://assets/decor_bank/common_woven_rug/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "cinema_dark_carpet_r1",
+      "candidate_id": "cinema_dark_carpet_r1",
+      "runtime_path": "res://assets/decor_bank/cinema_dark_carpet_r1/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "cinema_dark_carpet_r2",
+      "candidate_id": "cinema_dark_carpet_r2",
+      "runtime_path": "res://assets/decor_bank/cinema_dark_carpet_r2/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "cinema_dark_carpet_r3",
+      "candidate_id": "cinema_dark_carpet_r3",
+      "runtime_path": "res://assets/decor_bank/cinema_dark_carpet_r3/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "BarberShopChair_01",
+      "candidate_id": "BarberShopChair_01",
+      "runtime_path": "res://assets/decor_bank/BarberShopChair_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "Chandelier_01",
+      "candidate_id": "Chandelier_01",
+      "runtime_path": "res://assets/decor_bank/Chandelier_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "Chandelier_03",
+      "candidate_id": "Chandelier_03",
+      "runtime_path": "res://assets/decor_bank/Chandelier_03/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "CoffeeCart_01",
+      "candidate_id": "CoffeeCart_01",
+      "runtime_path": "res://assets/decor_bank/CoffeeCart_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "antique_ceramic_vase_01",
+      "candidate_id": "antique_ceramic_vase_01",
+      "runtime_path": "res://assets/decor_bank/antique_ceramic_vase_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "bench_vice_01",
+      "candidate_id": "bench_vice_01",
+      "runtime_path": "res://assets/decor_bank/bench_vice_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "brass_goblets",
+      "candidate_id": "brass_goblets",
+      "runtime_path": "res://assets/decor_bank/brass_goblets/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "brass_pan_01",
+      "candidate_id": "brass_pan_01",
+      "runtime_path": "res://assets/decor_bank/brass_pan_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "brass_pot_01",
+      "candidate_id": "brass_pot_01",
+      "runtime_path": "res://assets/decor_bank/brass_pot_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "brass_pot_02",
+      "candidate_id": "brass_pot_02",
+      "runtime_path": "res://assets/decor_bank/brass_pot_02/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "brass_vase_01",
+      "candidate_id": "brass_vase_01",
+      "runtime_path": "res://assets/decor_bank/brass_vase_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "brass_vase_02",
+      "candidate_id": "brass_vase_02",
+      "runtime_path": "res://assets/decor_bank/brass_vase_02/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "bull_head",
+      "candidate_id": "bull_head",
+      "runtime_path": "res://assets/decor_bank/bull_head/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "bunsen_burner",
+      "candidate_id": "bunsen_burner",
+      "runtime_path": "res://assets/decor_bank/bunsen_burner/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "cassette_player",
+      "candidate_id": "cassette_player",
+      "runtime_path": "res://assets/decor_bank/cassette_player/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "ceramic_pot",
+      "candidate_id": "ceramic_pot",
+      "runtime_path": "res://assets/decor_bank/ceramic_pot/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "ceramic_vase_01",
+      "candidate_id": "ceramic_vase_01",
+      "runtime_path": "res://assets/decor_bank/ceramic_vase_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "ceramic_vase_03",
+      "candidate_id": "ceramic_vase_03",
+      "runtime_path": "res://assets/decor_bank/ceramic_vase_03/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "ceramic_vase_04",
+      "candidate_id": "ceramic_vase_04",
+      "runtime_path": "res://assets/decor_bank/ceramic_vase_04/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "chemistry_set",
+      "candidate_id": "chemistry_set",
+      "runtime_path": "res://assets/decor_bank/chemistry_set/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "dartboard",
+      "candidate_id": "dartboard",
+      "runtime_path": "res://assets/decor_bank/dartboard/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "decorative_book_set_01",
+      "candidate_id": "decorative_book_set_01",
+      "runtime_path": "res://assets/decor_bank/decorative_book_set_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "electric_stove",
+      "candidate_id": "electric_stove",
+      "runtime_path": "res://assets/decor_bank/electric_stove/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "fancy_picture_frame_01",
+      "candidate_id": "fancy_picture_frame_01",
+      "runtime_path": "res://assets/decor_bank/fancy_picture_frame_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "fancy_picture_frame_02",
+      "candidate_id": "fancy_picture_frame_02",
+      "runtime_path": "res://assets/decor_bank/fancy_picture_frame_02/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "filmstrip_projector_8mm",
+      "candidate_id": "filmstrip_projector_8mm",
+      "runtime_path": "res://assets/decor_bank/filmstrip_projector_8mm/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "gothic_statue",
+      "candidate_id": "gothic_statue",
+      "runtime_path": "res://assets/decor_bank/gothic_statue/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "hanging_picture_frame_01",
+      "candidate_id": "hanging_picture_frame_01",
+      "runtime_path": "res://assets/decor_bank/hanging_picture_frame_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "hanging_picture_frame_02",
+      "candidate_id": "hanging_picture_frame_02",
+      "runtime_path": "res://assets/decor_bank/hanging_picture_frame_02/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "hanging_picture_frame_03",
+      "candidate_id": "hanging_picture_frame_03",
+      "runtime_path": "res://assets/decor_bank/hanging_picture_frame_03/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "horse_head",
+      "candidate_id": "horse_head",
+      "runtime_path": "res://assets/decor_bank/horse_head/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "horse_statue_01",
+      "candidate_id": "horse_statue_01",
+      "runtime_path": "res://assets/decor_bank/horse_statue_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "industrial_coffee_table",
+      "candidate_id": "industrial_coffee_table",
+      "runtime_path": "res://assets/decor_bank/industrial_coffee_table/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "katana_stand_01",
+      "candidate_id": "katana_stand_01",
+      "runtime_path": "res://assets/decor_bank/katana_stand_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "lambis_shell",
+      "candidate_id": "lambis_shell",
+      "runtime_path": "res://assets/decor_bank/lambis_shell/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "lion_head",
+      "candidate_id": "lion_head",
+      "runtime_path": "res://assets/decor_bank/lion_head/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "lubricant_spray",
+      "candidate_id": "lubricant_spray",
+      "runtime_path": "res://assets/decor_bank/lubricant_spray/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "mantel_clock_01",
+      "candidate_id": "mantel_clock_01",
+      "runtime_path": "res://assets/decor_bank/mantel_clock_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "marble_bust_01",
+      "candidate_id": "marble_bust_01",
+      "runtime_path": "res://assets/decor_bank/marble_bust_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "metal_jug",
+      "candidate_id": "metal_jug",
+      "runtime_path": "res://assets/decor_bank/metal_jug/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "mid_century_lounge_chair",
+      "candidate_id": "mid_century_lounge_chair",
+      "runtime_path": "res://assets/decor_bank/mid_century_lounge_chair/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "modern_arm_chair_01",
+      "candidate_id": "modern_arm_chair_01",
+      "runtime_path": "res://assets/decor_bank/modern_arm_chair_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "old_drill_press",
+      "candidate_id": "old_drill_press",
+      "runtime_path": "res://assets/decor_bank/old_drill_press/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "ornate_mirror_01",
+      "candidate_id": "ornate_mirror_01",
+      "runtime_path": "res://assets/decor_bank/ornate_mirror_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "painted_wooden_table",
+      "candidate_id": "painted_wooden_table",
+      "runtime_path": "res://assets/decor_bank/painted_wooden_table/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "planter_box_02",
+      "candidate_id": "planter_box_02",
+      "runtime_path": "res://assets/decor_bank/planter_box_02/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "planter_box_03",
+      "candidate_id": "planter_box_03",
+      "runtime_path": "res://assets/decor_bank/planter_box_03/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "plastic_monobloc_chair_01",
+      "candidate_id": "plastic_monobloc_chair_01",
+      "runtime_path": "res://assets/decor_bank/plastic_monobloc_chair_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "postcard_set_01",
+      "candidate_id": "postcard_set_01",
+      "runtime_path": "res://assets/decor_bank/postcard_set_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "pot_enamel_01",
+      "candidate_id": "pot_enamel_01",
+      "runtime_path": "res://assets/decor_bank/pot_enamel_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "potted_plant_01",
+      "candidate_id": "potted_plant_01",
+      "runtime_path": "res://assets/decor_bank/potted_plant_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "scandinavian_masonry_heater",
+      "candidate_id": "scandinavian_masonry_heater",
+      "runtime_path": "res://assets/decor_bank/scandinavian_masonry_heater/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "standing_picture_frame_01",
+      "candidate_id": "standing_picture_frame_01",
+      "runtime_path": "res://assets/decor_bank/standing_picture_frame_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "standing_picture_frame_02",
+      "candidate_id": "standing_picture_frame_02",
+      "runtime_path": "res://assets/decor_bank/standing_picture_frame_02/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "sungka_board_02",
+      "candidate_id": "sungka_board_02",
+      "runtime_path": "res://assets/decor_bank/sungka_board_02/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "vintage_cabinet_01",
+      "candidate_id": "vintage_cabinet_01",
+      "runtime_path": "res://assets/decor_bank/vintage_cabinet_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "vintage_electric_kettle",
+      "candidate_id": "vintage_electric_kettle",
+      "runtime_path": "res://assets/decor_bank/vintage_electric_kettle/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "vintage_microwave",
+      "candidate_id": "vintage_microwave",
+      "runtime_path": "res://assets/decor_bank/vintage_microwave/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "vintage_telephone_wall_clock",
+      "candidate_id": "vintage_telephone_wall_clock",
+      "runtime_path": "res://assets/decor_bank/vintage_telephone_wall_clock/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "wine_bottles_01",
+      "candidate_id": "wine_bottles_01",
+      "runtime_path": "res://assets/decor_bank/wine_bottles_01/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "wooden_candlestick",
+      "candidate_id": "wooden_candlestick",
+      "runtime_path": "res://assets/decor_bank/wooden_candlestick/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "wooden_picnic_table",
+      "candidate_id": "wooden_picnic_table",
+      "runtime_path": "res://assets/decor_bank/wooden_picnic_table/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "wooden_stool_02",
+      "candidate_id": "wooden_stool_02",
+      "runtime_path": "res://assets/decor_bank/wooden_stool_02/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "bronze_ray_statue",
+      "candidate_id": "bronze_ray_statue",
+      "runtime_path": "res://assets/decor_bank/bronze_ray_statue/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "bronze_shark_statue",
+      "candidate_id": "bronze_shark_statue",
+      "runtime_path": "res://assets/decor_bank/bronze_shark_statue/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "bronze_whale_statue",
+      "candidate_id": "bronze_whale_statue",
+      "runtime_path": "res://assets/decor_bank/bronze_whale_statue/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "carved_wooden_elephant",
+      "candidate_id": "carved_wooden_elephant",
+      "runtime_path": "res://assets/decor_bank/carved_wooden_elephant/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "concrete_cat_statue",
+      "candidate_id": "concrete_cat_statue",
+      "runtime_path": "res://assets/decor_bank/concrete_cat_statue/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "garden_gnome",
+      "candidate_id": "garden_gnome",
+      "runtime_path": "res://assets/decor_bank/garden_gnome/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "rubber_duck_toy",
+      "candidate_id": "rubber_duck_toy",
+      "runtime_path": "res://assets/decor_bank/rubber_duck_toy/model.gltf",
+      "replace_existing": false
+    },
+    {
+      "source_id": "seadogs_compass",
+      "candidate_id": "seadogs_compass",
+      "runtime_path": "res://assets/decor_bank/seadogs_compass/model.gltf",
+      "replace_existing": false
+    }
+  ]
+}

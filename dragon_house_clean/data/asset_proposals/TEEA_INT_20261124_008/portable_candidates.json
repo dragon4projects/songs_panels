@@ -1,0 +1,744 @@
+{
+  "schema": 1,
+  "task_id": "TEEA_INT_20261124_008",
+  "base_repo": "dragon4projects/songs_panels",
+  "base_sha": "9c45da4f59dd40fb03f07ae0842000bb448efa93",
+  "latest_integration_sha_reviewed": "182360601f5c382d55e51a7c4566d553f8a8b42b",
+  "owner_approved": false,
+  "units": "m",
+  "axis": "X-right,Y-up,Z-front",
+  "status": "PARTIAL_READY",
+  "ordinary_portable_ids": [
+    "boombox",
+    "portable_cassette_player",
+    "gaming_console",
+    "gamepad",
+    "modified_thermos",
+    "dragon_mug_lod0_empty",
+    "dragon_mug_lod0_filled",
+    "dragon_mug_lod1_empty",
+    "cassette_player",
+    "rubber_duck_toy"
+  ],
+  "theft_enabled": false,
+  "items": [
+    {
+      "asset_id": "generic_small_wooden_elephant",
+      "support_slots": [],
+      "stations": [],
+      "stash_slots": [],
+      "footprint_xz": [
+        [
+          -0.054591,
+          -0.028778
+        ],
+        [
+          0.054591,
+          -0.028778
+        ],
+        [
+          0.054591,
+          0.028778
+        ],
+        [
+          -0.054591,
+          0.028778
+        ]
+      ],
+      "collision_proxy": "AABB_CANDIDATE",
+      "status": "MEASURED_SURFACE_CANDIDATE_NOT_RUNTIME_VERIFIED",
+      "suggested_class": "small_artifact",
+      "theft_enabled": false,
+      "candidate_only": true,
+      "carry_grip_local_xyz": [
+        0.0,
+        0.048075,
+        0.0
+      ],
+      "carry_rotation_deg_xyz": [
+        0,
+        0,
+        0
+      ],
+      "rest_rotation_deg_xyz": [
+        0,
+        0,
+        0
+      ],
+      "estimated_mass_g": 20,
+      "species_compatibility_status": "NEEDS_RUNTIME_FOOTPRINT_CHECK",
+      "mass_basis": "Tentative authoring estimate for lightweight toy replica; not physically weighed."
+    },
+    {
+      "asset_id": "generic_miniature_ray_replica",
+      "support_slots": [],
+      "stations": [],
+      "stash_slots": [],
+      "footprint_xz": [
+        [
+          -0.045987,
+          -0.034811
+        ],
+        [
+          0.045987,
+          -0.034811
+        ],
+        [
+          0.045987,
+          0.034811
+        ],
+        [
+          -0.045987,
+          0.034811
+        ]
+      ],
+      "collision_proxy": "AABB_CANDIDATE",
+      "status": "MEASURED_SURFACE_CANDIDATE_NOT_RUNTIME_VERIFIED",
+      "suggested_class": "small_artifact",
+      "theft_enabled": false,
+      "candidate_only": true,
+      "carry_grip_local_xyz": [
+        0.0,
+        0.038327,
+        0.0
+      ],
+      "carry_rotation_deg_xyz": [
+        0,
+        0,
+        0
+      ],
+      "rest_rotation_deg_xyz": [
+        0,
+        0,
+        0
+      ],
+      "estimated_mass_g": 18,
+      "species_compatibility_status": "NEEDS_RUNTIME_FOOTPRINT_CHECK",
+      "mass_basis": "Tentative authoring estimate for lightweight toy replica; not physically weighed."
+    },
+    {
+      "asset_id": "generic_toy_duck",
+      "support_slots": [],
+      "stations": [],
+      "stash_slots": [],
+      "footprint_xz": [
+        [
+          -0.030246,
+          -0.0425
+        ],
+        [
+          0.030246,
+          -0.0425
+        ],
+        [
+          0.030246,
+          0.0425
+        ],
+        [
+          -0.030246,
+          0.0425
+        ]
+      ],
+      "collision_proxy": "AABB_CANDIDATE",
+      "suggested_class": "small_artifact",
+      "theft_enabled": false,
+      "candidate_only": true,
+      "carry_grip_local_xyz": [
+        0.0,
+        0.040447,
+        0.0
+      ],
+      "carry_rotation_deg_xyz": [
+        0,
+        0,
+        0
+      ],
+      "rest_rotation_deg_xyz": [
+        0,
+        0,
+        0
+      ],
+      "estimated_mass_g": 18,
+      "mass_basis": "Authoring estimate for lightweight toy/replica, not weighed; actual compatibility pending",
+      "species_compatibility_status": "NEEDS_RUNTIME_FOOTPRINT_CHECK",
+      "notes": "Lightweight rubber toy replica, not a real decoration instance.",
+      "status": "MEASURED_GEOMETRY_CANDIDATE"
+    },
+    {
+      "asset_id": "generic_toy_whale",
+      "support_slots": [],
+      "stations": [],
+      "stash_slots": [],
+      "footprint_xz": [
+        [
+          -0.032412,
+          -0.047506
+        ],
+        [
+          0.032412,
+          -0.047506
+        ],
+        [
+          0.032412,
+          0.047504
+        ],
+        [
+          -0.032412,
+          0.047504
+        ]
+      ],
+      "collision_proxy": "AABB_CANDIDATE",
+      "suggested_class": "small_artifact",
+      "theft_enabled": false,
+      "candidate_only": true,
+      "carry_grip_local_xyz": [
+        0.0,
+        0.037314,
+        0.0
+      ],
+      "carry_rotation_deg_xyz": [
+        0,
+        0,
+        0
+      ],
+      "rest_rotation_deg_xyz": [
+        0,
+        0,
+        0
+      ],
+      "estimated_mass_g": 25,
+      "mass_basis": "Authoring estimate for lightweight toy/replica, not weighed; actual compatibility pending",
+      "species_compatibility_status": "NEEDS_RUNTIME_FOOTPRINT_CHECK",
+      "notes": "Lightweight cast-resin miniature replica, not heavy bronze historical object.",
+      "status": "MEASURED_GEOMETRY_CANDIDATE"
+    },
+    {
+      "asset_id": "generic_toy_cat",
+      "support_slots": [],
+      "stations": [],
+      "stash_slots": [],
+      "footprint_xz": [
+        [
+          -0.022965,
+          -0.037583
+        ],
+        [
+          0.023007,
+          -0.037583
+        ],
+        [
+          0.023007,
+          0.037535
+        ],
+        [
+          -0.022965,
+          0.037535
+        ]
+      ],
+      "collision_proxy": "AABB_CANDIDATE",
+      "suggested_class": "small_artifact",
+      "theft_enabled": false,
+      "candidate_only": true,
+      "carry_grip_local_xyz": [
+        0.0,
+        0.042532,
+        0.0
+      ],
+      "carry_rotation_deg_xyz": [
+        0,
+        0,
+        0
+      ],
+      "rest_rotation_deg_xyz": [
+        0,
+        0,
+        0
+      ],
+      "estimated_mass_g": 24,
+      "mass_basis": "Authoring estimate for lightweight toy/replica, not weighed; actual compatibility pending",
+      "species_compatibility_status": "NEEDS_RUNTIME_FOOTPRINT_CHECK",
+      "notes": "Lightweight resin miniature replica, not concrete.",
+      "status": "MEASURED_GEOMETRY_CANDIDATE"
+    },
+    {
+      "asset_id": "generic_toy_shark",
+      "support_slots": [],
+      "stations": [],
+      "stash_slots": [],
+      "footprint_xz": [
+        [
+          -0.023182,
+          -0.050003
+        ],
+        [
+          0.023191,
+          -0.050003
+        ],
+        [
+          0.023191,
+          0.05
+        ],
+        [
+          -0.023182,
+          0.05
+        ]
+      ],
+      "collision_proxy": "AABB_CANDIDATE",
+      "suggested_class": "small_artifact",
+      "theft_enabled": false,
+      "candidate_only": true,
+      "carry_grip_local_xyz": [
+        0.0,
+        0.028396,
+        0.0
+      ],
+      "carry_rotation_deg_xyz": [
+        0,
+        0,
+        0
+      ],
+      "rest_rotation_deg_xyz": [
+        0,
+        0,
+        0
+      ],
+      "estimated_mass_g": 18,
+      "mass_basis": "Authoring estimate for lightweight toy/replica, not weighed; actual compatibility pending",
+      "species_compatibility_status": "NEEDS_RUNTIME_FOOTPRINT_CHECK",
+      "notes": "Soft molded toy replica, proposed safe fins; suitability requires review.",
+      "status": "MEASURED_GEOMETRY_CANDIDATE"
+    },
+    {
+      "asset_id": "generic_mini_compass",
+      "support_slots": [],
+      "stations": [],
+      "stash_slots": [],
+      "footprint_xz": [
+        [
+          -0.021173,
+          -0.037617
+        ],
+        [
+          0.02108,
+          -0.037617
+        ],
+        [
+          0.02108,
+          0.037528
+        ],
+        [
+          -0.021173,
+          0.037528
+        ]
+      ],
+      "collision_proxy": "AABB_CANDIDATE",
+      "suggested_class": "small_artifact",
+      "theft_enabled": false,
+      "candidate_only": true,
+      "carry_grip_local_xyz": [
+        0.0,
+        0.022544,
+        0.0
+      ],
+      "carry_rotation_deg_xyz": [
+        0,
+        0,
+        0
+      ],
+      "rest_rotation_deg_xyz": [
+        0,
+        0,
+        0
+      ],
+      "estimated_mass_g": 25,
+      "mass_basis": "Authoring estimate for lightweight toy/replica, not weighed; actual compatibility pending",
+      "species_compatibility_status": "NEEDS_RUNTIME_FOOTPRINT_CHECK",
+      "notes": "Non-functional lightweight replica, not an owned or valuable compass.",
+      "status": "MEASURED_GEOMETRY_CANDIDATE"
+    },
+    {
+      "asset_id": "generic_toy_gnome",
+      "support_slots": [],
+      "stations": [],
+      "stash_slots": [],
+      "footprint_xz": [
+        [
+          -0.021532,
+          -0.017474
+        ],
+        [
+          0.021668,
+          -0.017474
+        ],
+        [
+          0.021668,
+          0.017532
+        ],
+        [
+          -0.021532,
+          0.017532
+        ]
+      ],
+      "collision_proxy": "AABB_CANDIDATE",
+      "suggested_class": "small_artifact",
+      "theft_enabled": false,
+      "candidate_only": true,
+      "carry_grip_local_xyz": [
+        0.0,
+        0.050025,
+        0.0
+      ],
+      "carry_rotation_deg_xyz": [
+        0,
+        0,
+        0
+      ],
+      "rest_rotation_deg_xyz": [
+        0,
+        0,
+        0
+      ],
+      "estimated_mass_g": 22,
+      "mass_basis": "Authoring estimate for lightweight toy/replica, not weighed; actual compatibility pending",
+      "species_compatibility_status": "NEEDS_RUNTIME_FOOTPRINT_CHECK",
+      "notes": "Lightweight toy replica, not the full garden ornament.",
+      "status": "MEASURED_GEOMETRY_CANDIDATE"
+    },
+    {
+      "asset_id": "generic_small_wooden_die",
+      "support_slots": [],
+      "stations": [],
+      "stash_slots": [],
+      "footprint_xz": [
+        [
+          -0.018,
+          -0.018
+        ],
+        [
+          0.018,
+          -0.018
+        ],
+        [
+          0.018,
+          0.018
+        ],
+        [
+          -0.018,
+          0.018
+        ]
+      ],
+      "collision_proxy": "AABB_CANDIDATE",
+      "suggested_class": "small_artifact",
+      "theft_enabled": false,
+      "candidate_only": true,
+      "carry_grip_local_xyz": [
+        0.0,
+        0.018,
+        0.0
+      ],
+      "carry_rotation_deg_xyz": [
+        0,
+        0,
+        0
+      ],
+      "rest_rotation_deg_xyz": [
+        0,
+        0,
+        0
+      ],
+      "estimated_mass_g": 10,
+      "mass_basis": "Authoring estimate for lightweight toy/replica, not weighed; actual compatibility pending",
+      "species_compatibility_status": "NEEDS_RUNTIME_FOOTPRINT_CHECK",
+      "notes": "Rounded wooden die, six numbered faces; no real-world content.",
+      "status": "MEASURED_GEOMETRY_CANDIDATE"
+    },
+    {
+      "asset_id": "generic_wooden_game_token",
+      "support_slots": [],
+      "stations": [],
+      "stash_slots": [],
+      "footprint_xz": [
+        [
+          -0.025,
+          -0.025
+        ],
+        [
+          0.025,
+          -0.025
+        ],
+        [
+          0.025,
+          0.025
+        ],
+        [
+          -0.025,
+          0.025
+        ]
+      ],
+      "collision_proxy": "AABB_CANDIDATE",
+      "suggested_class": "small_artifact",
+      "theft_enabled": false,
+      "candidate_only": true,
+      "carry_grip_local_xyz": [
+        0.0,
+        0.003675,
+        0.0
+      ],
+      "carry_rotation_deg_xyz": [
+        0,
+        0,
+        0
+      ],
+      "rest_rotation_deg_xyz": [
+        0,
+        0,
+        0
+      ],
+      "estimated_mass_g": 5,
+      "mass_basis": "Authoring estimate for lightweight toy/replica, not weighed; actual compatibility pending",
+      "species_compatibility_status": "NEEDS_RUNTIME_FOOTPRINT_CHECK",
+      "notes": "Independent game token, not a fused board.",
+      "status": "MEASURED_GEOMETRY_CANDIDATE"
+    },
+    {
+      "asset_id": "generic_resin_medallion",
+      "support_slots": [],
+      "stations": [],
+      "stash_slots": [],
+      "footprint_xz": [
+        [
+          -0.024,
+          -0.024
+        ],
+        [
+          0.024,
+          -0.024
+        ],
+        [
+          0.024,
+          0.024
+        ],
+        [
+          -0.024,
+          0.024
+        ]
+      ],
+      "collision_proxy": "AABB_CANDIDATE",
+      "suggested_class": "small_artifact",
+      "theft_enabled": false,
+      "candidate_only": true,
+      "carry_grip_local_xyz": [
+        0.0,
+        0.003275,
+        0.0
+      ],
+      "carry_rotation_deg_xyz": [
+        0,
+        0,
+        0
+      ],
+      "rest_rotation_deg_xyz": [
+        0,
+        0,
+        0
+      ],
+      "estimated_mass_g": 8,
+      "mass_basis": "Authoring estimate for lightweight toy/replica, not weighed; actual compatibility pending",
+      "species_compatibility_status": "NEEDS_RUNTIME_FOOTPRINT_CHECK",
+      "notes": "Generic decorative toy medallion; no valuable metal or identity.",
+      "status": "MEASURED_GEOMETRY_CANDIDATE"
+    },
+    {
+      "asset_id": "generic_closed_trinket_case",
+      "support_slots": [],
+      "stations": [],
+      "stash_slots": [],
+      "footprint_xz": [
+        [
+          -0.049,
+          -0.03675
+        ],
+        [
+          0.049,
+          -0.03675
+        ],
+        [
+          0.049,
+          0.03675
+        ],
+        [
+          -0.049,
+          0.03675
+        ]
+      ],
+      "collision_proxy": "AABB_CANDIDATE",
+      "suggested_class": "small_artifact",
+      "theft_enabled": false,
+      "candidate_only": true,
+      "carry_grip_local_xyz": [
+        0.0,
+        0.026,
+        0.0
+      ],
+      "carry_rotation_deg_xyz": [
+        0,
+        0,
+        0
+      ],
+      "rest_rotation_deg_xyz": [
+        0,
+        0,
+        0
+      ],
+      "estimated_mass_g": 32,
+      "mass_basis": "Authoring estimate for lightweight toy/replica, not weighed; actual compatibility pending",
+      "species_compatibility_status": "NEEDS_RUNTIME_FOOTPRINT_CHECK",
+      "notes": "Lightweight closed case; no personal contents or functional lock.",
+      "status": "MEASURED_GEOMETRY_CANDIDATE"
+    },
+    {
+      "asset_id": "generic_toy_ball",
+      "support_slots": [],
+      "stations": [],
+      "stash_slots": [],
+      "footprint_xz": [
+        [
+          -0.034,
+          -0.034
+        ],
+        [
+          0.034,
+          -0.034
+        ],
+        [
+          0.034,
+          0.034
+        ],
+        [
+          -0.034,
+          0.034
+        ]
+      ],
+      "collision_proxy": "AABB_CANDIDATE",
+      "suggested_class": "small_artifact",
+      "theft_enabled": false,
+      "candidate_only": true,
+      "carry_grip_local_xyz": [
+        0.0,
+        0.034,
+        0.0
+      ],
+      "carry_rotation_deg_xyz": [
+        0,
+        0,
+        0
+      ],
+      "rest_rotation_deg_xyz": [
+        0,
+        0,
+        0
+      ],
+      "estimated_mass_g": 12,
+      "mass_basis": "Authoring estimate for lightweight toy/replica, not weighed; actual compatibility pending",
+      "species_compatibility_status": "NEEDS_RUNTIME_FOOTPRINT_CHECK",
+      "notes": "Soft harmless toy ball with contrasting equatorial band.",
+      "status": "MEASURED_GEOMETRY_CANDIDATE"
+    },
+    {
+      "asset_id": "generic_thread_spool",
+      "support_slots": [],
+      "stations": [],
+      "stash_slots": [],
+      "footprint_xz": [
+        [
+          -0.027,
+          -0.027
+        ],
+        [
+          0.027,
+          -0.027
+        ],
+        [
+          0.027,
+          0.027
+        ],
+        [
+          -0.027,
+          0.027
+        ]
+      ],
+      "collision_proxy": "AABB_CANDIDATE",
+      "suggested_class": "small_artifact",
+      "theft_enabled": false,
+      "candidate_only": true,
+      "carry_grip_local_xyz": [
+        0.0,
+        0.026,
+        0.0
+      ],
+      "carry_rotation_deg_xyz": [
+        0,
+        0,
+        0
+      ],
+      "rest_rotation_deg_xyz": [
+        0,
+        0,
+        0
+      ],
+      "estimated_mass_g": 9,
+      "mass_basis": "Authoring estimate for lightweight toy/replica, not weighed; actual compatibility pending",
+      "species_compatibility_status": "NEEDS_RUNTIME_FOOTPRINT_CHECK",
+      "notes": "Independent ordinary toy-sized spool; no sharp part.",
+      "status": "MEASURED_GEOMETRY_CANDIDATE"
+    },
+    {
+      "asset_id": "generic_smooth_worry_stone",
+      "support_slots": [],
+      "stations": [],
+      "stash_slots": [],
+      "footprint_xz": [
+        [
+          -0.032,
+          -0.02336
+        ],
+        [
+          0.032,
+          -0.02336
+        ],
+        [
+          0.032,
+          0.02336
+        ],
+        [
+          -0.032,
+          0.02336
+        ]
+      ],
+      "collision_proxy": "AABB_CANDIDATE",
+      "suggested_class": "small_artifact",
+      "theft_enabled": false,
+      "candidate_only": true,
+      "carry_grip_local_xyz": [
+        0.0,
+        0.01408,
+        0.0
+      ],
+      "carry_rotation_deg_xyz": [
+        0,
+        0,
+        0
+      ],
+      "rest_rotation_deg_xyz": [
+        0,
+        0,
+        0
+      ],
+      "estimated_mass_g": 28,
+      "mass_basis": "Authoring estimate for lightweight toy/replica, not weighed; actual compatibility pending",
+      "species_compatibility_status": "NEEDS_RUNTIME_FOOTPRINT_CHECK",
+      "notes": "Rounded harmless stone, approximate mass; eligibility requires species check.",
+      "status": "MEASURED_GEOMETRY_CANDIDATE"
+    }
+  ]
+}

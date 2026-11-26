@@ -1,0 +1,6 @@
+CC0 1.0 Universal
+https://3dassets.dev/assets/cinema-multiplex-and-foyer-arcade-cabinet-85302f3a
+Source GLB SHA-256 e8e85eadd131eab7de63647fa86c8c6ad7fd8458f25a6946b8a57eadf3cb37a6
+Uniform import scale 1.0; canonical pivot floor.
+Candidate, no owner approval.
+KHR_mesh_quantization decoded to float32 attributes; preserved original node transforms; source untouched.

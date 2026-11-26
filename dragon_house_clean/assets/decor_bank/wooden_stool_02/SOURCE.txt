@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/wooden_stool_02
+Source SHA-256 8bb8bc3e420db0f69cee3d2ee74eccad7cabd1110a864a7d945549684e6f32cf
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 11146 -> 2729; original source unchanged, optimized GLB SHA-256 e38effd393c891fcf2c9e3074c37185c0305921dcd8f524639c62a01aeb16184. Bounds delta before recenter: 0.000120 m.

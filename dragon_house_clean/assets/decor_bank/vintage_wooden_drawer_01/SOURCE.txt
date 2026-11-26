@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/vintage_wooden_drawer_01
+Source SHA-256 4080ecdac2228759dd41a5d5705b984f993bbf6b0f66570824a9dcbbeaa49e51
+Source yaw 0 degrees; uniform scale 0.85; pivot floor
+Uniform domestic physical scale; source aspect retained.
+Candidate: owner_approved=false.

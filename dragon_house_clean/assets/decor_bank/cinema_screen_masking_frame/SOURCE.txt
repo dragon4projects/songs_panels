@@ -1,0 +1,6 @@
+CC0 1.0 Universal
+https://3dassets.dev/assets/cinema-multiplex-and-foyer-cinema-screen-and-masking-92b7d56f
+Source GLB SHA-256 a29d2228716603a17c71651740bf97b945b2aa778424488bb5934289361cd8b9
+Uniform import scale 0.5; canonical pivot floor.
+Candidate, no owner approval.
+KHR_mesh_quantization decoded to float32 attributes; preserved original node transforms; source untouched.

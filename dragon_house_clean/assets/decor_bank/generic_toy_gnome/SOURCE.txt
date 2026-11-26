@@ -1,0 +1,5 @@
+CC0
+https://polyhaven.com/a/garden_gnome
+Derived toy-sized mesh; no historical or owned object identity.
+Working GLB SHA-256 8a1e99e1e5c03ead82d2415740c8d8d25e36e8bcde229cbd77e4e251f0d60f2b
+Lightweight toy replica, not the full garden ornament.

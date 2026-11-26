@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/horse_head
+Source SHA-256 bb46cbabf202aa1af209678619f912c5605477fa098a46c238cdc46b3696bb0d
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 12068 -> 2730; original source unchanged, optimized GLB SHA-256 dc95dd1c6c007dfcafb4bea8beca7def0a4cce9a7567d21f91ff0ac76fc27f77. Bounds delta before recenter: 0.000872 m.

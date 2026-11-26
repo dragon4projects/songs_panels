@@ -1,0 +1,5 @@
+PROJECT_AUTHORED_CANDIDATE
+Project-authored generic small prop
+Derived toy-sized mesh; no historical or owned object identity.
+Working GLB SHA-256 d4b1c47dedca7d55a23cfd20ef27b3118e332a65193a935566c478fb0668b5c0
+Generic decorative toy medallion; no valuable metal or identity.

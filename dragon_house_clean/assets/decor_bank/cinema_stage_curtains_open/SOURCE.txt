@@ -1,0 +1,6 @@
+CC0 1.0 Universal
+https://3dassets.dev/assets/theatre-stage-and-backstage-house-tabs-on-track-open-00c29a91
+Source GLB SHA-256 66a8fe1f2e6103ef82fc7b2d852c26565f3054617bf5ac09e5549515e8fb2841
+Uniform import scale 0.52; canonical pivot wall.
+Candidate, no owner approval.
+KHR_mesh_quantization decoded to float32 attributes; preserved original node transforms; source untouched.

@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/GreenChair_01
+Source SHA-256 d1e4946ac99ab9e64c82d802fe5cd49d962750e34b8d284762b3fe2b00ba8a45
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.

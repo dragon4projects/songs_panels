@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/gamepad
+Source SHA-256 30eabe08b4c76013efb27322ef8834ba915dd0ff46950ebf69390e7fbeef3dea
+Source yaw 0 degrees; uniform scale 0.55; pivot floor
+Uniform domestic physical scale; source aspect retained.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 9546 -> 2730; original source unchanged, optimized GLB SHA-256 0e26fb7adca7ac54c63b4b820aeaee46ceb2670513511604ea71fa5043962a8b. Bounds delta before recenter: 0.000149 m.

@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/gaming_console
+Source SHA-256 66266eb600e227efb31bae36ea7587c000fcae3dd0955847a91089eb612eb2f9
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native scale; no aspect stretch.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 31710 -> 2811; original source unchanged, optimized GLB SHA-256 34962096954ef729581ba79fc61266ed015265373a5a1e85d3cf2b1a10b759c1. Bounds delta before recenter: 0.010428 m.

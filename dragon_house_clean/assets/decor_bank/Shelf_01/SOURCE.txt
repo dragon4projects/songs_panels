@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/Shelf_01
+Source SHA-256 715bce6ff1886eccdd43d558f5cf9242a24396e0eb9e8ae391905186bb339e52
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.

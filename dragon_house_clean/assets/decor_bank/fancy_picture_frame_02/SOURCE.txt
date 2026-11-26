@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/fancy_picture_frame_02
+Source SHA-256 1f8362b3118ffa82881657e0db9aec60aa76d6644b8030f9cd299b90415d1ef6
+Source yaw 0 degrees; uniform scale 1; pivot wall
+Native source scale.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 35102 -> 9100; original source unchanged, optimized GLB SHA-256 6b94f50364c472dc8dcbac8ee2c9d55bf6c6fea881d3bf4f3ca334175882b7d0. Bounds delta before recenter: 0.000071 m.

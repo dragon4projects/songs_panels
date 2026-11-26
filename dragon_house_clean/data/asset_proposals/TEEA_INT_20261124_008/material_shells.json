@@ -1,0 +1,1712 @@
+{
+  "schema": 1,
+  "task_id": "TEEA_INT_20261124_008",
+  "base_repo": "dragon4projects/songs_panels",
+  "base_sha": "9c45da4f59dd40fb03f07ae0842000bb448efa93",
+  "latest_integration_sha_reviewed": "182360601f5c382d55e51a7c4566d553f8a8b42b",
+  "owner_approved": false,
+  "units": "m",
+  "axis": "X-right,Y-up,Z-front",
+  "status": "PARTIAL_READY",
+  "shell_variants": [
+    {
+      "size_id": "R1",
+      "span_m": 4.8,
+      "floor_depth_m": 3.6,
+      "room_height_m": 3.055,
+      "instances": [
+        {
+          "asset_id": "arch_floor_wood_r1",
+          "instance_id": "shell_r1_floor_wood",
+          "room_local_xyz": [
+            0,
+            -0.055,
+            -0.15
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0,
+          "bounds_min_m": [
+            -2.4,
+            -0.055,
+            -1.95
+          ],
+          "bounds_max_m": [
+            2.4,
+            0.0,
+            1.65
+          ],
+          "role": "floor_wood",
+          "policy": "REPLACEMENT_SKIN_CANDIDATE_NO_NEW_COLLISION"
+        },
+        {
+          "asset_id": "arch_floor_stone_r1",
+          "instance_id": "shell_r1_floor_stone_alternative",
+          "room_local_xyz": [
+            0,
+            -0.055,
+            -0.15
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0,
+          "bounds_min_m": [
+            -2.4,
+            -0.055,
+            -1.95
+          ],
+          "bounds_max_m": [
+            2.4,
+            0.0,
+            1.65
+          ],
+          "role": "floor_stone_alternative",
+          "policy": "REPLACEMENT_SKIN_CANDIDATE_NO_NEW_COLLISION"
+        },
+        {
+          "asset_id": "arch_floor_workshop_r1",
+          "instance_id": "shell_r1_floor_workshop_alternative",
+          "room_local_xyz": [
+            0,
+            -0.055,
+            -0.15
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0,
+          "bounds_min_m": [
+            -2.4,
+            -0.055,
+            -1.95
+          ],
+          "bounds_max_m": [
+            2.4,
+            0.0,
+            1.65
+          ],
+          "role": "floor_workshop_alternative",
+          "policy": "REPLACEMENT_SKIN_CANDIDATE_NO_NEW_COLLISION"
+        },
+        {
+          "asset_id": "arch_rear_stone_r1",
+          "instance_id": "shell_r1_rear_stone",
+          "room_local_xyz": [
+            0,
+            0.0,
+            -2.1
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0,
+          "bounds_min_m": [
+            -2.4,
+            0.0,
+            -2.18
+          ],
+          "bounds_max_m": [
+            2.4,
+            3.05,
+            -2.02
+          ],
+          "role": "rear_stone",
+          "policy": "REPLACEMENT_SKIN_CANDIDATE_NO_NEW_COLLISION"
+        },
+        {
+          "asset_id": "arch_rear_plaster_r1",
+          "instance_id": "shell_r1_rear_plaster_alternative",
+          "room_local_xyz": [
+            0,
+            0.0,
+            -2.1
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0,
+          "bounds_min_m": [
+            -2.4,
+            0.0,
+            -2.18
+          ],
+          "bounds_max_m": [
+            2.4,
+            3.05,
+            -2.02
+          ],
+          "role": "rear_plaster_alternative",
+          "policy": "REPLACEMENT_SKIN_CANDIDATE_NO_NEW_COLLISION"
+        },
+        {
+          "asset_id": "arch_rear_timber_r1",
+          "instance_id": "shell_r1_rear_timber_alternative",
+          "room_local_xyz": [
+            0,
+            0.0,
+            -2.1
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0,
+          "bounds_min_m": [
+            -2.4,
+            0.0,
+            -2.18
+          ],
+          "bounds_max_m": [
+            2.4,
+            3.05,
+            -2.02
+          ],
+          "role": "rear_timber_alternative",
+          "policy": "REPLACEMENT_SKIN_CANDIDATE_NO_NEW_COLLISION"
+        },
+        {
+          "asset_id": "arch_ceiling_r1",
+          "instance_id": "shell_r1_ceiling",
+          "room_local_xyz": [
+            0,
+            3.0100000000000002,
+            -0.62
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0,
+          "bounds_min_m": [
+            -2.4,
+            3.01,
+            -1.98
+          ],
+          "bounds_max_m": [
+            2.4,
+            3.1,
+            0.74
+          ],
+          "role": "ceiling",
+          "policy": "REPLACEMENT_SKIN_CANDIDATE_NO_NEW_COLLISION"
+        },
+        {
+          "asset_id": "arch_header_r1",
+          "instance_id": "shell_r1_continuous_beam",
+          "room_local_xyz": [
+            0,
+            2.85,
+            -0.62
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0,
+          "bounds_min_m": [
+            -2.21,
+            2.85,
+            -0.695
+          ],
+          "bounds_max_m": [
+            2.21,
+            2.97,
+            -0.545
+          ],
+          "role": "continuous_beam",
+          "policy": "REPLACEMENT_SKIN_CANDIDATE_NO_NEW_COLLISION"
+        },
+        {
+          "asset_id": "arch_skirting_r1",
+          "instance_id": "shell_r1_skirting",
+          "room_local_xyz": [
+            0,
+            0.0,
+            -2.0
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0,
+          "bounds_min_m": [
+            -2.16,
+            0.0,
+            -2.04
+          ],
+          "bounds_max_m": [
+            2.16,
+            0.12,
+            -1.96
+          ],
+          "role": "skirting",
+          "policy": "REPLACEMENT_SKIN_CANDIDATE_NO_NEW_COLLISION"
+        },
+        {
+          "asset_id": "arch_front_lip_r1",
+          "instance_id": "shell_r1_front_lip",
+          "room_local_xyz": [
+            0,
+            -0.09000000000000001,
+            1.39
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0,
+          "bounds_min_m": [
+            -2.4,
+            -0.09,
+            1.3525
+          ],
+          "bounds_max_m": [
+            2.4,
+            -0.05,
+            1.4275
+          ],
+          "role": "front_lip",
+          "policy": "REPLACEMENT_SKIN_CANDIDATE_NO_NEW_COLLISION"
+        }
+      ],
+      "exclusive_groups": [
+        [
+          "floor_wood",
+          "floor_stone_alternative",
+          "floor_workshop_alternative"
+        ],
+        [
+          "rear_stone",
+          "rear_plaster_alternative",
+          "rear_timber_alternative"
+        ]
+      ],
+      "beam_instance_positions_z": [
+        -1.48,
+        -0.62,
+        0.24
+      ],
+      "internal_room_divisions": 0,
+      "status": "PHYSICAL_SKIN_CANDIDATE_REPLACE_NOT_OVERLAY"
+    },
+    {
+      "size_id": "R2",
+      "span_m": 9.6,
+      "floor_depth_m": 3.6,
+      "room_height_m": 3.055,
+      "instances": [
+        {
+          "asset_id": "arch_floor_wood_r2",
+          "instance_id": "shell_r2_floor_wood",
+          "room_local_xyz": [
+            0,
+            -0.055,
+            -0.15
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0,
+          "bounds_min_m": [
+            -4.8,
+            -0.055,
+            -1.95
+          ],
+          "bounds_max_m": [
+            4.8,
+            0.0,
+            1.65
+          ],
+          "role": "floor_wood",
+          "policy": "REPLACEMENT_SKIN_CANDIDATE_NO_NEW_COLLISION"
+        },
+        {
+          "asset_id": "arch_floor_stone_r2",
+          "instance_id": "shell_r2_floor_stone_alternative",
+          "room_local_xyz": [
+            0,
+            -0.055,
+            -0.15
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0,
+          "bounds_min_m": [
+            -4.8,
+            -0.055,
+            -1.95
+          ],
+          "bounds_max_m": [
+            4.8,
+            0.0,
+            1.65
+          ],
+          "role": "floor_stone_alternative",
+          "policy": "REPLACEMENT_SKIN_CANDIDATE_NO_NEW_COLLISION"
+        },
+        {
+          "asset_id": "arch_floor_workshop_r2",
+          "instance_id": "shell_r2_floor_workshop_alternative",
+          "room_local_xyz": [
+            0,
+            -0.055,
+            -0.15
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0,
+          "bounds_min_m": [
+            -4.8,
+            -0.055,
+            -1.95
+          ],
+          "bounds_max_m": [
+            4.8,
+            0.0,
+            1.65
+          ],
+          "role": "floor_workshop_alternative",
+          "policy": "REPLACEMENT_SKIN_CANDIDATE_NO_NEW_COLLISION"
+        },
+        {
+          "asset_id": "arch_rear_stone_r2",
+          "instance_id": "shell_r2_rear_stone",
+          "room_local_xyz": [
+            0,
+            0.0,
+            -2.1
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0,
+          "bounds_min_m": [
+            -4.8,
+            0.0,
+            -2.18
+          ],
+          "bounds_max_m": [
+            4.8,
+            3.05,
+            -2.02
+          ],
+          "role": "rear_stone",
+          "policy": "REPLACEMENT_SKIN_CANDIDATE_NO_NEW_COLLISION"
+        },
+        {
+          "asset_id": "arch_rear_plaster_r2",
+          "instance_id": "shell_r2_rear_plaster_alternative",
+          "room_local_xyz": [
+            0,
+            0.0,
+            -2.1
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0,
+          "bounds_min_m": [
+            -4.8,
+            0.0,
+            -2.18
+          ],
+          "bounds_max_m": [
+            4.8,
+            3.05,
+            -2.02
+          ],
+          "role": "rear_plaster_alternative",
+          "policy": "REPLACEMENT_SKIN_CANDIDATE_NO_NEW_COLLISION"
+        },
+        {
+          "asset_id": "arch_rear_timber_r2",
+          "instance_id": "shell_r2_rear_timber_alternative",
+          "room_local_xyz": [
+            0,
+            0.0,
+            -2.1
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0,
+          "bounds_min_m": [
+            -4.8,
+            0.0,
+            -2.18
+          ],
+          "bounds_max_m": [
+            4.8,
+            3.05,
+            -2.02
+          ],
+          "role": "rear_timber_alternative",
+          "policy": "REPLACEMENT_SKIN_CANDIDATE_NO_NEW_COLLISION"
+        },
+        {
+          "asset_id": "arch_ceiling_r2",
+          "instance_id": "shell_r2_ceiling",
+          "room_local_xyz": [
+            0,
+            3.0100000000000002,
+            -0.62
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0,
+          "bounds_min_m": [
+            -4.8,
+            3.01,
+            -1.98
+          ],
+          "bounds_max_m": [
+            4.8,
+            3.1,
+            0.74
+          ],
+          "role": "ceiling",
+          "policy": "REPLACEMENT_SKIN_CANDIDATE_NO_NEW_COLLISION"
+        },
+        {
+          "asset_id": "arch_header_r2",
+          "instance_id": "shell_r2_continuous_beam",
+          "room_local_xyz": [
+            0,
+            2.85,
+            -0.62
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0,
+          "bounds_min_m": [
+            -4.61,
+            2.85,
+            -0.695
+          ],
+          "bounds_max_m": [
+            4.61,
+            2.97,
+            -0.545
+          ],
+          "role": "continuous_beam",
+          "policy": "REPLACEMENT_SKIN_CANDIDATE_NO_NEW_COLLISION"
+        },
+        {
+          "asset_id": "arch_skirting_r2",
+          "instance_id": "shell_r2_skirting",
+          "room_local_xyz": [
+            0,
+            0.0,
+            -2.0
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0,
+          "bounds_min_m": [
+            -4.56,
+            0.0,
+            -2.04
+          ],
+          "bounds_max_m": [
+            4.56,
+            0.12,
+            -1.96
+          ],
+          "role": "skirting",
+          "policy": "REPLACEMENT_SKIN_CANDIDATE_NO_NEW_COLLISION"
+        },
+        {
+          "asset_id": "arch_front_lip_r2",
+          "instance_id": "shell_r2_front_lip",
+          "room_local_xyz": [
+            0,
+            -0.09000000000000001,
+            1.39
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0,
+          "bounds_min_m": [
+            -4.8,
+            -0.09,
+            1.3525
+          ],
+          "bounds_max_m": [
+            4.8,
+            -0.05,
+            1.4275
+          ],
+          "role": "front_lip",
+          "policy": "REPLACEMENT_SKIN_CANDIDATE_NO_NEW_COLLISION"
+        }
+      ],
+      "exclusive_groups": [
+        [
+          "floor_wood",
+          "floor_stone_alternative",
+          "floor_workshop_alternative"
+        ],
+        [
+          "rear_stone",
+          "rear_plaster_alternative",
+          "rear_timber_alternative"
+        ]
+      ],
+      "beam_instance_positions_z": [
+        -1.48,
+        -0.62,
+        0.24
+      ],
+      "internal_room_divisions": 0,
+      "status": "PHYSICAL_SKIN_CANDIDATE_REPLACE_NOT_OVERLAY"
+    },
+    {
+      "size_id": "R3",
+      "span_m": 14.399999999999999,
+      "floor_depth_m": 3.6,
+      "room_height_m": 3.055,
+      "instances": [
+        {
+          "asset_id": "arch_floor_wood_r3",
+          "instance_id": "shell_r3_floor_wood",
+          "room_local_xyz": [
+            0,
+            -0.055,
+            -0.15
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0,
+          "bounds_min_m": [
+            -7.2,
+            -0.055,
+            -1.95
+          ],
+          "bounds_max_m": [
+            7.2,
+            0.0,
+            1.65
+          ],
+          "role": "floor_wood",
+          "policy": "REPLACEMENT_SKIN_CANDIDATE_NO_NEW_COLLISION"
+        },
+        {
+          "asset_id": "arch_floor_stone_r3",
+          "instance_id": "shell_r3_floor_stone_alternative",
+          "room_local_xyz": [
+            0,
+            -0.055,
+            -0.15
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0,
+          "bounds_min_m": [
+            -7.2,
+            -0.055,
+            -1.95
+          ],
+          "bounds_max_m": [
+            7.2,
+            0.0,
+            1.65
+          ],
+          "role": "floor_stone_alternative",
+          "policy": "REPLACEMENT_SKIN_CANDIDATE_NO_NEW_COLLISION"
+        },
+        {
+          "asset_id": "arch_floor_workshop_r3",
+          "instance_id": "shell_r3_floor_workshop_alternative",
+          "room_local_xyz": [
+            0,
+            -0.055,
+            -0.15
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0,
+          "bounds_min_m": [
+            -7.2,
+            -0.055,
+            -1.95
+          ],
+          "bounds_max_m": [
+            7.2,
+            0.0,
+            1.65
+          ],
+          "role": "floor_workshop_alternative",
+          "policy": "REPLACEMENT_SKIN_CANDIDATE_NO_NEW_COLLISION"
+        },
+        {
+          "asset_id": "arch_rear_stone_r3",
+          "instance_id": "shell_r3_rear_stone",
+          "room_local_xyz": [
+            0,
+            0.0,
+            -2.1
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0,
+          "bounds_min_m": [
+            -7.2,
+            0.0,
+            -2.18
+          ],
+          "bounds_max_m": [
+            7.2,
+            3.05,
+            -2.02
+          ],
+          "role": "rear_stone",
+          "policy": "REPLACEMENT_SKIN_CANDIDATE_NO_NEW_COLLISION"
+        },
+        {
+          "asset_id": "arch_rear_plaster_r3",
+          "instance_id": "shell_r3_rear_plaster_alternative",
+          "room_local_xyz": [
+            0,
+            0.0,
+            -2.1
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0,
+          "bounds_min_m": [
+            -7.2,
+            0.0,
+            -2.18
+          ],
+          "bounds_max_m": [
+            7.2,
+            3.05,
+            -2.02
+          ],
+          "role": "rear_plaster_alternative",
+          "policy": "REPLACEMENT_SKIN_CANDIDATE_NO_NEW_COLLISION"
+        },
+        {
+          "asset_id": "arch_rear_timber_r3",
+          "instance_id": "shell_r3_rear_timber_alternative",
+          "room_local_xyz": [
+            0,
+            0.0,
+            -2.1
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0,
+          "bounds_min_m": [
+            -7.2,
+            0.0,
+            -2.18
+          ],
+          "bounds_max_m": [
+            7.2,
+            3.05,
+            -2.02
+          ],
+          "role": "rear_timber_alternative",
+          "policy": "REPLACEMENT_SKIN_CANDIDATE_NO_NEW_COLLISION"
+        },
+        {
+          "asset_id": "arch_ceiling_r3",
+          "instance_id": "shell_r3_ceiling",
+          "room_local_xyz": [
+            0,
+            3.0100000000000002,
+            -0.62
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0,
+          "bounds_min_m": [
+            -7.2,
+            3.01,
+            -1.98
+          ],
+          "bounds_max_m": [
+            7.2,
+            3.1,
+            0.74
+          ],
+          "role": "ceiling",
+          "policy": "REPLACEMENT_SKIN_CANDIDATE_NO_NEW_COLLISION"
+        },
+        {
+          "asset_id": "arch_header_r3",
+          "instance_id": "shell_r3_continuous_beam",
+          "room_local_xyz": [
+            0,
+            2.85,
+            -0.62
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0,
+          "bounds_min_m": [
+            -7.01,
+            2.85,
+            -0.695
+          ],
+          "bounds_max_m": [
+            7.01,
+            2.97,
+            -0.545
+          ],
+          "role": "continuous_beam",
+          "policy": "REPLACEMENT_SKIN_CANDIDATE_NO_NEW_COLLISION"
+        },
+        {
+          "asset_id": "arch_skirting_r3",
+          "instance_id": "shell_r3_skirting",
+          "room_local_xyz": [
+            0,
+            0.0,
+            -2.0
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0,
+          "bounds_min_m": [
+            -6.96,
+            0.0,
+            -2.04
+          ],
+          "bounds_max_m": [
+            6.96,
+            0.12,
+            -1.96
+          ],
+          "role": "skirting",
+          "policy": "REPLACEMENT_SKIN_CANDIDATE_NO_NEW_COLLISION"
+        },
+        {
+          "asset_id": "arch_front_lip_r3",
+          "instance_id": "shell_r3_front_lip",
+          "room_local_xyz": [
+            0,
+            -0.09000000000000001,
+            1.39
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0,
+          "bounds_min_m": [
+            -7.2,
+            -0.09,
+            1.3525
+          ],
+          "bounds_max_m": [
+            7.2,
+            -0.05,
+            1.4275
+          ],
+          "role": "front_lip",
+          "policy": "REPLACEMENT_SKIN_CANDIDATE_NO_NEW_COLLISION"
+        }
+      ],
+      "exclusive_groups": [
+        [
+          "floor_wood",
+          "floor_stone_alternative",
+          "floor_workshop_alternative"
+        ],
+        [
+          "rear_stone",
+          "rear_plaster_alternative",
+          "rear_timber_alternative"
+        ]
+      ],
+      "beam_instance_positions_z": [
+        -1.48,
+        -0.62,
+        0.24
+      ],
+      "internal_room_divisions": 0,
+      "status": "PHYSICAL_SKIN_CANDIDATE_REPLACE_NOT_OVERLAY"
+    }
+  ],
+  "connector_variants": [
+    {
+      "size_id": "R1",
+      "side": "west",
+      "connector_local_xz": [
+        -2.4,
+        1.5
+      ],
+      "inset_m": 0.08,
+      "instances": [
+        {
+          "asset_id": "arch_connector_rear_return",
+          "room_local_xyz": [
+            -2.3,
+            0.06,
+            -0.58
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0
+        },
+        {
+          "asset_id": "arch_connector_header",
+          "room_local_xyz": [
+            -2.3,
+            2.67,
+            0.73
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0
+        },
+        {
+          "asset_id": "arch_connector_rear_jamb",
+          "room_local_xyz": [
+            -2.3,
+            0.0,
+            -1.82
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0
+        }
+      ],
+      "front_aisle_open_z": [
+        0.95,
+        1.65
+      ],
+      "status": "RENDER_ONLY_NO_COLLISION_NO_NEW_DOORS",
+      "visibility": "Use existing ConnectorRearReturn cutaway-side visibility policy"
+    },
+    {
+      "size_id": "R1",
+      "side": "east",
+      "connector_local_xz": [
+        2.4,
+        1.5
+      ],
+      "inset_m": 0.08,
+      "instances": [
+        {
+          "asset_id": "arch_connector_rear_return",
+          "room_local_xyz": [
+            2.3,
+            0.06,
+            -0.58
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0
+        },
+        {
+          "asset_id": "arch_connector_header",
+          "room_local_xyz": [
+            2.3,
+            2.67,
+            0.73
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0
+        },
+        {
+          "asset_id": "arch_connector_rear_jamb",
+          "room_local_xyz": [
+            2.3,
+            0.0,
+            -1.82
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0
+        }
+      ],
+      "front_aisle_open_z": [
+        0.95,
+        1.65
+      ],
+      "status": "RENDER_ONLY_NO_COLLISION_NO_NEW_DOORS",
+      "visibility": "Use existing ConnectorRearReturn cutaway-side visibility policy"
+    },
+    {
+      "size_id": "R2",
+      "side": "west",
+      "connector_local_xz": [
+        -4.8,
+        1.5
+      ],
+      "inset_m": 0.08,
+      "instances": [
+        {
+          "asset_id": "arch_connector_rear_return",
+          "room_local_xyz": [
+            -4.7,
+            0.06,
+            -0.58
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0
+        },
+        {
+          "asset_id": "arch_connector_header",
+          "room_local_xyz": [
+            -4.7,
+            2.67,
+            0.73
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0
+        },
+        {
+          "asset_id": "arch_connector_rear_jamb",
+          "room_local_xyz": [
+            -4.7,
+            0.0,
+            -1.82
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0
+        }
+      ],
+      "front_aisle_open_z": [
+        0.95,
+        1.65
+      ],
+      "status": "RENDER_ONLY_NO_COLLISION_NO_NEW_DOORS",
+      "visibility": "Use existing ConnectorRearReturn cutaway-side visibility policy"
+    },
+    {
+      "size_id": "R2",
+      "side": "east",
+      "connector_local_xz": [
+        4.8,
+        1.5
+      ],
+      "inset_m": 0.08,
+      "instances": [
+        {
+          "asset_id": "arch_connector_rear_return",
+          "room_local_xyz": [
+            4.7,
+            0.06,
+            -0.58
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0
+        },
+        {
+          "asset_id": "arch_connector_header",
+          "room_local_xyz": [
+            4.7,
+            2.67,
+            0.73
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0
+        },
+        {
+          "asset_id": "arch_connector_rear_jamb",
+          "room_local_xyz": [
+            4.7,
+            0.0,
+            -1.82
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0
+        }
+      ],
+      "front_aisle_open_z": [
+        0.95,
+        1.65
+      ],
+      "status": "RENDER_ONLY_NO_COLLISION_NO_NEW_DOORS",
+      "visibility": "Use existing ConnectorRearReturn cutaway-side visibility policy"
+    },
+    {
+      "size_id": "R3",
+      "side": "west",
+      "connector_local_xz": [
+        -7.199999999999999,
+        1.5
+      ],
+      "inset_m": 0.08,
+      "instances": [
+        {
+          "asset_id": "arch_connector_rear_return",
+          "room_local_xyz": [
+            -7.1,
+            0.06,
+            -0.58
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0
+        },
+        {
+          "asset_id": "arch_connector_header",
+          "room_local_xyz": [
+            -7.1,
+            2.67,
+            0.73
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0
+        },
+        {
+          "asset_id": "arch_connector_rear_jamb",
+          "room_local_xyz": [
+            -7.1,
+            0.0,
+            -1.82
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0
+        }
+      ],
+      "front_aisle_open_z": [
+        0.95,
+        1.65
+      ],
+      "status": "RENDER_ONLY_NO_COLLISION_NO_NEW_DOORS",
+      "visibility": "Use existing ConnectorRearReturn cutaway-side visibility policy"
+    },
+    {
+      "size_id": "R3",
+      "side": "east",
+      "connector_local_xz": [
+        7.199999999999999,
+        1.5
+      ],
+      "inset_m": 0.08,
+      "instances": [
+        {
+          "asset_id": "arch_connector_rear_return",
+          "room_local_xyz": [
+            7.1,
+            0.06,
+            -0.58
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0
+        },
+        {
+          "asset_id": "arch_connector_header",
+          "room_local_xyz": [
+            7.1,
+            2.67,
+            0.73
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0
+        },
+        {
+          "asset_id": "arch_connector_rear_jamb",
+          "room_local_xyz": [
+            7.1,
+            0.0,
+            -1.82
+          ],
+          "rotation_deg_xyz": [
+            0,
+            0,
+            0
+          ],
+          "uniform_scale": 1.0
+        }
+      ],
+      "front_aisle_open_z": [
+        0.95,
+        1.65
+      ],
+      "status": "RENDER_ONLY_NO_COLLISION_NO_NEW_DOORS",
+      "visibility": "Use existing ConnectorRearReturn cutaway-side visibility policy"
+    }
+  ],
+  "lift_R1": {
+    "instances": [
+      {
+        "asset_id": "arch_lift_rail",
+        "room_local_xyz": [
+          -1.5,
+          0,
+          -1.5
+        ],
+        "rotation_deg_xyz": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "asset_id": "arch_lift_rail",
+        "room_local_xyz": [
+          1.5,
+          0,
+          -1.5
+        ],
+        "rotation_deg_xyz": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "asset_id": "arch_lift_control",
+        "room_local_xyz": [
+          1.65,
+          1.25,
+          -1.83
+        ],
+        "rotation_deg_xyz": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "asset_id": "arch_lift_shaft_wall",
+        "room_local_xyz": [
+          0,
+          0,
+          -2.14
+        ],
+        "rotation_deg_xyz": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "asset_id": "arch_lift_floor_skin",
+        "room_local_xyz": [
+          0,
+          -0.018,
+          0.1
+        ],
+        "rotation_deg_xyz": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "core_xz": [
+      0,
+      0
+    ],
+    "vertical_travel_policy": "No physics or replacement lift platform; floor skin is visual alternative only."
+  },
+  "private_frontage_R1": {
+    "instances": [
+      {
+        "asset_id": "arch_generic_door",
+        "room_local_xyz": [
+          0,
+          0,
+          1.05
+        ],
+        "rotation_deg_xyz": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "asset_id": "arch_generic_plaque",
+        "room_local_xyz": [
+          0,
+          2.45,
+          1.22
+        ],
+        "rotation_deg_xyz": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "optional_public_note": {
+      "asset_id": "arch_generic_note_frame",
+      "room_local_xyz": [
+        -0.58,
+        1.67,
+        1.22
+      ],
+      "rotation_deg_xyz": [
+        0,
+        0,
+        0
+      ]
+    },
+    "privacy": "Generic facade only, no private interior or personal text; existing runtime gate authoritative"
+  },
+  "notes": "Use exactly one mutually exclusive floor/rear finish. Shared UV scale and tint are candidates; no topology or physics changes.",
+  "items": [
+    {
+      "material_id": "Rock035",
+      "role": "rough cave stone",
+      "resolution": "1K",
+      "source_page": "https://ambientcg.com/view?id=Rock035",
+      "license": "CC0",
+      "files": {
+        "albedo.jpg": "7d387e01cad601ce49c35d9d9161f7f8f097de0e32e60f8f2108ae1787854ccf",
+        "normal.jpg": "003dcaa856ce97d2673379a26a444cc0637f0cdd46d7f5de5c3dd263dfbf3f76",
+        "roughness.jpg": "1b3834e6d15be99c06653688ed6c43b492163f6eaacfa56bd7397cf59165e8d6"
+      },
+      "status": "LOCAL_SOURCE_MAPS_REUSED",
+      "uv_metres_per_repeat": null,
+      "gap": "UV tiling scale and visual shell proof pending"
+    },
+    {
+      "material_id": "Wood051",
+      "role": "aged timber",
+      "resolution": "1K",
+      "source_page": "https://ambientcg.com/view?id=Wood051",
+      "license": "CC0",
+      "files": {
+        "albedo.jpg": "f3c6c5456457e8d05c1fee4d2f186f41d0aea2b8a06859b69ce2934e11aa8798",
+        "normal.jpg": "9078dc50c43b55831ae322460fc96b62df68c7a148400bd7755ab2788fec1708",
+        "roughness.jpg": "b5736b940d721b49922cb14eebd52fd34f134b7ef99331ecf28565ce40358098"
+      },
+      "status": "LOCAL_SOURCE_MAPS_REUSED",
+      "uv_metres_per_repeat": null,
+      "gap": "UV tiling scale and visual shell proof pending"
+    },
+    {
+      "material_id": "Carpet004",
+      "role": "textile floor",
+      "resolution": "1K",
+      "source_page": "https://ambientcg.com/view?id=Carpet004",
+      "license": "CC0",
+      "files": {
+        "albedo.jpg": "098c8b2cf075b58f064921a22994c7278cba1f92fb83131a48b09aff8d4526ef",
+        "normal.jpg": "ab4643cd4e1943730e1e6aa06056ce46639452472ac3beb2bb0204e268ba4279",
+        "roughness.jpg": "18bd38dd1fcf57a12b6dac107268ea34476398e66e12adcd14f9d1103ea6fad9"
+      },
+      "status": "LOCAL_SOURCE_MAPS_REUSED",
+      "uv_metres_per_repeat": null,
+      "gap": "UV tiling scale and visual shell proof pending"
+    },
+    {
+      "material_id": "Metal055A",
+      "role": "metal trim/workshop",
+      "resolution": "1K",
+      "source_page": "https://ambientcg.com/view?id=Metal055A",
+      "license": "CC0",
+      "files": {
+        "albedo.jpg": "79938ccc3c75aaab3a2b1ed31068a8db3634d512286bb8c3aa6f6205cd59ca3a",
+        "normal.jpg": "35b567228bb4f18d231f7767327a6b8a10627045dd4957ecd0fed5ee7017aa3c",
+        "roughness.jpg": "b844f4192f74c6160265821da790b764fc941e195d939160ee3e22a07037e860",
+        "metalness.jpg": "7d641701d0c31e623de99899816219e09b8b66403224550a24ff3930c70bebc7"
+      },
+      "status": "LOCAL_SOURCE_MAPS_REUSED",
+      "uv_metres_per_repeat": null,
+      "gap": "UV tiling scale and visual shell proof pending"
+    },
+    {
+      "material_id": "old_stone_wall_02",
+      "role": "dressed stone",
+      "source_page": "https://polyhaven.com/a/old_stone_wall_02",
+      "license": "CC0",
+      "resolution": "1K",
+      "uv_metres_per_repeat": [
+        2.085,
+        2.085
+      ],
+      "uv_scale_source": "Poly Haven dimensions metadata; actual visual tint and seam proof pending",
+      "files": {
+        "albedo.jpg": {
+          "sha256": "2b841b146fc5aa48b7a63143c5c1b6679c7645320cce31c97bd38d541f5144ac",
+          "size_px": [
+            1024,
+            1024
+          ],
+          "bytes": 822548,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/old_stone_wall_02/old_stone_wall_02_diff_1k.jpg",
+          "source_md5": "fdcda49a46624dc1e0dba52a8f006c7f"
+        },
+        "normal.png": {
+          "sha256": "e2f982fd977405516df057282667de6148068f77b73e09547a22f6f7e9e8d9c1",
+          "size_px": [
+            1024,
+            1024
+          ],
+          "bytes": 5831291,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/old_stone_wall_02/old_stone_wall_02_nor_gl_1k.png",
+          "source_md5": "66378353f8df9d48a053d34a0d22e883"
+        },
+        "roughness.jpg": {
+          "sha256": "d3c0474c4db68f4668dee70ca667cfbea3ffd7031693d50e1524c29d3ca45813",
+          "size_px": [
+            1024,
+            1024
+          ],
+          "bytes": 181157,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/old_stone_wall_02/old_stone_wall_02_rough_1k.jpg",
+          "source_md5": "9914a5f2b5b93d7f4f3bbb3f5b727a14"
+        }
+      },
+      "status": "PRESENT_VERIFIED"
+    },
+    {
+      "material_id": "worn_plaster_wall",
+      "role": "worn plaster",
+      "source_page": "https://polyhaven.com/a/worn_plaster_wall",
+      "license": "CC0",
+      "resolution": "1K",
+      "uv_metres_per_repeat": [
+        1.8,
+        1.8
+      ],
+      "uv_scale_source": "Poly Haven dimensions metadata; actual visual tint and seam proof pending",
+      "files": {
+        "albedo.jpg": {
+          "sha256": "f769bee35504ff713e89e89d2b64c1eb3c373dd184973ac8706310f19fd63efe",
+          "size_px": [
+            1024,
+            1024
+          ],
+          "bytes": 750361,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/worn_plaster_wall/worn_plaster_wall_diff_1k.jpg",
+          "source_md5": "31aab3a5bf3859361cd423e15b9735bc"
+        },
+        "normal.png": {
+          "sha256": "2f8dc1726f6c2a32cd8270e9135fb3bd6fa6606801cb76a39dfe419eef96ab76",
+          "size_px": [
+            1024,
+            1024
+          ],
+          "bytes": 5335659,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/worn_plaster_wall/worn_plaster_wall_nor_gl_1k.png",
+          "source_md5": "574c99e30c639fa0eef1c544ef085d6a"
+        },
+        "roughness.jpg": {
+          "sha256": "383584ed24edd4dd6e6a675fd822ec04152684ba15f4b0eda1f0dbe31979a7c6",
+          "size_px": [
+            1024,
+            1024
+          ],
+          "bytes": 242497,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/worn_plaster_wall/worn_plaster_wall_rough_1k.jpg",
+          "source_md5": "7584ca081047d7e025fd80adbdcec4df"
+        }
+      },
+      "status": "PRESENT_VERIFIED"
+    },
+    {
+      "material_id": "wood_plank_wall",
+      "role": "aged timber wall",
+      "source_page": "https://polyhaven.com/a/wood_plank_wall",
+      "license": "CC0",
+      "resolution": "1K",
+      "uv_metres_per_repeat": [
+        1.0,
+        1.0
+      ],
+      "uv_scale_source": "Poly Haven dimensions metadata; actual visual tint and seam proof pending",
+      "files": {
+        "albedo.jpg": {
+          "sha256": "680a9959d3f805254e00b3ce9adaffb7b01dccbe84f3e89379bb5f91a116ada5",
+          "size_px": [
+            1024,
+            1024
+          ],
+          "bytes": 498698,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_plank_wall/wood_plank_wall_diff_1k.jpg",
+          "source_md5": "7ecc889d40023f64b311dd5868a296d5"
+        },
+        "normal.png": {
+          "sha256": "c26881ef61099335dc5d597d5224423b7e8f7a20f074d5151e99ea2c4472d5f3",
+          "size_px": [
+            1024,
+            1024
+          ],
+          "bytes": 5395975,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/wood_plank_wall/wood_plank_wall_nor_gl_1k.png",
+          "source_md5": "5b31fc468e8bb3d0bf0f0cceab8bb1a4"
+        },
+        "roughness.jpg": {
+          "sha256": "11f02759e2e5f49c9963848ea537a7e020661c4913b734e6be7a432e23b75210",
+          "size_px": [
+            1024,
+            1024
+          ],
+          "bytes": 384348,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_plank_wall/wood_plank_wall_rough_1k.jpg",
+          "source_md5": "3257d0accf11735c74be50ef5897f86e"
+        }
+      },
+      "status": "PRESENT_VERIFIED"
+    },
+    {
+      "material_id": "monastery_stone_floor",
+      "role": "stone flagstones",
+      "source_page": "https://polyhaven.com/a/monastery_stone_floor",
+      "license": "CC0",
+      "resolution": "1K",
+      "uv_metres_per_repeat": [
+        1.8,
+        1.8
+      ],
+      "uv_scale_source": "Poly Haven dimensions metadata; actual visual tint and seam proof pending",
+      "files": {
+        "albedo.jpg": {
+          "sha256": "8e52ec982469ce9da312cefe3126c1dff05b7150234971bc6dff6e31c3c584ae",
+          "size_px": [
+            1024,
+            1024
+          ],
+          "bytes": 766525,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/monastery_stone_floor/monastery_stone_floor_diff_1k.jpg",
+          "source_md5": "8e748f767d8e478438ef748833365754"
+        },
+        "normal.png": {
+          "sha256": "5e22b0c576d40db57c03dab34fb973522dcea9ff662b10e1f65bbf7f76759f9f",
+          "size_px": [
+            1024,
+            1024
+          ],
+          "bytes": 5752153,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/monastery_stone_floor/monastery_stone_floor_nor_gl_1k.png",
+          "source_md5": "6c71df7edca7120a011c03d5d3866355"
+        },
+        "roughness.jpg": {
+          "sha256": "8d987222b727442c11c30cd4d8a32ed48f02e46683acd088d994baef5bf311a9",
+          "size_px": [
+            1024,
+            1024
+          ],
+          "bytes": 477972,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/monastery_stone_floor/monastery_stone_floor_rough_1k.jpg",
+          "source_md5": "ea3793f350c70ebd6216ae5b4565d4eb"
+        }
+      },
+      "status": "PRESENT_VERIFIED"
+    },
+    {
+      "material_id": "wood_planks",
+      "role": "worn floorboards",
+      "source_page": "https://polyhaven.com/a/wood_planks",
+      "license": "CC0",
+      "resolution": "1K",
+      "uv_metres_per_repeat": [
+        1.5,
+        1.5
+      ],
+      "uv_scale_source": "Poly Haven dimensions metadata; actual visual tint and seam proof pending",
+      "files": {
+        "albedo.jpg": {
+          "sha256": "3b0669f683e4bf10f5a55a381cfa9669a7b8dfd921901829daa3b35acc2bbdec",
+          "size_px": [
+            1024,
+            1024
+          ],
+          "bytes": 609525,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_planks/wood_planks_diff_1k.jpg",
+          "source_md5": "922505c35c2d0dc6a44da7ac77757134"
+        },
+        "normal.png": {
+          "sha256": "f0b8c0e78a28f0e4aa962921f508a232b42a1f787a9b10cdb37aa1050e6e845d",
+          "size_px": [
+            1024,
+            1024
+          ],
+          "bytes": 5880709,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/wood_planks/wood_planks_nor_gl_1k.png",
+          "source_md5": "5e1006892b116203e732984d0c0a09a4"
+        },
+        "roughness.jpg": {
+          "sha256": "1b7f115bfa25619b0a2db554eb1ab88a6fc5ef0b74ba4890611eae04d00b9829",
+          "size_px": [
+            1024,
+            1024
+          ],
+          "bytes": 299757,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_planks/wood_planks_rough_1k.jpg",
+          "source_md5": "69c9313315808cc9d858a648c2335fec"
+        }
+      },
+      "status": "PRESENT_VERIFIED"
+    },
+    {
+      "material_id": "grey_plaster_03",
+      "role": "dark workshop floor / tint candidate",
+      "source_page": "https://polyhaven.com/a/grey_plaster_03",
+      "license": "CC0",
+      "resolution": "1K",
+      "uv_metres_per_repeat": [
+        1.0,
+        1.0
+      ],
+      "uv_scale_source": "Poly Haven dimensions metadata; actual visual tint and seam proof pending",
+      "files": {
+        "albedo.jpg": {
+          "sha256": "b0952ccabee3f68a1962684a8bc2fe64101b92e569cfd13cf1d8c11b65f395d9",
+          "size_px": [
+            1024,
+            1024
+          ],
+          "bytes": 486612,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/grey_plaster_03/grey_plaster_03_diff_1k.jpg",
+          "source_md5": "9c46bc51a016ff7e58769a7fdea0c0c9"
+        },
+        "normal.png": {
+          "sha256": "96b69c5dd7937ac8b489523a5b183d7db0292ac1c7da5fcb83ea1e43e288bda2",
+          "size_px": [
+            1024,
+            1024
+          ],
+          "bytes": 5908243,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/grey_plaster_03/grey_plaster_03_nor_gl_1k.png",
+          "source_md5": "bac82a1a555b22a495d258130381ca3f"
+        },
+        "roughness.jpg": {
+          "sha256": "6d51b445ed36d27887db7d0c5db23d6ef6aa3c1f49e7c65878ee80c66353c2ee",
+          "size_px": [
+            1024,
+            1024
+          ],
+          "bytes": 424960,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/grey_plaster_03/grey_plaster_03_rough_1k.jpg",
+          "source_md5": "b1695b63dd8dfc0d95215af310742030"
+        }
+      },
+      "status": "PRESENT_VERIFIED"
+    }
+  ]
+}

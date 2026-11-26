@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/side_table_01
+Source SHA-256 a441125a4f660a23a31601aedd9aa379c6febf2b35171c08814187b5ec5a3309
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native scale; no aspect stretch.
+Candidate: owner_approved=false.

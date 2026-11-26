@@ -1,0 +1,6 @@
+CC0 1.0 Universal
+https://3dassets.dev/assets/cinema-multiplex-and-foyer-side-wall-light-strip-b70cf154
+Source GLB SHA-256 3ffff96a6df6fd8b82a94009a6ea8c4cc8c7c773e829131c9b7f02cb73bfe788
+Uniform import scale 0.7; canonical pivot wall.
+Candidate, no owner approval.
+KHR_mesh_quantization decoded to float32 attributes; preserved original node transforms; source untouched.

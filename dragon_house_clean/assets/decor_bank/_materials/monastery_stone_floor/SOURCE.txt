@@ -1,0 +1,34 @@
+Poly Haven CC0 1K material: https://polyhaven.com/a/monastery_stone_floor
+Measured texture domain from source API: [1.8, 1.8] metres.
+{
+  "albedo.jpg": {
+    "sha256": "8e52ec982469ce9da312cefe3126c1dff05b7150234971bc6dff6e31c3c584ae",
+    "size_px": [
+      1024,
+      1024
+    ],
+    "bytes": 766525,
+    "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/monastery_stone_floor/monastery_stone_floor_diff_1k.jpg",
+    "source_md5": "8e748f767d8e478438ef748833365754"
+  },
+  "normal.png": {
+    "sha256": "5e22b0c576d40db57c03dab34fb973522dcea9ff662b10e1f65bbf7f76759f9f",
+    "size_px": [
+      1024,
+      1024
+    ],
+    "bytes": 5752153,
+    "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/monastery_stone_floor/monastery_stone_floor_nor_gl_1k.png",
+    "source_md5": "6c71df7edca7120a011c03d5d3866355"
+  },
+  "roughness.jpg": {
+    "sha256": "8d987222b727442c11c30cd4d8a32ed48f02e46683acd088d994baef5bf311a9",
+    "size_px": [
+      1024,
+      1024
+    ],
+    "bytes": 477972,
+    "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/monastery_stone_floor/monastery_stone_floor_rough_1k.jpg",
+    "source_md5": "ea3793f350c70ebd6216ae5b4565d4eb"
+  }
+}

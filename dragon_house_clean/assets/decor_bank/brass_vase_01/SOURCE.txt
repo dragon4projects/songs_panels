@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/brass_vase_01
+Source SHA-256 becf6d52678c63d7321c8ab51fb1a03a80d8dd61feb183977867069cdd470f9d
+Source yaw 0 degrees; uniform scale 0.75; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 21440 -> 9100; original source unchanged, optimized GLB SHA-256 33aa9e12f282bfde76b0dbab040e1b356361531fce0f26186bcc63939a01ec63. Bounds delta before recenter: 0.000094 m.

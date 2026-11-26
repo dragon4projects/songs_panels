@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/planter_box_03
+Source SHA-256 56a1a36abdfcbdec20e379392c0c3d5d9ba0fff1003cf8f3858fdb58ef9ba9e5
+Source yaw 0 degrees; uniform scale 0.85; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 13112 -> 9100; original source unchanged, optimized GLB SHA-256 8b98aefd6fe68304adb05e27631854150f03c859a8f827d72fd942dced654c08. Bounds delta before recenter: 0.000001 m.

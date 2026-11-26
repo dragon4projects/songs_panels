@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/postcard_set_01
+Source SHA-256 7a12ad19ed66de5362bbb37e8369030cf88e8ab78364e4be7bed840232469056
+Source yaw 0 degrees; uniform scale 1; pivot wall
+Native source scale.
+Candidate: owner_approved=false.

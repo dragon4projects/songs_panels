@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/bull_head
+Source SHA-256 02385d6be1cee95c1ee614cb01b619d3aeb9ea5e90504562ce4eb57f06e75947
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 17148 -> 2730; original source unchanged, optimized GLB SHA-256 d757c5d5b0901e35c0d2546b51348b03a2c019865121208759d581c11b3baefd. Bounds delta before recenter: 0.000451 m.

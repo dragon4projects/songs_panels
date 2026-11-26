@@ -1,0 +1,5 @@
+CC0
+https://polyhaven.com/a/seadogs_compass
+Derived toy-sized mesh; no historical or owned object identity.
+Working GLB SHA-256 7ab40f6f88d95129b72dcd46322429df258baaa507652023c8f44d5a183a1a78
+Non-functional lightweight replica, not an owned or valuable compass.

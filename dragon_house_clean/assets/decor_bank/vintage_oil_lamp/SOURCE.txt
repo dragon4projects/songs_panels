@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/vintage_oil_lamp
+Source SHA-256 ae570b98ea30b0337f62d8e7f551c03a05de00b238f3fac8f1ca5a1f1dbd1add
+Source yaw 0 degrees; uniform scale 0.6; pivot floor
+Uniform domestic physical scale; source aspect retained.
+Candidate: owner_approved=false.

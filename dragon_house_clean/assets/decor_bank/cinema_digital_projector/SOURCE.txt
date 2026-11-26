@@ -1,0 +1,6 @@
+CC0 1.0 Universal
+https://3dassets.dev/assets/cinema-multiplex-and-foyer-digital-projector-plinth-2e5f1d38
+Source GLB SHA-256 0540a1da4b58028221219455dae4da8684fe90f3e08a5a6819247b2e536d5137
+Uniform import scale 0.75; canonical pivot floor.
+Candidate, no owner approval.
+KHR_mesh_quantization decoded to float32 attributes; preserved original node transforms; source untouched.

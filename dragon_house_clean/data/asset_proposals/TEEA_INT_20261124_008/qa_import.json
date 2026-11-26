@@ -1,0 +1,5038 @@
+{
+  "schema": 1,
+  "task_id": "TEEA_INT_20261124_008",
+  "base_repo": "dragon4projects/songs_panels",
+  "base_sha": "9c45da4f59dd40fb03f07ae0842000bb448efa93",
+  "latest_integration_sha_reviewed": "182360601f5c382d55e51a7c4566d553f8a8b42b",
+  "owner_approved": false,
+  "units": "m",
+  "axis": "X-right,Y-up,Z-front",
+  "status": "PARTIAL_READY",
+  "models": 243,
+  "source_originals": 158,
+  "material_sets": 10,
+  "asset_import_pass": 243,
+  "asset_import_scope": "Five isolated Godot 4.7.2 asset import passes; no clean Git LFS checkout or integrated house runtime",
+  "room_variants": 33,
+  "public_room_variants": 30,
+  "guest_room_variants": 3,
+  "geometry_grid_pass": 33,
+  "placement_instances": 219,
+  "media_ids_preserved": 32,
+  "guest_png_frames_measured": 332,
+  "small_artifact_candidates": 15,
+  "dependency_files": 1030,
+  "payload_bytes": 287424816,
+  "optimized_models": 80,
+  "triangles_removed": 1959456,
+  "category_counts": {
+    "seating": 22,
+    "table": 14,
+    "shelf": 6,
+    "cabinet": 8,
+    "screen": 1,
+    "small_artifact_candidate": 15,
+    "media_screen": 1,
+    "architectural_step": 1,
+    "wall_panel": 1,
+    "wall_light": 3,
+    "speaker": 1,
+    "decor": 2,
+    "game_decor": 1,
+    "frame": 1,
+    "floor_tile": 1,
+    "curtain": 1,
+    "cup": 2,
+    "table_lamp": 1,
+    "ceiling_light": 3,
+    "hazard_or_fragile": 33,
+    "fixed_decor": 40,
+    "soft_textile": 6,
+    "display_content_carrier": 15,
+    "portable_nonstealable": 10,
+    "stash_carrier": 2,
+    "structure": 41,
+    "reserve": 11
+  },
+  "import_results": [
+    {
+      "expected_dimensions": [
+        1.897526,
+        0.744963,
+        0.858639
+      ],
+      "id": "sofa_02",
+      "imported_aabb_max": [
+        0.9487624168396,
+        0.744963347911835,
+        0.429319500923157
+      ],
+      "imported_aabb_min": [
+        -0.948763132095337,
+        1.16881011535952e-08,
+        -0.429319381713867
+      ],
+      "imported_dimensions": [
+        1.89752554893494,
+        0.744963347911835,
+        0.858638882637024
+      ],
+      "max_aabb_error_m": 4.76837158203125e-07,
+      "meshes": 2,
+      "status": "PASS",
+      "triangles": 2728
+    },
+    {
+      "expected_dimensions": [
+        0.568344,
+        1.063614,
+        0.528404
+      ],
+      "id": "chinese_armchair",
+      "imported_aabb_max": [
+        0.284171551465988,
+        1.06361389160156,
+        0.264201909303665
+      ],
+      "imported_aabb_min": [
+        -0.284172564744949,
+        3.53184077539481e-07,
+        -0.264202207326889
+      ],
+      "imported_dimensions": [
+        0.568344116210938,
+        1.06361353397369,
+        0.528404116630554
+      ],
+      "max_aabb_error_m": 4.76837158203125e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2675
+    },
+    {
+      "expected_dimensions": [
+        0.938009,
+        0.363202,
+        0.938009
+      ],
+      "id": "gothic_coffee_table",
+      "imported_aabb_max": [
+        0.469004333019257,
+        0.363202810287476,
+        0.469004780054092
+      ],
+      "imported_aabb_min": [
+        -0.469004273414612,
+        3.87546606361866e-07,
+        -0.469003826379776
+      ],
+      "imported_dimensions": [
+        0.938008606433868,
+        0.363202422857285,
+        0.938008606433868
+      ],
+      "max_aabb_error_m": 4.17232513427734e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 23836
+    },
+    {
+      "expected_dimensions": [
+        1.077761,
+        1.556184,
+        0.37151
+      ],
+      "id": "wooden_display_shelves_01",
+      "imported_aabb_max": [
+        0.538880467414856,
+        1.55618417263031,
+        0.18575482070446
+      ],
+      "imported_aabb_min": [
+        -0.538880467414856,
+        3.05997673422098e-07,
+        -0.18575482070446
+      ],
+      "imported_dimensions": [
+        1.07776093482971,
+        1.55618381500244,
+        0.37150964140892
+      ],
+      "max_aabb_error_m": 3.57627868652344e-07,
+      "meshes": 4,
+      "status": "PASS",
+      "triangles": 3174
+    },
+    {
+      "expected_dimensions": [
+        1.526765,
+        0.686757,
+        0.397766
+      ],
+      "id": "chinese_commode",
+      "imported_aabb_max": [
+        0.76338255405426,
+        0.686757206916809,
+        0.198883160948753
+      ],
+      "imported_aabb_min": [
+        -0.763382792472839,
+        0.0,
+        -0.198882892727852
+      ],
+      "imported_dimensions": [
+        1.5267653465271,
+        0.686757206916809,
+        0.397766053676605
+      ],
+      "max_aabb_error_m": 3.57627868652344e-07,
+      "meshes": 4,
+      "status": "PASS",
+      "triangles": 6775
+    },
+    {
+      "expected_dimensions": [
+        1.134417,
+        0.799543,
+        0.706025
+      ],
+      "id": "wooden_table_02",
+      "imported_aabb_max": [
+        0.567208349704742,
+        0.799542725086212,
+        0.353012412786484
+      ],
+      "imported_aabb_min": [
+        -0.567208230495453,
+        -1.52896973304451e-07,
+        -0.353012412786484
+      ],
+      "imported_dimensions": [
+        1.1344165802002,
+        0.799542903900146,
+        0.706024825572968
+      ],
+      "max_aabb_error_m": 4.76837158203125e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 196
+    },
+    {
+      "expected_dimensions": [
+        0.4481,
+        0.458123,
+        0.47309
+      ],
+      "id": "metal_stool_02",
+      "imported_aabb_max": [
+        0.224049478769302,
+        0.458122432231903,
+        0.236544713377953
+      ],
+      "imported_aabb_min": [
+        -0.224050343036652,
+        -2.95080099022016e-07,
+        -0.236545577645302
+      ],
+      "imported_dimensions": [
+        0.448099821805954,
+        0.458122730255127,
+        0.473090291023254
+      ],
+      "max_aabb_error_m": 2.98023223876953e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 6532
+    },
+    {
+      "expected_dimensions": [
+        0.915417,
+        1.9,
+        0.6
+      ],
+      "id": "worn_metal_rack",
+      "imported_aabb_max": [
+        0.457708597183228,
+        1.89999997615814,
+        0.300000011920929
+      ],
+      "imported_aabb_min": [
+        -0.457708060741425,
+        -4.78383554991524e-10,
+        -0.300000011920929
+      ],
+      "imported_dimensions": [
+        0.915416657924652,
+        1.89999997615814,
+        0.600000023841858
+      ],
+      "max_aabb_error_m": 3.57627868652344e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 6372
+    },
+    {
+      "expected_dimensions": [
+        1.305254,
+        1.96027,
+        0.552237
+      ],
+      "id": "wooden_bookshelf_worn",
+      "imported_aabb_max": [
+        0.652627110481262,
+        1.96026980876923,
+        0.276118457317352
+      ],
+      "imported_aabb_min": [
+        -0.652627110481262,
+        -5.66244118260784e-08,
+        -0.276118457317352
+      ],
+      "imported_dimensions": [
+        1.30525422096252,
+        1.96026980876923,
+        0.552236914634705
+      ],
+      "max_aabb_error_m": 2.38418579101562e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 10106
+    },
+    {
+      "expected_dimensions": [
+        1.760044,
+        0.892097,
+        0.736976
+      ],
+      "id": "Sofa_01",
+      "imported_aabb_max": [
+        0.880021870136261,
+        0.89209645986557,
+        0.368488192558289
+      ],
+      "imported_aabb_min": [
+        -0.880021989345551,
+        -4.29223291575909e-07,
+        -0.368488073348999
+      ],
+      "imported_dimensions": [
+        1.76004385948181,
+        0.892096877098083,
+        0.736976265907288
+      ],
+      "max_aabb_error_m": 2.38418579101562e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 4101
+    },
+    {
+      "expected_dimensions": [
+        0.848431,
+        1.065088,
+        0.76576
+      ],
+      "id": "ArmChair_01",
+      "imported_aabb_max": [
+        0.42421543598175,
+        1.06508708000183,
+        0.382879704236984
+      ],
+      "imported_aabb_min": [
+        -0.42421543598175,
+        -4.96744178235531e-07,
+        -0.382880598306656
+      ],
+      "imported_dimensions": [
+        0.848430871963501,
+        1.06508755683899,
+        0.76576030254364
+      ],
+      "max_aabb_error_m": 4.76837158203125e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 5626
+    },
+    {
+      "expected_dimensions": [
+        1.450439,
+        0.892127,
+        0.553919
+      ],
+      "id": "ClassicConsole_01",
+      "imported_aabb_max": [
+        0.725219905376434,
+        0.892127275466919,
+        0.276959419250488
+      ],
+      "imported_aabb_min": [
+        -0.725219309329987,
+        1.22922301670769e-07,
+        -0.276959478855133
+      ],
+      "imported_dimensions": [
+        1.45043921470642,
+        0.892127156257629,
+        0.553918898105621
+      ],
+      "max_aabb_error_m": 2.38418579101562e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 7566
+    },
+    {
+      "expected_dimensions": [
+        1.7753,
+        1.014612,
+        0.769299
+      ],
+      "id": "vintage_day_bed",
+      "imported_aabb_max": [
+        0.887650012969971,
+        1.0146119594574,
+        0.384649574756622
+      ],
+      "imported_aabb_min": [
+        -0.887649536132812,
+        1.84133568836842e-07,
+        -0.384648978710175
+      ],
+      "imported_dimensions": [
+        1.77529954910278,
+        1.01461172103882,
+        0.769298553466797
+      ],
+      "max_aabb_error_m": 4.76837158203125e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2715
+    },
+    {
+      "expected_dimensions": [
+        0.708128,
+        0.994928,
+        0.833482
+      ],
+      "id": "Rockingchair_01",
+      "imported_aabb_max": [
+        0.354064047336578,
+        0.99492871761322,
+        0.416741251945496
+      ],
+      "imported_aabb_min": [
+        -0.354064047336578,
+        2.90572643280029e-07,
+        -0.416740775108337
+      ],
+      "imported_dimensions": [
+        0.708128094673157,
+        0.994928419589996,
+        0.833482027053833
+      ],
+      "max_aabb_error_m": 4.17232513427734e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 11866
+    },
+    {
+      "expected_dimensions": [
+        1.097415,
+        2.140501,
+        0.502118
+      ],
+      "id": "steel_frame_shelves_01",
+      "imported_aabb_max": [
+        0.548707187175751,
+        2.14050078392029,
+        0.251058787107468
+      ],
+      "imported_aabb_min": [
+        -0.54870742559433,
+        1.09546817839146e-07,
+        -0.251058787107468
+      ],
+      "imported_dimensions": [
+        1.09741461277008,
+        2.14050078392029,
+        0.502117574214935
+      ],
+      "max_aabb_error_m": 4.17232513427734e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 4348
+    },
+    {
+      "expected_dimensions": [
+        1.093567,
+        1.799464,
+        0.915801
+      ],
+      "id": "projector_screen",
+      "imported_aabb_max": [
+        0.546783268451691,
+        1.79946422576904,
+        0.45790034532547
+      ],
+      "imported_aabb_min": [
+        -0.54678338766098,
+        -5.96046447753906e-08,
+        -0.45790046453476
+      ],
+      "imported_dimensions": [
+        1.09356665611267,
+        1.79946422576904,
+        0.915800809860229
+      ],
+      "max_aabb_error_m": 3.57627868652344e-07,
+      "meshes": 2,
+      "status": "PASS",
+      "triangles": 8727
+    },
+    {
+      "expected_dimensions": [
+        0.109183,
+        0.096151,
+        0.057557
+      ],
+      "id": "generic_small_wooden_elephant",
+      "imported_aabb_max": [
+        0.0545910634100437,
+        0.0961509570479393,
+        0.0287777949124575
+      ],
+      "imported_aabb_min": [
+        -0.0545919053256512,
+        4.2555620893836e-07,
+        -0.0287787113338709
+      ],
+      "imported_dimensions": [
+        0.109182968735695,
+        0.0961505323648453,
+        0.0575565062463284
+      ],
+      "max_aabb_error_m": 4.95463609695435e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2752
+    },
+    {
+      "expected_dimensions": [
+        0.091974,
+        0.076654,
+        0.069621
+      ],
+      "id": "generic_miniature_ray_replica",
+      "imported_aabb_max": [
+        0.0459866225719452,
+        0.0766542032361031,
+        0.0348108299076557
+      ],
+      "imported_aabb_min": [
+        -0.0459876284003258,
+        -7.26431581554721e-10,
+        -0.0348104499280453
+      ],
+      "imported_dimensions": [
+        0.091974250972271,
+        0.0766542032361031,
+        0.069621279835701
+      ],
+      "max_aabb_error_m": 2.83122062683105e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 1844
+    },
+    {
+      "expected_dimensions": [
+        0.138,
+        0.105,
+        0.098
+      ],
+      "id": "candidate_dragon_mug_red",
+      "imported_aabb_max": [
+        0.0690000131726265,
+        0.104999996721745,
+        0.0489999987185001
+      ],
+      "imported_aabb_min": [
+        -0.0689999982714653,
+        0.0,
+        -0.0489999987185001
+      ],
+      "imported_dimensions": [
+        0.138000011444092,
+        0.104999996721745,
+        0.0979999974370003
+      ],
+      "max_aabb_error_m": 1.49011611938477e-08,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 5496
+    },
+    {
+      "expected_dimensions": [
+        0.138,
+        0.105,
+        0.098
+      ],
+      "id": "candidate_guest_mug_blue",
+      "imported_aabb_max": [
+        0.0690000131726265,
+        0.104999996721745,
+        0.0489999987185001
+      ],
+      "imported_aabb_min": [
+        -0.0689999982714653,
+        0.0,
+        -0.0489999987185001
+      ],
+      "imported_dimensions": [
+        0.138000011444092,
+        0.104999996721745,
+        0.0979999974370003
+      ],
+      "max_aabb_error_m": 1.49011611938477e-08,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 5496
+    },
+    {
+      "expected_dimensions": [
+        0.060493,
+        0.080893,
+        0.085
+      ],
+      "id": "generic_toy_duck",
+      "imported_aabb_max": [
+        0.0302462968975306,
+        0.0808975622057915,
+        0.0425000004470348
+      ],
+      "imported_aabb_min": [
+        -0.0302462968975306,
+        4.11799373978283e-06,
+        -0.0425000004470348
+      ],
+      "imported_dimensions": [
+        0.0604925937950611,
+        0.0808934420347214,
+        0.0850000008940697
+      ],
+      "max_aabb_error_m": 4.39584255218506e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2700
+    },
+    {
+      "expected_dimensions": [
+        0.064824,
+        0.074627,
+        0.09501
+      ],
+      "id": "generic_toy_whale",
+      "imported_aabb_max": [
+        0.0324121527373791,
+        0.0746255591511726,
+        0.0475039444863796
+      ],
+      "imported_aabb_min": [
+        -0.0324121601879597,
+        -1.70713701663772e-06,
+        -0.0475063882768154
+      ],
+      "imported_dimensions": [
+        0.0648243129253387,
+        0.0746272653341293,
+        0.095010332763195
+      ],
+      "max_aabb_error_m": 3.35276126861572e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2700
+    },
+    {
+      "expected_dimensions": [
+        0.045973,
+        0.085063,
+        0.075118
+      ],
+      "id": "generic_toy_cat",
+      "imported_aabb_max": [
+        0.0230072941631079,
+        0.0850672200322151,
+        0.0375352017581463
+      ],
+      "imported_aabb_min": [
+        -0.0229654032737017,
+        3.96038194594439e-06,
+        -0.0375826023519039
+      ],
+      "imported_dimensions": [
+        0.0459726974368095,
+        0.0850632563233376,
+        0.0751178041100502
+      ],
+      "max_aabb_error_m": 3.01748514175415e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2700
+    },
+    {
+      "expected_dimensions": [
+        0.046373,
+        0.056791,
+        0.100003
+      ],
+      "id": "generic_toy_shark",
+      "imported_aabb_max": [
+        0.0231912676244974,
+        0.0567912831902504,
+        0.0499999932944775
+      ],
+      "imported_aabb_min": [
+        -0.0231818612664938,
+        -2.69668887220575e-09,
+        -0.0500025041401386
+      ],
+      "imported_dimensions": [
+        0.0463731288909912,
+        0.0567912869155407,
+        0.100002497434616
+      ],
+      "max_aabb_error_m": 4.99188899993896e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2700
+    },
+    {
+      "expected_dimensions": [
+        0.042253,
+        0.045087,
+        0.075144
+      ],
+      "id": "generic_mini_compass",
+      "imported_aabb_max": [
+        0.0210797563195229,
+        0.0454622507095337,
+        0.0375277251005173
+      ],
+      "imported_aabb_min": [
+        -0.021173357963562,
+        4.85418022435624e-05,
+        -0.0405983626842499
+      ],
+      "imported_dimensions": [
+        0.0422531142830849,
+        0.0454137101769447,
+        0.0781260877847672
+      ],
+      "max_aabb_error_m": 0.00298208743333817,
+      "meshes": 3,
+      "status": "PASS",
+      "triangles": 2699
+    },
+    {
+      "expected_dimensions": [
+        0.043201,
+        0.10005,
+        0.035006
+      ],
+      "id": "generic_toy_gnome",
+      "imported_aabb_max": [
+        0.0216684639453888,
+        0.100070685148239,
+        0.0175319332629442
+      ],
+      "imported_aabb_min": [
+        -0.0215324684977531,
+        2.06160457310034e-05,
+        -0.017474478110671
+      ],
+      "imported_dimensions": [
+        0.0432009324431419,
+        0.100050069391727,
+        0.0350064113736153
+      ],
+      "max_aabb_error_m": 4.09781932830811e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2699
+    },
+    {
+      "expected_dimensions": [
+        0.036,
+        0.036,
+        0.036
+      ],
+      "id": "generic_small_wooden_die",
+      "imported_aabb_max": [
+        0.0179999992251396,
+        0.0359999947249889,
+        0.0179999992251396
+      ],
+      "imported_aabb_min": [
+        -0.0179999992251396,
+        0.0,
+        -0.0179999992251396
+      ],
+      "imported_dimensions": [
+        0.0359999984502792,
+        0.0359999947249889,
+        0.0359999984502792
+      ],
+      "max_aabb_error_m": 3.72529029846191e-09,
+      "meshes": 22,
+      "status": "PASS",
+      "triangles": 1032
+    },
+    {
+      "expected_dimensions": [
+        0.05,
+        0.00735,
+        0.05
+      ],
+      "id": "generic_wooden_game_token",
+      "imported_aabb_max": [
+        0.025000000372529,
+        0.00735000008717179,
+        0.025000000372529
+      ],
+      "imported_aabb_min": [
+        -0.025000000372529,
+        0.0,
+        -0.025000000372529
+      ],
+      "imported_dimensions": [
+        0.0500000007450581,
+        0.00735000008717179,
+        0.0500000007450581
+      ],
+      "max_aabb_error_m": 0.0,
+      "meshes": 2,
+      "status": "PASS",
+      "triangles": 760
+    },
+    {
+      "expected_dimensions": [
+        0.048,
+        0.00655,
+        0.048
+      ],
+      "id": "generic_resin_medallion",
+      "imported_aabb_max": [
+        0.0240000002086163,
+        0.00655000004917383,
+        0.0240000002086163
+      ],
+      "imported_aabb_min": [
+        -0.0240000002086163,
+        0.0,
+        -0.0240000002086163
+      ],
+      "imported_dimensions": [
+        0.0480000004172325,
+        0.00655000004917383,
+        0.0480000004172325
+      ],
+      "max_aabb_error_m": 0.0,
+      "meshes": 10,
+      "status": "PASS",
+      "triangles": 2968
+    },
+    {
+      "expected_dimensions": [
+        0.098,
+        0.052,
+        0.0735
+      ],
+      "id": "generic_closed_trinket_case",
+      "imported_aabb_max": [
+        0.0489999987185001,
+        0.0520000010728836,
+        0.0367499999701977
+      ],
+      "imported_aabb_min": [
+        -0.0489999987185001,
+        0.0,
+        -0.0367499999701977
+      ],
+      "imported_dimensions": [
+        0.0979999974370003,
+        0.0520000010728836,
+        0.0734999999403954
+      ],
+      "max_aabb_error_m": 0.0,
+      "meshes": 3,
+      "status": "PASS",
+      "triangles": 324
+    },
+    {
+      "expected_dimensions": [
+        0.068,
+        0.068,
+        0.068
+      ],
+      "id": "generic_toy_ball",
+      "imported_aabb_max": [
+        0.034000001847744,
+        0.068000003695488,
+        0.034000001847744
+      ],
+      "imported_aabb_min": [
+        -0.034000001847744,
+        0.0,
+        -0.034000001847744
+      ],
+      "imported_dimensions": [
+        0.068000003695488,
+        0.068000003695488,
+        0.068000003695488
+      ],
+      "max_aabb_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 528
+    },
+    {
+      "expected_dimensions": [
+        0.054,
+        0.052,
+        0.054
+      ],
+      "id": "generic_thread_spool",
+      "imported_aabb_max": [
+        0.0270000007003546,
+        0.0519999973475933,
+        0.0270000007003546
+      ],
+      "imported_aabb_min": [
+        -0.0270000007003546,
+        0.0,
+        -0.0270000007003546
+      ],
+      "imported_dimensions": [
+        0.0540000014007092,
+        0.0519999973475933,
+        0.0540000014007092
+      ],
+      "max_aabb_error_m": 3.72529029846191e-09,
+      "meshes": 4,
+      "status": "PASS",
+      "triangles": 1424
+    },
+    {
+      "expected_dimensions": [
+        0.064,
+        0.02816,
+        0.04672
+      ],
+      "id": "generic_smooth_worry_stone",
+      "imported_aabb_max": [
+        0.0320000015199184,
+        0.0281600020825863,
+        0.0233600009232759
+      ],
+      "imported_aabb_min": [
+        -0.0320000015199184,
+        9.31322574615479e-10,
+        -0.0233600009232759
+      ],
+      "imported_dimensions": [
+        0.0640000030398369,
+        0.0281600020825863,
+        0.0467200018465519
+      ],
+      "max_aabb_error_m": 1.86264514923096e-09,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 528
+    },
+    {
+      "expected_dimensions": [
+        3.0,
+        1.403275,
+        1.216247
+      ],
+      "id": "cinema_premium_recliner_row",
+      "imported_aabb_max": [
+        1.5,
+        1.40327453613281,
+        0.608123362064362
+      ],
+      "imported_aabb_min": [
+        -1.5,
+        -1.78813934326172e-07,
+        -0.608123242855072
+      ],
+      "imported_dimensions": [
+        3.0,
+        1.40327477455139,
+        1.21624660491943
+      ],
+      "max_aabb_error_m": 3.57627868652344e-07,
+      "meshes": 5,
+      "status": "PASS",
+      "triangles": 5024
+    },
+    {
+      "expected_dimensions": [
+        3.27,
+        1.649943,
+        0.430052
+      ],
+      "id": "cinema_screen_masking_frame",
+      "imported_aabb_max": [
+        1.63499999046326,
+        1.64994359016418,
+        0.215025633573532
+      ],
+      "imported_aabb_min": [
+        -1.63499999046326,
+        3.57627868652344e-07,
+        -0.21502611041069
+      ],
+      "imported_dimensions": [
+        3.26999998092651,
+        1.64994323253632,
+        0.430051743984222
+      ],
+      "max_aabb_error_m": 2.68220901489258e-07,
+      "meshes": 5,
+      "status": "PASS",
+      "triangles": 1024
+    },
+    {
+      "expected_dimensions": [
+        1.2,
+        0.322043,
+        1.104972
+      ],
+      "id": "cinema_aisle_step",
+      "imported_aabb_max": [
+        0.600000023841858,
+        0.322042614221573,
+        0.552485823631287
+      ],
+      "imported_aabb_min": [
+        -0.600000023841858,
+        1.19209289550781e-07,
+        -0.552486062049866
+      ],
+      "imported_dimensions": [
+        1.20000004768372,
+        0.322042495012283,
+        1.10497188568115
+      ],
+      "max_aabb_error_m": 5.0663948059082e-07,
+      "meshes": 4,
+      "status": "PASS",
+      "triangles": 256
+    },
+    {
+      "expected_dimensions": [
+        1.517945,
+        2.8044,
+        0.141373
+      ],
+      "id": "cinema_acoustic_wall_panel",
+      "imported_aabb_max": [
+        0.758971989154816,
+        1.4021999835968,
+        0.141373246908188
+      ],
+      "imported_aabb_min": [
+        -0.758972704410553,
+        -1.4021999835968,
+        2.23517417907715e-08
+      ],
+      "imported_dimensions": [
+        1.51794469356537,
+        2.8043999671936,
+        0.141373217105865
+      ],
+      "max_aabb_error_m": 3.57627868652344e-07,
+      "meshes": 4,
+      "status": "PASS",
+      "triangles": 1344
+    },
+    {
+      "expected_dimensions": [
+        1.68,
+        0.139949,
+        0.122519
+      ],
+      "id": "cinema_side_wall_light",
+      "imported_aabb_max": [
+        0.840000033378601,
+        0.0699750334024429,
+        0.122518971562386
+      ],
+      "imported_aabb_min": [
+        -0.840000033378601,
+        -0.0699741095304489,
+        2.83122062683105e-07
+      ],
+      "imported_dimensions": [
+        1.6800000667572,
+        0.139949142932892,
+        0.122518688440323
+      ],
+      "max_aabb_error_m": 3.12924385070801e-07,
+      "meshes": 4,
+      "status": "PASS",
+      "triangles": 320
+    },
+    {
+      "expected_dimensions": [
+        0.300005,
+        0.449158,
+        0.364799
+      ],
+      "id": "cinema_surround_speaker",
+      "imported_aabb_max": [
+        0.150002703070641,
+        0.22457928955555,
+        0.364799231290817
+      ],
+      "imported_aabb_min": [
+        -0.150002703070641,
+        -0.224578961730003,
+        1.01514160633087e-07
+      ],
+      "imported_dimensions": [
+        0.300005406141281,
+        0.449158251285553,
+        0.36479914188385
+      ],
+      "max_aabb_error_m": 4.17232513427734e-07,
+      "meshes": 5,
+      "status": "PASS",
+      "triangles": 376
+    },
+    {
+      "expected_dimensions": [
+        0.78,
+        1.2,
+        0.757486
+      ],
+      "id": "cinema_digital_projector",
+      "imported_aabb_max": [
+        0.389999985694885,
+        1.20000004768372,
+        0.378743380308151
+      ],
+      "imported_aabb_min": [
+        -0.389999985694885,
+        0.0,
+        -0.378742605447769
+      ],
+      "imported_dimensions": [
+        0.779999971389771,
+        1.20000004768372,
+        0.75748598575592
+      ],
+      "max_aabb_error_m": 0.0,
+      "meshes": 6,
+      "status": "PASS",
+      "triangles": 1760
+    },
+    {
+      "expected_dimensions": [
+        0.740007,
+        1.699996,
+        0.832409
+      ],
+      "id": "cinema_arcade_cabinet",
+      "imported_aabb_max": [
+        0.370003491640091,
+        1.69999599456787,
+        0.416204631328583
+      ],
+      "imported_aabb_min": [
+        -0.370003491640091,
+        0.0,
+        -0.41620409488678
+      ],
+      "imported_dimensions": [
+        0.740006983280182,
+        1.69999599456787,
+        0.832408726215363
+      ],
+      "max_aabb_error_m": 2.98023223876953e-07,
+      "meshes": 7,
+      "status": "PASS",
+      "triangles": 748
+    },
+    {
+      "expected_dimensions": [
+        0.736066,
+        1.08,
+        0.170792
+      ],
+      "id": "cinema_wall_poster_lightbox",
+      "imported_aabb_max": [
+        0.368033230304718,
+        0.540000021457672,
+        0.170792147517204
+      ],
+      "imported_aabb_min": [
+        -0.368033230304718,
+        -0.540000021457672,
+        -2.98023223876953e-08
+      ],
+      "imported_dimensions": [
+        0.736066460609436,
+        1.08000004291534,
+        0.170792177319527
+      ],
+      "max_aabb_error_m": 4.76837158203125e-07,
+      "meshes": 5,
+      "status": "PASS",
+      "triangles": 592
+    },
+    {
+      "expected_dimensions": [
+        2.0,
+        0.021482,
+        2.0
+      ],
+      "id": "cinema_aisle_floor_tile",
+      "imported_aabb_max": [
+        1.0,
+        0.0214820690453053,
+        1.0
+      ],
+      "imported_aabb_min": [
+        -1.0,
+        -7.17118382453918e-08,
+        -1.0
+      ],
+      "imported_dimensions": [
+        2.0,
+        0.0214821398258209,
+        2.0
+      ],
+      "max_aabb_error_m": 1.39698386192322e-07,
+      "meshes": 2,
+      "status": "PASS",
+      "triangles": 576
+    },
+    {
+      "expected_dimensions": [
+        0.140031,
+        0.636988,
+        0.6
+      ],
+      "id": "cinema_cupholder_armrest",
+      "imported_aabb_max": [
+        0.0700152665376663,
+        0.636988341808319,
+        0.300000011920929
+      ],
+      "imported_aabb_min": [
+        -0.0700152665376663,
+        0.0,
+        -0.300000011920929
+      ],
+      "imported_dimensions": [
+        0.140030533075333,
+        0.636988341808319,
+        0.600000023841858
+      ],
+      "max_aabb_error_m": 4.61935997009277e-07,
+      "meshes": 4,
+      "status": "PASS",
+      "triangles": 768
+    },
+    {
+      "expected_dimensions": [
+        3.901493,
+        2.750887,
+        0.250795
+      ],
+      "id": "cinema_stage_curtains_open",
+      "imported_aabb_max": [
+        1.95074641704559,
+        1.37544393539429,
+        0.250794529914856
+      ],
+      "imported_aabb_min": [
+        -1.95074641704559,
+        -1.37544298171997,
+        2.23517417907715e-08
+      ],
+      "imported_dimensions": [
+        3.90149283409119,
+        2.75088691711426,
+        0.250794500112534
+      ],
+      "max_aabb_error_m": 5.0663948059082e-07,
+      "meshes": 8,
+      "status": "PASS",
+      "triangles": 3048
+    },
+    {
+      "id": "industrial_wall_lamp",
+      "imported_aabb_max": [
+        0.136730581521988,
+        0.214953303337097,
+        0.140378460288048
+      ],
+      "imported_aabb_min": [
+        -0.136730223894119,
+        -0.214953303337097,
+        1.70295564316802e-08
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 7.99957831532083e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 4446,
+      "vertices": 3588
+    },
+    {
+      "id": "industrial_wall_sconce",
+      "imported_aabb_max": [
+        0.0751740857958794,
+        0.170891761779785,
+        0.251575499773026
+      ],
+      "imported_aabb_min": [
+        -0.0751739218831062,
+        -0.170891940593719,
+        -3.62750142812729e-07
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 5.67027882425464e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 7279,
+      "vertices": 5557
+    },
+    {
+      "id": "desk_lamp_arm_01",
+      "imported_aabb_max": [
+        0.190334603190422,
+        0.553491652011871,
+        0.0625699609518051
+      ],
+      "imported_aabb_min": [
+        -0.190334886312485,
+        -1.37835741043091e-07,
+        -0.0625693425536156
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 5.39588711490069e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 7279,
+      "vertices": 8456
+    },
+    {
+      "id": "chinese_chandelier",
+      "imported_aabb_max": [
+        0.329397439956665,
+        -2.23808456212282e-07,
+        0.329516381025314
+      ],
+      "imported_aabb_min": [
+        -0.329397112131119,
+        -0.561157703399658,
+        -0.329515725374222
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 6.32481260254281e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 7828,
+      "vertices": 7700
+    },
+    {
+      "id": "vintage_oil_lamp",
+      "imported_aabb_max": [
+        0.0659999847412109,
+        0.480982333421707,
+        0.0659999847412109
+      ],
+      "imported_aabb_min": [
+        -0.0660000219941139,
+        -1.09372075840497e-08,
+        -0.0660000145435333
+      ],
+      "material_slots": 3,
+      "max_vertex_bounds_error_m": 3.28502181901058e-07,
+      "meshes": 3,
+      "status": "PASS",
+      "triangles": 7208,
+      "vertices": 4464
+    },
+    {
+      "id": "wooden_lantern_01",
+      "imported_aabb_max": [
+        0.0939453914761543,
+        0.450616240501404,
+        0.0997575148940086
+      ],
+      "imported_aabb_min": [
+        -0.0939454883337021,
+        1.61118805408478e-07,
+        -0.0997582450509071
+      ],
+      "material_slots": 5,
+      "max_vertex_bounds_error_m": 6.6881153770737e-07,
+      "meshes": 3,
+      "status": "PASS",
+      "triangles": 8321,
+      "vertices": 6819
+    },
+    {
+      "id": "throw_pillows_01",
+      "imported_aabb_max": [
+        0.413626492023468,
+        0.396139711141586,
+        0.198811858892441
+      ],
+      "imported_aabb_min": [
+        -0.413626670837402,
+        -4.2840838432312e-07,
+        -0.198822125792503
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 7.56980443838984e-06,
+      "meshes": 2,
+      "status": "PASS",
+      "triangles": 6362,
+      "vertices": 3370
+    },
+    {
+      "id": "side_table_01",
+      "imported_aabb_max": [
+        0.275000035762787,
+        0.55066180229187,
+        0.225000008940697
+      ],
+      "imported_aabb_min": [
+        -0.275000035762787,
+        -4.72180545330048e-07,
+        -0.225000008940697
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 4.73354731411746e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2756,
+      "vertices": 3164
+    },
+    {
+      "id": "chinese_tea_table",
+      "imported_aabb_max": [
+        0.420657157897949,
+        0.498641043901443,
+        0.417810499668121
+      ],
+      "imported_aabb_min": [
+        -0.420657753944397,
+        0.0,
+        -0.417811453342438
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 8.68879567406111e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2508,
+      "vertices": 1992
+    },
+    {
+      "id": "round_wooden_table_02",
+      "imported_aabb_max": [
+        0.398089021444321,
+        0.746026635169983,
+        0.398089021444321
+      ],
+      "imported_aabb_min": [
+        -0.398089021444321,
+        -4.38367919741722e-09,
+        -0.398089021444321
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 3.60102831109543e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 4254,
+      "vertices": 3434
+    },
+    {
+      "id": "modern_wooden_cabinet",
+      "imported_aabb_max": [
+        0.890600204467773,
+        0.496504306793213,
+        0.189800009131432
+      ],
+      "imported_aabb_min": [
+        -0.890600144863129,
+        2.81090251519345e-07,
+        -0.189800009131432
+      ],
+      "material_slots": 3,
+      "max_vertex_bounds_error_m": 3.47871122130528e-07,
+      "meshes": 3,
+      "status": "PASS",
+      "triangles": 24976,
+      "vertices": 31535
+    },
+    {
+      "id": "painted_wooden_chair_01",
+      "imported_aabb_max": [
+        0.215875267982483,
+        0.956482589244843,
+        0.26991194486618
+      ],
+      "imported_aabb_min": [
+        -0.215876162052155,
+        4.3545151129365e-07,
+        -0.269912242889404
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 9.4443271336786e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 724,
+      "vertices": 1024
+    },
+    {
+      "id": "classic_laptop",
+      "imported_aabb_max": [
+        0.212293207645416,
+        0.354105710983276,
+        0.157931491732597
+      ],
+      "imported_aabb_min": [
+        -0.212293341755867,
+        -9.66829247772694e-08,
+        -0.1579310297966
+      ],
+      "material_slots": 4,
+      "max_vertex_bounds_error_m": 6.11674067840795e-07,
+      "meshes": 3,
+      "status": "PASS",
+      "triangles": 2728,
+      "vertices": 3786
+    },
+    {
+      "id": "boombox",
+      "imported_aabb_max": [
+        0.307606339454651,
+        0.399585545063019,
+        0.0792472437024117
+      ],
+      "imported_aabb_min": [
+        -0.307606339454651,
+        -8.89757711952655e-10,
+        -0.0792477205395699
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 6.06433331995504e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 9099,
+      "vertices": 7980
+    },
+    {
+      "id": "portable_cassette_player",
+      "imported_aabb_max": [
+        0.0865757465362549,
+        0.130806371569633,
+        0.0198226254433393
+      ],
+      "imported_aabb_min": [
+        -0.0865765810012817,
+        -1.34110450744629e-07,
+        -0.019822008907795
+      ],
+      "material_slots": 5,
+      "max_vertex_bounds_error_m": 5.85762677474122e-07,
+      "meshes": 3,
+      "status": "PASS",
+      "triangles": 2729,
+      "vertices": 3641
+    },
+    {
+      "id": "Television_01",
+      "imported_aabb_max": [
+        0.254999995231628,
+        0.388321399688721,
+        0.200094535946846
+      ],
+      "imported_aabb_min": [
+        -0.254999995231628,
+        -1.80728420673404e-07,
+        -0.200094550848007
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 7.54092980059795e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 1918,
+      "vertices": 1976
+    },
+    {
+      "id": "gaming_console",
+      "imported_aabb_max": [
+        0.162494629621506,
+        0.0855927392840385,
+        0.156237527728081
+      ],
+      "imported_aabb_min": [
+        -0.162494480609894,
+        6.47269189357758e-08,
+        -0.15623827278614
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 6.58902649774973e-07,
+      "meshes": 2,
+      "status": "PASS",
+      "triangles": 2811,
+      "vertices": 4073
+    },
+    {
+      "id": "gamepad",
+      "imported_aabb_max": [
+        0.111163690686226,
+        0.0106092281639576,
+        0.11960094422102
+      ],
+      "imported_aabb_min": [
+        -0.111164122819901,
+        -3.17289959639311e-07,
+        -0.119601890444756
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 3.90774999914356e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2730,
+      "vertices": 2598
+    },
+    {
+      "id": "korean_public_payphone_01",
+      "imported_aabb_max": [
+        0.200285375118256,
+        0.368897944688797,
+        0.300262033939362
+      ],
+      "imported_aabb_min": [
+        -0.200284406542778,
+        -0.368898004293442,
+        -1.19209289550781e-07
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 4.19620505454077e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 9100,
+      "vertices": 26880
+    },
+    {
+      "id": "wall_clock",
+      "imported_aabb_max": [
+        0.160258308053017,
+        0.16024549305439,
+        0.047224085777998
+      ],
+      "imported_aabb_min": [
+        -0.160258486866951,
+        -0.16024549305439,
+        -1.9371509552002e-07
+      ],
+      "material_slots": 5,
+      "max_vertex_bounds_error_m": 7.21899368727463e-07,
+      "meshes": 4,
+      "status": "PASS",
+      "triangles": 2728,
+      "vertices": 2958
+    },
+    {
+      "id": "standing_chalkboard_01",
+      "imported_aabb_max": [
+        0.413787066936493,
+        1.35812902450562,
+        0.341417104005814
+      ],
+      "imported_aabb_min": [
+        -0.413786977529526,
+        -1.35511413645872e-07,
+        -0.341417074203491
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 1.51010709714683e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2372,
+      "vertices": 2684
+    },
+    {
+      "id": "wicker_basket_01",
+      "imported_aabb_max": [
+        0.191848009824753,
+        0.11854712665081,
+        0.146658450365067
+      ],
+      "imported_aabb_min": [
+        -0.191847294569016,
+        3.46335582435131e-07,
+        -0.146659463644028
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 6.4973153257597e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2729,
+      "vertices": 3444
+    },
+    {
+      "id": "wicker_basket_02",
+      "imported_aabb_max": [
+        0.173296913504601,
+        0.200671836733818,
+        0.127216920256615
+      ],
+      "imported_aabb_min": [
+        -0.173295885324478,
+        -1.83441443368793e-07,
+        -0.12721560895443
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 4.44931202991938e-07,
+      "meshes": 2,
+      "status": "PASS",
+      "triangles": 2729,
+      "vertices": 2009
+    },
+    {
+      "id": "binder_notebook",
+      "imported_aabb_max": [
+        0.233600080013275,
+        0.0202115774154663,
+        0.0799834355711937
+      ],
+      "imported_aabb_min": [
+        -0.233599364757538,
+        -1.12922862172127e-07,
+        -0.079983577132225
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 6.09153289587994e-07,
+      "meshes": 2,
+      "status": "PASS",
+      "triangles": 9098,
+      "vertices": 8100
+    },
+    {
+      "id": "vintage_suitcase",
+      "imported_aabb_max": [
+        0.683477938175201,
+        0.482977747917175,
+        0.101649820804596
+      ],
+      "imported_aabb_min": [
+        -0.683477640151978,
+        1.7508864402771e-07,
+        -0.101649299263954
+      ],
+      "material_slots": 8,
+      "max_vertex_bounds_error_m": 4.97364624152397e-07,
+      "meshes": 8,
+      "status": "PASS",
+      "triangles": 9094,
+      "vertices": 8490
+    },
+    {
+      "id": "wooden_bowl_02",
+      "imported_aabb_max": [
+        0.0653563365340233,
+        0.0731163769960403,
+        0.0622695349156857
+      ],
+      "imported_aabb_min": [
+        -0.0653571262955666,
+        -3.16504156216979e-09,
+        -0.0622701346874237
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 6.88211457600119e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2729,
+      "vertices": 1752
+    },
+    {
+      "id": "tea_set_01",
+      "imported_aabb_max": [
+        0.344419628381729,
+        0.123832695186138,
+        0.181519478559494
+      ],
+      "imported_aabb_min": [
+        -0.344419300556183,
+        -4.43833414465189e-07,
+        -0.18151992559433
+      ],
+      "material_slots": 10,
+      "max_vertex_bounds_error_m": 6.69765313432436e-07,
+      "meshes": 10,
+      "status": "PASS",
+      "triangles": 9090,
+      "vertices": 5722
+    },
+    {
+      "id": "modified_thermos",
+      "imported_aabb_max": [
+        0.0606726743280888,
+        0.260382473468781,
+        0.0431149043142796
+      ],
+      "imported_aabb_min": [
+        -0.0606735982000828,
+        -4.04892489314079e-07,
+        -0.0431151054799557
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 5.84633255584777e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2730,
+      "vertices": 2639
+    },
+    {
+      "id": "russian_food_cans_01",
+      "imported_aabb_max": [
+        0.0711766257882118,
+        0.0848999917507172,
+        0.0231019593775272
+      ],
+      "imported_aabb_min": [
+        -0.0711769610643387,
+        0.0,
+        -0.0231019593775272
+      ],
+      "material_slots": 3,
+      "max_vertex_bounds_error_m": 3.74850117168535e-07,
+      "meshes": 3,
+      "status": "PASS",
+      "triangles": 1348,
+      "vertices": 874
+    },
+    {
+      "id": "croissant",
+      "imported_aabb_max": [
+        0.0699995681643486,
+        0.0433974303305149,
+        0.0264294296503067
+      ],
+      "imported_aabb_min": [
+        -0.0700004324316978,
+        4.64438926428556e-07,
+        -0.0264286305755377
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 7.47403646528255e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 1990,
+      "vertices": 1031
+    },
+    {
+      "id": "potted_plant_04",
+      "imported_aabb_max": [
+        0.0839918851852417,
+        0.267668128013611,
+        0.0922851040959358
+      ],
+      "imported_aabb_min": [
+        -0.0839918851852417,
+        5.33400452695787e-08,
+        -0.0922848880290985
+      ],
+      "material_slots": 4,
+      "max_vertex_bounds_error_m": 1.93858326724694e-07,
+      "meshes": 4,
+      "status": "PASS",
+      "triangles": 2726,
+      "vertices": 2437
+    },
+    {
+      "id": "metal_tool_chest",
+      "imported_aabb_max": [
+        0.29129022359848,
+        0.55405992269516,
+        0.173040196299553
+      ],
+      "imported_aabb_min": [
+        -0.291289985179901,
+        -3.12924385070801e-07,
+        -0.173040121793747
+      ],
+      "material_slots": 7,
+      "max_vertex_bounds_error_m": 3.34861937290043e-07,
+      "meshes": 7,
+      "status": "PASS",
+      "triangles": 9096,
+      "vertices": 8910
+    },
+    {
+      "id": "painted_wooden_cabinet_02",
+      "imported_aabb_max": [
+        0.388804018497467,
+        2.00348663330078,
+        0.281714141368866
+      ],
+      "imported_aabb_min": [
+        -0.388804048299789,
+        1.20664481073618e-07,
+        -0.28171369433403
+      ],
+      "material_slots": 3,
+      "max_vertex_bounds_error_m": 5.0046611477228e-07,
+      "meshes": 3,
+      "status": "PASS",
+      "triangles": 966,
+      "vertices": 1048
+    },
+    {
+      "id": "chinese_cabinet",
+      "imported_aabb_max": [
+        0.460811048746109,
+        2.09663200378418,
+        0.199001431465149
+      ],
+      "imported_aabb_min": [
+        -0.460811048746109,
+        -4.79449226986617e-08,
+        -0.199001789093018
+      ],
+      "material_slots": 5,
+      "max_vertex_bounds_error_m": 5.69372559766634e-07,
+      "meshes": 5,
+      "status": "PASS",
+      "triangles": 15668,
+      "vertices": 12467
+    },
+    {
+      "id": "vintage_wooden_drawer_01",
+      "imported_aabb_max": [
+        0.728923439979553,
+        0.927213311195374,
+        0.427937924861908
+      ],
+      "imported_aabb_min": [
+        -0.728923439979553,
+        -1.16298906505108e-07,
+        -0.427938044071198
+      ],
+      "material_slots": 7,
+      "max_vertex_bounds_error_m": 5.20475168741541e-07,
+      "meshes": 7,
+      "status": "PASS",
+      "triangles": 5184,
+      "vertices": 4893
+    },
+    {
+      "id": "dragon_fur_rest_mat",
+      "imported_aabb_max": [
+        0.778674006462097,
+        0.0179999992251396,
+        0.384925812482834
+      ],
+      "imported_aabb_min": [
+        -0.778674483299255,
+        0.0,
+        -0.384925991296768
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 4.76837158203125e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 92,
+      "vertices": 144
+    },
+    {
+      "id": "dragon_mug_lod0_empty",
+      "imported_aabb_max": [
+        0.0667500048875809,
+        0.0900000035762787,
+        0.0450000017881393
+      ],
+      "imported_aabb_min": [
+        -0.0667500048875809,
+        0.0,
+        -0.0450000017881393
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 7.45058059692383e-09,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 704,
+      "vertices": 1296
+    },
+    {
+      "id": "dragon_mug_lod0_filled",
+      "imported_aabb_max": [
+        0.0667500048875809,
+        0.0900000035762787,
+        0.0450000017881393
+      ],
+      "imported_aabb_min": [
+        -0.0667500048875809,
+        0.0,
+        -0.0450000017881393
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 7.45058059692383e-09,
+      "meshes": 2,
+      "status": "PASS",
+      "triangles": 828,
+      "vertices": 1488
+    },
+    {
+      "id": "dragon_mug_lod1_empty",
+      "imported_aabb_max": [
+        0.0667500048875809,
+        0.0900000035762787,
+        0.0450000017881393
+      ],
+      "imported_aabb_min": [
+        -0.0667500048875809,
+        0.0,
+        -0.0450000017881393
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 7.45058059692383e-09,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 448,
+      "vertices": 816
+    },
+    {
+      "id": "media_holder_book",
+      "imported_aabb_max": [
+        0.189999997615814,
+        0.270000010728836,
+        0.041899997740984
+      ],
+      "imported_aabb_min": [
+        -0.189999997615814,
+        -0.270000010728836,
+        0.0
+      ],
+      "material_slots": 6,
+      "max_vertex_bounds_error_m": 3.72529029846191e-09,
+      "meshes": 6,
+      "status": "PASS",
+      "triangles": 72,
+      "vertices": 144
+    },
+    {
+      "id": "media_holder_film_poster",
+      "imported_aabb_max": [
+        0.360000014305115,
+        0.509999990463257,
+        0.0492500029504299
+      ],
+      "imported_aabb_min": [
+        -0.360000014305115,
+        -0.509999990463257,
+        0.0
+      ],
+      "material_slots": 6,
+      "max_vertex_bounds_error_m": 3.72529029846191e-09,
+      "meshes": 6,
+      "status": "PASS",
+      "triangles": 72,
+      "vertices": 144
+    },
+    {
+      "id": "media_holder_audio",
+      "imported_aabb_max": [
+        0.280000001192093,
+        0.280000001192093,
+        0.041899997740984
+      ],
+      "imported_aabb_min": [
+        -0.280000001192093,
+        -0.280000001192093,
+        0.0
+      ],
+      "material_slots": 6,
+      "max_vertex_bounds_error_m": 3.72529029846191e-09,
+      "meshes": 6,
+      "status": "PASS",
+      "triangles": 72,
+      "vertices": 144
+    },
+    {
+      "id": "media_holder_artifact",
+      "imported_aabb_max": [
+        0.21000000834465,
+        0.129999995231628,
+        0.0377000011503696
+      ],
+      "imported_aabb_min": [
+        -0.21000000834465,
+        -0.129999995231628,
+        0.0
+      ],
+      "material_slots": 6,
+      "max_vertex_bounds_error_m": 1.49011611938477e-08,
+      "meshes": 6,
+      "status": "PASS",
+      "triangles": 72,
+      "vertices": 144
+    },
+    {
+      "id": "media_holder_film_screen",
+      "imported_aabb_max": [
+        1.32500004768372,
+        0.800000011920929,
+        0.0759999975562096
+      ],
+      "imported_aabb_min": [
+        -1.32500004768372,
+        -0.800000011920929,
+        0.0
+      ],
+      "material_slots": 5,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 5,
+      "status": "PASS",
+      "triangles": 60,
+      "vertices": 120
+    },
+    {
+      "id": "arch_floor_wood_r1",
+      "imported_aabb_max": [
+        2.40000009536743,
+        0.0549999997019768,
+        1.79999995231628
+      ],
+      "imported_aabb_min": [
+        -2.40000009536743,
+        0.0,
+        -1.79999995231628
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_floor_stone_r1",
+      "imported_aabb_max": [
+        2.40000009536743,
+        0.0549999997019768,
+        1.79999995231628
+      ],
+      "imported_aabb_min": [
+        -2.40000009536743,
+        0.0,
+        -1.79999995231628
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_floor_workshop_r1",
+      "imported_aabb_max": [
+        2.40000009536743,
+        0.0549999997019768,
+        1.79999995231628
+      ],
+      "imported_aabb_min": [
+        -2.40000009536743,
+        0.0,
+        -1.79999995231628
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_rear_stone_r1",
+      "imported_aabb_max": [
+        2.40000009536743,
+        3.04999995231628,
+        0.0799999982118607
+      ],
+      "imported_aabb_min": [
+        -2.40000009536743,
+        0.0,
+        -0.0799999982118607
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_rear_plaster_r1",
+      "imported_aabb_max": [
+        2.40000009536743,
+        3.04999995231628,
+        0.0799999982118607
+      ],
+      "imported_aabb_min": [
+        -2.40000009536743,
+        0.0,
+        -0.0799999982118607
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_rear_timber_r1",
+      "imported_aabb_max": [
+        2.40000009536743,
+        3.04999995231628,
+        0.0799999982118607
+      ],
+      "imported_aabb_min": [
+        -2.40000009536743,
+        0.0,
+        -0.0799999982118607
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_ceiling_r1",
+      "imported_aabb_max": [
+        2.40000009536743,
+        0.0900000035762787,
+        1.36000001430511
+      ],
+      "imported_aabb_min": [
+        -2.40000009536743,
+        0.0,
+        -1.36000001430511
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_header_r1",
+      "imported_aabb_max": [
+        2.21000003814697,
+        0.119999997317791,
+        0.0750000029802322
+      ],
+      "imported_aabb_min": [
+        -2.21000003814697,
+        0.0,
+        -0.0750000029802322
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_skirting_r1",
+      "imported_aabb_max": [
+        2.16000008583069,
+        0.119999997317791,
+        0.0399999991059303
+      ],
+      "imported_aabb_min": [
+        -2.16000008583069,
+        0.0,
+        -0.0399999991059303
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_front_lip_r1",
+      "imported_aabb_max": [
+        2.40000009536743,
+        0.0399999991059303,
+        0.0375000014901161
+      ],
+      "imported_aabb_min": [
+        -2.40000009536743,
+        0.0,
+        -0.0375000014901161
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_floor_wood_r2",
+      "imported_aabb_max": [
+        4.80000019073486,
+        0.0549999997019768,
+        1.79999995231628
+      ],
+      "imported_aabb_min": [
+        -4.80000019073486,
+        0.0,
+        -1.79999995231628
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_floor_stone_r2",
+      "imported_aabb_max": [
+        4.80000019073486,
+        0.0549999997019768,
+        1.79999995231628
+      ],
+      "imported_aabb_min": [
+        -4.80000019073486,
+        0.0,
+        -1.79999995231628
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_floor_workshop_r2",
+      "imported_aabb_max": [
+        4.80000019073486,
+        0.0549999997019768,
+        1.79999995231628
+      ],
+      "imported_aabb_min": [
+        -4.80000019073486,
+        0.0,
+        -1.79999995231628
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_rear_stone_r2",
+      "imported_aabb_max": [
+        4.80000019073486,
+        3.04999995231628,
+        0.0799999982118607
+      ],
+      "imported_aabb_min": [
+        -4.80000019073486,
+        0.0,
+        -0.0799999982118607
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_rear_plaster_r2",
+      "imported_aabb_max": [
+        4.80000019073486,
+        3.04999995231628,
+        0.0799999982118607
+      ],
+      "imported_aabb_min": [
+        -4.80000019073486,
+        0.0,
+        -0.0799999982118607
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_rear_timber_r2",
+      "imported_aabb_max": [
+        4.80000019073486,
+        3.04999995231628,
+        0.0799999982118607
+      ],
+      "imported_aabb_min": [
+        -4.80000019073486,
+        0.0,
+        -0.0799999982118607
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_ceiling_r2",
+      "imported_aabb_max": [
+        4.80000019073486,
+        0.0900000035762787,
+        1.36000001430511
+      ],
+      "imported_aabb_min": [
+        -4.80000019073486,
+        0.0,
+        -1.36000001430511
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_header_r2",
+      "imported_aabb_max": [
+        4.6100001335144,
+        0.119999997317791,
+        0.0750000029802322
+      ],
+      "imported_aabb_min": [
+        -4.6100001335144,
+        0.0,
+        -0.0750000029802322
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_skirting_r2",
+      "imported_aabb_max": [
+        4.55999994277954,
+        0.119999997317791,
+        0.0399999991059303
+      ],
+      "imported_aabb_min": [
+        -4.55999994277954,
+        0.0,
+        -0.0399999991059303
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_front_lip_r2",
+      "imported_aabb_max": [
+        4.80000019073486,
+        0.0399999991059303,
+        0.0375000014901161
+      ],
+      "imported_aabb_min": [
+        -4.80000019073486,
+        0.0,
+        -0.0375000014901161
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_floor_wood_r3",
+      "imported_aabb_max": [
+        7.19999980926514,
+        0.0549999997019768,
+        1.79999995231628
+      ],
+      "imported_aabb_min": [
+        -7.19999980926514,
+        0.0,
+        -1.79999995231628
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_floor_stone_r3",
+      "imported_aabb_max": [
+        7.19999980926514,
+        0.0549999997019768,
+        1.79999995231628
+      ],
+      "imported_aabb_min": [
+        -7.19999980926514,
+        0.0,
+        -1.79999995231628
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_floor_workshop_r3",
+      "imported_aabb_max": [
+        7.19999980926514,
+        0.0549999997019768,
+        1.79999995231628
+      ],
+      "imported_aabb_min": [
+        -7.19999980926514,
+        0.0,
+        -1.79999995231628
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_rear_stone_r3",
+      "imported_aabb_max": [
+        7.19999980926514,
+        3.04999995231628,
+        0.0799999982118607
+      ],
+      "imported_aabb_min": [
+        -7.19999980926514,
+        0.0,
+        -0.0799999982118607
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_rear_plaster_r3",
+      "imported_aabb_max": [
+        7.19999980926514,
+        3.04999995231628,
+        0.0799999982118607
+      ],
+      "imported_aabb_min": [
+        -7.19999980926514,
+        0.0,
+        -0.0799999982118607
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_rear_timber_r3",
+      "imported_aabb_max": [
+        7.19999980926514,
+        3.04999995231628,
+        0.0799999982118607
+      ],
+      "imported_aabb_min": [
+        -7.19999980926514,
+        0.0,
+        -0.0799999982118607
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_ceiling_r3",
+      "imported_aabb_max": [
+        7.19999980926514,
+        0.0900000035762787,
+        1.36000001430511
+      ],
+      "imported_aabb_min": [
+        -7.19999980926514,
+        0.0,
+        -1.36000001430511
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_header_r3",
+      "imported_aabb_max": [
+        7.01000022888184,
+        0.119999997317791,
+        0.0750000029802322
+      ],
+      "imported_aabb_min": [
+        -7.01000022888184,
+        0.0,
+        -0.0750000029802322
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_skirting_r3",
+      "imported_aabb_max": [
+        6.96000003814697,
+        0.119999997317791,
+        0.0399999991059303
+      ],
+      "imported_aabb_min": [
+        -6.96000003814697,
+        0.0,
+        -0.0399999991059303
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_front_lip_r3",
+      "imported_aabb_max": [
+        7.19999980926514,
+        0.0399999991059303,
+        0.0375000014901161
+      ],
+      "imported_aabb_min": [
+        -7.19999980926514,
+        0.0,
+        -0.0375000014901161
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_connector_rear_return",
+      "imported_aabb_max": [
+        0.0700000002980232,
+        2.6800000667572,
+        1.0900000333786
+      ],
+      "imported_aabb_min": [
+        -0.0700000002980232,
+        0.0,
+        -1.0900000333786
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_connector_header",
+      "imported_aabb_max": [
+        0.0799999982118607,
+        0.340000003576279,
+        0.46000000834465
+      ],
+      "imported_aabb_min": [
+        -0.0799999982118607,
+        0.0,
+        -0.46000000834465
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_connector_rear_jamb",
+      "imported_aabb_max": [
+        0.0900000035762787,
+        0.959999978542328,
+        0.0799999982118607
+      ],
+      "imported_aabb_min": [
+        -0.0900000035762787,
+        0.0,
+        -0.0799999982118607
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_closed_side_return",
+      "imported_aabb_max": [
+        0.0799999982118607,
+        2.75,
+        1.53999996185303
+      ],
+      "imported_aabb_min": [
+        -0.0799999982118607,
+        0.0,
+        -1.53999996185303
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_lift_rail",
+      "imported_aabb_max": [
+        0.0949999988079071,
+        2.75999999046326,
+        0.0824999958276749
+      ],
+      "imported_aabb_min": [
+        -0.0949999988079071,
+        0.0,
+        -0.0824999958276749
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 7.45058059692383e-09,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 36,
+      "vertices": 72
+    },
+    {
+      "id": "arch_lift_control",
+      "imported_aabb_max": [
+        0.0850000008940697,
+        0.150000005960464,
+        0.0754999965429306
+      ],
+      "imported_aabb_min": [
+        -0.0850000008940697,
+        -0.150000005960464,
+        0.0
+      ],
+      "material_slots": 3,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 36,
+      "vertices": 72
+    },
+    {
+      "id": "arch_lift_floor_skin",
+      "imported_aabb_max": [
+        1.64999997615814,
+        0.0179999992251396,
+        1.70000004768372
+      ],
+      "imported_aabb_min": [
+        -1.64999997615814,
+        0.0,
+        -1.70000004768372
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_lift_shaft_wall",
+      "imported_aabb_max": [
+        2.3199999332428,
+        3.04999995231628,
+        0.0700000002980232
+      ],
+      "imported_aabb_min": [
+        -2.3199999332428,
+        0.0,
+        -0.0700000002980232
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "id": "arch_generic_door",
+      "imported_aabb_max": [
+        1.03999996185303,
+        2.79999995231628,
+        0.140000000596046
+      ],
+      "imported_aabb_min": [
+        -1.03999996185303,
+        0.0,
+        -0.140000000596046
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 72,
+      "vertices": 144
+    },
+    {
+      "id": "arch_generic_plaque",
+      "imported_aabb_max": [
+        0.259999990463257,
+        0.0900000035762787,
+        0.0430000014603138
+      ],
+      "imported_aabb_min": [
+        -0.259999990463257,
+        -0.0900000035762787,
+        0.0
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 24,
+      "vertices": 48
+    },
+    {
+      "id": "arch_generic_note_frame",
+      "imported_aabb_max": [
+        0.259999990463257,
+        0.349999994039536,
+        0.0579999983310699
+      ],
+      "imported_aabb_min": [
+        -0.259999990463257,
+        -0.349999994039536,
+        0.0
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 24,
+      "vertices": 48
+    },
+    {
+      "id": "generic_artifact_cube_empty",
+      "imported_aabb_max": [
+        0.119999997317791,
+        0.233999997377396,
+        0.119999997317791
+      ],
+      "imported_aabb_min": [
+        -0.119999997317791,
+        0.0,
+        -0.119999997317791
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 48,
+      "vertices": 96
+    },
+    {
+      "id": "generic_open_stash_crate",
+      "imported_aabb_max": [
+        0.180000007152557,
+        0.190999999642372,
+        0.140000000596046
+      ],
+      "imported_aabb_min": [
+        -0.180000007152557,
+        0.0,
+        -0.140000000596046
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 60,
+      "vertices": 120
+    },
+    {
+      "id": "sofa_03",
+      "imported_aabb_max": [
+        1.09247100353241,
+        0.894610941410065,
+        0.37003356218338
+      ],
+      "imported_aabb_min": [
+        -1.09247100353241,
+        -2.84286215901375e-07,
+        -0.370033830404282
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 4.50990967237885e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 8004,
+      "vertices": 5655
+    },
+    {
+      "id": "GreenChair_01",
+      "imported_aabb_max": [
+        0.336547344923019,
+        1.0585116147995,
+        0.332194119691849
+      ],
+      "imported_aabb_min": [
+        -0.33654710650444,
+        -2.08092387765646e-07,
+        -0.332193225622177
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 8.11123868516006e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 4213,
+      "vertices": 2934
+    },
+    {
+      "id": "Ottoman_01",
+      "imported_aabb_max": [
+        0.353822827339172,
+        0.499458640813828,
+        0.248459815979004
+      ],
+      "imported_aabb_min": [
+        -0.353823393583298,
+        -4.76497007184662e-07,
+        -0.248458966612816
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 9.11897473088175e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 4240,
+      "vertices": 2805
+    },
+    {
+      "id": "painted_wooden_bench",
+      "imported_aabb_max": [
+        0.582471489906311,
+        0.889290988445282,
+        0.248271316289902
+      ],
+      "imported_aabb_min": [
+        -0.582472085952759,
+        -4.96685970574617e-07,
+        -0.24827179312706
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 8.7041149754441e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 630,
+      "vertices": 677
+    },
+    {
+      "id": "WoodenTable_01",
+      "imported_aabb_max": [
+        0.764850378036499,
+        0.466521859169006,
+        0.279299318790436
+      ],
+      "imported_aabb_min": [
+        -0.764850378036499,
+        -3.90031082986297e-08,
+        -0.279299169778824
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 5.07515267145209e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 952,
+      "vertices": 1136
+    },
+    {
+      "id": "WoodenTable_03",
+      "imported_aabb_max": [
+        0.636889755725861,
+        0.796878278255463,
+        0.276132792234421
+      ],
+      "imported_aabb_min": [
+        -0.636889040470123,
+        -5.72204577053981e-08,
+        -0.27613365650177
+      ],
+      "material_slots": 6,
+      "max_vertex_bounds_error_m": 8.56006522553798e-07,
+      "meshes": 6,
+      "status": "PASS",
+      "triangles": 2298,
+      "vertices": 3262
+    },
+    {
+      "id": "coffee_table_round_01",
+      "imported_aabb_max": [
+        0.520520389080048,
+        0.392807602882385,
+        0.520520627498627
+      ],
+      "imported_aabb_min": [
+        -0.520520448684692,
+        5.32018020749092e-08,
+        -0.520520627498627
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 6.72371015753015e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 4044,
+      "vertices": 3339
+    },
+    {
+      "id": "painted_wooden_nightstand",
+      "imported_aabb_max": [
+        0.227054372429848,
+        0.553968846797943,
+        0.228921785950661
+      ],
+      "imported_aabb_min": [
+        -0.227053746581078,
+        -1.50511443308687e-08,
+        -0.228922620415688
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 6.75340004363534e-07,
+      "meshes": 2,
+      "status": "PASS",
+      "triangles": 470,
+      "vertices": 503
+    },
+    {
+      "id": "painted_wooden_stool",
+      "imported_aabb_max": [
+        0.163556203246117,
+        0.492077827453613,
+        0.172581687569618
+      ],
+      "imported_aabb_min": [
+        -0.163555637001991,
+        7.45058059692383e-09,
+        -0.1725814640522
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 6.44765862034546e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 676,
+      "vertices": 604
+    },
+    {
+      "id": "gallinera_chair",
+      "imported_aabb_max": [
+        0.290399432182312,
+        1.03368937969208,
+        0.301941275596619
+      ],
+      "imported_aabb_min": [
+        -0.290399730205536,
+        2.99085513688624e-07,
+        -0.301940739154816
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 7.21437857009732e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 11560,
+      "vertices": 8888
+    },
+    {
+      "id": "gallinera_table",
+      "imported_aabb_max": [
+        0.415041297674179,
+        0.487785696983337,
+        0.259145855903625
+      ],
+      "imported_aabb_min": [
+        -0.415041238069534,
+        -7.45058059692383e-09,
+        -0.259145855903625
+      ],
+      "material_slots": 3,
+      "max_vertex_bounds_error_m": 4.4703483581543e-07,
+      "meshes": 3,
+      "status": "PASS",
+      "triangles": 5528,
+      "vertices": 4920
+    },
+    {
+      "id": "round_wooden_table_01",
+      "imported_aabb_max": [
+        0.545746088027954,
+        0.783916234970093,
+        0.545746147632599
+      ],
+      "imported_aabb_min": [
+        -0.545746088027954,
+        -3.48198227584362e-07,
+        -0.545746028423309
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 7.86239240824216e-07,
+      "meshes": 2,
+      "status": "PASS",
+      "triangles": 8640,
+      "vertices": 5964
+    },
+    {
+      "id": "Shelf_01",
+      "imported_aabb_max": [
+        0.501721858978271,
+        2.08031034469604,
+        0.128490164875984
+      ],
+      "imported_aabb_min": [
+        -0.501721858978271,
+        0.0,
+        -0.128489345312119
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 6.66400183035876e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 182,
+      "vertices": 362
+    },
+    {
+      "id": "steel_frame_shelves_03",
+      "imported_aabb_max": [
+        0.940430402755737,
+        1.84946596622467,
+        0.288498789072037
+      ],
+      "imported_aabb_min": [
+        -0.940431177616119,
+        -3.97165422327816e-07,
+        -0.288498103618622
+      ],
+      "material_slots": 5,
+      "max_vertex_bounds_error_m": 9.77588911155181e-07,
+      "meshes": 4,
+      "status": "PASS",
+      "triangles": 8396,
+      "vertices": 6531
+    },
+    {
+      "id": "Ukulele_01",
+      "imported_aabb_max": [
+        0.0889305621385574,
+        0.263480931520462,
+        0.0507618114352226
+      ],
+      "imported_aabb_min": [
+        -0.0889305025339127,
+        -0.263481736183167,
+        -4.15369868278503e-07
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 9.88348688224505e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 8912,
+      "vertices": 8235
+    },
+    {
+      "id": "alarm_clock_01",
+      "imported_aabb_max": [
+        0.0661103874444962,
+        0.174626022577286,
+        0.0333647876977921
+      ],
+      "imported_aabb_min": [
+        -0.0661103874444962,
+        1.86264514923096e-07,
+        -0.0333645343780518
+      ],
+      "material_slots": 5,
+      "max_vertex_bounds_error_m": 6.33748413747526e-07,
+      "meshes": 4,
+      "status": "PASS",
+      "triangles": 2728,
+      "vertices": 3134
+    },
+    {
+      "id": "vintage_grandfather_clock_01",
+      "imported_aabb_max": [
+        0.312812358140945,
+        2.19059205055237,
+        0.213307902216911
+      ],
+      "imported_aabb_min": [
+        -0.312812358140945,
+        3.09373717755079e-08,
+        -0.213308647274971
+      ],
+      "material_slots": 4,
+      "max_vertex_bounds_error_m": 7.34448974526458e-07,
+      "meshes": 3,
+      "status": "PASS",
+      "triangles": 8582,
+      "vertices": 8929
+    },
+    {
+      "id": "brass_vase_03",
+      "imported_aabb_max": [
+        0.0412512458860874,
+        0.200369030237198,
+        0.0412506200373173
+      ],
+      "imported_aabb_min": [
+        -0.0412506423890591,
+        -2.8638169169426e-08,
+        -0.0412513427436352
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 4.96164716423664e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2616,
+      "vertices": 1545
+    },
+    {
+      "id": "ceramic_vase_02",
+      "imported_aabb_max": [
+        0.0929693207144737,
+        0.26302182674408,
+        0.0930944010615349
+      ],
+      "imported_aabb_min": [
+        -0.0929685607552528,
+        -2.42027454078197e-07,
+        -0.0930941477417946
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 5.44504416666314e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2729,
+      "vertices": 2657
+    },
+    {
+      "id": "planter_box_01",
+      "imported_aabb_max": [
+        0.45630556344986,
+        0.424968391656876,
+        0.206834197044373
+      ],
+      "imported_aabb_min": [
+        -0.456305801868439,
+        1.69713530340232e-07,
+        -0.206833779811859
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 6.22469144673232e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 8094,
+      "vertices": 6313
+    },
+    {
+      "id": "potted_plant_02",
+      "imported_aabb_max": [
+        0.280362159013748,
+        0.673587322235107,
+        0.263765037059784
+      ],
+      "imported_aabb_min": [
+        -0.28036293387413,
+        4.0105078369379e-07,
+        -0.263765633106232
+      ],
+      "material_slots": 3,
+      "max_vertex_bounds_error_m": 5.4064048526925e-07,
+      "meshes": 3,
+      "status": "PASS",
+      "triangles": 9097,
+      "vertices": 9040
+    },
+    {
+      "id": "chess_set",
+      "imported_aabb_max": [
+        0.207286506891251,
+        0.0815207436680794,
+        0.207096010446548
+      ],
+      "imported_aabb_min": [
+        -0.207287162542343,
+        -4.80911694467068e-07,
+        -0.207095772027969
+      ],
+      "material_slots": 33,
+      "max_vertex_bounds_error_m": 5.55070698737836e-07,
+      "meshes": 33,
+      "status": "PASS",
+      "triangles": 2714,
+      "vertices": 3602
+    },
+    {
+      "id": "sungka_board",
+      "imported_aabb_max": [
+        0.255240142345428,
+        0.0299425534904003,
+        0.0594840124249458
+      ],
+      "imported_aabb_min": [
+        -0.255241006612778,
+        3.00246028928086e-07,
+        -0.0594837591052055
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 1.02621606856701e-06,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 7304,
+      "vertices": 3897
+    },
+    {
+      "id": "book_encyclopedia_set_01",
+      "imported_aabb_max": [
+        0.275648951530457,
+        0.237418219447136,
+        0.0817911773920059
+      ],
+      "imported_aabb_min": [
+        -0.275648474693298,
+        -2.21343761097614e-08,
+        -0.0817905366420746
+      ],
+      "material_slots": 40,
+      "max_vertex_bounds_error_m": 6.64265371597139e-07,
+      "meshes": 20,
+      "status": "PASS",
+      "triangles": 9084,
+      "vertices": 16698
+    },
+    {
+      "id": "carved_wooden_plate",
+      "imported_aabb_max": [
+        0.135915338993073,
+        0.0381102152168751,
+        0.134389773011208
+      ],
+      "imported_aabb_min": [
+        -0.135915577411652,
+        -3.03261913359165e-07,
+        -0.134389743208885
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 8.86157238255691e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2112,
+      "vertices": 1234
+    },
+    {
+      "id": "jug_01",
+      "imported_aabb_max": [
+        0.123933792114258,
+        0.190305083990097,
+        0.0755633190274239
+      ],
+      "imported_aabb_min": [
+        -0.123933479189873,
+        2.29942088481039e-07,
+        -0.0755633190274239
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 6.18778756233951e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2729,
+      "vertices": 1636
+    },
+    {
+      "id": "wooden_bowl_01",
+      "imported_aabb_max": [
+        0.13305889070034,
+        0.0799659639596939,
+        0.131501510739326
+      ],
+      "imported_aabb_min": [
+        -0.133059442043304,
+        2.34053004533052e-07,
+        -0.131500571966171
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 6.6434967038731e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2729,
+      "vertices": 1645
+    },
+    {
+      "id": "industrial_storage_cart",
+      "imported_aabb_max": [
+        0.521088361740112,
+        0.895300209522247,
+        0.358392328023911
+      ],
+      "imported_aabb_min": [
+        -0.521088302135468,
+        3.52854840457439e-07,
+        -0.358392238616943
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 5.4056516773926e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 18902,
+      "vertices": 17224
+    },
+    {
+      "id": "tool_cart",
+      "imported_aabb_max": [
+        0.560307085514069,
+        0.84888756275177,
+        0.331597477197647
+      ],
+      "imported_aabb_min": [
+        -0.560307264328003,
+        1.94413587450981e-07,
+        -0.331597477197647
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 7.20205662219087e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 29394,
+      "vertices": 22478
+    },
+    {
+      "id": "brass_diya_lantern",
+      "imported_aabb_max": [
+        0.0525499023497105,
+        0.3238864839077,
+        0.0534573830664158
+      ],
+      "imported_aabb_min": [
+        -0.0525500811636448,
+        7.45058059692383e-08,
+        -0.053456649184227
+      ],
+      "material_slots": 5,
+      "max_vertex_bounds_error_m": 6.19664831447153e-07,
+      "meshes": 3,
+      "status": "PASS",
+      "triangles": 2727,
+      "vertices": 2962
+    },
+    {
+      "id": "brass_candleholders",
+      "imported_aabb_max": [
+        0.357999980449677,
+        0.567976295948029,
+        0.123991698026657
+      ],
+      "imported_aabb_min": [
+        -0.35799914598465,
+        -3.65980667993426e-07,
+        -0.123992301523685
+      ],
+      "material_slots": 7,
+      "max_vertex_bounds_error_m": 4.94938547035417e-07,
+      "meshes": 3,
+      "status": "PASS",
+      "triangles": 9097,
+      "vertices": 9197
+    },
+    {
+      "id": "metal_stool_01",
+      "imported_aabb_max": [
+        0.10735721886158,
+        0.538492798805237,
+        0.108143851161003
+      ],
+      "imported_aabb_min": [
+        -0.107357241213322,
+        4.87225406686775e-07,
+        -0.108143985271454
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 8.18106343558611e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 8334,
+      "vertices": 5198
+    },
+    {
+      "id": "metal_stool_03",
+      "imported_aabb_max": [
+        0.175035282969475,
+        0.777560770511627,
+        0.178836464881897
+      ],
+      "imported_aabb_min": [
+        -0.175035282969475,
+        4.2538158595562e-07,
+        -0.178836032748222
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 9.45490114645509e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 6576,
+      "vertices": 4562
+    },
+    {
+      "id": "painted_wooden_chair_02",
+      "imported_aabb_max": [
+        0.271740257740021,
+        1.07420539855957,
+        0.281391531229019
+      ],
+      "imported_aabb_min": [
+        -0.271740853786469,
+        -2.82842069765366e-08,
+        -0.281391531229019
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 9.5413986400672e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 1246,
+      "vertices": 986
+    },
+    {
+      "id": "treasure_chest",
+      "imported_aabb_max": [
+        0.408216655254364,
+        0.525551676750183,
+        0.222067356109619
+      ],
+      "imported_aabb_min": [
+        -0.408216655254364,
+        3.88361513614655e-07,
+        -0.222067669034004
+      ],
+      "material_slots": 5,
+      "max_vertex_bounds_error_m": 6.21443462023308e-07,
+      "meshes": 5,
+      "status": "PASS",
+      "triangles": 9098,
+      "vertices": 9435
+    },
+    {
+      "id": "GothicBed_01",
+      "imported_aabb_max": [
+        0.746145963668823,
+        1.53457796573639,
+        1.0205899477005
+      ],
+      "imported_aabb_min": [
+        -0.74614679813385,
+        9.65247295425797e-08,
+        -1.02059042453766
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 5.18329159149289e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 9100,
+      "vertices": 9520
+    },
+    {
+      "id": "common_woven_rug",
+      "imported_aabb_max": [
+        1.17499995231628,
+        0.0,
+        0.699999988079071
+      ],
+      "imported_aabb_min": [
+        -1.17499995231628,
+        0.0,
+        -0.699999988079071
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2,
+      "vertices": 4
+    },
+    {
+      "id": "cinema_dark_carpet_r1",
+      "imported_aabb_max": [
+        2.40000009536743,
+        0.0,
+        1.79999995231628
+      ],
+      "imported_aabb_min": [
+        -2.40000009536743,
+        0.0,
+        -1.79999995231628
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2,
+      "vertices": 4
+    },
+    {
+      "id": "cinema_dark_carpet_r2",
+      "imported_aabb_max": [
+        4.80000019073486,
+        0.0,
+        1.79999995231628
+      ],
+      "imported_aabb_min": [
+        -4.80000019073486,
+        0.0,
+        -1.79999995231628
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2,
+      "vertices": 4
+    },
+    {
+      "id": "cinema_dark_carpet_r3",
+      "imported_aabb_max": [
+        7.19999980926514,
+        0.0,
+        1.79999995231628
+      ],
+      "imported_aabb_min": [
+        -7.19999980926514,
+        0.0,
+        -1.79999995231628
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 0.0,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2,
+      "vertices": 4
+    },
+    {
+      "id": "BarberShopChair_01",
+      "imported_aabb_max": [
+        0.283693432807922,
+        1.1167539358139,
+        0.497965216636658
+      ],
+      "imported_aabb_min": [
+        -0.283693194389343,
+        -4.12810692296262e-08,
+        -0.497964560985565
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 5.07515267145209e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 4280,
+      "vertices": 7587
+    },
+    {
+      "id": "Chandelier_01",
+      "imported_aabb_max": [
+        0.25373563170433,
+        -4.60407136415597e-07,
+        0.277402520179749
+      ],
+      "imported_aabb_min": [
+        -0.253735661506653,
+        -0.542838871479034,
+        -0.277402281761169
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 7.53157451072184e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 7279,
+      "vertices": 8246
+    },
+    {
+      "id": "Chandelier_03",
+      "imported_aabb_max": [
+        0.254018843173981,
+        1.54972070731674e-07,
+        0.255668431520462
+      ],
+      "imported_aabb_min": [
+        -0.254019618034363,
+        -0.676572203636169,
+        -0.255669146776199
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 4.69365289745838e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 7280,
+      "vertices": 6381
+    },
+    {
+      "id": "CoffeeCart_01",
+      "imported_aabb_max": [
+        1.08395004272461,
+        1.71789419651031,
+        0.536823093891144
+      ],
+      "imported_aabb_min": [
+        -1.08395051956177,
+        3.24565917253494e-07,
+        -0.536823451519012
+      ],
+      "material_slots": 3,
+      "max_vertex_bounds_error_m": 7.4839186936515e-07,
+      "meshes": 3,
+      "status": "PASS",
+      "triangles": 9097,
+      "vertices": 10467
+    },
+    {
+      "id": "antique_ceramic_vase_01",
+      "imported_aabb_max": [
+        0.108555920422077,
+        0.373747646808624,
+        0.108633920550346
+      ],
+      "imported_aabb_min": [
+        -0.108555920422077,
+        5.09535311721265e-08,
+        -0.108633659780025
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 3.75940686581089e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2730,
+      "vertices": 1612
+    },
+    {
+      "id": "bench_vice_01",
+      "imported_aabb_max": [
+        0.100241534411907,
+        0.285148501396179,
+        0.197860330343246
+      ],
+      "imported_aabb_min": [
+        -0.100240834057331,
+        -1.49011611938477e-07,
+        -0.197861328721046
+      ],
+      "material_slots": 4,
+      "max_vertex_bounds_error_m": 9.97042434391915e-07,
+      "meshes": 4,
+      "status": "PASS",
+      "triangles": 2864,
+      "vertices": 2183
+    },
+    {
+      "id": "brass_goblets",
+      "imported_aabb_max": [
+        0.192892760038376,
+        0.232400089502335,
+        0.126641035079956
+      ],
+      "imported_aabb_min": [
+        -0.192892506718636,
+        -1.31111846712884e-07,
+        -0.126641690731049
+      ],
+      "material_slots": 3,
+      "max_vertex_bounds_error_m": 5.97426605963847e-07,
+      "meshes": 3,
+      "status": "PASS",
+      "triangles": 2727,
+      "vertices": 2400
+    },
+    {
+      "id": "brass_pan_01",
+      "imported_aabb_max": [
+        0.0956351757049561,
+        0.0525027103722095,
+        0.224834442138672
+      ],
+      "imported_aabb_min": [
+        -0.0956351757049561,
+        -2.41080897467327e-07,
+        -0.224834799766541
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 5.62358479783143e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2729,
+      "vertices": 1772
+    },
+    {
+      "id": "brass_pot_01",
+      "imported_aabb_max": [
+        0.15097239613533,
+        0.290930449962616,
+        0.150846794247627
+      ],
+      "imported_aabb_min": [
+        -0.150973260402679,
+        7.83475115895271e-08,
+        -0.150845810770988
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 6.3657790860816e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2730,
+      "vertices": 1724
+    },
+    {
+      "id": "brass_pot_02",
+      "imported_aabb_max": [
+        0.183312803506851,
+        0.108546175062656,
+        0.151145666837692
+      ],
+      "imported_aabb_min": [
+        -0.183312803506851,
+        -1.98124325834215e-07,
+        -0.151144742965698
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 4.17564990584651e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2730,
+      "vertices": 1802
+    },
+    {
+      "id": "brass_vase_01",
+      "imported_aabb_max": [
+        0.0852905735373497,
+        0.519353568553925,
+        0.0852434039115906
+      ],
+      "imported_aabb_min": [
+        -0.085291363298893,
+        -4.20724973082542e-07,
+        -0.0852426290512085
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 7.18546573352796e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 9100,
+      "vertices": 5237
+    },
+    {
+      "id": "brass_vase_02",
+      "imported_aabb_max": [
+        0.0840404480695724,
+        0.423169791698456,
+        0.0840688124299049
+      ],
+      "imported_aabb_min": [
+        -0.0840408653020859,
+        1.66051904670894e-07,
+        -0.0840688124299049
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 5.27309566678014e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2730,
+      "vertices": 1686
+    },
+    {
+      "id": "bull_head",
+      "imported_aabb_max": [
+        0.153263598680496,
+        0.43294769525528,
+        0.140607595443726
+      ],
+      "imported_aabb_min": [
+        -0.15326315164566,
+        -3.45607986673713e-07,
+        -0.140607267618179
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 6.42307441012235e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2730,
+      "vertices": 1780
+    },
+    {
+      "id": "bunsen_burner",
+      "imported_aabb_max": [
+        0.069558821618557,
+        0.173125520348549,
+        0.069558821618557
+      ],
+      "imported_aabb_min": [
+        -0.069558821618557,
+        0.0,
+        -0.069558821618557
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 5.39743041372276e-07,
+      "meshes": 2,
+      "status": "PASS",
+      "triangles": 2729,
+      "vertices": 2806
+    },
+    {
+      "id": "cassette_player",
+      "imported_aabb_max": [
+        0.0647299885749817,
+        0.236817374825478,
+        0.0244399067014456
+      ],
+      "imported_aabb_min": [
+        -0.0647304579615593,
+        -4.24683094024658e-07,
+        -0.0244401283562183
+      ],
+      "material_slots": 3,
+      "max_vertex_bounds_error_m": 6.35161995887756e-07,
+      "meshes": 2,
+      "status": "PASS",
+      "triangles": 2729,
+      "vertices": 2368
+    },
+    {
+      "id": "ceramic_pot",
+      "imported_aabb_max": [
+        0.246093839406967,
+        0.278748750686646,
+        0.188157543540001
+      ],
+      "imported_aabb_min": [
+        -0.246093884110451,
+        -3.25322616845369e-07,
+        -0.188156738877296
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 6.09492076364404e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 3592,
+      "vertices": 2075
+    },
+    {
+      "id": "ceramic_vase_01",
+      "imported_aabb_max": [
+        0.0818672403693199,
+        0.320399820804596,
+        0.0818391516804695
+      ],
+      "imported_aabb_min": [
+        -0.0818671807646751,
+        4.45754267275333e-07,
+        -0.0818393677473068
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 6.03285627676087e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2729,
+      "vertices": 2592
+    },
+    {
+      "id": "ceramic_vase_03",
+      "imported_aabb_max": [
+        0.0449280776083469,
+        0.331509679555893,
+        0.0449087880551815
+      ],
+      "imported_aabb_min": [
+        -0.0449277982115746,
+        -3.00215106108226e-08,
+        -0.044909406453371
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 4.54148562312184e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2730,
+      "vertices": 2683
+    },
+    {
+      "id": "ceramic_vase_04",
+      "imported_aabb_max": [
+        0.0722715854644775,
+        0.27345734834671,
+        0.072220653295517
+      ],
+      "imported_aabb_min": [
+        -0.0722713023424149,
+        -1.75787135958672e-07,
+        -0.0722212642431259
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 6.51617085623002e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2730,
+      "vertices": 2420
+    },
+    {
+      "id": "chemistry_set",
+      "imported_aabb_max": [
+        0.377685070037842,
+        0.300004959106445,
+        0.123873516917229
+      ],
+      "imported_aabb_min": [
+        -0.377684444189072,
+        -1.96974724531174e-07,
+        -0.1238744109869
+      ],
+      "material_slots": 52,
+      "max_vertex_bounds_error_m": 6.37620928500837e-07,
+      "meshes": 50,
+      "status": "PASS",
+      "triangles": 9065,
+      "vertices": 9861
+    },
+    {
+      "id": "dartboard",
+      "imported_aabb_max": [
+        0.225348100066185,
+        0.225348129868507,
+        0.0397785529494286
+      ],
+      "imported_aabb_min": [
+        -0.225348129868507,
+        -0.225348100066185,
+        -8.33373547948213e-09
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 4.78232095701969e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 6800,
+      "vertices": 4409
+    },
+    {
+      "id": "decorative_book_set_01",
+      "imported_aabb_max": [
+        1.25228774547577,
+        0.290159344673157,
+        0.158677607774734
+      ],
+      "imported_aabb_min": [
+        -1.25228714942932,
+        1.01514160633087e-07,
+        -0.158678412437439
+      ],
+      "material_slots": 87,
+      "max_vertex_bounds_error_m": 5.78656454308657e-07,
+      "meshes": 87,
+      "status": "PASS",
+      "triangles": 9405,
+      "vertices": 20015
+    },
+    {
+      "id": "electric_stove",
+      "imported_aabb_max": [
+        0.251297354698181,
+        0.858697175979614,
+        0.323810130357742
+      ],
+      "imported_aabb_min": [
+        -0.251297444105148,
+        0.0,
+        -0.323811084032059
+      ],
+      "material_slots": 20,
+      "max_vertex_bounds_error_m": 4.55887857242487e-07,
+      "meshes": 19,
+      "status": "PASS",
+      "triangles": 9088,
+      "vertices": 9552
+    },
+    {
+      "id": "fancy_picture_frame_01",
+      "imported_aabb_max": [
+        0.301515132188797,
+        0.232063233852386,
+        0.0199931208044291
+      ],
+      "imported_aabb_min": [
+        -0.301515132188797,
+        -0.232063233852386,
+        4.65661287307739e-08
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 2.92767282417117e-07,
+      "meshes": 2,
+      "status": "PASS",
+      "triangles": 938,
+      "vertices": 635
+    },
+    {
+      "id": "fancy_picture_frame_02",
+      "imported_aabb_max": [
+        0.330315440893173,
+        0.38553187251091,
+        0.0890435352921486
+      ],
+      "imported_aabb_min": [
+        -0.330315440893173,
+        -0.385531216859818,
+        3.75206582248211e-07
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 6.53785775739379e-07,
+      "meshes": 2,
+      "status": "PASS",
+      "triangles": 9100,
+      "vertices": 5177
+    },
+    {
+      "id": "filmstrip_projector_8mm",
+      "imported_aabb_max": [
+        0.240978702902794,
+        0.276672899723053,
+        0.101438105106354
+      ],
+      "imported_aabb_min": [
+        -0.240978300571442,
+        -5.39610467420459e-10,
+        -0.101437151432037
+      ],
+      "material_slots": 16,
+      "max_vertex_bounds_error_m": 3.33200517843579e-07,
+      "meshes": 16,
+      "status": "PASS",
+      "triangles": 9092,
+      "vertices": 11577
+    },
+    {
+      "id": "gothic_statue",
+      "imported_aabb_max": [
+        0.405526548624039,
+        0.956943511962891,
+        0.430033266544342
+      ],
+      "imported_aabb_min": [
+        -0.405525922775269,
+        -2.38418579101562e-07,
+        -0.4300337433815
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 7.06509922565601e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 9100,
+      "vertices": 10936
+    },
+    {
+      "id": "hanging_picture_frame_01",
+      "imported_aabb_max": [
+        0.296999990940094,
+        0.420499980449677,
+        0.0157496239989996
+      ],
+      "imported_aabb_min": [
+        -0.296999990940094,
+        -0.420499980449677,
+        3.07562004309148e-07
+      ],
+      "material_slots": 3,
+      "max_vertex_bounds_error_m": 6.24697406692576e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2586,
+      "vertices": 2217
+    },
+    {
+      "id": "hanging_picture_frame_02",
+      "imported_aabb_max": [
+        0.375906854867935,
+        0.249999523162842,
+        0.0330748595297337
+      ],
+      "imported_aabb_min": [
+        -0.375906556844711,
+        -0.250000447034836,
+        -2.84751877188683e-07
+      ],
+      "material_slots": 3,
+      "max_vertex_bounds_error_m": 6.93371418947208e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 3678,
+      "vertices": 2907
+    },
+    {
+      "id": "hanging_picture_frame_03",
+      "imported_aabb_max": [
+        0.192583322525024,
+        0.251301199197769,
+        0.0317436717450619
+      ],
+      "imported_aabb_min": [
+        -0.192583441734314,
+        -0.251301199197769,
+        4.51254891231656e-07
+      ],
+      "material_slots": 3,
+      "max_vertex_bounds_error_m": 6.6857450065072e-07,
+      "meshes": 2,
+      "status": "PASS",
+      "triangles": 9098,
+      "vertices": 7371
+    },
+    {
+      "id": "horse_head",
+      "imported_aabb_max": [
+        0.107491664588451,
+        0.41780948638916,
+        0.167028948664665
+      ],
+      "imported_aabb_min": [
+        -0.107490964233875,
+        5.32600097358227e-08,
+        -0.167029529809952
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 5.84621375310235e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2730,
+      "vertices": 1939
+    },
+    {
+      "id": "horse_statue_01",
+      "imported_aabb_max": [
+        0.0814808309078217,
+        0.21997107565403,
+        0.0538956820964813
+      ],
+      "imported_aabb_min": [
+        -0.0814809501171112,
+        3.02350599667989e-07,
+        -0.0538951754570007
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 3.67673123946588e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2159,
+      "vertices": 1638
+    },
+    {
+      "id": "industrial_coffee_table",
+      "imported_aabb_max": [
+        0.329965263605118,
+        0.54254013299942,
+        0.321322441101074
+      ],
+      "imported_aabb_min": [
+        -0.32996541261673,
+        -1.13126588985324e-07,
+        -0.321322292089462
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 5.34783566763508e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 13650,
+      "vertices": 16118
+    },
+    {
+      "id": "katana_stand_01",
+      "imported_aabb_max": [
+        0.147913724184036,
+        0.181945994496346,
+        0.0267349891364574
+      ],
+      "imported_aabb_min": [
+        -0.147913724184036,
+        -1.17081071948633e-07,
+        -0.0267350822687149
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 3.17148106887544e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2730,
+      "vertices": 2240
+    },
+    {
+      "id": "lambis_shell",
+      "imported_aabb_max": [
+        0.0695534348487854,
+        0.0464481264352798,
+        0.0372677892446518
+      ],
+      "imported_aabb_min": [
+        -0.0695527642965317,
+        1.63614458870143e-07,
+        -0.0372669249773026
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 4.97866608384356e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2729,
+      "vertices": 2011
+    },
+    {
+      "id": "lion_head",
+      "imported_aabb_max": [
+        0.160181403160095,
+        0.436060130596161,
+        0.103403352200985
+      ],
+      "imported_aabb_min": [
+        -0.160182237625122,
+        4.04135789722204e-07,
+        -0.103403337299824
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 5.76696834286849e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2729,
+      "vertices": 1938
+    },
+    {
+      "id": "lubricant_spray",
+      "imported_aabb_max": [
+        0.0334925279021263,
+        0.16488091647625,
+        0.0322955027222633
+      ],
+      "imported_aabb_min": [
+        -0.0334933251142502,
+        0.0,
+        -0.0322955027222633
+      ],
+      "material_slots": 3,
+      "max_vertex_bounds_error_m": 6.90878152909136e-07,
+      "meshes": 3,
+      "status": "PASS",
+      "triangles": 2727,
+      "vertices": 2253
+    },
+    {
+      "id": "mantel_clock_01",
+      "imported_aabb_max": [
+        0.171204596757889,
+        0.160463511943817,
+        0.0630169212818146
+      ],
+      "imported_aabb_min": [
+        -0.17120549082756,
+        -4.72384272143245e-07,
+        -0.0630174428224564
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 8.11287748092582e-07,
+      "meshes": 2,
+      "status": "PASS",
+      "triangles": 2728,
+      "vertices": 2493
+    },
+    {
+      "id": "marble_bust_01",
+      "imported_aabb_max": [
+        0.102148063480854,
+        0.386225461959839,
+        0.112322047352791
+      ],
+      "imported_aabb_min": [
+        -0.102148734033108,
+        4.76837158203125e-07,
+        -0.112321883440018
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 5.59934790089756e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2730,
+      "vertices": 1883
+    },
+    {
+      "id": "metal_jug",
+      "imported_aabb_max": [
+        0.0984426587820053,
+        0.287559986114502,
+        0.0979242846369743
+      ],
+      "imported_aabb_min": [
+        -0.0984433740377426,
+        -4.38201823271811e-07,
+        -0.0979243442416191
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 6.69522421503643e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2729,
+      "vertices": 1711
+    },
+    {
+      "id": "mid_century_lounge_chair",
+      "imported_aabb_max": [
+        0.393359571695328,
+        0.911886036396027,
+        0.464221566915512
+      ],
+      "imported_aabb_min": [
+        -0.393359571695328,
+        -4.40841390059177e-08,
+        -0.464220762252808
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 7.05881063822744e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 6148,
+      "vertices": 4203
+    },
+    {
+      "id": "modern_arm_chair_01",
+      "imported_aabb_max": [
+        0.352747708559036,
+        0.879652976989746,
+        0.42422154545784
+      ],
+      "imported_aabb_min": [
+        -0.352748513221741,
+        1.72032741829753e-07,
+        -0.424221485853195
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 7.36859817607183e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 8916,
+      "vertices": 5851
+    },
+    {
+      "id": "old_drill_press",
+      "imported_aabb_max": [
+        0.210747748613358,
+        0.840010583400726,
+        0.243715286254883
+      ],
+      "imported_aabb_min": [
+        -0.210747987031937,
+        2.83662302535959e-08,
+        -0.243715137243271
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 5.64280014714313e-07,
+      "meshes": 2,
+      "status": "PASS",
+      "triangles": 9099,
+      "vertices": 9865
+    },
+    {
+      "id": "ornate_mirror_01",
+      "imported_aabb_max": [
+        0.243248000741005,
+        0.372078031301498,
+        0.0259612165391445
+      ],
+      "imported_aabb_min": [
+        -0.243248000741005,
+        -0.372077375650406,
+        2.72266333922744e-07
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 4.73530491262864e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 9099,
+      "vertices": 6628
+    },
+    {
+      "id": "painted_wooden_table",
+      "imported_aabb_max": [
+        0.841961860656738,
+        0.671046018600464,
+        0.39794448018074
+      ],
+      "imported_aabb_min": [
+        -0.841960847377777,
+        3.21597326546907e-08,
+        -0.397944301366806
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 9.61096020546393e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 600,
+      "vertices": 686
+    },
+    {
+      "id": "planter_box_02",
+      "imported_aabb_max": [
+        0.53192526102066,
+        0.385411113500595,
+        0.198553904891014
+      ],
+      "imported_aabb_min": [
+        -0.53192526102066,
+        -2.07219272851944e-07,
+        -0.198554307222366
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 4.4464022153079e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 9100,
+      "vertices": 7919
+    },
+    {
+      "id": "planter_box_03",
+      "imported_aabb_max": [
+        0.388580977916718,
+        0.726837635040283,
+        0.278606086969376
+      ],
+      "imported_aabb_min": [
+        -0.388579994440079,
+        -8.47321643959731e-08,
+        -0.278606086969376
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 3.698370960592e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 9100,
+      "vertices": 8018
+    },
+    {
+      "id": "plastic_monobloc_chair_01",
+      "imported_aabb_max": [
+        0.320930570363998,
+        0.879841685295105,
+        0.313796252012253
+      ],
+      "imported_aabb_min": [
+        -0.320930570363998,
+        4.60851879324764e-07,
+        -0.313795655965805
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 8.12898974800191e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 3356,
+      "vertices": 3271
+    },
+    {
+      "id": "postcard_set_01",
+      "imported_aabb_max": [
+        0.338339328765869,
+        0.27250000834465,
+        0.000136229675263166
+      ],
+      "imported_aabb_min": [
+        -0.338339328765869,
+        -0.272499978542328,
+        -2.11875885725021e-07
+      ],
+      "material_slots": 20,
+      "max_vertex_bounds_error_m": 4.00273933109929e-07,
+      "meshes": 20,
+      "status": "PASS",
+      "triangles": 2720,
+      "vertices": 2360
+    },
+    {
+      "id": "pot_enamel_01",
+      "imported_aabb_max": [
+        0.131279900670052,
+        0.178196042776108,
+        0.0901476666331291
+      ],
+      "imported_aabb_min": [
+        -0.131279900670052,
+        -3.97514668293297e-07,
+        -0.0901476666331291
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 5.30384909325221e-07,
+      "meshes": 2,
+      "status": "PASS",
+      "triangles": 2728,
+      "vertices": 1806
+    },
+    {
+      "id": "potted_plant_01",
+      "imported_aabb_max": [
+        0.2347811460495,
+        1.07860684394836,
+        0.252186238765717
+      ],
+      "imported_aabb_min": [
+        -0.2347801476717,
+        -2.99964597161306e-07,
+        -0.252185791730881
+      ],
+      "material_slots": 4,
+      "max_vertex_bounds_error_m": 3.94593399732912e-07,
+      "meshes": 4,
+      "status": "PASS",
+      "triangles": 9098,
+      "vertices": 12954
+    },
+    {
+      "id": "scandinavian_masonry_heater",
+      "imported_aabb_max": [
+        0.583848774433136,
+        2.36048197746277,
+        0.667639911174774
+      ],
+      "imported_aabb_min": [
+        -0.583848178386688,
+        -4.14525857195258e-07,
+        -0.667639017105103
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 1.18311845653807e-06,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 9350,
+      "vertices": 7689
+    },
+    {
+      "id": "standing_picture_frame_01",
+      "imported_aabb_max": [
+        0.100399926304817,
+        0.2496577501297,
+        0.0501384548842907
+      ],
+      "imported_aabb_min": [
+        -0.100399926304817,
+        -3.71015630662441e-07,
+        -0.0501384176313877
+      ],
+      "material_slots": 3,
+      "max_vertex_bounds_error_m": 5.63282071652793e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 1634,
+      "vertices": 1426
+    },
+    {
+      "id": "standing_picture_frame_02",
+      "imported_aabb_max": [
+        0.108446426689625,
+        0.266392201185226,
+        0.0511445105075836
+      ],
+      "imported_aabb_min": [
+        -0.108445726335049,
+        -3.18694219458848e-07,
+        -0.0511442124843597
+      ],
+      "material_slots": 3,
+      "max_vertex_bounds_error_m": 1.0432210046929e-06,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2986,
+      "vertices": 2367
+    },
+    {
+      "id": "sungka_board_02",
+      "imported_aabb_max": [
+        0.372679978609085,
+        0.0208373088389635,
+        0.0703968852758408
+      ],
+      "imported_aabb_min": [
+        -0.372680097818375,
+        -2.36323103308678e-07,
+        -0.0703959614038467
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 3.30124635183893e-07,
+      "meshes": 2,
+      "status": "PASS",
+      "triangles": 9099,
+      "vertices": 7696
+    },
+    {
+      "id": "vintage_cabinet_01",
+      "imported_aabb_max": [
+        0.727833807468414,
+        1.60915338993073,
+        0.241134479641914
+      ],
+      "imported_aabb_min": [
+        -0.727833807468414,
+        -4.62925527244806e-07,
+        -0.241134732961655
+      ],
+      "material_slots": 12,
+      "max_vertex_bounds_error_m": 6.22290770024847e-07,
+      "meshes": 8,
+      "status": "PASS",
+      "triangles": 27292,
+      "vertices": 21836
+    },
+    {
+      "id": "vintage_electric_kettle",
+      "imported_aabb_max": [
+        0.160491347312927,
+        0.305922418832779,
+        0.123911544680595
+      ],
+      "imported_aabb_min": [
+        -0.160491108894348,
+        -2.98838131129742e-07,
+        -0.123911544680595
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 7.05763113728608e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2730,
+      "vertices": 2658
+    },
+    {
+      "id": "vintage_microwave",
+      "imported_aabb_max": [
+        0.348956108093262,
+        0.341786950826645,
+        0.242305934429169
+      ],
+      "imported_aabb_min": [
+        -0.348956108093262,
+        -3.87430176829184e-08,
+        -0.242304980754852
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 9.48186993809941e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 8120,
+      "vertices": 5893
+    },
+    {
+      "id": "vintage_telephone_wall_clock",
+      "imported_aabb_max": [
+        0.171407401561737,
+        0.250596344470978,
+        0.192562967538834
+      ],
+      "imported_aabb_min": [
+        -0.17140805721283,
+        -0.250596553087234,
+        -3.72529029846191e-08
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 5.39125551313191e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 9099,
+      "vertices": 8590
+    },
+    {
+      "id": "wine_bottles_01",
+      "imported_aabb_max": [
+        0.338156878948212,
+        0.331442147493362,
+        0.0402583368122578
+      ],
+      "imported_aabb_min": [
+        -0.338157266378403,
+        -1.38908944791183e-07,
+        -0.0402592867612839
+      ],
+      "material_slots": 16,
+      "max_vertex_bounds_error_m": 4.16556787286027e-07,
+      "meshes": 4,
+      "status": "PASS",
+      "triangles": 9095,
+      "vertices": 5879
+    },
+    {
+      "id": "wooden_candlestick",
+      "imported_aabb_max": [
+        0.0486040152609348,
+        0.219751924276352,
+        0.0493204444646835
+      ],
+      "imported_aabb_min": [
+        -0.0486034490168095,
+        2.22367816604674e-07,
+        -0.0493205934762955
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 6.4615335304552e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2730,
+      "vertices": 2815
+    },
+    {
+      "id": "wooden_picnic_table",
+      "imported_aabb_max": [
+        1.2089319229126,
+        0.596789479255676,
+        0.89639014005661
+      ],
+      "imported_aabb_min": [
+        -1.20893239974976,
+        -6.65313564240932e-08,
+        -0.896390855312347
+      ],
+      "material_slots": 2,
+      "max_vertex_bounds_error_m": 5.05762159264123e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 9100,
+      "vertices": 6333
+    },
+    {
+      "id": "wooden_stool_02",
+      "imported_aabb_max": [
+        0.132556140422821,
+        0.182050257921219,
+        0.0916040912270546
+      ],
+      "imported_aabb_min": [
+        -0.132556915283203,
+        -1.54788722284138e-07,
+        -0.0916044041514397
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 4.40254098066362e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2729,
+      "vertices": 1954
+    },
+    {
+      "id": "bronze_ray_statue",
+      "imported_aabb_max": [
+        0.353746831417084,
+        0.589647710323334,
+        0.267774015665054
+      ],
+      "imported_aabb_min": [
+        -0.353747427463531,
+        -5.58793544769287e-09,
+        -0.267774313688278
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 5.30644683749415e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 1844,
+      "vertices": 1438
+    },
+    {
+      "id": "bronze_shark_statue",
+      "imported_aabb_max": [
+        0.175978928804398,
+        0.431601941585541,
+        0.379893392324448
+      ],
+      "imported_aabb_min": [
+        -0.17597958445549,
+        -2.04890966415405e-08,
+        -0.379893749952316
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 6.28484713161015e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 7334,
+      "vertices": 4526
+    },
+    {
+      "id": "bronze_whale_statue",
+      "imported_aabb_max": [
+        0.466001868247986,
+        1.07291960716248,
+        0.682925045490265
+      ],
+      "imported_aabb_min": [
+        -0.466001331806183,
+        2.3594475351274e-07,
+        -0.682925164699554
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 7.19390527592623e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 3816,
+      "vertices": 2483
+    },
+    {
+      "id": "carved_wooden_elephant",
+      "imported_aabb_max": [
+        0.0545910596847534,
+        0.0961509570479393,
+        0.0287777949124575
+      ],
+      "imported_aabb_min": [
+        -0.0545919053256512,
+        4.2555620893836e-07,
+        -0.0287787113338709
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 1.22753544928855e-06,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2752,
+      "vertices": 1664
+    },
+    {
+      "id": "concrete_cat_statue",
+      "imported_aabb_max": [
+        0.0765334293246269,
+        0.283220380544662,
+        0.125052973628044
+      ],
+      "imported_aabb_min": [
+        -0.0765337720513344,
+        1.86188117368147e-07,
+        -0.125053569674492
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 5.81145286560059e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2729,
+      "vertices": 2075
+    },
+    {
+      "id": "garden_gnome",
+      "imported_aabb_max": [
+        0.129011809825897,
+        0.598974585533142,
+        0.105024948716164
+      ],
+      "imported_aabb_min": [
+        -0.129012495279312,
+        2.23157258005813e-07,
+        -0.105025753378868
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 5.93344225308101e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 9100,
+      "vertices": 5616
+    },
+    {
+      "id": "rubber_duck_toy",
+      "imported_aabb_max": [
+        0.106752410531044,
+        0.285508334636688,
+        0.150001421570778
+      ],
+      "imported_aabb_min": [
+        -0.106752410531044,
+        -5.36601874046028e-09,
+        -0.150000765919685
+      ],
+      "material_slots": 1,
+      "max_vertex_bounds_error_m": 6.70428050852934e-07,
+      "meshes": 1,
+      "status": "PASS",
+      "triangles": 2729,
+      "vertices": 1676
+    },
+    {
+      "id": "seadogs_compass",
+      "imported_aabb_max": [
+        0.0406004413962364,
+        0.0866467505693436,
+        0.0722051560878754
+      ],
+      "imported_aabb_min": [
+        -0.040600873529911,
+        1.37637471198104e-07,
+        -0.0722058340907097
+      ],
+      "material_slots": 3,
+      "max_vertex_bounds_error_m": 1.33583739625465e-06,
+      "meshes": 3,
+      "status": "PASS",
+      "triangles": 2727,
+      "vertices": 3239
+    }
+  ],
+  "full_integration_runtime_verified": false,
+  "lfs_checkout_verified": false
+}

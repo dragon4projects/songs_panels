@@ -1,0 +1,5 @@
+CC0 Poly Haven https://polyhaven.com/a/sofa_02
+Original source glTF SHA-256: 5df114209f9b956ccd4831eaeef469a81339ab371d0056eb6d5d29eee08eb431
+Working source SHA-256: 5df114209f9b956ccd4831eaeef469a81339ab371d0056eb6d5d29eee08eb431
+Asset-only normalization yaw=0 uniform scale=1.05
+Owner approved: false

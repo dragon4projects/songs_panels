@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/ornate_mirror_01
+Source SHA-256 2d9bb949df65d6470395959fb7976af6fcc1b3ad7d85084918ad543ee71850f6
+Source yaw 0 degrees; uniform scale 1; pivot wall
+Native source scale.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 14246 -> 9099; original source unchanged, optimized GLB SHA-256 72d5519a5b616c6db56bbe5f07816db98687658dfcef0fc0b52e5d19d09de089. Bounds delta before recenter: 0.000003 m.

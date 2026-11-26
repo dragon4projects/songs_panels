@@ -1,0 +1,6 @@
+CC0 1.0 Universal
+https://3dassets.dev/assets/cinema-multiplex-and-foyer-aisle-floor-tile-2ed6e733
+Source GLB SHA-256 521325fd473180f645ecff54e35a9600bf850cb20502da4965c45d06204a1c27
+Uniform import scale 1.0; canonical pivot floor.
+Candidate, no owner approval.
+KHR_mesh_quantization decoded to float32 attributes; preserved original node transforms; source untouched.

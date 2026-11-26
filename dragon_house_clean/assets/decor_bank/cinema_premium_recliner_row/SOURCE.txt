@@ -1,0 +1,6 @@
+CC0 1.0 Universal
+https://3dassets.dev/assets/cinema-multiplex-and-foyer-premium-recliner-row-d1383e97
+Source GLB SHA-256 ff2c588cddc9ed11f19227c068597eb66f8466c50bfa07e5d82ed72b2490977e
+Uniform import scale 1.0; canonical pivot floor.
+Candidate, no owner approval.
+KHR_mesh_quantization decoded to float32 attributes; preserved original node transforms; source untouched.

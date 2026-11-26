@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/painted_wooden_nightstand
+Source SHA-256 fbdc51ee41f2ee2dc7c455cd6f8321ff14e80c7a7d1e7736b194ca0b3e48b304
+Source yaw 0 degrees; uniform scale 0.9; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.

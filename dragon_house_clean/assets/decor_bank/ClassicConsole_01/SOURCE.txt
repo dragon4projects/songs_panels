@@ -1,0 +1,5 @@
+CC0 Poly Haven https://polyhaven.com/a/ClassicConsole_01
+Original source glTF SHA-256: 6c7f79026ad7c388c5d40c56a0988f2a28dc0fc6e489e110332d06792ecd5833
+Working source SHA-256: 6c7f79026ad7c388c5d40c56a0988f2a28dc0fc6e489e110332d06792ecd5833
+Asset-only normalization yaw=0 uniform scale=0.94
+Owner approved: false

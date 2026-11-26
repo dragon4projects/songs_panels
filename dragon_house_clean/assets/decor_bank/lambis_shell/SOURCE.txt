@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/lambis_shell
+Source SHA-256 3fbfbe990b12f33af079671bc9ea9b1dd46b50f823692b72aa0d89fe850328e3
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 12498 -> 2729; original source unchanged, optimized GLB SHA-256 c2a091b54400ce5aaf154d6f5163dbcdecf9112e5b0297eff1ee5f6c5b433448. Bounds delta before recenter: 0.000376 m.

@@ -1,0 +1,5 @@
+PROJECT_AUTHORED_CANDIDATE
+Project-authored generic small prop
+Derived toy-sized mesh; no historical or owned object identity.
+Working GLB SHA-256 4b8932cd0c7758bb000c997178b683e1c3da7e0a17b93303ed9a43132dcd45af
+Rounded harmless stone, approximate mass; eligibility requires species check.

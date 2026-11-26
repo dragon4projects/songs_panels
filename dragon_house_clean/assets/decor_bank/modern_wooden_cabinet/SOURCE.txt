@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/modern_wooden_cabinet
+Source SHA-256 9c0765063297018e854d11bc27da3cbab3c33904a3be2f5c15f46635df7e857f
+Source yaw 0 degrees; uniform scale 0.73; pivot floor
+Uniform domestic physical scale; source aspect retained.
+Candidate: owner_approved=false.

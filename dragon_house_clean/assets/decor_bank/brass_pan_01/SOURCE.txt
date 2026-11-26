@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/brass_pan_01
+Source SHA-256 9860e0d10e9ef94c2b02e120f38f28a177af473759e4da05c74a564cfb0da5e1
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 4340 -> 2729; original source unchanged, optimized GLB SHA-256 3cdc1957ee9c88e7df002d0bf1c027ec4ce82c86f41cebdba158cfaccfccc8d6. Bounds delta before recenter: 0.000005 m.

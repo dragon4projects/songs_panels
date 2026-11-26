@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/vintage_grandfather_clock_01
+Source SHA-256 5d3aa1d5daabe830aed603e448a8f14f3993ec8a1116e083c181420a4fe1573a
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.

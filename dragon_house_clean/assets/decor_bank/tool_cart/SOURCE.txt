@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/tool_cart
+Source SHA-256 ba4290f62b37dc08d4f99da2b3c78d8cb584bd229e8805ce586ed3f3b5303759
+Source yaw 0 degrees; uniform scale 0.88; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.

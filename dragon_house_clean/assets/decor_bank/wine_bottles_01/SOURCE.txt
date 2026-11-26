@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/wine_bottles_01
+Source SHA-256 70a8a5eabeac24cf298774aca78bbcf39145ca6bf5ebdf2f296edab73fbce039
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 28848 -> 9095; original source unchanged, optimized GLB SHA-256 c2ba518b3555243148b748fdb145f740932b11d6989dac2601dbed90b3e59629. Bounds delta before recenter: 0.000060 m.

@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/sungka_board
+Source SHA-256 962d9379a71bd64dbd1f9fb3a252030d941b609d1b7abaa9b72f6d24834a4201
+Source yaw -90 degrees; uniform scale 0.85; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.

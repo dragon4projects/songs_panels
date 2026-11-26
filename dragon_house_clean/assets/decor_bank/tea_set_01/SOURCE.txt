@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/tea_set_01
+Source SHA-256 479b93c5e5f121994a5582b329132c70c2076b2990673f9169721541e5c389a2
+Source yaw 0 degrees; uniform scale 0.75; pivot floor
+Uniform domestic physical scale; source aspect retained.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 40296 -> 9090; original source unchanged, optimized GLB SHA-256 008a1cbf62245db84430c3b0e8692182a3e91bee3ba9d896090112a23da364bc. Bounds delta before recenter: 0.000183 m.

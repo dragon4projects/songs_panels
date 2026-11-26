@@ -1,0 +1,5 @@
+CC0 Poly Haven https://polyhaven.com/a/chinese_armchair
+Original source glTF SHA-256: e0649ac9e63135627b824035e9a45a7c06411062589b971e633e5ab5f9e17f04
+Working source SHA-256: e0649ac9e63135627b824035e9a45a7c06411062589b971e633e5ab5f9e17f04
+Asset-only normalization yaw=0 uniform scale=0.67
+Owner approved: false

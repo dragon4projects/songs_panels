@@ -1,0 +1,34 @@
+Poly Haven CC0 1K material: https://polyhaven.com/a/grey_plaster_03
+Measured texture domain from source API: [1.0, 1.0] metres.
+{
+  "albedo.jpg": {
+    "sha256": "b0952ccabee3f68a1962684a8bc2fe64101b92e569cfd13cf1d8c11b65f395d9",
+    "size_px": [
+      1024,
+      1024
+    ],
+    "bytes": 486612,
+    "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/grey_plaster_03/grey_plaster_03_diff_1k.jpg",
+    "source_md5": "9c46bc51a016ff7e58769a7fdea0c0c9"
+  },
+  "normal.png": {
+    "sha256": "96b69c5dd7937ac8b489523a5b183d7db0292ac1c7da5fcb83ea1e43e288bda2",
+    "size_px": [
+      1024,
+      1024
+    ],
+    "bytes": 5908243,
+    "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/grey_plaster_03/grey_plaster_03_nor_gl_1k.png",
+    "source_md5": "bac82a1a555b22a495d258130381ca3f"
+  },
+  "roughness.jpg": {
+    "sha256": "6d51b445ed36d27887db7d0c5db23d6ef6aa3c1f49e7c65878ee80c66353c2ee",
+    "size_px": [
+      1024,
+      1024
+    ],
+    "bytes": 424960,
+    "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/grey_plaster_03/grey_plaster_03_rough_1k.jpg",
+    "source_md5": "b1695b63dd8dfc0d95215af310742030"
+  }
+}

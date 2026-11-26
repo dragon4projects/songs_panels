@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/wall_clock
+Source SHA-256 4e67385443e808bc709c054c1de5be1e83d4bf07eb0893884c301fec0bae8bc6
+Source yaw 180 degrees; uniform scale 1; pivot wall
+Native scale; no aspect stretch.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 3658 -> 2728; original source unchanged, optimized GLB SHA-256 1f0376608da7169e4ebbccdaeeaad1556dbcc37d8cd43a89cda97d6e19e65c0e. Bounds delta before recenter: 0.000026 m.

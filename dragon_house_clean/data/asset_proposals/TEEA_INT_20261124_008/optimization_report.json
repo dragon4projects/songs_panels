@@ -1,0 +1,733 @@
+{
+  "schema": 1,
+  "task_id": "TEEA_INT_20261124_008",
+  "base_repo": "dragon4projects/songs_panels",
+  "base_sha": "9c45da4f59dd40fb03f07ae0842000bb448efa93",
+  "latest_integration_sha_reviewed": "182360601f5c382d55e51a7c4566d553f8a8b42b",
+  "owner_approved": false,
+  "units": "m",
+  "axis": "X-right,Y-up,Z-front",
+  "status": "PARTIAL_READY",
+  "items": [
+    {
+      "id": "industrial_wall_sconce",
+      "triangle_budget": 8000,
+      "before_triangles": 9826,
+      "glb": "industrial_wall_sconce.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 7279,
+      "max_bounds_delta_m": 1.938971519482857e-06
+    },
+    {
+      "id": "desk_lamp_arm_01",
+      "triangle_budget": 8000,
+      "before_triangles": 24102,
+      "glb": "desk_lamp_arm_01.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 7279,
+      "max_bounds_delta_m": 0.00012262012466926486
+    },
+    {
+      "id": "classic_laptop",
+      "triangle_budget": 3000,
+      "before_triangles": 14450,
+      "glb": "classic_laptop.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2728,
+      "max_bounds_delta_m": 0.0012787022401092862
+    },
+    {
+      "id": "boombox",
+      "triangle_budget": 10000,
+      "before_triangles": 10168,
+      "glb": "boombox.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 9099,
+      "max_bounds_delta_m": 7.211705087134535e-07
+    },
+    {
+      "id": "portable_cassette_player",
+      "triangle_budget": 3000,
+      "before_triangles": 13307,
+      "glb": "portable_cassette_player.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2729,
+      "max_bounds_delta_m": 0.0007445776672363319
+    },
+    {
+      "id": "gaming_console",
+      "triangle_budget": 3000,
+      "before_triangles": 31710,
+      "glb": "gaming_console.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2811,
+      "max_bounds_delta_m": 0.010428263848517097
+    },
+    {
+      "id": "gamepad",
+      "triangle_budget": 3000,
+      "before_triangles": 9546,
+      "glb": "gamepad.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2730,
+      "max_bounds_delta_m": 0.00014931730268237173
+    },
+    {
+      "id": "korean_public_payphone_01",
+      "triangle_budget": 10000,
+      "before_triangles": 48132,
+      "glb": "korean_public_payphone_01.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 9100,
+      "max_bounds_delta_m": 0.0019360049400329316
+    },
+    {
+      "id": "wall_clock",
+      "triangle_budget": 3000,
+      "before_triangles": 3658,
+      "glb": "wall_clock.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2728,
+      "max_bounds_delta_m": 2.63018655776992e-05
+    },
+    {
+      "id": "wicker_basket_01",
+      "triangle_budget": 3000,
+      "before_triangles": 22276,
+      "glb": "wicker_basket_01.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2729,
+      "max_bounds_delta_m": 0.0011325428840629759
+    },
+    {
+      "id": "wicker_basket_02",
+      "triangle_budget": 3000,
+      "before_triangles": 17850,
+      "glb": "wicker_basket_02.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2729,
+      "max_bounds_delta_m": 0.0005171124892234813
+    },
+    {
+      "id": "binder_notebook",
+      "triangle_budget": 10000,
+      "before_triangles": 18077,
+      "glb": "binder_notebook.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 9098,
+      "max_bounds_delta_m": 3.3887125296699905e-05
+    },
+    {
+      "id": "vintage_suitcase",
+      "triangle_budget": 10000,
+      "before_triangles": 16474,
+      "glb": "vintage_suitcase.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 9094,
+      "max_bounds_delta_m": 0.00023482516984562295
+    },
+    {
+      "id": "wooden_bowl_02",
+      "triangle_budget": 3000,
+      "before_triangles": 4666,
+      "glb": "wooden_bowl_02.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2729,
+      "max_bounds_delta_m": 3.0375861415410377e-05
+    },
+    {
+      "id": "tea_set_01",
+      "triangle_budget": 10000,
+      "before_triangles": 40296,
+      "glb": "tea_set_01.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 9090,
+      "max_bounds_delta_m": 0.00018346967911719858
+    },
+    {
+      "id": "modified_thermos",
+      "triangle_budget": 3000,
+      "before_triangles": 11576,
+      "glb": "modified_thermos.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2730,
+      "max_bounds_delta_m": 0.00016159929028951997
+    },
+    {
+      "id": "potted_plant_04",
+      "triangle_budget": 3000,
+      "before_triangles": 8929,
+      "glb": "potted_plant_04.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2726,
+      "max_bounds_delta_m": 0.0004359466620371677
+    },
+    {
+      "id": "metal_tool_chest",
+      "triangle_budget": 10000,
+      "before_triangles": 13360,
+      "glb": "metal_tool_chest.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 9096,
+      "max_bounds_delta_m": 3.128818129027877e-07
+    },
+    {
+      "id": "alarm_clock_01",
+      "triangle_budget": 3000,
+      "before_triangles": 8985,
+      "glb": "alarm_clock_01.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2728,
+      "max_bounds_delta_m": 0.00028538744449616016
+    },
+    {
+      "id": "ceramic_vase_02",
+      "triangle_budget": 3000,
+      "before_triangles": 11128,
+      "glb": "ceramic_vase_02.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2729,
+      "max_bounds_delta_m": 0.0002991499707108991
+    },
+    {
+      "id": "potted_plant_02",
+      "triangle_budget": 10000,
+      "before_triangles": 69806,
+      "glb": "potted_plant_02.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 9097,
+      "max_bounds_delta_m": 0.0009360083561540944
+    },
+    {
+      "id": "chess_set",
+      "triangle_budget": 3000,
+      "before_triangles": 76920,
+      "glb": "chess_set.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2714,
+      "max_bounds_delta_m": 0.0018485190921637695
+    },
+    {
+      "id": "book_encyclopedia_set_01",
+      "triangle_budget": 10000,
+      "before_triangles": 67306,
+      "glb": "book_encyclopedia_set_01.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 9084,
+      "max_bounds_delta_m": 0.0003401853644344893
+    },
+    {
+      "id": "jug_01",
+      "triangle_budget": 3000,
+      "before_triangles": 5770,
+      "glb": "jug_01.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2729,
+      "max_bounds_delta_m": 0.0001763177707375524
+    },
+    {
+      "id": "wooden_bowl_01",
+      "triangle_budget": 3000,
+      "before_triangles": 14122,
+      "glb": "wooden_bowl_01.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2729,
+      "max_bounds_delta_m": 0.0004545153229846832
+    },
+    {
+      "id": "brass_diya_lantern",
+      "triangle_budget": 3000,
+      "before_triangles": 12742,
+      "glb": "brass_diya_lantern.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2727,
+      "max_bounds_delta_m": 0.0011803767834340992
+    },
+    {
+      "id": "brass_candleholders",
+      "triangle_budget": 10000,
+      "before_triangles": 41936,
+      "glb": "brass_candleholders.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 9097,
+      "max_bounds_delta_m": 8.578095210820535e-07
+    },
+    {
+      "id": "treasure_chest",
+      "triangle_budget": 10000,
+      "before_triangles": 103330,
+      "glb": "treasure_chest.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 9098,
+      "max_bounds_delta_m": 0.0006256667045328457
+    },
+    {
+      "id": "GothicBed_01",
+      "triangle_budget": 10000,
+      "before_triangles": 18745,
+      "glb": "GothicBed_01.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 9100,
+      "max_bounds_delta_m": 0.00106006724929808
+    },
+    {
+      "id": "Chandelier_01",
+      "triangle_budget": 8000,
+      "before_triangles": 26860,
+      "glb": "Chandelier_01.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 7279,
+      "max_bounds_delta_m": 0.00027435510693724074
+    },
+    {
+      "id": "Chandelier_03",
+      "triangle_budget": 8000,
+      "before_triangles": 29301,
+      "glb": "Chandelier_03.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 7280,
+      "max_bounds_delta_m": 0.0005074297628528401
+    },
+    {
+      "id": "CoffeeCart_01",
+      "triangle_budget": 10000,
+      "before_triangles": 27659,
+      "glb": "CoffeeCart_01.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 9097,
+      "max_bounds_delta_m": 0.000883197119712742
+    },
+    {
+      "id": "antique_ceramic_vase_01",
+      "triangle_budget": 3000,
+      "before_triangles": 9408,
+      "glb": "antique_ceramic_vase_01.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2730,
+      "max_bounds_delta_m": 0.00032366295757461916
+    },
+    {
+      "id": "brass_goblets",
+      "triangle_budget": 3000,
+      "before_triangles": 9600,
+      "glb": "brass_goblets.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2727,
+      "max_bounds_delta_m": 0.00025250199263227024
+    },
+    {
+      "id": "brass_pan_01",
+      "triangle_budget": 3000,
+      "before_triangles": 4340,
+      "glb": "brass_pan_01.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2729,
+      "max_bounds_delta_m": 4.79652214049886e-06
+    },
+    {
+      "id": "brass_pot_01",
+      "triangle_budget": 3000,
+      "before_triangles": 3760,
+      "glb": "brass_pot_01.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2730,
+      "max_bounds_delta_m": 1.75521328598105e-05
+    },
+    {
+      "id": "brass_pot_02",
+      "triangle_budget": 3000,
+      "before_triangles": 3344,
+      "glb": "brass_pot_02.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2730,
+      "max_bounds_delta_m": 2.2196493148801677e-05
+    },
+    {
+      "id": "brass_vase_01",
+      "triangle_budget": 10000,
+      "before_triangles": 21440,
+      "glb": "brass_vase_01.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 9100,
+      "max_bounds_delta_m": 9.43580764532076e-05
+    },
+    {
+      "id": "brass_vase_02",
+      "triangle_budget": 3000,
+      "before_triangles": 6890,
+      "glb": "brass_vase_02.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2730,
+      "max_bounds_delta_m": 0.0001518339360480599
+    },
+    {
+      "id": "bull_head",
+      "triangle_budget": 3000,
+      "before_triangles": 17148,
+      "glb": "bull_head.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2730,
+      "max_bounds_delta_m": 0.00045058080554008506
+    },
+    {
+      "id": "bunsen_burner",
+      "triangle_budget": 3000,
+      "before_triangles": 8434,
+      "glb": "bunsen_burner.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2729,
+      "max_bounds_delta_m": 0.00011182161855698147
+    },
+    {
+      "id": "cassette_player",
+      "triangle_budget": 3000,
+      "before_triangles": 4830,
+      "glb": "cassette_player.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2729,
+      "max_bounds_delta_m": 6.061988893357739e-07
+    },
+    {
+      "id": "ceramic_vase_01",
+      "triangle_budget": 3000,
+      "before_triangles": 10296,
+      "glb": "ceramic_vase_01.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2729,
+      "max_bounds_delta_m": 0.00041324307935300397
+    },
+    {
+      "id": "ceramic_vase_03",
+      "triangle_budget": 3000,
+      "before_triangles": 11136,
+      "glb": "ceramic_vase_03.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2730,
+      "max_bounds_delta_m": 5.0081115992077485e-05
+    },
+    {
+      "id": "ceramic_vase_04",
+      "triangle_budget": 3000,
+      "before_triangles": 9000,
+      "glb": "ceramic_vase_04.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2730,
+      "max_bounds_delta_m": 0.0003523425307325051
+    },
+    {
+      "id": "chemistry_set",
+      "triangle_budget": 10000,
+      "before_triangles": 41958,
+      "glb": "chemistry_set.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 9065,
+      "max_bounds_delta_m": 0.00031744170682007633
+    },
+    {
+      "id": "electric_stove",
+      "triangle_budget": 10000,
+      "before_triangles": 13914,
+      "glb": "electric_stove.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 9088,
+      "max_bounds_delta_m": 8.566037416612993e-07
+    },
+    {
+      "id": "fancy_picture_frame_02",
+      "triangle_budget": 10000,
+      "before_triangles": 35102,
+      "glb": "fancy_picture_frame_02.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 9100,
+      "max_bounds_delta_m": 7.143103916196214e-05
+    },
+    {
+      "id": "filmstrip_projector_8mm",
+      "triangle_budget": 10000,
+      "before_triangles": 32697,
+      "glb": "filmstrip_projector_8mm.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 9092,
+      "max_bounds_delta_m": 0.0003469038458004392
+    },
+    {
+      "id": "gothic_statue",
+      "triangle_budget": 10000,
+      "before_triangles": 27739,
+      "glb": "gothic_statue.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 9100,
+      "max_bounds_delta_m": 0.0014530580728800424
+    },
+    {
+      "id": "hanging_picture_frame_03",
+      "triangle_budget": 10000,
+      "before_triangles": 24348,
+      "glb": "hanging_picture_frame_03.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 9098,
+      "max_bounds_delta_m": 0.00010420153369011809
+    },
+    {
+      "id": "horse_head",
+      "triangle_budget": 3000,
+      "before_triangles": 12068,
+      "glb": "horse_head.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2730,
+      "max_bounds_delta_m": 0.000872053280545515
+    },
+    {
+      "id": "industrial_coffee_table",
+      "triangle_budget": 15000,
+      "before_triangles": 41300,
+      "glb": "industrial_coffee_table.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 13650,
+      "max_bounds_delta_m": 0.0007976718325189425
+    },
+    {
+      "id": "katana_stand_01",
+      "triangle_budget": 3000,
+      "before_triangles": 3780,
+      "glb": "katana_stand_01.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2730,
+      "max_bounds_delta_m": 2.758159637350488e-07
+    },
+    {
+      "id": "lambis_shell",
+      "triangle_budget": 3000,
+      "before_triangles": 12498,
+      "glb": "lambis_shell.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2729,
+      "max_bounds_delta_m": 0.0003755616932958339
+    },
+    {
+      "id": "lion_head",
+      "triangle_budget": 3000,
+      "before_triangles": 47214,
+      "glb": "lion_head.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2729,
+      "max_bounds_delta_m": 0.00046561230862141034
+    },
+    {
+      "id": "lubricant_spray",
+      "triangle_budget": 3000,
+      "before_triangles": 5476,
+      "glb": "lubricant_spray.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2727,
+      "max_bounds_delta_m": 5.027222633388617e-07
+    },
+    {
+      "id": "mantel_clock_01",
+      "triangle_budget": 3000,
+      "before_triangles": 25721,
+      "glb": "mantel_clock_01.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2728,
+      "max_bounds_delta_m": 6.755555534362911e-05
+    },
+    {
+      "id": "marble_bust_01",
+      "triangle_budget": 3000,
+      "before_triangles": 17456,
+      "glb": "marble_bust_01.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2730,
+      "max_bounds_delta_m": 0.0004847400667667423
+    },
+    {
+      "id": "metal_jug",
+      "triangle_budget": 3000,
+      "before_triangles": 6040,
+      "glb": "metal_jug.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2729,
+      "max_bounds_delta_m": 0.00019734424161911568
+    },
+    {
+      "id": "old_drill_press",
+      "triangle_budget": 10000,
+      "before_triangles": 21842,
+      "glb": "old_drill_press.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 9099,
+      "max_bounds_delta_m": 0.0003040289240335836
+    },
+    {
+      "id": "ornate_mirror_01",
+      "triangle_budget": 10000,
+      "before_triangles": 14246,
+      "glb": "ornate_mirror_01.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 9099,
+      "max_bounds_delta_m": 3.216859286652579e-06
+    },
+    {
+      "id": "planter_box_02",
+      "triangle_budget": 10000,
+      "before_triangles": 10944,
+      "glb": "planter_box_02.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 9100,
+      "max_bounds_delta_m": 4.409587766796008e-05
+    },
+    {
+      "id": "planter_box_03",
+      "triangle_budget": 10000,
+      "before_triangles": 13112,
+      "glb": "planter_box_03.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 9100,
+      "max_bounds_delta_m": 9.72158532508427e-07
+    },
+    {
+      "id": "pot_enamel_01",
+      "triangle_budget": 3000,
+      "before_triangles": 11416,
+      "glb": "pot_enamel_01.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2728,
+      "max_bounds_delta_m": 0.00018509932994842382
+    },
+    {
+      "id": "potted_plant_01",
+      "triangle_budget": 10000,
+      "before_triangles": 176226,
+      "glb": "potted_plant_01.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 9098,
+      "max_bounds_delta_m": 0.0028637335452249
+    },
+    {
+      "id": "sungka_board_02",
+      "triangle_budget": 10000,
+      "before_triangles": 42558,
+      "glb": "sungka_board_02.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 9099,
+      "max_bounds_delta_m": 0.00024195797412032705
+    },
+    {
+      "id": "vintage_cabinet_01",
+      "triangle_budget": 30000,
+      "before_triangles": 61096,
+      "glb": "vintage_cabinet_01.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 27292,
+      "max_bounds_delta_m": 8.46471605695509e-05
+    },
+    {
+      "id": "vintage_electric_kettle",
+      "triangle_budget": 3000,
+      "before_triangles": 14838,
+      "glb": "vintage_electric_kettle.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2730,
+      "max_bounds_delta_m": 0.0005982988514006138
+    },
+    {
+      "id": "vintage_telephone_wall_clock",
+      "triangle_budget": 10000,
+      "before_triangles": 15864,
+      "glb": "vintage_telephone_wall_clock.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 9099,
+      "max_bounds_delta_m": 3.9637986183171936e-05
+    },
+    {
+      "id": "wine_bottles_01",
+      "triangle_budget": 10000,
+      "before_triangles": 28848,
+      "glb": "wine_bottles_01.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 9095,
+      "max_bounds_delta_m": 6.013890742906369e-05
+    },
+    {
+      "id": "wooden_candlestick",
+      "triangle_budget": 3000,
+      "before_triangles": 212992,
+      "glb": "wooden_candlestick.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2730,
+      "max_bounds_delta_m": 5.877763396711089e-05
+    },
+    {
+      "id": "wooden_picnic_table",
+      "triangle_budget": 10000,
+      "before_triangles": 10210,
+      "glb": "wooden_picnic_table.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 9100,
+      "max_bounds_delta_m": 9.733519875654295e-07
+    },
+    {
+      "id": "wooden_stool_02",
+      "triangle_budget": 3000,
+      "before_triangles": 11146,
+      "glb": "wooden_stool_02.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2729,
+      "max_bounds_delta_m": 0.00012025522843747694
+    },
+    {
+      "id": "decorative_book_set_01",
+      "triangle_budget": 10000,
+      "before_triangles": 397856,
+      "glb": "decorative_book_set_01.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 9405,
+      "max_bounds_delta_m": 0.0057448988704543735
+    },
+    {
+      "id": "horse_statue_01",
+      "triangle_budget": 3000,
+      "before_triangles": 22388,
+      "glb": "horse_statue_01.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2159,
+      "max_bounds_delta_m": 0.0002911644416898479
+    },
+    {
+      "id": "concrete_cat_statue",
+      "triangle_budget": 3000,
+      "before_triangles": 11950,
+      "glb": "concrete_cat_statue.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2729,
+      "max_bounds_delta_m": 0.00022337435722352694
+    },
+    {
+      "id": "garden_gnome",
+      "triangle_budget": 10000,
+      "before_triangles": 28858,
+      "glb": "garden_gnome.glb",
+      "max_texture_target_px": 1024,
+      "after_triangles": 9100,
+      "max_bounds_delta_m": 0.00018475700077413837
+    },
+    {
+      "id": "rubber_duck_toy",
+      "triangle_budget": 3000,
+      "before_triangles": 4288,
+      "glb": "rubber_duck_toy.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2729,
+      "max_bounds_delta_m": 1.4994633602327667e-05
+    },
+    {
+      "id": "seadogs_compass",
+      "triangle_budget": 3000,
+      "before_triangles": 11645,
+      "glb": "seadogs_compass.glb",
+      "max_texture_target_px": 512,
+      "after_triangles": 2727,
+      "max_bounds_delta_m": 0.00022406424131697633
+    }
+  ]
+}

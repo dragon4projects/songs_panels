@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/katana_stand_01
+Source SHA-256 d69057f6c0f06cc28622c3c827f783d32638bfc7488b416dd56c49d01e9aaab4
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 3780 -> 2730; original source unchanged, optimized GLB SHA-256 978ac33c299197be140700b23e400b84ff6f0f66a5122cff536c3d92ae53bdaf. Bounds delta before recenter: 0.000000 m.

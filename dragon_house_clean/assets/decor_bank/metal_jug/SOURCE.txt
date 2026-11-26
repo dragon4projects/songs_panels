@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/metal_jug
+Source SHA-256 951357b6ec89a0d2b87674930eb832ae33d4b9c95781c8855f330bf7b2947759
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 6040 -> 2729; original source unchanged, optimized GLB SHA-256 6928da490d4f8af90b676baba7741dbc911a5cffb6ae39ea124973b8d651a7ea. Bounds delta before recenter: 0.000197 m.

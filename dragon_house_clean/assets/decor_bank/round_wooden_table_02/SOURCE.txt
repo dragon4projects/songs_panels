@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/round_wooden_table_02
+Source SHA-256 df65c35148280a06efcc06bfa75432bb13f29318e869597fc94f364ce2b55974
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native scale; no aspect stretch.
+Candidate: owner_approved=false.

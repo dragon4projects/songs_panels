@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/book_encyclopedia_set_01
+Source SHA-256 89eb80fffd619ebbe5043d632bd8cf25b2d68a3614aee2f356e850c69ae498ba
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 67306 -> 9084; original source unchanged, optimized GLB SHA-256 bcf0145ea35d80a549f993b3debf42983c125558cc13a97a8dd2d6df3faf5c99. Bounds delta before recenter: 0.000340 m.

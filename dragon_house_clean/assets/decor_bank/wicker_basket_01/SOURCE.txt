@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/wicker_basket_01
+Source SHA-256 9ad86c33f00f46a18c9bc8bfc28c0036090ee819f7270d0028ec408512c04094
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native scale; no aspect stretch.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 22276 -> 2729; original source unchanged, optimized GLB SHA-256 0665b6fbee235280a87a94015677ca4d5b1980655fa11b36d3340bfc37f2ab00. Bounds delta before recenter: 0.001133 m.

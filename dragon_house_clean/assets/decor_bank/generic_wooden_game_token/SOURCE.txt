@@ -1,0 +1,5 @@
+PROJECT_AUTHORED_CANDIDATE
+Project-authored generic small prop
+Derived toy-sized mesh; no historical or owned object identity.
+Working GLB SHA-256 0224ec3331fe0db1ea541d58dd25127497ed83d140a524c3b2202d69fbf02402
+Independent game token, not a fused board.

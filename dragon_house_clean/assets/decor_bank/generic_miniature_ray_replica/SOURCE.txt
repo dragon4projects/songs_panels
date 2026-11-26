@@ -1,0 +1,5 @@
+CC0 Poly Haven https://polyhaven.com/a/bronze_ray_statue
+Original source glTF SHA-256: bb2cab3316b05935fd311e132298d15076af9d6ddd88980abca1dea790c6305e
+Working source SHA-256: bb2cab3316b05935fd311e132298d15076af9d6ddd88980abca1dea790c6305e
+Asset-only normalization yaw=0 uniform scale=0.13
+Owner approved: false

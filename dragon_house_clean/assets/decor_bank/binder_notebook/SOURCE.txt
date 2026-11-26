@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/binder_notebook
+Source SHA-256 714596552fad383ae3ca76d42038b03a20b6864d6ef5bc6d12620ac21fef1b1e
+Source yaw 0 degrees; uniform scale 0.8; pivot floor
+Uniform domestic physical scale; source aspect retained.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 18077 -> 9098; original source unchanged, optimized GLB SHA-256 05cd582c43cb1ed2d0f6686333a3aa5d53705ecdfa51ff448c2c8a82c67b601d. Bounds delta before recenter: 0.000034 m.

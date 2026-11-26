@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/modern_arm_chair_01
+Source SHA-256 d31be520add2603447b43acedbdacf9516866f7c89e9ea9230c9edbac9cc6e6a
+Source yaw 0 degrees; uniform scale 0.86; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.

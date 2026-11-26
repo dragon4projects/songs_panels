@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/russian_food_cans_01
+Source SHA-256 13ac2f451403a95fda749d822e6911abc0ae2db682467b97a2da1adbaf18fada
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native scale; no aspect stretch.
+Candidate: owner_approved=false.

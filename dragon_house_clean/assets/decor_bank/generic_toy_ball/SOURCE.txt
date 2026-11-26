@@ -1,0 +1,5 @@
+PROJECT_AUTHORED_CANDIDATE
+Project-authored generic small prop
+Derived toy-sized mesh; no historical or owned object identity.
+Working GLB SHA-256 7cb5845a0391077e2fa43f99cacc6def7b667df0d3dcb7dcc288bc4594284339
+Soft harmless toy ball with contrasting equatorial band.

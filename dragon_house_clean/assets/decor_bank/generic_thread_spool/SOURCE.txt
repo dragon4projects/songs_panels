@@ -1,0 +1,5 @@
+PROJECT_AUTHORED_CANDIDATE
+Project-authored generic small prop
+Derived toy-sized mesh; no historical or owned object identity.
+Working GLB SHA-256 917ffcdb1df4e625de2a2c63e5e65be41510c7e99dca5741211d16d0ccd2ab5b
+Independent ordinary toy-sized spool; no sharp part.

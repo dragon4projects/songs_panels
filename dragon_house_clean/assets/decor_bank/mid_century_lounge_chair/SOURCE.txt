@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/mid_century_lounge_chair
+Source SHA-256 47c5769ee4dfa350e2506a6a76d8ef58a1e1060344acda35c503ddff46645d26
+Source yaw 0 degrees; uniform scale 0.78; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.

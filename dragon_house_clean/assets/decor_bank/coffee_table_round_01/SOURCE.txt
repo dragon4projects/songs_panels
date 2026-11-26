@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/coffee_table_round_01
+Source SHA-256 58fe785584f8999f760e590b04ce74f83962d42c9440ab9415910f63a31165dc
+Source yaw 0 degrees; uniform scale 0.8; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.

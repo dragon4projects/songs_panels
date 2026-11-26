@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/seadogs_compass
+Source SHA-256 eb43affaa88dcf40d47318d096f14b709d8ddc34bad46b67ed038b807e56df07
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native scale separate from previously derived miniature; symmetric or free-facing display object, no directional interaction.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 11645 -> 2727; original source unchanged, optimized GLB SHA-256 2d19be3ad0fc962c2a194900532406c6ccc9d03c14340921a36b24f3e3f75bd7. Bounds delta before recenter: 0.000224 m.

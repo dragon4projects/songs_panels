@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/painted_wooden_chair_02
+Source SHA-256 e69f4558d236e0fcc9d31a85ab75117e75d224d21e04836aa438821ccf1fd2c1
+Source yaw 0 degrees; uniform scale 0.85; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.

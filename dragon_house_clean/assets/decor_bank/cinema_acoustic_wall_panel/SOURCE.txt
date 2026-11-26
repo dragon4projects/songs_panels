@@ -1,0 +1,6 @@
+CC0 1.0 Universal
+https://3dassets.dev/assets/cinema-multiplex-and-foyer-acoustic-wall-panel-module-a623eafe
+Source GLB SHA-256 f7ae5c6581f05954ce0ea28b067909e0d1847102ad837cbbff7436c550d7a2fe
+Uniform import scale 0.76; canonical pivot wall.
+Candidate, no owner approval.
+KHR_mesh_quantization decoded to float32 attributes; preserved original node transforms; source untouched.

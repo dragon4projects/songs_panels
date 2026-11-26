@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/potted_plant_02
+Source SHA-256 c533dcce0d1aa4379eb7db04601a04983f8df2422b28578de922655a416e64a9
+Source yaw 0 degrees; uniform scale 0.8; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 69806 -> 9097; original source unchanged, optimized GLB SHA-256 d2ab2fdb632ed04aab06b8e0636f08767177a8ee711fde009302192c1d6d9610. Bounds delta before recenter: 0.000936 m.

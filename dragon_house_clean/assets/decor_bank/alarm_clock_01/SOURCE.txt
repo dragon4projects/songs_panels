@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/alarm_clock_01
+Source SHA-256 ca16e83e334e28f8eaf2bf1fbf8ce043b7e4fe5d0e171d01a264b12f5f42a78c
+Source yaw 180 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 8985 -> 2728; original source unchanged, optimized GLB SHA-256 5a822398d1c567489a4333a22a6984c9c96f0a61cca16347a58a0b39fa940be2. Bounds delta before recenter: 0.000285 m.

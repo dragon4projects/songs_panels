@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/bench_vice_01
+Source SHA-256 52e61b473f1a7840ddbdabf024cca8dd32e07f694bd247e3a74e8ef5d9a101e2
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.

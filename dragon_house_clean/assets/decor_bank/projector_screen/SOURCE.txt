@@ -1,0 +1,5 @@
+CC0 Poly Haven https://polyhaven.com/a/projector_screen
+Original source glTF SHA-256: ce979c8042956e0f33c5f551262f81ecd43d0e929ee2400a1a460febf800f144
+Working source SHA-256: ce979c8042956e0f33c5f551262f81ecd43d0e929ee2400a1a460febf800f144
+Asset-only normalization yaw=0 uniform scale=1.0
+Owner approved: false

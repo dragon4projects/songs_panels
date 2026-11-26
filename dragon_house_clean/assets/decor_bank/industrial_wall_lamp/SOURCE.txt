@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/industrial_wall_lamp
+Source SHA-256 5a2c0d8bdb52fe168727f4200818ac0c2adbded32f0b9dc09cfe224249f9e266
+Source yaw 0 degrees; uniform scale 1; pivot wall
+Native scale; no aspect stretch.
+Candidate: owner_approved=false.

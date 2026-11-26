@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/brass_diya_lantern
+Source SHA-256 6b908c48f0f5300ba561cbcfe38e938863e8d1d33569e9a1fab6c7e9c16f8e95
+Source yaw 0 degrees; uniform scale 0.85; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 12742 -> 2727; original source unchanged, optimized GLB SHA-256 646a3681ea76591f57da59ab74fb4774da225b799e812bb37f16ba70a88c1739. Bounds delta before recenter: 0.001180 m.

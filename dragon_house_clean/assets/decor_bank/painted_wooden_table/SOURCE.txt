@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/painted_wooden_table
+Source SHA-256 7e1ba86ae2c570e3464c42556e4e6cc09186a99127b86eaf54e7dbecb2fbafc3
+Source yaw 0 degrees; uniform scale 0.7; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.

@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/jug_01
+Source SHA-256 87dc40eb3e45b0185699f18cf5988b81fe5b1a01f0cf76c1daa93774878d7e44
+Source yaw 0 degrees; uniform scale 0.9; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 5770 -> 2729; original source unchanged, optimized GLB SHA-256 33a033b54beb20d9cb0a1b35d98776b7b4659d1718ff7ae4366a99491816e627. Bounds delta before recenter: 0.000176 m.

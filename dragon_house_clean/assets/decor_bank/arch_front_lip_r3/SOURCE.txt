@@ -1,0 +1,2 @@
+PROJECT_ORIGINAL geometry; CC0 Poly Haven textures as listed in shared _materials SOURCE.txt.
+Render-only candidate, no topology, collision, private content or owner approval.

@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/wooden_bowl_01
+Source SHA-256 7fe0d6aa4b58e1b9bfc704a8142f4f23f651640c5701b26037fbee3c01613c3b
+Source yaw 0 degrees; uniform scale 0.85; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 14122 -> 2729; original source unchanged, optimized GLB SHA-256 627064d81bc837a856dc2270ca39f232707efa696f1b5ce5b33eefb5b1ad7ab9. Bounds delta before recenter: 0.000455 m.

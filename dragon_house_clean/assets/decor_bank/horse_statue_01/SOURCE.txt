@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/horse_statue_01
+Source SHA-256 64e33e68ef427d0e7e401808d605b7d24208ae72b63f97ddf6716bc423b374ba
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 22388 -> 2159; original source unchanged, optimized GLB SHA-256 f67fdbeb94e76fafb8192d66d3f65654147752d31c6270f6eb9d66ff2dbd7267. Bounds delta before recenter: 0.000291 m.

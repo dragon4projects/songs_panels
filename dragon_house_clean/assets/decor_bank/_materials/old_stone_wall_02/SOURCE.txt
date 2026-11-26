@@ -1,0 +1,34 @@
+Poly Haven CC0 1K material: https://polyhaven.com/a/old_stone_wall_02
+Measured texture domain from source API: [2.085, 2.085] metres.
+{
+  "albedo.jpg": {
+    "sha256": "2b841b146fc5aa48b7a63143c5c1b6679c7645320cce31c97bd38d541f5144ac",
+    "size_px": [
+      1024,
+      1024
+    ],
+    "bytes": 822548,
+    "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/old_stone_wall_02/old_stone_wall_02_diff_1k.jpg",
+    "source_md5": "fdcda49a46624dc1e0dba52a8f006c7f"
+  },
+  "normal.png": {
+    "sha256": "e2f982fd977405516df057282667de6148068f77b73e09547a22f6f7e9e8d9c1",
+    "size_px": [
+      1024,
+      1024
+    ],
+    "bytes": 5831291,
+    "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/old_stone_wall_02/old_stone_wall_02_nor_gl_1k.png",
+    "source_md5": "66378353f8df9d48a053d34a0d22e883"
+  },
+  "roughness.jpg": {
+    "sha256": "d3c0474c4db68f4668dee70ca667cfbea3ffd7031693d50e1524c29d3ca45813",
+    "size_px": [
+      1024,
+      1024
+    ],
+    "bytes": 181157,
+    "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/old_stone_wall_02/old_stone_wall_02_rough_1k.jpg",
+    "source_md5": "9914a5f2b5b93d7f4f3bbb3f5b727a14"
+  }
+}

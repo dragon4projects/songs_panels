@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/metal_stool_03
+Source SHA-256 97d7b64c170f6c91982be77beab1c994743ca3d9dc90525e8d3618d402597516
+Source yaw 0 degrees; uniform scale 0.76; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.

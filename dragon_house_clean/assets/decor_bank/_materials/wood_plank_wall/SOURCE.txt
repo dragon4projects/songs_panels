@@ -1,0 +1,34 @@
+Poly Haven CC0 1K material: https://polyhaven.com/a/wood_plank_wall
+Measured texture domain from source API: [1.0, 1.0] metres.
+{
+  "albedo.jpg": {
+    "sha256": "680a9959d3f805254e00b3ce9adaffb7b01dccbe84f3e89379bb5f91a116ada5",
+    "size_px": [
+      1024,
+      1024
+    ],
+    "bytes": 498698,
+    "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_plank_wall/wood_plank_wall_diff_1k.jpg",
+    "source_md5": "7ecc889d40023f64b311dd5868a296d5"
+  },
+  "normal.png": {
+    "sha256": "c26881ef61099335dc5d597d5224423b7e8f7a20f074d5151e99ea2c4472d5f3",
+    "size_px": [
+      1024,
+      1024
+    ],
+    "bytes": 5395975,
+    "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/wood_plank_wall/wood_plank_wall_nor_gl_1k.png",
+    "source_md5": "5b31fc468e8bb3d0bf0f0cceab8bb1a4"
+  },
+  "roughness.jpg": {
+    "sha256": "11f02759e2e5f49c9963848ea537a7e020661c4913b734e6be7a432e23b75210",
+    "size_px": [
+      1024,
+      1024
+    ],
+    "bytes": 384348,
+    "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_plank_wall/wood_plank_wall_rough_1k.jpg",
+    "source_md5": "3257d0accf11735c74be50ef5897f86e"
+  }
+}

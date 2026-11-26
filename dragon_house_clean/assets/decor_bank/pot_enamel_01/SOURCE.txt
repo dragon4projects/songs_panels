@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/pot_enamel_01
+Source SHA-256 ca60a8399463429cf23e04784334cbe344886e5c8747860ad9ad44c044e03dde
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 11416 -> 2728; original source unchanged, optimized GLB SHA-256 8c9f52a63dc3f11d9381fd9d452a98a20882ce51c594beb6a2dc636a5429708a. Bounds delta before recenter: 0.000185 m.

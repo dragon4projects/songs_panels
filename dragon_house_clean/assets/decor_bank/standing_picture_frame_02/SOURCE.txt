@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/standing_picture_frame_02
+Source SHA-256 72f70a0845a494ac88a85184e749a078ea0ad8155f6ccffb15c6c69477231c96
+Source yaw -90 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.

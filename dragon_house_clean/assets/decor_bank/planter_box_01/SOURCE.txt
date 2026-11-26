@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/planter_box_01
+Source SHA-256 15c7ff7396d872e5cad6743c796ff0f42e1f3f831fd334a26aa1fdbd11834a1f
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.

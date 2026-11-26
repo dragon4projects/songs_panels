@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/mantel_clock_01
+Source SHA-256 e4c4f264175626fa14f12409ee5d687cf7f0d68fd1881cb7eb927c5f112de6ab
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 25721 -> 2728; original source unchanged, optimized GLB SHA-256 fa73a242e82ea95d803a86e7beeb3b494ee92410a57fdebf03349a12040b3bf9. Bounds delta before recenter: 0.000068 m.

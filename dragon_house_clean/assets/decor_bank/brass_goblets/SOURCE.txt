@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/brass_goblets
+Source SHA-256 f78416e66ef2dc2de3aadfbd3bcd5da78902bc129764bc92bf62436cea6c4c65
+Source yaw 0 degrees; uniform scale 0.85; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 9600 -> 2727; original source unchanged, optimized GLB SHA-256 65df0eff4920958e2fc1be1f756a41010b42d6a7883226a1f914b740f21452fa. Bounds delta before recenter: 0.000253 m.

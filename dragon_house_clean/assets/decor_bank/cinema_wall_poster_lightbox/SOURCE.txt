@@ -1,0 +1,6 @@
+CC0 1.0 Universal
+https://3dassets.dev/assets/cinema-multiplex-and-foyer-poster-light-box-wall-997574ca
+Source GLB SHA-256 b8f0d2f9d273cffb9fab9008b190a39b6d4866715527e6cbef143809ba163fea
+Uniform import scale 0.72; canonical pivot wall.
+Candidate, no owner approval.
+KHR_mesh_quantization decoded to float32 attributes; preserved original node transforms; source untouched.

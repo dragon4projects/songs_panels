@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/dartboard
+Source SHA-256 8535a0c0a954bd6db863f975ef9f6ae9dea27d43a2371fb8484cf40bc0e4e7b9
+Source yaw 0 degrees; uniform scale 1; pivot wall
+Native source scale.
+Candidate: owner_approved=false.

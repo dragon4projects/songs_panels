@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/chemistry_set
+Source SHA-256 e02dd6433880fd3dfab82b254a6fe909c38d5a8be184b5b21004d231c11991b6
+Source yaw 0 degrees; uniform scale 0.7; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 41958 -> 9065; original source unchanged, optimized GLB SHA-256 f8a50b448deff57a15c4d05b4282ce9c477bd3c1ea52b622e45bdbaac28ce0e1. Bounds delta before recenter: 0.000317 m.

@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/CoffeeCart_01
+Source SHA-256 3f4e7e79e751662a767c22b21c34dfb6f7d414d56dda60a236ad7d621d211934
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 27659 -> 9097; original source unchanged, optimized GLB SHA-256 580deebd8c60cabaa57c51f5452de6bfcebe1f23519a0099979bec9681f77a22. Bounds delta before recenter: 0.000883 m.

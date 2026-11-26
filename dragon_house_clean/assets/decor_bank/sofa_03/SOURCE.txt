@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/sofa_03
+Source SHA-256 123f491bef4e9bda153bda770a5d12810bfc9b87ce56aa5973aed041ea17fd92
+Source yaw 0 degrees; uniform scale 0.8; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.

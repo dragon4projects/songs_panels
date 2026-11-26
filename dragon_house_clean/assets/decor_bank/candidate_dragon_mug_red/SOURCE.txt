@@ -1,0 +1,5 @@
+PROJECT_AUTHORED_CANDIDATE
+Project-authored 2026-11-24, public-safe generic mesh; no private references included
+Source GLB SHA-256 d651a3c318c915c2f2b8427e819cc457fa7acdb2e99fdab7273b791dbbd57945
+Uniform import scale 1.0; canonical pivot floor.
+Candidate, no owner approval.

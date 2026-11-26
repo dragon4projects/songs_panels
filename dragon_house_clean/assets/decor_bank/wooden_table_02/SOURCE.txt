@@ -1,0 +1,5 @@
+CC0 Poly Haven https://polyhaven.com/a/wooden_table_02
+Original source glTF SHA-256: bb38e301840cb629d72c43c83fdb7fb308518efe2d0bc01e1ed0e9a9e43ed9d3
+Working source SHA-256: bb38e301840cb629d72c43c83fdb7fb308518efe2d0bc01e1ed0e9a9e43ed9d3
+Asset-only normalization yaw=0 uniform scale=1.0
+Owner approved: false

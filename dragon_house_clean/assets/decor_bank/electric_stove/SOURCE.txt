@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/electric_stove
+Source SHA-256 3be4d1b9ec0ead3c41ea8ef09d61e3b7611b69cbeea26a40ea87355acb0b3c55
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 13914 -> 9088; original source unchanged, optimized GLB SHA-256 ef9d03678d16537e84be5a137a1900e5b2208f9e696706b881a15e06139c6c95. Bounds delta before recenter: 0.000001 m.

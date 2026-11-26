@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/old_drill_press
+Source SHA-256 b1ac11759c277e38fb0be776ba99802c131b9b7086141a5452398f91668bcfc2
+Source yaw 0 degrees; uniform scale 0.8; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 21842 -> 9099; original source unchanged, optimized GLB SHA-256 24fd1c2d546793cabc574b42d2405f2a89c0f6652fbba9377d76f1ec9ca47e65. Bounds delta before recenter: 0.000304 m.

@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/modified_thermos
+Source SHA-256 12f50ac41f809140d856a50d3abd993e9d621db64bd5722fb1aed3c5e99e8d8a
+Source yaw 0 degrees; uniform scale 0.85; pivot floor
+Uniform domestic physical scale; source aspect retained.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 11576 -> 2730; original source unchanged, optimized GLB SHA-256 f24001bf6edbb097664f381a6b148d3713596806c932dc13faa536a701ab991e. Bounds delta before recenter: 0.000162 m.

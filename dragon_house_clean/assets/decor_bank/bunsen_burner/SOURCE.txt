@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/bunsen_burner
+Source SHA-256 7c65775950cc7070513c4ce96d3d5f0035a3be5086f83cdba651a0ffc03b8a73
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 8434 -> 2729; original source unchanged, optimized GLB SHA-256 8b1102b46a1421449d2c59e7474f01871cf6327bd26069e04d98529979de7b5e. Bounds delta before recenter: 0.000112 m.

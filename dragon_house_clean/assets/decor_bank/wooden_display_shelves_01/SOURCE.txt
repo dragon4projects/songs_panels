@@ -1,0 +1,5 @@
+CC0 Poly Haven https://polyhaven.com/a/wooden_display_shelves_01
+Original source glTF SHA-256: 3784953c451b088d24ac1b0e6946c7f7bd589115f51e6549fdb8fe9f7c10600e
+Working source SHA-256: 3784953c451b088d24ac1b0e6946c7f7bd589115f51e6549fdb8fe9f7c10600e
+Asset-only normalization yaw=-90 uniform scale=1.0
+Owner approved: false

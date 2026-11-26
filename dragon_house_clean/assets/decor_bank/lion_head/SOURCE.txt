@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/lion_head
+Source SHA-256 979bd8c7668c02dc26dafb137f8e9e49ecba9eb74ad8bf79c045e9f48fb40cd8
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 47214 -> 2729; original source unchanged, optimized GLB SHA-256 e60e319068d204010ae95bc998b65ec255b83356d586b14f02e3a33a0f16e153. Bounds delta before recenter: 0.000466 m.

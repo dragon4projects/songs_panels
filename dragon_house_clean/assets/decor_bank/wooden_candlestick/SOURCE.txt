@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/wooden_candlestick
+Source SHA-256 fea19adb5e06397d654d089c2852e599bd313063fec38912089f19d607220ca3
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 212992 -> 2730; original source unchanged, optimized GLB SHA-256 81dcc3e20b7e8cf7ecd6bde696a012f585433e441aaeb674495b41f0de29a859. Bounds delta before recenter: 0.000059 m.

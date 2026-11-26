@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/painted_wooden_cabinet_02
+Source SHA-256 a4b697adf7a24a081b8452f5a7d482765e2139cf2a6687a4cbb2a7b8bea24325
+Source yaw 0 degrees; uniform scale 0.78; pivot floor
+Uniform domestic physical scale; source aspect retained.
+Candidate: owner_approved=false.

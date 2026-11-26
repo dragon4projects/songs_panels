@@ -1,0 +1,5 @@
+CC0 Poly Haven https://polyhaven.com/a/chinese_commode
+Original source glTF SHA-256: 40319d26c1bde03d4f3cd42908541aee9cfc3b918a2e74609d0ce9d523e23a16
+Working source SHA-256: 40319d26c1bde03d4f3cd42908541aee9cfc3b918a2e74609d0ce9d523e23a16
+Asset-only normalization yaw=0 uniform scale=0.34
+Owner approved: false

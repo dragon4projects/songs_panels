@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/croissant
+Source SHA-256 b6e1eb36f776e6b79500c51b57c0e29cd17598c2d8a20d0ec0513955a6cc3a2f
+Source yaw 0 degrees; uniform scale 0.7; pivot floor
+Uniform domestic physical scale; source aspect retained.
+Candidate: owner_approved=false.

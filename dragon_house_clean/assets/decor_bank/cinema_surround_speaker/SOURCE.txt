@@ -1,0 +1,6 @@
+CC0 1.0 Universal
+https://3dassets.dev/assets/cinema-multiplex-and-foyer-wall-speaker-on-mount-ac24c00d
+Source GLB SHA-256 7fbdc1511b29d79eb55d27cf9e3a7a3075337232d16fd9bf1675a3e477ac2a01
+Uniform import scale 1.0; canonical pivot wall.
+Candidate, no owner approval.
+KHR_mesh_quantization decoded to float32 attributes; preserved original node transforms; source untouched.

@@ -1,0 +1,5 @@
+CC0 Poly Haven https://polyhaven.com/a/worn_metal_rack
+Original source glTF SHA-256: e757448bd448460ecb6c7218e7857c8d071f271e3cdc2bd013ca63d824c0c308
+Working source SHA-256: e757448bd448460ecb6c7218e7857c8d071f271e3cdc2bd013ca63d824c0c308
+Asset-only normalization yaw=0 uniform scale=1.0
+Owner approved: false

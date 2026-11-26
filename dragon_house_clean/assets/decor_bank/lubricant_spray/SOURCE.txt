@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/lubricant_spray
+Source SHA-256 2baacfe5ffad714ba6ec66516d909c29616b965c5369c0d7ad41bce7c9d4086a
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 5476 -> 2727; original source unchanged, optimized GLB SHA-256 e5cbce6973328a6645851fe9cc104a2c7758fb3da725e4584568a0341ccdae26. Bounds delta before recenter: 0.000001 m.

@@ -1,0 +1,5 @@
+CC0 Poly Haven https://polyhaven.com/a/ArmChair_01
+Original source glTF SHA-256: 91e39d5b35f36c8074b7b6432f6fd77f5f1a257c4d6af3924c0b263eb674286b
+Working source SHA-256: 91e39d5b35f36c8074b7b6432f6fd77f5f1a257c4d6af3924c0b263eb674286b
+Asset-only normalization yaw=0 uniform scale=1.0
+Owner approved: false

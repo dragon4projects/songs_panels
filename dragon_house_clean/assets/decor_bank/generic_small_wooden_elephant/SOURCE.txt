@@ -1,0 +1,5 @@
+CC0 Poly Haven https://polyhaven.com/a/carved_wooden_elephant
+Original source glTF SHA-256: c2378354ecd283c5c8d9459b6829ef7e61bdefd6d0f7a6b2d628362bd9bbef25
+Working source SHA-256: c2378354ecd283c5c8d9459b6829ef7e61bdefd6d0f7a6b2d628362bd9bbef25
+Asset-only normalization yaw=0 uniform scale=1.0
+Owner approved: false

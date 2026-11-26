@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/concrete_cat_statue
+Source SHA-256 898110387c632808e6c6ffe818f48eaf32fcf1c8817de939bef428abb659e813
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native scale separate from previously derived miniature; symmetric or free-facing display object, no directional interaction.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 11950 -> 2729; original source unchanged, optimized GLB SHA-256 9a5253ae9ba9d3ed3fd4546cec3eff545875d80834afd97c98261c22a703a079. Bounds delta before recenter: 0.000223 m.

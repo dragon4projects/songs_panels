@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/carved_wooden_elephant
+Source SHA-256 c2378354ecd283c5c8d9459b6829ef7e61bdefd6d0f7a6b2d628362bd9bbef25
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native scale separate from previously derived miniature; symmetric or free-facing display object, no directional interaction.
+Candidate: owner_approved=false.

@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/carved_wooden_plate
+Source SHA-256 90ec83004a3fd256fb846c7b04fbf0b2514f0e99b2bb7aeb586f62b844ed9219
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.

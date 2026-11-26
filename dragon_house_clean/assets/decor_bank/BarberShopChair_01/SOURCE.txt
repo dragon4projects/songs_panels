@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/BarberShopChair_01
+Source SHA-256 801bed991ab1d3f110ff8e7958fcfe8e60a96582cadb55dbada28e292a111f20
+Source yaw 0 degrees; uniform scale 0.75; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.

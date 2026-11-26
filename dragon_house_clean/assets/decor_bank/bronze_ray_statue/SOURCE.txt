@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/bronze_ray_statue
+Source SHA-256 bb2cab3316b05935fd311e132298d15076af9d6ddd88980abca1dea790c6305e
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native scale separate from previously derived miniature; symmetric or free-facing display object, no directional interaction.
+Candidate: owner_approved=false.

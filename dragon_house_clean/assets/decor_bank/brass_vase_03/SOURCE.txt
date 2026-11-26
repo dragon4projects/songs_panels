@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/brass_vase_03
+Source SHA-256 b65379454ee1c8a608e757b513dc72013cfc5b4156deaf33a46e4f58338b5e8c
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.

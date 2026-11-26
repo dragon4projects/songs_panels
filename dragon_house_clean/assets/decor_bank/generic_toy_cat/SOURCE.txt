@@ -1,0 +1,5 @@
+CC0
+https://polyhaven.com/a/concrete_cat_statue
+Derived toy-sized mesh; no historical or owned object identity.
+Working GLB SHA-256 db72c1edf22f89bde8419fa422136bbd91efeea6ac853a22ac241d7b78667afd
+Lightweight resin miniature replica, not concrete.

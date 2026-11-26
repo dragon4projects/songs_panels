@@ -1,0 +1,5 @@
+CC0 Poly Haven https://polyhaven.com/a/Rockingchair_01
+Original source glTF SHA-256: eb8c3a8f9c2c1bd6ca6d76804b8361dd0fd779498249d554536e5683e08f565b
+Working source SHA-256: eb8c3a8f9c2c1bd6ca6d76804b8361dd0fd779498249d554536e5683e08f565b
+Asset-only normalization yaw=0 uniform scale=1.0
+Owner approved: false

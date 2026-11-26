@@ -1,0 +1,1 @@
+Project-original flat textile geometry, existing ambientCG Carpet004 CC0 textures from Phase1. Shared relative dependency; no duplicate image data. UV repeat 1m proposed, tint candidate. No collision or owner approval.

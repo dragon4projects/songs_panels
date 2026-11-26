@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/plastic_monobloc_chair_01
+Source SHA-256 899bf148139ab8d1718c25ec06112a652631f9476b5aaeeacb9eb1da9b7f1d3a
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.

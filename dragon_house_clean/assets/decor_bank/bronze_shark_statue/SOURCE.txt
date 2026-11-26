@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/bronze_shark_statue
+Source SHA-256 c7b5b5bd094518489e7eed022006ce2901ec8799397eafd37f6ffd5562187ca0
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native scale separate from previously derived miniature; symmetric or free-facing display object, no directional interaction.
+Candidate: owner_approved=false.

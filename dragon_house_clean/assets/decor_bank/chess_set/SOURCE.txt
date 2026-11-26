@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/chess_set
+Source SHA-256 3e21ecd0c2ffb703dfdb3f3ea7a379c1dbd4ec513ba2cb8e6cb1e5f276d7eb91
+Source yaw 0 degrees; uniform scale 0.75; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 76920 -> 2714; original source unchanged, optimized GLB SHA-256 3b7aa4d18f30b0312d22a5abd7f91a3e580ea85416490d21bef983dc8a858093. Bounds delta before recenter: 0.001849 m.

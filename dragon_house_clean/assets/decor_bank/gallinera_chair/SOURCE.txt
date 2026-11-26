@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/gallinera_chair
+Source SHA-256 0fd80d1f770fb6ce0be9ff1e07f925e18e582c8a55358d3c77d6e0fdb3f13536
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.

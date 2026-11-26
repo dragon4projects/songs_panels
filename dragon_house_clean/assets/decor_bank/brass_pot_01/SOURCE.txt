@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/brass_pot_01
+Source SHA-256 972fa20a81e322159a79cadf3812e1513a0001424198c7d9b423ced4cbf84473
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 3760 -> 2730; original source unchanged, optimized GLB SHA-256 4921c2a3d6faf9845fb5e7626f558973b68c785337c254ff8ec4be5fbed3ec01. Bounds delta before recenter: 0.000018 m.

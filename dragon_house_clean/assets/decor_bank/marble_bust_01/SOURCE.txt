@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/marble_bust_01
+Source SHA-256 b6f192fc01be4349470b66f6f6948bd37620267bdbc86f4568e4d078f97ff09b
+Source yaw 0 degrees; uniform scale 0.75; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 17456 -> 2730; original source unchanged, optimized GLB SHA-256 cfa22312d8268c31a04c52dbdf76d46c044aafaaebe43fa8af55443acb745332. Bounds delta before recenter: 0.000485 m.

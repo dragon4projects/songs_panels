@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/Television_01
+Source SHA-256 ef4376366ea956519c1a1d06146a8e8cc2bb0fcbd5c6b9f919a54ce31d05d530
+Source yaw 0 degrees; uniform scale 0.85; pivot floor
+Uniform domestic physical scale; source aspect retained.
+Candidate: owner_approved=false.

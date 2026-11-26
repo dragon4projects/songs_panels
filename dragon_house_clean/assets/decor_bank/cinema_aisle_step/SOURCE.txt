@@ -1,0 +1,6 @@
+CC0 1.0 Universal
+https://3dassets.dev/assets/cinema-multiplex-and-foyer-aisle-step-module-91f496ec
+Source GLB SHA-256 1bfa17bb266e825314cd0e86816ad4add6f921a532555a143a6e5bbe343cfe02
+Uniform import scale 1.0; canonical pivot floor.
+Candidate, no owner approval.
+KHR_mesh_quantization decoded to float32 attributes; preserved original node transforms; source untouched.

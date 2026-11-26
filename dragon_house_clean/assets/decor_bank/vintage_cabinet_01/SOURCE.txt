@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/vintage_cabinet_01
+Source SHA-256 ce66c642cb13ba11bf7cde72bb58ad465dce1909dbef8a22dd55b28d857c1848
+Source yaw 0 degrees; uniform scale 0.72; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 61096 -> 27292; original source unchanged, optimized GLB SHA-256 c1f56cfc18c5338616bff9276d1103c121f69b3186e5c62283db9136c10c8231. Bounds delta before recenter: 0.000085 m.

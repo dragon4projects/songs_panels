@@ -1,0 +1,5652 @@
+{
+  "schema": 1,
+  "task_id": "TEEA_INT_20261124_008",
+  "owner_approved": false,
+  "source_commit": "182360601f5c382d55e51a7c4566d553f8a8b42b",
+  "items": [
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/identity/front_0001.png",
+      "sha256": "2abcd9620fb249b37079235745516224bc39b46be6c4abec35fd69cd22fea47f",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        207,
+        150,
+        305,
+        478
+      ],
+      "visual_width_m": 0.363671875,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/CARRY_USE/0001.png",
+      "sha256": "0fcde0934306ce13a16515b2591ffb048a4fe98500dd70c2255141770f1de605",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        139,
+        149,
+        372,
+        478
+      ],
+      "visual_width_m": 0.8646484375,
+      "visual_height_m": 1.2208984375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/DRINK/0001.png",
+      "sha256": "189fd41d17285f010d9182105e48c28e8c5bd16bc61621195dd03b70ce455cda",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        147,
+        149,
+        364,
+        479
+      ],
+      "visual_width_m": 0.8052734374999999,
+      "visual_height_m": 1.224609375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/DRINK/0002.png",
+      "sha256": "d739e6ed8d578a97a0e7c4e84fbd17b2b47d171e8b70be41954e654d8df0dda3",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        137,
+        150,
+        374,
+        479
+      ],
+      "visual_width_m": 0.8794921874999999,
+      "visual_height_m": 1.2208984375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/DRINK/0003.png",
+      "sha256": "7be9a547ec4f66df5d3714b46be863258e7cc0d8e9eda61b3d44d2ef57480263",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        138,
+        149,
+        373,
+        479
+      ],
+      "visual_width_m": 0.8720703125,
+      "visual_height_m": 1.224609375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/DRINK/0004.png",
+      "sha256": "cfeb225414e72c4d0584f97b7d4b0ffa37ea0b741ff07c88b571338373f231e5",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        147,
+        149,
+        364,
+        479
+      ],
+      "visual_width_m": 0.8052734374999999,
+      "visual_height_m": 1.224609375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/IDLE_E/0001.png",
+      "sha256": "e58cca3121b106768ae441b7587a42171983a9c5926c41872811d721e7b98dec",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        143,
+        150,
+        369,
+        478
+      ],
+      "visual_width_m": 0.838671875,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/IDLE_N/0001.png",
+      "sha256": "2f071d33c35839d919ec48337ba867b2c07c80bd52dc295ec4654e24e4b35eaf",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        205,
+        150,
+        306,
+        478
+      ],
+      "visual_width_m": 0.37480468749999996,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/IDLE_NE/0001.png",
+      "sha256": "cc2214aa03f5001358711ad262bd95bec0701d87c96d8ab3035503bd59847e01",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        177,
+        149,
+        334,
+        478
+      ],
+      "visual_width_m": 0.5826171875,
+      "visual_height_m": 1.2208984375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/IDLE_NW/0001.png",
+      "sha256": "a37d30a5de1769c2275bbf1b00287789863704709bd723ee6d4516bab260735b",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        165,
+        150,
+        347,
+        479
+      ],
+      "visual_width_m": 0.675390625,
+      "visual_height_m": 1.2208984375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/IDLE_S/0001.png",
+      "sha256": "a7cb67e60114b59b04e3559c4958f3520cef057c991f604fc9e305900762c01e",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        204,
+        150,
+        307,
+        478
+      ],
+      "visual_width_m": 0.3822265625,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/IDLE_SE/0001.png",
+      "sha256": "20cd25e31b0456c5ddd6a7a0680e882c33f12f3977ec639877061b36d4c67521",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        162,
+        150,
+        350,
+        478
+      ],
+      "visual_width_m": 0.69765625,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/IDLE_SW/0001.png",
+      "sha256": "a4e05dc6e87f5e1add08d38b78a92fb488285501633e9e05a64288c15491b5e1",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        163,
+        150,
+        349,
+        478
+      ],
+      "visual_width_m": 0.690234375,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/IDLE_W/0001.png",
+      "sha256": "8eba3986d70c7fe04738e02ca4b84e4099d3fa83666509aa749f5ca1e8981c79",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        143,
+        150,
+        370,
+        478
+      ],
+      "visual_width_m": 0.8423828124999999,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/LIE_SIDE_CURLED/0001.png",
+      "sha256": "b9932728cbf25caed3990c2eb188a74e5ba9562c82612d71b689082c71e33f1c",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        49,
+        346,
+        462,
+        480
+      ],
+      "visual_width_m": 1.5326171874999999,
+      "visual_height_m": 0.497265625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/LIE_SIDE_STRAIGHT/0001.png",
+      "sha256": "47848f31af1ad61a617f2ab111db15484c960128644410dacb33c35ce2e6fc4c",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        49,
+        371,
+        462,
+        480
+      ],
+      "visual_width_m": 1.5326171874999999,
+      "visual_height_m": 0.4044921875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/READ/0001.png",
+      "sha256": "c6cc2423687b6c094b2c99960f5c557d7cf1a254fd9c64d8b85d448058ea4ef2",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        108,
+        227,
+        405,
+        479
+      ],
+      "visual_width_m": 1.1021484375,
+      "visual_height_m": 0.9351562499999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/RELAXED_SIT/0001.png",
+      "sha256": "8f477ddba34bc7f3d045681f4ac351559de0ca196db30b65588aaf7e8e284b21",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        149,
+        227,
+        363,
+        479
+      ],
+      "visual_width_m": 0.7941406249999999,
+      "visual_height_m": 0.9351562499999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/SIT/0001.png",
+      "sha256": "9710c29292b583235afd493c80bd48a8479eb174f4c6e25cd02a7d64400310e6",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        169,
+        227,
+        343,
+        479
+      ],
+      "visual_width_m": 0.6457031249999999,
+      "visual_height_m": 0.9351562499999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/SIT_HUG_KNEES/0001.png",
+      "sha256": "bb53af7d1c7ee96f6c68550aee0d842bfc50435dfcfb4d1ab653bd657b5bc717",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        131,
+        227,
+        383,
+        479
+      ],
+      "visual_width_m": 0.9351562499999999,
+      "visual_height_m": 0.9351562499999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/SIT_LEGS_TUCKED/0001.png",
+      "sha256": "33e77a045cba4a88bef5ea69069842ea94d87f2a0397fbde5909af1f1a6fefd0",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        95,
+        227,
+        417,
+        479
+      ],
+      "visual_width_m": 1.194921875,
+      "visual_height_m": 0.9351562499999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/SLEEP/0001.png",
+      "sha256": "18aa16598d6d33c1a0dc1dc3bd4db171a38234355463f3e5e583d424369b15d8",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        49,
+        382,
+        463,
+        480
+      ],
+      "visual_width_m": 1.5363281249999998,
+      "visual_height_m": 0.363671875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/TALK/0001.png",
+      "sha256": "76163e6275de11827a364fbba9094e0f798992d73e72873586dec8d99e8b959d",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        128,
+        150,
+        384,
+        478
+      ],
+      "visual_width_m": 0.95,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/VIEW/0001.png",
+      "sha256": "3fccecc22d54e0387d51521b0728e6cf394ce630909c7dfeeb75736fdc324ae9",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        146,
+        150,
+        366,
+        478
+      ],
+      "visual_width_m": 0.81640625,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0001.png",
+      "sha256": "fb408d58f8aab2bd08adcc82fd1dc91fdb69b3f99f998985d7f3c9efbd634a72",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        140,
+        149,
+        384,
+        477
+      ],
+      "visual_width_m": 0.9054687499999999,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0002.png",
+      "sha256": "0fa345bfbbd41d1b0f71cfae1b8423b78b1e9afea8cfe222071b46dc5d0a0140",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        140,
+        150,
+        384,
+        477
+      ],
+      "visual_width_m": 0.9054687499999999,
+      "visual_height_m": 1.2134765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0003.png",
+      "sha256": "62d28c9e0589717078708dc19c72687db39f9571d9a9a8dc67bf834857f44337",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        139,
+        151,
+        385,
+        478
+      ],
+      "visual_width_m": 0.912890625,
+      "visual_height_m": 1.2134765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0004.png",
+      "sha256": "3ef591fee8cb544bd28014379c740e738a983c2b393a0f4912a4b4acaff43f9c",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        131,
+        150,
+        385,
+        477
+      ],
+      "visual_width_m": 0.9425781249999999,
+      "visual_height_m": 1.2134765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0005.png",
+      "sha256": "d92c7bccfa4c6836959710c73770461a171b85c2843018cc17de8b7be188d042",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        130,
+        151,
+        390,
+        477
+      ],
+      "visual_width_m": 0.96484375,
+      "visual_height_m": 1.209765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0006.png",
+      "sha256": "aca58360b23d5bdc4ff38d416835991555c0f609e823f6f0a1022e838a22a08b",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        109,
+        151,
+        391,
+        477
+      ],
+      "visual_width_m": 1.046484375,
+      "visual_height_m": 1.209765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0007.png",
+      "sha256": "17f7183c3bf06218cd6d697a9790a43a6b7f3391d0632321b3711397080dea25",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        91,
+        151,
+        392,
+        477
+      ],
+      "visual_width_m": 1.1169921875,
+      "visual_height_m": 1.209765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0008.png",
+      "sha256": "28b6ddd86c0d9109c4f2302b15b3a7d8b4e574633cdf4b7879003d0aa42f3278",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        98,
+        151,
+        393,
+        477
+      ],
+      "visual_width_m": 1.0947265625,
+      "visual_height_m": 1.209765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0009.png",
+      "sha256": "34f33e56e889370d88adc429d926192d007ecaaf3a1f690e361b4a4c9a2d382c",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        117,
+        151,
+        391,
+        477
+      ],
+      "visual_width_m": 1.016796875,
+      "visual_height_m": 1.209765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0010.png",
+      "sha256": "4a05441b36e0f549884d62d3c33cfd950c238ebc69c3b3776b586d4a00a06a65",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        139,
+        151,
+        392,
+        478
+      ],
+      "visual_width_m": 0.9388671875,
+      "visual_height_m": 1.2134765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0011.png",
+      "sha256": "2fb2d62f0bc437d1482b4d73f64b245322b2a29eb998091afbe5f7e657612442",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        127,
+        150,
+        392,
+        478
+      ],
+      "visual_width_m": 0.9833984375,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_LEFT/0012.png",
+      "sha256": "663a672278df9e0e6cb7436285411256ee48368d35d09bec878f730fb62acc3b",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        124,
+        149,
+        392,
+        477
+      ],
+      "visual_width_m": 0.99453125,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0001.png",
+      "sha256": "a729b8f64a351eb81438edbcf3d6a2ad447895864ba237abd0a845b686a33eec",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        129,
+        149,
+        373,
+        477
+      ],
+      "visual_width_m": 0.9054687499999999,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0002.png",
+      "sha256": "aa197453854a0dc325cea145a385b47045cbf946d6cb26b8c59fe5521bbd2f49",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        129,
+        150,
+        373,
+        477
+      ],
+      "visual_width_m": 0.9054687499999999,
+      "visual_height_m": 1.2134765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0003.png",
+      "sha256": "1639ac227bda88eb673808e37716faf9e81f1fdddc79208b7413473b364c4a89",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        128,
+        151,
+        374,
+        478
+      ],
+      "visual_width_m": 0.912890625,
+      "visual_height_m": 1.2134765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0004.png",
+      "sha256": "c053bf9006b7f6a4027611a7337ed4d6bfcaffdcd6d5a13c3953f75a936c6666",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        128,
+        150,
+        382,
+        477
+      ],
+      "visual_width_m": 0.9425781249999999,
+      "visual_height_m": 1.2134765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0005.png",
+      "sha256": "0bfef1a9157fe6c4115bb82e68f5ed881eab1a8937a0e46af721fa19299f4c8a",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        123,
+        151,
+        383,
+        477
+      ],
+      "visual_width_m": 0.96484375,
+      "visual_height_m": 1.209765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0006.png",
+      "sha256": "a3ef047316d4a159d4fc78175a60ece7d6ea010abaeebedbc342c0c87a4f727f",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        122,
+        151,
+        404,
+        477
+      ],
+      "visual_width_m": 1.046484375,
+      "visual_height_m": 1.209765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0007.png",
+      "sha256": "ff495e7d3d40fc0982075d049b8d156c60e4ee7357e1dc312af3631540bae5ea",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        121,
+        151,
+        422,
+        477
+      ],
+      "visual_width_m": 1.1169921875,
+      "visual_height_m": 1.209765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0008.png",
+      "sha256": "ce5b42021dc5487bc7feb56e008d5597608a28b58a3905c1cae6d2b3ad71c5e4",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        120,
+        151,
+        415,
+        477
+      ],
+      "visual_width_m": 1.0947265625,
+      "visual_height_m": 1.209765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0009.png",
+      "sha256": "9860a8a523ca5bfd9d107855b2bc4a7745dde35f815453ebfaf3ea61a16c85aa",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        122,
+        151,
+        396,
+        477
+      ],
+      "visual_width_m": 1.016796875,
+      "visual_height_m": 1.209765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0010.png",
+      "sha256": "6992dc60eeabf6584e9528640914f5aa5c1384945cfc3da33d621072b7f4c7ab",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        121,
+        151,
+        374,
+        478
+      ],
+      "visual_width_m": 0.9388671875,
+      "visual_height_m": 1.2134765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0011.png",
+      "sha256": "aa047cbfbb73c17f1a9c365ad348f1ef25101c668aa43f43781c661da815e75d",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        121,
+        150,
+        386,
+        478
+      ],
+      "visual_width_m": 0.9833984375,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/CITY/WALK_RIGHT/0012.png",
+      "sha256": "eaba4b7622dc8d748762d386401814586b8c3c3410e1b815e28bcc761bc4803e",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        121,
+        149,
+        389,
+        477
+      ],
+      "visual_width_m": 0.99453125,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/CARRY_USE/0001.png",
+      "sha256": "61c5ea6a7c337529acbb90974d0c024d86c151ac2ba0bea43e721446909483c0",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        141,
+        149,
+        370,
+        478
+      ],
+      "visual_width_m": 0.8498046874999999,
+      "visual_height_m": 1.2208984375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/DRINK/0001.png",
+      "sha256": "bc9097f16638eceb1752cd7bc2749b5d4efb9b77935d377288742646451e0cab",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        152,
+        148,
+        360,
+        479
+      ],
+      "visual_width_m": 0.771875,
+      "visual_height_m": 1.2283203125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/DRINK/0002.png",
+      "sha256": "e237b8d02cfcd22b58f95c88340f9c2fdadf8a4b10af1793c445cda8f4d60eff",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        149,
+        149,
+        364,
+        479
+      ],
+      "visual_width_m": 0.7978515625,
+      "visual_height_m": 1.224609375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/DRINK/0003.png",
+      "sha256": "5113e52a189e92738363481e4e2de850d747bff66639f1aeb0ae9bc7dd35e2ff",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        147,
+        150,
+        364,
+        479
+      ],
+      "visual_width_m": 0.8052734374999999,
+      "visual_height_m": 1.2208984375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/DRINK/0004.png",
+      "sha256": "80b7855ea9d48e9ffff759c447fb1d9868783ccafce382c651a02867cd308c01",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        151,
+        149,
+        361,
+        479
+      ],
+      "visual_width_m": 0.779296875,
+      "visual_height_m": 1.224609375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/IDLE_E/0001.png",
+      "sha256": "e98690ea8a20d8f35e3ea19baa006c7108572f47c3c38c3920275deb8143b8b2",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        139,
+        150,
+        371,
+        478
+      ],
+      "visual_width_m": 0.8609374999999999,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/IDLE_N/0001.png",
+      "sha256": "97da6b396118e1aead4029163c975893a21ec081958c0d8144f08e373a422c9f",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        204,
+        150,
+        307,
+        478
+      ],
+      "visual_width_m": 0.3822265625,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/IDLE_NE/0001.png",
+      "sha256": "d98c2ee65deda45efd4e5e3f33a3d0d5a61bd91832f274cd613d9206bdba8e08",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        175,
+        149,
+        336,
+        478
+      ],
+      "visual_width_m": 0.5974609375,
+      "visual_height_m": 1.2208984375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/IDLE_NW/0001.png",
+      "sha256": "4c8175ae727af4253851fd61d769d1157128bf8b29f688704a66b72586611667",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        170,
+        150,
+        342,
+        478
+      ],
+      "visual_width_m": 0.63828125,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/IDLE_S/0001.png",
+      "sha256": "ffdc00850cc5c266e205ff728f37a5f1a1641dc5a0c801cb0c645702bd0eddf4",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        206,
+        149,
+        307,
+        478
+      ],
+      "visual_width_m": 0.37480468749999996,
+      "visual_height_m": 1.2208984375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/IDLE_SE/0001.png",
+      "sha256": "8832cd0c4772651f57daefae3c425d33c5240320816b27fa19956ade9300952d",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        159,
+        150,
+        352,
+        478
+      ],
+      "visual_width_m": 0.7162109375,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/IDLE_SW/0001.png",
+      "sha256": "d4212be0d8872a2a765f863d8f8aaa886da9bc46c791c4a7b6e294bf3b9dbc1d",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        167,
+        150,
+        346,
+        478
+      ],
+      "visual_width_m": 0.6642578124999999,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/IDLE_W/0001.png",
+      "sha256": "7d6ae44bb60f5c18d8c20c16060945e52a2a9f8680924c2183b502be51b8d8cb",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        138,
+        150,
+        375,
+        478
+      ],
+      "visual_width_m": 0.8794921874999999,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/LIE_SIDE_CURLED/0001.png",
+      "sha256": "88f71754ac8d42229f7e5cb99f7bea885e8fd8d0948a885b6e21c7c653d01891",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        48,
+        343,
+        463,
+        479
+      ],
+      "visual_width_m": 1.5400390625,
+      "visual_height_m": 0.5046875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/LIE_SIDE_STRAIGHT/0001.png",
+      "sha256": "e3ab8c419baaaebedb4deea18c82c42d15e11f1ef816eb19b828c94382b73142",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        48,
+        399,
+        462,
+        479
+      ],
+      "visual_width_m": 1.5363281249999998,
+      "visual_height_m": 0.296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/READ/0001.png",
+      "sha256": "7e507b38abde6242f33f8c17bfbbc4865dd325985bb8ee51fb7b84e942693cfe",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        101,
+        228,
+        409,
+        479
+      ],
+      "visual_width_m": 1.1429687499999999,
+      "visual_height_m": 0.9314453125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/RELAXED_SIT/0001.png",
+      "sha256": "ef9f9532f137a60a9962456e5bc29dc48c505796be841807ae768e2536669ac1",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        143,
+        227,
+        370,
+        479
+      ],
+      "visual_width_m": 0.8423828124999999,
+      "visual_height_m": 0.9351562499999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/SIT/0001.png",
+      "sha256": "7614feca382eb014079595018d4ecc55985ff2fc79c66e6399ded9bbc5c249e0",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        151,
+        227,
+        361,
+        479
+      ],
+      "visual_width_m": 0.779296875,
+      "visual_height_m": 0.9351562499999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/SIT_HUG_KNEES/0001.png",
+      "sha256": "ac53703d39ecdba7e40d45a6b716b71be8e01cb83659fdd4ce6810c5a6397859",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        145,
+        227,
+        368,
+        479
+      ],
+      "visual_width_m": 0.8275390625,
+      "visual_height_m": 0.9351562499999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/SIT_LEGS_TUCKED/0001.png",
+      "sha256": "9a990306114577e94ea333454218fc14e1d7f789edb07220f6990dd1594e4abb",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        123,
+        227,
+        390,
+        479
+      ],
+      "visual_width_m": 0.9908203124999999,
+      "visual_height_m": 0.9351562499999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/SLEEP/0001.png",
+      "sha256": "63d90261647f0405d8f105e8adf6e5a76fc67a21b5308cdcca446c5aa0cfcc53",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        49,
+        386,
+        463,
+        479
+      ],
+      "visual_width_m": 1.5363281249999998,
+      "visual_height_m": 0.3451171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/TALK/0001.png",
+      "sha256": "7097d41505b64443b7974f3c16e80bf76ae0ea3cea119a6cbed00089e27b76e8",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        115,
+        149,
+        396,
+        479
+      ],
+      "visual_width_m": 1.0427734375,
+      "visual_height_m": 1.224609375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/VIEW/0001.png",
+      "sha256": "07b7b953ae3997135cba2933568459cbf062fc4529968dc17d52a2c9dd33bfbc",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        138,
+        150,
+        375,
+        479
+      ],
+      "visual_width_m": 0.8794921874999999,
+      "visual_height_m": 1.2208984375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0001.png",
+      "sha256": "138f2572bc99524aa8d06e95dddf12e99be65976ea3d3a13a5e3209a7f9ea2a2",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        125,
+        150,
+        387,
+        477
+      ],
+      "visual_width_m": 0.9722656249999999,
+      "visual_height_m": 1.2134765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0002.png",
+      "sha256": "45fc6b2b22e767198e9ad6395ebe4b2144d18f0ddf86d10fa8f6ce16ba825eab",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        128,
+        150,
+        386,
+        477
+      ],
+      "visual_width_m": 0.957421875,
+      "visual_height_m": 1.2134765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0003.png",
+      "sha256": "abfc0a27d288fad3600ff0d95f5a1f2fdb068d266d214edcce634f9f25d705a1",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        127,
+        150,
+        387,
+        477
+      ],
+      "visual_width_m": 0.96484375,
+      "visual_height_m": 1.2134765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0004.png",
+      "sha256": "164f79729d0c0a0c014c0c47cd2d9c9a8ad2a52787a95eb7830621033c881127",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        112,
+        150,
+        386,
+        477
+      ],
+      "visual_width_m": 1.016796875,
+      "visual_height_m": 1.2134765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0005.png",
+      "sha256": "9931659bd0b3ab539b26fd5f0d4c962776934390ae76b7224c81ed9aea6cfe47",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        112,
+        150,
+        388,
+        477
+      ],
+      "visual_width_m": 1.02421875,
+      "visual_height_m": 1.2134765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0006.png",
+      "sha256": "760e90072dc924772fbf9aa68991b29fa248fdf6805a2205ed411c8e1e88e392",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        125,
+        151,
+        387,
+        477
+      ],
+      "visual_width_m": 0.9722656249999999,
+      "visual_height_m": 1.209765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0007.png",
+      "sha256": "b8c370b1fd8084d2fff180eb723237958efe56c606c79636f33ab80d0e2a4cb9",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        104,
+        151,
+        388,
+        478
+      ],
+      "visual_width_m": 1.05390625,
+      "visual_height_m": 1.2134765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0008.png",
+      "sha256": "1b9be22171abe5f07c770a6f40a221bb259eb6bc976082976e89695c57fb7e57",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        95,
+        151,
+        389,
+        477
+      ],
+      "visual_width_m": 1.091015625,
+      "visual_height_m": 1.209765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0009.png",
+      "sha256": "d0a575d8d74532c7e9956b6a7e0d45a0cf736e2383ea414535d265be28f0566a",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        113,
+        151,
+        387,
+        477
+      ],
+      "visual_width_m": 1.016796875,
+      "visual_height_m": 1.209765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0010.png",
+      "sha256": "708b79890733ca8bc6aa5fcc5e3aa3da0f7fe9e9e903d890fa2f4ca48d5d3344",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        119,
+        152,
+        387,
+        477
+      ],
+      "visual_width_m": 0.99453125,
+      "visual_height_m": 1.2060546875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0011.png",
+      "sha256": "eb1905e54b116ae96d5eb48693ba10a89def851c5e234b4d53345cc213d3ff21",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        118,
+        151,
+        387,
+        477
+      ],
+      "visual_width_m": 0.9982421874999999,
+      "visual_height_m": 1.209765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_LEFT/0012.png",
+      "sha256": "59180e0a725bd6557deb1b97085cfbbd31fb156958a43ed790ab980b2105869a",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        121,
+        151,
+        387,
+        477
+      ],
+      "visual_width_m": 0.987109375,
+      "visual_height_m": 1.209765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0001.png",
+      "sha256": "12dc3ddfec9b47a279c38dd2b0de344c9bf8a2aae651c237ab5ef623d7e33010",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        126,
+        150,
+        388,
+        477
+      ],
+      "visual_width_m": 0.9722656249999999,
+      "visual_height_m": 1.2134765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0002.png",
+      "sha256": "b22d4602f62a41ed6b8fb80dc8470a07c1cdcf0a75e3d50ddcb819a653e1a83b",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        127,
+        150,
+        385,
+        477
+      ],
+      "visual_width_m": 0.957421875,
+      "visual_height_m": 1.2134765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0003.png",
+      "sha256": "c98f678b1a50ef149b4416f9416e41dcbcfcf5c2814ab7b49c1626dec9c888ce",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        126,
+        150,
+        386,
+        477
+      ],
+      "visual_width_m": 0.96484375,
+      "visual_height_m": 1.2134765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0004.png",
+      "sha256": "7d61484a49ad054a0f4d0efd3c8d85e63a7bcdc0eba127071a6193b64b1066d9",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        127,
+        150,
+        401,
+        477
+      ],
+      "visual_width_m": 1.016796875,
+      "visual_height_m": 1.2134765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0005.png",
+      "sha256": "ba8442430b4c952fe5bd5f74eb3642ca00feffbadd241e969a3ef47d37a009f7",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        125,
+        150,
+        401,
+        477
+      ],
+      "visual_width_m": 1.02421875,
+      "visual_height_m": 1.2134765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0006.png",
+      "sha256": "9f6dc855a21e840b1c4601baefe658098061cfe5c31b8552af0220e3d100cb2e",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        126,
+        151,
+        388,
+        477
+      ],
+      "visual_width_m": 0.9722656249999999,
+      "visual_height_m": 1.209765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0007.png",
+      "sha256": "cd8d61ae3a337c6f95687d6978c8424481534ae938699fde844e39f7236ea612",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        125,
+        151,
+        409,
+        478
+      ],
+      "visual_width_m": 1.05390625,
+      "visual_height_m": 1.2134765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0008.png",
+      "sha256": "bf0f8c4e981236c97ea188dc8bc4f4ce29beea77505ba415421801e7e81b934f",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        124,
+        151,
+        418,
+        477
+      ],
+      "visual_width_m": 1.091015625,
+      "visual_height_m": 1.209765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0009.png",
+      "sha256": "abf4f741923d14c0fcbfb4da59a5bddb63cf5fba921564f9dc6ee560bcd6a47b",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        126,
+        151,
+        400,
+        477
+      ],
+      "visual_width_m": 1.016796875,
+      "visual_height_m": 1.209765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0010.png",
+      "sha256": "2b80a3da95812ab0f9b8d41853af4adaed0009769cac3831fb000d6e2e9f4127",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        126,
+        152,
+        394,
+        477
+      ],
+      "visual_width_m": 0.99453125,
+      "visual_height_m": 1.2060546875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0011.png",
+      "sha256": "6e82ad5e006e7ce03f10d4cb07623b7b2cd6b0dc8379ec213be5c407ae8da890",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        126,
+        151,
+        395,
+        477
+      ],
+      "visual_width_m": 0.9982421874999999,
+      "visual_height_m": 1.209765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/HOME/WALK_RIGHT/0012.png",
+      "sha256": "39a4216f33838bb450802ae7a74544a5be564551e1f2c67edb0fb896410f89f1",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        126,
+        151,
+        392,
+        477
+      ],
+      "visual_width_m": 0.987109375,
+      "visual_height_m": 1.209765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/CARRY_USE/0001.png",
+      "sha256": "75e04a061eb270ac8d42cbbe18324bea62ba6815b9fe025ff271e07f978bdca9",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        144,
+        149,
+        366,
+        479
+      ],
+      "visual_width_m": 0.8238281249999999,
+      "visual_height_m": 1.224609375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/DRINK/0001.png",
+      "sha256": "49f255b0cbe3659829ad57d59f3ed2fb0df09b888e2a73457c366cd100f24beb",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        159,
+        148,
+        352,
+        479
+      ],
+      "visual_width_m": 0.7162109375,
+      "visual_height_m": 1.2283203125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/DRINK/0002.png",
+      "sha256": "7e5cb44de9a20d06b0c3b108f424abe02ec367d4c70c5edd3370a8fee6456307",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        155,
+        149,
+        358,
+        479
+      ],
+      "visual_width_m": 0.7533203125,
+      "visual_height_m": 1.224609375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/DRINK/0003.png",
+      "sha256": "c0da5e3f3936469276b095673f7ebf77b6b901860e94518176ce4ff5373ade9d",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        155,
+        149,
+        357,
+        479
+      ],
+      "visual_width_m": 0.7496093749999999,
+      "visual_height_m": 1.224609375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/DRINK/0004.png",
+      "sha256": "a4f278cf833e8b3d46b1da6f85e9a5e82a07713ce08beeb892d67e919f1f6c09",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        159,
+        149,
+        353,
+        479
+      ],
+      "visual_width_m": 0.7199218749999999,
+      "visual_height_m": 1.224609375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/IDLE_E/0001.png",
+      "sha256": "971f2f05b55b514bbc6907bff89626bf7165e60cac21218bf7957077c695c74a",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        137,
+        149,
+        373,
+        478
+      ],
+      "visual_width_m": 0.87578125,
+      "visual_height_m": 1.2208984375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/IDLE_N/0001.png",
+      "sha256": "f99bb5335e11a72270325adfa154dc07f03729abd05119de987efd710c9d290b",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        205,
+        150,
+        306,
+        478
+      ],
+      "visual_width_m": 0.37480468749999996,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/IDLE_NE/0001.png",
+      "sha256": "c6ce6b2905c7df2bc9db506d17dc79ea6db9846ccc9fbeebbfbcd3a4a9919ea7",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        177,
+        150,
+        333,
+        478
+      ],
+      "visual_width_m": 0.57890625,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/IDLE_NW/0001.png",
+      "sha256": "062b6aad43e259ff34c571b107bf32387a2576f71c1f554fd41d585cd321002f",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        166,
+        150,
+        347,
+        478
+      ],
+      "visual_width_m": 0.6716796875,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/IDLE_S/0001.png",
+      "sha256": "2abcd9620fb249b37079235745516224bc39b46be6c4abec35fd69cd22fea47f",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        207,
+        150,
+        305,
+        478
+      ],
+      "visual_width_m": 0.363671875,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/IDLE_SE/0001.png",
+      "sha256": "32d89fab166bc39e0d03083500d85d65a3c2a551a854639005bd53e01da2b148",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        166,
+        149,
+        344,
+        478
+      ],
+      "visual_width_m": 0.660546875,
+      "visual_height_m": 1.2208984375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/IDLE_SW/0001.png",
+      "sha256": "6530dabe31ebdcb13892c127995257f6119e6566f54d39b4ce2b4ccf67b6c3d9",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        160,
+        150,
+        352,
+        478
+      ],
+      "visual_width_m": 0.7124999999999999,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/IDLE_W/0001.png",
+      "sha256": "52dc7bf1eeba41e3338a83de0aa9cf7a1bb5576d8848207df0c4fd91fd28919e",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        142,
+        150,
+        370,
+        478
+      ],
+      "visual_width_m": 0.84609375,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/LIE_SIDE_CURLED/0001.png",
+      "sha256": "2a22b63cb67172b21d6c8889088980671edbe2c696386105f1806227c8dd8d5d",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        48,
+        351,
+        463,
+        479
+      ],
+      "visual_width_m": 1.5400390625,
+      "visual_height_m": 0.475,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/LIE_SIDE_STRAIGHT/0001.png",
+      "sha256": "bfa78bbb167d00143622982275efb7f74460a2369d2cf4d4e253578e10783427",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        48,
+        368,
+        462,
+        480
+      ],
+      "visual_width_m": 1.5363281249999998,
+      "visual_height_m": 0.41562499999999997,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/READ/0001.png",
+      "sha256": "8b8660204385b6ccf1933ce20ef933b2217a91f690b159c30112cdfff70514bf",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        101,
+        228,
+        410,
+        478
+      ],
+      "visual_width_m": 1.1466796875,
+      "visual_height_m": 0.927734375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/RELAXED_SIT/0001.png",
+      "sha256": "cdd5a369e8c73c1af29208cd8d63687b5d5a9ccafd1887333f704eac52d9675a",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        156,
+        227,
+        355,
+        479
+      ],
+      "visual_width_m": 0.7384765624999999,
+      "visual_height_m": 0.9351562499999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/SIT/0001.png",
+      "sha256": "ebe264f293ba55c951fe165d6179352053c4e52d65704c2b5891eb7164e0aa09",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        166,
+        227,
+        344,
+        479
+      ],
+      "visual_width_m": 0.660546875,
+      "visual_height_m": 0.9351562499999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/SIT_HUG_KNEES/0001.png",
+      "sha256": "1fd1074473990b2d0ac613632fc946ae961d6951686a90a364dd28a10989cc4b",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        137,
+        227,
+        374,
+        479
+      ],
+      "visual_width_m": 0.8794921874999999,
+      "visual_height_m": 0.9351562499999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/SIT_LEGS_TUCKED/0001.png",
+      "sha256": "4091c5e49022df7815c810117a5cc7cc155ade74a768670e511fcd25af9a0ebd",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        78,
+        228,
+        435,
+        479
+      ],
+      "visual_width_m": 1.3248046875,
+      "visual_height_m": 0.9314453125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/SLEEP/0001.png",
+      "sha256": "65de5669ad555b57530a55d2d6c6ab997c8920791f8f5a31a1969f53e4572a63",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        48,
+        387,
+        462,
+        479
+      ],
+      "visual_width_m": 1.5363281249999998,
+      "visual_height_m": 0.34140624999999997,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/TALK/0001.png",
+      "sha256": "42121e21a72c7bbfb5deb53a49c6a9053f09cb8d5f378baeec895097afae3740",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        122,
+        149,
+        387,
+        479
+      ],
+      "visual_width_m": 0.9833984375,
+      "visual_height_m": 1.224609375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/VIEW/0001.png",
+      "sha256": "d54b0e7a308bcda786a71c9ede4bcf8e7a56a4ecd33638973e5a196181ae550c",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        137,
+        150,
+        374,
+        479
+      ],
+      "visual_width_m": 0.8794921874999999,
+      "visual_height_m": 1.2208984375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0001.png",
+      "sha256": "2d8eb7a5901986202fefee5e3333eb71cabcf8169ca91577deecd9aa4a7cb8b0",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        139,
+        149,
+        383,
+        478
+      ],
+      "visual_width_m": 0.9054687499999999,
+      "visual_height_m": 1.2208984375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0002.png",
+      "sha256": "648582d7e7dfb058b2df9be13c90c542047fa3f3a9431d2ffc2ced28b783a23c",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        132,
+        150,
+        388,
+        478
+      ],
+      "visual_width_m": 0.95,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0003.png",
+      "sha256": "4881431b11b1dcd279334d4c8d953f6444457ec516a5085a025ae5603f17959b",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        109,
+        150,
+        392,
+        478
+      ],
+      "visual_width_m": 1.0501953124999999,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0004.png",
+      "sha256": "aedb04eb9021e2dbf3553120148484ad95276f99600c574c184e6442be46319b",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        95,
+        150,
+        393,
+        478
+      ],
+      "visual_width_m": 1.1058593749999999,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0005.png",
+      "sha256": "b16c34abaf8759031813bd837b0a2105ae713b99c8a510cbddc47f3c4c60a2ba",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        107,
+        151,
+        392,
+        478
+      ],
+      "visual_width_m": 1.0576171875,
+      "visual_height_m": 1.2134765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0006.png",
+      "sha256": "39f18d725d86d6c2676ade16a3a3a9a9c0ca6ba83a051fd40188ba1e62af9f16",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        125,
+        151,
+        390,
+        478
+      ],
+      "visual_width_m": 0.9833984375,
+      "visual_height_m": 1.2134765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0007.png",
+      "sha256": "cdf5f04fe69b672baa3bca4093278e014a1c1ab0bb210b5d7deed49a3fbd5fb1",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        128,
+        151,
+        389,
+        478
+      ],
+      "visual_width_m": 0.9685546875,
+      "visual_height_m": 1.2134765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0008.png",
+      "sha256": "e80da74bb6c69c52ca9898b19b267717209afc082aff866548a19b986beeb3a3",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        103,
+        151,
+        392,
+        477
+      ],
+      "visual_width_m": 1.0724609375,
+      "visual_height_m": 1.209765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0009.png",
+      "sha256": "5ea9476d25df38a65fb84fa6d2c865912682048518032de007f1efe88b00b331",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        102,
+        150,
+        388,
+        478
+      ],
+      "visual_width_m": 1.061328125,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0010.png",
+      "sha256": "6a06cbf2b3dbe9c0c3ad0b2496dff7011bc99d7881bec059c3a754e9fef3a87a",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        101,
+        149,
+        392,
+        477
+      ],
+      "visual_width_m": 1.0798828125,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0011.png",
+      "sha256": "e41820b2f0ac5b90e2e91683ed1c4392244f427dfccb9f07d3e5dc043ded669d",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        115,
+        149,
+        392,
+        477
+      ],
+      "visual_width_m": 1.0279296875,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_LEFT/0012.png",
+      "sha256": "62e04fb01492552a20560989815372c973f4ae63946e4a262e7d586e0eceedce",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        126,
+        149,
+        392,
+        477
+      ],
+      "visual_width_m": 0.987109375,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0001.png",
+      "sha256": "fd4335d7d7d8d99fa17d6e478a8a9ba051d6254ed3a647687cbad415fbc2d372",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        130,
+        149,
+        374,
+        478
+      ],
+      "visual_width_m": 0.9054687499999999,
+      "visual_height_m": 1.2208984375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0002.png",
+      "sha256": "35e0ef19b46b0e9f2089ae8338569a8ab8aefb7937874b85c3ce5b67287f73de",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        125,
+        150,
+        381,
+        478
+      ],
+      "visual_width_m": 0.95,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0003.png",
+      "sha256": "3f860f4a404ea891a9bc0a0a4a3fd83441c413deba07001b3943194cc2536cee",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        121,
+        150,
+        404,
+        478
+      ],
+      "visual_width_m": 1.0501953124999999,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0004.png",
+      "sha256": "96ff0e4d55b8236f5655fb6e75415a2517bc2ec10fce4938ddb00779b1139685",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        120,
+        150,
+        418,
+        478
+      ],
+      "visual_width_m": 1.1058593749999999,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0005.png",
+      "sha256": "2b23bb799a2ac62f1f9762dad4b41ba434c7398a665579db61491742c8b9346b",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        121,
+        151,
+        406,
+        478
+      ],
+      "visual_width_m": 1.0576171875,
+      "visual_height_m": 1.2134765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0006.png",
+      "sha256": "8da7579c288cb71c0d57e4809f162e8257e2fb075ecbc7a7c08d44a98bca9ead",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        123,
+        151,
+        388,
+        478
+      ],
+      "visual_width_m": 0.9833984375,
+      "visual_height_m": 1.2134765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0007.png",
+      "sha256": "59c1bf6179c931fc29df3694d76247ab46e5ce4da337ac86e1fec054a25d9f70",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        124,
+        151,
+        385,
+        478
+      ],
+      "visual_width_m": 0.9685546875,
+      "visual_height_m": 1.2134765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0008.png",
+      "sha256": "98df31798f2e2369f303e4664172bf559c248b59a861f04fcc777af6437a3e78",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        121,
+        151,
+        410,
+        477
+      ],
+      "visual_width_m": 1.0724609375,
+      "visual_height_m": 1.209765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0009.png",
+      "sha256": "9c953bc35c10f9e2a78d1d48f9c64e4b20cc3f569ee7344284a1e719ac9eb197",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        125,
+        150,
+        411,
+        478
+      ],
+      "visual_width_m": 1.061328125,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0010.png",
+      "sha256": "bfea298dafb4326c041d39383b882573e20c7964fb72c9a38498b6ccf3205ea0",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        121,
+        149,
+        412,
+        477
+      ],
+      "visual_width_m": 1.0798828125,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0011.png",
+      "sha256": "f0e3265d85d293626f9e815b2f07537a71799dfeb27d420d749dc2c9fd8b2046",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        121,
+        149,
+        398,
+        477
+      ],
+      "visual_width_m": 1.0279296875,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_CENTAUR/wardrobes/SHORT/WALK_RIGHT/0012.png",
+      "sha256": "0dc0a9fac1a245d68e1019642d467ef0b370866a87f7669d4a4b0903b92b156c",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        121,
+        149,
+        387,
+        477
+      ],
+      "visual_width_m": 0.987109375,
+      "visual_height_m": 1.2171874999999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/identity/front_0001.png",
+      "sha256": "5f3eb9dc8efef0c14a96de47887a099e9dec90d9cb0f14cb65162b5e66e05804",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        187,
+        138,
+        325,
+        478
+      ],
+      "visual_width_m": 0.512109375,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/CARRY_USE/0001.png",
+      "sha256": "d804bb876428b8dac1d4838a00d04dcc6e912acc74109d19d18fb1a6c6cdaf7e",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        173,
+        137,
+        338,
+        478
+      ],
+      "visual_width_m": 0.6123046875,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/DRINK/0001.png",
+      "sha256": "b2942595b9226bdd1071b30b38cce7325312a402e54f31ac81e2c488ef8a2b06",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        178,
+        137,
+        333,
+        479
+      ],
+      "visual_width_m": 0.5751953125,
+      "visual_height_m": 1.269140625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/DRINK/0002.png",
+      "sha256": "e2a7bccf8bd95f4e22fe419b57facefc64d1567f57ff5d2d6e5d68e0986f6784",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        178,
+        137,
+        334,
+        479
+      ],
+      "visual_width_m": 0.57890625,
+      "visual_height_m": 1.269140625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/DRINK/0003.png",
+      "sha256": "b9a427accc5fca039698e57c570f605c3ba2f72b1a3648331d4b651a80ac46c2",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        177,
+        137,
+        334,
+        479
+      ],
+      "visual_width_m": 0.5826171875,
+      "visual_height_m": 1.269140625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/DRINK/0004.png",
+      "sha256": "603aa78cfa387b2e85f675972acb2f0c06aaa9725cefea81d9907274c8328754",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        178,
+        137,
+        334,
+        479
+      ],
+      "visual_width_m": 0.57890625,
+      "visual_height_m": 1.269140625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_E/0001.png",
+      "sha256": "9ae6dbfca71abf3925a662989f6ca6e2831de5ceef892fda9d9199df559d1f9c",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        190,
+        138,
+        321,
+        478
+      ],
+      "visual_width_m": 0.48613281249999996,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_N/0001.png",
+      "sha256": "e49119104bae69c7371ed12fd2a0a77620d3a6b593e37f46d37c5d5dad521ae7",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        189,
+        138,
+        323,
+        478
+      ],
+      "visual_width_m": 0.497265625,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_NE/0001.png",
+      "sha256": "fd4d8b61b379a5025170e8261cecf0055ee6e04b7ab1b028f498e2e38254de97",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        185,
+        138,
+        326,
+        478
+      ],
+      "visual_width_m": 0.5232421875,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_NW/0001.png",
+      "sha256": "d069fc1befc1ce1f815a59edcc1f0481c47ff5017d978958bee027ce256a2429",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        186,
+        138,
+        326,
+        478
+      ],
+      "visual_width_m": 0.51953125,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_S/0001.png",
+      "sha256": "5f3eb9dc8efef0c14a96de47887a099e9dec90d9cb0f14cb65162b5e66e05804",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        187,
+        138,
+        325,
+        478
+      ],
+      "visual_width_m": 0.512109375,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_SE/0001.png",
+      "sha256": "90bc9408be302034b8df1585b8bcf21af84facc1173bd8df22f8b3677863ba2e",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        181,
+        137,
+        331,
+        478
+      ],
+      "visual_width_m": 0.556640625,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_SW/0001.png",
+      "sha256": "c95b0b00913e6e737e9116f1d1827efa79deaf49b7f70ef8043b80f00cacfee6",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        183,
+        138,
+        330,
+        478
+      ],
+      "visual_width_m": 0.5455078125,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/IDLE_W/0001.png",
+      "sha256": "b26f64f12ff196cc3c71243e85594c2dc6fc7751580bc27c4e6df10ea34804e3",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        192,
+        138,
+        321,
+        478
+      ],
+      "visual_width_m": 0.4787109375,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/LIE_SIDE_CURLED/0001.png",
+      "sha256": "88ffd102bd1a5d65903e3981ffaa2c424abd56a10988fbd2ac62cacc9ee9056d",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        135,
+        398,
+        379,
+        479
+      ],
+      "visual_width_m": 0.9054687499999999,
+      "visual_height_m": 0.3005859375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/LIE_SIDE_STRAIGHT/0001.png",
+      "sha256": "715a81b63aa9a4cc717d7f967e510206cc800cc6df0d77b98b30e06586fc87ff",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        91,
+        366,
+        422,
+        480
+      ],
+      "visual_width_m": 1.2283203125,
+      "visual_height_m": 0.423046875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/READ/0001.png",
+      "sha256": "01bfe221bf7e3cde14164dbfa7813bcbd71c79d91096723b25b572a7d8689028",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        179,
+        230,
+        333,
+        479
+      ],
+      "visual_width_m": 0.5714843749999999,
+      "visual_height_m": 0.9240234374999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/RELAXED_SIT/0001.png",
+      "sha256": "d752f32e173820a953c943fedaab3ae0bd95845034540dab9e53b7c9bc982065",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        176,
+        243,
+        334,
+        479
+      ],
+      "visual_width_m": 0.586328125,
+      "visual_height_m": 0.87578125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/SIT/0001.png",
+      "sha256": "9e3344c91ec7560e0836691a88de305d81edf1d5ad8c511a3081be797210ceca",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        181,
+        230,
+        331,
+        479
+      ],
+      "visual_width_m": 0.556640625,
+      "visual_height_m": 0.9240234374999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/SIT_HUG_KNEES/0001.png",
+      "sha256": "87340eec34531d1737fd9f391e9e5be24b2620f4827e2b917f8f3dee19af7d00",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        177,
+        283,
+        335,
+        479
+      ],
+      "visual_width_m": 0.586328125,
+      "visual_height_m": 0.72734375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/SIT_LEGS_TUCKED/0001.png",
+      "sha256": "080f0e78c4d72daa73f5934b059b8c3e328482b38774597aaf1d80b6ab52c124",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        161,
+        278,
+        352,
+        479
+      ],
+      "visual_width_m": 0.7087890625,
+      "visual_height_m": 0.7458984375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/SLEEP/0001.png",
+      "sha256": "3685d3b0f75c17bdf1bf02e7e606feb821c0073a3ac1c6b93a4eaebee505e19c",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        84,
+        378,
+        427,
+        479
+      ],
+      "visual_width_m": 1.2728515624999999,
+      "visual_height_m": 0.37480468749999996,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/TALK/0001.png",
+      "sha256": "088e9937b38c78f39e742396ffc6cae37d1f456c255e36f337005b04a741f957",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        145,
+        137,
+        365,
+        478
+      ],
+      "visual_width_m": 0.81640625,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/VIEW/0001.png",
+      "sha256": "cbb58c50f20520faa42438b9f6261ba49008fd8f87e608f98cd2079a68e76d60",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        187,
+        137,
+        325,
+        478
+      ],
+      "visual_width_m": 0.512109375,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0001.png",
+      "sha256": "53a819314a69d862d489c8aa43f4f1762615a2cae8ed31e6321efa3220ab639a",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        141,
+        138,
+        336,
+        477
+      ],
+      "visual_width_m": 0.7236328125,
+      "visual_height_m": 1.2580078125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0002.png",
+      "sha256": "787711388e1d9dfcef0f8750a5092c0dc7422b5c6ba5eb92dbac6139d60948f9",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        162,
+        139,
+        333,
+        477
+      ],
+      "visual_width_m": 0.6345703125,
+      "visual_height_m": 1.2542968749999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0003.png",
+      "sha256": "67688e3af5f9e8f254e0392b613feb93fb5aa4b407dddf2c4a80869fccb5a597",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        153,
+        139,
+        333,
+        477
+      ],
+      "visual_width_m": 0.66796875,
+      "visual_height_m": 1.2542968749999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0004.png",
+      "sha256": "64af5f7224164c1e3691ebe6e85464c214647ad47599532e5d376803474bd39f",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        146,
+        138,
+        329,
+        478
+      ],
+      "visual_width_m": 0.6791015625,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0005.png",
+      "sha256": "efe2614dcbfac1e3060b7b67816c050caf6d3e51c79c216bd3ff723eb5173eea",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        139,
+        139,
+        328,
+        477
+      ],
+      "visual_width_m": 0.7013671874999999,
+      "visual_height_m": 1.2542968749999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0006.png",
+      "sha256": "7e328dc1a482c7e12ebe8c53e7eee74013069171832e58a42d17a13a3e1b479c",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        104,
+        146,
+        331,
+        478
+      ],
+      "visual_width_m": 0.8423828124999999,
+      "visual_height_m": 1.23203125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0007.png",
+      "sha256": "52fef8a01a388b0b971dae57075b5ba89fdbd6aae8025b243ae96c02c5d556e3",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        118,
+        142,
+        337,
+        477
+      ],
+      "visual_width_m": 0.8126953124999999,
+      "visual_height_m": 1.2431640625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0008.png",
+      "sha256": "fa5eb44aa07deaa922cfe74ffc138222f3b1b623a3cb2f2c8f2374e4e4c2ef03",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        148,
+        139,
+        339,
+        477
+      ],
+      "visual_width_m": 0.7087890625,
+      "visual_height_m": 1.2542968749999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0009.png",
+      "sha256": "89179f5f8cb7103961b26749752618cfdf5d58499fbf88d7dc036228403846bf",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        163,
+        136,
+        335,
+        478
+      ],
+      "visual_width_m": 0.63828125,
+      "visual_height_m": 1.269140625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0010.png",
+      "sha256": "28ea85713b5209c1e3683bac753c2911dc416bca715160414e9dbb2d9aa2d4e1",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        166,
+        136,
+        334,
+        477
+      ],
+      "visual_width_m": 0.6234375,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0011.png",
+      "sha256": "82c51bc87fc6c4bec82d63ed2fcaf2c60a20741498c9cacf1a3ea47a331bf598",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        107,
+        138,
+        333,
+        477
+      ],
+      "visual_width_m": 0.838671875,
+      "visual_height_m": 1.2580078125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_LEFT/0012.png",
+      "sha256": "859d2eeffe611757f68f0bb94d19a862de3639e916d6737051321ad6248d070d",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        135,
+        136,
+        334,
+        478
+      ],
+      "visual_width_m": 0.7384765624999999,
+      "visual_height_m": 1.269140625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0001.png",
+      "sha256": "45f30e707072ce43b16d1e721b57f59f789d62f377d3af79dbd3818539983ca9",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        177,
+        136,
+        332,
+        477
+      ],
+      "visual_width_m": 0.5751953125,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0002.png",
+      "sha256": "1a3f17e05ffb90a5d0721adb1e4fa8a393a890e10c6fbfdd0c88dd7b73d90422",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        171,
+        136,
+        354,
+        477
+      ],
+      "visual_width_m": 0.6791015625,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0003.png",
+      "sha256": "adf5ec76006044e51e5cdcfd8887168270230b91a00c8cb5bcc686d2ed7d787b",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        181,
+        139,
+        374,
+        478
+      ],
+      "visual_width_m": 0.7162109375,
+      "visual_height_m": 1.2580078125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0004.png",
+      "sha256": "39aa81e1b3958152f56f2ab8dd6efad431e9b781653c6172c12952b4ff054b3b",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        182,
+        138,
+        384,
+        477
+      ],
+      "visual_width_m": 0.7496093749999999,
+      "visual_height_m": 1.2580078125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0005.png",
+      "sha256": "faa849ade6199b00b8d4058630442d1b3521fa8a0467284aadd6fcbfd1cb269a",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        181,
+        142,
+        391,
+        477
+      ],
+      "visual_width_m": 0.779296875,
+      "visual_height_m": 1.2431640625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0006.png",
+      "sha256": "a98f57930d496f13bdc58ab7f6ffc7015c3a648adc24ac377145ec6c17a12e09",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        186,
+        143,
+        376,
+        478
+      ],
+      "visual_width_m": 0.705078125,
+      "visual_height_m": 1.2431640625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0007.png",
+      "sha256": "7381e57e9063b6584a0948f45505fae93adb230ad1e5f583cd72112de723649b",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        183,
+        143,
+        366,
+        478
+      ],
+      "visual_width_m": 0.6791015625,
+      "visual_height_m": 1.2431640625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0008.png",
+      "sha256": "3a1e8d2f73bba5f08c31b97b7b54d3612fe718eb66e95b3a46ca1245a9fe5b65",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        183,
+        143,
+        406,
+        477
+      ],
+      "visual_width_m": 0.8275390625,
+      "visual_height_m": 1.239453125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0009.png",
+      "sha256": "c6ca7f6a792c72ab37ccc19182a82b9d7bc8a8d536c32cc685e432c16bcdab04",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        182,
+        140,
+        391,
+        477
+      ],
+      "visual_width_m": 0.7755859374999999,
+      "visual_height_m": 1.2505859375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0010.png",
+      "sha256": "8ff0884fe8efdc51c293afd40f8ee1c112ec4605629f7fad45e783dac532cc18",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        183,
+        137,
+        371,
+        477
+      ],
+      "visual_width_m": 0.69765625,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0011.png",
+      "sha256": "9edb8145a02bfdd4e710743bcee1b454fef18255b6b18280f12dd36a8f059860",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        178,
+        136,
+        365,
+        477
+      ],
+      "visual_width_m": 0.6939453125,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_GINGER_CAT_GUEST/wardrobes/SHORT/WALK_RIGHT/0012.png",
+      "sha256": "a31ffe467d6792926f041ee41a236799f718a88cae08cabfe395ca3e0b2a7105",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        177,
+        136,
+        344,
+        477
+      ],
+      "visual_width_m": 0.6197265625,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/identity/front_0001.png",
+      "sha256": "501284e9724441533d9cc34648c6956c564a1a097008f4e2b15bea6238f65fee",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        208,
+        137,
+        304,
+        478
+      ],
+      "visual_width_m": 0.35624999999999996,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/CARRY_USE/0001.png",
+      "sha256": "8126dc056f555f60f57637adbd4d0dcc12a34b733410efbd38a9249894678a41",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        207,
+        137,
+        303,
+        478
+      ],
+      "visual_width_m": 0.35624999999999996,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/DRINK/0001.png",
+      "sha256": "3c9b66daf3207a4999f1950a76b27ff36b243260c94aaa50f030754b6de464fd",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        208,
+        138,
+        303,
+        479
+      ],
+      "visual_width_m": 0.3525390625,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/DRINK/0002.png",
+      "sha256": "096d77b7dde405e31ae6692c7fe3ad5e6097c5ea5e98989aa2662df08bfe04e9",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        206,
+        138,
+        305,
+        479
+      ],
+      "visual_width_m": 0.3673828125,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/DRINK/0003.png",
+      "sha256": "f7de25b6ff28a2e310aab85630acf77f3c9bf7047ed128da9c26700351431b58",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        206,
+        138,
+        307,
+        478
+      ],
+      "visual_width_m": 0.37480468749999996,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/DRINK/0004.png",
+      "sha256": "338f9cd5c2553921603d8d6fbf39f4b254cea57e6b4fa68863d61a2e7bac9276",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        208,
+        138,
+        303,
+        478
+      ],
+      "visual_width_m": 0.3525390625,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/IDLE_E/0001.png",
+      "sha256": "cbe10e2a3dfc40f09c794fc5d3d4acd61eeebe754a31adec9f8c636d4aa71d0c",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        220,
+        137,
+        292,
+        478
+      ],
+      "visual_width_m": 0.26718749999999997,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/IDLE_N/0001.png",
+      "sha256": "44bd69587412257b1169a28d0e04f99df684b30b3022611590d4b8ff45ab1ee5",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        207,
+        137,
+        305,
+        478
+      ],
+      "visual_width_m": 0.363671875,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/IDLE_NE/0001.png",
+      "sha256": "4c479d53c6f978b400c55223340b79f36d14da7895e5595d6c63a2649e5762a4",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        211,
+        138,
+        299,
+        478
+      ],
+      "visual_width_m": 0.3265625,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/IDLE_NW/0001.png",
+      "sha256": "40efd7ad0b850dba3b772004c608b91dd9955e781c88e82d837111ddca89fcb5",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        212,
+        138,
+        302,
+        478
+      ],
+      "visual_width_m": 0.333984375,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/IDLE_S/0001.png",
+      "sha256": "1767d5ae08585361bda08421cf6233d5236b253683b409790bd95a076bf7894f",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        206,
+        137,
+        306,
+        478
+      ],
+      "visual_width_m": 0.37109375,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/IDLE_SE/0001.png",
+      "sha256": "16936a16b59957d4acc13fdf7e3289774fbdd2867e0bbf61c196fcc2b79aa974",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        208,
+        138,
+        304,
+        478
+      ],
+      "visual_width_m": 0.35624999999999996,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/IDLE_SW/0001.png",
+      "sha256": "c732bedbdf0930a0ac976d04c99e632be7587a542f94223e2b1b1579e60b484b",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        210,
+        137,
+        301,
+        478
+      ],
+      "visual_width_m": 0.3376953125,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/IDLE_W/0001.png",
+      "sha256": "a977d13c5db01c2429ce6ea5a794406dfb2328a5781dc601b2265c764e506a69",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        222,
+        137,
+        291,
+        478
+      ],
+      "visual_width_m": 0.2560546875,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/LIE_SIDE_CURLED/0001.png",
+      "sha256": "cbace5cd0d9cef76f90818422e112c9439b792c36b6e0d7fdfee944c0121260c",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        134,
+        405,
+        379,
+        480
+      ],
+      "visual_width_m": 0.9091796875,
+      "visual_height_m": 0.2783203125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/LIE_SIDE_STRAIGHT/0001.png",
+      "sha256": "0d1d84fd77eb3ae81610d27bd1f600e6e62f4d8059e3c97a055fe68c96253dfb",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        90,
+        415,
+        423,
+        480
+      ],
+      "visual_width_m": 1.2357421874999999,
+      "visual_height_m": 0.2412109375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/READ/0001.png",
+      "sha256": "04bca5ed2258320ba0ac61acc539e3b5b531a35bd62ac3c2699745f8c260a223",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        216,
+        230,
+        296,
+        479
+      ],
+      "visual_width_m": 0.296875,
+      "visual_height_m": 0.9240234374999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/RELAXED_SIT/0001.png",
+      "sha256": "3f455d1670626b79feb3fcf56c2b0f3a024cd469bbd6913a4fa2624e64072631",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        198,
+        243,
+        314,
+        479
+      ],
+      "visual_width_m": 0.43046874999999996,
+      "visual_height_m": 0.87578125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/SIT/0001.png",
+      "sha256": "076dd551ce06288450a17b6143d8f5cc020bf345cc19da09c78fa6145d3dae84",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        218,
+        230,
+        294,
+        479
+      ],
+      "visual_width_m": 0.28203125,
+      "visual_height_m": 0.9240234374999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/SIT_HUG_KNEES/0001.png",
+      "sha256": "5ca72a8b20719a52e6adfaab36cf8f064acf685cc884724adc1b239fa80e2078",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        208,
+        282,
+        304,
+        479
+      ],
+      "visual_width_m": 0.35624999999999996,
+      "visual_height_m": 0.7310546874999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/SIT_LEGS_TUCKED/0001.png",
+      "sha256": "08febe3053642c9f4db87aa8cf0bca75de4578568264dbaab85d4aa5ba1b118b",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        151,
+        278,
+        360,
+        479
+      ],
+      "visual_width_m": 0.7755859374999999,
+      "visual_height_m": 0.7458984375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/SLEEP/0001.png",
+      "sha256": "5fed4168d726a83e220f68336b096ab593de0b146995d12b778809cd0b8ede8d",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        84,
+        416,
+        428,
+        480
+      ],
+      "visual_width_m": 1.2765625,
+      "visual_height_m": 0.2375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/TALK/0001.png",
+      "sha256": "08373ba8a3dea20bda01fcc9d7c8807eef7bd65e4dcc2be36194ee381dfbbf4b",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        152,
+        138,
+        360,
+        478
+      ],
+      "visual_width_m": 0.771875,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/VIEW/0001.png",
+      "sha256": "ff3be1c263d1f3c0f67a6ffa87e573510fa59c85ab892c43bf968402b8860296",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        210,
+        137,
+        302,
+        480
+      ],
+      "visual_width_m": 0.34140624999999997,
+      "visual_height_m": 1.2728515624999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0001.png",
+      "sha256": "13c769435ad50449373d6210e0b283272d893eb2bf901b2bf76246a5dfcab967",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        212,
+        137,
+        335,
+        478
+      ],
+      "visual_width_m": 0.4564453125,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0002.png",
+      "sha256": "dde3ba6f00d601fc8a49693cce405c85f95d7d3b2ba95ab96b6a4cd2cae1e036",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        199,
+        137,
+        332,
+        478
+      ],
+      "visual_width_m": 0.4935546875,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0003.png",
+      "sha256": "24494c62272d43c1e8ba6ec7aa2ae96a8bf92f40c336de369da408a909b47da9",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        172,
+        138,
+        305,
+        478
+      ],
+      "visual_width_m": 0.4935546875,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0004.png",
+      "sha256": "aaee91d647d40857065f7acd42a823556422a14b4e47a3184baa8e14ee4799e2",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        143,
+        140,
+        304,
+        478
+      ],
+      "visual_width_m": 0.5974609375,
+      "visual_height_m": 1.2542968749999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0005.png",
+      "sha256": "08184303734fc2df92b0ac75abfb5409687a9dd7665f5c37e768cb856cc3ab8f",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        151,
+        139,
+        322,
+        478
+      ],
+      "visual_width_m": 0.6345703125,
+      "visual_height_m": 1.2580078125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0006.png",
+      "sha256": "5568f73acc715bd26e2a73ca813abcca1092103fbd953812a822e9bd75789ad1",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        189,
+        138,
+        342,
+        478
+      ],
+      "visual_width_m": 0.5677734375,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0007.png",
+      "sha256": "6652ee80b23a7581244f5567af69e1c1fef1681ae5993ed530c5f6e0a19d03e2",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        200,
+        137,
+        328,
+        477
+      ],
+      "visual_width_m": 0.475,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0008.png",
+      "sha256": "2e842000191c7f6abfa85f7d5210beb8f024fe19c3141fb1525eacbb059c28e3",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        174,
+        137,
+        335,
+        477
+      ],
+      "visual_width_m": 0.5974609375,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0009.png",
+      "sha256": "8b53220b91e8e0b64148ed0669028f6180be471b0ecb4170b2031a98d3d6c226",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        137,
+        146,
+        337,
+        478
+      ],
+      "visual_width_m": 0.7421875,
+      "visual_height_m": 1.23203125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0010.png",
+      "sha256": "9008b2e8bfe32af70dc3a47a8b0727fb5bd2d6d2fa60a68b46094e303629bd20",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        161,
+        141,
+        346,
+        477
+      ],
+      "visual_width_m": 0.6865234375,
+      "visual_height_m": 1.246875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0011.png",
+      "sha256": "7a0c141b86d113b50c43214996a91b1f86a4f27e78e4f0adf7230b1889be7c4d",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        205,
+        139,
+        334,
+        478
+      ],
+      "visual_width_m": 0.4787109375,
+      "visual_height_m": 1.2580078125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_LEFT/0012.png",
+      "sha256": "2f833a33ccbc59c7d043e2ef7c4bc6945dc62b4de62d39223c5635cfccaea450",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        196,
+        138,
+        315,
+        478
+      ],
+      "visual_width_m": 0.4416015625,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0001.png",
+      "sha256": "fedc95e474efcb8e2cbf8e215541bb8cbda66f7368ab99702b4c5707a1edc55b",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        178,
+        137,
+        301,
+        478
+      ],
+      "visual_width_m": 0.4564453125,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0002.png",
+      "sha256": "14369352e927b498789cf46306256d78d05dbf8d5a2f72618b3f66cb81de1341",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        181,
+        137,
+        314,
+        478
+      ],
+      "visual_width_m": 0.4935546875,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0003.png",
+      "sha256": "1d619f20796b542850ebb254af53b8f5ebfc2e65a3d874f40d1a36739d64f2d6",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        208,
+        138,
+        341,
+        478
+      ],
+      "visual_width_m": 0.4935546875,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0004.png",
+      "sha256": "6021632d16f5de76717f7559689dce4aeef981b048debc9ec80594bb6784d1e8",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        209,
+        140,
+        370,
+        478
+      ],
+      "visual_width_m": 0.5974609375,
+      "visual_height_m": 1.2542968749999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0005.png",
+      "sha256": "d06bc5d78ad01beb841c4072f7308d7002fc101c3e26ba76bac1b82f26bce511",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        191,
+        139,
+        362,
+        478
+      ],
+      "visual_width_m": 0.6345703125,
+      "visual_height_m": 1.2580078125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0006.png",
+      "sha256": "c5f93f8fd1280a836573eba96b2a82528cb9216a18c4bc0ee12756eef0ac7f3d",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        171,
+        138,
+        324,
+        478
+      ],
+      "visual_width_m": 0.5677734375,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0007.png",
+      "sha256": "c8a2d2dc884ea5ded13a89776c538f9ca161a92db4212ab3574dccf51ce790ee",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        185,
+        137,
+        313,
+        477
+      ],
+      "visual_width_m": 0.475,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0008.png",
+      "sha256": "e669324eac4a5298f6efa798c49c15b4a69d89b74b5b5364a982d5dcd9caf62b",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        178,
+        137,
+        339,
+        477
+      ],
+      "visual_width_m": 0.5974609375,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0009.png",
+      "sha256": "7780ee7237ec8fad141e0aad0561cb51b7ced47c7689c430048094806aa36221",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        176,
+        146,
+        376,
+        478
+      ],
+      "visual_width_m": 0.7421875,
+      "visual_height_m": 1.23203125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0010.png",
+      "sha256": "3abf0cadccc837bb17b1f772e360e8ea59baa407ee48c3b7f560e58461ca937a",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        167,
+        141,
+        352,
+        477
+      ],
+      "visual_width_m": 0.6865234375,
+      "visual_height_m": 1.246875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0011.png",
+      "sha256": "ff6b35f41a31e5deca0e457e4edae724e7824fde79f10187cc2e4db06f0cb8e9",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        179,
+        139,
+        308,
+        478
+      ],
+      "visual_width_m": 0.4787109375,
+      "visual_height_m": 1.2580078125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/CITY/WALK_RIGHT/0012.png",
+      "sha256": "7aa10d30beae0c2a1eb8dd43d9d3e2d0ddbe21685850ad6b4c7148c41c12ace4",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        198,
+        138,
+        317,
+        478
+      ],
+      "visual_width_m": 0.4416015625,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/CARRY_USE/0001.png",
+      "sha256": "56de110fd095393be5842b4ea927a2914f20fdab6b44bb9d9fba60037f801064",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        204,
+        138,
+        308,
+        478
+      ],
+      "visual_width_m": 0.3859375,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/DRINK/0001.png",
+      "sha256": "7927768ec41ebc5ee3249a77f80135b24aa7ce2e4fa357e88d1f3ac408fff10c",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        206,
+        137,
+        306,
+        478
+      ],
+      "visual_width_m": 0.37109375,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/DRINK/0002.png",
+      "sha256": "483a4cab5c86d4b4f8d546d8b83439d35a38603a69a34a07ba31673a58318f28",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        205,
+        137,
+        308,
+        478
+      ],
+      "visual_width_m": 0.3822265625,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/DRINK/0003.png",
+      "sha256": "7bb8ef177f02c3e102fce52656ce7170c36efce6b7dc718e4a6d4a2a0e86d0eb",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        204,
+        138,
+        308,
+        479
+      ],
+      "visual_width_m": 0.3859375,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/DRINK/0004.png",
+      "sha256": "e6c757155f976a26080fa2474fba37c48b5a12f5fa01c5c28ce5f7a366423f18",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        206,
+        138,
+        306,
+        479
+      ],
+      "visual_width_m": 0.37109375,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/IDLE_E/0001.png",
+      "sha256": "9de07bddc2b9689fc027aeb681aa94c66d4de567b3edbbb9e55eea3a109581a1",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        221,
+        138,
+        291,
+        478
+      ],
+      "visual_width_m": 0.259765625,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/IDLE_N/0001.png",
+      "sha256": "6f6017eff75247a344f78065a5718dd429efae6785fca3f90c20c0e16516b81d",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        208,
+        138,
+        305,
+        478
+      ],
+      "visual_width_m": 0.35996093749999997,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/IDLE_NE/0001.png",
+      "sha256": "62a7e2445d752112472ccdc4c5e707366be0ca165d6eb095e3202dcb791f86e6",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        214,
+        138,
+        298,
+        478
+      ],
+      "visual_width_m": 0.31171875,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/IDLE_NW/0001.png",
+      "sha256": "ee536303c17fe04b63b155db95ac8126f9b29595b1d50009a7fbf799aa0b029e",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        213,
+        138,
+        299,
+        478
+      ],
+      "visual_width_m": 0.319140625,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/IDLE_S/0001.png",
+      "sha256": "0bda2282b93143aa96e8e7a4f1c1dbcaf7e07be96889195a9fe29a3a77795e61",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        207,
+        138,
+        304,
+        478
+      ],
+      "visual_width_m": 0.35996093749999997,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/IDLE_SE/0001.png",
+      "sha256": "d26e5d9c41ada2f80e2756c7b7471f02d8e90bf9e3679df5382d0180392cbd42",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        214,
+        138,
+        297,
+        478
+      ],
+      "visual_width_m": 0.3080078125,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/IDLE_SW/0001.png",
+      "sha256": "2759e5c7233ce724f8d829b3be5a711905af1d1ab0635f77e4ae11a3a1bd1e79",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        212,
+        138,
+        300,
+        478
+      ],
+      "visual_width_m": 0.3265625,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/IDLE_W/0001.png",
+      "sha256": "f68a33e7e82cce13962f6189259bee50a3d08f45fc1616468cffa6ea2e9de9b3",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        222,
+        138,
+        293,
+        478
+      ],
+      "visual_width_m": 0.2634765625,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/LIE_SIDE_CURLED/0001.png",
+      "sha256": "dc11dbee7a6eec623ecf8e0af3412055be38b9d15d796d35a90428afa43738f1",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        134,
+        402,
+        379,
+        479
+      ],
+      "visual_width_m": 0.9091796875,
+      "visual_height_m": 0.28574218749999997,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/LIE_SIDE_STRAIGHT/0001.png",
+      "sha256": "83efb76fe17c00ac8e223b4da7b290ea4650de881a80900aacb2ec64a6e30e5d",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        90,
+        417,
+        423,
+        480
+      ],
+      "visual_width_m": 1.2357421874999999,
+      "visual_height_m": 0.23378906249999998,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/READ/0001.png",
+      "sha256": "120766889733ca4079881455f0e0748325fffbaadd600319ecfd6ce4a20fd24f",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        208,
+        230,
+        304,
+        479
+      ],
+      "visual_width_m": 0.35624999999999996,
+      "visual_height_m": 0.9240234374999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/RELAXED_SIT/0001.png",
+      "sha256": "01afbb3d1706c44f3a71422c0b24ba418f031e5c66e72cf426c997781365a26e",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        197,
+        243,
+        314,
+        479
+      ],
+      "visual_width_m": 0.43417968749999997,
+      "visual_height_m": 0.87578125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/SIT/0001.png",
+      "sha256": "f9b7b6082ea0ada77119478e6f95cca3a2756c85f08884874da498f420b45618",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        211,
+        230,
+        301,
+        479
+      ],
+      "visual_width_m": 0.333984375,
+      "visual_height_m": 0.9240234374999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/SIT_HUG_KNEES/0001.png",
+      "sha256": "674aea3b02b4eba82358539edea319f6c5c91c807267806f701f7f0525b1324f",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        208,
+        283,
+        302,
+        479
+      ],
+      "visual_width_m": 0.348828125,
+      "visual_height_m": 0.72734375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/SIT_LEGS_TUCKED/0001.png",
+      "sha256": "6aedca5ad3abbb988653495d0586ad3dbee61a7f94facfe4bca029b71bb157ff",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        145,
+        278,
+        366,
+        479
+      ],
+      "visual_width_m": 0.8201171875,
+      "visual_height_m": 0.7458984375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/SLEEP/0001.png",
+      "sha256": "a225b08c275d5bc477a1357542826332263346a6ad2bf35aa4bba9b0d349a052",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        84,
+        416,
+        427,
+        480
+      ],
+      "visual_width_m": 1.2728515624999999,
+      "visual_height_m": 0.2375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/TALK/0001.png",
+      "sha256": "2998ec449039e071f35965aa13b6630b3b17c847924f93688b30bb2228087cf9",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        165,
+        137,
+        345,
+        478
+      ],
+      "visual_width_m": 0.66796875,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/VIEW/0001.png",
+      "sha256": "9312c988d81820186348e403f5d6da466607ef483aa4df3a22f5632c462e0de1",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        206,
+        137,
+        307,
+        479
+      ],
+      "visual_width_m": 0.37480468749999996,
+      "visual_height_m": 1.269140625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0001.png",
+      "sha256": "13e3334532f6cf82c8c2a3615098917d4ec1e40d0b8430cd4cc9add8a3c13686",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        166,
+        132,
+        347,
+        477
+      ],
+      "visual_width_m": 0.6716796875,
+      "visual_height_m": 1.2802734375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0002.png",
+      "sha256": "599cbc640d7e800a373aea0025b535e0ce3b5a33237fd7397cce3087ccfdd96a",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        204,
+        134,
+        307,
+        477
+      ],
+      "visual_width_m": 0.3822265625,
+      "visual_height_m": 1.2728515624999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0003.png",
+      "sha256": "41c9a7b5aec6d0b95033c9deb6268ebf8eac24e01adfb49750e164f56e0e5eb9",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        187,
+        133,
+        304,
+        477
+      ],
+      "visual_width_m": 0.43417968749999997,
+      "visual_height_m": 1.2765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0004.png",
+      "sha256": "c440860a64a297529e5bfd39680699536a37bc7ccfd33c6796860621dfa04400",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        178,
+        139,
+        320,
+        478
+      ],
+      "visual_width_m": 0.526953125,
+      "visual_height_m": 1.2580078125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0005.png",
+      "sha256": "09a6883bbc63f56f83f8d630e425771725a3e05975d3719afdf5520fd054acee",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        132,
+        139,
+        311,
+        477
+      ],
+      "visual_width_m": 0.6642578124999999,
+      "visual_height_m": 1.2542968749999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0006.png",
+      "sha256": "68f59ea33afab4cf9c3a644fee436d31558c9bc25dd4d850d5fbe62e6084ac93",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        163,
+        141,
+        336,
+        477
+      ],
+      "visual_width_m": 0.6419921875,
+      "visual_height_m": 1.246875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0007.png",
+      "sha256": "027b8156f6c50eec22a0e92b5076aa048f165b38847aebfebdb3699215b99af2",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        187,
+        137,
+        324,
+        478
+      ],
+      "visual_width_m": 0.5083984375,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0008.png",
+      "sha256": "008364c5ef95fa46c43664835d05308583c613a1be80028ddaec9c060556efda",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        198,
+        138,
+        314,
+        478
+      ],
+      "visual_width_m": 0.43046874999999996,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0009.png",
+      "sha256": "c98211915f8a6f589e922aa34b05c9e343bba9e19a6d7fec7f6c87a659b09081",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        191,
+        138,
+        290,
+        478
+      ],
+      "visual_width_m": 0.3673828125,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0010.png",
+      "sha256": "ad9988bd5878f6f9446c5c09c7145dcf861539467792a82b859775a07bda012b",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        143,
+        139,
+        313,
+        478
+      ],
+      "visual_width_m": 0.630859375,
+      "visual_height_m": 1.2580078125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0011.png",
+      "sha256": "75293768a024c366524eaf94a6bd7e681b2bce6ca04a9d5c8080db5803941b1b",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        153,
+        139,
+        343,
+        477
+      ],
+      "visual_width_m": 0.705078125,
+      "visual_height_m": 1.2542968749999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_LEFT/0012.png",
+      "sha256": "4b5975bd23b51476dd1e5e543ccbd466cc057b065cc192f2feb11f29e1e29c91",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        162,
+        139,
+        357,
+        478
+      ],
+      "visual_width_m": 0.7236328125,
+      "visual_height_m": 1.2580078125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0001.png",
+      "sha256": "b7e531676a3c0632f5ed53020aadb706ed2a810454be91350ef794abc6d7829a",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        166,
+        132,
+        347,
+        477
+      ],
+      "visual_width_m": 0.6716796875,
+      "visual_height_m": 1.2802734375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0002.png",
+      "sha256": "92c6792ec42902410924bf61f07bafb6d88ee58fba2c5f287af61f6d21ea5972",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        206,
+        134,
+        309,
+        477
+      ],
+      "visual_width_m": 0.3822265625,
+      "visual_height_m": 1.2728515624999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0003.png",
+      "sha256": "630b2c9b0d67bbe29f422570f243859a5557872beb9d514eff705f2a68b8f0de",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        209,
+        133,
+        326,
+        477
+      ],
+      "visual_width_m": 0.43417968749999997,
+      "visual_height_m": 1.2765625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0004.png",
+      "sha256": "7eecef72a696580ce98cf36a6bd5cf256df42555d4bf490528437497da10ef58",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        193,
+        139,
+        335,
+        478
+      ],
+      "visual_width_m": 0.526953125,
+      "visual_height_m": 1.2580078125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0005.png",
+      "sha256": "bcef56fb76089ba11fa8b7e055aaa0db351a8529d271761fe2eb4c43b1c5bfc7",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        202,
+        139,
+        381,
+        477
+      ],
+      "visual_width_m": 0.6642578124999999,
+      "visual_height_m": 1.2542968749999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0006.png",
+      "sha256": "39b962f916cfebcef952d3cd2ab42e067aaf25c18fda863b17e762565e8e44dd",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        177,
+        141,
+        350,
+        477
+      ],
+      "visual_width_m": 0.6419921875,
+      "visual_height_m": 1.246875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0007.png",
+      "sha256": "c3453bdd3c26d4cc3effef7a6c329be30ec760bf45d7c36f59c30326ccd66511",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        189,
+        137,
+        326,
+        478
+      ],
+      "visual_width_m": 0.5083984375,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0008.png",
+      "sha256": "8ab4a19e941decd69ed130280a9e0bc3d3ea19d78233e55a52477ed1b5e13ca0",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        199,
+        138,
+        315,
+        478
+      ],
+      "visual_width_m": 0.43046874999999996,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0009.png",
+      "sha256": "1b1ec680e0900dfd48a3d2636a46d63c0168d7703e84636ccfd0cbfc4ef6277a",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        223,
+        138,
+        322,
+        478
+      ],
+      "visual_width_m": 0.3673828125,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0010.png",
+      "sha256": "322c1ddc0ac4b918de0307d149a5da962671fa7192f244f89d17d6fabfc1ef96",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        200,
+        139,
+        370,
+        478
+      ],
+      "visual_width_m": 0.630859375,
+      "visual_height_m": 1.2580078125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0011.png",
+      "sha256": "0f7579024053af767ab034423892f1552d49c76b310f7e05ce07d9edf9540da8",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        170,
+        139,
+        360,
+        477
+      ],
+      "visual_width_m": 0.705078125,
+      "visual_height_m": 1.2542968749999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/HOME/WALK_RIGHT/0012.png",
+      "sha256": "4d5ad1ab3b44435c48ba611716ed2e42f189ebb7091d1ae8135609637c62537a",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        156,
+        139,
+        351,
+        478
+      ],
+      "visual_width_m": 0.7236328125,
+      "visual_height_m": 1.2580078125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/CARRY_USE/0001.png",
+      "sha256": "8b524f3778aed0dc3ca21220978443b8ccbef7d16a12516a01903ff95a429187",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        208,
+        138,
+        304,
+        479
+      ],
+      "visual_width_m": 0.35624999999999996,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/DRINK/0001.png",
+      "sha256": "f78b0488bed1a76627a1751ed07acadaa5c381a17751acf9058484d9452277d2",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        207,
+        137,
+        305,
+        479
+      ],
+      "visual_width_m": 0.363671875,
+      "visual_height_m": 1.269140625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/DRINK/0002.png",
+      "sha256": "e1ac6bd22a77e333812f85f4eeca68744aeb0898cd41e1815433252cc809eaf7",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        205,
+        137,
+        307,
+        479
+      ],
+      "visual_width_m": 0.37851562499999997,
+      "visual_height_m": 1.269140625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/DRINK/0003.png",
+      "sha256": "f985270313aa1547a76d991205679de1429cf07afab40ccab67afe0a24321d60",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        205,
+        138,
+        306,
+        478
+      ],
+      "visual_width_m": 0.37480468749999996,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/DRINK/0004.png",
+      "sha256": "1a9e7ff95072dbddb0ca3f1a47545e0b89373a8763d999e2faa1140642f0067f",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        206,
+        138,
+        306,
+        478
+      ],
+      "visual_width_m": 0.37109375,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/IDLE_E/0001.png",
+      "sha256": "1125496cb5864c81be162a8becde6c32a087bdf95cc267026e53fea37fb08623",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        222,
+        138,
+        290,
+        478
+      ],
+      "visual_width_m": 0.25234375,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/IDLE_N/0001.png",
+      "sha256": "69a19a65106f0c88f16e6074cb350013d534dc7fa8308217fc3f39ed0d3cb7c7",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        208,
+        138,
+        303,
+        478
+      ],
+      "visual_width_m": 0.3525390625,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/IDLE_NE/0001.png",
+      "sha256": "4f5e9901729bcfbe367744c509707ee8916dd1bc1f959ad56113fa6e70997282",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        212,
+        138,
+        300,
+        478
+      ],
+      "visual_width_m": 0.3265625,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/IDLE_NW/0001.png",
+      "sha256": "319a0d924a3aa78858e02c2e691cb7de305ccaf517a0059b8b8c7bbef2ddef6f",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        214,
+        138,
+        297,
+        478
+      ],
+      "visual_width_m": 0.3080078125,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/IDLE_S/0001.png",
+      "sha256": "501284e9724441533d9cc34648c6956c564a1a097008f4e2b15bea6238f65fee",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        208,
+        137,
+        304,
+        478
+      ],
+      "visual_width_m": 0.35624999999999996,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/IDLE_SE/0001.png",
+      "sha256": "185064ed342b4d79d9b2198e2afc55cd6d8406f6f498f0327b7c52d39d8b3902",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        216,
+        138,
+        295,
+        478
+      ],
+      "visual_width_m": 0.2931640625,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/IDLE_SW/0001.png",
+      "sha256": "e378cdafbe42839f73575eb8b6182990142b04f1d72bc79c3f365bd60038e600",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        213,
+        138,
+        299,
+        478
+      ],
+      "visual_width_m": 0.319140625,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/IDLE_W/0001.png",
+      "sha256": "f435c90fba3795f6e492286274a5b16d0723ee1e4dbc846b5dea9c77bdd99300",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        222,
+        138,
+        291,
+        478
+      ],
+      "visual_width_m": 0.2560546875,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/LIE_SIDE_CURLED/0001.png",
+      "sha256": "5e16e6bc056c4430fe55438d7bad773db9ad8d70c8f4b6dba63c12bb6501cba2",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        134,
+        400,
+        378,
+        479
+      ],
+      "visual_width_m": 0.9054687499999999,
+      "visual_height_m": 0.2931640625,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/LIE_SIDE_STRAIGHT/0001.png",
+      "sha256": "1c0d5322302ab6f229a6748141d65da0baaf80db6ae3ad60e574f4e3e4df3557",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        90,
+        414,
+        423,
+        480
+      ],
+      "visual_width_m": 1.2357421874999999,
+      "visual_height_m": 0.24492187499999998,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/READ/0001.png",
+      "sha256": "371b364fdf3d422a069081df0164501a29aa9c44a6df2363d30eec16b6c84636",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        215,
+        230,
+        297,
+        479
+      ],
+      "visual_width_m": 0.30429687499999997,
+      "visual_height_m": 0.9240234374999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/RELAXED_SIT/0001.png",
+      "sha256": "9090e6ce05b84f38901a24596317de35e02e3aa81048c221489637111a9ac526",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        205,
+        243,
+        308,
+        479
+      ],
+      "visual_width_m": 0.3822265625,
+      "visual_height_m": 0.87578125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/SIT/0001.png",
+      "sha256": "82c5cb86cfbd596838df42fc91c633c83cdd517b9b6780d2cdecd49fe0b17045",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        217,
+        230,
+        296,
+        479
+      ],
+      "visual_width_m": 0.2931640625,
+      "visual_height_m": 0.9240234374999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/SIT_HUG_KNEES/0001.png",
+      "sha256": "33583e35eb7f42cbcff4a1dc06cc1e7b2600287965e56c6a92851ac8f08d66b6",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        208,
+        283,
+        303,
+        479
+      ],
+      "visual_width_m": 0.3525390625,
+      "visual_height_m": 0.72734375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/SIT_LEGS_TUCKED/0001.png",
+      "sha256": "6c99c95a556c8a9aa271400e95df070e4c6abc2b4fdc528984dcacb6d3747e1e",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        144,
+        278,
+        368,
+        479
+      ],
+      "visual_width_m": 0.8312499999999999,
+      "visual_height_m": 0.7458984375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/SLEEP/0001.png",
+      "sha256": "aee60d10b50a5ee36cf3d6af536d5c6f2822800434e45211908eb12b7def7451",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        84,
+        417,
+        427,
+        480
+      ],
+      "visual_width_m": 1.2728515624999999,
+      "visual_height_m": 0.23378906249999998,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/TALK/0001.png",
+      "sha256": "7c13d6020ba3b913331b577a3d6a7b4e5991aff1970e52f9064ce3301adb772f",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        165,
+        138,
+        347,
+        478
+      ],
+      "visual_width_m": 0.675390625,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/VIEW/0001.png",
+      "sha256": "a1a83377fe29443abac13c78c8e61108fe53062ce1efead055f82174fa5b10d4",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        202,
+        137,
+        309,
+        478
+      ],
+      "visual_width_m": 0.39707031249999997,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0001.png",
+      "sha256": "29a74db4b7e0311559f95f2da66fe8b8ba4f0e3e29130e3645f4a88b8c426b5f",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        161,
+        136,
+        338,
+        477
+      ],
+      "visual_width_m": 0.6568359375,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0002.png",
+      "sha256": "3414056bdae3f21c7523ac834b31146f0135178b6b1d168f367e3d1d007783bb",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        181,
+        138,
+        348,
+        478
+      ],
+      "visual_width_m": 0.6197265625,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0003.png",
+      "sha256": "262bc254b2467ea8e1efe12689e2148c49dbe04bff7246e02f80a68f3f3e0eca",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        197,
+        138,
+        327,
+        477
+      ],
+      "visual_width_m": 0.482421875,
+      "visual_height_m": 1.2580078125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0004.png",
+      "sha256": "ec272d649d5cd9ceb9bf24f2496b94bf15fa5e5a942f48e9f4a0223b00504b43",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        137,
+        138,
+        325,
+        477
+      ],
+      "visual_width_m": 0.69765625,
+      "visual_height_m": 1.2580078125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0005.png",
+      "sha256": "450159216209f561d7034ec389c7a08715cf3574212aff2eb6fa142701fd3748",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        140,
+        139,
+        349,
+        478
+      ],
+      "visual_width_m": 0.7755859374999999,
+      "visual_height_m": 1.2580078125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0006.png",
+      "sha256": "975d7a406e5a7510c5398ab7ca9bfb56b06b226b9feef1e591a3bd05970ea829",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        173,
+        138,
+        350,
+        478
+      ],
+      "visual_width_m": 0.6568359375,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0007.png",
+      "sha256": "979fa335e1a56b0f364b19d67063f57dda620f4744a786d5512ac7905dcb27d2",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        206,
+        139,
+        314,
+        478
+      ],
+      "visual_width_m": 0.40078125,
+      "visual_height_m": 1.2580078125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0008.png",
+      "sha256": "a89ec7436b658a3256111e78a6a80ed79ae8d0eed3060f4f01e0f682f3486dfb",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        141,
+        137,
+        333,
+        477
+      ],
+      "visual_width_m": 0.7124999999999999,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0009.png",
+      "sha256": "68da5caf610e03adf9d4b381578ca88fd2c1352050d8f374568b679c447ad7b3",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        136,
+        139,
+        353,
+        477
+      ],
+      "visual_width_m": 0.8052734374999999,
+      "visual_height_m": 1.2542968749999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0010.png",
+      "sha256": "06485531617651421fb1d8337af3d17337f70f4d32f922a13f874a3811a48ac3",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        185,
+        140,
+        303,
+        477
+      ],
+      "visual_width_m": 0.437890625,
+      "visual_height_m": 1.2505859375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0011.png",
+      "sha256": "1917f78370ac337650739e5eff4a2bd7737dc3d436ca76e2ac10616250931222",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        181,
+        140,
+        324,
+        477
+      ],
+      "visual_width_m": 0.5306640625,
+      "visual_height_m": 1.2505859375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_LEFT/0012.png",
+      "sha256": "3f99580d1b1a52fb8b392169db9f0ec9789c08bfd5933a3c56fb08be7d585e55",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        128,
+        139,
+        328,
+        477
+      ],
+      "visual_width_m": 0.7421875,
+      "visual_height_m": 1.2542968749999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0001.png",
+      "sha256": "2b4a600bd872b1132f75fc51d0d671899bcd0ac5baf42f413c51dfc089939d9c",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        175,
+        136,
+        352,
+        477
+      ],
+      "visual_width_m": 0.6568359375,
+      "visual_height_m": 1.2654296875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0002.png",
+      "sha256": "85c7b1329a82e5e53952ce1448d1367a6d0acb1318780d7cdb51f4abff2770e7",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        165,
+        138,
+        332,
+        478
+      ],
+      "visual_width_m": 0.6197265625,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0003.png",
+      "sha256": "13617b65f334192399749b7210c1b9385b7a51eca0832d1359e8f82a9b94c716",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        186,
+        138,
+        316,
+        477
+      ],
+      "visual_width_m": 0.482421875,
+      "visual_height_m": 1.2580078125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0004.png",
+      "sha256": "fff7b1066038aad6254cee2957a9f0d0dc014cd1d972868276d49a8ace2c608f",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        188,
+        138,
+        376,
+        477
+      ],
+      "visual_width_m": 0.69765625,
+      "visual_height_m": 1.2580078125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0005.png",
+      "sha256": "a7a6c07fbc37973df5d6621afa7c728c7373e75bf5705b1cf0116d9a04ef6742",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        164,
+        139,
+        373,
+        478
+      ],
+      "visual_width_m": 0.7755859374999999,
+      "visual_height_m": 1.2580078125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0006.png",
+      "sha256": "c6e92f80aad276d5ab94c6eb1c1da0327abe98ed1ba40f2ed535dfd5f0c61d06",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        163,
+        138,
+        340,
+        478
+      ],
+      "visual_width_m": 0.6568359375,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0007.png",
+      "sha256": "12dd4ea5e8a991cc2c533363a01cb01a8cb0556129c6c6eec73e898f47a467b1",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        199,
+        139,
+        307,
+        478
+      ],
+      "visual_width_m": 0.40078125,
+      "visual_height_m": 1.2580078125,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0008.png",
+      "sha256": "18a9360523b2cad24ae6c2b4491ca055a9bd3409dac251caa7a0f0b252fbc9cc",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        180,
+        137,
+        372,
+        477
+      ],
+      "visual_width_m": 0.7124999999999999,
+      "visual_height_m": 1.26171875,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0009.png",
+      "sha256": "3d9b15464df64922066673f3c09708c64734f39703bbf033b75004830142eb3f",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        160,
+        139,
+        377,
+        477
+      ],
+      "visual_width_m": 0.8052734374999999,
+      "visual_height_m": 1.2542968749999999,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0010.png",
+      "sha256": "19d6161afe4389201c4f5d4d8454f40c8fa0b329718b505855ef62848a66a512",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        210,
+        140,
+        328,
+        477
+      ],
+      "visual_width_m": 0.437890625,
+      "visual_height_m": 1.2505859375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0011.png",
+      "sha256": "c927fb82bc97f3a56dcae4a58274c9bd10756ab4046dfae29ec1cd805602a132",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        189,
+        140,
+        332,
+        477
+      ],
+      "visual_width_m": 0.5306640625,
+      "visual_height_m": 1.2505859375,
+      "status": "MEASURED"
+    },
+    {
+      "path": "dragon_house_clean/assets/residents/NPC_VAMPIRE_GIRL/wardrobes/SHORT/WALK_RIGHT/0012.png",
+      "sha256": "7d572938dedac4f87dc5739c7ef7621d5ebd3b9c6b7cfffd7122c12121b44bcf",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "alpha_bbox_px": [
+        185,
+        139,
+        385,
+        477
+      ],
+      "visual_width_m": 0.7421875,
+      "visual_height_m": 1.2542968749999999,
+      "status": "MEASURED"
+    }
+  ]
+}

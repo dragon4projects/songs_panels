@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/cassette_player
+Source SHA-256 3501d41d15249c78d0dec2adf6518b3bdfe691ca24b16d0f0c1f0f0ca57824e8
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 4830 -> 2729; original source unchanged, optimized GLB SHA-256 27f431642961fc637148317432c1e368ae3a527db16d08189e75022aefa7ce69. Bounds delta before recenter: 0.000001 m.

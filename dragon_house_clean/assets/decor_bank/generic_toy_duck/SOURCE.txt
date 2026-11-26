@@ -1,0 +1,5 @@
+CC0
+https://polyhaven.com/a/rubber_duck_toy
+Derived toy-sized mesh; no historical or owned object identity.
+Working GLB SHA-256 714da1235506d7cafb39d558a8ed750842cfc3f4fbdb24d5f7339ccc7b661cf0
+Lightweight rubber toy replica, not a real decoration instance.

@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/sungka_board_02
+Source SHA-256 7047196ad56bedc7cbe6899d34f784d1e4f93e0448db8270474122782b4913bf
+Source yaw 0 degrees; uniform scale 0.8; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 42558 -> 9099; original source unchanged, optimized GLB SHA-256 12f46e9f4c6537a2b3f877ce27e361b41d39bf7a03093ede0239f336b29990f7. Bounds delta before recenter: 0.000242 m.

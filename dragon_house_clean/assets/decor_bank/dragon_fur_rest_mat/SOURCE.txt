@@ -1,0 +1,6 @@
+PROJECT_ORIGINAL
+TEEA007 project-authored public-safe geometry
+Source SHA-256 f2b4ec9890efbcfcc18c6bc671521d7f7b195803b5f931ab7e73b8d00fe05895
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Existing TEEA007 source reused; no identity or approval changes.
+Candidate: owner_approved=false.

@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/hanging_picture_frame_03
+Source SHA-256 39223fc47a8714cdf4db3b4d68042a02207db5ec3947bf021e47203540e21ddd
+Source yaw 0 degrees; uniform scale 1; pivot wall
+Native source scale.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 24348 -> 9098; original source unchanged, optimized GLB SHA-256 6b20ed384a6d38e12da1097110f02e107aab531879ef1154099c1adce54f8479. Bounds delta before recenter: 0.000104 m.

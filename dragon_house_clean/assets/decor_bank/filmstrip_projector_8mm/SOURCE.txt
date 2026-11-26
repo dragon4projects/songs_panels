@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/filmstrip_projector_8mm
+Source SHA-256 dc30aca1cb04428207e92d6b3d2b032cc854fdb1a157aca5ea2570a75b883488
+Source yaw -90 degrees; uniform scale 0.8; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 32697 -> 9092; original source unchanged, optimized GLB SHA-256 aa9bb0ed50e477b111691044107cc156498efaaa56ce975297d838f9ef189b67. Bounds delta before recenter: 0.000347 m.

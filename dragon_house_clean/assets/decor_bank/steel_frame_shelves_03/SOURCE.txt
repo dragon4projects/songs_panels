@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/steel_frame_shelves_03
+Source SHA-256 5778bc40d135c7c02a62acdaa4be11fa856fe462c574cbc09033e78a269833d8
+Source yaw 0 degrees; uniform scale 0.8; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.

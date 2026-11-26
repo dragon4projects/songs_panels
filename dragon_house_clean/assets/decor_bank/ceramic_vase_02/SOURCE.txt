@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/ceramic_vase_02
+Source SHA-256 1bda047833b68c2c1b190ee53a55b1aa42d30748c84739909b6ca65b2f2d76c9
+Source yaw 0 degrees; uniform scale 0.85; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 11128 -> 2729; original source unchanged, optimized GLB SHA-256 1d83773214dbe28a4775488032da6367245072e9859350154adb88516594bb01. Bounds delta before recenter: 0.000299 m.

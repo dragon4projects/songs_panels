@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/wooden_picnic_table
+Source SHA-256 6b0dd9916fd87dba2e5baad06e20c0badf68bc68a5761a13854fa9a215c6bd50
+Source yaw 90 degrees; uniform scale 0.8; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 10210 -> 9100; original source unchanged, optimized GLB SHA-256 79f66631e10360a6de644690f19bd1e32fdde948d22f3ffd691089958e7aa3aa. Bounds delta before recenter: 0.000001 m.

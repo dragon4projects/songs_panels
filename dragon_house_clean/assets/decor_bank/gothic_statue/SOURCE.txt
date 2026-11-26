@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/gothic_statue
+Source SHA-256 eecbc67793a1e1efa1359d57fa497cb267fc7a4039823d3feecb6d0fcd2ad2db
+Source yaw 0 degrees; uniform scale 0.55; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 27739 -> 9100; original source unchanged, optimized GLB SHA-256 f7945df9d6e9d78c0a75fecc5dbe0e93d824e2446856f9412472143ac4f9ec6d. Bounds delta before recenter: 0.001453 m.

@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/GothicBed_01
+Source SHA-256 67df189dd3a645936827f3cc123fb9e97ca9d2201d1e4090762bf477cab82fc0
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 18745 -> 9100; original source unchanged, optimized GLB SHA-256 5a041b1ae312343426085d050356c33f40bdeb1c4da450cf8ea5317cf7107beb. Bounds delta before recenter: 0.001060 m.

@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/boombox
+Source SHA-256 8f5851b81d0d0b16fadf9ca89133b59ee48718ed8d9f8244b87e4d293755d2d3
+Source yaw 0 degrees; uniform scale 0.85; pivot floor
+Uniform domestic physical scale; source aspect retained.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 10168 -> 9099; original source unchanged, optimized GLB SHA-256 87484d91bbe846deaffd1358c7fe226983312cd8ae97a3c9c9fd97782d6334f2. Bounds delta before recenter: 0.000001 m.

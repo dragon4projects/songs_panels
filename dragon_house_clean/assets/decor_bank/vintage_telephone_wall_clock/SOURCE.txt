@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/vintage_telephone_wall_clock
+Source SHA-256 9fc4dae50897d030a7410f7b3f57df032be15d4535ece7492829ac3d99d4729c
+Source yaw 0 degrees; uniform scale 1; pivot wall
+Native source scale.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 15864 -> 9099; original source unchanged, optimized GLB SHA-256 b3ae33d359629f7c63c4c9e0586d8806cbfaf1492e5e49aa62a2838bb0510a43. Bounds delta before recenter: 0.000040 m.

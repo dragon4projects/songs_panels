@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/vintage_microwave
+Source SHA-256 d44f101ca3826e4ae4976bc4de96f31f15ea00f95775e41dc1eaf54aa598c8e0
+Source yaw 0 degrees; uniform scale 0.65; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.

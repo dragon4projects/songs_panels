@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/Ukulele_01
+Source SHA-256 e0cd6068b9c6b59e716a9ec084a9104664375431d5dcd26c5a82d0567774e7f4
+Source yaw 0 degrees; uniform scale 1; pivot wall
+Native source scale.
+Candidate: owner_approved=false.

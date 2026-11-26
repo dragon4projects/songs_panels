@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/korean_public_payphone_01
+Source SHA-256 8b64fe9a7be8850c9ad1436ed2d8a7efeaa58fc9854e9b6e6ed6f0bfb41c8fc5
+Source yaw 0 degrees; uniform scale 1; pivot wall
+Native scale; no aspect stretch.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 48132 -> 9100; original source unchanged, optimized GLB SHA-256 0992bca84ab8601f305953d221490315a9c2a64d4315416a6e257fb27b933cf7. Bounds delta before recenter: 0.001936 m.

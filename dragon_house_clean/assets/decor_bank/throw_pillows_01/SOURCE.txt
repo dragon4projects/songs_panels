@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/throw_pillows_01
+Source SHA-256 dd3f985a4446c82035028392ae905b9d996b8be10316a4572a870561a57f76fa
+Source yaw 0 degrees; uniform scale 0.88; pivot floor
+Uniform domestic physical scale; source aspect retained.
+Candidate: owner_approved=false.

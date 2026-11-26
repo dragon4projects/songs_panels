@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/ceramic_pot
+Source SHA-256 7d8c28f171f701a422341c82322d439ea5041a6edd4443a85e3c8f88ce12ab0e
+Source yaw 0 degrees; uniform scale 0.75; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.

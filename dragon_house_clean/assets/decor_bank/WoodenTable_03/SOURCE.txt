@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/WoodenTable_03
+Source SHA-256 d7e7fc5f8941a45c5135cdad7b449ef47447dafe093a1fa6ad4f0d1c5d5046b1
+Source yaw 0 degrees; uniform scale 0.96; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.

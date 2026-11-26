@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/rubber_duck_toy
+Source SHA-256 dcf036297843dad2775841fc41208fae8c776066848d3f6e26efa42eb98d5016
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native scale separate from previously derived miniature; symmetric or free-facing display object, no directional interaction.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 4288 -> 2729; original source unchanged, optimized GLB SHA-256 f173fc85e743bb8d7e3bb90ec17ba59ba6b9d18cffc3750966cecf9a62affc0d. Bounds delta before recenter: 0.000015 m.

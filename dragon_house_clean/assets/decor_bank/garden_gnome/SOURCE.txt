@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/garden_gnome
+Source SHA-256 613f28205e58f4a1c2a638e2bbef41873a7c25d11aa30c2fe53e7ed941e4403e
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native scale separate from previously derived miniature; symmetric or free-facing display object, no directional interaction.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 28858 -> 9100; original source unchanged, optimized GLB SHA-256 b37e86c4141396db6159dced25f1ebded579541eee389e557fb57ebdbf037992. Bounds delta before recenter: 0.000185 m.

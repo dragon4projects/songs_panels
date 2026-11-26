@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/classic_laptop
+Source SHA-256 c78867ed92356fe03fd90b56438f3b141b5f8654672da52c6df7868eb820cf78
+Source yaw 0 degrees; uniform scale 0.65; pivot floor
+Uniform domestic physical scale; source aspect retained.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 14450 -> 2728; original source unchanged, optimized GLB SHA-256 5ccc2b4b482b5d880050c07f50f7ae80f3f7f03c616980b5bf05ee63317ff1b1. Bounds delta before recenter: 0.001279 m.

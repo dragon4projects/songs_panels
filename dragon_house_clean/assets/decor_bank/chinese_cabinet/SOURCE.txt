@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/chinese_cabinet
+Source SHA-256 f7875e583eb73798eed01e1b466bb4c3bc76a46c6bbade39091a01e5ba561293
+Source yaw 0 degrees; uniform scale 0.73; pivot floor
+Uniform domestic physical scale; source aspect retained.
+Candidate: owner_approved=false.

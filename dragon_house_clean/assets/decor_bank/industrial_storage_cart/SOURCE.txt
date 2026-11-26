@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/industrial_storage_cart
+Source SHA-256 f420b66b2e56513542b9598f038eb5f5ce120746735997807e58552049884043
+Source yaw 0 degrees; uniform scale 0.65; pivot floor
+Uniform domestic scale; source aspect retained.
+Candidate: owner_approved=false.

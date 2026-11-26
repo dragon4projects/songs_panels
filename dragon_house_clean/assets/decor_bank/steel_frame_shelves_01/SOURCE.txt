@@ -1,0 +1,5 @@
+CC0 Poly Haven https://polyhaven.com/a/steel_frame_shelves_01
+Original source glTF SHA-256: 4eff8994825d654e337f8dc425e959ed6add7f4773188c87ba64402d9edd9842
+Working source SHA-256: f1c3e254dc55665cc7c92f760576d90dc956d820fcd524086cf89b2aad3bee14
+Asset-only normalization yaw=0 uniform scale=1.0
+Owner approved: false

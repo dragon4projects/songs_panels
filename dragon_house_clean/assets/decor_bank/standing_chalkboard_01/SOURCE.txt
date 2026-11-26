@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/standing_chalkboard_01
+Source SHA-256 95e3a825067d6a96adf1e732ff088485bc8edc1f87e79f707c97a44702be0574
+Source yaw 0 degrees; uniform scale 0.9; pivot floor
+Uniform domestic physical scale; source aspect retained.
+Candidate: owner_approved=false.

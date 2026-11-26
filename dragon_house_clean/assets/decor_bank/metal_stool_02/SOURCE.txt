@@ -1,0 +1,5 @@
+CC0 Poly Haven https://polyhaven.com/a/metal_stool_02
+Original source glTF SHA-256: de8d603993443294b8a0aed48ea631ac38f2b15872491ea929551f72be726fcb
+Working source SHA-256: de8d603993443294b8a0aed48ea631ac38f2b15872491ea929551f72be726fcb
+Asset-only normalization yaw=0 uniform scale=1.0
+Owner approved: false

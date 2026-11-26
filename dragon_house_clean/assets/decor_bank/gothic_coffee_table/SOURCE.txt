@@ -1,0 +1,5 @@
+CC0 Poly Haven https://polyhaven.com/a/gothic_coffee_table
+Original source glTF SHA-256: 4368fa0a0d81cd8651bfcc8a6b48bf43576e1549770c1057eea71eea3d99d54b
+Working source SHA-256: 4368fa0a0d81cd8651bfcc8a6b48bf43576e1549770c1057eea71eea3d99d54b
+Asset-only normalization yaw=0 uniform scale=0.65
+Owner approved: false

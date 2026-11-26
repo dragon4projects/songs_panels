@@ -1,0 +1,2191 @@
+{
+  "schema": 1,
+  "task_id": "TEEA_INT_20261124_008",
+  "base_repo": "dragon4projects/songs_panels",
+  "base_sha": "9c45da4f59dd40fb03f07ae0842000bb448efa93",
+  "latest_integration_sha_reviewed": "182360601f5c382d55e51a7c4566d553f8a8b42b",
+  "owner_approved": false,
+  "units": "m",
+  "axis": "X-right,Y-up,Z-front",
+  "status": "PARTIAL_READY",
+  "items": [
+    {
+      "asset_id": "sofa_02",
+      "source_asset_id": "sofa_02",
+      "source_page": "https://polyhaven.com/a/sofa_02",
+      "license": "CC0",
+      "source_glTF_sha256": "5df114209f9b956ccd4831eaeef469a81339ab371d0056eb6d5d29eee08eb431",
+      "normalized_glTF_sha256": "da1ed75af3b98a5b5331ab54fd3742fb85e9645ec4671ef0c549c6d3312ddfaf"
+    },
+    {
+      "asset_id": "chinese_armchair",
+      "source_asset_id": "chinese_armchair",
+      "source_page": "https://polyhaven.com/a/chinese_armchair",
+      "license": "CC0",
+      "source_glTF_sha256": "e0649ac9e63135627b824035e9a45a7c06411062589b971e633e5ab5f9e17f04",
+      "normalized_glTF_sha256": "937a6d17ffd5ef3688621ae841868804fa139e40a960d988e3265d36c076a91c"
+    },
+    {
+      "asset_id": "gothic_coffee_table",
+      "source_asset_id": "gothic_coffee_table",
+      "source_page": "https://polyhaven.com/a/gothic_coffee_table",
+      "license": "CC0",
+      "source_glTF_sha256": "4368fa0a0d81cd8651bfcc8a6b48bf43576e1549770c1057eea71eea3d99d54b",
+      "normalized_glTF_sha256": "03aa9d0a52adaa432ff89e580ab2fb53c00f8f4c9e911062593a065fe99a4368"
+    },
+    {
+      "asset_id": "wooden_display_shelves_01",
+      "source_asset_id": "wooden_display_shelves_01",
+      "source_page": "https://polyhaven.com/a/wooden_display_shelves_01",
+      "license": "CC0",
+      "source_glTF_sha256": "3784953c451b088d24ac1b0e6946c7f7bd589115f51e6549fdb8fe9f7c10600e",
+      "normalized_glTF_sha256": "b78c65abdcf760346b39b18c60a2d6bd0107dc2ce9ef4229f0f7c38b80a41436"
+    },
+    {
+      "asset_id": "chinese_commode",
+      "source_asset_id": "chinese_commode",
+      "source_page": "https://polyhaven.com/a/chinese_commode",
+      "license": "CC0",
+      "source_glTF_sha256": "40319d26c1bde03d4f3cd42908541aee9cfc3b918a2e74609d0ce9d523e23a16",
+      "normalized_glTF_sha256": "c56df1608f7580525069ac06797d7a95c6d21a5585ed3b4725aec6346daf8d9d"
+    },
+    {
+      "asset_id": "wooden_table_02",
+      "source_asset_id": "wooden_table_02",
+      "source_page": "https://polyhaven.com/a/wooden_table_02",
+      "license": "CC0",
+      "source_glTF_sha256": "bb38e301840cb629d72c43c83fdb7fb308518efe2d0bc01e1ed0e9a9e43ed9d3",
+      "normalized_glTF_sha256": "bd120934d50ec57bda551894bb6a0aea31a3ccb237757e2f10a6424eded78b8f"
+    },
+    {
+      "asset_id": "metal_stool_02",
+      "source_asset_id": "metal_stool_02",
+      "source_page": "https://polyhaven.com/a/metal_stool_02",
+      "license": "CC0",
+      "source_glTF_sha256": "de8d603993443294b8a0aed48ea631ac38f2b15872491ea929551f72be726fcb",
+      "normalized_glTF_sha256": "bcfad89b019187add1f8ddf5e6fd4156ccdaf66eaffa64c60ee687c3c7faeae2"
+    },
+    {
+      "asset_id": "worn_metal_rack",
+      "source_asset_id": "worn_metal_rack",
+      "source_page": "https://polyhaven.com/a/worn_metal_rack",
+      "license": "CC0",
+      "source_glTF_sha256": "e757448bd448460ecb6c7218e7857c8d071f271e3cdc2bd013ca63d824c0c308",
+      "normalized_glTF_sha256": "0ea0419382e018122ce52f7632e05e8a5278c02442ddb3e0649f393cc1e7f427"
+    },
+    {
+      "asset_id": "wooden_bookshelf_worn",
+      "source_asset_id": "wooden_bookshelf_worn",
+      "source_page": "https://polyhaven.com/a/wooden_bookshelf_worn",
+      "license": "CC0",
+      "source_glTF_sha256": "a1c5b3f1e71ae0b5eb73047e8097bceaa5f17e5d2d0d7ae1b8053d5ec0878fc6",
+      "normalized_glTF_sha256": "68f64f7a931e78209c95607703db14d5707ae3c9cd2de421839f21ee78b9e3c6"
+    },
+    {
+      "asset_id": "Sofa_01",
+      "source_asset_id": "Sofa_01",
+      "source_page": "https://polyhaven.com/a/Sofa_01",
+      "license": "CC0",
+      "source_glTF_sha256": "dc9d331a24fc8994606ae5a283826cb28feb3166782f59d006d0f10cc92cc830",
+      "normalized_glTF_sha256": "1d6e2c97e5903d43731298bd9824954d91a0b14e1a9b5de1448a78b5cd6bb1e4"
+    },
+    {
+      "asset_id": "ArmChair_01",
+      "source_asset_id": "ArmChair_01",
+      "source_page": "https://polyhaven.com/a/ArmChair_01",
+      "license": "CC0",
+      "source_glTF_sha256": "91e39d5b35f36c8074b7b6432f6fd77f5f1a257c4d6af3924c0b263eb674286b",
+      "normalized_glTF_sha256": "f11f9f29d4b4bc77f74809375f153cbd3a83c468855aa6936eb3c6df6549b453"
+    },
+    {
+      "asset_id": "ClassicConsole_01",
+      "source_asset_id": "ClassicConsole_01",
+      "source_page": "https://polyhaven.com/a/ClassicConsole_01",
+      "license": "CC0",
+      "source_glTF_sha256": "6c7f79026ad7c388c5d40c56a0988f2a28dc0fc6e489e110332d06792ecd5833",
+      "normalized_glTF_sha256": "9b28739f9e07da598e4380cdae0b2229492773d7f15669a92251f21de95e34fe"
+    },
+    {
+      "asset_id": "vintage_day_bed",
+      "source_asset_id": "vintage_day_bed",
+      "source_page": "https://polyhaven.com/a/vintage_day_bed",
+      "license": "CC0",
+      "source_glTF_sha256": "fb255992b6e651de9709b17c083a14b405e99cbc26774b31bf252e38cf9287fb",
+      "normalized_glTF_sha256": "be5700e5659e0a151f0e94aa928aa83ff52723c1c8f1ec845c7f98f8e44f51ec"
+    },
+    {
+      "asset_id": "Rockingchair_01",
+      "source_asset_id": "Rockingchair_01",
+      "source_page": "https://polyhaven.com/a/Rockingchair_01",
+      "license": "CC0",
+      "source_glTF_sha256": "eb8c3a8f9c2c1bd6ca6d76804b8361dd0fd779498249d554536e5683e08f565b",
+      "normalized_glTF_sha256": "73ff2f15ef07e2247211936b617ac6aeb8271e78c9a09a89353542b5ac745929"
+    },
+    {
+      "asset_id": "steel_frame_shelves_01",
+      "source_asset_id": "steel_frame_shelves_01",
+      "source_page": "https://polyhaven.com/a/steel_frame_shelves_01",
+      "license": "CC0",
+      "source_glTF_sha256": "4eff8994825d654e337f8dc425e959ed6add7f4773188c87ba64402d9edd9842",
+      "normalized_glTF_sha256": "dd23a7bd91a3c92059cf69812423c7070b6bcfd3dce0b3739301ac859e2186f3"
+    },
+    {
+      "asset_id": "projector_screen",
+      "source_asset_id": "projector_screen",
+      "source_page": "https://polyhaven.com/a/projector_screen",
+      "license": "CC0",
+      "source_glTF_sha256": "ce979c8042956e0f33c5f551262f81ecd43d0e929ee2400a1a460febf800f144",
+      "normalized_glTF_sha256": "e212e4b20f4744c3755e32e1a7dfb3e3a6fb93723f2d644bb36af24f7665eb91"
+    },
+    {
+      "asset_id": "generic_small_wooden_elephant",
+      "source_asset_id": "carved_wooden_elephant",
+      "source_page": "https://polyhaven.com/a/carved_wooden_elephant",
+      "license": "CC0",
+      "source_glTF_sha256": "c2378354ecd283c5c8d9459b6829ef7e61bdefd6d0f7a6b2d628362bd9bbef25",
+      "normalized_glTF_sha256": "161dad736b900ffc4ab33e5f7a6eaecb3937729ac9273ec4ded017e3833ba5e7"
+    },
+    {
+      "asset_id": "generic_miniature_ray_replica",
+      "source_asset_id": "bronze_ray_statue",
+      "source_page": "https://polyhaven.com/a/bronze_ray_statue",
+      "license": "CC0",
+      "source_glTF_sha256": "bb2cab3316b05935fd311e132298d15076af9d6ddd88980abca1dea790c6305e",
+      "normalized_glTF_sha256": "0890e0d1d652e35de28d65dd7f9c95196d68cb1dcb876e191dd21477dab29613"
+    },
+    {
+      "asset_id": "cinema_premium_recliner_row",
+      "source_asset_id": "premium_recliner_row",
+      "source_page": "https://3dassets.dev/assets/cinema-multiplex-and-foyer-premium-recliner-row-d1383e97",
+      "license": "CC0 1.0 Universal",
+      "source_GLb_sha256": "ff2c588cddc9ed11f19227c068597eb66f8466c50bfa07e5d82ed72b2490977e",
+      "normalized_glTF_sha256": "fa21eab1f9219d3e1bc6388a46a74efcd1c52b8e93512626947c3c1ad4337028",
+      "normalization": "quantized vertex attributes converted to float32, source transforms preserved"
+    },
+    {
+      "asset_id": "cinema_screen_masking_frame",
+      "source_asset_id": "screen_masking_frame",
+      "source_page": "https://3dassets.dev/assets/cinema-multiplex-and-foyer-cinema-screen-and-masking-92b7d56f",
+      "license": "CC0 1.0 Universal",
+      "source_GLb_sha256": "a29d2228716603a17c71651740bf97b945b2aa778424488bb5934289361cd8b9",
+      "normalized_glTF_sha256": "6ccf0aa136147bd97df3d8e5e146988276bb644a4ccbe87475709b3afe616ea6",
+      "normalization": "quantized vertex attributes converted to float32, source transforms preserved"
+    },
+    {
+      "asset_id": "cinema_aisle_step",
+      "source_asset_id": "aisle_step",
+      "source_page": "https://3dassets.dev/assets/cinema-multiplex-and-foyer-aisle-step-module-91f496ec",
+      "license": "CC0 1.0 Universal",
+      "source_GLb_sha256": "1bfa17bb266e825314cd0e86816ad4add6f921a532555a143a6e5bbe343cfe02",
+      "normalized_glTF_sha256": "6c74e3afd64c3b8fba978caf61fc1ec870b4d82d81c1aec89d26a2db3970f85a",
+      "normalization": "quantized vertex attributes converted to float32, source transforms preserved"
+    },
+    {
+      "asset_id": "cinema_acoustic_wall_panel",
+      "source_asset_id": "acoustic_wall_panel",
+      "source_page": "https://3dassets.dev/assets/cinema-multiplex-and-foyer-acoustic-wall-panel-module-a623eafe",
+      "license": "CC0 1.0 Universal",
+      "source_GLb_sha256": "f7ae5c6581f05954ce0ea28b067909e0d1847102ad837cbbff7436c550d7a2fe",
+      "normalized_glTF_sha256": "308b8e1aa93b1e492a00fb2bf8236d7d8b5e49deeb708cc4dc3d8f453a370193",
+      "normalization": "quantized vertex attributes converted to float32, source transforms preserved"
+    },
+    {
+      "asset_id": "cinema_side_wall_light",
+      "source_asset_id": "side_wall_light",
+      "source_page": "https://3dassets.dev/assets/cinema-multiplex-and-foyer-side-wall-light-strip-b70cf154",
+      "license": "CC0 1.0 Universal",
+      "source_GLb_sha256": "3ffff96a6df6fd8b82a94009a6ea8c4cc8c7c773e829131c9b7f02cb73bfe788",
+      "normalized_glTF_sha256": "4a18d6ef379e9125e11d0d84f3fb70fea68fe1047c12852d3e54f7527f9118aa",
+      "normalization": "quantized vertex attributes converted to float32, source transforms preserved"
+    },
+    {
+      "asset_id": "cinema_surround_speaker",
+      "source_asset_id": "surround_speaker",
+      "source_page": "https://3dassets.dev/assets/cinema-multiplex-and-foyer-wall-speaker-on-mount-ac24c00d",
+      "license": "CC0 1.0 Universal",
+      "source_GLb_sha256": "7fbdc1511b29d79eb55d27cf9e3a7a3075337232d16fd9bf1675a3e477ac2a01",
+      "normalized_glTF_sha256": "f7be44f0a61904d9c18e32fe6e57db3346d35e9a423bc4ddf35965ce7123944c",
+      "normalization": "quantized vertex attributes converted to float32, source transforms preserved"
+    },
+    {
+      "asset_id": "cinema_digital_projector",
+      "source_asset_id": "digital_projector",
+      "source_page": "https://3dassets.dev/assets/cinema-multiplex-and-foyer-digital-projector-plinth-2e5f1d38",
+      "license": "CC0 1.0 Universal",
+      "source_GLb_sha256": "0540a1da4b58028221219455dae4da8684fe90f3e08a5a6819247b2e536d5137",
+      "normalized_glTF_sha256": "5dcd95d0676eae097e6e8c40f91d59147d317107ee94278f444b22f9a5901edd",
+      "normalization": "quantized vertex attributes converted to float32, source transforms preserved"
+    },
+    {
+      "asset_id": "cinema_arcade_cabinet",
+      "source_asset_id": "arcade_cabinet",
+      "source_page": "https://3dassets.dev/assets/cinema-multiplex-and-foyer-arcade-cabinet-85302f3a",
+      "license": "CC0 1.0 Universal",
+      "source_GLb_sha256": "e8e85eadd131eab7de63647fa86c8c6ad7fd8458f25a6946b8a57eadf3cb37a6",
+      "normalized_glTF_sha256": "54d9cded8caf0860de8261b7f8ea2fae32e17feb13c596fcd973490f96f20759",
+      "normalization": "quantized vertex attributes converted to float32, source transforms preserved"
+    },
+    {
+      "asset_id": "cinema_wall_poster_lightbox",
+      "source_asset_id": "wall_poster_lightbox",
+      "source_page": "https://3dassets.dev/assets/cinema-multiplex-and-foyer-poster-light-box-wall-997574ca",
+      "license": "CC0 1.0 Universal",
+      "source_GLb_sha256": "b8f0d2f9d273cffb9fab9008b190a39b6d4866715527e6cbef143809ba163fea",
+      "normalized_glTF_sha256": "11a4b57d0d79e753411beaaaefb4f272ec388481393ea1327066473eb651ca01",
+      "normalization": "quantized vertex attributes converted to float32, source transforms preserved"
+    },
+    {
+      "asset_id": "cinema_aisle_floor_tile",
+      "source_asset_id": "aisle_floor_tile",
+      "source_page": "https://3dassets.dev/assets/cinema-multiplex-and-foyer-aisle-floor-tile-2ed6e733",
+      "license": "CC0 1.0 Universal",
+      "source_GLb_sha256": "521325fd473180f645ecff54e35a9600bf850cb20502da4965c45d06204a1c27",
+      "normalized_glTF_sha256": "e60512aa37cc747fdcb3d94fb0693edb8d9e822900adba69d7851ce92146a2ed",
+      "normalization": "quantized vertex attributes converted to float32, source transforms preserved"
+    },
+    {
+      "asset_id": "cinema_cupholder_armrest",
+      "source_asset_id": "cupholder_armrest",
+      "source_page": "https://3dassets.dev/assets/cinema-multiplex-and-foyer-cup-holder-armrest-dfedf2e7",
+      "license": "CC0 1.0 Universal",
+      "source_GLb_sha256": "556674c1125f412b814f6094878263ba223c5b52f1a24a7ef54307121154e2c2",
+      "normalized_glTF_sha256": "daba2f66080556d0e340f4cb3a8ef5076bacc625ead6af549d0c40f600ede93e",
+      "normalization": "quantized vertex attributes converted to float32, source transforms preserved"
+    },
+    {
+      "asset_id": "cinema_stage_curtains_open",
+      "source_asset_id": "stage_curtains_open",
+      "source_page": "https://3dassets.dev/assets/theatre-stage-and-backstage-house-tabs-on-track-open-00c29a91",
+      "license": "CC0 1.0 Universal",
+      "source_GLb_sha256": "66a8fe1f2e6103ef82fc7b2d852c26565f3054617bf5ac09e5549515e8fb2841",
+      "normalized_glTF_sha256": "5743d71b40e68dab6661c0e9087cee9b4673775d25d9daadceb97f9ca77290bc",
+      "normalization": "quantized vertex attributes converted to float32, source transforms preserved"
+    },
+    {
+      "asset_id": "candidate_dragon_mug_red",
+      "source_asset_id": "dragon_mug_red",
+      "source_page": "Project-authored 2026-11-24, public-safe generic mesh; no private references included",
+      "license": "PROJECT_AUTHORED_CANDIDATE",
+      "source_GLb_sha256": "d651a3c318c915c2f2b8427e819cc457fa7acdb2e99fdab7273b791dbbd57945",
+      "normalized_glTF_sha256": "251541240026d7911732c2d6499498d33a86d59a256c4bd55616902a48d2b359"
+    },
+    {
+      "asset_id": "candidate_guest_mug_blue",
+      "source_asset_id": "guest_mug_blue",
+      "source_page": "Project-authored 2026-11-24, public-safe generic mesh; no private references included",
+      "license": "PROJECT_AUTHORED_CANDIDATE",
+      "source_GLb_sha256": "9e7602fb0316ef60d98534bcd0529458ec8c52a49a872e4007825d56e27a8198",
+      "normalized_glTF_sha256": "c14ddec2ccfe5f91943ebb02fa1f13833f9b289f865b11fa482af72517d804c9"
+    },
+    {
+      "asset_id": "generic_toy_duck",
+      "source_asset_id": "rubber_duck_toy",
+      "source_page": "https://polyhaven.com/a/rubber_duck_toy",
+      "license": "CC0",
+      "working_GLb_sha256": "714da1235506d7cafb39d558a8ed750842cfc3f4fbdb24d5f7339ccc7b661cf0",
+      "normalized_glTF_sha256": "6bd8241431340cf4b617656904708d6be946cf5bfad2f4e758c6f1c132515d53",
+      "derivation": "source_derived_miniature"
+    },
+    {
+      "asset_id": "generic_toy_whale",
+      "source_asset_id": "bronze_whale_statue",
+      "source_page": "https://polyhaven.com/a/bronze_whale_statue",
+      "license": "CC0",
+      "working_GLb_sha256": "965f38dc52fa6fe6c8a1b4433de276c48c85bb08fcedf9a628771c028140301a",
+      "normalized_glTF_sha256": "9acebf46bdbdb08bc0004176c7c46665117638506bdde8647e8a777eada6ee0a",
+      "derivation": "source_derived_miniature"
+    },
+    {
+      "asset_id": "generic_toy_cat",
+      "source_asset_id": "concrete_cat_statue",
+      "source_page": "https://polyhaven.com/a/concrete_cat_statue",
+      "license": "CC0",
+      "working_GLb_sha256": "db72c1edf22f89bde8419fa422136bbd91efeea6ac853a22ac241d7b78667afd",
+      "normalized_glTF_sha256": "449387a74113a5ea90b58f5aaeca2a497c05dbd561798b35e13bd768929281a6",
+      "derivation": "source_derived_miniature"
+    },
+    {
+      "asset_id": "generic_toy_shark",
+      "source_asset_id": "bronze_shark_statue",
+      "source_page": "https://polyhaven.com/a/bronze_shark_statue",
+      "license": "CC0",
+      "working_GLb_sha256": "6f5146483fcdcac2414dfd8d32146156ac194f4d5d77e820c25b97707cfe2be5",
+      "normalized_glTF_sha256": "d383beae0b671fc8ef617d550c1a634066f9bad915a0edaadd04186cde0e0be6",
+      "derivation": "source_derived_miniature"
+    },
+    {
+      "asset_id": "generic_mini_compass",
+      "source_asset_id": "seadogs_compass",
+      "source_page": "https://polyhaven.com/a/seadogs_compass",
+      "license": "CC0",
+      "working_GLb_sha256": "7ab40f6f88d95129b72dcd46322429df258baaa507652023c8f44d5a183a1a78",
+      "normalized_glTF_sha256": "690cbc391b269e125725bc2102ac4f43d3eaffa3579dcebf0a8cac9ae773fe8f",
+      "derivation": "source_derived_miniature"
+    },
+    {
+      "asset_id": "generic_toy_gnome",
+      "source_asset_id": "garden_gnome",
+      "source_page": "https://polyhaven.com/a/garden_gnome",
+      "license": "CC0",
+      "working_GLb_sha256": "8a1e99e1e5c03ead82d2415740c8d8d25e36e8bcde229cbd77e4e251f0d60f2b",
+      "normalized_glTF_sha256": "2e522b65c1c37e6c160877a640342d87e024920b7f3d556767121b641d78c318",
+      "derivation": "source_derived_miniature"
+    },
+    {
+      "asset_id": "generic_small_wooden_die",
+      "source_asset_id": "generic_small_wooden_die",
+      "source_page": "Project-authored generic small prop",
+      "license": "PROJECT_AUTHORED_CANDIDATE",
+      "working_GLb_sha256": "b6f483d3717add892e242d91ab38b8b20af69456f053386ddf58957b536e69de",
+      "normalized_glTF_sha256": "f841aaca8e9578da3edd58817ed844a0c85de3c7d2edef443a0432a1908022e3",
+      "derivation": "project_original"
+    },
+    {
+      "asset_id": "generic_wooden_game_token",
+      "source_asset_id": "generic_wooden_game_token",
+      "source_page": "Project-authored generic small prop",
+      "license": "PROJECT_AUTHORED_CANDIDATE",
+      "working_GLb_sha256": "0224ec3331fe0db1ea541d58dd25127497ed83d140a524c3b2202d69fbf02402",
+      "normalized_glTF_sha256": "1f005d0cb07906e4d056ff9870094f7258cb81ad11d0391b26ac92824bbb15b7",
+      "derivation": "project_original"
+    },
+    {
+      "asset_id": "generic_resin_medallion",
+      "source_asset_id": "generic_resin_medallion",
+      "source_page": "Project-authored generic small prop",
+      "license": "PROJECT_AUTHORED_CANDIDATE",
+      "working_GLb_sha256": "d4b1c47dedca7d55a23cfd20ef27b3118e332a65193a935566c478fb0668b5c0",
+      "normalized_glTF_sha256": "dbf2ea37256f5df663b3e0643d83ce20371162780c416fd7cf09de1d67298f62",
+      "derivation": "project_original"
+    },
+    {
+      "asset_id": "generic_closed_trinket_case",
+      "source_asset_id": "generic_closed_trinket_case",
+      "source_page": "Project-authored generic small prop",
+      "license": "PROJECT_AUTHORED_CANDIDATE",
+      "working_GLb_sha256": "dc75f77df2e2a198f7bc909a8aca659cec78b1a6fb8b0bcb98e3168f4b250c86",
+      "normalized_glTF_sha256": "ed55638750f410a33f1aa3f0401632056245e5f8a11dcff70fa6e27833ecbf39",
+      "derivation": "project_original"
+    },
+    {
+      "asset_id": "generic_toy_ball",
+      "source_asset_id": "generic_toy_ball",
+      "source_page": "Project-authored generic small prop",
+      "license": "PROJECT_AUTHORED_CANDIDATE",
+      "working_GLb_sha256": "7cb5845a0391077e2fa43f99cacc6def7b667df0d3dcb7dcc288bc4594284339",
+      "normalized_glTF_sha256": "fbefb9cf858e62e5c144d59b534bd0cc9f0a0bcf21bcfd64734ee61c320cfe02",
+      "derivation": "project_original"
+    },
+    {
+      "asset_id": "generic_thread_spool",
+      "source_asset_id": "generic_thread_spool",
+      "source_page": "Project-authored generic small prop",
+      "license": "PROJECT_AUTHORED_CANDIDATE",
+      "working_GLb_sha256": "917ffcdb1df4e625de2a2c63e5e65be41510c7e99dca5741211d16d0ccd2ab5b",
+      "normalized_glTF_sha256": "0c9789adac993fa18289025f4ef6fb33ee0ab9d32be2bf095a137e8901e9cf83",
+      "derivation": "project_original"
+    },
+    {
+      "asset_id": "generic_smooth_worry_stone",
+      "source_asset_id": "generic_smooth_worry_stone",
+      "source_page": "Project-authored generic small prop",
+      "license": "PROJECT_AUTHORED_CANDIDATE",
+      "working_GLb_sha256": "4b8932cd0c7758bb000c997178b683e1c3da7e0a17b93303ed9a43132dcd45af",
+      "normalized_glTF_sha256": "e983ff13b7822b09af97aee23ed7afceb7f5317ccd5137a6b1bea8527dec04a2",
+      "derivation": "project_original"
+    },
+    {
+      "asset_id": "industrial_wall_lamp",
+      "source_asset_id": "industrial_wall_lamp",
+      "source_page": "https://polyhaven.com/a/industrial_wall_lamp",
+      "license": "CC0",
+      "source_sha256": "5a2c0d8bdb52fe168727f4200818ac0c2adbded32f0b9dc09cfe224249f9e266",
+      "normalized_glTF_sha256": "27435ab0cc4e17ca1e028e6699128b5a6ef6f001610eb4fc214707e9c0ace409"
+    },
+    {
+      "asset_id": "industrial_wall_sconce",
+      "source_asset_id": "industrial_wall_sconce",
+      "source_page": "https://polyhaven.com/a/industrial_wall_sconce",
+      "license": "CC0",
+      "source_sha256": "d36361a9163c9543546f17de223de27db53423ea6aa905b75609142f45af2893",
+      "normalized_glTF_sha256": "c6cea8123ee1316f9f8f9677934405193585c69c2d8c3760c236514378ce7af9",
+      "lod0_derived_glb_sha256": "a86b4588e0b17723d8374ed5155fe96ae0a1bd3d217db9fbe7a0580bd49581bb",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "desk_lamp_arm_01",
+      "source_asset_id": "desk_lamp_arm_01",
+      "source_page": "https://polyhaven.com/a/desk_lamp_arm_01",
+      "license": "CC0",
+      "source_sha256": "2ac8389afc1519449a9cfdf7efd9fa36780a2177bb47ab58f7a7dda7d247dc8c",
+      "normalized_glTF_sha256": "96e17b62e07163a6fe36254861b4106b7a1509ed246a8d473886826dc5ffca2f",
+      "lod0_derived_glb_sha256": "553d944eb253f1e94ccdbadf5be9fe453da29354205a81cd8206e430e1e03868",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "chinese_chandelier",
+      "source_asset_id": "chinese_chandelier",
+      "source_page": "https://polyhaven.com/a/chinese_chandelier",
+      "license": "CC0",
+      "source_sha256": "0300d412628b0faffccf05e8ac7caad0e3e9b3b15bbbb0c14ce6f5c9e4e4eff8",
+      "normalized_glTF_sha256": "a4286bf7b2c58e915bb24091c9f590deb40e4e068a8b9024da1f2d96b84e8813"
+    },
+    {
+      "asset_id": "vintage_oil_lamp",
+      "source_asset_id": "vintage_oil_lamp",
+      "source_page": "https://polyhaven.com/a/vintage_oil_lamp",
+      "license": "CC0",
+      "source_sha256": "ae570b98ea30b0337f62d8e7f551c03a05de00b238f3fac8f1ca5a1f1dbd1add",
+      "normalized_glTF_sha256": "9874514275ffed000be11583d902de6aff1614ea786c11a04885877fd0d7af4d"
+    },
+    {
+      "asset_id": "wooden_lantern_01",
+      "source_asset_id": "wooden_lantern_01",
+      "source_page": "https://polyhaven.com/a/wooden_lantern_01",
+      "license": "CC0",
+      "source_sha256": "2380275a5c90bf3442c426f3363e826e6b1ceff12a7e65f83b03cc8fac70a099",
+      "normalized_glTF_sha256": "1586a1c679667982d4e75fc1210576fd45ef081b740c5bb866f7b44d24ac2558"
+    },
+    {
+      "asset_id": "throw_pillows_01",
+      "source_asset_id": "throw_pillows_01",
+      "source_page": "https://polyhaven.com/a/throw_pillows_01",
+      "license": "CC0",
+      "source_sha256": "dd3f985a4446c82035028392ae905b9d996b8be10316a4572a870561a57f76fa",
+      "normalized_glTF_sha256": "dcb173494f68bbf7bb35c429fb2f704387f71ccacdd20d6f573af8d4b833e04e"
+    },
+    {
+      "asset_id": "side_table_01",
+      "source_asset_id": "side_table_01",
+      "source_page": "https://polyhaven.com/a/side_table_01",
+      "license": "CC0",
+      "source_sha256": "a441125a4f660a23a31601aedd9aa379c6febf2b35171c08814187b5ec5a3309",
+      "normalized_glTF_sha256": "019e809494295c38ea6c1b4dc52647cf3053193db30851c0bafcb576518c89ca"
+    },
+    {
+      "asset_id": "chinese_tea_table",
+      "source_asset_id": "chinese_tea_table",
+      "source_page": "https://polyhaven.com/a/chinese_tea_table",
+      "license": "CC0",
+      "source_sha256": "4c1987aa1978c4fe1dfd0f5f10739df399346fc4c9373315d8d4b0cc798d8b01",
+      "normalized_glTF_sha256": "4182ce5b2e14a44f6fec80f3ed98d7eb19d0b7c0f15e6e5788c96f2957c3ee9e"
+    },
+    {
+      "asset_id": "round_wooden_table_02",
+      "source_asset_id": "round_wooden_table_02",
+      "source_page": "https://polyhaven.com/a/round_wooden_table_02",
+      "license": "CC0",
+      "source_sha256": "df65c35148280a06efcc06bfa75432bb13f29318e869597fc94f364ce2b55974",
+      "normalized_glTF_sha256": "9721f8fd2ddfdd1bea64f001bc0c8348a958d402cc56d995703b947d73ddf680"
+    },
+    {
+      "asset_id": "modern_wooden_cabinet",
+      "source_asset_id": "modern_wooden_cabinet",
+      "source_page": "https://polyhaven.com/a/modern_wooden_cabinet",
+      "license": "CC0",
+      "source_sha256": "9c0765063297018e854d11bc27da3cbab3c33904a3be2f5c15f46635df7e857f",
+      "normalized_glTF_sha256": "97527ecceec722175fe746e2ae565dc64992c58e15f1b6a5e615c321d8c05dcc"
+    },
+    {
+      "asset_id": "painted_wooden_chair_01",
+      "source_asset_id": "painted_wooden_chair_01",
+      "source_page": "https://polyhaven.com/a/painted_wooden_chair_01",
+      "license": "CC0",
+      "source_sha256": "34f55ebe1851b89c045dc62d4461c848de3b93c0668e752a2b5f6cbed2d91a5e",
+      "normalized_glTF_sha256": "ae5ee8a4e1487cf2629156e75efc9603cbc048bc1b66aec30f9ac3de1c9ae5f1"
+    },
+    {
+      "asset_id": "classic_laptop",
+      "source_asset_id": "classic_laptop",
+      "source_page": "https://polyhaven.com/a/classic_laptop",
+      "license": "CC0",
+      "source_sha256": "c78867ed92356fe03fd90b56438f3b141b5f8654672da52c6df7868eb820cf78",
+      "normalized_glTF_sha256": "3dcabc1f7812b12d164593c10d902f00b41f507c26c836b0f93c8fa1d4b6aaca",
+      "lod0_derived_glb_sha256": "5ccc2b4b482b5d880050c07f50f7ae80f3f7f03c616980b5bf05ee63317ff1b1",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "boombox",
+      "source_asset_id": "boombox",
+      "source_page": "https://polyhaven.com/a/boombox",
+      "license": "CC0",
+      "source_sha256": "8f5851b81d0d0b16fadf9ca89133b59ee48718ed8d9f8244b87e4d293755d2d3",
+      "normalized_glTF_sha256": "f6b277213b8664b33ddc5ad2ad96dfe0533a93fdddb062dda290b2495c0b809b",
+      "lod0_derived_glb_sha256": "87484d91bbe846deaffd1358c7fe226983312cd8ae97a3c9c9fd97782d6334f2",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "portable_cassette_player",
+      "source_asset_id": "portable_cassette_player",
+      "source_page": "https://polyhaven.com/a/portable_cassette_player",
+      "license": "CC0",
+      "source_sha256": "7ef3e7b815429601a462fef9cca46639bfc90c0768bc61e0f7a6814ed27ef1e5",
+      "normalized_glTF_sha256": "95f47f432933e8d046f34e14231fae3ead43b8d180463c2d5eb401652635671f",
+      "lod0_derived_glb_sha256": "4b833909add9350818bf3e93cb0695ea69abc73f4cb91f73e44a61b93e3e183c",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "Television_01",
+      "source_asset_id": "Television_01",
+      "source_page": "https://polyhaven.com/a/Television_01",
+      "license": "CC0",
+      "source_sha256": "ef4376366ea956519c1a1d06146a8e8cc2bb0fcbd5c6b9f919a54ce31d05d530",
+      "normalized_glTF_sha256": "586f417c0cdc7e6dbacb0a2afb6243ee930503eefff87a7932b3e028afc5ecd9"
+    },
+    {
+      "asset_id": "gaming_console",
+      "source_asset_id": "gaming_console",
+      "source_page": "https://polyhaven.com/a/gaming_console",
+      "license": "CC0",
+      "source_sha256": "66266eb600e227efb31bae36ea7587c000fcae3dd0955847a91089eb612eb2f9",
+      "normalized_glTF_sha256": "328b4aa090336bcca01e61de450b1c30ec7418c716409511f947336de83cdac6",
+      "lod0_derived_glb_sha256": "34962096954ef729581ba79fc61266ed015265373a5a1e85d3cf2b1a10b759c1",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "gamepad",
+      "source_asset_id": "gamepad",
+      "source_page": "https://polyhaven.com/a/gamepad",
+      "license": "CC0",
+      "source_sha256": "30eabe08b4c76013efb27322ef8834ba915dd0ff46950ebf69390e7fbeef3dea",
+      "normalized_glTF_sha256": "69c9c3b505fc55bddf4762162362e524ce2df5f79815e5caa34cdc2d7851c7cd",
+      "lod0_derived_glb_sha256": "0e26fb7adca7ac54c63b4b820aeaee46ceb2670513511604ea71fa5043962a8b",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "korean_public_payphone_01",
+      "source_asset_id": "korean_public_payphone_01",
+      "source_page": "https://polyhaven.com/a/korean_public_payphone_01",
+      "license": "CC0",
+      "source_sha256": "8b64fe9a7be8850c9ad1436ed2d8a7efeaa58fc9854e9b6e6ed6f0bfb41c8fc5",
+      "normalized_glTF_sha256": "02a51691ba5dcfc7d92808e3bf146883851b59bdf1c6fef2d0b7e46bfb44fcff",
+      "lod0_derived_glb_sha256": "0992bca84ab8601f305953d221490315a9c2a64d4315416a6e257fb27b933cf7",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "wall_clock",
+      "source_asset_id": "wall_clock",
+      "source_page": "https://polyhaven.com/a/wall_clock",
+      "license": "CC0",
+      "source_sha256": "4e67385443e808bc709c054c1de5be1e83d4bf07eb0893884c301fec0bae8bc6",
+      "normalized_glTF_sha256": "3b06eeea58dfc1f13d5120b8bbca0f1a1aa4c509a31b4c11f7d8e950b53c9fb9",
+      "lod0_derived_glb_sha256": "1f0376608da7169e4ebbccdaeeaad1556dbcc37d8cd43a89cda97d6e19e65c0e",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "standing_chalkboard_01",
+      "source_asset_id": "standing_chalkboard_01",
+      "source_page": "https://polyhaven.com/a/standing_chalkboard_01",
+      "license": "CC0",
+      "source_sha256": "95e3a825067d6a96adf1e732ff088485bc8edc1f87e79f707c97a44702be0574",
+      "normalized_glTF_sha256": "405f681682e00f65dc5ea3b6f0c688dafc07a86977e0d6cf18de0eec073c3bfb"
+    },
+    {
+      "asset_id": "wicker_basket_01",
+      "source_asset_id": "wicker_basket_01",
+      "source_page": "https://polyhaven.com/a/wicker_basket_01",
+      "license": "CC0",
+      "source_sha256": "9ad86c33f00f46a18c9bc8bfc28c0036090ee819f7270d0028ec408512c04094",
+      "normalized_glTF_sha256": "ea1b7a8827649ede4fd7537016d870c3982f31194fc849d5485dd4b42b9c7bef",
+      "lod0_derived_glb_sha256": "0665b6fbee235280a87a94015677ca4d5b1980655fa11b36d3340bfc37f2ab00",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "wicker_basket_02",
+      "source_asset_id": "wicker_basket_02",
+      "source_page": "https://polyhaven.com/a/wicker_basket_02",
+      "license": "CC0",
+      "source_sha256": "78c7a3bdd7025eb092b3ac744e9d83e9a75fbb242696b5dce87ec215af617768",
+      "normalized_glTF_sha256": "88db3b492c7e667df330a162ed393c6377abe9d93fa5a5b1cce48b2fe80235e6",
+      "lod0_derived_glb_sha256": "ba3a362865cda033e8c6df2f8e7cca1354a6b2d420991ef6d809535954003567",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "binder_notebook",
+      "source_asset_id": "binder_notebook",
+      "source_page": "https://polyhaven.com/a/binder_notebook",
+      "license": "CC0",
+      "source_sha256": "714596552fad383ae3ca76d42038b03a20b6864d6ef5bc6d12620ac21fef1b1e",
+      "normalized_glTF_sha256": "b95ad9730ab4ee52e01f5ef1417474626995d7e9a4e2ccac85e550cf8bcab9a5",
+      "lod0_derived_glb_sha256": "05cd582c43cb1ed2d0f6686333a3aa5d53705ecdfa51ff448c2c8a82c67b601d",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "vintage_suitcase",
+      "source_asset_id": "vintage_suitcase",
+      "source_page": "https://polyhaven.com/a/vintage_suitcase",
+      "license": "CC0",
+      "source_sha256": "5d040fdb26c5d97d5d60518ef4875cc72effcabe0a5f68f50e8970013e57a589",
+      "normalized_glTF_sha256": "6aad57767013a6e8e0073870b595bf056245e7588e83d9cbd0023a32a2b3ade4",
+      "lod0_derived_glb_sha256": "fd32fe4e1adc8a573e558c8d91e9952ec2d1c055d59673e41ec999706312065e",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "wooden_bowl_02",
+      "source_asset_id": "wooden_bowl_02",
+      "source_page": "https://polyhaven.com/a/wooden_bowl_02",
+      "license": "CC0",
+      "source_sha256": "18ba4fb40b1880d9b776f6d98eefdaa9e01e41fbe362ba1dc40a831422e38336",
+      "normalized_glTF_sha256": "21f239559948d1580502d5fa3d8f267a049567db0034bad2e98b461a925a6237",
+      "lod0_derived_glb_sha256": "d2ed0a9f8bf1869cb53f01df229509146d47cf38207c1d9476607d4f15309430",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "tea_set_01",
+      "source_asset_id": "tea_set_01",
+      "source_page": "https://polyhaven.com/a/tea_set_01",
+      "license": "CC0",
+      "source_sha256": "479b93c5e5f121994a5582b329132c70c2076b2990673f9169721541e5c389a2",
+      "normalized_glTF_sha256": "2f19210caaf8d2f4c23a9cd16c59f8149aad84058079ea82c361f5e8a5b593a9",
+      "lod0_derived_glb_sha256": "008a1cbf62245db84430c3b0e8692182a3e91bee3ba9d896090112a23da364bc",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "modified_thermos",
+      "source_asset_id": "modified_thermos",
+      "source_page": "https://polyhaven.com/a/modified_thermos",
+      "license": "CC0",
+      "source_sha256": "12f50ac41f809140d856a50d3abd993e9d621db64bd5722fb1aed3c5e99e8d8a",
+      "normalized_glTF_sha256": "54403e22162c6b162b077ab559d23ac8e695e833de79335aae61ffe797530c7a",
+      "lod0_derived_glb_sha256": "f24001bf6edbb097664f381a6b148d3713596806c932dc13faa536a701ab991e",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "russian_food_cans_01",
+      "source_asset_id": "russian_food_cans_01",
+      "source_page": "https://polyhaven.com/a/russian_food_cans_01",
+      "license": "CC0",
+      "source_sha256": "13ac2f451403a95fda749d822e6911abc0ae2db682467b97a2da1adbaf18fada",
+      "normalized_glTF_sha256": "7224679f408d6c9cadb252b31c0444b1678a25d16a1f04014f90bd7a68517158"
+    },
+    {
+      "asset_id": "croissant",
+      "source_asset_id": "croissant",
+      "source_page": "https://polyhaven.com/a/croissant",
+      "license": "CC0",
+      "source_sha256": "b6e1eb36f776e6b79500c51b57c0e29cd17598c2d8a20d0ec0513955a6cc3a2f",
+      "normalized_glTF_sha256": "e18810c253a071dfd602890fcc5e0db73e1f09a322cf1aa5713592464fbe99fe"
+    },
+    {
+      "asset_id": "potted_plant_04",
+      "source_asset_id": "potted_plant_04",
+      "source_page": "https://polyhaven.com/a/potted_plant_04",
+      "license": "CC0",
+      "source_sha256": "b3a3bc3e97da75844999c4da07b7104b6c023f729a7c045979929b9504184339",
+      "normalized_glTF_sha256": "97a4063d49dc7ed8137efd598dca52ca537640cd5506e1952bafba22533420f9",
+      "lod0_derived_glb_sha256": "3c4a50f489249013a51fa29e6267591e0db6448773e4b84ffe8cee0a3443cc1d",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "metal_tool_chest",
+      "source_asset_id": "metal_tool_chest",
+      "source_page": "https://polyhaven.com/a/metal_tool_chest",
+      "license": "CC0",
+      "source_sha256": "2f66fbb723cd52382f73daec184b68d9b36842a488ecaf120e5c3a6354e9dea4",
+      "normalized_glTF_sha256": "a7475ec08d7a6eec7fc8e729cb9494a5602a0bc55b7c307799bfdd93735ab27c",
+      "lod0_derived_glb_sha256": "ebf2ca4584bf17354c29dfcf31a4d201497f4a9ff327cb88265f3a6d994cbfab",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "painted_wooden_cabinet_02",
+      "source_asset_id": "painted_wooden_cabinet_02",
+      "source_page": "https://polyhaven.com/a/painted_wooden_cabinet_02",
+      "license": "CC0",
+      "source_sha256": "a4b697adf7a24a081b8452f5a7d482765e2139cf2a6687a4cbb2a7b8bea24325",
+      "normalized_glTF_sha256": "ba4210d523c3f76e03196cda3602554d50e85b5ec128b9ae13dfcf532160d05b"
+    },
+    {
+      "asset_id": "chinese_cabinet",
+      "source_asset_id": "chinese_cabinet",
+      "source_page": "https://polyhaven.com/a/chinese_cabinet",
+      "license": "CC0",
+      "source_sha256": "f7875e583eb73798eed01e1b466bb4c3bc76a46c6bbade39091a01e5ba561293",
+      "normalized_glTF_sha256": "0ecf35bb975dd83c439f869c43b9a2e4940d6b6f439f5599076851320fd200b3"
+    },
+    {
+      "asset_id": "vintage_wooden_drawer_01",
+      "source_asset_id": "vintage_wooden_drawer_01",
+      "source_page": "https://polyhaven.com/a/vintage_wooden_drawer_01",
+      "license": "CC0",
+      "source_sha256": "4080ecdac2228759dd41a5d5705b984f993bbf6b0f66570824a9dcbbeaa49e51",
+      "normalized_glTF_sha256": "4bca60acfd78615f91f9f45d204d5f8d2cbd6c22ec5b6357cc4690ec31714aa0"
+    },
+    {
+      "asset_id": "dragon_fur_rest_mat",
+      "source_asset_id": "dragon_fur_rest_mat",
+      "source_page": "TEEA007 project-authored public-safe geometry",
+      "license": "PROJECT_ORIGINAL",
+      "source_sha256": "f2b4ec9890efbcfcc18c6bc671521d7f7b195803b5f931ab7e73b8d00fe05895",
+      "normalized_glTF_sha256": "7de9a3f9a9ab49e4dfdc9c9f45982701222b53609206238fd1046cc27c701be4"
+    },
+    {
+      "asset_id": "dragon_mug_lod0_empty",
+      "source_asset_id": "dragon_mug_lod0_empty",
+      "source_page": "TEEA007 project-authored public-safe geometry",
+      "license": "PROJECT_ORIGINAL",
+      "source_sha256": "4cbaecaa0728e627b2c8cbe9e7c467ff35a359e5ce378a587eeba3212ec2abf1",
+      "normalized_glTF_sha256": "47c1051b9992ec477e638c9bbffae50853c42f6191bca296961b4cbc246dba2b"
+    },
+    {
+      "asset_id": "dragon_mug_lod0_filled",
+      "source_asset_id": "dragon_mug_lod0_filled",
+      "source_page": "TEEA007 project-authored public-safe geometry",
+      "license": "PROJECT_ORIGINAL",
+      "source_sha256": "34e22d136082501901bbff46f7a57665ae184123cc5d196a36585aad1736338a",
+      "normalized_glTF_sha256": "88232942c403d24eb6f832df4d46bd6ce338f226abe2ce87075444ccfea03b37"
+    },
+    {
+      "asset_id": "dragon_mug_lod1_empty",
+      "source_asset_id": "dragon_mug_lod1_empty",
+      "source_page": "TEEA007 project-authored public-safe geometry",
+      "license": "PROJECT_ORIGINAL",
+      "source_sha256": "bc0fc955a1dadb164d1d2acbd8a81b486feb1f68afffcbc64e282fbabec506ba",
+      "normalized_glTF_sha256": "7e2f0d2b9ddf58850dbaea16d38ebaeb15e39f41afc600b0011b2c6a6c4ebaac"
+    },
+    {
+      "asset_id": "media_holder_book",
+      "source_asset_id": "media_holder_book",
+      "source_page": "TEEA007 original neutral media holder",
+      "license": "PROJECT_ORIGINAL",
+      "source_sha256": "710f2648d134b1032b1963e89ea949717ef597d8396b569b764fbf24857372b4",
+      "normalized_glTF_sha256": "ae349f23e4440dd622ec0b793e2e184ae8468194ea4e8e48cc7538b2343a13e8"
+    },
+    {
+      "asset_id": "media_holder_film_poster",
+      "source_asset_id": "media_holder_film_poster",
+      "source_page": "TEEA007 original neutral media holder",
+      "license": "PROJECT_ORIGINAL",
+      "source_sha256": "c77dc6714f37461e5936eab8d7b08e9e1ad640d47d815adf99d8dde8287ad958",
+      "normalized_glTF_sha256": "50f246cb67a06ce63466f9446d102008b602b5f835ffcb126dc9055df4a54752"
+    },
+    {
+      "asset_id": "media_holder_audio",
+      "source_asset_id": "media_holder_audio",
+      "source_page": "TEEA007 original neutral media holder",
+      "license": "PROJECT_ORIGINAL",
+      "source_sha256": "7a0e7c6e219c3d719f96417437beed0c2e76afca1b2697c5a86595128c5a2f78",
+      "normalized_glTF_sha256": "37bfdaf064a072d39dac0739ff5b55a3e504e1b5bd2152a6bdf5e1b9ce1a6c90"
+    },
+    {
+      "asset_id": "media_holder_artifact",
+      "source_asset_id": "media_holder_artifact",
+      "source_page": "TEEA007 original neutral media holder",
+      "license": "PROJECT_ORIGINAL",
+      "source_sha256": "fbbfaa9251c1653ad3f23a55f4269e2065d3b4827e0aa09f5511515e316c5de1",
+      "normalized_glTF_sha256": "64ddef5a9089c546f5e8f7574538113648859e98c8a8a435719656af977c2536"
+    },
+    {
+      "asset_id": "media_holder_film_screen",
+      "source_asset_id": "media_holder_film_screen",
+      "source_page": "TEEA007 original neutral media holder",
+      "license": "PROJECT_ORIGINAL",
+      "source_sha256": "bcb232b3a62f2c0a8565a1adbc1b425f30cf4bc9786821a2ee288f3929ad2fe1",
+      "normalized_glTF_sha256": "e4a8a4bc03e89c17114846f62b9d16533831d07423cd80d0880ca52a33f9f962"
+    },
+    {
+      "asset_id": "arch_floor_wood_r1",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "b33d16bd6d4fbd8303c9859ec897a50d8e016638cce138cfbb5c0b51f6554fde",
+      "materials": [
+        "wood_planks"
+      ]
+    },
+    {
+      "asset_id": "arch_floor_stone_r1",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "6018947713c45ce49f7c242e6f2d669c32a7a656cc643328fac51c26d282920b",
+      "materials": [
+        "monastery_stone_floor"
+      ]
+    },
+    {
+      "asset_id": "arch_floor_workshop_r1",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "1dfd6a6f1618a0d2e9b5df577d965c2ab460bc27cb2cda6920fab137ebc5dc26",
+      "materials": [
+        "grey_plaster_03"
+      ]
+    },
+    {
+      "asset_id": "arch_rear_stone_r1",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "060e29962cb7de085ab30e4aa1614d981785fdeec666479fe91b3f70e0c1e1d3",
+      "materials": [
+        "old_stone_wall_02"
+      ]
+    },
+    {
+      "asset_id": "arch_rear_plaster_r1",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "2dbb616c2d60cb476c55990b9cacad6d4850de4d4001ca0d4435accced719d96",
+      "materials": [
+        "worn_plaster_wall"
+      ]
+    },
+    {
+      "asset_id": "arch_rear_timber_r1",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "2eeb8d957edbe03c497674c7a1881ff3b8f43428da0bae84c9598d0e56bd3434",
+      "materials": [
+        "wood_plank_wall"
+      ]
+    },
+    {
+      "asset_id": "arch_ceiling_r1",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "cc4873328a2c1793826238c0f363fbb963240f5492487bae7ccb292a86189c3a",
+      "materials": [
+        "wood_plank_wall"
+      ]
+    },
+    {
+      "asset_id": "arch_header_r1",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "238a35ac4ba99cf989b245475484b79b568c61d6c5a30e2f16cdacc5c5db1b0f",
+      "materials": [
+        "wood_plank_wall"
+      ]
+    },
+    {
+      "asset_id": "arch_skirting_r1",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "1f47821454973964cadeefcc998a4157cc55c1bfefe60f5ed2faaf3dba2adcfe",
+      "materials": [
+        "wood_plank_wall"
+      ]
+    },
+    {
+      "asset_id": "arch_front_lip_r1",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "c6b778d165750c4dec407204ad900167396aba2a7a9b886fcea3a8959457681a",
+      "materials": [
+        "old_stone_wall_02"
+      ]
+    },
+    {
+      "asset_id": "arch_floor_wood_r2",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "3306d1a250d8c08e385f2472810e35808d8b96a858f09bf80e24255158a780eb",
+      "materials": [
+        "wood_planks"
+      ]
+    },
+    {
+      "asset_id": "arch_floor_stone_r2",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "0ddaa9bea36a4d111cde7f2438087d116ed53ec87d2c695df3e66ffb3665409f",
+      "materials": [
+        "monastery_stone_floor"
+      ]
+    },
+    {
+      "asset_id": "arch_floor_workshop_r2",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "43324fdb2cd57d6fbddf87d53995ff3df7e644547c541b1e2195a2cc134968d7",
+      "materials": [
+        "grey_plaster_03"
+      ]
+    },
+    {
+      "asset_id": "arch_rear_stone_r2",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "7d494a39d1cf726f2be093fc1efb15f58b1d18a76af0a2a41424de884ca69147",
+      "materials": [
+        "old_stone_wall_02"
+      ]
+    },
+    {
+      "asset_id": "arch_rear_plaster_r2",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "0f62fcab1ff483d8146a3034c7fe517ca6fa1c39136cb71d2774ded5f3a42f52",
+      "materials": [
+        "worn_plaster_wall"
+      ]
+    },
+    {
+      "asset_id": "arch_rear_timber_r2",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "1fd7bbcde99fcc7b553fac873804b25cbe9c7656b8bee0fb6407136b0ba52987",
+      "materials": [
+        "wood_plank_wall"
+      ]
+    },
+    {
+      "asset_id": "arch_ceiling_r2",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "5526391d07bd50a2d0adf41a5c873c8929cbc9c4008494094a4f1004be1caa44",
+      "materials": [
+        "wood_plank_wall"
+      ]
+    },
+    {
+      "asset_id": "arch_header_r2",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "27d4e4d5b924414e8d39628d51166242ba2616582ce1676bf052bc9f0c272fce",
+      "materials": [
+        "wood_plank_wall"
+      ]
+    },
+    {
+      "asset_id": "arch_skirting_r2",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "79f980bea034ce530860b26f01f5ed650ce2373943129d024a8f673505ef8af1",
+      "materials": [
+        "wood_plank_wall"
+      ]
+    },
+    {
+      "asset_id": "arch_front_lip_r2",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "c24137a2dc4fdd89c8eb514ca71403a9b3cad69e90f0701cb24937f63f98170a",
+      "materials": [
+        "old_stone_wall_02"
+      ]
+    },
+    {
+      "asset_id": "arch_floor_wood_r3",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "e4d5c8d9d5de18884489d8c0179fb493bb3394436ac165e126155ba23e22fb33",
+      "materials": [
+        "wood_planks"
+      ]
+    },
+    {
+      "asset_id": "arch_floor_stone_r3",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "6fd683d250f2ac3aad1edc015c5ca9837f6f01a4d413cb76b698564e1768d753",
+      "materials": [
+        "monastery_stone_floor"
+      ]
+    },
+    {
+      "asset_id": "arch_floor_workshop_r3",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "6281acf55e257fd2f51f11579a9a8cf586110ea4e9e8f37c5f013cb713d52c59",
+      "materials": [
+        "grey_plaster_03"
+      ]
+    },
+    {
+      "asset_id": "arch_rear_stone_r3",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "ade7804a4d5c75c8703f3c22575f390dfa491ae2266b7d57b8ba227e224820af",
+      "materials": [
+        "old_stone_wall_02"
+      ]
+    },
+    {
+      "asset_id": "arch_rear_plaster_r3",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "751a5a61b3d61d24d51e109f15dc9b79b696d2ffa687754e4dd0a896b47868dc",
+      "materials": [
+        "worn_plaster_wall"
+      ]
+    },
+    {
+      "asset_id": "arch_rear_timber_r3",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "5538c04db9aae8b541b53f00382f45f0dd727a30f9ae92e8229b631f14c43e06",
+      "materials": [
+        "wood_plank_wall"
+      ]
+    },
+    {
+      "asset_id": "arch_ceiling_r3",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "ddd003105d89ed479611d948259066ba29c50b212ac7b98a062d2c1cfa6f6910",
+      "materials": [
+        "wood_plank_wall"
+      ]
+    },
+    {
+      "asset_id": "arch_header_r3",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "f29ffbc9c91d2b5a8e5542a1d1eee57adee9a90adb15725bb10d13690c66efa1",
+      "materials": [
+        "wood_plank_wall"
+      ]
+    },
+    {
+      "asset_id": "arch_skirting_r3",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "b92f39b60ce27d7bf5f1870c728b07b466d50b69eca7d5c574a388c708b52df4",
+      "materials": [
+        "wood_plank_wall"
+      ]
+    },
+    {
+      "asset_id": "arch_front_lip_r3",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "3321a394c491f6736dff3a99066ab48f79b7260eccca4120dbc6f84db778e208",
+      "materials": [
+        "old_stone_wall_02"
+      ]
+    },
+    {
+      "asset_id": "arch_connector_rear_return",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "8ea775c5288e45c43b9eecafb486b0baa9315086d2386ac7f5f90b2d1d3f5032",
+      "materials": [
+        "old_stone_wall_02"
+      ]
+    },
+    {
+      "asset_id": "arch_connector_header",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "10b13063aabf384faa636de86e38fa34a7b5da06690743f6bc26f59aacd4dc3b",
+      "materials": [
+        "old_stone_wall_02"
+      ]
+    },
+    {
+      "asset_id": "arch_connector_rear_jamb",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "e09d963cb39fb4401fece5f6ef3a842876e9ba7b953c796f5aef5c5d63b1f461",
+      "materials": [
+        "wood_plank_wall"
+      ]
+    },
+    {
+      "asset_id": "arch_closed_side_return",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "488b3259364406ca655614610a7203f6436b7c344f309c18aa3a07537edba59b",
+      "materials": [
+        "old_stone_wall_02"
+      ]
+    },
+    {
+      "asset_id": "arch_lift_rail",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "658c6f1bd68cc4408aa0d72c10d8229e5e7c2842f21e0b7b888a1da47c93639c",
+      "materials": [
+        "aged_iron",
+        "bronze"
+      ]
+    },
+    {
+      "asset_id": "arch_lift_control",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "05c6aff5580d0bdb9edef076af30a6f8dc09636c9f7c36056abe616338039edc",
+      "materials": [
+        "aged_iron",
+        "indicator",
+        "bronze"
+      ]
+    },
+    {
+      "asset_id": "arch_lift_floor_skin",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "0cfb9dfd294eefdfb317bfe4a07f62ace5378314e71454d88490a3a3867e044f",
+      "materials": [
+        "aged_iron"
+      ]
+    },
+    {
+      "asset_id": "arch_lift_shaft_wall",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "608c6c1b03628eee3912fe19d8e25ec85ab2799b38bdad0d5cb6c97514834850",
+      "materials": [
+        "old_stone_wall_02"
+      ]
+    },
+    {
+      "asset_id": "arch_generic_door",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "c3569fde61315f4e105cdb43793316f470c49cd7ad36cf5b7e9a14b15fdc1887",
+      "materials": [
+        "wood_plank_wall",
+        "bronze"
+      ]
+    },
+    {
+      "asset_id": "arch_generic_plaque",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "0382a6c9173108d3fe228ec70309e1219a2c496f1686d65c9b6cd0161c52b90d",
+      "materials": [
+        "aged_iron",
+        "neutral_paper"
+      ]
+    },
+    {
+      "asset_id": "arch_generic_note_frame",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "c5ecc6100e782d5dfe9aa60e18a5fc76752c801c061612242a5208573d41b50f",
+      "materials": [
+        "wood_plank_wall",
+        "neutral_paper"
+      ]
+    },
+    {
+      "asset_id": "generic_artifact_cube_empty",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "b35dd91104d2023fb0b69be4782fea5f0b49056c433fcaa09e2b9355c70f936c",
+      "materials": [
+        "wood_plank_wall"
+      ]
+    },
+    {
+      "asset_id": "generic_open_stash_crate",
+      "license": "PROJECT_ORIGINAL + CC0 textures",
+      "source": "Project-original structural mesh",
+      "source_sha256": "8fb8e4afa91e2861f91f25561dea82a64fa845d1f310bc0b3ebd0aefcac5620c",
+      "materials": [
+        "wood_plank_wall"
+      ]
+    },
+    {
+      "asset_id": "sofa_03",
+      "source_asset_id": "sofa_03",
+      "source_page": "https://polyhaven.com/a/sofa_03",
+      "license": "CC0",
+      "source_sha256": "123f491bef4e9bda153bda770a5d12810bfc9b87ce56aa5973aed041ea17fd92",
+      "normalized_glTF_sha256": "64f7dc25dd799f86fb0ee0afab7151e07c68e6bcecc0db1402cb21fb80111955"
+    },
+    {
+      "asset_id": "GreenChair_01",
+      "source_asset_id": "GreenChair_01",
+      "source_page": "https://polyhaven.com/a/GreenChair_01",
+      "license": "CC0",
+      "source_sha256": "d1e4946ac99ab9e64c82d802fe5cd49d962750e34b8d284762b3fe2b00ba8a45",
+      "normalized_glTF_sha256": "3a9b8e87d965b749872043b7d5af205aa523cd701530c9c9a53ea59c03f2fc06"
+    },
+    {
+      "asset_id": "Ottoman_01",
+      "source_asset_id": "Ottoman_01",
+      "source_page": "https://polyhaven.com/a/Ottoman_01",
+      "license": "CC0",
+      "source_sha256": "cb515553924d7ca85b94807aba7d7d5110fafa0fedf7132573b105ac8b900584",
+      "normalized_glTF_sha256": "c9a2536223f7b0cb0d801bda3863294ba7dcbe24b3e8c799ed45b2d2a549fad0"
+    },
+    {
+      "asset_id": "painted_wooden_bench",
+      "source_asset_id": "painted_wooden_bench",
+      "source_page": "https://polyhaven.com/a/painted_wooden_bench",
+      "license": "CC0",
+      "source_sha256": "2289ab82f3fe3045bf18f7b9541743d2c65b9f071cb34bbe424d2bc998f3e507",
+      "normalized_glTF_sha256": "cb113d748ed4502ce1456dcccd2c1789c65751cce1a416fb3967014454a4bb9e"
+    },
+    {
+      "asset_id": "WoodenTable_01",
+      "source_asset_id": "WoodenTable_01",
+      "source_page": "https://polyhaven.com/a/WoodenTable_01",
+      "license": "CC0",
+      "source_sha256": "413804e054055c397b4cfbd0916027097d2a20853b165b533007a46d131e1d17",
+      "normalized_glTF_sha256": "a7d24418f4edd87a76028f27d5455fb3048f8cf9b79d0694f33151f9c7512f4f"
+    },
+    {
+      "asset_id": "WoodenTable_03",
+      "source_asset_id": "WoodenTable_03",
+      "source_page": "https://polyhaven.com/a/WoodenTable_03",
+      "license": "CC0",
+      "source_sha256": "d7e7fc5f8941a45c5135cdad7b449ef47447dafe093a1fa6ad4f0d1c5d5046b1",
+      "normalized_glTF_sha256": "1d4ec2c92e557224adc17fc2a86dfcb0969427d4e35b336d4a0ce3cfd97fd73b"
+    },
+    {
+      "asset_id": "coffee_table_round_01",
+      "source_asset_id": "coffee_table_round_01",
+      "source_page": "https://polyhaven.com/a/coffee_table_round_01",
+      "license": "CC0",
+      "source_sha256": "58fe785584f8999f760e590b04ce74f83962d42c9440ab9415910f63a31165dc",
+      "normalized_glTF_sha256": "5205812be9f1df7c525fd75d84236a12ade5785e13fe31f60af4b0435205bee8"
+    },
+    {
+      "asset_id": "painted_wooden_nightstand",
+      "source_asset_id": "painted_wooden_nightstand",
+      "source_page": "https://polyhaven.com/a/painted_wooden_nightstand",
+      "license": "CC0",
+      "source_sha256": "fbdc51ee41f2ee2dc7c455cd6f8321ff14e80c7a7d1e7736b194ca0b3e48b304",
+      "normalized_glTF_sha256": "bcbcd6f6c40fb90370704bee2a0a6de6f2a6647faf748c0026e382cb78dc49ec"
+    },
+    {
+      "asset_id": "painted_wooden_stool",
+      "source_asset_id": "painted_wooden_stool",
+      "source_page": "https://polyhaven.com/a/painted_wooden_stool",
+      "license": "CC0",
+      "source_sha256": "f9a9a4a7c38b3421c30dac35d91c41c8864452d6dbb398911494b8324d312ef9",
+      "normalized_glTF_sha256": "0b8bc5f4291a438d990218c2f6e91c203803f2339b58162eb6e9fa1e739a27be"
+    },
+    {
+      "asset_id": "gallinera_chair",
+      "source_asset_id": "gallinera_chair",
+      "source_page": "https://polyhaven.com/a/gallinera_chair",
+      "license": "CC0",
+      "source_sha256": "0fd80d1f770fb6ce0be9ff1e07f925e18e582c8a55358d3c77d6e0fdb3f13536",
+      "normalized_glTF_sha256": "c24315339e2e5b9c037f5af41046de2998864c68c856a2d96ab574f7ecf60277"
+    },
+    {
+      "asset_id": "gallinera_table",
+      "source_asset_id": "gallinera_table",
+      "source_page": "https://polyhaven.com/a/gallinera_table",
+      "license": "CC0",
+      "source_sha256": "6254d8b51b9fbccc86a4978796ee5d3cb7d46a78cbf2b3090ec12d8c68176a67",
+      "normalized_glTF_sha256": "fe6731887dc1da932798ac81dc721d830c637f427ac47648a4c3afcb888ab2c3"
+    },
+    {
+      "asset_id": "round_wooden_table_01",
+      "source_asset_id": "round_wooden_table_01",
+      "source_page": "https://polyhaven.com/a/round_wooden_table_01",
+      "license": "CC0",
+      "source_sha256": "dd09c1663b10d15a1fda12ba4f53743e8b8379b17254a78be22100d584738b48",
+      "normalized_glTF_sha256": "7ea86a066a06799043a6909f2dc6ab96dd337d2a47a484cd2b73149cd587c536"
+    },
+    {
+      "asset_id": "Shelf_01",
+      "source_asset_id": "Shelf_01",
+      "source_page": "https://polyhaven.com/a/Shelf_01",
+      "license": "CC0",
+      "source_sha256": "715bce6ff1886eccdd43d558f5cf9242a24396e0eb9e8ae391905186bb339e52",
+      "normalized_glTF_sha256": "b3f5460e73e246657ad949165f9a01756b01f2a6f162a9071d7c120d3b04638c"
+    },
+    {
+      "asset_id": "steel_frame_shelves_03",
+      "source_asset_id": "steel_frame_shelves_03",
+      "source_page": "https://polyhaven.com/a/steel_frame_shelves_03",
+      "license": "CC0",
+      "source_sha256": "5778bc40d135c7c02a62acdaa4be11fa856fe462c574cbc09033e78a269833d8",
+      "normalized_glTF_sha256": "3d6f84747a14eb85772f57d0aa30efc55f1a4aaf440a04dc65bb7d4531527ec9"
+    },
+    {
+      "asset_id": "Ukulele_01",
+      "source_asset_id": "Ukulele_01",
+      "source_page": "https://polyhaven.com/a/Ukulele_01",
+      "license": "CC0",
+      "source_sha256": "e0cd6068b9c6b59e716a9ec084a9104664375431d5dcd26c5a82d0567774e7f4",
+      "normalized_glTF_sha256": "3d36ef05185dd7d5a0e51f74602d3215c71c3957c8936977bb83aef763159f89"
+    },
+    {
+      "asset_id": "alarm_clock_01",
+      "source_asset_id": "alarm_clock_01",
+      "source_page": "https://polyhaven.com/a/alarm_clock_01",
+      "license": "CC0",
+      "source_sha256": "ca16e83e334e28f8eaf2bf1fbf8ce043b7e4fe5d0e171d01a264b12f5f42a78c",
+      "normalized_glTF_sha256": "6377f087dc79206dd1fec68052573bff1b13725df4172890bc8e508c817bc782",
+      "lod0_derived_glb_sha256": "5a822398d1c567489a4333a22a6984c9c96f0a61cca16347a58a0b39fa940be2",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "vintage_grandfather_clock_01",
+      "source_asset_id": "vintage_grandfather_clock_01",
+      "source_page": "https://polyhaven.com/a/vintage_grandfather_clock_01",
+      "license": "CC0",
+      "source_sha256": "5d3aa1d5daabe830aed603e448a8f14f3993ec8a1116e083c181420a4fe1573a",
+      "normalized_glTF_sha256": "0c609b44f8bd2ca7f3f0e70d3c9e5e9f77c8162a020ad0c2b93ab4fd67340051"
+    },
+    {
+      "asset_id": "brass_vase_03",
+      "source_asset_id": "brass_vase_03",
+      "source_page": "https://polyhaven.com/a/brass_vase_03",
+      "license": "CC0",
+      "source_sha256": "b65379454ee1c8a608e757b513dc72013cfc5b4156deaf33a46e4f58338b5e8c",
+      "normalized_glTF_sha256": "bc9d59c161936903c8515796d526ce288902b148cf33cbf74e0424e4b258a1ae"
+    },
+    {
+      "asset_id": "ceramic_vase_02",
+      "source_asset_id": "ceramic_vase_02",
+      "source_page": "https://polyhaven.com/a/ceramic_vase_02",
+      "license": "CC0",
+      "source_sha256": "1bda047833b68c2c1b190ee53a55b1aa42d30748c84739909b6ca65b2f2d76c9",
+      "normalized_glTF_sha256": "0b39d9450a8d8ec5832da2dd66e818263290be313ea5c240ac2ee83d938a3b17",
+      "lod0_derived_glb_sha256": "1d83773214dbe28a4775488032da6367245072e9859350154adb88516594bb01",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "planter_box_01",
+      "source_asset_id": "planter_box_01",
+      "source_page": "https://polyhaven.com/a/planter_box_01",
+      "license": "CC0",
+      "source_sha256": "15c7ff7396d872e5cad6743c796ff0f42e1f3f831fd334a26aa1fdbd11834a1f",
+      "normalized_glTF_sha256": "4c1c5e8e6e0f11ab829bd43d765caedf03b6daa4fa443004055b73d8eebc8d86"
+    },
+    {
+      "asset_id": "potted_plant_02",
+      "source_asset_id": "potted_plant_02",
+      "source_page": "https://polyhaven.com/a/potted_plant_02",
+      "license": "CC0",
+      "source_sha256": "c533dcce0d1aa4379eb7db04601a04983f8df2422b28578de922655a416e64a9",
+      "normalized_glTF_sha256": "8b5a5432ea5a02076438b621d2f94f1fa1ada2ca6a52618968ae5508001e5c26",
+      "lod0_derived_glb_sha256": "d2ab2fdb632ed04aab06b8e0636f08767177a8ee711fde009302192c1d6d9610",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "chess_set",
+      "source_asset_id": "chess_set",
+      "source_page": "https://polyhaven.com/a/chess_set",
+      "license": "CC0",
+      "source_sha256": "3e21ecd0c2ffb703dfdb3f3ea7a379c1dbd4ec513ba2cb8e6cb1e5f276d7eb91",
+      "normalized_glTF_sha256": "a7c1224a5b40f9ca5e554bcddafdda753882f0a368c756cdb6d545c156a4aa9a",
+      "lod0_derived_glb_sha256": "3b7aa4d18f30b0312d22a5abd7f91a3e580ea85416490d21bef983dc8a858093",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "sungka_board",
+      "source_asset_id": "sungka_board",
+      "source_page": "https://polyhaven.com/a/sungka_board",
+      "license": "CC0",
+      "source_sha256": "962d9379a71bd64dbd1f9fb3a252030d941b609d1b7abaa9b72f6d24834a4201",
+      "normalized_glTF_sha256": "4ce40ab6e6b38dd64c8ce94e504c716dbb3797fb96aae17205e473a30f81c58a"
+    },
+    {
+      "asset_id": "book_encyclopedia_set_01",
+      "source_asset_id": "book_encyclopedia_set_01",
+      "source_page": "https://polyhaven.com/a/book_encyclopedia_set_01",
+      "license": "CC0",
+      "source_sha256": "89eb80fffd619ebbe5043d632bd8cf25b2d68a3614aee2f356e850c69ae498ba",
+      "normalized_glTF_sha256": "0109cc02d041e2c883102fd50b3009123d4ee1eea8406526ba66f0158d91f5b2",
+      "lod0_derived_glb_sha256": "bcf0145ea35d80a549f993b3debf42983c125558cc13a97a8dd2d6df3faf5c99",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "carved_wooden_plate",
+      "source_asset_id": "carved_wooden_plate",
+      "source_page": "https://polyhaven.com/a/carved_wooden_plate",
+      "license": "CC0",
+      "source_sha256": "90ec83004a3fd256fb846c7b04fbf0b2514f0e99b2bb7aeb586f62b844ed9219",
+      "normalized_glTF_sha256": "99cee723e18ff82c638c8fbb28a20e2b4b45b677de8cb4f3249b7a66f9309de3"
+    },
+    {
+      "asset_id": "jug_01",
+      "source_asset_id": "jug_01",
+      "source_page": "https://polyhaven.com/a/jug_01",
+      "license": "CC0",
+      "source_sha256": "87dc40eb3e45b0185699f18cf5988b81fe5b1a01f0cf76c1daa93774878d7e44",
+      "normalized_glTF_sha256": "5088454dec7ffcffbc6c779e9a9fe529984d050b8d5de7716afff980174daf6b",
+      "lod0_derived_glb_sha256": "33a033b54beb20d9cb0a1b35d98776b7b4659d1718ff7ae4366a99491816e627",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "wooden_bowl_01",
+      "source_asset_id": "wooden_bowl_01",
+      "source_page": "https://polyhaven.com/a/wooden_bowl_01",
+      "license": "CC0",
+      "source_sha256": "7fe0d6aa4b58e1b9bfc704a8142f4f23f651640c5701b26037fbee3c01613c3b",
+      "normalized_glTF_sha256": "79e3d330c09a33d99df73529aa15569d3d6ad086f1ae91cd5d6d2ccf6829bc5a",
+      "lod0_derived_glb_sha256": "627064d81bc837a856dc2270ca39f232707efa696f1b5ce5b33eefb5b1ad7ab9",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "industrial_storage_cart",
+      "source_asset_id": "industrial_storage_cart",
+      "source_page": "https://polyhaven.com/a/industrial_storage_cart",
+      "license": "CC0",
+      "source_sha256": "f420b66b2e56513542b9598f038eb5f5ce120746735997807e58552049884043",
+      "normalized_glTF_sha256": "0998055701d92be35078f0c9bc8b822d6d3a5056799b618628748851f93acece"
+    },
+    {
+      "asset_id": "tool_cart",
+      "source_asset_id": "tool_cart",
+      "source_page": "https://polyhaven.com/a/tool_cart",
+      "license": "CC0",
+      "source_sha256": "ba4290f62b37dc08d4f99da2b3c78d8cb584bd229e8805ce586ed3f3b5303759",
+      "normalized_glTF_sha256": "11bf84b48a667a8ac859de51f6d300830468b9b44eda27b0087aeb413c69bdb6"
+    },
+    {
+      "asset_id": "brass_diya_lantern",
+      "source_asset_id": "brass_diya_lantern",
+      "source_page": "https://polyhaven.com/a/brass_diya_lantern",
+      "license": "CC0",
+      "source_sha256": "6b908c48f0f5300ba561cbcfe38e938863e8d1d33569e9a1fab6c7e9c16f8e95",
+      "normalized_glTF_sha256": "50c36f848fc710e546bbf57063c035e7049f6b3aaf6e7d337fc0858107d1655f",
+      "lod0_derived_glb_sha256": "646a3681ea76591f57da59ab74fb4774da225b799e812bb37f16ba70a88c1739",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "brass_candleholders",
+      "source_asset_id": "brass_candleholders",
+      "source_page": "https://polyhaven.com/a/brass_candleholders",
+      "license": "CC0",
+      "source_sha256": "a1de928d1c7d2241f0727dbad2c9b52d49c3245e1f7dd0c45a9a6482bc5c9101",
+      "normalized_glTF_sha256": "0d6ac09100e9cc6fd907384395dd1b31bce72c4902966af5c8be4c9d002623c9",
+      "lod0_derived_glb_sha256": "fc74d0570f68bfa40ccb5522f07f23eb81441ee5e30daadf705ae028473f7e8d",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "metal_stool_01",
+      "source_asset_id": "metal_stool_01",
+      "source_page": "https://polyhaven.com/a/metal_stool_01",
+      "license": "CC0",
+      "source_sha256": "e69a99778cacbbf0a2447971d8917a2463b411cdd2a50ff2c53c2230b4c43881",
+      "normalized_glTF_sha256": "a47d0de2a022dca6966a62fe5fdcff2c2ffd24494f4cf02e98bd61dd77c165f0"
+    },
+    {
+      "asset_id": "metal_stool_03",
+      "source_asset_id": "metal_stool_03",
+      "source_page": "https://polyhaven.com/a/metal_stool_03",
+      "license": "CC0",
+      "source_sha256": "97d7b64c170f6c91982be77beab1c994743ca3d9dc90525e8d3618d402597516",
+      "normalized_glTF_sha256": "f10e9ef1771c4a58bdca5e0df29efb5d8829680010f4cf3206345066ecf282e0"
+    },
+    {
+      "asset_id": "painted_wooden_chair_02",
+      "source_asset_id": "painted_wooden_chair_02",
+      "source_page": "https://polyhaven.com/a/painted_wooden_chair_02",
+      "license": "CC0",
+      "source_sha256": "e69f4558d236e0fcc9d31a85ab75117e75d224d21e04836aa438821ccf1fd2c1",
+      "normalized_glTF_sha256": "6e271e5c2247bfbb3ac87a8cc0bb901d063eb51def10fc6f0e7b77921f5e254f"
+    },
+    {
+      "asset_id": "treasure_chest",
+      "source_asset_id": "treasure_chest",
+      "source_page": "https://polyhaven.com/a/treasure_chest",
+      "license": "CC0",
+      "source_sha256": "5edb8df3a45d2709b9407102ba4dd63025adff401ed8eba939d0117a74dd8dd5",
+      "normalized_glTF_sha256": "e93b6cebc0fb7ce8731fffdd887b48eb08c17b3ec888d5f195f368907e04c3d5",
+      "lod0_derived_glb_sha256": "1516a4aa63d851596feae560ae091f393d1628bfc8e47949b597dc68b315ebec",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "GothicBed_01",
+      "source_asset_id": "GothicBed_01",
+      "source_page": "https://polyhaven.com/a/GothicBed_01",
+      "license": "CC0",
+      "source_sha256": "67df189dd3a645936827f3cc123fb9e97ca9d2201d1e4090762bf477cab82fc0",
+      "normalized_glTF_sha256": "f125896a3a365c485f55f693b1e79648194e18cc04c3c07ce281e42245c56236",
+      "lod0_derived_glb_sha256": "5a041b1ae312343426085d050356c33f40bdeb1c4da450cf8ea5317cf7107beb",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "common_woven_rug",
+      "source": "Shared Carpet004 from phase1",
+      "license": "PROJECT_ORIGINAL + CC0 shared textures",
+      "sha256": "4a452e56946d60c12826965bcafb2319f2e03a7f216f073b8de7bed7d741a659"
+    },
+    {
+      "asset_id": "cinema_dark_carpet_r1",
+      "source": "Shared Carpet004 from phase1",
+      "license": "PROJECT_ORIGINAL + CC0 shared textures",
+      "sha256": "fec34cae36acccc181a19b2b2574196bf9be8ab49cf4717a04f798bd840db679"
+    },
+    {
+      "asset_id": "cinema_dark_carpet_r2",
+      "source": "Shared Carpet004 from phase1",
+      "license": "PROJECT_ORIGINAL + CC0 shared textures",
+      "sha256": "1c04ec145f3978f9f754b6029743fc3064544b647ba5b3c5c2c106145c089b4a"
+    },
+    {
+      "asset_id": "cinema_dark_carpet_r3",
+      "source": "Shared Carpet004 from phase1",
+      "license": "PROJECT_ORIGINAL + CC0 shared textures",
+      "sha256": "6c18c247066d9ebe1e30b16685ae48a00a9e11e9a88fefe3e0c6179a4dbef9f9"
+    },
+    {
+      "asset_id": "BarberShopChair_01",
+      "source_asset_id": "BarberShopChair_01",
+      "source_page": "https://polyhaven.com/a/BarberShopChair_01",
+      "license": "CC0",
+      "source_sha256": "801bed991ab1d3f110ff8e7958fcfe8e60a96582cadb55dbada28e292a111f20",
+      "normalized_glTF_sha256": "2b8746a10bb70dde00b02e4654e9f25b7f7cce4ceb7c6ef910d895a528a907fd"
+    },
+    {
+      "asset_id": "Chandelier_01",
+      "source_asset_id": "Chandelier_01",
+      "source_page": "https://polyhaven.com/a/Chandelier_01",
+      "license": "CC0",
+      "source_sha256": "19a63453965dde6ace3159e2059c30adee81905e95a6beaf62b7f47d9283e724",
+      "normalized_glTF_sha256": "eab1021c9b6f52491e59d00b4daf3821f18a29c2237d1b1df106890ca1d600ba",
+      "lod0_derived_glb_sha256": "b56b600951272456505c40027c8237e40952e5732de2e892d908b2ac8ff62f3a",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "Chandelier_03",
+      "source_asset_id": "Chandelier_03",
+      "source_page": "https://polyhaven.com/a/Chandelier_03",
+      "license": "CC0",
+      "source_sha256": "ab3c57ada6a22e472778b4c7f7e7d5e9b3b10fe91d4566de95e89497f282e00f",
+      "normalized_glTF_sha256": "2c19fb4f34bf622230dab91a2997220f2a0fb668206cfd77ef14c2cdd43654eb",
+      "lod0_derived_glb_sha256": "42f02d64ed5974392b04b67608105a94a3495d8b704f8eee510027289a2b88dc",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "CoffeeCart_01",
+      "source_asset_id": "CoffeeCart_01",
+      "source_page": "https://polyhaven.com/a/CoffeeCart_01",
+      "license": "CC0",
+      "source_sha256": "3f4e7e79e751662a767c22b21c34dfb6f7d414d56dda60a236ad7d621d211934",
+      "normalized_glTF_sha256": "66874f09f610036066633d18fccbbea77dc08606c8b543452d9180524943a0d1",
+      "lod0_derived_glb_sha256": "580deebd8c60cabaa57c51f5452de6bfcebe1f23519a0099979bec9681f77a22",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "antique_ceramic_vase_01",
+      "source_asset_id": "antique_ceramic_vase_01",
+      "source_page": "https://polyhaven.com/a/antique_ceramic_vase_01",
+      "license": "CC0",
+      "source_sha256": "c99f063c1ba4e649e87218265b5ca34f89e3c288ff6560c76b7d9d2dd46aa8cd",
+      "normalized_glTF_sha256": "e84505460e0498eea63578a051ed3913213bf66227aa4effe2e6dbdfe5804d9d",
+      "lod0_derived_glb_sha256": "376dfa521b2a94f13bc292fbcf77b3f1cdb1165ee07077c436d080ab8c3597fd",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "bench_vice_01",
+      "source_asset_id": "bench_vice_01",
+      "source_page": "https://polyhaven.com/a/bench_vice_01",
+      "license": "CC0",
+      "source_sha256": "52e61b473f1a7840ddbdabf024cca8dd32e07f694bd247e3a74e8ef5d9a101e2",
+      "normalized_glTF_sha256": "b40057d3d29097045c156a9b0ae9d3b1edd2e544e06c2916248bbc9c025cba7c"
+    },
+    {
+      "asset_id": "brass_goblets",
+      "source_asset_id": "brass_goblets",
+      "source_page": "https://polyhaven.com/a/brass_goblets",
+      "license": "CC0",
+      "source_sha256": "f78416e66ef2dc2de3aadfbd3bcd5da78902bc129764bc92bf62436cea6c4c65",
+      "normalized_glTF_sha256": "be6d942d58730cb4e54e0b8a1e7f5efc2e8d4ba7bba3b33ea79226f0ba7e4b3f",
+      "lod0_derived_glb_sha256": "65df0eff4920958e2fc1be1f756a41010b42d6a7883226a1f914b740f21452fa",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "brass_pan_01",
+      "source_asset_id": "brass_pan_01",
+      "source_page": "https://polyhaven.com/a/brass_pan_01",
+      "license": "CC0",
+      "source_sha256": "9860e0d10e9ef94c2b02e120f38f28a177af473759e4da05c74a564cfb0da5e1",
+      "normalized_glTF_sha256": "7375f107165d37ec0e4677472346df6f01c1773e05b18702a69ecf91fd81eb04",
+      "lod0_derived_glb_sha256": "3cdc1957ee9c88e7df002d0bf1c027ec4ce82c86f41cebdba158cfaccfccc8d6",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "brass_pot_01",
+      "source_asset_id": "brass_pot_01",
+      "source_page": "https://polyhaven.com/a/brass_pot_01",
+      "license": "CC0",
+      "source_sha256": "972fa20a81e322159a79cadf3812e1513a0001424198c7d9b423ced4cbf84473",
+      "normalized_glTF_sha256": "5f2fb5ae6c1629c187c835d3c9fe5eb2b9283637c613885935d58b0b34e124fd",
+      "lod0_derived_glb_sha256": "4921c2a3d6faf9845fb5e7626f558973b68c785337c254ff8ec4be5fbed3ec01",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "brass_pot_02",
+      "source_asset_id": "brass_pot_02",
+      "source_page": "https://polyhaven.com/a/brass_pot_02",
+      "license": "CC0",
+      "source_sha256": "cde8f5999217e71fa6153a7ace0f2c17fb485b9b2b6787993b003b1cc722c06d",
+      "normalized_glTF_sha256": "b9b1a33c1fb6a91ab7babb43213ea61774bf736d7a91e26eda5c7ce8eb0c58fd",
+      "lod0_derived_glb_sha256": "c96ca6d6056fd8e88504af4b8723be706a78f543246b125ea84899c6fc13bbd1",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "brass_vase_01",
+      "source_asset_id": "brass_vase_01",
+      "source_page": "https://polyhaven.com/a/brass_vase_01",
+      "license": "CC0",
+      "source_sha256": "becf6d52678c63d7321c8ab51fb1a03a80d8dd61feb183977867069cdd470f9d",
+      "normalized_glTF_sha256": "b10b95cebc1e3dda5e36a27528eef1cb9a74340762111328c2fe5ee4d88cb7b2",
+      "lod0_derived_glb_sha256": "33aa9e12f282bfde76b0dbab040e1b356361531fce0f26186bcc63939a01ec63",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "brass_vase_02",
+      "source_asset_id": "brass_vase_02",
+      "source_page": "https://polyhaven.com/a/brass_vase_02",
+      "license": "CC0",
+      "source_sha256": "4680277fd44664e1d60b1cf5f26965c8837d9912f776a083187a35eb883fb3a1",
+      "normalized_glTF_sha256": "bed02be5f766a469b70ddec017ddfe81b8eb7e7545f059162af45875ebf8dee9",
+      "lod0_derived_glb_sha256": "d76c5dc2b3f5a860dca1aeb708122fadf8dfb2bb5888495272f720e4133d556c",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "bull_head",
+      "source_asset_id": "bull_head",
+      "source_page": "https://polyhaven.com/a/bull_head",
+      "license": "CC0",
+      "source_sha256": "02385d6be1cee95c1ee614cb01b619d3aeb9ea5e90504562ce4eb57f06e75947",
+      "normalized_glTF_sha256": "f7f826468f18dcf40c0974af4ebe5794fbb0c76daeffa60f062e4fd8966280aa",
+      "lod0_derived_glb_sha256": "d757c5d5b0901e35c0d2546b51348b03a2c019865121208759d581c11b3baefd",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "bunsen_burner",
+      "source_asset_id": "bunsen_burner",
+      "source_page": "https://polyhaven.com/a/bunsen_burner",
+      "license": "CC0",
+      "source_sha256": "7c65775950cc7070513c4ce96d3d5f0035a3be5086f83cdba651a0ffc03b8a73",
+      "normalized_glTF_sha256": "500392a731ba25d4c0ced57c3eceb2e6af569754ce15156383b57fccaab48406",
+      "lod0_derived_glb_sha256": "8b1102b46a1421449d2c59e7474f01871cf6327bd26069e04d98529979de7b5e",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "cassette_player",
+      "source_asset_id": "cassette_player",
+      "source_page": "https://polyhaven.com/a/cassette_player",
+      "license": "CC0",
+      "source_sha256": "3501d41d15249c78d0dec2adf6518b3bdfe691ca24b16d0f0c1f0f0ca57824e8",
+      "normalized_glTF_sha256": "1a3be18a66901dfb1c47c3e1252c0b2cea89f2906f6b45175c96253650f24b72",
+      "lod0_derived_glb_sha256": "27f431642961fc637148317432c1e368ae3a527db16d08189e75022aefa7ce69",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "ceramic_pot",
+      "source_asset_id": "ceramic_pot",
+      "source_page": "https://polyhaven.com/a/ceramic_pot",
+      "license": "CC0",
+      "source_sha256": "7d8c28f171f701a422341c82322d439ea5041a6edd4443a85e3c8f88ce12ab0e",
+      "normalized_glTF_sha256": "f684b504b726dfe1c8500f50dea95d1c21fd0d66cee563dc8264f16190a1d0b6"
+    },
+    {
+      "asset_id": "ceramic_vase_01",
+      "source_asset_id": "ceramic_vase_01",
+      "source_page": "https://polyhaven.com/a/ceramic_vase_01",
+      "license": "CC0",
+      "source_sha256": "4e2c69eb5bbccf86e9fbf92af438464669d804c1f0eae041ee28651a5b57d91e",
+      "normalized_glTF_sha256": "d0f1c4d9c10e68d5b2cb52ff9f95e20cb1a914d3386683af2d3bbc0f43b19d8f",
+      "lod0_derived_glb_sha256": "6e9f95cdb792dc3b0571c38fab1646fbfea8fdcc1d42a1be97816c3b18a7736c",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "ceramic_vase_03",
+      "source_asset_id": "ceramic_vase_03",
+      "source_page": "https://polyhaven.com/a/ceramic_vase_03",
+      "license": "CC0",
+      "source_sha256": "72ea418ae3a761a651ea6bc4ce6daced649a2bd6c1c570227ba73af9e25d07f4",
+      "normalized_glTF_sha256": "406c98e0184b426a5711f997a95bd51c3a004db4028eb7ae5a2337daa5beefbf",
+      "lod0_derived_glb_sha256": "da38716f26e333d159025aaa9c6929c0f2718edbbfb30a4369607dc2b475e67c",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "ceramic_vase_04",
+      "source_asset_id": "ceramic_vase_04",
+      "source_page": "https://polyhaven.com/a/ceramic_vase_04",
+      "license": "CC0",
+      "source_sha256": "ca6461229bd6379b621396581e32400f93884fe77f7fa8abe6ddbeb64d57421b",
+      "normalized_glTF_sha256": "3d167b06ed66192635032bcf34e8707f39665e637b1409bbbd0bf0aff0e24925",
+      "lod0_derived_glb_sha256": "ae73dc9296c0987ee114a111bdf59a29668f7d6232c9a911612378f7dbfef44d",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "chemistry_set",
+      "source_asset_id": "chemistry_set",
+      "source_page": "https://polyhaven.com/a/chemistry_set",
+      "license": "CC0",
+      "source_sha256": "e02dd6433880fd3dfab82b254a6fe909c38d5a8be184b5b21004d231c11991b6",
+      "normalized_glTF_sha256": "42c8e32a4aa16a5d804b1c77283d210b5a4fed5b2d806be5b0f5c8d39996ab37",
+      "lod0_derived_glb_sha256": "f8a50b448deff57a15c4d05b4282ce9c477bd3c1ea52b622e45bdbaac28ce0e1",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "dartboard",
+      "source_asset_id": "dartboard",
+      "source_page": "https://polyhaven.com/a/dartboard",
+      "license": "CC0",
+      "source_sha256": "8535a0c0a954bd6db863f975ef9f6ae9dea27d43a2371fb8484cf40bc0e4e7b9",
+      "normalized_glTF_sha256": "7a6aa9d9a195628e24c388457294357e009e6a1ae5f7601d46a763c63993c1e7"
+    },
+    {
+      "asset_id": "decorative_book_set_01",
+      "source_asset_id": "decorative_book_set_01",
+      "source_page": "https://polyhaven.com/a/decorative_book_set_01",
+      "license": "CC0",
+      "source_sha256": "d424c01decfe3e736e370b0282731f5cccc16873fcdd1f05951450fc0761fab0",
+      "normalized_glTF_sha256": "67dc44800d09b2c0a916b8d0b58a7030d2367adeab3bbc95f2d0e3865511a85b",
+      "lod0_derived_glb_sha256": "84a9433175d22fdff22d265df0993dabacf546a11c6b7baade3e3924fa764bd4",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "electric_stove",
+      "source_asset_id": "electric_stove",
+      "source_page": "https://polyhaven.com/a/electric_stove",
+      "license": "CC0",
+      "source_sha256": "3be4d1b9ec0ead3c41ea8ef09d61e3b7611b69cbeea26a40ea87355acb0b3c55",
+      "normalized_glTF_sha256": "4d8b4feefe9f111ab1550ccc9efa6746f777f05edbc098193edc239c6283d6d9",
+      "lod0_derived_glb_sha256": "ef9d03678d16537e84be5a137a1900e5b2208f9e696706b881a15e06139c6c95",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "fancy_picture_frame_01",
+      "source_asset_id": "fancy_picture_frame_01",
+      "source_page": "https://polyhaven.com/a/fancy_picture_frame_01",
+      "license": "CC0",
+      "source_sha256": "c54803abf9e43c28a6b3fe76b38a60e827647a4f9a10747e6d4efba842289578",
+      "normalized_glTF_sha256": "bf2b62bc2368e908b9b72e7ca5552b8c9d6613c3f28c8b9c8993a9def0607899",
+      "neutralization": "Original artwork/canvas/glass or postcard material replaced with neutral matte; unused source image bytes removed, geometry retained."
+    },
+    {
+      "asset_id": "fancy_picture_frame_02",
+      "source_asset_id": "fancy_picture_frame_02",
+      "source_page": "https://polyhaven.com/a/fancy_picture_frame_02",
+      "license": "CC0",
+      "source_sha256": "1f8362b3118ffa82881657e0db9aec60aa76d6644b8030f9cd299b90415d1ef6",
+      "normalized_glTF_sha256": "01f7df1cd87db188fa48c92bfdbc0b9f6a111b0a6fb7b421bc2c795874a9d6bd",
+      "lod0_derived_glb_sha256": "6b94f50364c472dc8dcbac8ee2c9d55bf6c6fea881d3bf4f3ca334175882b7d0",
+      "optimization": "Blender decimation, original source retained",
+      "neutralization": "Original artwork/canvas/glass or postcard material replaced with neutral matte; unused source image bytes removed, geometry retained."
+    },
+    {
+      "asset_id": "filmstrip_projector_8mm",
+      "source_asset_id": "filmstrip_projector_8mm",
+      "source_page": "https://polyhaven.com/a/filmstrip_projector_8mm",
+      "license": "CC0",
+      "source_sha256": "dc30aca1cb04428207e92d6b3d2b032cc854fdb1a157aca5ea2570a75b883488",
+      "normalized_glTF_sha256": "467edcd43187fe5da81af7e96c69e5934d513be48e40bc373e088f67e9ddb655",
+      "lod0_derived_glb_sha256": "aa9bb0ed50e477b111691044107cc156498efaaa56ce975297d838f9ef189b67",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "gothic_statue",
+      "source_asset_id": "gothic_statue",
+      "source_page": "https://polyhaven.com/a/gothic_statue",
+      "license": "CC0",
+      "source_sha256": "eecbc67793a1e1efa1359d57fa497cb267fc7a4039823d3feecb6d0fcd2ad2db",
+      "normalized_glTF_sha256": "e4aa823895df68322a06f3a3cd6c88d8d48f25d58d29378ee7b3fa5cf6ed09da",
+      "lod0_derived_glb_sha256": "f7945df9d6e9d78c0a75fecc5dbe0e93d824e2446856f9412472143ac4f9ec6d",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "hanging_picture_frame_01",
+      "source_asset_id": "hanging_picture_frame_01",
+      "source_page": "https://polyhaven.com/a/hanging_picture_frame_01",
+      "license": "CC0",
+      "source_sha256": "00aaeab14751485287443b4c5cc2ee5673136510595daa6a2948519c116ad47b",
+      "normalized_glTF_sha256": "3506de0f41d68c80c958a4e0575f1d2af73bd6ce22145d64c57065a36399fe50",
+      "neutralization": "Original artwork/canvas/glass or postcard material replaced with neutral matte; unused source image bytes removed, geometry retained."
+    },
+    {
+      "asset_id": "hanging_picture_frame_02",
+      "source_asset_id": "hanging_picture_frame_02",
+      "source_page": "https://polyhaven.com/a/hanging_picture_frame_02",
+      "license": "CC0",
+      "source_sha256": "ea9a1d44e8d794e224a5342204669a328b57d64d5df629d1d5d86e60e27245e5",
+      "normalized_glTF_sha256": "7d72a867933d93f390cfc77c97c02bd9dc465a3e9562d19ca40cae24aa3dbfa7",
+      "neutralization": "Original artwork/canvas/glass or postcard material replaced with neutral matte; unused source image bytes removed, geometry retained."
+    },
+    {
+      "asset_id": "hanging_picture_frame_03",
+      "source_asset_id": "hanging_picture_frame_03",
+      "source_page": "https://polyhaven.com/a/hanging_picture_frame_03",
+      "license": "CC0",
+      "source_sha256": "39223fc47a8714cdf4db3b4d68042a02207db5ec3947bf021e47203540e21ddd",
+      "normalized_glTF_sha256": "feca0a57195ab725635436f10a3159565e283fc4b6e83bd99687f61a564e9911",
+      "lod0_derived_glb_sha256": "6b20ed384a6d38e12da1097110f02e107aab531879ef1154099c1adce54f8479",
+      "optimization": "Blender decimation, original source retained",
+      "neutralization": "Original artwork/canvas/glass or postcard material replaced with neutral matte; unused source image bytes removed, geometry retained."
+    },
+    {
+      "asset_id": "horse_head",
+      "source_asset_id": "horse_head",
+      "source_page": "https://polyhaven.com/a/horse_head",
+      "license": "CC0",
+      "source_sha256": "bb46cbabf202aa1af209678619f912c5605477fa098a46c238cdc46b3696bb0d",
+      "normalized_glTF_sha256": "9a7bcd1561564bf7e7928a02b774254f0ae817cba20a59fac6a1dd3af7a894ce",
+      "lod0_derived_glb_sha256": "dc95dd1c6c007dfcafb4bea8beca7def0a4cce9a7567d21f91ff0ac76fc27f77",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "horse_statue_01",
+      "source_asset_id": "horse_statue_01",
+      "source_page": "https://polyhaven.com/a/horse_statue_01",
+      "license": "CC0",
+      "source_sha256": "64e33e68ef427d0e7e401808d605b7d24208ae72b63f97ddf6716bc423b374ba",
+      "normalized_glTF_sha256": "f13ab2ed0a9762f68787b8d23f6871a784b7890cdb97c9a32222916dd47d9d74",
+      "lod0_derived_glb_sha256": "f67fdbeb94e76fafb8192d66d3f65654147752d31c6270f6eb9d66ff2dbd7267",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "industrial_coffee_table",
+      "source_asset_id": "industrial_coffee_table",
+      "source_page": "https://polyhaven.com/a/industrial_coffee_table",
+      "license": "CC0",
+      "source_sha256": "e692c26fa4c9179ee2f3f9caa95900e271de4f549e3eabf2b4a3aa1217eaae78",
+      "normalized_glTF_sha256": "26b8ae2144d328809dbd533c5f64e53781c8d510efc906e2c566a98aabb9e391",
+      "lod0_derived_glb_sha256": "b93f069d2b97737cdc91693abd56d28639c33519d32ffc1eb556f92f0f337234",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "katana_stand_01",
+      "source_asset_id": "katana_stand_01",
+      "source_page": "https://polyhaven.com/a/katana_stand_01",
+      "license": "CC0",
+      "source_sha256": "d69057f6c0f06cc28622c3c827f783d32638bfc7488b416dd56c49d01e9aaab4",
+      "normalized_glTF_sha256": "7356382ad06e53e901d1b552121b2861496d10feceda2c5141dfa30f189e7a8e",
+      "lod0_derived_glb_sha256": "978ac33c299197be140700b23e400b84ff6f0f66a5122cff536c3d92ae53bdaf",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "lambis_shell",
+      "source_asset_id": "lambis_shell",
+      "source_page": "https://polyhaven.com/a/lambis_shell",
+      "license": "CC0",
+      "source_sha256": "3fbfbe990b12f33af079671bc9ea9b1dd46b50f823692b72aa0d89fe850328e3",
+      "normalized_glTF_sha256": "a2efdae57a9629321f4c15dc0c3cec5ac767c9efc116ce083137297d41f13c98",
+      "lod0_derived_glb_sha256": "c2a091b54400ce5aaf154d6f5163dbcdecf9112e5b0297eff1ee5f6c5b433448",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "lion_head",
+      "source_asset_id": "lion_head",
+      "source_page": "https://polyhaven.com/a/lion_head",
+      "license": "CC0",
+      "source_sha256": "979bd8c7668c02dc26dafb137f8e9e49ecba9eb74ad8bf79c045e9f48fb40cd8",
+      "normalized_glTF_sha256": "da14121e5b2152691ea8362f51bd68d728d94c901b5f5fc798df10f82d4bb793",
+      "lod0_derived_glb_sha256": "e60e319068d204010ae95bc998b65ec255b83356d586b14f02e3a33a0f16e153",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "lubricant_spray",
+      "source_asset_id": "lubricant_spray",
+      "source_page": "https://polyhaven.com/a/lubricant_spray",
+      "license": "CC0",
+      "source_sha256": "2baacfe5ffad714ba6ec66516d909c29616b965c5369c0d7ad41bce7c9d4086a",
+      "normalized_glTF_sha256": "30f5121b22bcd8e5e38f8a073b7eb1a7464bfb210a11cee3448e28d24360a88f",
+      "lod0_derived_glb_sha256": "e5cbce6973328a6645851fe9cc104a2c7758fb3da725e4584568a0341ccdae26",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "mantel_clock_01",
+      "source_asset_id": "mantel_clock_01",
+      "source_page": "https://polyhaven.com/a/mantel_clock_01",
+      "license": "CC0",
+      "source_sha256": "e4c4f264175626fa14f12409ee5d687cf7f0d68fd1881cb7eb927c5f112de6ab",
+      "normalized_glTF_sha256": "1243ae25eae5870ca327512e48f183ee01a65d601262f3ebd0c120385b005791",
+      "lod0_derived_glb_sha256": "fa73a242e82ea95d803a86e7beeb3b494ee92410a57fdebf03349a12040b3bf9",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "marble_bust_01",
+      "source_asset_id": "marble_bust_01",
+      "source_page": "https://polyhaven.com/a/marble_bust_01",
+      "license": "CC0",
+      "source_sha256": "b6f192fc01be4349470b66f6f6948bd37620267bdbc86f4568e4d078f97ff09b",
+      "normalized_glTF_sha256": "01ada5fa6c92583c1c713c3ae00ebdd09db791a06f3bfd139f682aeba4b02c4d",
+      "lod0_derived_glb_sha256": "cfa22312d8268c31a04c52dbdf76d46c044aafaaebe43fa8af55443acb745332",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "metal_jug",
+      "source_asset_id": "metal_jug",
+      "source_page": "https://polyhaven.com/a/metal_jug",
+      "license": "CC0",
+      "source_sha256": "951357b6ec89a0d2b87674930eb832ae33d4b9c95781c8855f330bf7b2947759",
+      "normalized_glTF_sha256": "5f26e281f478f4d00ba1e72484b1b29a68ee88a2ae1ef33554c3248b1ae4a985",
+      "lod0_derived_glb_sha256": "6928da490d4f8af90b676baba7741dbc911a5cffb6ae39ea124973b8d651a7ea",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "mid_century_lounge_chair",
+      "source_asset_id": "mid_century_lounge_chair",
+      "source_page": "https://polyhaven.com/a/mid_century_lounge_chair",
+      "license": "CC0",
+      "source_sha256": "47c5769ee4dfa350e2506a6a76d8ef58a1e1060344acda35c503ddff46645d26",
+      "normalized_glTF_sha256": "e8078bf95cf679866ebd9fff6457e575ca16a7fd1b2d9841cb7a9327d975ae6e"
+    },
+    {
+      "asset_id": "modern_arm_chair_01",
+      "source_asset_id": "modern_arm_chair_01",
+      "source_page": "https://polyhaven.com/a/modern_arm_chair_01",
+      "license": "CC0",
+      "source_sha256": "d31be520add2603447b43acedbdacf9516866f7c89e9ea9230c9edbac9cc6e6a",
+      "normalized_glTF_sha256": "3b0b96d8801da18a5a439b83794bc436e58db5603e2aa67648c1529dba5a7026"
+    },
+    {
+      "asset_id": "old_drill_press",
+      "source_asset_id": "old_drill_press",
+      "source_page": "https://polyhaven.com/a/old_drill_press",
+      "license": "CC0",
+      "source_sha256": "b1ac11759c277e38fb0be776ba99802c131b9b7086141a5452398f91668bcfc2",
+      "normalized_glTF_sha256": "7e0a9ea592019b0415b19120dea2d7d235944ab462209c7b472128e2bef54872",
+      "lod0_derived_glb_sha256": "24fd1c2d546793cabc574b42d2405f2a89c0f6652fbba9377d76f1ec9ca47e65",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "ornate_mirror_01",
+      "source_asset_id": "ornate_mirror_01",
+      "source_page": "https://polyhaven.com/a/ornate_mirror_01",
+      "license": "CC0",
+      "source_sha256": "2d9bb949df65d6470395959fb7976af6fcc1b3ad7d85084918ad543ee71850f6",
+      "normalized_glTF_sha256": "84c2c68128e7774365e1678316090a0c783a7e7f13848de70aa901823a671cd3",
+      "lod0_derived_glb_sha256": "72d5519a5b616c6db56bbe5f07816db98687658dfcef0fc0b52e5d19d09de089",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "painted_wooden_table",
+      "source_asset_id": "painted_wooden_table",
+      "source_page": "https://polyhaven.com/a/painted_wooden_table",
+      "license": "CC0",
+      "source_sha256": "7e1ba86ae2c570e3464c42556e4e6cc09186a99127b86eaf54e7dbecb2fbafc3",
+      "normalized_glTF_sha256": "2e59d1d8bb240f9f02f728319b447895104ac07a14cb97d6b9a7808aade1403c"
+    },
+    {
+      "asset_id": "planter_box_02",
+      "source_asset_id": "planter_box_02",
+      "source_page": "https://polyhaven.com/a/planter_box_02",
+      "license": "CC0",
+      "source_sha256": "9ae29e813136cb056c672edbc5833ff5af2042b3cd15abc652e9d3fc338dca71",
+      "normalized_glTF_sha256": "1cec7c876120a8b2fb98cbbb015bba2d35dd3fea61eda46e2e7a76ff41263702",
+      "lod0_derived_glb_sha256": "d52d24e49bd956ed600d2af3baf3f3f588c89dfb1dea982feca870320cc9c013",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "planter_box_03",
+      "source_asset_id": "planter_box_03",
+      "source_page": "https://polyhaven.com/a/planter_box_03",
+      "license": "CC0",
+      "source_sha256": "56a1a36abdfcbdec20e379392c0c3d5d9ba0fff1003cf8f3858fdb58ef9ba9e5",
+      "normalized_glTF_sha256": "9c5f59d82abd624cd446dd7c052c3e041786c3b9e4de090afb0fc38c255d9f45",
+      "lod0_derived_glb_sha256": "8b98aefd6fe68304adb05e27631854150f03c859a8f827d72fd942dced654c08",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "plastic_monobloc_chair_01",
+      "source_asset_id": "plastic_monobloc_chair_01",
+      "source_page": "https://polyhaven.com/a/plastic_monobloc_chair_01",
+      "license": "CC0",
+      "source_sha256": "899bf148139ab8d1718c25ec06112a652631f9476b5aaeeacb9eb1da9b7f1d3a",
+      "normalized_glTF_sha256": "a19ed7ad7cd7ff9a752981a11233c9e14aaf3b9d92129cbe0afdc7fefeb54ab0"
+    },
+    {
+      "asset_id": "postcard_set_01",
+      "source_asset_id": "postcard_set_01",
+      "source_page": "https://polyhaven.com/a/postcard_set_01",
+      "license": "CC0",
+      "source_sha256": "7a12ad19ed66de5362bbb37e8369030cf88e8ab78364e4be7bed840232469056",
+      "normalized_glTF_sha256": "761728f23b0c00fa01e0ca3c1b812f4fedc1c3ca8ed181bb290f8ca43671e904",
+      "neutralization": "Original artwork/canvas/glass or postcard material replaced with neutral matte; unused source image bytes removed, geometry retained."
+    },
+    {
+      "asset_id": "pot_enamel_01",
+      "source_asset_id": "pot_enamel_01",
+      "source_page": "https://polyhaven.com/a/pot_enamel_01",
+      "license": "CC0",
+      "source_sha256": "ca60a8399463429cf23e04784334cbe344886e5c8747860ad9ad44c044e03dde",
+      "normalized_glTF_sha256": "b3a03f3de521032d0d266da9392a840d003d9a8eeea721a322adc77cba6aff12",
+      "lod0_derived_glb_sha256": "8c9f52a63dc3f11d9381fd9d452a98a20882ce51c594beb6a2dc636a5429708a",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "potted_plant_01",
+      "source_asset_id": "potted_plant_01",
+      "source_page": "https://polyhaven.com/a/potted_plant_01",
+      "license": "CC0",
+      "source_sha256": "23b30294407684b02f14800d6685bd8938da5d2111e17753ac8dd3c37d8c88a0",
+      "normalized_glTF_sha256": "c9f8ffb5869f297121ae32250aa4c5dfd524f15f0b4536338d43356074bc015f",
+      "lod0_derived_glb_sha256": "8f6248135c90b6b79880b31986e191668d19f8bff07e349ab7c9cbfc64e74d83",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "scandinavian_masonry_heater",
+      "source_asset_id": "scandinavian_masonry_heater",
+      "source_page": "https://polyhaven.com/a/scandinavian_masonry_heater",
+      "license": "CC0",
+      "source_sha256": "9ee8c41258be5a6825462a1cfc0cb4d03c571ddae7ed7d6d173332e8c454ef29",
+      "normalized_glTF_sha256": "2e53895b92d3affa4a257f2d9d4881837486f2e455fed85074492c9ffb306910"
+    },
+    {
+      "asset_id": "standing_picture_frame_01",
+      "source_asset_id": "standing_picture_frame_01",
+      "source_page": "https://polyhaven.com/a/standing_picture_frame_01",
+      "license": "CC0",
+      "source_sha256": "cd8a0326db53a48c918940c9a7ad016236d825a6b487e5d312fcac33897074bc",
+      "normalized_glTF_sha256": "74ad611735dfe6cc9b4f9d9c92e62f180226a6344a2d0d1aab870a3eb52632c7",
+      "neutralization": "Original artwork/canvas/glass or postcard material replaced with neutral matte; unused source image bytes removed, geometry retained."
+    },
+    {
+      "asset_id": "standing_picture_frame_02",
+      "source_asset_id": "standing_picture_frame_02",
+      "source_page": "https://polyhaven.com/a/standing_picture_frame_02",
+      "license": "CC0",
+      "source_sha256": "72f70a0845a494ac88a85184e749a078ea0ad8155f6ccffb15c6c69477231c96",
+      "normalized_glTF_sha256": "973c85a4b55ddbd814add8ff536ba9d401460b6f3f5154961c51beb60f92c1a3",
+      "neutralization": "Original artwork/canvas/glass or postcard material replaced with neutral matte; unused source image bytes removed, geometry retained."
+    },
+    {
+      "asset_id": "sungka_board_02",
+      "source_asset_id": "sungka_board_02",
+      "source_page": "https://polyhaven.com/a/sungka_board_02",
+      "license": "CC0",
+      "source_sha256": "7047196ad56bedc7cbe6899d34f784d1e4f93e0448db8270474122782b4913bf",
+      "normalized_glTF_sha256": "37f83fc7215e89736fdbf5b0c6086f47f5a3e127b1d2df3f9f47e11ac3bc628d",
+      "lod0_derived_glb_sha256": "12f46e9f4c6537a2b3f877ce27e361b41d39bf7a03093ede0239f336b29990f7",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "vintage_cabinet_01",
+      "source_asset_id": "vintage_cabinet_01",
+      "source_page": "https://polyhaven.com/a/vintage_cabinet_01",
+      "license": "CC0",
+      "source_sha256": "ce66c642cb13ba11bf7cde72bb58ad465dce1909dbef8a22dd55b28d857c1848",
+      "normalized_glTF_sha256": "3a362f7644d8e6d676f5cdc3a3cfaeb125bfc147aaa58a325be91ca5b86c4c13",
+      "lod0_derived_glb_sha256": "c1f56cfc18c5338616bff9276d1103c121f69b3186e5c62283db9136c10c8231",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "vintage_electric_kettle",
+      "source_asset_id": "vintage_electric_kettle",
+      "source_page": "https://polyhaven.com/a/vintage_electric_kettle",
+      "license": "CC0",
+      "source_sha256": "c03d2ef0e9f46eb06a1ccef6ff78d7baf83e76808e31d7016505e3ee0a416859",
+      "normalized_glTF_sha256": "b3eff340d3b8455cf6f8877179d3d05ab161c809c88a6092c0b6f60d1c4d0d01",
+      "lod0_derived_glb_sha256": "1806166dc08a33e6a5fd658bb0a5bd48283e9207a8a5e3970b0c2bfcfaa05edb",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "vintage_microwave",
+      "source_asset_id": "vintage_microwave",
+      "source_page": "https://polyhaven.com/a/vintage_microwave",
+      "license": "CC0",
+      "source_sha256": "d44f101ca3826e4ae4976bc4de96f31f15ea00f95775e41dc1eaf54aa598c8e0",
+      "normalized_glTF_sha256": "5cc95174140904ededd127280f7d00398d8ee4d12995d5dd2ba0b1b3f95e17a2"
+    },
+    {
+      "asset_id": "vintage_telephone_wall_clock",
+      "source_asset_id": "vintage_telephone_wall_clock",
+      "source_page": "https://polyhaven.com/a/vintage_telephone_wall_clock",
+      "license": "CC0",
+      "source_sha256": "9fc4dae50897d030a7410f7b3f57df032be15d4535ece7492829ac3d99d4729c",
+      "normalized_glTF_sha256": "c51d4247faa1d72ec0b32bc7f0b4e92c0fb723b7a1498ac75e91f652d1e77313",
+      "lod0_derived_glb_sha256": "b3ae33d359629f7c63c4c9e0586d8806cbfaf1492e5e49aa62a2838bb0510a43",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "wine_bottles_01",
+      "source_asset_id": "wine_bottles_01",
+      "source_page": "https://polyhaven.com/a/wine_bottles_01",
+      "license": "CC0",
+      "source_sha256": "70a8a5eabeac24cf298774aca78bbcf39145ca6bf5ebdf2f296edab73fbce039",
+      "normalized_glTF_sha256": "cdb1e2d1d7c6be46e3f83ab17712bbba3869181ebfeeaba89fdfd98d2d736bcc",
+      "lod0_derived_glb_sha256": "c2ba518b3555243148b748fdb145f740932b11d6989dac2601dbed90b3e59629",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "wooden_candlestick",
+      "source_asset_id": "wooden_candlestick",
+      "source_page": "https://polyhaven.com/a/wooden_candlestick",
+      "license": "CC0",
+      "source_sha256": "fea19adb5e06397d654d089c2852e599bd313063fec38912089f19d607220ca3",
+      "normalized_glTF_sha256": "8b0d9938a1c4efb02f8a0f1fc93a596c55999593300b4eaa59ff2f9a5ccd51d8",
+      "lod0_derived_glb_sha256": "81dcc3e20b7e8cf7ecd6bde696a012f585433e441aaeb674495b41f0de29a859",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "wooden_picnic_table",
+      "source_asset_id": "wooden_picnic_table",
+      "source_page": "https://polyhaven.com/a/wooden_picnic_table",
+      "license": "CC0",
+      "source_sha256": "6b0dd9916fd87dba2e5baad06e20c0badf68bc68a5761a13854fa9a215c6bd50",
+      "normalized_glTF_sha256": "4cbc3ae1d2d5b4d314d69dba81ff9ddeae7ed0f6646dced3d9607181f65124f5",
+      "lod0_derived_glb_sha256": "79f66631e10360a6de644690f19bd1e32fdde948d22f3ffd691089958e7aa3aa",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "wooden_stool_02",
+      "source_asset_id": "wooden_stool_02",
+      "source_page": "https://polyhaven.com/a/wooden_stool_02",
+      "license": "CC0",
+      "source_sha256": "8bb8bc3e420db0f69cee3d2ee74eccad7cabd1110a864a7d945549684e6f32cf",
+      "normalized_glTF_sha256": "d606c35e184c60a92cafd14cf4a96ddc0a56d90f3a6633b07d449cb6a940c598",
+      "lod0_derived_glb_sha256": "e38effd393c891fcf2c9e3074c37185c0305921dcd8f524639c62a01aeb16184",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "bronze_ray_statue",
+      "source_asset_id": "bronze_ray_statue",
+      "source_page": "https://polyhaven.com/a/bronze_ray_statue",
+      "license": "CC0",
+      "source_sha256": "bb2cab3316b05935fd311e132298d15076af9d6ddd88980abca1dea790c6305e",
+      "normalized_glTF_sha256": "cbc5cb036471a419dde23ca7355e9443b3204cdfb72ef4a815f864092d4cf0b7"
+    },
+    {
+      "asset_id": "bronze_shark_statue",
+      "source_asset_id": "bronze_shark_statue",
+      "source_page": "https://polyhaven.com/a/bronze_shark_statue",
+      "license": "CC0",
+      "source_sha256": "c7b5b5bd094518489e7eed022006ce2901ec8799397eafd37f6ffd5562187ca0",
+      "normalized_glTF_sha256": "61c493103146ab30495c1066447f65a83408589b9907831a71db2ef1f1b40ff3"
+    },
+    {
+      "asset_id": "bronze_whale_statue",
+      "source_asset_id": "bronze_whale_statue",
+      "source_page": "https://polyhaven.com/a/bronze_whale_statue",
+      "license": "CC0",
+      "source_sha256": "97ff882e047f3415601437d6db43a7326a3fa1ac5bddb86ae119b74717888d18",
+      "normalized_glTF_sha256": "62a97a3e51fd12f0428991333e3470d58c37f9ff7aaac2b19c537d2de2a1e305"
+    },
+    {
+      "asset_id": "carved_wooden_elephant",
+      "source_asset_id": "carved_wooden_elephant",
+      "source_page": "https://polyhaven.com/a/carved_wooden_elephant",
+      "license": "CC0",
+      "source_sha256": "c2378354ecd283c5c8d9459b6829ef7e61bdefd6d0f7a6b2d628362bd9bbef25",
+      "normalized_glTF_sha256": "d3777009e8794ace2900dfde73b03099300f59aea68a2e91cad58206d24fb6ea"
+    },
+    {
+      "asset_id": "concrete_cat_statue",
+      "source_asset_id": "concrete_cat_statue",
+      "source_page": "https://polyhaven.com/a/concrete_cat_statue",
+      "license": "CC0",
+      "source_sha256": "898110387c632808e6c6ffe818f48eaf32fcf1c8817de939bef428abb659e813",
+      "normalized_glTF_sha256": "86edc0de76c28045d77e2aa450d9ba420a4a0ce7585242d550fba10e66d14d18",
+      "lod0_derived_glb_sha256": "9a5253ae9ba9d3ed3fd4546cec3eff545875d80834afd97c98261c22a703a079",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "garden_gnome",
+      "source_asset_id": "garden_gnome",
+      "source_page": "https://polyhaven.com/a/garden_gnome",
+      "license": "CC0",
+      "source_sha256": "613f28205e58f4a1c2a638e2bbef41873a7c25d11aa30c2fe53e7ed941e4403e",
+      "normalized_glTF_sha256": "7cfb37210b088cc646cc35398dd30e8c02d1863ff321ebb5d3d6c10ee8f77d70",
+      "lod0_derived_glb_sha256": "b37e86c4141396db6159dced25f1ebded579541eee389e557fb57ebdbf037992",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "rubber_duck_toy",
+      "source_asset_id": "rubber_duck_toy",
+      "source_page": "https://polyhaven.com/a/rubber_duck_toy",
+      "license": "CC0",
+      "source_sha256": "dcf036297843dad2775841fc41208fae8c776066848d3f6e26efa42eb98d5016",
+      "normalized_glTF_sha256": "348e823e24253c9f1a5d41b47a69514e7db617f51f367351b63b7a5df0f8c00c",
+      "lod0_derived_glb_sha256": "f173fc85e743bb8d7e3bb90ec17ba59ba6b9d18cffc3750966cecf9a62affc0d",
+      "optimization": "Blender decimation, original source retained"
+    },
+    {
+      "asset_id": "seadogs_compass",
+      "source_asset_id": "seadogs_compass",
+      "source_page": "https://polyhaven.com/a/seadogs_compass",
+      "license": "CC0",
+      "source_sha256": "eb43affaa88dcf40d47318d096f14b709d8ddc34bad46b67ed038b807e56df07",
+      "normalized_glTF_sha256": "6054c251a26e8ac36d6eb413bf56c88507b8ff64f635941c5068f9c914fda452",
+      "lod0_derived_glb_sha256": "2d19be3ad0fc962c2a194900532406c6ccc9d03c14340921a36b24f3e3f75bd7",
+      "optimization": "Blender decimation, original source retained"
+    }
+  ]
+}

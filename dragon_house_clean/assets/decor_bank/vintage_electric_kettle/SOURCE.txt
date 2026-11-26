@@ -1,0 +1,7 @@
+CC0
+https://polyhaven.com/a/vintage_electric_kettle
+Source SHA-256 c03d2ef0e9f46eb06a1ccef6ff78d7baf83e76808e31d7016505e3ee0a416859
+Source yaw 0 degrees; uniform scale 1; pivot floor
+Native source scale.
+Candidate: owner_approved=false.
+LOD0 triangle reduction 14838 -> 2730; original source unchanged, optimized GLB SHA-256 1806166dc08a33e6a5fd658bb0a5bd48283e9207a8a5e3970b0c2bfcfaa05edb. Bounds delta before recenter: 0.000598 m.

@@ -1,0 +1,6 @@
+CC0
+https://polyhaven.com/a/chinese_chandelier
+Source SHA-256 0300d412628b0faffccf05e8ac7caad0e3e9b3b15bbbb0c14ce6f5c9e4e4eff8
+Source yaw 0 degrees; uniform scale 0.75; pivot ceiling
+Uniform domestic physical scale; source aspect retained.
+Candidate: owner_approved=false.
