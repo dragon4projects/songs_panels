@@ -1,0 +1,80 @@
+name: TEEA asset backfill 20261126
+on:
+  push:
+    branches: ['assets/cgtrader-coffee-mugs-20261124']
+    paths: ['.github/workflows/teea-backfill-20261126.yml']
+permissions:
+  contents: write
+jobs:
+  intake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GIT_LFS_SKIP_SMUDGE: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+          fetch-depth: 1
+      - name: Verify payload and commit actual files
+        shell: bash
+        run: |
+          set -euo pipefail
+          git lfs install --local
+          curl -fLsS --retry 2 'https://d2ol7oe51mr4n9.cloudfront.net/user_3JdI9kJ82xObF8Bi3EgU4P6DaoR/20069ed4-f26c-4cd9-95e8-22263d8d1269.zip' -o /tmp/teea.zip
+          echo '410ffdefc6aa0f5d5f8ea7a5fdda16312bfb3a689976cdc5b699971247f8ef3c  /tmp/teea.zip' | sha256sum -c -
+          python3 - <<'PY'
+          import zipfile, pathlib, hashlib, json, subprocess
+          root=pathlib.Path('dragon_house_clean')
+          manifest_path=root/'data/asset_proposals/TEEA_UPLOAD_AUDIT_20261126/manifest.json'
+          prefixes=["dragon_house_clean/assets/decor_bank/","dragon_house_clean/assets_external/authoring/teea_historical/","dragon_house_clean/assets_external/sketchfab/harvest_20261125/raw/","dragon_house_clean/data/asset_proposals/TEEA_INT_20261124_008/","dragon_house_clean/docs/handoffs/TEEA_INT_20261124_008/","dragon_house_clean/data/asset_proposals/TEEA_UPLOAD_AUDIT_20261126/"]
+          with zipfile.ZipFile('/tmp/teea.zip') as z:
+              manifest=json.loads(z.read(str(manifest_path)))
+              assert len(manifest['items'])==1119
+              expected={str(root/x['path']) for x in manifest['items']}|{str(manifest_path)}
+              actual={x.filename for x in z.infolist() if not x.is_dir()}
+              assert actual==expected
+              for f in z.infolist():
+                  if f.is_dir(): continue
+                  assert '..' not in pathlib.PurePosixPath(f.filename).parts and any(f.filename.startswith(p) for p in prefixes), f.filename
+                  p=pathlib.Path(f.filename)
+                  assert not p.exists(), f'Existing path: {p}'
+                  p.parent.mkdir(parents=True, exist_ok=True)
+                  p.write_bytes(z.read(f))
+          for row in manifest['items']:
+              p=root/row['path']
+              assert p.stat().st_size==row['bytes'] and hashlib.sha256(p.read_bytes()).hexdigest()==row['sha256'], p
+          # Stage exact manifest paths, not broad directories or pre-existing files.
+          pathlib.Path('/tmp/teea-paths').write_bytes(b'\0'.join(p.encode() for p in sorted(expected))+b'\0')
+          print('Verified',len(manifest['items']),'files')
+          PY
+          git config user.name 'dragon-house-asset-intake'
+          git config user.email 'dragon-house-asset-intake@users.noreply.github.com'
+          git add --pathspec-from-file=/tmp/teea-paths --pathspec-file-nul
+          git commit -m 'assets: verified TEEA consolidated public bank backfill'
+          git push origin HEAD:refs/heads/assets/cgtrader-coffee-mugs-20261124
+          git rev-parse HEAD
+      - name: Fresh Git and LFS verification
+        shell: bash
+        run: |
+          set -euo pipefail
+          # Rehydrate from remote in separate local object storage, not the source working tree.
+          git init /tmp/teea-verify
+          cd /tmp/teea-verify
+          git remote add origin "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY.git"
+          git config http.extraheader "$(git -C "$GITHUB_WORKSPACE" config --get "http.$GITHUB_SERVER_URL/.extraheader")"
+          git lfs install --local
+          git fetch --depth=1 --filter=blob:none origin 'refs/heads/assets/cgtrader-coffee-mugs-20261124'
+          git sparse-checkout init --cone
+          git sparse-checkout set 'dragon_house_clean/assets/decor_bank' 'dragon_house_clean/assets_external/authoring/teea_historical' 'dragon_house_clean/assets_external/sketchfab/harvest_20261125/raw' 'dragon_house_clean/data/asset_proposals/TEEA_INT_20261124_008' 'dragon_house_clean/docs/handoffs/TEEA_INT_20261124_008' 'dragon_house_clean/data/asset_proposals/TEEA_UPLOAD_AUDIT_20261126'
+          git checkout --detach FETCH_HEAD
+          git lfs pull --include='dragon_house_clean/assets/decor_bank/**,dragon_house_clean/assets_external/authoring/teea_historical/**,dragon_house_clean/assets_external/sketchfab/harvest_20261125/raw/**,dragon_house_clean/data/asset_proposals/TEEA_INT_20261124_008/**,dragon_house_clean/docs/handoffs/TEEA_INT_20261124_008/**,dragon_house_clean/data/asset_proposals/TEEA_UPLOAD_AUDIT_20261126/**' --exclude=''
+          python3 - <<'PY'
+          import pathlib,json,hashlib
+          d=pathlib.Path('dragon_house_clean')
+          m=json.loads((d/'data/asset_proposals/TEEA_UPLOAD_AUDIT_20261126/manifest.json').read_text())
+          for x in m['items']:
+              p=d/x['path']
+              assert p.stat().st_size==x['bytes'] and hashlib.sha256(p.read_bytes()).hexdigest()==x['sha256'],p
+          print('CLEAN_REMOTE_SHA_PASS',len(m['items']))
+          PY
